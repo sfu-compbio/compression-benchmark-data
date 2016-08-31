@@ -1,0 +1,122 @@
+tools/lfqc/lfqc/CompressionMethod.rb:17: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+
+0.000000 + (649.429891 -> 649.429891 -> 250.437847) = 250.437847 MB
+3742.202 seconds (all OK)
+
+0.000000 + (1.073216 -> 1.063557 -> 0.255236) = 0.255236 MB
+13.632 seconds (all OK)
+
+################################################################################
+
+Current Dir .
+
+Compressing SRR1284073.fastq
+
+Work dir tmp_b08f2b6375859e1884569c89d30a987b_SRR1284073.fastq
+
+Splitting fastq...
+
+Processing names...
+
+Compressing qual...
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq a SRR1284073.fastq_qual_noEOL.zpaq SRR1284073.fastq_qual_noEOL -method 5 -threads 4
+
+Compressing data...
+
+Running tools/lfqc/lfqc/../lpaq8/lpaq8 9 SRR1284073.fastq_data_noEOL  SRR1284073.fastq_data_noEOL.lpaq
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+Adding 649.429891 MB in 1 files -method 56 -threads 4 at 2016-01-25 01:00:16.
+
+10.33% 0:00:19 [1..986] 67025991 -method 56,241,0
+
+20.66% 0:00:20 [987..1964] 67080948 -method 56,241,0
+
+31.01% 0:00:21 [1965..2942] 66938315 -method 56,241,0
+
+41.30% 0:00:21 [2943..3981] 66922426 -method 56,241,0
+
+51.59% 0:00:19 [3982..4956] 67021533 -method 56,241,0
+
+61.92% 0:00:16 [4957..5900] 67077797 -method 56,241,0
+
+72.24% 0:00:13 [5901..6876] 67080145 -method 56,241,0
+
+82.58% 0:00:08 [6877..7855] 67087282 -method 56,241,0
+
+92.91% 0:01:53 [7856..8810] 67061879 -method 56,241,0
+
+100.00% 0:00:00 + SRR1284073.fastq_qual_noEOL 649429891
+
+100.00% 0:00:00 [8811..9507] 46171683 -method 56,241,0
+
+1 +added, 0 -removed.
+
+File matching [0-9]*: 0
+
+Transformed name for 0 = 0_rle
+
+File matching [0-9]*: 1
+
+Transformed name for 1 = 1_dif
+
+File matching [0-9]*: 2
+
+Transformed name for 2 = 2_rle
+
+File matching [0-9]*: 3
+
+Transformed name for 3 = 3_rev
+
+Qual compression time   2.200000   0.030000 2861.640000 (3743.397885)
+
+
+
+Compressing names...
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq a tmp_b08f2b6375859e1884569c89d30a987b_SRR1284073.fastq/SRR1284073.fastq_name_sep.zpaq 0_rle 1_dif 2_rle 3_rev sep -method 5 -threads 4
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+Adding 1.073216 MB in 5 files -method 56 -threads 4 at 2016-01-25 02:02:39.
+
++ 3_rev 746251
+
+100.00% 0:00:00 + 1_dif 326928 -> 317269
+
+100.00% 0:00:00 + 0_rle 19
+
+100.00% 0:00:00 + 2_rle 14
+
+100.00% 0:00:00 + sep 4
+
+100.00% 0:00:00 [1..18] 1063637 -method 56,248,0
+
+5 +added, 0 -removed.
+
+649429887 -> 155803551 in 1007.780 sec. using 1542 MB memory
+
+Name compression time   0.000000   0.010000   6.830000 ( 13.807817)
+
+
+
+Data compression time   2.190000   0.040000 3876.370000 (3878.981622)
+
+
+
+Bundling all to SRR1284073.fastq.lfqc...
+
+Running tar cf SRR1284073.fastq.lfqc SRR1284073.fastq_name_sep.zpaq SRR1284073.fastq_data_noEOL.lpaq SRR1284073.fastq_qual_noEOL.zpaq
+
+Clean up...
+
+Done.
+
+lfqc SRR1284073.fastq   4.110000   2.170000 3881.240000 (3885.154221)
+
+
+
+lfqcSize SRR1284073.fastq 406507520 uncompressed size 1308957142
+

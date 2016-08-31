@@ -1,0 +1,6 @@
+Reading NA12878.pacbio.bwa-sw.20140202.bam.sam, NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/NA12878.pacbio.bwa-sw.20140202.bam.asm.qp.sam; maxline=3000000
+> ORIG      25968256 (NA12878.pacbio.bwa-sw.20140202.bam.sam)
+< COPY      25968256 (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/NA12878.pacbio.bwa-sw.20140202.bam.asm.qp.sam)
+
+Equal
+Done NA12878.pacbio.bwa-sw.20140202.bam.sam

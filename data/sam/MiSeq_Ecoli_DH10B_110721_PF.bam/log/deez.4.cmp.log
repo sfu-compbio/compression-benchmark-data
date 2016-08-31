@@ -1,0 +1,50 @@
+DeeZ 0x12 (v1.1-16-gbdc7119-dirty)
+Loaded reference file data/sam/ref/CP000948.fa
+Loaded reference index data/sam/ref/CP000948.fa.fai
+Using quality mode default
+	  7.6% [Chr EcoliDH10B Block      1]	 15.1% [Chr EcoliDH10B Block      2]	 22.7% [Chr EcoliDH10B Block      3]	 30.3% [Chr EcoliDH10B Block      4]	 37.9% [Chr EcoliDH10B Block      5]	 45.5% [Chr EcoliDH10B Block      6]	 53.1% [Chr EcoliDH10B Block      7]	 60.7% [Chr EcoliDH10B Block      8]	 68.3% [Chr EcoliDH10B Block      9]	 75.9% [Chr EcoliDH10B Block     10]	 83.5% [Chr EcoliDH10B Block     11]	 91.1% [Chr EcoliDH10B Block     12]	 98.7% [Chr EcoliDH10B Block     13]	100.0% [Chr EcoliDH10B Block     14]
+Written 13,175,679 lines
+Paired 6,505,065 out of 13,175,679 reads
+Reference                    1,309
+  Fixes     :                  859
+  Fixes St  :                  214
+  Replace   :                  236
+Sequences               20,262,503
+  Positions :            1,687,480 
+  Stitches  :                  406 
+  Opcode    :               50,888 
+  SeqPos    :            9,251,831 
+  SeqLen    :               13,089 
+  XLen      :            1,890,335 
+  HSLen     :                    0 
+  AnyLen    :                2,180 
+  OPLen     :            3,460,552 
+  ACGTMiss  :            3,905,113 
+  ACGTIns   :                  377 
+  ACGTUnmap :                  252 
+Read Names              43,713,326
+  Index     :            3,307,343
+  Content   :           31,037,672
+  Paired    :            9,368,311
+Flags                    5,085,158
+Map. Quals                 205,057
+Qualities              712,557,314
+Paired End               3,086,946
+  Diff      :              252,104 
+  Chr       :              192,617 
+  Template  :              161,697 
+  Bits      :            2,480,528 
+Optionals               37,229,684
+  Tags      :              754,840
+  ASj       :               55,563
+  ASk       :           13,024,412
+  BCZ       :               25,871
+  NMi       :                    0
+  RG^       :               51,378
+  SMj       :              108,576
+  SMk       :           11,275,108
+  XDZ       :           11,933,936
+XD stats: 1,685,307 failed out of 13,171,699
+
+################################################################################
+

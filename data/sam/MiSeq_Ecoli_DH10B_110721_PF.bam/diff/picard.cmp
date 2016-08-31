@@ -1,0 +1,6 @@
+Reading MiSeq_Ecoli_DH10B_110721_PF.bam.sam, MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.picard.bam.sam; maxline=300000
+> ORIG      13175679 (MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+< COPY      13175679 (MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.picard.bam.sam)
+Comments   not equal
+
+Done MiSeq_Ecoli_DH10B_110721_PF.bam.sam

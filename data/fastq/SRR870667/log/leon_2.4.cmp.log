@@ -1,0 +1,15 @@
+
+################################################################################
+
+e,SRR870667_2.fastq,SRR870667/output/compressed/leon/SRR870667_2.fastq.leon,4,tools/leon-1.0.0-Source,SRR870667/output/compressed/leon
+
+total 17682216
+
+drwxr-xr-x 2 root     root                  38 Mar  2 17:33 .
+
+drwxr-xr-x 5 root     root                  58 Mar  2 17:33 ..
+
+-rw-r--r-- 2  18106586208 Jul 20  2015 SRR870667_2.fastq
+
+tools/leon-1.0.0-Source/build/leon -c -file SRR870667_2.fastq -nb-cores 4 -lossless
+

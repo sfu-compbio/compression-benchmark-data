@@ -1,0 +1,153 @@
+tools/lfqc/lfqc/CompressionMethod.rb:17: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+
+0.000000 + (165.156404 -> 165.156404 -> 48.450682) = 48.450682 MB
+1041.203 seconds (all OK)
+
+0.000000 + (25.391847 -> 19.064098 -> 3.624551) = 3.624551 MB
+88.553 seconds (all OK)
+
+################################################################################
+
+Current Dir .
+
+Compressing SRR554369_1.fastq
+
+Work dir tmp_555377de5e3a6ebadf3b42474fca8ae7_SRR554369_1.fastq
+
+Splitting fastq...
+
+Processing names...
+
+Compressing qual...
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq a SRR554369_1.fastq_qual_noEOL.zpaq SRR554369_1.fastq_qual_noEOL -method 5 -threads 4
+
+Compressing data...
+
+Running tools/lfqc/lfqc/../lpaq8/lpaq8 9 SRR554369_1.fastq_data_noEOL  SRR554369_1.fastq_data_noEOL.lpaq
+
+165156400 -> 17291920 in 239.320 sec. using 1542 MB memory
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+Adding 165.156404 MB in 1 files -method 56 -threads 4 at 2016-01-24 01:28:20.
+
+40.63% 0:00:04 [1..899] 66997573 -method 56,219,0
+
+81.21% 0:00:01 [900..1906] 67066686 -method 56,219,0
+
+100.00% 0:00:00 + SRR554369_1.fastq_qual_noEOL 165156404
+
+100.00% 0:00:00 [1907..2378] 31101681 -method 56,219,0
+
+1 +added, 0 -removed.
+
+File matching [0-9]*: 0
+
+Transformed name for 0 = 0_rle
+
+File matching [0-9]*: 1
+
+Transformed name for 1 = 1_dif
+
+File matching [0-9]*: 2
+
+Transformed name for 2 = 2_rle
+
+File matching [0-9]*: 3
+
+Transformed name for 3 = 3_rle
+
+File matching [0-9]*: 4
+
+Transformed name for 4 = 4_rle
+
+File matching [0-9]*: 5
+
+Transformed name for 5 = 5_rev
+
+File matching [0-9]*: 6
+
+Transformed name for 6 = 6_dif
+
+File matching [0-9]*: 7
+
+Transformed name for 7 = 7_dif
+
+File matching [0-9]*: 8
+
+Transformed name for 8 = 8_dif
+
+File matching [0-9]*: 9
+
+Transformed name for 9 = 9_rle
+
+File matching [0-9]*: 10
+
+Transformed name for 10 = 10_dif
+
+Data compression time  52.810000   0.790000 293.040000 (916.046404)
+
+
+
+Qual compression time  52.810000   0.790000 1041.910000 (1042.727824)
+
+
+
+Compressing names...
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq a tmp_555377de5e3a6ebadf3b42474fca8ae7_SRR554369_1.fastq/SRR554369_1.fastq_name_sep.zpaq 0_rle 1_dif 2_rle 3_rle 4_rle 5_rev 6_dif 7_dif 8_dif 9_rle 10_dif sep -method 5 -threads 4
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+Adding 25.391847 MB in 12 files -method 56 -threads 4 at 2016-01-24 01:45:41.
+
+31.58% 0:00:00 + 7_dif 8019753
+
+47.96% 0:00:00 + 8_dif 4159368
+
+60.97% 0:00:00 + 10_dif 3303130 -> 384090
+
+73.98% 0:00:00 + 1_dif 3303251 -> 3162962
+
+86.99% 0:00:00 + 5_rev 3303128 -> 34708
+
+100.00% 0:00:00 + 6_dif 3303128
+
+100.00% 0:00:00 + 0_rle 19
+
+100.00% 0:00:00 + 2_rle 14
+
+100.00% 0:00:00 + 3_rle 17
+
+100.00% 0:00:00 + 4_rle 13
+
+100.00% 0:00:00 + 9_rle 15
+
+100.00% 0:00:00 + sep 11
+
+100.00% 0:00:00 [1..272] 19065194 -method 56,250,0
+
+12 +added, 0 -removed.
+
+Name compression time   0.000000   0.000000  88.530000 ( 88.835145)
+
+
+
+Bundling all to SRR554369_1.fastq.lfqc...
+
+Running tar cf SRR554369_1.fastq.lfqc SRR554369_1.fastq_name_sep.zpaq SRR554369_1.fastq_data_noEOL.lpaq SRR554369_1.fastq_qual_noEOL.zpaq
+
+Clean up...
+
+Done.
+
+lfqc SRR554369_1.fastq  58.880000   1.610000 1137.570000 (1140.355620)
+
+
+
+lfqcSize SRR554369_1.fastq 69376000 uncompressed size 550164482
+
+-rw-r--r-- root/root   3624551 2016-01-23 17:47 SRR554369_1.fastq_name_sep.zpaq
+-rw-r--r-- root/root  17291920 2016-01-23 17:43 SRR554369_1.fastq_data_noEOL.lpaq
+-rw-r--r-- root/root  48450682 2016-01-23 17:45 SRR554369_1.fastq_qual_noEOL.zpaq

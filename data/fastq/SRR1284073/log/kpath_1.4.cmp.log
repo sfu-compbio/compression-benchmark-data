@@ -1,0 +1,88 @@
+2015/12/16 23:50:57 Starting kpath version 0.6.3 (1-6-15)
+2015/12/16 23:50:57 Maximum threads = 10
+kpath (encode): 2015/12/16 23:50:57 Using kmer size = 16
+kpath (encode): 2015/12/16 23:50:57 Option: psudeoCount = 1
+kpath (encode): 2015/12/16 23:50:57 Option: observationWeight = 10
+kpath (encode): 2015/12/16 23:50:57 Option: seenThreshold = 2
+kpath (encode): 2015/12/16 23:50:57 Option: flipReadsOption = true
+kpath (encode): 2015/12/16 23:50:57 Option: dupsOption = true
+kpath (encode): 2015/12/16 23:50:57 Option: updateReference = true
+kpath (encode): 2015/12/16 23:50:57 Reading from SRR1284073.fastq
+kpath (encode): 2015/12/16 23:50:57 Writing to SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath.enc, SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath.bittree, SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath.counts
+kpath (encode): 2015/12/16 23:50:57 Reading Reference File...
+kpath (encode): 2015/12/16 23:51:19 Reading reads...
+kpath (encode): 2015/12/16 23:51:42 Time: read 163464 reads; spent 23.401654484 seconds.
+kpath (encode): 2015/12/16 23:51:42 Have 3 read flippers, each working on 54489 reads
+kpath (encode): 2015/12/16 23:51:42 Worker 1 flipping [54489, 108978)...
+kpath (encode): 2015/12/16 23:51:42 Worker 0 flipping [0, 54489)...
+kpath (encode): 2015/12/16 23:51:42 Worker 2 flipping [108978, 163464)...
+panic: runtime error: slice bounds out of range
+
+goroutine 49 [running]:
+runtime.panic(0x51d260, 0x5f578f)
+	/usr/local/go/src/pkg/runtime/panic.c:279 +0xf5
+main.countMatchingObservations(0xc223fe13c0, 0xc208000290, 0xe, 0xc208000000)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:404 +0x200
+main.flipRange(0xc24901a6c8, 0xd4d9, 0x97c1a7, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:441 +0xbb
+main.func·001(0x1, 0xc260ce84e0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+goroutine 16 [chan receive]:
+main.readAndFlipReads(0x7fff2ffaf909, 0x2c, 0xc223fe13c0, 0xc211921b01, 0x0, 0x0, 0x0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:503 +0x77c
+main.preprocessWithBuckets(0x7fff2ffaf909, 0x2c, 0x7fff2ffaf93b, 0x39, 0xc223fe13c0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:606 +0xcf
+main.main()
+	/home/carlk/g/src/kingsford/kpath/kpath.go:1246 +0x113b
+
+goroutine 19 [finalizer wait]:
+runtime.park(0x424170, 0x5f9720, 0x5f7a29)
+	/usr/local/go/src/pkg/runtime/proc.c:1369 +0x89
+runtime.parkunlock(0x5f9720, 0x5f7a29)
+	/usr/local/go/src/pkg/runtime/proc.c:1385 +0x3b
+runfinq()
+	/usr/local/go/src/pkg/runtime/mgc0.c:2644 +0xcf
+runtime.goexit()
+	/usr/local/go/src/pkg/runtime/proc.c:1445
+
+goroutine 48 [runnable]:
+main.acgt(0xc21f91ef43, 0x1)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:124
+main.countMatchingObservations(0xc223fe13c0, 0xc21f91efc0, 0x20a, 0x80)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:406 +0xa4
+main.flipRange(0xc248fb0000, 0xd4d9, 0x989680, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:443 +0x131
+main.func·001(0x0, 0xc260ce8480)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+goroutine 50 [runnable]:
+main.acgt(0xc264655647, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:124
+main.countMatchingObservations(0xc223fe13c0, 0xc264655600, 0x283, 0xc264650086)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:406 +0xa4
+main.flipRange(0xc249084d90, 0xd4d6, 0x96ecce, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:441 +0xbb
+main.func·001(0x2, 0xc260ce85a0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+################################################################################
+
+kpath  Copyright (C) 2014  Carl Kingsford & Rob Patro
+
+
+
+This program comes with ABSOLUTELY NO WARRANTY; This is free software, and
+
+you are welcome to redistribute it under certain conditions; see
+
+accompanying LICENSE.txt file.
+
+
+

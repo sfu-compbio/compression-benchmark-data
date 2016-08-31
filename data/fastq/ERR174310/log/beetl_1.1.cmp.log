@@ -1,0 +1,43 @@
+
+real	32m30.356s
+user	31m53.977s
+sys	0m34.716s
+
+################################################################################
+
+e,ERR174310_1.fastq,ERR174310/output/compressed/beetl/ERR174310_1.fastq.beetl,tools/BEETL,ERR174310/output/compressed/beetl
+
+tools/BEETL/bin/beetl-bwt -i ERR174310_1.fastq -o xbeetl --output-format ASCII --sap-ordering --algorithm ext
+
+xbeetl-B00
+
+xbeetl-B01
+
+xbeetl-B02
+
+xbeetl-B03
+
+xbeetl-B04
+
+xbeetl-B05
+
+xbeetl-P01
+
+xbeetl-P02
+
+xbeetl-P03
+
+xbeetl-P04
+
+xbeetl-P05
+
+xbeetl-S01
+
+xbeetl-S02
+
+xbeetl-S03
+
+xbeetl-S04
+
+xbeetl-S05
+

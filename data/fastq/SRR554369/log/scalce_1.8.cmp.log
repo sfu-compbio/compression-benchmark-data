@@ -1,0 +1,46 @@
+SCALCE 1 [pthreads; available cores=5]
+** pigz not found in PATH. Using zlib compression instead. **
+Buffer size: 131072K, bucket storage size: 4194304K
+Allocating pool... OK!
+Preprocessing FASTQ files ...
+	Paired end #1, quality offset: 64
+	               read length: 100
+	Paired end #2, quality offset: 64
+	               read length: 100
+OK
+Using 8 threads...
+	Done with file SRR554369_1.fastq, 1651564 reads found
+	          file SRR554369_2.fastq, 1651564 reads found
+	Created temp file 0
+Merging results ... 1
+Generating 1 scalce file(s) from temp #0 using paired files, compression: gzip
+shrink factor for 0: 1
+	Read bit size:    paired end 0 = 0.82
+	Quality bit size: paired end 0 = 2.54
+shrink factor for 1: 1
+	Read bit size:    paired end 1 = 1.37
+	Quality bit size: paired end 1 = 2.57
+Cleaning ...
+Statistics:
+	Total number of reads: 1651564
+	Read length: first end 100
+	             second end 100
+	Unbucketed reads count: 48, bucketed percentage 100.00
+	Lossy percentage: 0
+	Time elapsed:     00:00:45
+	Compression time: 00:00:13
+	Original size: 1048.95M, new size: 156.64M, compression factor: 6.70
+Done!
+
+################################################################################
+
+Written 261040 cores
+
+Written 261040 cores
+
+-rwxrwxrwx 1   6776907 Jan  3 04:44 SRR554369_1.fastq.scalce_1.scalcen
+-rwxrwxrwx 1  52389382 Jan  3 04:44 SRR554369_1.fastq.scalce_1.scalceq
+-rwxrwxrwx 1  16935674 Jan  3 04:44 SRR554369_1.fastq.scalce_1.scalcer
+-rwxrwxrwx 1   6776907 Jan  3 04:44 SRR554369_1.fastq.scalce_2.scalcen
+-rwxrwxrwx 1  53118728 Jan  3 04:44 SRR554369_1.fastq.scalce_2.scalceq
+-rwxrwxrwx 1  28253631 Jan  3 04:44 SRR554369_1.fastq.scalce_2.scalcer

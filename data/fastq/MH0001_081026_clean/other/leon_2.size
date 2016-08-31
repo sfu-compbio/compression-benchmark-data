@@ -1,0 +1,44 @@
+	Input format: Fastq, compressing qualities in lossless mode
+	End header compression
+		Headers size: 393094150
+		Headers compressed size: 20400671
+		Compression rate: 0.0519
+Abundance threshold: 4 (auto)    (nb solid kmers: 4910503)
+	End reads compression
+		Reads count: 11640358
+		Reads size: 512175752
+		Compression rate: 0.1803  (92369475)
+			Bloom: 7.98  (7366779)
+			Anchors dict: 9.05  (8361832)    (1082422 entries)
+			Reads: 0.00  (0)
+				Anchor adress: 0.00  (0)
+				Anchor pos: 0.00  (0) 
+				Read size: 0.00  (0)
+				Bifurcation: 0.00  (0)
+				Other (N, error, infoBits): 0.00  (0)
+			Read without anchor: 0.00  (0)
+		Reads per anchor: 10
+		Read without anchor: 38.77
+		De Bruijn graph
+			Simple path: 86.70
+			Bifurcation: 1.37
+			Break: 11.07
+			Error: 0.84
+End compression
+	Input: 
+		Filename: MH0001_081026_clean_2.fastq
+		Size: 1880381894  (1793 MB)
+	Output: 
+		Filename: MH0001_081026_clean_2.fastq.leon
+		qualities in : MH0001_081026_clean_2.fastq.qual
+		Total Size: 364429909  (347 MB)
+	Overall Compression rate: 0.1938 (5.1598)
+		Header: 0.0519 (19.2687)
+		Dna: 0.1803 (5.5449)
+		Qual: 0.4822 (in lossless mode) 
+
+	Time: 231.61s
+	Speed: 8.12 mo/s
+leon                                    
+112771669 MH0001_081026_clean_2.fastq.leon
+252603189 MH0001_081026_clean_2.fastq.qual

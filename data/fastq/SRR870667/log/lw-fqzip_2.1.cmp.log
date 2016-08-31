@@ -1,0 +1,7 @@
+
+################################################################################
+
+e,SRR870667_2.fastq,SRR870667/output/compressed/lw-fqzip/SRR870667_2.fastq.lz,data/sam/ref/cacao11allasm_repmask_nomito.fa,tools/LWFQZip-v1.02,SRR870667/output/compressed/lw-fqzip
+
+./LWFQZip -c -t 1 -i SRR870667_2.fastq -r cacao11allasm_repmask_nomito.fa
+

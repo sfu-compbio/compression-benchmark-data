@@ -1,0 +1,6 @@
+Reading K562_cytosol_LID8465_TopHat_v2.bam.sam, K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/K562_cytosol_LID8465_TopHat_v2.bam.asm.qp.sam; maxline=3000000
+> ORIG     246476391 (K562_cytosol_LID8465_TopHat_v2.bam.sam)
+< COPY     246476391 (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/K562_cytosol_LID8465_TopHat_v2.bam.asm.qp.sam)
+
+REFNEXT    229953882 lines unequal
+Done K562_cytosol_LID8465_TopHat_v2.bam.sam

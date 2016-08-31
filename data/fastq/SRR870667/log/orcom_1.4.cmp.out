@@ -1,0 +1,3 @@
+e,4,SRR870667_1.fastq,SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom
+SRR870667/output/compressed/orcom/SRR870667_1.fastq.obin
+tools/orcom/bin/orcom_bin  e -v -t4 -f"SRR870667_1.fastq" -oSRR870667/output/compressed/orcom/SRR870667_1.fastq.obin && tools/orcom/bin/orcom_pack e -v -t4 -iSRR870667/output/compressed/orcom/SRR870667_1.fastq.obin -oSRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom

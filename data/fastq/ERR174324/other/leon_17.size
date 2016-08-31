@@ -1,0 +1,44 @@
+	Input format: Fastq, compressing qualities in lossless mode
+	End header compression
+		Headers size: 7562074479
+		Headers compressed size: 262659834
+		Compression rate: 0.0347
+Abundance threshold: 4 (auto)    (nb solid kmers: 1099450320)
+	End reads compression
+		Reads count: 147444746
+		Reads size: 14891919346
+		Compression rate: 0.2435  (3626595208)
+			Bloom: 45.47  (1649176505)
+			Anchors dict: 7.08  (256603720)    (33695140 entries)
+			Reads: 0.00  (0)
+				Anchor adress: 0.00  (0)
+				Anchor pos: 0.00  (0) 
+				Read size: 0.00  (0)
+				Bifurcation: 0.00  (0)
+				Other (N, error, infoBits): 0.00  (0)
+			Read without anchor: 0.00  (0)
+		Reads per anchor: 4
+		Read without anchor: 4.38
+		De Bruijn graph
+			Simple path: 60.62
+			Bifurcation: 3.91
+			Break: 25.65
+			Error: 1.38
+End compression
+	Input: 
+		Filename: ERR174340_1.fastq
+		Size: 38230581606  (36459 MB)
+	Output: 
+		Filename: ERR174340_1.fastq.leon
+		qualities in : ERR174340_1.fastq.qual
+		Total Size: 8818627328  (8410 MB)
+	Overall Compression rate: 0.2307 (4.3352)
+		Header: 0.0347 (28.7904)
+		Dna: 0.2435 (4.1063)
+		Qual: 0.3278 (in lossless mode) 
+
+	Time: 9204.89s
+	Speed: 4.15 mo/s
+leon                                    
+3889271552 ERR174340_1.fastq.leon
+4930121044 ERR174340_1.fastq.qual

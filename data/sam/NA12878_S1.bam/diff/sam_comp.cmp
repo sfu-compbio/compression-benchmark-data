@@ -1,0 +1,13 @@
+Reading ../../../../NA12878_S1.bam.sam, NA12878_S1.bam.sam.sam; maxline=3000000
+../../../../NA12878_S1.bam.sam NA12878_S1.bam.sam.sam differ: byte 1, line 1
+> ORIG    1582771014 (../../../../NA12878_S1.bam.sam)
+< COPY    1582771014 (NA12878_S1.bam.sam.sam)
+Comments   not equal
+
+REFNAME      9193515 lines unequal
+CIGAR        3352427 lines unequal
+REFNEXT   1520075398 lines unequal
+POSNEXT   1520075398 lines unequal
+TLEN      1498349520 lines unequal
+SEQ          2345832 lines unequal
+Done ../../../../NA12878_S1.bam.sam

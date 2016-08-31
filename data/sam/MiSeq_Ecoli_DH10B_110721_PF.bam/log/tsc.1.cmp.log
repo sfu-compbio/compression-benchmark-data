@@ -1,0 +1,173 @@
+
+################################################################################
+
+Compressing: MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+
+Block size: 10000
+
+Compressed 13175679 record(s)
+
+Wrote 1318 block(s)
+
+Took 1371345209 us ~= 1371.35 s
+
+Nuccodec CR: 1.12%
+
+
+
+samcodec stats:
+
+---------------
+
+Number of records   :     13175679
+
+Number of blocks    :         1318
+
+
+
+SAM file size       :   5579036306 (100.00%)
+
+  QNAME             :    233615971 (  4.19%)
+
+  FLAG              :     32913096 (  0.59%)
+
+  RNAME             :    171283827 (  3.07%)
+
+  POS               :     89634028 (  1.61%)
+
+  MAPQ              :     39438549 (  0.71%)
+
+  CIGAR             :     52769406 (  0.95%)
+
+  RNEXT             :     13175679 (  0.24%)
+
+  PNEXT             :     88914225 (  1.59%)
+
+  TLEN              :     45920419 (  0.82%)
+
+  SEQ               :   1976351850 ( 35.42%)
+
+  QUAL              :   1976351850 ( 35.42%)
+
+  OPT               :    700559069 ( 12.56%)
+
+  CTRL (\t, \n)     :    158108148 (  2.83%)
+
+  HEAD (SAM header) :          189 (  0.00%)
+
+
+
+Tsc file size       :   1104898991 (100.00%)
+
+  File header       :           35 (  0.00%)
+
+  SAM header        :          197 (  0.00%)
+
+  Block header(s)   :        84352 (  0.01%)
+
+  Aux               :     77750948 (  7.04%)
+
+  Id                :     66663382 (  6.03%)
+
+  Nuc               :     25646375 (  2.32%)
+
+  Pair              :     50843708 (  4.60%)
+
+  Qual              :    883909994 ( 80.00%)
+
+
+
+Compression ratios             SAM /          tsc
+
+  Total             :   5579036306 /   1104898991 ( 19.80%)
+
+  Aux               :    772910714 /     77750948 ( 10.06%)
+
+  Id                :    233615971 /     66663382 ( 28.54%)
+
+  Nuc               :   2290039111 /     25646375 (  1.12%)
+
+  Pair              :    148010323 /     50843708 ( 34.35%)
+
+  Qual              :   1976351850 /    883909994 ( 44.72%)
+
+
+
+Timing
+
+  Total time elapsed:   1371345209 us ~=      1371.35 s (100.00%)
+
+  Aux               :     65813784 us ~=        65.81 s (  4.80%)
+
+  Id                :     45141596 us ~=        45.14 s (  3.29%)
+
+  Nuc               :    699310887 us ~=       699.31 s ( 50.99%)
+
+  Pair              :     29043447 us ~=        29.04 s (  2.12%)
+
+  Qual              :    481772251 us ~=       481.77 s ( 35.13%)
+
+  Remaining         :     50263244 us ~=        50.26 s (  3.67%)
+
+
+
+Speed (with respect to SAM sizes)
+
+  Total             :         4.07 MB/s
+
+  Aux               :        11.74 MB/s
+
+  Id                :         5.18 MB/s
+
+  Nuc               :         3.27 MB/s
+
+  Pair              :         5.10 MB/s
+
+  Qual              :         4.10 MB/s
+
+
+
+
+
+nuccodec stats:
+
+---------------
+
+mrecords:             131 (  0.00%)
+
+irecords:            1390 (  0.01%)
+
+precords:        13174289 ( 99.99%)
+
+--
+
+ctrl_sz:            77698 (  0.31%)
+
+rname_sz:           61117 (  0.24%)
+
+pos_sz:             53850 (  0.21%)
+
+seq_sz:             49401 (  0.19%)
+
+seqlen_sz:         161207 (  0.63%)
+
+exs_sz:            135549 (  0.53%)
+
+posoff_sz:        2305524 (  9.05%)
+
+stogy_sz:          293871 (  1.15%)
+
+inserts_sz:         42611 (  0.17%)
+
+modcnt_sz:        3758691 ( 14.76%)
+
+modpos_sz:       12171669 ( 47.80%)
+
+modbases_sz:      5051563 ( 19.84%)
+
+trail_sz:         1462536 (  5.74%)
+
+
+
+Finished: MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/tsc/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.tsc
+

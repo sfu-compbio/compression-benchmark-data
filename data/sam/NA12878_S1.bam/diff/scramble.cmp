@@ -1,0 +1,10 @@
+Reading NA12878_S1.bam.sam, NA12878_S1.bam/output/decompressed/scramble/NA12878_S1.bam.sam.sam; maxline=3000000
+> ORIG    1582771014 (NA12878_S1.bam.sam)
+< COPY    1582771014 (NA12878_S1.bam/output/decompressed/scramble/NA12878_S1.bam.sam.sam)
+Comments   not equal
+
+MAPQUAL          789 lines unequal
+CIGAR        3352427 lines unequal
+NM        1510881883 missing,          0 extra,          0 unequal
+MD        1510881883 missing,          0 extra,          0 unequal
+Done NA12878_S1.bam.sam

@@ -1,0 +1,176 @@
+tools/lfqc/lfqc/CompressionMethod.rb:17: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+
+0.000000 + (947.198262 -> 947.198262 -> 340.534202) = 340.534202 MB
+6171.530 seconds (all OK)
+
+0.000000 + (247.546886 -> 124.335618 -> 20.873469) = 20.873469 MB
+694.718 seconds (all OK)
+
+################################################################################
+
+Current Dir .
+
+Compressing SRR327342_1.fastq
+
+Work dir tmp_9b60edc0dd3d0e79addf4691494d707a_SRR327342_1.fastq
+
+Splitting fastq...
+
+Processing names...
+
+Compressing qual...
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq a SRR327342_1.fastq_qual_noEOL.zpaq SRR327342_1.fastq_qual_noEOL -method 5 -threads 4
+
+Compressing data...
+
+Running tools/lfqc/lfqc/../lpaq8/lpaq8 9 SRR327342_1.fastq_data_noEOL  SRR327342_1.fastq_data_noEOL.lpaq
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+Adding 947.198262 MB in 1 files -method 56 -threads 4 at 2016-01-23 21:03:38.
+
+ 7.09% 0:00:42 [1..1000] 67057599 -method 56,227,0
+
+14.17% 0:00:46 [1001..1948] 66997986 -method 56,227,0
+
+21.24% 0:00:48 [1949..2877] 66936395 -method 56,227,0
+
+28.32% 0:00:50 [2878..3826] 67014016 -method 56,227,0
+
+35.38% 0:00:50 [3827..4804] 67007006 -method 56,227,0
+
+42.47% 0:00:47 [4805..5763] 67061967 -method 56,226,0
+
+49.53% 0:00:43 [5764..6746] 66998209 -method 56,226,0
+
+56.61% 0:00:38 [6747..7706] 67059344 -method 56,226,0
+
+63.70% 0:17:49 [7707..8721] 67097310 -method 56,227,0
+
+70.77% 0:12:57 [8722..9679] 66883013 -method 56,227,0
+
+77.83% 0:08:58 [9680..10610] 66705511 -method 56,227,0
+
+84.87% 0:05:38 [10611..11560] 67091734 -method 56,227,0
+
+91.95% 0:05:17 [11561..12525] 67026736 -method 56,227,0
+
+99.04% 0:00:35 [12526..13482] 67052186 -method 56,227,0
+
+100.00% 0:00:00 + SRR327342_1.fastq_qual_noEOL 947198262
+
+100.00% 0:00:00 [13483..13624] 9263866 -method 56,227,0
+
+1 +added, 0 -removed.
+
+File matching [0-9]*: 0
+
+Transformed name for 0 = 0_rle
+
+File matching [0-9]*: 1
+
+Transformed name for 1 = 1_dif
+
+File matching [0-9]*: 2
+
+Transformed name for 2 = 2_rle
+
+File matching [0-9]*: 3
+
+Transformed name for 3 = 3_rle
+
+File matching [0-9]*: 4
+
+Transformed name for 4 = 4_dif
+
+File matching [0-9]*: 5
+
+Transformed name for 5 = 5_rev
+
+File matching [0-9]*: 6
+
+Transformed name for 6 = 6_dif
+
+File matching [0-9]*: 7
+
+Transformed name for 7 = 7_dif
+
+File matching [0-9]*: 8
+
+Transformed name for 8 = 8_rev
+
+File matching [0-9]*: 9
+
+Transformed name for 9 = 9_rle
+
+File matching [0-9]*: 10
+
+Transformed name for 10 = 10_dif
+
+Qual compression time 514.190000   8.380000 4931.590000 (6173.440551)
+
+
+
+Compressing names...
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq a tmp_9b60edc0dd3d0e79addf4691494d707a_SRR327342_1.fastq/SRR327342_1.fastq_name_sep.zpaq 0_rle 1_dif 2_rle 3_rle 4_dif 5_rev 6_dif 7_dif 8_rev 9_rle 10_dif sep -method 5 -threads 4
+
+947198259 -> 128699499 in 1396.470 sec. using 1542 MB memory
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+Adding 247.546886 MB in 12 files -method 56 -threads 4 at 2016-01-23 22:46:30.
+
+27.11% 0:00:05 [1..954] 67099763 -method 56,246,0
+
+27.12% 0:00:05 + 8_rev 67127688
+
+39.26% 0:00:05 + 10_dif 30069787 -> 423287
+
+51.41% 0:00:04 + 1_dif 30069786 -> 16327042
+
+63.56% 0:00:03 + 4_dif 30069793 -> 74910
+
+75.71% 0:00:02 + 5_rev 30069786 -> 156756
+
+87.85% 0:00:01 + 6_dif 30069786 -> 10155675
+
+100.00% 0:00:00 + 7_dif 30070182
+
+100.00% 0:00:00 + 0_rle 20
+
+100.00% 0:00:00 + 2_rle 15
+
+100.00% 0:00:00 + 3_rle 16
+
+100.00% 0:00:00 + 9_rle 16
+
+100.00% 0:00:00 + sep 11
+
+100.00% 0:00:00 [955..1691] 57242635 -method 56,254,0
+
+12 +added, 0 -removed.
+
+Data compression time 514.180000   8.380000 6328.160000 (6649.308941)
+
+
+
+Name compression time   0.000000   0.000000 1932.120000 (695.032639)
+
+
+
+Bundling all to SRR327342_1.fastq.lfqc...
+
+Running tar cf SRR327342_1.fastq.lfqc SRR327342_1.fastq_name_sep.zpaq SRR327342_1.fastq_data_noEOL.lpaq SRR327342_1.fastq_qual_noEOL.zpaq
+
+Clean up...
+
+Done.
+
+lfqc SRR327342_1.fastq 566.800000  13.560000 6923.100000 (6953.115043)
+
+
+
+lfqcSize SRR327342_1.fastq 490117120 uncompressed size 3880523454
+

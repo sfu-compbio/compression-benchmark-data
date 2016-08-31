@@ -1,0 +1,15 @@
+
+################################################################################
+
+d,MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic,MH0001_081026_clean.1/output/decompressed/kic/MH0001_081026_clean.1.fq.fq,4,tools/kic-0.2,MH0001_081026_clean.1/output/decompressed/kic
+
+MH0001_081026_clean.1.fq.kic
+
+MH0001_081026_clean.1.fq.kic.name
+
+MH0001_081026_clean.1.fq.kic.qual
+
+MH0001_081026_clean.1.fq.kic.seq
+
+java -Xmx2000m -jar tools/kic-0.2/kid.jar MH0001_081026_clean.1.fq.kic
+

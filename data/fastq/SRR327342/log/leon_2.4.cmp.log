@@ -1,0 +1,15 @@
+
+################################################################################
+
+e,SRR327342_2.fastq,SRR327342/output/compressed/leon/SRR327342_2.fastq.leon,4,tools/leon-1.0.0-Source,SRR327342/output/compressed/leon
+
+total 4141956
+
+drwxr-xr-x 2 root     root                 38 Feb 21 16:59 .
+
+drwxr-xr-x 5 root     root                 58 Feb 21 16:59 ..
+
+-rw-r--r-- 2  4241360886 Dec 26  2012 SRR327342_2.fastq
+
+tools/leon-1.0.0-Source/build/leon -c -file SRR327342_2.fastq -nb-cores 4 -lossless
+

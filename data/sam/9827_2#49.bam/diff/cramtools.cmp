@@ -1,0 +1,9 @@
+Reading 9827_2#49.bam.sam, 9827_2#49.bam/output/decompressed/9827_2#49.bam.cram.sam; maxline=3000000
+> ORIG      56463236 (9827_2#49.bam.sam)
+< COPY      56463236 (9827_2#49.bam/output/decompressed/9827_2#49.bam.cram.sam)
+Comments   not equal
+
+TLEN           19992 lines unequal
+MD          55357963 missing,          0 extra,          0 unequal
+NM          55358026 missing,          0 extra,          0 unequal
+Done 9827_2#49.bam.sam

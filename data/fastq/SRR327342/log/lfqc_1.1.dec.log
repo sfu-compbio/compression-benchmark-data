@@ -1,0 +1,128 @@
+tools/lfqc/lfqc/lfqcd.rb:77: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+5683.802 seconds (all OK)
+695.789 seconds (all OK)
+
+################################################################################
+
+Work dir SRR327342/output/compressed/lfqc/tmp_6ef794db78fb40dcea621f77dc4f1d4c_SRR327342_1.fastq.lfqc
+
+Running tar xf SRR327342/output/compressed/lfqc/SRR327342_1.fastq.lfqc -C SRR327342/output/compressed/lfqc/tmp_6ef794db78fb40dcea621f77dc4f1d4c_SRR327342_1.fastq.lfqc
+
+Unzipping qual file SRR327342/output/compressed/lfqc/tmp_6ef794db78fb40dcea621f77dc4f1d4c_SRR327342_1.fastq.lfqc/SRR327342_1.fastq_qual_noEOL.zpaq
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq e SRR327342/output/compressed/lfqc/tmp_6ef794db78fb40dcea621f77dc4f1d4c_SRR327342_1.fastq.lfqc/SRR327342_1.fastq_qual_noEOL.zpaq -threads 4
+
+Unzipping data file SRR327342/output/compressed/lfqc/tmp_6ef794db78fb40dcea621f77dc4f1d4c_SRR327342_1.fastq.lfqc/SRR327342_1.fastq_data_noEOL.lpaq
+
+Running tools/lfqc/lfqc/../lpaq8/lpaq8 d SRR327342/output/compressed/lfqc/tmp_6ef794db78fb40dcea621f77dc4f1d4c_SRR327342_1.fastq.lfqc/SRR327342_1.fastq_data_noEOL.lpaq SRR327342/output/compressed/lfqc/tmp_6ef794db78fb40dcea621f77dc4f1d4c_SRR327342_1.fastq.lfqc/SRR327342_1.fastq_data_noEOL
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+SRR327342/output/compressed/lfqc/tmp_6ef794db78fb40dcea621f77dc4f1d4c_SRR327342_1.fastq.lfqc/SRR327342_1.fastq_qual_noEOL.zpaq: 1 versions, 1 files, 13624 fragments, 340.534202 MB
+
+Extracting 947.198262 MB in 1 files -threads 4
+
+[1001..1948] -> 66997986
+
+> SRR327342_1.fastq_qual_noEOL
+
+ 7.07% 5:39:22 [2878..3826] -> 67010560
+
+14.15% 2:37:19 [1949..2877] -> 66936395
+
+21.21% 1:37:41 [1..1000] -> 67057599
+
+28.29% 2:11:23 [3827..4804] -> 67007006
+
+35.37% 1:36:02 [5764..6746] -> 66998209
+
+42.44% 1:11:29 [4805..5763] -> 67059712
+
+49.52% 0:54:39 [6747..7706] -> 67059344
+
+56.60% 1:00:18 [9680..10610] -> 66705511
+
+63.64% 0:45:00 [7707..8721] -> 67097310
+
+70.72% 0:32:41 [8722..9679] -> 66879488
+
+77.78% 0:22:45 [10611..11560] -> 67091734
+
+84.87% 0:14:36 [13483..13624] -> 9263866
+
+85.85% 0:15:35 [11561..12525] -> 67026736
+
+92.92% 0:07:12 [12526..13482] -> 67052186
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq e SRR327342_1.fastq_name_sep.zpaq -threads 4
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+SRR327342_1.fastq_name_sep.zpaq: 128699499 -> 947198259 in 1410.080 sec. using 1542 MB memory
+
+1 versions, 12 files, 1691 fragments, 20.873469 MB
+
+Extracting 247.546886 MB in 12 files -threads 4
+
+[955..1691] -> 57242635
+
+> 0_rle
+
+> 10_dif
+
+12.15% 1:04:24 > 1_dif
+
+24.29% 0:27:45 > 2_rle
+
+24.29% 0:27:45 > 3_rle
+
+24.29% 0:27:45 > 4_dif
+
+36.44% 0:15:32 > 5_rev
+
+48.59% 0:09:25 > 6_dif
+
+60.74% 0:05:45 > 7_dif
+
+72.88% 0:03:19 > 8_rev
+
+72.90% 0:03:18 > 9_rle
+
+72.90% 0:03:18 > sep
+
+72.90% 0:04:18 [1..954] -> 67099763
+
+Processing file 0_rle
+
+Processing file 10_dif
+
+Processing file 1_dif
+
+Processing file 2_rle
+
+Processing file 3_rle
+
+Processing file 4_dif
+
+Processing file 5_rev
+
+Processing file 6_dif
+
+Processing file 7_dif
+
+Processing file 8_rev
+
+Processing file 9_rle
+
+Max Column 10
+
+Cleaning up...
+
+Done.
+
+lfqcd SRR327342/output/compressed/lfqc/SRR327342_1.fastq.lfqc 722.600000   8.380000 7107.840000 (7115.384293)
+
+
+
+lfqcdSize SRR327342/output/decompressed/lfqc/SRR327342_1.fastq.fq 2932564665 compressed size 490117120
+

@@ -1,0 +1,6 @@
+Reading MiSeq_Ecoli_DH10B_110721_PF.bam.sam, MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/MiSeq_Ecoli_DH10B_110721_PF.bam.asm.qp.sam; maxline=3000000
+> ORIG      13175679 (MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+< COPY      13175679 (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/MiSeq_Ecoli_DH10B_110721_PF.bam.asm.qp.sam)
+
+REFNEXT     13051484 lines unequal
+Done MiSeq_Ecoli_DH10B_110721_PF.bam.sam

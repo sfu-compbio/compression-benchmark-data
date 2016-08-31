@@ -1,0 +1,7 @@
+
+################################################################################
+
+e,SRR870667_1.fastq,SRR870667/output/compressed/kic/SRR870667_1.fastq.kic,1,tools/kic-0.2,SRR870667/output/compressed/kic
+
+java -Xmx2000m -jar tools/kic-0.2/kic.jar SRR870667_1.fastq -n 1
+

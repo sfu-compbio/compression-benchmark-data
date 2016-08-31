@@ -1,0 +1,11 @@
+[ threads] => { 4 }
+[ encode] => { }
+[ unmated_reads] => { SRR1284073.fastq }
+[ output] => { SRR1284073/output/compressed/mince-single/SRR1284073.fastq.mince }
+there is 1 lib
+[2016-01-05 16:36:48.560] [jointLog] [info] Starting 4 processing threads
+processed 1 readsterminate called after throwing an instance of 'std::logic_error'
+  what():  Encountered variable length reads; Mince currently requires all reads to be of the same length!
+
+################################################################################
+

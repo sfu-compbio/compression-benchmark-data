@@ -1,0 +1,1676 @@
+Namespace(force=False, log='benchmark.log', ref='data/sam/ref/Homo_sapiens_assembly19.fasta', sam='HCC1954.mix1.n80t20.bam.sam')
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                HCC1954.mix1.n80t20.bam with 1 threads                + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+########################################################################
+#                                 pigz                                 #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -p 1
+    stdin:       HCC1954.mix1.n80t20.bam.sam
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.gz
+    stderr:      HCC1954.mix1.n80t20.bam/log/pigz.1.cmp.log
+  Process PID:   21296
+  Exit code:     0
+  Wall time:     15:01:56 (54116.5 ms)
+  Memory (MB):   5.8
+  Resources:
+    ru_utime:    14:38:12 (52692.4 ms)
+    ru_stime:    00:11:46 (706.3 ms)
+    ru_maxrss:   5900
+    ru_minflt:   1009
+    ru_majflt:   4
+    ru_inblock:  834041648
+    ru_oublock:  234075200
+    ru_nvcsw:    12643
+    ru_nivcsw:   12
+  GNU time:
+    real:        15:01:56 (54116.3 ms)
+    user:        14:38:12 (52692.4 ms)
+    sys:         00:11:46 (706.3 ms)
+  Size (MB):     114,287.64 (119839278315 bytes)
+  Free space:
+                      2.8T  969G  1.8T  35% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.gz
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.gz.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/pigz.1.dec.log
+  Process PID:   30947
+  Exit code:     0
+  Wall time:     02:34:58 (9298.7 ms)
+  Memory (MB):   5.8
+  Resources:
+    ru_utime:    01:09:40 (4180.8 ms)
+    ru_stime:    00:11:04 (664.9 ms)
+    ru_maxrss:   5904
+    ru_minflt:   878
+    ru_majflt:   8
+    ru_inblock:  234063848
+    ru_oublock:  834039008
+    ru_nvcsw:    93667
+    ru_nivcsw:   7
+  GNU time:
+    real:        02:34:58 (9298.7 ms)
+    user:        01:09:40 (4180.8 ms)
+    sys:         00:11:04 (664.9 ms)
+  Size (MB):     407,245.60 (427027967454 bytes)
+  Free space:
+                      2.8T  1.4T  1.4T  49% /local-scratch
+
+########################################################################
+#                                pbzip2                                #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -p1
+    stdin:       HCC1954.mix1.n80t20.bam.sam
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bz2
+    stderr:      HCC1954.mix1.n80t20.bam/log/pbzip2.1.cmp.log
+  Process PID:   511
+  Exit code:     0
+  Wall time:     17:25:36 (62736.0 ms)
+  Memory (MB):   11.4
+  Resources:
+    ru_utime:    16:31:59 (59519.7 ms)
+    ru_stime:    00:34:28 (2068.6 ms)
+    ru_maxrss:   11664
+    ru_minflt:   257724750
+    ru_majflt:   12
+    ru_inblock:  834089344
+    ru_oublock:  195877944
+    ru_nvcsw:    2653163
+    ru_nivcsw:   8
+  GNU time:
+    real:        17:25:35 (62735.9 ms)
+    user:        16:31:59 (59519.7 ms)
+    sys:         00:34:28 (2068.6 ms)
+  Size (MB):     95,634.31 (100279840732 bytes) 
+  Free space:
+                      2.8T  1.5T  1.4T  53% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bz2
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bz2.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/pbzip2.1.dec.log
+  Process PID:   12635
+  Exit code:     0
+  Wall time:     09:12:30 (33150.7 ms)
+  Memory (MB):   5.8
+  Resources:
+    ru_utime:    08:40:24 (31224.1 ms)
+    ru_stime:    00:16:35 (995.2 ms)
+    ru_maxrss:   5904
+    ru_minflt:   2301
+    ru_majflt:   12
+    ru_inblock:  195909144
+    ru_oublock:  834039008
+    ru_nvcsw:    18759
+    ru_nivcsw:   8
+  GNU time:
+    real:        09:12:30 (33150.6 ms)
+    user:        08:40:24 (31224.1 ms)
+    sys:         00:16:35 (995.2 ms)
+  Size (MB):     407,245.60 (427027967454 bytes)
+  Free space:
+                      2.8T  1.9T  935G  67% /local-scratch
+
+########################################################################
+#                               samtools                               #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -b HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bam
+    stderr:      HCC1954.mix1.n80t20.bam/log/samtools.1.cmp.log
+  Process PID:   18747
+  Exit code:     0
+  Wall time:     10:43:56 (38636.7 ms)
+  Memory (MB):   5.8
+  Resources:
+    ru_utime:    10:11:42 (36702.6 ms)
+    ru_stime:    00:18:09 (1089.0 ms)
+    ru_maxrss:   5904
+    ru_minflt:   181083254
+    ru_majflt:   13
+    ru_inblock:  834043128
+    ru_oublock:  256975232
+    ru_nvcsw:    24673
+    ru_nivcsw:   8
+  GNU time:
+    real:        10:43:56 (38636.6 ms)
+    user:        10:11:42 (36702.6 ms)
+    sys:         00:18:09 (1089.0 ms)
+  Size (MB):     125,471.21 (131566096227 bytes)
+  Free space:
+                      2.8T  2.0T  813G  71% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -h HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bam -o HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/samtools.1.dec.log
+  Process PID:   25821
+  Exit code:     0
+  Wall time:     02:51:10 (10270.9 ms)
+  Memory (MB):   5.8
+  Resources:
+    ru_utime:    01:54:24 (6864.3 ms)
+    ru_stime:    00:15:36 (936.4 ms)
+    ru_maxrss:   5904
+    ru_minflt:   905
+    ru_majflt:   12
+    ru_inblock:  256969232
+    ru_oublock:  834044280
+    ru_nvcsw:    72363
+    ru_nivcsw:   7
+  GNU time:
+    real:        02:51:10 (10270.6 ms)
+    user:        01:54:24 (6864.3 ms)
+    sys:         00:15:36 (936.4 ms)
+  Size (MB):     407,245.60 (427027967454 bytes)
+  Free space:
+                      2.8T  2.4T  415G  86% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 1 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble.cram
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble.1.cmp.log
+  Process PID:   30734
+  Exit code:     0
+  Wall time:     02:56:43 (10603.5 ms)
+  Memory (MB):   280.2
+  Resources:    
+    ru_utime:    02:25:41 (8741.0 ms)
+    ru_stime:    00:14:09 (849.8 ms)
+    ru_maxrss:   286956
+    ru_minflt:   167332274
+    ru_majflt:   44
+    ru_inblock:  840183880
+    ru_oublock:  160239040
+    ru_nvcsw:    1642102
+    ru_nivcsw:   6
+  GNU time:     
+    real:        02:56:43 (10603.0 ms)
+    user:        02:25:41 (8741.0 ms)
+    sys:         00:14:09 (849.7 ms)
+  Size (MB):     78,240.55 (82041161915 bytes)
+  Free space:     
+                      2.8T  1.8T  996G  65% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 1 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble.cram HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble.cram.sam
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble.1.dec.log
+  Process PID:   32622
+  Exit code:     0
+  Wall time:     02:01:09 (7269.0 ms)
+  Memory (MB):   90.5
+  Resources:    
+    ru_utime:    01:30:11 (5411.4 ms)
+    ru_stime:    00:09:14 (554.1 ms)
+    ru_maxrss:   92708
+    ru_minflt:   10234864
+    ru_majflt:   44
+    ru_inblock:  166218200
+    ru_oublock:  805033440
+    ru_nvcsw:    320271
+    ru_nivcsw:   10
+  GNU time:     
+    real:        02:01:08 (7268.9 ms)
+    user:        01:30:11 (5411.4 ms)
+    sys:         00:09:14 (554.1 ms)
+  Size (MB):     393,082.73 (412177114203 bytes)
+  Free space:     
+                      2.8T  2.2T  612G  79% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I sam -O cram -t 1 HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-noref.cram
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-noref.1.cmp.log
+  Process PID:   7487
+  Exit code:     0
+  Wall time:     03:57:57 (14277.9 ms)
+  Memory (MB):   42.3
+  Resources:    
+    ru_utime:    03:21:01 (12061.6 ms)
+    ru_stime:    00:16:29 (989.1 ms)
+    ru_maxrss:   43304
+    ru_minflt:   191108394
+    ru_majflt:   45
+    ru_inblock:  834049120
+    ru_oublock:  169756984
+    ru_nvcsw:    1630191
+    ru_nivcsw:   10
+  GNU time:     
+    real:        03:57:57 (14277.8 ms)
+    user:        03:21:01 (12061.5 ms)
+    sys:         00:16:29 (989.0 ms)
+  Size (MB):     82,887.57 (86913914910 bytes)
+  Free space:     
+                      2.8T  1.8T  991G  65% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I cram -O sam -t 1 HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-noref.cram HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-noref.cram.sam
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-noref.1.dec.log
+  Process PID:   10040
+  Exit code:     0
+  Wall time:     02:14:56 (8096.8 ms)
+  Memory (MB):   17.0
+  Resources:    
+    ru_utime:    01:33:50 (5630.9 ms)
+    ru_stime:    00:22:00 (1320.6 ms)
+    ru_maxrss:   17400
+    ru_minflt:   295162264
+    ru_majflt:   39
+    ru_inblock:  169762648
+    ru_oublock:  834039024
+    ru_nvcsw:    360501
+    ru_nivcsw:   10
+  GNU time:     
+    real:        02:14:56 (8096.8 ms)
+    user:        01:33:50 (5630.9 ms)
+    sys:         00:22:00 (1320.6 ms)
+  Size (MB):     407,245.61 (427027973205 bytes)
+  Free space:     
+                      2.8T  2.2T  594G  79% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -7 -I sam -O cram -t 1 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-bz2.cram
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-bzip2.1.cmp.log
+  Process PID:   12776
+  Exit code:     0
+  Wall time:     06:24:36 (23076.6 ms)
+  Memory (MB):   286.0
+  Resources:    
+    ru_utime:    05:42:18 (20538.2 ms)
+    ru_stime:    00:18:26 (1106.6 ms)
+    ru_maxrss:   292864
+    ru_minflt:   146971670
+    ru_majflt:   39
+    ru_inblock:  840182448
+    ru_oublock:  156506376
+    ru_nvcsw:    1643065
+    ru_nivcsw:   6
+  GNU time:     
+    real:        06:24:36 (23076.5 ms)
+    user:        05:42:18 (20538.2 ms)
+    sys:         00:18:26 (1106.6 ms)
+  Size (MB):     76,383.32 (80093712999 bytes)
+  Free space:     
+                      2.8T  1.8T  998G  65% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -I cram -O sam -t 1 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-bz2.cram HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-bz2.cram.sam
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-bzip2.1.dec.log
+  Process PID:   16866
+  Exit code:     0
+  Wall time:     02:19:50 (8390.3 ms)
+  Memory (MB):   91.4
+  Resources:    
+    ru_utime:    01:51:52 (6712.0 ms)
+    ru_stime:    00:08:53 (533.4 ms)
+    ru_maxrss:   93588
+    ru_minflt:   5777595
+    ru_majflt:   43
+    ru_inblock:  162414224
+    ru_oublock:  805033440
+    ru_nvcsw:    298711
+    ru_nivcsw:   7
+  GNU time:     
+    real:        02:19:50 (8390.2 ms)
+    user:        01:51:52 (6712.0 ms)
+    sys:         00:08:53 (533.4 ms)
+  Size (MB):     393,082.73 (412177114434 bytes)
+  Free space:     
+                      2.8T  2.2T  614G  79% /local-scratch
+
+########################################################################
+#                               sambamba                               #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 1 HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.sambamba.bam
+    stderr:      HCC1954.mix1.n80t20.bam/log/sambamba.1.cmp.log
+  Process PID:   3967
+  Exit code:     0
+  Wall time:     14:56:33 (53793.2 ms)
+  Memory (MB):   7.9
+  Resources:
+    ru_utime:    14:25:31 (51931.5 ms)
+    ru_stime:    00:25:42 (1542.4 ms)
+    ru_maxrss:   8052
+    ru_minflt:   186380030
+    ru_majflt:   35
+    ru_inblock:  834048784
+    ru_oublock:  256997880
+    ru_nvcsw:    33435
+    ru_nivcsw:   10
+  GNU time:
+    real:        14:56:32 (53792.7 ms)
+    user:        14:25:31 (51931.5 ms)
+    sys:         00:25:42 (1542.4 ms)
+  Size (MB):     125,471.21 (131566096220 bytes)
+  Free space:
+                      2.8T  980G  1.8T  36% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -h -t 1 HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.sambamba.bam -o HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.sambamba.bam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/sambamba.1.dec.log
+  Process PID:   26369
+  Exit code:     0
+  Wall time:     03:11:32 (11492.3 ms)
+  Memory (MB):   11.3
+  Resources:
+    ru_utime:    02:03:22 (7402.2 ms)
+    ru_stime:    00:14:48 (888.0 ms)
+    ru_maxrss:   11552
+    ru_minflt:   2111
+    ru_majflt:   27
+    ru_inblock:  256974112
+    ru_oublock:  834039008
+    ru_nvcsw:    174493
+    ru_nivcsw:   6
+  GNU time:
+    real:        03:11:32 (11492.1 ms)
+    user:        02:03:22 (7402.2 ms)
+    sys:         00:14:48 (888.0 ms)
+  Size (MB):     407,245.60 (427027967446 bytes)
+  Free space:
+                      2.8T  1.4T  1.4T  50% /local-scratch
+
+########################################################################
+#                               sam_comp                               #
+########################################################################
+>>> sam_comp (File 1: HCC1954.mix1.n80t20.bam.sam)
+*** 2016-01-13 01:30:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -r data/sam/ref/Homo_sapiens_assembly19.fasta.sc 
+    stdin:       HCC1954.mix1.n80t20.bam.sam
+    stdout:      HCC1954.mix1.n80t20.bam/output/compressed/sam_comp/HCC1954.mix1.n80t20.bam.sam.zam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.sam_comp.1.cmp.log
+  Process PID:   13525
+  Exit code:     0
+  Wall time:     06:36:46 (23806.7 ms)
+  Memory (MB):   700.2
+  Resources:    
+    ru_utime:    06:16:43 (22603.7 ms)
+    ru_stime:    00:10:36 (636.7 ms)
+    ru_maxrss:   717036
+    ru_minflt:   13472
+    ru_majflt:   6
+    ru_inblock:  840200056
+    ru_oublock:  83051256
+    ru_nvcsw:    11150
+    ru_nivcsw:   10
+  GNU time:     
+    real:        06:36:46 (23806.0 ms)
+    user:        06:16:43 (22603.7 ms)
+    sys:         00:10:36 (636.7 ms)
+  Size (MB):     40,552.24 (42522105465 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/sam_comp/HCC1954.mix1.n80t20.bam.sam.zam)
+  Free space:      2.8T  2.1T  702G  75% /local-scratch
+*** 2016-01-13 08:07:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -d -r data/sam/ref/Homo_sapiens_assembly19.fasta.sc
+    stdin:       HCC1954.mix1.n80t20.bam/output/compressed/sam_comp/HCC1954.mix1.n80t20.bam.sam.zam
+    stdout:      HCC1954.mix1.n80t20.bam/output/decompressed/sam_comp/HCC1954.mix1.n80t20.bam.sam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.sam_comp.1.dec.log
+  Process PID:   18001
+  Exit code:     0
+  Wall time:     09:15:57 (33357.4 ms)
+  Memory (MB):   700.7
+  Resources:    
+    ru_utime:    08:49:44 (31784.4 ms)
+    ru_stime:    00:11:38 (698.7 ms)
+    ru_maxrss:   717504
+    ru_minflt:   11060
+    ru_majflt:   4
+    ru_inblock:  89211216
+    ru_oublock:  493424792
+    ru_nvcsw:    10327
+    ru_nivcsw:   4
+  GNU time:     
+    real:        09:15:57 (33357.3 ms)
+    user:        08:49:44 (31784.4 ms)
+    sys:         00:11:38 (698.7 ms)
+  Size (MB):     240,929.94 (252633354181 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/sam_comp/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  2.3T  467G  84% /local-scratch
+
+########################################################################
+#                                 tsc                                  #
+########################################################################
+>>> tsc (File 1: HCC1954.mix1.n80t20.bam.sam)
+*** 2016-01-13 18:37:09 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.2/src/tsc -f -s -o HCC1954.mix1.n80t20.bam/output/compressed/tsc/HCC1954.mix1.n80t20.bam.sam.tsc HCC1954.mix1.n80t20.bam.sam 
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.tsc.1.cmp.log
+  Process PID:   25515
+  Exit code:     0
+  Wall time:     05:18:47 (19127.0 ms)
+  Memory (MB):   16.3
+  Resources:    
+    ru_utime:    04:40:17 (16817.9 ms)
+    ru_stime:    00:10:13 (613.7 ms)
+    ru_maxrss:   16700
+    ru_minflt:   5807
+    ru_majflt:   7
+    ru_inblock:  834041368
+    ru_oublock:  321544528
+    ru_nvcsw:    27961
+    ru_nivcsw:   8
+  GNU time:     
+    real:        05:18:46 (19126.8 ms)
+    user:        04:40:17 (16817.9 ms)
+    sys:         00:10:13 (613.6 ms)
+  Size (MB):     157,000.19 (164626635755 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/tsc/HCC1954.mix1.n80t20.bam.sam.tsc, HCC1954.mix1.n80t20.bam/output/compressed/tsc/HCC1954.mix1.n80t20.bam.sam.tsc.nuc.log)
+  Free space:      2.8T  2.2T  589G  79% /local-scratch
+*** 2016-01-13 23:56:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.2/src/tsc -f -s -d -o HCC1954.mix1.n80t20.bam/output/decompressed/tsc/HCC1954.mix1.n80t20.bam.sam.sam HCC1954.mix1.n80t20.bam/output/compressed/tsc/HCC1954.mix1.n80t20.bam.sam.tsc
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.tsc.1.dec.log
+  Process PID:   28915
+  Exit code:     0
+  Wall time:     07:32:58 (27178.6 ms)
+  Memory (MB):   13.7
+  Resources:    
+    ru_utime:    06:19:48 (22788.4 ms)
+    ru_stime:    00:22:45 (1365.4 ms)
+    ru_maxrss:   14056
+    ru_minflt:   264985373
+    ru_majflt:   8
+    ru_inblock:  321533336
+    ru_oublock:  834039016
+    ru_nvcsw:    526715
+    ru_nivcsw:   11
+  GNU time:     
+    real:        07:32:58 (27178.5 ms)
+    user:        06:19:48 (22788.4 ms)
+    sys:         00:22:45 (1365.4 ms)
+  Size (MB):     407,245.60 (427027967454 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/tsc/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  2.6T  191G  94% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v HCC1954.mix1.n80t20.bam.sam 
+    stdout:      HCC1954.mix1.n80t20.bam/output/compressed/quip/HCC1954.mix1.n80t20.bam.sam.qp
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.quip.1.cmp.log
+  Process PID:   7429
+  Exit code:     0
+  Wall time:     08:52:09 (31929.5 ms)
+  Memory (MB):   597.7
+  Resources:    
+    ru_utime:    08:31:50 (30710.5 ms)
+    ru_stime:    00:09:23 (563.2 ms)
+    ru_maxrss:   612040
+    ru_minflt:   433213
+    ru_majflt:   15
+    ru_inblock:  834043672
+    ru_oublock:  192013400
+    ru_nvcsw:    208326
+    ru_nivcsw:   10
+  GNU time:     
+    real:        08:52:09 (31929.3 ms)
+    user:        08:31:50 (30710.5 ms)
+    sys:         00:09:23 (563.2 ms)
+  Size (MB):     93,748.63 (98302559310 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/quip/HCC1954.mix1.n80t20.bam.sam.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -d -o sam HCC1954.mix1.n80t20.bam/output/compressed/quip/HCC1954.mix1.n80t20.bam.sam.qp
+    stdout:      HCC1954.mix1.n80t20.bam/output/decompressed/quip/HCC1954.mix1.n80t20.bam.sam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.quip.1.dec.log
+  Process PID:   1864
+  Exit code:     0
+  Wall time:     25:48:56 (92936.3 ms)
+  Memory (MB):   593.9
+  Resources:    
+    ru_utime:    25:06:50 (90410.5 ms)
+    ru_stime:    00:25:32 (1532.3 ms)
+    ru_maxrss:   608164
+    ru_minflt:   437949
+    ru_majflt:   23
+    ru_inblock:  192002640
+    ru_oublock:  833466768
+    ru_nvcsw:    672623
+    ru_nivcsw:   8
+  GNU time:     
+    real:        01:48:56 (92936.1 ms)
+    user:        25:06:50 (90410.5 ms)
+    sys:         00:25:32 (1532.3 ms)
+  Size (MB):     406,966.19 (426734978308 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/quip/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  53% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+*** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v HCC1954.mix1.n80t20.bam.sam -r data/sam/ref/Homo_sapiens_assembly19.fasta
+    stdout:      HCC1954.mix1.n80t20.bam/output/compressed/quip-ref/HCC1954.mix1.n80t20.bam.sam.qp
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.quip-ref.1.cmp.log
+  Process PID:   9486
+  Exit code:     256
+  Wall time:     00:43:15 (2595.4 ms)
+  Memory (MB):   1670.7
+  Resources:    
+    ru_utime:    00:41:49 (2509.8 ms)
+    ru_stime:    00:00:41 (41.6 ms)
+    ru_maxrss:   1710764
+    ru_minflt:   152463
+    ru_majflt:   16
+    ru_inblock:  74027600
+    ru_oublock:  12890392
+    ru_nvcsw:    17150
+    ru_nivcsw:   12
+  GNU time:     
+    real:        00:43:15 (2595.3 ms)
+    user:        00:41:49 (2509.8 ms)
+    sys:         00:00:41 (41.6 ms)
+  Size (MB):     6,293.49 (6599202080 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/quip-ref/HCC1954.mix1.n80t20.bam.sam.qp)
+  Free space:      2.8T  978G  1.8T  36% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: HCC1954.mix1.n80t20.bam.sam)
+*** 2016-01-15 05:44:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/compressed/deez/HCC1954.mix1.n80t20.bam.sam.dz 
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez.1.cmp.log
+  Process PID:   5664
+  Exit code:     0
+  Wall time:     09:45:46 (35146.7 ms)
+  Memory (MB):   2495.2
+  Resources:    
+    ru_utime:    09:16:39 (33399.8 ms)
+    ru_stime:    00:24:01 (1441.6 ms)
+    ru_maxrss:   2555084
+    ru_minflt:   5036288
+    ru_majflt:   49
+    ru_inblock:  840231056
+    ru_oublock:  155088488
+    ru_nvcsw:    35138
+    ru_nivcsw:   13
+  GNU time:     
+    real:        09:45:46 (35146.3 ms)
+    user:        09:16:39 (33399.8 ms)
+    sys:         00:24:01 (1441.5 ms)
+  Size (MB):     74,837.68 (78472998834 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/deez/HCC1954.mix1.n80t20.bam.sam.dz)
+  Free space:      2.8T  2.2T  599G  79% /local-scratch
+*** 2016-01-15 15:30:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam/output/compressed/deez/HCC1954.mix1.n80t20.bam.sam.dz -o HCC1954.mix1.n80t20.bam/output/decompressed/deez/HCC1954.mix1.n80t20.bam.sam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez.1.dec.log
+  Process PID:   16060
+  Exit code:     0
+  Wall time:     08:23:12 (30192.4 ms)
+  Memory (MB):   3085.6
+  Resources:    
+    ru_utime:    07:42:07 (27727.6 ms)
+    ru_stime:    00:19:44 (1184.3 ms)
+    ru_maxrss:   3159676
+    ru_minflt:   5151596
+    ru_majflt:   37
+    ru_inblock:  159459496
+    ru_oublock:  834045832
+    ru_nvcsw:    336614
+    ru_nivcsw:   10
+  GNU time:     
+    real:        08:23:12 (30192.2 ms)
+    user:        07:42:07 (27727.6 ms)
+    sys:         00:19:44 (1184.3 ms)
+  Size (MB):     407,245.60 (427027967454 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/deez/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  2.6T  202G  93% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: HCC1954.mix1.n80t20.bam.sam)
+*** 2016-01-16 02:07:58 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/compressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.dz -q1 -b
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez-qual.1.cmp.log
+  Process PID:   25523
+  Exit code:     0
+  Wall time:     17:47:10 (64030.1 ms)
+  Memory (MB):   2835.0
+  Resources:    
+    ru_utime:    16:55:51 (60951.1 ms)
+    ru_stime:    00:45:04 (2704.9 ms)
+    ru_maxrss:   2903048
+    ru_minflt:   29688680
+    ru_majflt:   49
+    ru_inblock:  840230712
+    ru_oublock:  147834000
+    ru_nvcsw:    35665
+    ru_nivcsw:   11
+  GNU time:     
+    real:        17:47:09 (64029.8 ms)
+    user:        16:55:51 (60951.1 ms)
+    sys:         00:45:04 (2704.9 ms)
+  Size (MB):     71,056.98 (74508640542 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.dz)
+  Free space:      2.8T  2.2T  603G  79% /local-scratch
+*** 2016-01-16 19:55:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam/output/compressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.dz -o HCC1954.mix1.n80t20.bam/output/decompressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez-qual.1.dec.log
+  Process PID:   9583
+  Exit code:     0
+  Wall time:     18:13:55 (65635.2 ms)
+  Memory (MB):   3499.9
+  Resources:    
+    ru_utime:    17:48:21 (64101.3 ms)
+    ru_stime:    00:21:10 (1270.7 ms)
+    ru_maxrss:   3583872
+    ru_minflt:   5479853
+    ru_majflt:   48
+    ru_inblock:  151716856
+    ru_oublock:  834046760
+    ru_nvcsw:    305478
+    ru_nivcsw:   14
+  GNU time:     
+    real:        18:13:54 (65634.4 ms)
+    user:        17:48:21 (64101.3 ms)
+    sys:         00:21:10 (1270.7 ms)
+  Size (MB):     407,245.60 (427027967454 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  2.6T  205G  93% /local-scratch
+
+######################################################################## 
+#                                picard                                # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=HCC1954.mix1.n80t20.bam.sam O=HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.picard.bam VALIDATION_STRINGENCY=SILENT
+  stderr:      HCC1954.mix1.n80t20.bam/log/picard.1.cmp.log
+  Process PID:   5542
+  Exit code:     0
+  Wall time:     12:36:42 (45402.8 ms)
+  Memory (MB):   653.2
+  Resources:    
+    ru_utime:    12:15:57 (44157.8 ms)
+    ru_stime:    00:11:26 (686.0 ms)
+    ru_maxrss:   668852
+    ru_minflt:   67246
+    ru_majflt:   198
+    ru_inblock:  834149568
+    ru_oublock:  259574624
+    ru_nvcsw:    1095995
+    ru_nivcsw:   5650300
+  GNU time:     
+    real:        12:36:42 (45402.7 ms)
+    user:        12:15:57 (44157.8 ms)
+    sys:         00:11:26 (686.0 ms)
+  Size (MB):     126,706.48 (132861369274 bytes)
+  Free space:     
+                      2.8T  2.1T  705G  75% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.picard.bam O=HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.picard.bam.sam VALIDATION_STRINGENCY=SILENT
+  stderr:      HCC1954.mix1.n80t20.bam/log/picard.1.dec.log
+  Process PID:   13999
+  Exit code:     0
+  Wall time:     05:26:11 (19571.0 ms)
+  Memory (MB):   690.0
+  Resources:    
+    ru_utime:    04:52:02 (17522.7 ms)
+    ru_stime:    00:14:53 (893.4 ms)
+    ru_maxrss:   706524
+    ru_minflt:   54734
+    ru_majflt:   201
+    ru_inblock:  259606304
+    ru_oublock:  834069688
+    ru_nvcsw:    470071
+    ru_nivcsw:   2054037
+  GNU time:     
+    real:        05:26:11 (19571.0 ms)
+    user:        04:52:02 (17522.7 ms)
+    sys:         00:14:53 (893.4 ms)
+  Size (MB):     407,245.60 (427027967454 bytes)
+  Free space:     
+                      2.8T  2.5T  307G  90% /local-scratch
+
+########################################################################
+#                              cramtools                               #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar cram --ignore-md5-mismatch --capture-all-tags --input-is-sam -Q -n -R data/sam/ref/Homo_sapiens_assembly19.fasta -I HCC1954.mix1.n80t20.bam.sam -O HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.cram
+    stderr:      HCC1954.mix1.n80t20.bam/log/cramtools.1.cmp.log
+  Process PID:   15629
+  Exit code:     0
+  Wall time:     13:45:13 (49513.2 ms)
+  Memory (MB):   11398.9
+  Resources:
+    ru_utime:    12:34:23 (45263.9 ms)
+    ru_stime:    00:49:04 (2944.3 ms)
+    ru_maxrss:   11672524
+    ru_minflt:   26749235
+    ru_majflt:   163
+    ru_inblock:  843007120
+    ru_oublock:  187336432
+    ru_nvcsw:    607505
+    ru_nivcsw:   872873
+  GNU time:
+    real:        13:45:13 (49513.1 ms)
+    user:        12:34:23 (45263.9 ms)
+    sys:         00:49:04 (2944.3 ms)
+  Size (MB):     91,020.89 (95442323667 bytes)
+  Free space:
+                      2.8T  952G  1.8T  35% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar bam --ignore-md5-mismatch --print-sam-header -R data/sam/ref/Homo_sapiens_assembly19.fasta -I HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.cram -O HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.cram.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/cramtools.1.dec.log
+  Process PID:   4241
+  Exit code:     0
+  Wall time:     04:16:50 (15410.2 ms)
+  Memory (MB):   11160.0
+  Resources:
+    ru_utime:    03:29:30 (12570.4 ms)
+    ru_stime:    00:12:38 (758.3 ms)
+    ru_maxrss:   11427844
+    ru_minflt:   17442285
+    ru_majflt:   159
+    ru_inblock:  195404936
+    ru_oublock:  805395712
+    ru_nvcsw:    608699
+    ru_nivcsw:   287648
+  GNU time:
+    real:        04:16:50 (15410.1 ms)
+    user:        03:29:30 (12570.4 ms)
+    sys:         00:12:38 (758.3 ms)
+  Size (MB):     393,084.15 (412178609830 bytes)   
+  Free space:
+                      2.8T  1.4T  1.5T  48% /local-scratch
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                HCC1954.mix1.n80t20.bam with 4 threads                + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+########################################################################
+#                                 pigz                                 #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/pigz-2.3.3/pigz -c -p 4
+    stdin:       HCC1954.mix1.n80t20.bam.sam
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.gz
+    stderr:      HCC1954.mix1.n80t20.bam/log/pigz.4.cmp.log
+  Process PID:   12602
+  Exit code:     0
+  Wall time:     04:18:03 (15483.1 ms)
+  Memory (MB):   5.7
+  Resources:
+    ru_utime:    16:16:08 (58568.7 ms)
+    ru_stime:    00:21:30 (1290.6 ms)
+    ru_maxrss:   5820
+    ru_minflt:   1492
+    ru_majflt:   9
+    ru_inblock:  834042008
+    ru_oublock:  234065720
+    ru_nvcsw:    7787658
+    ru_nivcsw:   10
+  GNU time:
+    real:        04:18:03 (15483.0 ms)
+    user:        16:16:08 (58568.7 ms)
+    sys:         00:21:30 (1290.6 ms)
+  Size (MB):     114,287.64 (119839278315 bytes)   
+  Free space:
+                      2.8T  975G  1.8T  35% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.gz
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.gz.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/pigz.4.dec.log
+  Process PID:   18962
+  Exit code:     0
+  Wall time:     02:04:37 (7477.9 ms)
+  Memory (MB):   5.7
+  Resources:
+    ru_utime:    01:45:20 (6320.1 ms)
+    ru_stime:    00:27:01 (1621.9 ms)
+    ru_maxrss:   5820
+    ru_minflt:   767
+    ru_majflt:   8
+    ru_inblock:  234063760
+    ru_oublock:  834039008
+    ru_nvcsw:    30018574
+    ru_nivcsw:   8
+  GNU time:
+    real:        02:04:37 (7477.8 ms)
+    user:        01:45:20 (6320.1 ms)
+    sys:         00:27:01 (1621.9 ms)
+  Size (MB):     407,245.60 (427027967454 bytes)   
+  Free space:
+                      2.8T  1.4T  1.4T  50% /local-scratch
+
+########################################################################
+#                                pbzip2                                #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -p4
+    stdin:       HCC1954.mix1.n80t20.bam.sam
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bz2
+    stderr:      HCC1954.mix1.n80t20.bam/log/pbzip2.4.cmp.log
+  Process PID:   22064
+  Exit code:     0
+  Wall time:     06:21:03 (22863.5 ms)
+  Memory (MB):   68.2
+  Resources:
+    ru_utime:    00:28:51 (88131.4 ms)
+    ru_stime:    00:57:45 (3465.8 ms)
+    ru_maxrss:   69840
+    ru_minflt:   628968819
+    ru_majflt:   9
+    ru_inblock:  834065616
+    ru_oublock:  195868464
+    ru_nvcsw:    2401615
+    ru_nivcsw:   9
+  GNU time:
+    real:        06:21:03 (22863.4 ms)
+    user:        00:28:51 (88131.4 ms)
+    sys:         00:57:45 (3465.8 ms)
+  Size (MB):     95,634.31 (100279840732 bytes)
+  Free space:
+                      2.8T  1.5T  1.3T  53% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bz2
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bz2.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/pbzip2.4.dec.log
+  Process PID:   31696
+  Exit code:     0
+  Wall time:     02:27:19 (8839.9 ms)
+  Memory (MB):   111.8
+  Resources:
+    ru_utime:    08:48:28 (31708.1 ms)
+    ru_stime:    00:44:35 (2675.3 ms)
+    ru_maxrss:   114500
+    ru_minflt:   443477308
+    ru_majflt:   8
+    ru_inblock:  195885488
+    ru_oublock:  834039968
+    ru_nvcsw:    1015697
+    ru_nivcsw:   13
+  GNU time:
+    real:        02:27:19 (8839.8 ms)
+    user:        08:48:28 (31708.1 ms)
+    sys:         00:44:35 (2675.3 ms)
+  Size (MB):     407,245.60 (427027967454 bytes)   
+  Free space:
+                      2.8T  1.9T  929G  67% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble.cram
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble.4.cmp.log
+  Process PID:   18575
+  Exit code:     0
+  Wall time:     01:15:10 (4510.5 ms)
+  Memory (MB):   1042.8
+  Resources:    
+    ru_utime:    02:57:32 (10652.4 ms)
+    ru_stime:    00:11:25 (685.3 ms)
+    ru_maxrss:   1067868
+    ru_minflt:   47615219
+    ru_majflt:   39
+    ru_inblock:  840183848
+    ru_oublock:  160167680
+    ru_nvcsw:    2385320
+    ru_nivcsw:   8
+  GNU time:     
+    real:        01:15:10 (4510.4 ms)
+    user:        02:57:32 (10652.4 ms)
+    sys:         00:11:25 (685.3 ms)
+  Size (MB):     78,206.00 (82004936817 bytes)
+  Free space:     
+                      2.8T  2.0T  752G  74% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble.cram HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble.cram.sam
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble.4.dec.log
+  Process PID:   19411
+  Exit code:     0
+  Wall time:     01:11:34 (4294.1 ms)
+  Memory (MB):   854.0
+  Resources:    
+    ru_utime:    02:16:35 (8195.9 ms)
+    ru_stime:    00:13:13 (793.7 ms)
+    ru_maxrss:   874464
+    ru_minflt:   39926314
+    ru_majflt:   40
+    ru_inblock:  166310328
+    ru_oublock:  805033440
+    ru_nvcsw:    387137
+    ru_nivcsw:   10
+  GNU time:     
+    real:        01:11:34 (4294.0 ms)
+    user:        02:16:35 (8195.9 ms)
+    sys:         00:13:13 (793.7 ms)
+  Size (MB):     393,082.73 (412177114203 bytes)
+  Free space:     
+                      2.8T  2.4T  369G  87% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I sam -O cram -t 4 HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-noref.cram
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-noref.4.cmp.log
+  Process PID:   21018
+  Exit code:     0
+  Wall time:     01:10:15 (4215.1 ms)
+  Memory (MB):   431.4
+  Resources:    
+    ru_utime:    03:22:23 (12143.8 ms)
+    ru_stime:    00:10:35 (635.2 ms)
+    ru_maxrss:   441776
+    ru_minflt:   55138601
+    ru_majflt:   40
+    ru_inblock:  834049448
+    ru_oublock:  169753776
+    ru_nvcsw:    2379366
+    ru_nivcsw:   9
+  GNU time:     
+    real:        01:10:15 (4215.0 ms)
+    user:        03:22:23 (12143.8 ms)
+    sys:         00:10:35 (635.2 ms)
+  Size (MB):     82,887.17 (86913494440 bytes)
+  Free space:     
+                      2.8T  2.0T  748G  74% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I cram -O sam -t 4 HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-noref.cram HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-noref.cram.sam
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-noref.4.dec.log
+  Process PID:   21829
+  Exit code:     0
+  Wall time:     01:14:32 (4472.9 ms)
+  Memory (MB):   432.9
+  Resources:    
+    ru_utime:    02:32:38 (9158.7 ms)
+    ru_stime:    00:14:39 (879.6 ms)
+    ru_maxrss:   443308
+    ru_minflt:   49600836
+    ru_majflt:   40
+    ru_inblock:  169763032
+    ru_oublock:  834039032
+    ru_nvcsw:    417675
+    ru_nivcsw:   8
+  GNU time:     
+    real:        01:14:32 (4472.9 ms)
+    user:        02:32:38 (9158.7 ms)
+    sys:         00:14:39 (879.6 ms)
+  Size (MB):     407,245.61 (427027973205 bytes)
+  Free space:     
+                      2.8T  2.4T  350G  88% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -7 -I sam -O cram -t 4 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-bz2.cram
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-bzip2.4.cmp.log
+  Process PID:   23514
+  Exit code:     0
+  Wall time:     01:13:14 (4394.6 ms)
+  Memory (MB):   1057.9
+  Resources:    
+    ru_utime:    04:26:49 (16009.0 ms)
+    ru_stime:    00:11:45 (705.8 ms)
+    ru_maxrss:   1083268
+    ru_minflt:   48833726
+    ru_majflt:   40
+    ru_inblock:  840183368
+    ru_oublock:  156435728
+    ru_nvcsw:    2378380
+    ru_nivcsw:   34
+  GNU time:     
+    real:        01:13:14 (4394.5 ms)
+    user:        04:26:49 (16009.0 ms)
+    sys:         00:11:45 (705.8 ms)
+  Size (MB):     76,383.48 (80093883612 bytes)
+  Free space:     
+                      2.8T  2.0T  754G  74% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -I cram -O sam -t 4 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-bz2.cram HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-bz2.cram.sam
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-bzip2.4.dec.log
+  Process PID:   24354
+  Exit code:     0
+  Wall time:     01:14:25 (4465.2 ms)
+  Memory (MB):   794.1
+  Resources:    
+    ru_utime:    02:57:16 (10636.9 ms)
+    ru_stime:    00:16:59 (1019.4 ms)
+    ru_maxrss:   813152
+    ru_minflt:   72064812
+    ru_majflt:   40
+    ru_inblock:  162577792
+    ru_oublock:  805033448
+    ru_nvcsw:    367086
+    ru_nivcsw:   79
+  GNU time:     
+    real:        01:14:25 (4465.1 ms)
+    user:        02:57:16 (10636.9 ms)
+    sys:         00:16:59 (1019.4 ms)
+  Size (MB):     393,082.73 (412177114434 bytes)
+  Free space:     
+                      2.8T  2.4T  370G  87% /local-scratch
+
+########################################################################
+#                               sambamba                               #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 4 HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.sambamba.bam
+    stderr:      HCC1954.mix1.n80t20.bam/log/sambamba.4.cmp.log
+  Process PID:   28375
+  Exit code:     0
+  Wall time:     03:29:01 (12541.4 ms)
+  Memory (MB):   15.6
+  Resources:
+    ru_utime:    14:04:02 (50642.0 ms)
+    ru_stime:    00:29:10 (1750.0 ms)
+    ru_maxrss:   15972
+    ru_minflt:   186505236
+    ru_majflt:   35
+    ru_inblock:  834048048
+    ru_oublock:  256986424
+    ru_nvcsw:    2846286
+    ru_nivcsw:   429
+  GNU time:
+    real:        03:29:01 (12541.3 ms)
+    user:        14:04:02 (50642.0 ms)
+    sys:         00:29:10 (1750.0 ms)
+  Size (MB):     125,471.21 (131566096220 bytes)
+  Free space:
+                      2.8T  2.4T  399G  86% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -h -t 4 HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.sambamba.bam -o HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.sambamba.bam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/sambamba.4.dec.log
+  Process PID:   1233
+  Exit code:     0
+  Wall time:     01:58:20 (7100.4 ms)
+  Memory (MB):   19.4
+  Resources:
+    ru_utime:    02:21:06 (8466.6 ms)
+    ru_stime:    00:21:48 (1308.6 ms)
+    ru_maxrss:   19912
+    ru_minflt:   2413
+    ru_majflt:   39
+    ru_inblock:  256974504
+    ru_oublock:  834039008
+    ru_nvcsw:    5449152
+    ru_nivcsw:   7
+  GNU time:
+    real:        01:58:20 (7100.4 ms)
+    user:        02:21:06 (8466.6 ms)
+    sys:         00:21:48 (1308.6 ms)
+  Size (MB):     407,245.60 (427027967446 bytes)
+  Free space:
+                      2.8T  2.8T  1.1G 100% /local-scratch
+
+########################################################################
+#                                 quip                                 #
+########################################################################
+>>> quip (File 1: sam/HCC1954.mix1.n80t20.bam.sam)
+*** 2016-08-29 20:05:15 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v sam/HCC1954.mix1.n80t20.bam.sam
+    stdout:      HCC1954.mix1.n80t20.bam/output/compressed/quip/HCC1954.mix1.n80t20.bam.sam.qp
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.quip.4.cmp.log
+  Process PID:   5865
+  Exit code:     0
+  Wall time:     04:44:52 (17092.5 ms)
+  Memory (MB):   601.6
+  Resources:
+    ru_utime:    09:48:17 (35297.2 ms)
+    ru_stime:    00:11:44 (704.5 ms)
+    ru_maxrss:   616024
+    ru_minflt:   433646
+    ru_majflt:   18
+    ru_inblock:  834043248
+    ru_oublock:  192010120
+    ru_nvcsw:    700146
+    ru_nivcsw:   4938940
+  GNU time:
+    real:        04:44:52 (17092.3 ms)
+    user:        09:48:17 (35297.2 ms)
+    sys:         00:11:44 (704.5 ms)
+  Size (MB):     93,748.63 (98302559310 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/quip/HCC1954.mix1.n80t20.bam.sam.qp)
+  Free space:      2.8T  1.5T  1.3T  55% /local-scratch
+*** 2016-08-30 00:50:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o sam HCC1954.mix1.n80t20.bam/output/compressed/quip/HCC1954.mix1.n80t20.bam.sam.qp
+    stdout:      HCC1954.mix1.n80t20.bam/output/decompressed/quip/HCC1954.mix1.n80t20.bam.sam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.quip.4.dec.log
+  Process PID:   30492
+  Exit code:     0
+  Wall time:     05:57:31 (21451.7 ms)
+  Memory (MB):   594.0
+  Resources:
+    ru_utime:    11:50:59 (42659.6 ms)
+    ru_stime:    00:12:17 (737.5 ms)
+    ru_maxrss:   608264
+    ru_minflt:   435605
+    ru_majflt:   23
+    ru_inblock:  192002288
+    ru_oublock:  833466768
+    ru_nvcsw:    1156682
+    ru_nivcsw:   5628052
+  GNU time:
+    real:        05:57:31 (21451.5 ms)
+    user:        11:50:59 (42659.6 ms)
+    sys:         00:12:17 (737.5 ms)
+  Size (MB):     406,966.19 (426734978308 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/quip/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  1.9T  879G  69% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: HCC1954.mix1.n80t20.bam.sam)
+*** 2016-01-17 16:20:52 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/compressed/deez/HCC1954.mix1.n80t20.bam.sam.dz 
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez.4.cmp.log
+  Process PID:   25210
+  Exit code:     0
+  Wall time:     03:14:08 (11648.8 ms)
+  Memory (MB):   2452.1
+  Resources:    
+    ru_utime:    05:27:25 (19645.8 ms)
+    ru_stime:    00:35:29 (2129.6 ms)
+    ru_maxrss:   2510968
+    ru_minflt:   26739519
+    ru_majflt:   55
+    ru_inblock:  840232144
+    ru_oublock:  153723104
+    ru_nvcsw:    144095
+    ru_nivcsw:   5394945
+  GNU time:     
+    real:        03:14:08 (11648.4 ms)
+    user:        05:27:25 (19645.8 ms)
+    sys:         00:35:29 (2129.6 ms)
+  Size (MB):     74,845.52 (78481216414 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/deez/HCC1954.mix1.n80t20.bam.sam.dz)
+  Free space:      2.8T  2.2T  599G  79% /local-scratch
+*** 2016-01-17 19:35:30 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam/output/compressed/deez/HCC1954.mix1.n80t20.bam.sam.dz -o HCC1954.mix1.n80t20.bam/output/decompressed/deez/HCC1954.mix1.n80t20.bam.sam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez.4.dec.log
+  Process PID:   11406
+  Exit code:     0
+  Wall time:     02:45:46 (9946.5 ms)
+  Memory (MB):   5113.4
+  Resources:    
+    ru_utime:    03:44:12 (13452.2 ms)
+    ru_stime:    00:33:08 (1988.9 ms)
+    ru_maxrss:   5236108
+    ru_minflt:   8162739
+    ru_majflt:   49
+    ru_inblock:  159475617
+    ru_oublock:  834056208
+    ru_nvcsw:    149577470
+    ru_nivcsw:   1856208
+  GNU time:     
+    real:        02:45:46 (9946.2 ms)
+    user:        03:44:12 (13452.2 ms)
+    sys:         00:33:08 (1988.9 ms)
+  Size (MB):     407,245.60 (427027967454 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/deez/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  2.6T  202G  93% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: HCC1954.mix1.n80t20.bam.sam)
+*** 2016-01-18 00:43:31 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/compressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.dz -q1 -b
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez-qual.4.cmp.log
+  Process PID:   23169
+  Exit code:     0
+  Wall time:     04:23:52 (15832.8 ms)
+  Memory (MB):   2876.9
+  Resources:    
+    ru_utime:    09:08:07 (32887.9 ms)
+    ru_stime:    00:27:50 (1670.5 ms)
+    ru_maxrss:   2945972
+    ru_minflt:   47355295
+    ru_majflt:   45
+    ru_inblock:  840206824
+    ru_oublock:  145816064
+    ru_nvcsw:    140296
+    ru_nivcsw:   6693013
+  GNU time:     
+    real:        04:23:52 (15832.5 ms)
+    user:        09:08:07 (32887.9 ms)
+    sys:         00:27:50 (1670.5 ms)
+  Size (MB):     71,064.33 (74516349528 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.dz)
+  Free space:      2.8T  2.2T  603G  79% /local-scratch
+*** 2016-01-18 05:07:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam/output/compressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.dz -o HCC1954.mix1.n80t20.bam/output/decompressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez-qual.4.dec.log
+  Process PID:   10359
+  Exit code:     0
+  Wall time:     04:51:09 (17469.7 ms)
+  Memory (MB):   6055.6
+  Resources:    
+    ru_utime:    06:58:07 (25087.3 ms)
+    ru_stime:    00:30:56 (1856.0 ms)
+    ru_maxrss:   6200956
+    ru_minflt:   10716253
+    ru_majflt:   44
+    ru_inblock:  151707896
+    ru_oublock:  834136200
+    ru_nvcsw:    129387460
+    ru_nivcsw:   2997613
+  GNU time:     
+    real:        04:51:09 (17469.6 ms)
+    user:        06:58:07 (25087.3 ms)
+    sys:         00:30:56 (1856.0 ms)
+  Size (MB):     407,245.60 (427027967454 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  2.6T  205G  93% /local-scratch
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                HCC1954.mix1.n80t20.bam with 8 threads                + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+########################################################################
+#                                 pigz                                 #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/pigz-2.3.3/pigz -c -p 8
+    stdin:       HCC1954.mix1.n80t20.bam.sam
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.gz
+    stderr:      HCC1954.mix1.n80t20.bam/log/pigz.8.cmp.log
+  Process PID:   24560 
+  Exit code:     0
+  Wall time:     02:28:52 (8932.8 ms)
+  Memory (MB):   8.1   
+  Resources:
+    ru_utime:    17:21:35 (62495.0 ms)
+    ru_stime:    00:21:06 (1266.7 ms)
+    ru_maxrss:   8332  
+    ru_minflt:   2120  
+    ru_majflt:   9
+    ru_inblock:  834041960
+    ru_oublock:  234063480
+    ru_nvcsw:    7751919
+    ru_nivcsw:   49
+  GNU time:
+    real:        02:28:52 (8932.7 ms)
+    user:        17:21:34 (62494.9 ms)
+    sys:         00:21:06 (1266.6 ms)
+  Size (MB):     114,287.64 (119839278315 bytes)
+  Free space:
+                      2.8T  971G  1.8T  35% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.gz
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.gz.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/pigz.8.dec.log
+  Process PID:   28292 
+  Exit code:     0
+  Wall time:     02:41:58 (9718.2 ms)
+  Memory (MB):   5.7   
+  Resources:
+    ru_utime:    01:49:25 (6565.4 ms)
+    ru_stime:    00:27:35 (1655.8 ms)
+    ru_maxrss:   5820  
+    ru_minflt:   765   
+    ru_majflt:   3
+    ru_inblock:  234063560
+    ru_oublock:  834039008
+    ru_nvcsw:    30005957
+    ru_nivcsw:   7
+  GNU time:
+    real:        02:41:58 (9718.2 ms)
+    user:        01:49:25 (6565.4 ms)
+    sys:         00:27:35 (1655.8 ms)
+  Size (MB):     407,245.60 (427027967454 bytes)
+  Free space:
+                      2.8T  1.4T  1.4T  50% /local-scratch
+
+########################################################################
+#                                pbzip2                                #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -p8
+    stdin:       HCC1954.mix1.n80t20.bam.sam
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bz2
+    stderr:      HCC1954.mix1.n80t20.bam/log/pbzip2.8.cmp.log
+  Process PID:   355   
+  Exit code:     0
+  Wall time:     04:02:41 (14561.4 ms)
+  Memory (MB):   91.2  
+  Resources:
+    ru_utime:    06:46:17 (110777.9 ms)
+    ru_stime:    01:05:27 (3927.4 ms)
+    ru_maxrss:   93388 
+    ru_minflt:   609499712
+    ru_majflt:   11
+    ru_inblock:  834089312
+    ru_oublock:  195976696
+    ru_nvcsw:    2261144
+    ru_nivcsw:   9
+  GNU time:
+    real:        04:02:41 (14561.3 ms)
+    user:        06:46:17 (110777.9 ms)
+    sys:         01:05:27 (3927.4 ms)
+  Size (MB):     95,634.31 (100279840732 bytes)
+  Free space:
+                      2.8T  1.5T  1.3T  53% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bz2
+    stdout:      HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.bz2.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/pbzip2.8.dec.log
+  Process PID:   7136  
+  Exit code:     0
+  Wall time:     01:56:20 (6980.0 ms)
+  Memory (MB):   127.0 
+  Resources:
+    ru_utime:    12:49:24 (46164.0 ms)
+    ru_stime:    00:57:02 (3422.1 ms)
+    ru_maxrss:   130096
+    ru_minflt:   447628885
+    ru_majflt:   5
+    ru_inblock:  195884960
+    ru_oublock:  834040248
+    ru_nvcsw:    932355
+    ru_nivcsw:   30
+  GNU time:
+    real:        01:56:20 (6980.0 ms)
+    user:        12:49:24 (46164.0 ms)
+    sys:         00:57:02 (3422.1 ms)
+  Size (MB):     407,245.60 (427027967454 bytes)
+  Free space:
+                      2.8T  1.9T  933G  67% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble.cram
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble.8.cmp.log
+  Process PID:   26012
+  Exit code:     0
+  Wall time:     01:15:05 (4505.7 ms)
+  Memory (MB):   1418.0
+  Resources:    
+    ru_utime:    03:03:36 (11016.4 ms)
+    ru_stime:    00:09:13 (553.3 ms)
+    ru_maxrss:   1452004
+    ru_minflt:   27508518
+    ru_majflt:   44
+    ru_inblock:  840184400
+    ru_oublock:  160123320
+    ru_nvcsw:    2267743
+    ru_nivcsw:   12
+  GNU time:     
+    real:        01:15:05 (4505.6 ms)
+    user:        03:03:36 (11016.4 ms)
+    sys:         00:09:13 (553.3 ms)
+  Size (MB):     78,182.75 (81980555582 bytes)
+  Free space:     
+                      2.8T  2.0T  752G  74% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble.cram HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble.cram.sam
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble.8.dec.log
+  Process PID:   26862
+  Exit code:     0
+  Wall time:     01:13:30 (4410.4 ms)
+  Memory (MB):   1067.3
+  Resources:    
+    ru_utime:    02:37:14 (9434.0 ms)
+    ru_stime:    00:14:35 (875.1 ms)
+    ru_maxrss:   1092924
+    ru_minflt:   52226361
+    ru_majflt:   45
+    ru_inblock:  166263824
+    ru_oublock:  805042896
+    ru_nvcsw:    395278
+    ru_nivcsw:   11
+  GNU time:     
+    real:        01:13:30 (4410.3 ms)
+    user:        02:37:14 (9434.0 ms)
+    sys:         00:14:35 (875.1 ms)
+  Size (MB):     393,082.73 (412177114203 bytes)
+  Free space:     
+                      2.8T  2.4T  369G  87% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I sam -O cram -t 8 HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-noref.cram
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-noref.8.cmp.log
+  Process PID:   28789
+  Exit code:     0
+  Wall time:     01:11:19 (4279.7 ms)
+  Memory (MB):   457.1
+  Resources:    
+    ru_utime:    03:27:33 (12453.4 ms)
+    ru_stime:    00:11:33 (693.0 ms)
+    ru_maxrss:   468068
+    ru_minflt:   64869517
+    ru_majflt:   44
+    ru_inblock:  834050329
+    ru_oublock:  169760672
+    ru_nvcsw:    2277702
+    ru_nivcsw:   5
+  GNU time:     
+    real:        01:11:19 (4279.6 ms)
+    user:        03:27:33 (12453.4 ms)
+    sys:         00:11:33 (693.0 ms)
+  Size (MB):     82,887.15 (86913479968 bytes)
+  Free space:     
+                      2.8T  2.0T  748G  74% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I cram -O sam -t 8 HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-noref.cram HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-noref.cram.sam
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-noref.8.dec.log
+  Process PID:   29594
+  Exit code:     0
+  Wall time:     01:15:55 (4555.1 ms)
+  Memory (MB):   858.1
+  Resources:    
+    ru_utime:    02:52:41 (10361.9 ms)
+    ru_stime:    00:15:33 (933.6 ms)
+    ru_maxrss:   878740
+    ru_minflt:   65143426
+    ru_majflt:   41
+    ru_inblock:  169763144
+    ru_oublock:  834039024
+    ru_nvcsw:    434064
+    ru_nivcsw:   15
+  GNU time:     
+    real:        01:15:55 (4555.0 ms)
+    user:        02:52:41 (10361.9 ms)
+    sys:         00:15:33 (933.6 ms)
+  Size (MB):     407,245.61 (427027973205 bytes)
+  Free space:     
+                      2.8T  2.4T  350G  88% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -7 -I sam -O cram -t 8 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-bz2.cram
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-bzip2.8.cmp.log
+  Process PID:   31260
+  Exit code:     0
+  Wall time:     01:12:30 (4350.1 ms)
+  Memory (MB):   1450.2
+  Resources:    
+    ru_utime:    05:08:00 (18480.8 ms)
+    ru_stime:    00:13:18 (798.3 ms)
+    ru_maxrss:   1484956
+    ru_minflt:   74982208
+    ru_majflt:   39
+    ru_inblock:  840183456
+    ru_oublock:  156435888
+    ru_nvcsw:    2095074
+    ru_nivcsw:   23
+  GNU time:     
+    real:        01:12:30 (4350.1 ms)
+    user:        05:08:00 (18480.8 ms)
+    sys:         00:13:18 (798.3 ms)
+  Size (MB):     76,383.45 (80093856982 bytes)
+  Free space:     
+                      2.8T  2.0T  754G  74% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -I cram -O sam -t 8 -r data/sam/ref/Homo_sapiens_assembly19.fasta HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-bz2.cram HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.scramble-bz2.cram.sam
+  stderr:      HCC1954.mix1.n80t20.bam/log/scramble-bzip2.8.dec.log
+  Process PID:   32081
+  Exit code:     0
+  Wall time:     01:12:53 (4373.4 ms)
+  Memory (MB):   1077.8
+  Resources:    
+    ru_utime:    03:11:14 (11474.4 ms)
+    ru_stime:    00:16:27 (987.8 ms)
+    ru_maxrss:   1103712
+    ru_minflt:   77535446
+    ru_majflt:   40
+    ru_inblock:  162577752
+    ru_oublock:  805033440
+    ru_nvcsw:    374962
+    ru_nivcsw:   23
+  GNU time:     
+    real:        01:12:53 (4373.3 ms)
+    user:        03:11:14 (11474.4 ms)
+    sys:         00:16:27 (987.8 ms)
+  Size (MB):     393,082.73 (412177114434 bytes)
+  Free space:     
+                      2.8T  2.4T  370G  87% /local-scratch
+
+########################################################################
+#                               sambamba                               #
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 8 HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.sambamba.bam   
+    stderr:      HCC1954.mix1.n80t20.bam/log/sambamba.8.cmp.log
+  Process PID:   1045  
+  Exit code:     0
+  Wall time:     02:24:19 (8659.0 ms)
+  Memory (MB):   24.7  
+  Resources:
+    ru_utime:    16:18:36 (58716.6 ms)
+    ru_stime:    00:30:08 (1808.6 ms)
+    ru_maxrss:   25336 
+    ru_minflt:   186505382
+    ru_majflt:   22
+    ru_inblock:  834046056
+    ru_oublock:  256985072
+    ru_nvcsw:    2302278
+    ru_nivcsw:   32
+  GNU time:
+    real:        02:24:18 (8658.9 ms)
+    user:        16:18:36 (58716.6 ms)
+    sys:         00:30:08 (1808.6 ms)
+  Size (MB):     125,471.21 (131566096220 bytes)
+  Free space:
+                      2.8T  2.5T  321G  89% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -h -t 8 HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.sambamba.bam -o HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.sambamba.bam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/sambamba.8.dec.log
+  Process PID:   2783  
+  Exit code:     0
+  Wall time:     02:27:02 (8822.5 ms)
+  Memory (MB):   42.4  
+  Resources:
+    ru_utime:    03:04:06 (11046.1 ms)
+    ru_stime:    00:23:29 (1409.6 ms)
+    ru_maxrss:   43384 
+    ru_minflt:   3980  
+    ru_majflt:   35
+    ru_inblock:  256974289
+    ru_oublock:  834039008
+    ru_nvcsw:    7988237
+    ru_nivcsw:   12
+  GNU time:
+    real:        02:27:02 (8822.3 ms)
+    user:        03:04:06 (11046.1 ms)
+    sys:         00:23:29 (1409.5 ms)
+  Size (MB):     407,245.60 (427027967446 bytes)
+  Free space:
+                      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: HCC1954.mix1.n80t20.bam.sam)
+*** 2016-01-18 12:18:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/compressed/deez/HCC1954.mix1.n80t20.bam.sam.dz 
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez.8.cmp.log
+  Process PID:   24029
+  Exit code:     0
+  Wall time:     02:57:04 (10624.9 ms)
+  Memory (MB):   2444.6
+  Resources:    
+    ru_utime:    06:53:22 (24802.5 ms)
+    ru_stime:    00:31:32 (1892.2 ms)
+    ru_maxrss:   2503320
+    ru_minflt:   35962673
+    ru_majflt:   39
+    ru_inblock:  840206808
+    ru_oublock:  153598176
+    ru_nvcsw:    181169
+    ru_nivcsw:   5916614
+  GNU time:     
+    real:        02:57:04 (10624.7 ms)
+    user:        06:53:22 (24802.5 ms)
+    sys:         00:31:32 (1892.2 ms)
+  Size (MB):     74,848.88 (78484741469 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/deez/HCC1954.mix1.n80t20.bam.sam.dz)
+  Free space:      2.8T  2.2T  599G  79% /local-scratch
+*** 2016-01-18 15:16:09 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam/output/compressed/deez/HCC1954.mix1.n80t20.bam.sam.dz -o HCC1954.mix1.n80t20.bam/output/decompressed/deez/HCC1954.mix1.n80t20.bam.sam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez.8.dec.log
+  Process PID:   26028
+  Exit code:     0
+  Wall time:     02:33:38 (9218.1 ms)
+  Memory (MB):   8593.1
+  Resources:    
+    ru_utime:    03:37:53 (13073.3 ms)
+    ru_stime:    00:26:12 (1572.9 ms)
+    ru_maxrss:   8799372
+    ru_minflt:   21714456
+    ru_majflt:   54
+    ru_inblock:  159483633
+    ru_oublock:  834052448
+    ru_nvcsw:    104999290
+    ru_nivcsw:   1775771
+  GNU time:     
+    real:        02:33:37 (9217.7 ms)
+    user:        03:37:53 (13073.3 ms)
+    sys:         00:26:12 (1572.9 ms)
+  Size (MB):     407,245.60 (427027967454 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/deez/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  2.6T  202G  93% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: HCC1954.mix1.n80t20.bam.sam)
+*** 2016-01-18 20:06:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam.sam -o HCC1954.mix1.n80t20.bam/output/compressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.dz -q1 -b
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez-qual.8.cmp.log
+  Process PID:   13821
+  Exit code:     0
+  Wall time:     04:11:02 (15062.0 ms)
+  Memory (MB):   2894.1
+  Resources:    
+    ru_utime:    10:32:51 (37971.6 ms)
+    ru_stime:    00:29:16 (1756.5 ms)
+    ru_maxrss:   2963592
+    ru_minflt:   54034981
+    ru_majflt:   45
+    ru_inblock:  840207184
+    ru_oublock:  145827160
+    ru_nvcsw:    181333
+    ru_nivcsw:   7239598
+  GNU time:     
+    real:        04:11:01 (15061.9 ms)
+    user:        10:32:51 (37971.6 ms)
+    sys:         00:29:16 (1756.5 ms)
+  Size (MB):     71,068.41 (74520631186 bytes) (HCC1954.mix1.n80t20.bam/output/compressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.dz)
+  Free space:      2.8T  2.2T  603G  79% /local-scratch
+*** 2016-01-19 00:18:06 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! HCC1954.mix1.n80t20.bam/output/compressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.dz -o HCC1954.mix1.n80t20.bam/output/decompressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.sam
+    stderr:      HCC1954.mix1.n80t20.bam/log/HCC1954.mix1.n80t20.bam.sam.deez-qual.8.dec.log
+  Process PID:   16583
+  Exit code:     0
+  Wall time:     04:20:04 (15604.8 ms)
+  Memory (MB):   8902.1
+  Resources:    
+    ru_utime:    07:03:58 (25438.0 ms)
+    ru_stime:    00:25:49 (1549.6 ms)
+    ru_maxrss:   9115728
+    ru_minflt:   14461471
+    ru_majflt:   48
+    ru_inblock:  151739864
+    ru_oublock:  834196392
+    ru_nvcsw:    97380083
+    ru_nivcsw:   3022325
+  GNU time:     
+    real:        04:20:04 (15604.7 ms)
+    user:        07:03:58 (25438.0 ms)
+    sys:         00:25:49 (1549.6 ms)
+  Size (MB):     407,245.60 (427027967454 bytes) (HCC1954.mix1.n80t20.bam/output/decompressed/deez-qual/HCC1954.mix1.n80t20.bam.sam.sam)
+  Free space:      2.8T  2.6T  205G  93% /local-scratch
+
+Done!

@@ -1,0 +1,11 @@
+Reading ../SRR554369_1.fastq, output/decompressed/lw-fqzip/SRR554369_1.fastq.d; maxline=1000000
+Comparing by SEQ
+../SRR554369_1.fastq output/decompressed/lw-fqzip/SRR554369_1.fastq.d differ: byte 331, line 5
+Read 1000000 (1000000) / 1000000 (1000000) lines, 1000000
+Read 651564 (1651564) / 651564 (1651564) lines, 651564
+> ORIG       1651564 (../SRR554369_1.fastq)
+< COPY       1651564 (output/decompressed/lw-fqzip/SRR554369_1.fastq.d)
+
+NAME         1651563 lines unequal
+COMMENT      1651563 lines unequal
+Done ../SRR554369_1.fastq

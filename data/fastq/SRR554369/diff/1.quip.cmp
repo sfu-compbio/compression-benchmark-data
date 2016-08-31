@@ -1,0 +1,8 @@
+Reading SRR554369_1.fastq, SRR554369/output/decompressed/quip/SRR554369_1.fastq.fq; maxline=5000000
+SRR554369_1.fastq SRR554369/output/decompressed/quip/SRR554369_1.fastq.fq differ: byte 162, line 3
+> ORIG       1651564 (SRR554369_1.fastq)
+< COPY       1651564 (SRR554369/output/decompressed/quip/SRR554369_1.fastq.fq)
+
+COMMENT      1651564 lines unequal
+Read 1651564 (1651564) / 1651564 (1651564) lines, 1651564
+Done SRR554369_1.fastq

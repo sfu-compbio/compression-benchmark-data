@@ -1,0 +1,7 @@
+
+################################################################################
+
+d,8,MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom,MH0001_081026_clean.1/output/decompressed/orcom/MH0001_081026_clean.1.fq.fq
+
+tools/orcom/bin/orcom_pack d -v -t8 -iMH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom -oMH0001_081026_clean.1/output/decompressed/orcom/MH0001_081026_clean.1.fq.fq
+

@@ -1,0 +1,32 @@
+[Sat Nov 21 11:28:41 PST 2015] picard.sam.SamFormatConverter INPUT=NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.picard.bam OUTPUT=NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.picard.bam.sam VALIDATION_STRINGENCY=SILENT    VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Sat Nov 21 11:28:42 PST 2015] Executing as <redacted> on Linux 2.6.32-573.3.1.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.7.0_80-b15; Picard version: 1.138(aa51703435dc6a423013e74e56b0b68405facd79_1439324166) IntelDeflater
+INFO	2015-11-21 11:31:29	SamFormatConverter	Processed     1,000,000 records.  Elapsed time: 00:02:46s.  Time for last 1,000,000:  166s.  Last read position: 1:112,094,338
+INFO	2015-11-21 11:33:41	SamFormatConverter	Processed     2,000,000 records.  Elapsed time: 00:04:58s.  Time for last 1,000,000:  132s.  Last read position: 1:241,753,360
+INFO	2015-11-21 11:35:32	SamFormatConverter	Processed     3,000,000 records.  Elapsed time: 00:06:49s.  Time for last 1,000,000:  110s.  Last read position: 2:101,198,725
+INFO	2015-11-21 11:37:40	SamFormatConverter	Processed     4,000,000 records.  Elapsed time: 00:08:57s.  Time for last 1,000,000:  128s.  Last read position: 2:208,712,819
+INFO	2015-11-21 11:39:47	SamFormatConverter	Processed     5,000,000 records.  Elapsed time: 00:11:04s.  Time for last 1,000,000:  126s.  Last read position: 3:75,340,403
+INFO	2015-11-21 11:41:40	SamFormatConverter	Processed     6,000,000 records.  Elapsed time: 00:12:57s.  Time for last 1,000,000:  113s.  Last read position: 3:185,567,614
+INFO	2015-11-21 11:43:54	SamFormatConverter	Processed     7,000,000 records.  Elapsed time: 00:15:12s.  Time for last 1,000,000:  134s.  Last read position: 4:98,620,234
+INFO	2015-11-21 11:45:58	SamFormatConverter	Processed     8,000,000 records.  Elapsed time: 00:17:16s.  Time for last 1,000,000:  124s.  Last read position: 5:15,469,935
+INFO	2015-11-21 11:48:05	SamFormatConverter	Processed     9,000,000 records.  Elapsed time: 00:19:22s.  Time for last 1,000,000:  126s.  Last read position: 5:123,623,091
+INFO	2015-11-21 11:50:04	SamFormatConverter	Processed    10,000,000 records.  Elapsed time: 00:21:21s.  Time for last 1,000,000:  119s.  Last read position: 6:53,246,698
+INFO	2015-11-21 11:52:17	SamFormatConverter	Processed    11,000,000 records.  Elapsed time: 00:23:34s.  Time for last 1,000,000:  133s.  Last read position: 6:162,456,511
+INFO	2015-11-21 11:54:12	SamFormatConverter	Processed    12,000,000 records.  Elapsed time: 00:25:29s.  Time for last 1,000,000:  115s.  Last read position: 7:105,013,616
+INFO	2015-11-21 11:56:07	SamFormatConverter	Processed    13,000,000 records.  Elapsed time: 00:27:25s.  Time for last 1,000,000:  115s.  Last read position: 8:55,842,416
+INFO	2015-11-21 11:58:27	SamFormatConverter	Processed    14,000,000 records.  Elapsed time: 00:29:44s.  Time for last 1,000,000:  139s.  Last read position: 9:18,502,231
+INFO	2015-11-21 12:00:34	SamFormatConverter	Processed    15,000,000 records.  Elapsed time: 00:31:51s.  Time for last 1,000,000:  127s.  Last read position: 10:10,033,318
+INFO	2015-11-21 12:02:46	SamFormatConverter	Processed    16,000,000 records.  Elapsed time: 00:34:03s.  Time for last 1,000,000:  131s.  Last read position: 10:124,314,621
+INFO	2015-11-21 12:04:51	SamFormatConverter	Processed    17,000,000 records.  Elapsed time: 00:36:08s.  Time for last 1,000,000:  125s.  Last read position: 11:106,617,265
+INFO	2015-11-21 12:06:43	SamFormatConverter	Processed    18,000,000 records.  Elapsed time: 00:38:00s.  Time for last 1,000,000:  111s.  Last read position: 12:79,494,974
+INFO	2015-11-21 12:08:49	SamFormatConverter	Processed    19,000,000 records.  Elapsed time: 00:40:07s.  Time for last 1,000,000:  126s.  Last read position: 13:74,876,661
+INFO	2015-11-21 12:10:58	SamFormatConverter	Processed    20,000,000 records.  Elapsed time: 00:42:16s.  Time for last 1,000,000:  129s.  Last read position: 14:89,198,583
+INFO	2015-11-21 12:13:30	SamFormatConverter	Processed    21,000,000 records.  Elapsed time: 00:44:47s.  Time for last 1,000,000:  151s.  Last read position: 16:14,424,490
+INFO	2015-11-21 12:15:21	SamFormatConverter	Processed    22,000,000 records.  Elapsed time: 00:46:38s.  Time for last 1,000,000:  110s.  Last read position: 17:46,219,813
+INFO	2015-11-21 12:17:21	SamFormatConverter	Processed    23,000,000 records.  Elapsed time: 00:48:38s.  Time for last 1,000,000:  120s.  Last read position: 19:2,155,025
+INFO	2015-11-21 12:19:12	SamFormatConverter	Processed    24,000,000 records.  Elapsed time: 00:50:30s.  Time for last 1,000,000:  111s.  Last read position: 21:15,311,939
+INFO	2015-11-21 12:21:16	SamFormatConverter	Processed    25,000,000 records.  Elapsed time: 00:52:34s.  Time for last 1,000,000:  124s.  Last read position: X:47,886,680
+[Sat Nov 21 12:23:29 PST 2015] picard.sam.SamFormatConverter done. Elapsed time: 54.80 minutes.
+Runtime.totalMemory()=1729101824
+
+################################################################################
+

@@ -1,0 +1,3812 @@
+Namespace(force=False, input='MH0001_081026_clean.1.fq', log='benchmark.log', ref='data/sam/ref/hg19.fa')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                 MH0001_081026_clean.1 with 1 threads                 + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz_1
+*** 2015-11-14 06:00:24 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -p 1  
+    stdin:       MH0001_081026_clean.1.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz
+  stderr:      MH0001_081026_clean.1/log/pigz_1.1.cmp.log
+  Process PID:   19813
+  Exit code:     0
+  Wall time:     00:03:07 (187.4 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:03:02 (182.7 ms)
+    ru_stime:    00:00:01 (1.6 ms)
+    ru_maxrss:   5792
+    ru_minflt:   849
+    ru_majflt:   4
+    ru_inblock:  3675080
+    ru_oublock:  978552
+    ru_nvcsw:    187
+    ru_nivcsw:   32891
+  GNU time:     
+    real:        00:03:07 (187.3 ms)
+    user:        00:03:02 (182.7 ms)
+    sys:         00:00:01 (1.6 ms)
+  Size (MB):     477.78 (500992805 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2015-11-14 06:03:32 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz.fq
+  stderr:      MH0001_081026_clean.1/log/pigz_1.1.dec.log
+  Process PID:   19860
+  Exit code:     0
+  Wall time:     00:00:11 (11.6 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:09 (9.1 ms)
+    ru_stime:    00:00:01 (1.6 ms)
+    ru_maxrss:   5828
+    ru_minflt:   715
+    ru_majflt:   7
+    ru_inblock:  980432
+    ru_oublock:  3672736
+    ru_nvcsw:    120
+    ru_nivcsw:   4888
+  GNU time:     
+    real:        00:00:11 (11.5 ms)
+    user:        00:00:09 (9.1 ms)
+    sys:         00:00:01 (1.6 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+>>> pigz_2
+*** 2015-11-14 06:03:49 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -p 1  
+    stdin:       MH0001_081026_clean.2.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz
+  stderr:      MH0001_081026_clean.1/log/pigz_2.1.cmp.log
+  Process PID:   19869
+  Exit code:     0
+  Wall time:     00:03:10 (190.4 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:03:04 (184.8 ms)
+    ru_stime:    00:00:01 (1.7 ms)
+    ru_maxrss:   5828
+    ru_minflt:   842
+    ru_majflt:   7
+    ru_inblock:  3673784
+    ru_oublock:  1121200
+    ru_nvcsw:    169
+    ru_nivcsw:   33097
+  GNU time:     
+    real:        00:03:10 (190.3 ms)
+    user:        00:03:04 (184.8 ms)
+    sys:         00:00:01 (1.7 ms)
+  Size (MB):     547.44 (574028873 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2015-11-14 06:07:01 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz.fq
+  stderr:      MH0001_081026_clean.1/log/pigz_2.1.dec.log
+  Process PID:   19919
+  Exit code:     0
+  Wall time:     00:00:12 (12.6 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:09 (9.7 ms)
+    ru_stime:    00:00:01 (1.6 ms)
+    ru_maxrss:   5828
+    ru_minflt:   714
+    ru_majflt:   7
+    ru_inblock:  1122296
+    ru_oublock:  3672632
+    ru_nvcsw:    108
+    ru_nivcsw:   5497
+  GNU time:     
+    real:        00:00:12 (12.5 ms)
+    user:        00:00:09 (9.7 ms)
+    sys:         00:00:01 (1.6 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2_1
+*** 2015-11-14 06:07:19 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -p1  
+    stdin:       MH0001_081026_clean.1.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2
+  stderr:      MH0001_081026_clean.1/log/pbzip2_1.1.cmp.log
+  Process PID:   19929
+  Exit code:     0
+  Wall time:     00:04:02 (242.4 ms)
+  Memory (MB):   11.4
+  Resources:    
+    ru_utime:    00:03:53 (233.8 ms)
+    ru_stime:    00:00:07 (7.8 ms)
+    ru_maxrss:   11688
+    ru_minflt:   1052460
+    ru_majflt:   8
+    ru_inblock:  3697888
+    ru_oublock:  761320
+    ru_nvcsw:    15704
+    ru_nivcsw:   41669
+  GNU time:     
+    real:        00:04:02 (242.4 ms)
+    user:        00:03:53 (233.8 ms)
+    sys:         00:00:07 (7.8 ms)
+  Size (MB):     371.71 (389764284 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2015-11-14 06:11:22 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2.fq
+  stderr:      MH0001_081026_clean.1/log/pbzip2_1.1.dec.log
+  Process PID:   19981
+  Exit code:     0
+  Wall time:     00:01:13 (73.7 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:01:02 (62.7 ms)
+    ru_stime:    00:00:02 (2.3 ms)
+    ru_maxrss:   5828
+    ru_minflt:   2112
+    ru_majflt:   8
+    ru_inblock:  787176
+    ru_oublock:  3672736
+    ru_nvcsw:    211
+    ru_nivcsw:   9532
+  GNU time:     
+    real:        00:01:13 (73.6 ms)
+    user:        00:01:02 (62.6 ms)
+    sys:         00:00:02 (2.2 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+>>> pbzip2_2
+*** 2015-11-14 06:12:41 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -p1  
+    stdin:       MH0001_081026_clean.2.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2
+  stderr:      MH0001_081026_clean.1/log/pbzip2_2.1.cmp.log
+  Process PID:   20012
+  Exit code:     0
+  Wall time:     00:04:21 (261.3 ms)
+  Memory (MB):   11.4
+  Resources:    
+    ru_utime:    00:04:11 (251.4 ms)
+    ru_stime:    00:00:08 (8.7 ms)
+    ru_maxrss:   11704
+    ru_minflt:   1752630
+    ru_majflt:   8
+    ru_inblock:  3697744
+    ru_oublock:  899840
+    ru_nvcsw:    14919
+    ru_nivcsw:   42683
+  GNU time:     
+    real:        00:04:21 (261.3 ms)
+    user:        00:04:11 (251.4 ms)
+    sys:         00:00:08 (8.7 ms)
+  Size (MB):     439.33 (460675589 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2015-11-14 06:17:03 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2.fq
+  stderr:      MH0001_081026_clean.1/log/pbzip2_2.1.dec.log
+  Process PID:   20099
+  Exit code:     0
+  Wall time:     00:01:13 (73.8 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:01:08 (68.4 ms)
+    ru_stime:    00:00:02 (2.3 ms)
+    ru_maxrss:   5828
+    ru_minflt:   1659
+    ru_majflt:   8
+    ru_inblock:  925688
+    ru_oublock:  3672632
+    ru_nvcsw:    187
+    ru_nivcsw:   10627
+  GNU time:     
+    real:        00:01:13 (73.7 ms)
+    user:        00:01:08 (68.4 ms)
+    sys:         00:00:02 (2.3 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                                scalce                                # 
+########################################################################
+>>> scalce_1
+*** 2015-11-14 21:53:57 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -T 1 MH0001_081026_clean.1.fq -o MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce  -r
+  stderr:      MH0001_081026_clean.1/log/scalce_1.1.cmp.log
+  Process PID:   9360
+  Exit code:     0
+  Wall time:     00:04:20 (260.0 ms)
+  Memory (MB):   3045.0
+  Resources:    
+    ru_utime:    00:04:02 (242.3 ms)
+    ru_stime:    00:00:07 (7.4 ms)
+    ru_maxrss:   3118076
+    ru_minflt:   247383
+    ru_majflt:   10
+    ru_inblock:  7407408
+    ru_oublock:  4825104
+    ru_nvcsw:    2518
+    ru_nivcsw:   38435
+  GNU time:     
+    real:        00:04:19 (259.6 ms)
+    user:        00:04:02 (242.3 ms)
+    sys:         00:00:07 (7.4 ms)
+  Size (MB):     682.68 (715843870 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce_1.scalcen, MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce_1.scalceq, MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce_1.scalcer, MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce_2.scalcen, MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce_2.scalceq, MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce_2.scalcer)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 21:58:18 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -d -r -T 1 MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce_1.scalcer -o MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce.fq
+  stderr:      MH0001_081026_clean.1/log/scalce_1.1.dec.log
+  Process PID:   9514
+  Exit code:     0
+  Wall time:     00:04:43 (283.4 ms)
+  Memory (MB):   1008.7
+  Resources:    
+    ru_utime:    00:04:34 (274.0 ms)
+    ru_stime:    00:00:03 (3.5 ms)
+    ru_maxrss:   1032872
+    ru_minflt:   242915
+    ru_majflt:   10
+    ru_inblock:  1459377
+    ru_oublock:  5809920
+    ru_nvcsw:    2331
+    ru_nivcsw:   31180
+  GNU time:     
+    real:        00:04:43 (283.3 ms)
+    user:        00:04:34 (274.0 ms)
+    sys:         00:00:03 (3.5 ms)
+  Size (MB):     2,836.85 (2974656494 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce.fq_1.fastq, MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce.fq_2.fastq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single_1
+*** 2015-12-05 15:31:43 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -T 1 MH0001_081026_clean.1.fq -o MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce-single  
+  stderr:      MH0001_081026_clean.1/log/scalce-single_1.1.cmp.log
+  Process PID:   5080
+  Exit code:     0
+  Wall time:     00:02:29 (149.5 ms)
+  Memory (MB):   2431.6
+  Resources:    
+    ru_utime:    00:02:24 (144.2 ms)
+    ru_stime:    00:00:04 (4.3 ms)
+    ru_maxrss:   2489964
+    ru_minflt:   247409
+    ru_majflt:   10
+    ru_inblock:  3735216
+    ru_oublock:  2698152
+    ru_nvcsw:    297
+    ru_nivcsw:   29452
+  GNU time:     
+    real:        00:02:29 (149.3 ms)
+    user:        00:02:24 (144.2 ms)
+    sys:         00:00:04 (4.3 ms)
+  Size (MB):     283.64 (297418212 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce-single_1.scalcen, MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce-single_1.scalceq, MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce-single_1.scalcer)
+  Free space:      2.8T  1.9T  924G  67% /local-scratch
+*** 2015-12-05 15:34:13 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -d -T 1 MH0001_081026_clean.1/output/MH0001_081026_clean.1.scalce-single_1.scalcer -o MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.scalce-single.fq
+  stderr:      MH0001_081026_clean.1/log/scalce-single_1.1.dec.log
+  Process PID:   5158
+  Exit code:     0
+  Wall time:     00:02:21 (141.2 ms)
+  Memory (MB):   1006.0
+  Resources:    
+    ru_utime:    00:02:16 (136.8 ms)
+    ru_stime:    00:00:02 (2.0 ms)
+    ru_maxrss:   1030124
+    ru_minflt:   242741
+    ru_majflt:   10
+    ru_inblock:  642152
+    ru_oublock:  2904968
+    ru_nvcsw:    985
+    ru_nivcsw:   15449
+  GNU time:     
+    real:        00:02:21 (141.1 ms)
+    user:        00:02:16 (136.8 ms)
+    sys:         00:00:02 (2.0 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.scalce-single.fq_1.fastq)
+  Free space:      2.8T  1.9T  923G  67% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc_1
+*** 2015-12-05 15:36:37 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1   MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc
+  stderr:      MH0001_081026_clean.1/log/dsrc_1.1.cmp.log
+  Process PID:   5240
+  Exit code:     0
+  Wall time:     00:00:45 (45.6 ms)
+  Memory (MB):   18.6
+  Resources:    
+    ru_utime:    00:00:36 (36.5 ms)
+    ru_stime:    00:00:01 (1.8 ms)
+    ru_maxrss:   19048
+    ru_minflt:   4914
+    ru_majflt:   10
+    ru_inblock:  3698016
+    ru_oublock:  609584
+    ru_nvcsw:    9015
+    ru_nivcsw:   7936
+  GNU time:     
+    real:        00:00:45 (45.5 ms)
+    user:        00:00:36 (36.5 ms)
+    sys:         00:00:01 (1.8 ms)
+  Size (MB):     297.63 (312084801 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc)
+  Free space:      2.8T  1.9T  923G  67% /local-scratch
+*** 2015-12-05 15:37:23 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc_1.1.dec.log
+  Process PID:   5253
+  Exit code:     0
+  Wall time:     00:00:22 (22.1 ms)
+  Memory (MB):   19.9
+  Resources:    
+    ru_utime:    00:00:19 (19.0 ms)
+    ru_stime:    00:00:02 (2.2 ms)
+    ru_maxrss:   20332
+    ru_minflt:   5471
+    ru_majflt:   10
+    ru_inblock:  634760
+    ru_oublock:  3672744
+    ru_nvcsw:    1835
+    ru_nivcsw:   2728
+  GNU time:     
+    real:        00:00:22 (22.0 ms)
+    user:        00:00:19 (19.0 ms)
+    sys:         00:00:02 (2.2 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc.fq)
+  Free space:      2.8T  1.9T  921G  68% /local-scratch
+
+>>> dsrc_2
+*** 2015-12-05 15:37:51 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1   MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc
+  stderr:      MH0001_081026_clean.1/log/dsrc_2.1.cmp.log
+  Process PID:   5264
+  Exit code:     0
+  Wall time:     00:00:47 (47.1 ms)
+  Memory (MB):   18.0
+  Resources:    
+    ru_utime:    00:00:39 (39.0 ms)
+    ru_stime:    00:00:02 (2.0 ms)
+    ru_maxrss:   18388
+    ru_minflt:   4792
+    ru_majflt:   10
+    ru_inblock:  3697840
+    ru_oublock:  754464
+    ru_nvcsw:    9180
+    ru_nivcsw:   7729
+  GNU time:     
+    real:        00:00:47 (47.0 ms)
+    user:        00:00:39 (39.0 ms)
+    sys:         00:00:02 (2.0 ms)
+  Size (MB):     368.37 (386261190 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc)
+  Free space:      2.8T  1.9T  921G  68% /local-scratch
+*** 2015-12-05 15:38:39 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc_2.1.dec.log
+  Process PID:   5280
+  Exit code:     0
+  Wall time:     00:00:27 (27.7 ms)
+  Memory (MB):   21.5
+  Resources:    
+    ru_utime:    00:00:23 (23.9 ms)
+    ru_stime:    00:00:02 (2.3 ms)
+    ru_maxrss:   22052
+    ru_minflt:   6172
+    ru_majflt:   10
+    ru_inblock:  779656
+    ru_oublock:  3672640
+    ru_nvcsw:    2299
+    ru_nivcsw:   3326
+  GNU time:     
+    real:        00:00:27 (27.6 ms)
+    user:        00:00:23 (23.9 ms)
+    sys:         00:00:02 (2.3 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc.fq)
+  Free space:      2.8T  1.9T  919G  68% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2_1
+*** 2015-12-05 15:41:03 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1 -m2  MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc-m2
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_1.1.cmp.log
+  Process PID:   5347
+  Exit code:     0
+  Wall time:     00:02:29 (149.0 ms)
+  Memory (MB):   434.7
+  Resources:    
+    ru_utime:    00:02:22 (142.8 ms)
+    ru_stime:    00:00:03 (3.4 ms)
+    ru_maxrss:   445160
+    ru_minflt:   11956
+    ru_majflt:   10
+    ru_inblock:  3699016
+    ru_oublock:  559880
+    ru_nvcsw:    10004
+    ru_nivcsw:   18364
+  GNU time:     
+    real:        00:02:28 (148.9 ms)
+    user:        00:02:22 (142.8 ms)
+    sys:         00:00:03 (3.4 ms)
+  Size (MB):     273.35 (286627600 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc-m2)
+  Free space:      2.8T  1.9T  919G  68% /local-scratch
+*** 2015-12-05 15:43:33 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc-m2 MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc-m2.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_1.1.dec.log
+  Process PID:   5382
+  Exit code:     0
+  Wall time:     00:02:30 (150.3 ms)
+  Memory (MB):   398.7
+  Resources:    
+    ru_utime:    00:02:27 (147.2 ms)
+    ru_stime:    00:00:02 (2.3 ms)
+    ru_maxrss:   408316
+    ru_minflt:   3552
+    ru_majflt:   10
+    ru_inblock:  585080
+    ru_oublock:  3672744
+    ru_nvcsw:    1319
+    ru_nivcsw:   16102
+  GNU time:     
+    real:        00:02:30 (150.2 ms)
+    user:        00:02:27 (147.2 ms)
+    sys:         00:00:02 (2.3 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc-m2.fq)
+  Free space:      2.8T  1.9T  917G  68% /local-scratch
+
+>>> dsrc-m2_2
+*** 2015-12-05 15:46:04 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1 -m2  MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc-m2
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_2.1.cmp.log
+  Process PID:   5411
+  Exit code:     0
+  Wall time:     00:02:36 (156.7 ms)
+  Memory (MB):   481.2
+  Resources:    
+    ru_utime:    00:02:30 (150.0 ms)
+    ru_stime:    00:00:03 (3.3 ms)
+    ru_maxrss:   492748
+    ru_minflt:   12667
+    ru_majflt:   10
+    ru_inblock:  3697856
+    ru_oublock:  684040
+    ru_nvcsw:    8252
+    ru_nivcsw:   19592
+  GNU time:     
+    real:        00:02:36 (156.7 ms)
+    user:        00:02:30 (150.0 ms)
+    sys:         00:00:03 (3.3 ms)
+  Size (MB):     333.97 (350197808 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc-m2)
+  Free space:      2.8T  1.9T  916G  68% /local-scratch
+*** 2015-12-05 15:48:42 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc-m2 MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc-m2.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_2.1.dec.log
+  Process PID:   5446
+  Exit code:     0
+  Wall time:     00:02:37 (157.2 ms)
+  Memory (MB):   406.5
+  Resources:    
+    ru_utime:    00:02:33 (153.8 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   416216
+    ru_minflt:   4175
+    ru_majflt:   10
+    ru_inblock:  709200
+    ru_oublock:  3672640
+    ru_nvcsw:    1541
+    ru_nivcsw:   16902
+  GNU time:     
+    real:        00:02:37 (157.2 ms)
+    user:        00:02:33 (153.8 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc-m2.fq)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1: MH0001_081026_clean.1.fq)
+*** 2015-12-28 22:59:47 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/orcom/bin/orcom e 1 'MH0001_081026_clean.1.fq' MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.orcom.1.cmp.log
+  Process PID:   1568
+  Exit code:     0
+  Wall time:     00:02:42 (162.9 ms)
+  Memory (MB):   440.1
+  Resources:    
+    ru_utime:    00:02:35 (155.8 ms)
+    ru_stime:    00:00:03 (3.4 ms)
+    ru_maxrss:   450632
+    ru_minflt:   25082
+    ru_majflt:   14
+    ru_inblock:  3699536
+    ru_oublock:  339600
+    ru_nvcsw:    7957
+    ru_nivcsw:   21055
+  GNU time:     
+    real:        00:02:42 (162.7 ms)
+    user:        00:02:35 (155.8 ms)
+    sys:         00:00:03 (3.4 ms)
+  Size (MB):     49.09 (51469651 bytes) (MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom.cmeta, MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom.cdna)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+*** 2015-12-28 23:02:30 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/orcom/bin/orcom d 1 MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom MH0001_081026_clean.1/output/decompressed/orcom/MH0001_081026_clean.1.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.orcom.1.dec.log
+  Process PID:   1709
+  Exit code:     0
+  Wall time:     00:00:21 (21.7 ms)
+  Memory (MB):   24.0
+  Resources:    
+    ru_utime:    00:00:20 (20.8 ms)
+    ru_stime:    00:00:00 (0.5 ms)
+    ru_maxrss:   24604
+    ru_minflt:   5882
+    ru_majflt:   12
+    ru_inblock:  126848
+    ru_oublock:  1023128
+    ru_nvcsw:    154
+    ru_nivcsw:   2632
+  GNU time:     
+    real:        00:00:21 (21.6 ms)
+    user:        00:00:20 (20.8 ms)
+    sys:         00:00:00 (0.5 ms)
+  Size (MB):     499.56 (523830330 bytes) (MH0001_081026_clean.1/output/decompressed/orcom/MH0001_081026_clean.1.fq.fq)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip_1
+*** 2015-12-06 20:23:48 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v MH0001_081026_clean.1.fq  
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.qp
+  stderr:      MH0001_081026_clean.1/log/quip_1.1.cmp.log
+  Process PID:   13933
+  Exit code:     0
+  Wall time:     00:01:28 (88.2 ms)
+  Memory (MB):   395.9
+  Resources:    
+    ru_utime:    00:01:21 (81.1 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   405404
+    ru_minflt:   16571
+    ru_majflt:   16
+    ru_inblock:  3677128
+    ru_oublock:  530600
+    ru_nvcsw:    12683
+    ru_nivcsw:   16925
+  GNU time:     
+    real:        00:01:28 (88.1 ms)
+    user:        00:01:21 (81.1 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     259.04 (271627150 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.qp)
+  Free space:      2.8T  1.9T  927G  67% /local-scratch
+*** 2015-12-06 20:25:17 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq MH0001_081026_clean.1/output/MH0001_081026_clean.1.qp
+    stdout:      MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.qp.fq
+  stderr:      MH0001_081026_clean.1/log/quip_1.1.dec.log
+  Process PID:   23272
+  Exit code:     0
+  Wall time:     00:02:11 (131.9 ms)
+  Memory (MB):   391.9
+  Resources:    
+    ru_utime:    00:02:03 (123.5 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   401332
+    ru_minflt:   17472
+    ru_majflt:   16
+    ru_inblock:  533656
+    ru_oublock:  2904952
+    ru_nvcsw:    6065
+    ru_nivcsw:   22702
+  GNU time:     
+    real:        00:02:11 (131.8 ms)
+    user:        00:02:03 (123.5 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.qp.fq)
+  Free space:      2.8T  1.9T  926G  67% /local-scratch
+
+>>> quip_2
+*** 2015-12-06 20:27:33 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v MH0001_081026_clean.2.fq  
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.qp
+  stderr:      MH0001_081026_clean.1/log/quip_2.1.cmp.log
+  Process PID:   32634
+  Exit code:     0
+  Wall time:     00:01:36 (96.9 ms)
+  Memory (MB):   395.4
+  Resources:    
+    ru_utime:    00:01:28 (88.9 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   404892
+    ru_minflt:   16442
+    ru_majflt:   16
+    ru_inblock:  3675744
+    ru_oublock:  655144
+    ru_nvcsw:    12920
+    ru_nivcsw:   18370
+  GNU time:     
+    real:        00:01:36 (96.8 ms)
+    user:        00:01:28 (88.9 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     319.86 (335394418 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.qp)
+  Free space:      2.8T  1.9T  926G  67% /local-scratch
+*** 2015-12-06 20:29:11 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq MH0001_081026_clean.1/output/MH0001_081026_clean.2.qp
+    stdout:      MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.qp.fq
+  stderr:      MH0001_081026_clean.1/log/quip_2.1.dec.log
+  Process PID:   10100
+  Exit code:     0
+  Wall time:     00:02:14 (134.3 ms)
+  Memory (MB):   392.8
+  Resources:    
+    ru_utime:    00:02:07 (127.1 ms)
+    ru_stime:    00:00:02 (2.6 ms)
+    ru_maxrss:   402232
+    ru_minflt:   18620
+    ru_majflt:   16
+    ru_inblock:  658184
+    ru_oublock:  2904872
+    ru_nvcsw:    6463
+    ru_nivcsw:   23744
+  GNU time:     
+    real:        00:02:14 (134.2 ms)
+    user:        00:02:07 (127.1 ms)
+    sys:         00:00:02 (2.6 ms)
+  Size (MB):     1,418.39 (1487287773 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.qp.fq)
+  Free space:      2.8T  1.9T  924G  67% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+>>> quip-asm_1
+*** 2015-12-06 20:31:30 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v MH0001_081026_clean.1.fq -a 
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.qp-asm
+  stderr:      MH0001_081026_clean.1/log/quip-asm_1.1.cmp.log
+  Process PID:   19461
+  Exit code:     0
+  Wall time:     00:02:01 (121.1 ms)
+  Memory (MB):   773.9
+  Resources:    
+    ru_utime:    00:01:53 (113.7 ms)
+    ru_stime:    00:00:02 (2.5 ms)
+    ru_maxrss:   792524
+    ru_minflt:   20349
+    ru_majflt:   16
+    ru_inblock:  3677096
+    ru_oublock:  530608
+    ru_nvcsw:    12089
+    ru_nivcsw:   19734
+  GNU time:     
+    real:        00:02:01 (121.0 ms)
+    user:        00:01:53 (113.7 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     259.04 (271627158 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.qp-asm)
+  Free space:      2.8T  1.9T  924G  67% /local-scratch
+*** 2015-12-06 20:33:31 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq MH0001_081026_clean.1/output/MH0001_081026_clean.1.qp-asm
+    stdout:      MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.qp-asm.fq
+  stderr:      MH0001_081026_clean.1/log/quip-asm_1.1.dec.log
+  Process PID:   28806
+  Exit code:     0
+  Wall time:     00:02:26 (146.2 ms)
+  Memory (MB):   771.9
+  Resources:    
+    ru_utime:    00:02:16 (136.4 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   790412
+    ru_minflt:   22251
+    ru_majflt:   16
+    ru_inblock:  533640
+    ru_oublock:  2904960
+    ru_nvcsw:    6193
+    ru_nivcsw:   24286
+  GNU time:     
+    real:        00:02:26 (146.1 ms)
+    user:        00:02:16 (136.3 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.qp-asm.fq)
+  Free space:      2.8T  1.9T  923G  67% /local-scratch
+
+>>> quip-asm_2
+*** 2015-12-06 20:36:01 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v MH0001_081026_clean.2.fq -a 
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.qp-asm
+  stderr:      MH0001_081026_clean.1/log/quip-asm_2.1.cmp.log
+  Process PID:   6301
+  Exit code:     0
+  Wall time:     00:02:09 (129.5 ms)
+  Memory (MB):   775.3
+  Resources:    
+    ru_utime:    00:02:02 (122.6 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   793872
+    ru_minflt:   21194
+    ru_majflt:   16
+    ru_inblock:  3676752
+    ru_oublock:  655152
+    ru_nvcsw:    12209
+    ru_nivcsw:   21216
+  GNU time:     
+    real:        00:02:09 (129.4 ms)
+    user:        00:02:02 (122.6 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     319.86 (335394426 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.qp-asm)
+  Free space:      2.8T  1.9T  923G  67% /local-scratch
+*** 2015-12-06 20:38:11 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq MH0001_081026_clean.1/output/MH0001_081026_clean.2.qp-asm
+    stdout:      MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.qp-asm.fq
+  stderr:      MH0001_081026_clean.1/log/quip-asm_2.1.dec.log
+  Process PID:   15687
+  Exit code:     0
+  Wall time:     00:02:33 (153.0 ms)
+  Memory (MB):   771.6
+  Resources:    
+    ru_utime:    00:02:26 (146.3 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   790068
+    ru_minflt:   22370
+    ru_majflt:   16
+    ru_inblock:  659480
+    ru_oublock:  2904880
+    ru_nvcsw:    6468
+    ru_nivcsw:   26227
+  GNU time:     
+    real:        00:02:32 (152.9 ms)
+    user:        00:02:26 (146.3 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     1,418.39 (1487287773 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.qp-asm.fq)
+  Free space:      2.8T  1.9T  922G  68% /local-scratch
+
+######################################################################## 
+#                               fqzcomp                                # 
+########################################################################
+>>> fqzcomp_1
+*** 2015-11-14 06:39:36 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp   -P MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz
+  stderr:      MH0001_081026_clean.1/log/fqzcomp_1.1.cmp.log
+  Process PID:   20617
+  Exit code:     0
+  Wall time:     00:01:16 (76.0 ms)
+  Memory (MB):   79.5
+  Resources:    
+    ru_utime:    00:01:04 (64.1 ms)
+    ru_stime:    00:00:03 (3.0 ms)
+    ru_maxrss:   81452
+    ru_minflt:   2506
+    ru_majflt:   8
+    ru_inblock:  3697832
+    ru_oublock:  546616
+    ru_nvcsw:    8306
+    ru_nivcsw:   11462
+  GNU time:     
+    real:        00:01:15 (75.9 ms)
+    user:        00:01:04 (64.1 ms)
+    sys:         00:00:03 (3.0 ms)
+  Size (MB):     266.88 (279846951 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+*** 2015-11-14 06:40:52 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz.fq
+  stderr:      MH0001_081026_clean.1/log/fqzcomp_1.1.dec.log
+  Process PID:   20644
+  Exit code:     256
+  Wall time:     00:00:00 (0.9 ms)
+  Memory (MB):   65.4
+  Resources:    
+    ru_utime:    00:00:00 (0.5 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   67000
+    ru_minflt:   2469
+    ru_majflt:   8
+    ru_inblock:  29976
+    ru_oublock:  16
+    ru_nvcsw:    124
+    ru_nivcsw:   84
+  GNU time:     
+    real:        00:00:00 (0.8 ms)
+    user:        00:00:00 (0.5 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     ? (MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz.fq)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+
+>>> fqzcomp_2
+*** 2015-11-14 06:40:53 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp   -P MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz
+  stderr:      MH0001_081026_clean.1/log/fqzcomp_2.1.cmp.log
+  Process PID:   20651
+  Exit code:     0
+  Wall time:     00:01:18 (78.7 ms)
+  Memory (MB):   77.5
+  Resources:    
+    ru_utime:    00:01:06 (66.7 ms)
+    ru_stime:    00:00:03 (3.0 ms)
+    ru_maxrss:   79400
+    ru_minflt:   2501
+    ru_majflt:   8
+    ru_inblock:  3697688
+    ru_oublock:  671688
+    ru_nvcsw:    7392
+    ru_nivcsw:   12659
+  GNU time:     
+    real:        00:01:18 (78.7 ms)
+    user:        00:01:06 (66.7 ms)
+    sys:         00:00:03 (3.0 ms)
+  Size (MB):     327.95 (343884400 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+*** 2015-11-14 06:42:13 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz.fq
+  stderr:      MH0001_081026_clean.1/log/fqzcomp_2.1.dec.log
+  Process PID:   20668
+  Exit code:     256
+  Wall time:     00:00:00 (0.8 ms)
+  Memory (MB):   63.4
+  Resources:    
+    ru_utime:    00:00:00 (0.5 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   64952
+    ru_minflt:   2466
+    ru_majflt:   8
+    ru_inblock:  29456
+    ru_oublock:  16
+    ru_nvcsw:    103
+    ru_nivcsw:   89
+  GNU time:     
+    real:        00:00:00 (0.8 ms)
+    user:        00:00:00 (0.5 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     ? (MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz.fq)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                            fqzcomp-extra                             # 
+########################################################################
+>>> fqzcomp-extra_1
+*** 2015-11-14 06:42:14 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -s9+ -q3 -n2 -e  -P MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz-extra
+  stderr:      MH0001_081026_clean.1/log/fqzcomp-extra_1.1.cmp.log
+  Process PID:   20675
+  Exit code:     0
+  Wall time:     00:01:17 (77.3 ms)
+  Memory (MB):   328.6
+  Resources:    
+    ru_utime:    00:01:05 (65.6 ms)
+    ru_stime:    00:00:03 (3.1 ms)
+    ru_maxrss:   336436
+    ru_minflt:   1865
+    ru_majflt:   8
+    ru_inblock:  3697792
+    ru_oublock:  558384
+    ru_nvcsw:    8203
+    ru_nivcsw:   12068
+  GNU time:     
+    real:        00:01:17 (77.3 ms)
+    user:        00:01:05 (65.6 ms)
+    sys:         00:00:03 (3.1 ms)
+  Size (MB):     272.63 (285873794 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz-extra)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+*** 2015-11-14 06:43:31 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz-extra MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz-extra.fq
+  stderr:      MH0001_081026_clean.1/log/fqzcomp-extra_1.1.dec.log
+  Process PID:   20694
+  Exit code:     256
+  Wall time:     00:00:01 (1.0 ms)
+  Memory (MB):   316.4
+  Resources:    
+    ru_utime:    00:00:00 (0.6 ms)
+    ru_stime:    00:00:00 (0.2 ms)
+    ru_maxrss:   324012
+    ru_minflt:   1821
+    ru_majflt:   8
+    ru_inblock:  28904
+    ru_oublock:  16
+    ru_nvcsw:    99
+    ru_nivcsw:   107
+  GNU time:     
+    real:        00:00:01 (1.0 ms)
+    user:        00:00:00 (0.6 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     ? (MH0001_081026_clean.1/output/MH0001_081026_clean.1.fqz-extra.fq)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+
+>>> fqzcomp-extra_2
+*** 2015-11-14 06:43:33 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -s9+ -q3 -n2 -e  -P MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz-extra
+  stderr:      MH0001_081026_clean.1/log/fqzcomp-extra_2.1.cmp.log
+  Process PID:   20701
+  Exit code:     0
+  Wall time:     00:01:21 (81.9 ms)
+  Memory (MB):   328.6
+  Resources:    
+    ru_utime:    00:01:11 (71.2 ms)
+    ru_stime:    00:00:02 (2.9 ms)
+    ru_maxrss:   336436
+    ru_minflt:   2374
+    ru_majflt:   8
+    ru_inblock:  3697688
+    ru_oublock:  681064
+    ru_nvcsw:    7494
+    ru_nivcsw:   12921
+  GNU time:     
+    real:        00:01:21 (81.8 ms)
+    user:        00:01:11 (71.2 ms)
+    sys:         00:00:02 (2.9 ms)
+  Size (MB):     332.53 (348686746 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz-extra)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+*** 2015-11-14 06:44:55 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz-extra MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz-extra.fq
+  stderr:      MH0001_081026_clean.1/log/fqzcomp-extra_2.1.dec.log
+  Process PID:   20720
+  Exit code:     256
+  Wall time:     00:00:01 (1.1 ms)
+  Memory (MB):   316.4
+  Resources:    
+    ru_utime:    00:00:00 (0.6 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   324016
+    ru_minflt:   1822
+    ru_majflt:   8
+    ru_inblock:  29400
+    ru_oublock:  16
+    ru_nvcsw:    98
+    ru_nivcsw:   113
+  GNU time:     
+    real:        00:00:01 (1.0 ms)
+    user:        00:00:00 (0.6 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     ? (MH0001_081026_clean.1/output/MH0001_081026_clean.2.fqz-extra.fq)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                fastqz                                # 
+########################################################################
+>>> fastqz_1
+*** 2015-11-14 06:44:56 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fastqz/fastqz c MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/MH0001_081026_clean.1.fastqz  
+  stderr:      MH0001_081026_clean.1/log/fastqz_1.1.cmp.log
+  Process PID:   20727
+  Exit code:     256
+  Wall time:     00:00:00 (0.2 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   5864
+    ru_minflt:   881
+    ru_majflt:   8
+    ru_inblock:  24824
+    ru_oublock:  40
+    ru_nvcsw:    27
+    ru_nivcsw:   25
+  GNU time:     
+    real:        00:00:00 (0.2 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+
+>>> fastqz_2
+*** 2015-11-14 06:44:57 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fastqz/fastqz c MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/MH0001_081026_clean.2.fastqz  
+  stderr:      MH0001_081026_clean.1/log/fastqz_2.1.cmp.log
+  Process PID:   20734
+  Exit code:     256
+  Wall time:     00:00:00 (0.2 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   5864
+    ru_minflt:   883
+    ru_majflt:   8
+    ru_inblock:  24808
+    ru_oublock:  40
+    ru_nvcsw:    86
+    ru_nivcsw:   24
+  GNU time:     
+    real:        00:00:00 (0.2 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                              slimfastq                               # 
+########################################################################
+>>> slimfastq_1
+*** 2015-11-14 06:44:58 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -u MH0001_081026_clean.1.fq -f MH0001_081026_clean.1/output/MH0001_081026_clean.1.slimfastq -O  
+  stderr:      MH0001_081026_clean.1/log/slimfastq_1.1.cmp.log
+  Process PID:   20755
+  Exit code:     0
+  Wall time:     00:01:40 (100.3 ms)
+  Memory (MB):   79.0
+  Resources:    
+    ru_utime:    00:01:36 (96.3 ms)
+    ru_stime:    00:00:02 (2.3 ms)
+    ru_maxrss:   80872
+    ru_minflt:   2366
+    ru_majflt:   7
+    ru_inblock:  3697624
+    ru_oublock:  519632
+    ru_nvcsw:    158
+    ru_nivcsw:   24147
+  GNU time:     
+    real:        00:01:40 (100.3 ms)
+    user:        00:01:36 (96.3 ms)
+    sys:         00:00:02 (2.3 ms)
+  Size (MB):     253.65 (265969664 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.slimfastq)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+*** 2015-11-14 06:46:39 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -d MH0001_081026_clean.1/output/MH0001_081026_clean.1.slimfastq  MH0001_081026_clean.1/output/MH0001_081026_clean.1.slimfastq.fq -O
+  stderr:      MH0001_081026_clean.1/log/slimfastq_1.1.dec.log
+  Process PID:   20783
+  Exit code:     0
+  Wall time:     00:02:11 (131.3 ms)
+  Memory (MB):   78.9
+  Resources:    
+    ru_utime:    00:02:05 (125.3 ms)
+    ru_stime:    00:00:02 (2.5 ms)
+    ru_maxrss:   80772
+    ru_minflt:   2336
+    ru_majflt:   7
+    ru_inblock:  544416
+    ru_oublock:  3672736
+    ru_nvcsw:    148
+    ru_nivcsw:   14939
+  GNU time:     
+    real:        00:02:11 (131.2 ms)
+    user:        00:02:05 (125.3 ms)
+    sys:         00:00:02 (2.5 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.slimfastq.fq)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+
+>>> slimfastq_2
+*** 2015-11-14 06:48:51 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -u MH0001_081026_clean.2.fq -f MH0001_081026_clean.1/output/MH0001_081026_clean.2.slimfastq -O  
+  stderr:      MH0001_081026_clean.1/log/slimfastq_2.1.cmp.log
+  Process PID:   20811
+  Exit code:     0
+  Wall time:     00:01:43 (103.7 ms)
+  Memory (MB):   79.0
+  Resources:    
+    ru_utime:    00:01:39 (99.0 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   80876
+    ru_minflt:   1854
+    ru_majflt:   7
+    ru_inblock:  3697544
+    ru_oublock:  645408
+    ru_nvcsw:    205
+    ru_nivcsw:   24446
+  GNU time:     
+    real:        00:01:43 (103.7 ms)
+    user:        00:01:39 (99.0 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     315.01 (330309632 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.slimfastq)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+*** 2015-11-14 06:50:35 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -d MH0001_081026_clean.1/output/MH0001_081026_clean.2.slimfastq  MH0001_081026_clean.1/output/MH0001_081026_clean.2.slimfastq.fq -O
+  stderr:      MH0001_081026_clean.1/log/slimfastq_2.1.dec.log
+  Process PID:   20839
+  Exit code:     0
+  Wall time:     00:02:13 (133.4 ms)
+  Memory (MB):   78.9
+  Resources:    
+    ru_utime:    00:02:08 (128.4 ms)
+    ru_stime:    00:00:02 (2.7 ms)
+    ru_maxrss:   80768
+    ru_minflt:   2333
+    ru_majflt:   7
+    ru_inblock:  671352
+    ru_oublock:  3672632
+    ru_nvcsw:    147
+    ru_nivcsw:   15762
+  GNU time:     
+    real:        00:02:13 (133.3 ms)
+    user:        00:02:08 (128.3 ms)
+    sys:         00:00:02 (2.7 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.slimfastq.fq)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                 sra                                  # 
+########################################################################
+>>> sra_1
+*** 2015-11-14 22:04:32 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/sratoolkit.2.5.2-centos_linux64/bin/latf-load -p ILLUMINA -q PHRED_33 -o MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra MH0001_081026_clean.1.fq  MH0001_081026_clean.2.fq
+  stderr:      MH0001_081026_clean.1/log/sra_1.1.cmp.log
+  Process PID:   9758
+  Exit code:     0
+  Wall time:     00:04:19 (259.6 ms)
+  Memory (MB):   2088.1
+  Resources:    
+    ru_utime:    00:04:10 (250.1 ms)
+    ru_stime:    00:00:08 (8.3 ms)
+    ru_maxrss:   2138240
+    ru_minflt:   1255806
+    ru_majflt:   46
+    ru_inblock:  7351673
+    ru_oublock:  2560920
+    ru_nvcsw:    225927
+    ru_nivcsw:   205439
+  GNU time:     
+    real:        00:04:19 (259.5 ms)
+    user:        00:04:10 (250.1 ms)
+    sys:         00:00:08 (8.3 ms)
+  Size (MB):     624.81 (655159517 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/md5, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/md5, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/QUALITY/md5, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/QUALITY/idx1, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/QUALITY/idx, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/QUALITY/idx0, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/QUALITY/idx2, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/QUALITY/data, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/QUALITY/md/cur, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_START/md5, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_START/idx1, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_START/idx, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_START/idx0, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_START/idx2, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_START/data, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_START/md/cur, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_LEN/md5, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_LEN/idx1, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_LEN/idx, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_LEN/idx0, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_LEN/idx2, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_LEN/data, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_LEN/md/cur, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_TYPE/md5, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_TYPE/idx1, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_TYPE/idx, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_TYPE/idx0, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_TYPE/idx2, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_TYPE/data, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ_TYPE/md/cur, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/ALTREAD/md5, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/ALTREAD/idx1, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/ALTREAD/idx, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/ALTREAD/idx0, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/ALTREAD/idx2, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/ALTREAD/data, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/ALTREAD/md/cur, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ/md5, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ/idx1, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ/idx, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ/idx0, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ/idx2, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ/data, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/col/READ/md/cur, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/tbl/SEQUENCE/md/cur, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra/md/cur)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 22:08:53 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/sratoolkit.2.5.2-centos_linux64/bin/fastq-dump MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra --split-3 -O MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra.fq
+  stderr:      MH0001_081026_clean.1/log/sra_1.1.dec.log
+  Process PID:   9820
+  Exit code:     0
+  Wall time:     00:02:05 (125.4 ms)
+  Memory (MB):   9.2
+  Resources:    
+    ru_utime:    00:01:56 (116.1 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   9388
+    ru_minflt:   66155
+    ru_majflt:   34
+    ru_inblock:  1285856
+    ru_oublock:  8556800
+    ru_nvcsw:    90908
+    ru_nivcsw:   107158
+  GNU time:     
+    real:        00:02:05 (125.3 ms)
+    user:        00:01:56 (116.1 ms)
+    sys:         00:00:04 (4.1 ms)
+  Size (MB):     4,178.11 (4381069320 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra.fq/MH0001_081026_clean.1_1.fastq, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra.fq/MH0001_081026_clean.1_2.fastq, MH0001_081026_clean.1/output/MH0001_081026_clean.1.sra.fq/MH0001_081026_clean.1.fastq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath_1
+*** 2015-11-14 22:11:08 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=1 -ref=data/sam/ref/hg19.fa.gz -reads=MH0001_081026_clean.1.fq -out=MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath  
+  stderr:      MH0001_081026_clean.1/log/kpath_1.1.cmp.log
+  Process PID:   9859
+  Exit code:     512
+  Wall time:     00:11:01 (661.6 ms)
+  Memory (MB):   8663.3
+  Resources:    
+    ru_utime:    00:10:05 (605.6 ms)
+    ru_stime:    00:00:54 (54.6 ms)
+    ru_maxrss:   8871208
+    ru_minflt:   1110218
+    ru_majflt:   25
+    ru_inblock:  5532432
+    ru_oublock:  48
+    ru_nvcsw:    24710978
+    ru_nivcsw:   13151360
+  GNU time:     
+    real:        00:11:01 (661.5 ms)
+    user:        00:10:05 (605.6 ms)
+    sys:         00:00:54 (54.6 ms)
+  Size (MB):     155.35 (162897920 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                 lfqc                                 # 
+########################################################################
+>>> lfqc (File 1: MH0001_081026_clean_1.fastq)
+*** 2016-02-20 01:45:00 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/lfqc/lfqc/lfqc.rb -solexa MH0001_081026_clean_1.fastq 
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_1.fastq.lfqc.1.cmp.log
+  Process PID:   9415
+  Exit code:     0
+  Wall time:     01:05:46 (3946.0 ms)
+  Memory (MB):   3648.4
+  Resources:    
+    ru_utime:    01:05:12 (3912.5 ms)
+    ru_stime:    00:00:14 (14.9 ms)
+    ru_maxrss:   3735932
+    ru_minflt:   158608
+    ru_majflt:   92
+    ru_inblock:  3739960
+    ru_oublock:  5238856
+    ru_nvcsw:    911
+    ru_nivcsw:   808981
+  GNU time:     
+    real:        01:05:45 (3945.6 ms)
+    user:        01:05:12 (3912.4 ms)
+    sys:         00:00:14 (14.9 ms)
+  Size (MB):     253.78 (266106880 bytes) (MH0001_081026_clean/output/compressed/lfqc/MH0001_081026_clean_1.fastq.lfqc)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+*** 2016-02-20 02:50:48 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/lfqc/lfqc/lfqcd.rb MH0001_081026_clean/output/compressed/lfqc/MH0001_081026_clean_1.fastq.lfqc MH0001_081026_clean/output/decompressed/lfqc/MH0001_081026_clean_1.fastq.fq
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_1.fastq.lfqc.1.dec.log
+  Process PID:   11116
+  Exit code:     0
+  Wall time:     01:05:43 (3943.2 ms)
+  Memory (MB):   3327.8
+  Resources:    
+    ru_utime:    01:05:22 (3922.0 ms)
+    ru_stime:    00:00:13 (13.9 ms)
+    ru_maxrss:   3407692
+    ru_minflt:   153919
+    ru_majflt:   94
+    ru_inblock:  587736
+    ru_oublock:  7380920
+    ru_nvcsw:    1703
+    ru_nivcsw:   763985
+  GNU time:     
+    real:        01:05:42 (3942.8 ms)
+    user:        01:05:21 (3921.9 ms)
+    sys:         00:00:13 (13.9 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean/output/decompressed/lfqc/MH0001_081026_clean_1.fastq.fq)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: MH0001_081026_clean_1.fastq)
+*** 2016-02-20 03:57:00 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh e MH0001_081026_clean_1.fastq MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon 1 
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_1.fastq.leon.1.cmp.log
+  Process PID:   13860
+  Exit code:     0
+  Wall time:     00:12:12 (732.9 ms)
+  Memory (MB):   90.1
+  Resources:    
+    ru_utime:    00:12:02 (722.1 ms)
+    ru_stime:    00:00:03 (3.7 ms)
+    ru_maxrss:   92260
+    ru_minflt:   25260
+    ru_majflt:   69
+    ru_inblock:  3709954
+    ru_oublock:  1526576
+    ru_nvcsw:    9763
+    ru_nivcsw:   81230
+  GNU time:     
+    real:        00:12:12 (732.3 ms)
+    user:        00:12:02 (722.1 ms)
+    sys:         00:00:03 (3.6 ms)
+  Size (MB):     277.96 (291463427 bytes) (MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon, MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon.qual)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+*** 2016-02-20 04:09:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh d MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_1.fastq.fq 1
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_1.fastq.leon.1.dec.log
+  Process PID:   16117
+  Exit code:     0
+  Wall time:     00:02:52 (172.1 ms)
+  Memory (MB):   47.2
+  Resources:    
+    ru_utime:    00:02:38 (158.0 ms)
+    ru_stime:    00:00:01 (1.8 ms)
+    ru_maxrss:   48368
+    ru_minflt:   13496
+    ru_majflt:   41
+    ru_inblock:  603096
+    ru_oublock:  2905024
+    ru_nvcsw:    1411
+    ru_nivcsw:   18102
+  GNU time:     
+    real:        00:02:51 (171.7 ms)
+    user:        00:02:38 (158.0 ms)
+    sys:         00:00:01 (1.8 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_1.fastq.fq)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+
+>>> leon (File 2: MH0001_081026_clean_2.fastq)
+*** 2016-03-02 11:27:28 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh e MH0001_081026_clean_2.fastq MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon 1 
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_2.fastq.leon.1.cmp.log
+  Process PID:   8852
+  Exit code:     0
+  Wall time:     00:10:50 (650.3 ms)
+  Memory (MB):   95.7
+  Resources:    
+    ru_utime:    00:10:39 (639.8 ms)
+    ru_stime:    00:00:03 (3.8 ms)
+    ru_maxrss:   97968
+    ru_minflt:   23662
+    ru_majflt:   88
+    ru_inblock:  3715777
+    ru_oublock:  1609008
+    ru_nvcsw:    9780
+    ru_nivcsw:   72286
+  GNU time:     
+    real:        00:10:50 (650.1 ms)
+    user:        00:10:39 (639.8 ms)
+    sys:         00:00:03 (3.7 ms)
+  Size (MB):     348.40 (365321856 bytes) (MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon, MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-02 11:38:19 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh d MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_2.fastq.fq 1
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_2.fastq.leon.1.dec.log
+  Process PID:   9374
+  Exit code:     0
+  Wall time:     00:02:52 (172.1 ms)
+  Memory (MB):   46.9
+  Resources:    
+    ru_utime:    00:02:36 (156.1 ms)
+    ru_stime:    00:00:01 (1.9 ms)
+    ru_maxrss:   48076
+    ru_minflt:   13225
+    ru_majflt:   43
+    ru_inblock:  747448
+    ru_oublock:  2904944
+    ru_nvcsw:    1993
+    ru_nivcsw:   17620
+  GNU time:     
+    real:        00:02:51 (171.9 ms)
+    user:        00:02:36 (156.1 ms)
+    sys:         00:00:01 (1.9 ms)
+  Size (MB):     1,418.39 (1487287773 bytes) (MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 fqc                                  # 
+########################################################################
+>>> fqc (File 1: MH0001_081026_clean.1.fastq)
+*** 2016-01-03 14:14:17 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -c -i MH0001_081026_clean.1.fastq -o MH0001_081026_clean.1/output/compressed/fqc/MH0001_081026_clean.1.fastq.fqc
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fastq.fqc.1.cmp.log
+  Process PID:   14841
+  Exit code:     0
+  Wall time:     00:04:19 (259.8 ms)
+  Memory (MB):   682.2
+  Resources:
+    ru_utime:    00:04:13 (253.2 ms)
+    ru_stime:    00:00:04 (4.3 ms)
+    ru_maxrss:   698560
+    ru_minflt:   26438
+    ru_majflt:   30
+    ru_inblock:  3704338
+    ru_oublock:  1513416
+    ru_nvcsw:    120667
+    ru_nivcsw:   133464
+  GNU time:
+    real:        00:04:19 (259.6 ms)
+    user:        00:04:13 (253.2 ms)
+    sys:         00:00:04 (4.3 ms)
+  Size (MB):     255.52 (267932009 bytes) (MH0001_081026_clean.1/output/compressed/fqc/MH0001_081026_clean.1.fastq.fqc)
+  Free space:      2.8T  1.1T  1.7T  40% /local-scratch
+*** 2016-01-03 14:18:38 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -d -i MH0001_081026_clean.1/output/compressed/fqc/MH0001_081026_clean.1.fastq.fqc -o MH0001_081026_clean.1/output/decompressed/fqc/MH0001_081026_clean.1.fastq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fastq.fqc.1.dec.log
+  Process PID:   14956
+  Exit code:     0
+  Wall time:     00:03:18 (198.0 ms)
+  Memory (MB):   322.2
+  Resources:
+    ru_utime:    00:03:12 (192.6 ms)
+    ru_stime:    00:00:04 (4.2 ms)
+    ru_maxrss:   329912
+    ru_minflt:   17687
+    ru_majflt:   30
+    ru_inblock:  554408
+    ru_oublock:  5435976
+    ru_nvcsw:    76296
+    ru_nivcsw:   96894
+  GNU time:
+    real:        00:03:17 (197.8 ms)
+    user:        00:03:12 (192.6 ms)
+    sys:         00:00:04 (4.2 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/decompressed/fqc/MH0001_081026_clean.1.fastq.fq.fastq)
+  Free space:      2.8T  1.1T  1.7T  40% /local-scratch
+
+>>> fqc (File 2: MH0001_081026_clean.2.fastq)
+*** 2016-01-03 14:22:29 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -c -i MH0001_081026_clean.2.fastq -o MH0001_081026_clean.1/output/compressed/fqc/MH0001_081026_clean.2.fastq.fqc
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fastq.fqc.1.cmp.log
+  Process PID:   15082
+  Exit code:     0
+  Wall time:     00:05:10 (310.3 ms)
+  Memory (MB):   681.4
+  Resources:
+    ru_utime:    00:05:03 (303.4 ms)
+    ru_stime:    00:00:04 (4.6 ms)
+    ru_maxrss:   697744
+    ru_minflt:   26486
+    ru_majflt:   30
+    ru_inblock:  3703714
+    ru_oublock:  1778232
+    ru_nvcsw:    106794
+    ru_nivcsw:   123654
+  GNU time:
+    real:        00:05:10 (310.3 ms)
+    user:        00:05:03 (303.4 ms)
+    sys:         00:00:04 (4.6 ms)
+  Size (MB):     320.30 (335860794 bytes) (MH0001_081026_clean.1/output/compressed/fqc/MH0001_081026_clean.2.fastq.fqc)
+  Free space:      2.8T  1.1T  1.7T  40% /local-scratch
+*** 2016-01-03 14:27:40 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -d -i MH0001_081026_clean.1/output/compressed/fqc/MH0001_081026_clean.2.fastq.fqc -o MH0001_081026_clean.1/output/decompressed/fqc/MH0001_081026_clean.2.fastq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fastq.fqc.1.dec.log
+  Process PID:   15206
+  Exit code:     0
+  Wall time:     00:04:13 (253.5 ms)
+  Memory (MB):   470.8
+  Resources:
+    ru_utime:    00:04:07 (247.3 ms)
+    ru_stime:    00:00:04 (4.6 ms)
+    ru_maxrss:   482084
+    ru_minflt:   17758
+    ru_majflt:   30
+    ru_inblock:  687144
+    ru_oublock:  5568000
+    ru_nvcsw:    97992
+    ru_nivcsw:   124749
+  GNU time:
+    real:        00:04:13 (253.3 ms)
+    user:        00:04:07 (247.3 ms)
+    sys:         00:00:04 (4.6 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/decompressed/fqc/MH0001_081026_clean.2.fastq.fq.fastq)
+  Free space:      2.8T  1.1T  1.7T  40% /local-scratch
+
+######################################################################## 
+#                                mince                                 # 
+########################################################################
+>>> mince (File 1: MH0001_081026_clean.1.fq)
+*** 2016-08-23 18:42:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset 1 tools/mince/mince.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince 1  MH0001_081026_clean.2.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince.1.cmp.log
+  Process PID:   30004
+  Exit code:     0
+  Wall time:     00:37:33 (2253.7 ms)
+  Memory (MB):   6382.0
+  Resources:
+    ru_utime:    00:35:59 (2159.3 ms)
+    ru_stime:    00:01:30 (90.3 ms)
+    ru_maxrss:   6535180
+    ru_minflt:   3281393
+    ru_majflt:   22
+    ru_inblock:  7376544
+    ru_oublock:  442184
+    ru_nvcsw:    7738930
+    ru_nivcsw:   8117955
+  GNU time:
+    real:        00:37:33 (2253.5 ms)
+    user:        00:35:59 (2159.3 ms)
+    sys:         00:01:30 (90.3 ms)
+  Size (MB):     166.74 (174841351 bytes) (MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.seqs.lz, MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.offs.lz, MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.nlocs.lz, MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.flips.lz)
+  Free space:      2.8T  1.9T  926G  67% /local-scratch
+*** 2016-08-23 19:20:12 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset 1 tools/mince/mince.sh d MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq 1
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince.1.dec.log
+  Process PID:   30454
+  Exit code:     0
+  Wall time:     00:00:57 (57.1 ms)
+  Memory (MB):   242.6
+  Resources:
+    ru_utime:    00:00:52 (52.4 ms)
+    ru_stime:    00:00:03 (3.9 ms)
+    ru_maxrss:   248416
+    ru_minflt:   26288
+    ru_majflt:   31
+    ru_inblock:  373400
+    ru_oublock:  2551304
+    ru_nvcsw:    62256
+    ru_nivcsw:   67515
+  GNU time:
+    real:        00:00:57 (57.0 ms)
+    user:        00:00:52 (52.4 ms)
+    sys:         00:00:03 (3.9 ms)
+  Size (MB):     1,844.32 (1933905508 bytes) (MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq.fa, MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq1.fa, MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq2.fa, MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq.log)
+  Free space:      2.8T  1.9T  926G  67% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: MH0001_081026_clean.1.fq)
+*** 2016-08-11 00:17:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset 1 tools/mince/mince.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince 1 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince-single.1.cmp.log
+  Process PID:   12943
+  Exit code:     0
+  Wall time:     00:16:12 (972.8 ms)
+  Memory (MB):   5684.1
+  Resources:    
+    ru_utime:    00:15:17 (917.0 ms)
+    ru_stime:    00:00:53 (53.0 ms)
+    ru_maxrss:   5820548
+    ru_minflt:   3339296
+    ru_majflt:   31
+    ru_inblock:  3702752
+    ru_oublock:  252920
+    ru_nvcsw:    3627257
+    ru_nivcsw:   3826258
+  GNU time:     
+    real:        00:16:12 (972.7 ms)
+    user:        00:15:17 (917.0 ms)
+    sys:         00:00:53 (53.0 ms)
+  Size (MB):     48.01 (50345692 bytes) (MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.seqs.lz, MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.offs.lz, MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.nlocs.lz, MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.flips.lz)
+  Free space:      2.8T  1.8T  991G  65% /local-scratch
+*** 2016-08-11 00:33:50 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset 1 tools/mince/mince.sh d MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince MH0001_081026_clean.1/output/decompressed/mince-single/MH0001_081026_clean.1.fq.fq 1 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince-single.1.dec.log
+  Process PID:   13151
+  Exit code:     0
+  Wall time:     00:00:37 (37.7 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:00:24 (24.7 ms)
+    ru_stime:    00:00:12 (12.3 ms)
+    ru_maxrss:   248396
+    ru_minflt:   23781
+    ru_majflt:   31
+    ru_inblock:  129992
+    ru_oublock:  1231664
+    ru_nvcsw:    29720
+    ru_nivcsw:   32961
+  GNU time:     
+    real:        00:00:37 (37.6 ms)
+    user:        00:00:24 (24.7 ms)
+    sys:         00:00:12 (12.3 ms)
+  Size (MB):     599.98 (629128658 bytes) (MH0001_081026_clean.1/output/decompressed/mince-single/MH0001_081026_clean.1.fq.fq.log, MH0001_081026_clean.1/output/decompressed/mince-single/MH0001_081026_clean.1.fq.fq.fa)
+  Free space:      2.8T  1.8T  991G  65% /local-scratch
+
+######################################################################## 
+#                               lw-fqzip                               # 
+########################################################################
+>>> lw-fqzip (File 1: MH0001_081026_clean.1.fastq)
+*** 2016-01-23 21:06:36 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/LWFQZip-v1.02/lwfqzip.sh e MH0001_081026_clean.1.fastq MH0001_081026_clean.1/output/compressed/lw-fqzip/MH0001_081026_clean.1.fastq.lz data/sam/ref/hg19.fa 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fastq.lw-fqzip.1.cmp.log
+  Process PID:   11054
+  Exit code:     256
+  Wall time:     00:00:10 (10.9 ms)
+  Memory (MB):   3052.3
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:06 (6.7 ms)
+    ru_maxrss:   3125508
+    ru_minflt:   7079
+    ru_majflt:   14
+    ru_inblock:  6253416
+    ru_oublock:  24
+    ru_nvcsw:    12482
+    ru_nivcsw:   12829
+  GNU time:     
+    real:        00:00:10 (10.7 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:06 (6.7 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+>>> lw-fqzip (File 2: MH0001_081026_clean.2.fq)
+*** 2016-02-21 21:05:44 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/LWFQZip-v1.02/lwfqzip.sh e MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/compressed/lw-fqzip/MH0001_081026_clean.2.fq.lz data/sam/ref/hg19.fa 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.lw-fqzip.1.cmp.log
+  Process PID:   18297
+  Exit code:     256
+  Wall time:     00:00:10 (10.8 ms)
+  Memory (MB):   3052.3
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:06 (6.7 ms)
+    ru_maxrss:   3125512
+    ru_minflt:   6170
+    ru_majflt:   14
+    ru_inblock:  6254920
+    ru_oublock:  24
+    ru_nvcsw:    12502
+    ru_nivcsw:   12780
+  GNU time:     
+    real:        00:00:10 (10.7 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:06 (6.7 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: MH0001_081026_clean.1.fq)
+*** 2016-02-21 21:05:56 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kic-0.2/kic.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic 1 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.kic.1.cmp.log
+  Process PID:   18320
+  Exit code:     256
+  Wall time:     00:00:23 (23.6 ms)
+  Memory (MB):   1046.2
+  Resources:    
+    ru_utime:    00:00:21 (21.3 ms)
+    ru_stime:    00:00:00 (0.4 ms)
+    ru_maxrss:   1071304
+    ru_minflt:   15081
+    ru_majflt:   141
+    ru_inblock:  44456
+    ru_oublock:  96
+    ru_nvcsw:    6452
+    ru_nivcsw:   74856
+  GNU time:     
+    real:        00:00:23 (23.5 ms)
+    user:        00:00:21 (21.3 ms)
+    sys:         00:00:00 (0.4 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+>>> kic (File 2: MH0001_081026_clean.2.fq)
+*** 2016-02-21 21:06:19 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kic-0.2/kic.sh e MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic 1 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.kic.1.cmp.log
+  Process PID:   18376
+  Exit code:     256
+  Wall time:     00:00:24 (24.4 ms)
+  Memory (MB):   1060.6
+  Resources:    
+    ru_utime:    00:00:21 (21.9 ms)
+    ru_stime:    00:00:00 (0.4 ms)
+    ru_maxrss:   1086048
+    ru_minflt:   16104
+    ru_majflt:   141
+    ru_inblock:  46816
+    ru_oublock:  96
+    ru_nvcsw:    6700
+    ru_nivcsw:   89890
+  GNU time:     
+    real:        00:00:24 (24.3 ms)
+    user:        00:00:21 (21.9 ms)
+    sys:         00:00:00 (0.4 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+######################################################################## 
+#                                beetl                                 # 
+########################################################################
+>>> beetl (File 1: MH0001_081026_clean.1.fq)
+*** 2016-02-29 16:14:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/beetl/MH0001_081026_clean.1.fq.beetl 1 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.beetl.1.cmp.log
+  Process PID:   2667
+  Exit code:     0
+  Wall time:     00:07:41 (461.9 ms)
+  Memory (MB):   7.7
+  Resources:    
+    ru_utime:    00:06:51 (411.5 ms)
+    ru_stime:    00:00:44 (44.9 ms)
+    ru_maxrss:   7892
+    ru_minflt:   7170
+    ru_majflt:   30
+    ru_inblock:  3706056
+    ru_oublock:  42264296
+    ru_nvcsw:    154027
+    ru_nivcsw:   214199
+  GNU time:     
+    real:        00:07:41 (461.6 ms)
+    user:        00:06:51 (411.5 ms)
+    sys:         00:00:44 (44.9 ms)
+  Size (MB):     108.97 (114259045 bytes) (MH0001_081026_clean.1/output/compressed/beetl/MH0001_081026_clean.1.fq.beetl)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-02-29 16:21:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh d MH0001_081026_clean.1/output/compressed/beetl/MH0001_081026_clean.1.fq.beetl MH0001_081026_clean.1/output/decompressed/beetl/MH0001_081026_clean.1.fq.fq 1
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.beetl.1.dec.log
+  Process PID:   2890
+  Exit code:     0
+  Wall time:     00:05:59 (359.8 ms)
+  Memory (MB):   169.3
+  Resources:    
+    ru_utime:    00:05:29 (329.7 ms)
+    ru_stime:    00:00:27 (27.6 ms)
+    ru_maxrss:   173340
+    ru_minflt:   9336
+    ru_majflt:   29
+    ru_inblock:  257568
+    ru_oublock:  3593376
+    ru_nvcsw:    154017
+    ru_nivcsw:   190491
+  GNU time:     
+    real:        00:05:59 (359.6 ms)
+    user:        00:05:29 (329.7 ms)
+    sys:         00:00:27 (27.5 ms)
+  Size (MB):     666.59 (698970004 bytes) (MH0001_081026_clean.1/output/decompressed/beetl/MH0001_081026_clean.1.fq.fq)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+>>> beetl (File 2: MH0001_081026_clean.2.fq)
+*** 2016-03-01 23:17:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh e MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/compressed/beetl/MH0001_081026_clean.2.fq.beetl 1 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.beetl.1.cmp.log
+  Process PID:   2316
+  Exit code:     0
+  Wall time:     00:07:48 (468.4 ms)
+  Memory (MB):   7.7
+  Resources:    
+    ru_utime:    00:06:52 (412.8 ms)
+    ru_stime:    00:00:44 (44.0 ms)
+    ru_maxrss:   7892
+    ru_minflt:   6666
+    ru_majflt:   30
+    ru_inblock:  3706920
+    ru_oublock:  42274448
+    ru_nvcsw:    154040
+    ru_nivcsw:   214201
+  GNU time:     
+    real:        00:07:48 (468.2 ms)
+    user:        00:06:52 (412.8 ms)
+    sys:         00:00:44 (44.0 ms)
+  Size (MB):     114.48 (120036520 bytes) (MH0001_081026_clean.1/output/compressed/beetl/MH0001_081026_clean.2.fq.beetl)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-01 23:25:17 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh d MH0001_081026_clean.1/output/compressed/beetl/MH0001_081026_clean.2.fq.beetl MH0001_081026_clean.1/output/decompressed/beetl/MH0001_081026_clean.2.fq.fq 1
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.beetl.1.dec.log
+  Process PID:   2541
+  Exit code:     0
+  Wall time:     00:06:02 (362.0 ms)
+  Memory (MB):   169.3
+  Resources:    
+    ru_utime:    00:05:33 (333.2 ms)
+    ru_stime:    00:00:26 (26.8 ms)
+    ru_maxrss:   173340
+    ru_minflt:   9341
+    ru_majflt:   24
+    ru_inblock:  266040
+    ru_oublock:  3593312
+    ru_nvcsw:    154019
+    ru_nivcsw:   190808
+  GNU time:     
+    real:        00:06:01 (361.9 ms)
+    user:        00:05:33 (333.2 ms)
+    sys:         00:00:26 (26.8 ms)
+  Size (MB):     666.57 (698950728 bytes) (MH0001_081026_clean.1/output/decompressed/beetl/MH0001_081026_clean.2.fq.fq)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                 MH0001_081026_clean.1 with 4 threads                 + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz_1
+*** 2015-11-14 09:10:04 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4  
+    stdin:       MH0001_081026_clean.1.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz
+  stderr:      MH0001_081026_clean.1/log/pigz_1.4.cmp.log
+  Process PID:   22556
+  Exit code:     0
+  Wall time:     00:00:50 (50.5 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:03:08 (188.2 ms)
+    ru_stime:    00:00:05 (5.2 ms)
+    ru_maxrss:   5880
+    ru_minflt:   1284
+    ru_majflt:   7
+    ru_inblock:  3674384
+    ru_oublock:  978520
+    ru_nvcsw:    29101
+    ru_nivcsw:   24804
+  GNU time:     
+    real:        00:00:50 (50.5 ms)
+    user:        00:03:08 (188.2 ms)
+    sys:         00:00:05 (5.2 ms)
+  Size (MB):     477.78 (500992805 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 09:10:55 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz.fq
+  stderr:      MH0001_081026_clean.1/log/pigz_1.4.dec.log
+  Process PID:   22610
+  Exit code:     0
+  Wall time:     00:00:10 (10.3 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:16 (16.3 ms)
+    ru_stime:    00:00:06 (6.4 ms)
+    ru_maxrss:   5880
+    ru_minflt:   607
+    ru_majflt:   7
+    ru_inblock:  980896
+    ru_oublock:  3672736
+    ru_nvcsw:    132644
+    ru_nivcsw:   3855
+  GNU time:     
+    real:        00:00:10 (10.2 ms)
+    user:        00:00:16 (16.3 ms)
+    sys:         00:00:06 (6.3 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+>>> pigz_2
+*** 2015-11-14 09:11:26 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4  
+    stdin:       MH0001_081026_clean.2.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz
+  stderr:      MH0001_081026_clean.1/log/pigz_2.4.cmp.log
+  Process PID:   22623
+  Exit code:     0
+  Wall time:     00:00:48 (48.8 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:03:09 (189.9 ms)
+    ru_stime:    00:00:05 (5.4 ms)
+    ru_maxrss:   5880
+    ru_minflt:   1293
+    ru_majflt:   7
+    ru_inblock:  3673744
+    ru_oublock:  1121168
+    ru_nvcsw:    28641
+    ru_nivcsw:   25496
+  GNU time:     
+    real:        00:00:48 (48.7 ms)
+    user:        00:03:09 (189.9 ms)
+    sys:         00:00:05 (5.4 ms)
+  Size (MB):     547.44 (574028873 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 09:12:15 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz.fq
+  stderr:      MH0001_081026_clean.1/log/pigz_2.4.dec.log
+  Process PID:   22642
+  Exit code:     0
+  Wall time:     00:00:10 (10.9 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:17 (17.0 ms)
+    ru_stime:    00:00:06 (6.6 ms)
+    ru_maxrss:   5880
+    ru_minflt:   609
+    ru_majflt:   7
+    ru_inblock:  1122152
+    ru_oublock:  3672632
+    ru_nvcsw:    132660
+    ru_nivcsw:   4473
+  GNU time:     
+    real:        00:00:10 (10.9 ms)
+    user:        00:00:17 (17.0 ms)
+    sys:         00:00:06 (6.6 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2_1
+*** 2015-11-14 09:12:45 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4  
+    stdin:       MH0001_081026_clean.1.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2
+  stderr:      MH0001_081026_clean.1/log/pbzip2_1.4.cmp.log
+  Process PID:   22658
+  Exit code:     0
+  Wall time:     00:01:02 (62.6 ms)
+  Memory (MB):   37.7
+  Resources:    
+    ru_utime:    00:03:58 (238.3 ms)
+    ru_stime:    00:00:09 (9.5 ms)
+    ru_maxrss:   38624
+    ru_minflt:   1202720
+    ru_majflt:   8
+    ru_inblock:  3697856
+    ru_oublock:  761296
+    ru_nvcsw:    11625
+    ru_nivcsw:   32490
+  GNU time:     
+    real:        00:01:02 (62.5 ms)
+    user:        00:03:58 (238.3 ms)
+    sys:         00:00:09 (9.5 ms)
+  Size (MB):     371.71 (389764284 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 09:13:49 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2.fq
+  stderr:      MH0001_081026_clean.1/log/pbzip2_1.4.dec.log
+  Process PID:   22684
+  Exit code:     0
+  Wall time:     00:00:17 (17.4 ms)
+  Memory (MB):   25.1
+  Resources:    
+    ru_utime:    00:01:05 (65.7 ms)
+    ru_stime:    00:00:07 (7.2 ms)
+    ru_maxrss:   25740
+    ru_minflt:   796114
+    ru_majflt:   8
+    ru_inblock:  787416
+    ru_oublock:  3672736
+    ru_nvcsw:    4812
+    ru_nivcsw:   10906
+  GNU time:     
+    real:        00:00:17 (17.4 ms)
+    user:        00:01:05 (65.7 ms)
+    sys:         00:00:07 (7.2 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+>>> pbzip2_2
+*** 2015-11-14 09:14:13 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4  
+    stdin:       MH0001_081026_clean.2.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2
+  stderr:      MH0001_081026_clean.1/log/pbzip2_2.4.cmp.log
+  Process PID:   22703
+  Exit code:     0
+  Wall time:     00:01:08 (68.0 ms)
+  Memory (MB):   38.6
+  Resources:    
+    ru_utime:    00:04:12 (252.6 ms)
+    ru_stime:    00:00:10 (10.0 ms)
+    ru_maxrss:   39512
+    ru_minflt:   1292913
+    ru_majflt:   8
+    ru_inblock:  3697560
+    ru_oublock:  899776
+    ru_nvcsw:    10751
+    ru_nivcsw:   34279
+  GNU time:     
+    real:        00:01:07 (67.9 ms)
+    user:        00:04:12 (252.6 ms)
+    sys:         00:00:10 (10.0 ms)
+  Size (MB):     439.33 (460675589 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 09:15:22 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2.fq
+  stderr:      MH0001_081026_clean.1/log/pbzip2_2.4.dec.log
+  Process PID:   22731
+  Exit code:     0
+  Wall time:     00:00:18 (18.8 ms)
+  Memory (MB):   25.3
+  Resources:    
+    ru_utime:    00:01:11 (71.2 ms)
+    ru_stime:    00:00:07 (7.5 ms)
+    ru_maxrss:   25856
+    ru_minflt:   876486
+    ru_majflt:   8
+    ru_inblock:  924848
+    ru_oublock:  3672632
+    ru_nvcsw:    4764
+    ru_nivcsw:   12363
+  GNU time:     
+    real:        00:00:18 (18.8 ms)
+    user:        00:01:11 (71.2 ms)
+    sys:         00:00:07 (7.5 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                scalce                                # 
+########################################################################
+>>> scalce (File 1: MH0001_081026_clean.1.fq)
+*** 2016-01-05 17:53:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 4 MH0001_081026_clean.1.fq -o MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce  -r
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.scalce.4.cmp.log
+  Process PID:   27411
+  Exit code:     0
+  Wall time:     00:02:32 (152.5 ms)
+  Memory (MB):   3134.5
+  Resources:    
+    ru_utime:    00:06:46 (406.5 ms)
+    ru_stime:    00:00:27 (27.5 ms)
+    ru_maxrss:   3209704
+    ru_minflt:   483902
+    ru_majflt:   10
+    ru_inblock:  7407840
+    ru_oublock:  4138776
+    ru_nvcsw:    2617
+    ru_nivcsw:   57334
+  GNU time:     
+    real:        00:02:32 (152.3 ms)
+    user:        00:06:46 (406.5 ms)
+    sys:         00:00:27 (27.5 ms)
+  Size (MB):     682.80 (715967715 bytes) (MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_1.scalceq, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_1.scalcen, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_1.scalcer, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_2.scalceq, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_2.scalcen, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_2.scalcer)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2016-01-05 20:11:12 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -r -T 4 MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_1.scalcer -o MH0001_081026_clean.1/output/decompressed/scalce/MH0001_081026_clean.1.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.scalce.4.dec.log
+  Process PID:   3412
+  Exit code:     0
+  Wall time:     00:01:41 (101.5 ms)
+  Memory (MB):   1056.1
+  Resources:    
+    ru_utime:    00:04:36 (276.6 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   1081496
+    ru_minflt:   242768
+    ru_majflt:   10
+    ru_inblock:  1461048
+    ru_oublock:  5809920
+    ru_nvcsw:    1976
+    ru_nivcsw:   32152
+  GNU time:     
+    real:        00:01:41 (101.1 ms)
+    user:        00:04:36 (276.6 ms)
+    sys:         00:00:04 (4.1 ms)
+  Size (MB):     2,836.85 (2974656494 bytes) (MH0001_081026_clean.1/output/decompressed/scalce/MH0001_081026_clean.1.fq.fq_1.fastq, MH0001_081026_clean.1/output/decompressed/scalce/MH0001_081026_clean.1.fq.fq_2.fastq)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single (File 1: MH0001_081026_clean.1.fq)
+*** 2016-01-05 17:56:23 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 4 MH0001_081026_clean.1.fq -o MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.scalce-single.4.cmp.log
+  Process PID:   27623
+  Exit code:     0
+  Wall time:     00:01:31 (91.9 ms)
+  Memory (MB):   2520.7
+  Resources:    
+    ru_utime:    00:03:35 (215.8 ms)
+    ru_stime:    00:00:16 (16.0 ms)
+    ru_maxrss:   2581200
+    ru_minflt:   483262
+    ru_majflt:   10
+    ru_inblock:  3733944
+    ru_oublock:  2410608
+    ru_nvcsw:    273
+    ru_nivcsw:   33673
+  GNU time:     
+    real:        00:01:31 (91.8 ms)
+    user:        00:03:35 (215.8 ms)
+    sys:         00:00:16 (16.0 ms)
+  Size (MB):     283.71 (297494792 bytes) (MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single_1.scalceq, MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single_1.scalcen, MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single_1.scalcer)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2016-01-05 20:12:55 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -T 4 MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single_1.scalcer -o MH0001_081026_clean.1/output/decompressed/scalce-single/MH0001_081026_clean.1.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.scalce-single.4.dec.log
+  Process PID:   3547
+  Exit code:     0
+  Wall time:     00:00:50 (50.0 ms)
+  Memory (MB):   1054.7
+  Resources:    
+    ru_utime:    00:02:18 (138.1 ms)
+    ru_stime:    00:00:02 (2.3 ms)
+    ru_maxrss:   1080024
+    ru_minflt:   242879
+    ru_majflt:   10
+    ru_inblock:  643328
+    ru_oublock:  2904968
+    ru_nvcsw:    912
+    ru_nivcsw:   15718
+  GNU time:     
+    real:        00:00:49 (49.9 ms)
+    user:        00:02:18 (138.1 ms)
+    sys:         00:00:02 (2.3 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean.1/output/decompressed/scalce-single/MH0001_081026_clean.1.fq.fq_1.fastq)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc_1
+*** 2015-12-05 15:53:57 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4   MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc
+  stderr:      MH0001_081026_clean.1/log/dsrc_1.4.cmp.log
+  Process PID:   5638
+  Exit code:     0
+  Wall time:     00:00:11 (11.6 ms)
+  Memory (MB):   170.5
+  Resources:    
+    ru_utime:    00:00:39 (39.6 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   174560
+    ru_minflt:   19290
+    ru_majflt:   8
+    ru_inblock:  3697920
+    ru_oublock:  609560
+    ru_nvcsw:    8532
+    ru_nivcsw:   10412
+  GNU time:     
+    real:        00:00:11 (11.6 ms)
+    user:        00:00:39 (39.6 ms)
+    sys:         00:00:04 (4.1 ms)
+  Size (MB):     297.63 (312084801 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+*** 2015-12-05 15:54:09 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc_1.4.dec.log
+  Process PID:   5652
+  Exit code:     0
+  Wall time:     00:00:12 (12.0 ms)
+  Memory (MB):   137.8
+  Resources:    
+    ru_utime:    00:00:22 (22.3 ms)
+    ru_stime:    00:00:03 (3.5 ms)
+    ru_maxrss:   141104
+    ru_minflt:   9142
+    ru_majflt:   10
+    ru_inblock:  634728
+    ru_oublock:  3672744
+    ru_nvcsw:    1433
+    ru_nivcsw:   4353
+  GNU time:     
+    real:        00:00:12 (12.0 ms)
+    user:        00:00:22 (22.3 ms)
+    sys:         00:00:03 (3.4 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc.fq)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+
+>>> dsrc_2
+*** 2015-12-05 15:54:22 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4   MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc
+  stderr:      MH0001_081026_clean.1/log/dsrc_2.4.cmp.log
+  Process PID:   5667
+  Exit code:     0
+  Wall time:     00:00:11 (11.7 ms)
+  Memory (MB):   167.0
+  Resources:    
+    ru_utime:    00:00:41 (41.8 ms)
+    ru_stime:    00:00:04 (4.2 ms)
+    ru_maxrss:   170996
+    ru_minflt:   19981
+    ru_majflt:   8
+    ru_inblock:  3697800
+    ru_oublock:  754440
+    ru_nvcsw:    7948
+    ru_nivcsw:   10860
+  GNU time:     
+    real:        00:00:11 (11.6 ms)
+    user:        00:00:41 (41.8 ms)
+    sys:         00:00:04 (4.2 ms)
+  Size (MB):     368.37 (386261190 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+*** 2015-12-05 15:54:35 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc_2.4.dec.log
+  Process PID:   5679
+  Exit code:     0
+  Wall time:     00:00:22 (22.5 ms)
+  Memory (MB):   141.8
+  Resources:    
+    ru_utime:    00:00:26 (26.0 ms)
+    ru_stime:    00:00:03 (3.7 ms)
+    ru_maxrss:   145216
+    ru_minflt:   13893
+    ru_majflt:   10
+    ru_inblock:  779608
+    ru_oublock:  3672640
+    ru_nvcsw:    1872
+    ru_nivcsw:   4813
+  GNU time:     
+    real:        00:00:22 (22.4 ms)
+    user:        00:00:26 (26.0 ms)
+    sys:         00:00:03 (3.7 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc.fq)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2_1
+*** 2015-12-05 15:54:59 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4 -m2  MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc-m2
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_1.4.cmp.log
+  Process PID:   5694
+  Exit code:     0
+  Wall time:     00:00:46 (46.2 ms)
+  Memory (MB):   2325.9
+  Resources:    
+    ru_utime:    00:02:25 (145.5 ms)
+    ru_stime:    00:00:04 (4.7 ms)
+    ru_maxrss:   2381712
+    ru_minflt:   27877
+    ru_majflt:   8
+    ru_inblock:  3698440
+    ru_oublock:  559848
+    ru_nvcsw:    7693
+    ru_nivcsw:   21999
+  GNU time:     
+    real:        00:00:46 (46.2 ms)
+    user:        00:02:25 (145.5 ms)
+    sys:         00:00:04 (4.7 ms)
+  Size (MB):     273.35 (286627600 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc-m2)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+*** 2015-12-05 15:55:46 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc-m2 MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc-m2.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_1.4.dec.log
+  Process PID:   5714
+  Exit code:     0
+  Wall time:     00:00:58 (58.8 ms)
+  Memory (MB):   2468.5
+  Resources:    
+    ru_utime:    00:02:28 (148.3 ms)
+    ru_stime:    00:00:03 (3.8 ms)
+    ru_maxrss:   2527780
+    ru_minflt:   14049
+    ru_majflt:   10
+    ru_inblock:  585040
+    ru_oublock:  3672744
+    ru_nvcsw:    1697
+    ru_nivcsw:   16276
+  GNU time:     
+    real:        00:00:58 (58.7 ms)
+    user:        00:02:28 (148.3 ms)
+    sys:         00:00:03 (3.8 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc-m2.fq)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+
+>>> dsrc-m2_2
+*** 2015-12-05 15:56:46 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4 -m2  MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc-m2
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_2.4.cmp.log
+  Process PID:   5770
+  Exit code:     0
+  Wall time:     00:00:49 (49.0 ms)
+  Memory (MB):   2365.2
+  Resources:    
+    ru_utime:    00:02:33 (153.4 ms)
+    ru_stime:    00:00:04 (4.6 ms)
+    ru_maxrss:   2421968
+    ru_minflt:   26992
+    ru_majflt:   8
+    ru_inblock:  3698280
+    ru_oublock:  684008
+    ru_nvcsw:    7724
+    ru_nivcsw:   21997
+  GNU time:     
+    real:        00:00:48 (48.9 ms)
+    user:        00:02:33 (153.4 ms)
+    sys:         00:00:04 (4.5 ms)
+  Size (MB):     333.97 (350197808 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc-m2)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+*** 2015-12-05 15:57:36 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc-m2 MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc-m2.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_2.4.dec.log
+  Process PID:   5786
+  Exit code:     0
+  Wall time:     00:00:50 (50.6 ms)
+  Memory (MB):   2484.1
+  Resources:    
+    ru_utime:    00:02:34 (154.3 ms)
+    ru_stime:    00:00:03 (3.6 ms)
+    ru_maxrss:   2543736
+    ru_minflt:   14487
+    ru_majflt:   10
+    ru_inblock:  709192
+    ru_oublock:  3672640
+    ru_nvcsw:    1863
+    ru_nivcsw:   17150
+  GNU time:     
+    real:        00:00:50 (50.5 ms)
+    user:        00:02:34 (154.3 ms)
+    sys:         00:00:03 (3.6 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc-m2.fq)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1: MH0001_081026_clean.1.fq)
+*** 2015-12-29 00:00:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom e 4 'MH0001_081026_clean.1.fq' MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.orcom.4.cmp.log
+  Process PID:   3374
+  Exit code:     0
+  Wall time:     00:00:43 (43.8 ms)
+  Memory (MB):   1370.8
+  Resources:    
+    ru_utime:    00:02:37 (157.6 ms)
+    ru_stime:    00:00:05 (5.6 ms)
+    ru_maxrss:   1403744
+    ru_minflt:   378318
+    ru_majflt:   14
+    ru_inblock:  3698704
+    ru_oublock:  339592
+    ru_nvcsw:    27677
+    ru_nivcsw:   22951
+  GNU time:     
+    real:        00:00:43 (43.7 ms)
+    user:        00:02:37 (157.6 ms)
+    sys:         00:00:05 (5.5 ms)
+  Size (MB):     49.09 (51469412 bytes) (MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom.cmeta, MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom.cdna)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+*** 2015-12-29 00:01:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom d 4 MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom MH0001_081026_clean.1/output/decompressed/orcom/MH0001_081026_clean.1.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.orcom.4.dec.log
+  Process PID:   3419
+  Exit code:     0
+  Wall time:     00:00:06 (6.1 ms)
+  Memory (MB):   77.3
+  Resources:    
+    ru_utime:    00:00:21 (21.5 ms)
+    ru_stime:    00:00:02 (2.5 ms)
+    ru_maxrss:   79152
+    ru_minflt:   588743
+    ru_majflt:   12
+    ru_inblock:  126488
+    ru_oublock:  1023128
+    ru_nvcsw:    10697
+    ru_nivcsw:   2949
+  GNU time:     
+    real:        00:00:06 (6.0 ms)
+    user:        00:00:21 (21.4 ms)
+    sys:         00:00:02 (2.5 ms)
+  Size (MB):     499.56 (523830330 bytes) (MH0001_081026_clean.1/output/decompressed/orcom/MH0001_081026_clean.1.fq.fq)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1: MH0001_081026_clean.1.fq)
+*** 2015-12-29 16:29:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v MH0001_081026_clean.1.fq 
+    stdout:      MH0001_081026_clean.1/output/compressed/quip/MH0001_081026_clean.1.fq.qp
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.quip.4.cmp.log
+  Process PID:   19218
+  Exit code:     0
+  Wall time:     00:01:27 (87.9 ms)
+  Memory (MB):   394.9
+  Resources:    
+    ru_utime:    00:02:28 (148.8 ms)
+    ru_stime:    00:00:03 (3.8 ms)
+    ru_maxrss:   404352
+    ru_minflt:   16738
+    ru_majflt:   16
+    ru_inblock:  3675872
+    ru_oublock:  530600
+    ru_nvcsw:    12351
+    ru_nivcsw:   29946
+  GNU time:     
+    real:        00:01:27 (87.8 ms)
+    user:        00:02:28 (148.8 ms)
+    sys:         00:00:03 (3.8 ms)
+  Size (MB):     259.04 (271627150 bytes) (MH0001_081026_clean.1/output/compressed/quip/MH0001_081026_clean.1.fq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-29 16:31:04 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq MH0001_081026_clean.1/output/compressed/quip/MH0001_081026_clean.1.fq.qp
+    stdout:      MH0001_081026_clean.1/output/decompressed/quip/MH0001_081026_clean.1.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.quip.4.dec.log
+  Process PID:   28558
+  Exit code:     0
+  Wall time:     00:01:46 (106.8 ms)
+  Memory (MB):   393.9
+  Resources:    
+    ru_utime:    00:03:11 (191.8 ms)
+    ru_stime:    00:00:05 (5.3 ms)
+    ru_maxrss:   403372
+    ru_minflt:   16229
+    ru_majflt:   16
+    ru_inblock:  534344
+    ru_oublock:  2904952
+    ru_nvcsw:    6081
+    ru_nivcsw:   28082
+  GNU time:     
+    real:        00:01:46 (106.7 ms)
+    user:        00:03:11 (191.8 ms)
+    sys:         00:00:05 (5.3 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean.1/output/decompressed/quip/MH0001_081026_clean.1.fq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+>>> quip (File 2: MH0001_081026_clean.2.fq)
+*** 2015-12-29 16:33:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v MH0001_081026_clean.2.fq 
+    stdout:      MH0001_081026_clean.1/output/compressed/quip/MH0001_081026_clean.2.fq.qp
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.quip.4.cmp.log
+  Process PID:   6033
+  Exit code:     0
+  Wall time:     00:01:29 (89.2 ms)
+  Memory (MB):   394.3
+  Resources:    
+    ru_utime:    00:02:47 (167.0 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   403748
+    ru_minflt:   16588
+    ru_majflt:   16
+    ru_inblock:  3675696
+    ru_oublock:  655144
+    ru_nvcsw:    15137
+    ru_nivcsw:   30186
+  GNU time:     
+    real:        00:01:29 (89.1 ms)
+    user:        00:02:47 (167.0 ms)
+    sys:         00:00:04 (4.1 ms)
+  Size (MB):     319.86 (335394418 bytes) (MH0001_081026_clean.1/output/compressed/quip/MH0001_081026_clean.2.fq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-29 16:34:48 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq MH0001_081026_clean.1/output/compressed/quip/MH0001_081026_clean.2.fq.qp
+    stdout:      MH0001_081026_clean.1/output/decompressed/quip/MH0001_081026_clean.2.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.quip.4.dec.log
+  Process PID:   15381
+  Exit code:     0
+  Wall time:     00:01:52 (112.7 ms)
+  Memory (MB):   393.6
+  Resources:    
+    ru_utime:    00:03:23 (203.7 ms)
+    ru_stime:    00:00:05 (5.3 ms)
+    ru_maxrss:   403088
+    ru_minflt:   16349
+    ru_majflt:   16
+    ru_inblock:  658936
+    ru_oublock:  2904872
+    ru_nvcsw:    6354
+    ru_nivcsw:   29047
+  GNU time:     
+    real:        00:01:52 (112.6 ms)
+    user:        00:03:23 (203.7 ms)
+    sys:         00:00:05 (5.3 ms)
+  Size (MB):     1,418.39 (1487287773 bytes) (MH0001_081026_clean.1/output/decompressed/quip/MH0001_081026_clean.2.fq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+>>> quip-asm (File 1: MH0001_081026_clean.1.fq)
+*** 2015-12-29 16:37:09 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v MH0001_081026_clean.1.fq -a
+    stdout:      MH0001_081026_clean.1/output/compressed/quip-asm/MH0001_081026_clean.1.fq.qp
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.quip-asm.4.cmp.log
+  Process PID:   24751
+  Exit code:     0
+  Wall time:     00:02:08 (128.6 ms)
+  Memory (MB):   777.3
+  Resources:    
+    ru_utime:    00:03:13 (193.5 ms)
+    ru_stime:    00:00:04 (4.2 ms)
+    ru_maxrss:   795928
+    ru_minflt:   21120
+    ru_majflt:   16
+    ru_inblock:  3676464
+    ru_oublock:  530608
+    ru_nvcsw:    12407
+    ru_nivcsw:   35288
+  GNU time:     
+    real:        00:02:08 (128.5 ms)
+    user:        00:03:13 (193.5 ms)
+    sys:         00:00:04 (4.2 ms)
+  Size (MB):     259.04 (271627158 bytes) (MH0001_081026_clean.1/output/compressed/quip-asm/MH0001_081026_clean.1.fq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-29 16:39:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq MH0001_081026_clean.1/output/compressed/quip-asm/MH0001_081026_clean.1.fq.qp
+    stdout:      MH0001_081026_clean.1/output/decompressed/quip-asm/MH0001_081026_clean.1.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.quip-asm.4.dec.log
+  Process PID:   1761
+  Exit code:     0
+  Wall time:     00:02:10 (130.3 ms)
+  Memory (MB):   771.9
+  Resources:    
+    ru_utime:    00:03:30 (210.3 ms)
+    ru_stime:    00:00:03 (3.8 ms)
+    ru_maxrss:   790416
+    ru_minflt:   21150
+    ru_majflt:   16
+    ru_inblock:  533624
+    ru_oublock:  2904960
+    ru_nvcsw:    5876
+    ru_nivcsw:   29728
+  GNU time:     
+    real:        00:02:10 (130.2 ms)
+    user:        00:03:30 (210.3 ms)
+    sys:         00:00:03 (3.8 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean.1/output/decompressed/quip-asm/MH0001_081026_clean.1.fq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+>>> quip-asm (File 2: MH0001_081026_clean.2.fq)
+*** 2015-12-29 16:41:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v MH0001_081026_clean.2.fq -a
+    stdout:      MH0001_081026_clean.1/output/compressed/quip-asm/MH0001_081026_clean.2.fq.qp
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.quip-asm.4.cmp.log
+  Process PID:   11576
+  Exit code:     0
+  Wall time:     00:02:05 (125.2 ms)
+  Memory (MB):   774.0
+  Resources:    
+    ru_utime:    00:03:19 (199.5 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   792584
+    ru_minflt:   20288
+    ru_majflt:   16
+    ru_inblock:  3676464
+    ru_oublock:  655152
+    ru_nvcsw:    14242
+    ru_nivcsw:   33988
+  GNU time:     
+    real:        00:02:05 (125.1 ms)
+    user:        00:03:19 (199.5 ms)
+    sys:         00:00:04 (4.0 ms)
+  Size (MB):     319.86 (335394426 bytes) (MH0001_081026_clean.1/output/compressed/quip-asm/MH0001_081026_clean.2.fq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-29 16:44:03 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq MH0001_081026_clean.1/output/compressed/quip-asm/MH0001_081026_clean.2.fq.qp
+    stdout:      MH0001_081026_clean.1/output/decompressed/quip-asm/MH0001_081026_clean.2.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.quip-asm.4.dec.log
+  Process PID:   20932
+  Exit code:     0
+  Wall time:     00:02:11 (131.5 ms)
+  Memory (MB):   771.6
+  Resources:    
+    ru_utime:    00:03:40 (220.9 ms)
+    ru_stime:    00:00:03 (3.8 ms)
+    ru_maxrss:   790084
+    ru_minflt:   20758
+    ru_majflt:   16
+    ru_inblock:  658136
+    ru_oublock:  2904880
+    ru_nvcsw:    6500
+    ru_nivcsw:   30154
+  GNU time:     
+    real:        00:02:11 (131.4 ms)
+    user:        00:03:40 (220.9 ms)
+    sys:         00:00:03 (3.8 ms)
+  Size (MB):     1,418.39 (1487287773 bytes) (MH0001_081026_clean.1/output/decompressed/quip-asm/MH0001_081026_clean.2.fq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath_1
+*** 2015-11-15 19:29:58 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=4 -ref=data/sam/ref/hg19.fa.gz -reads=MH0001_081026_clean.1.fq -out=MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath  
+  stderr:      MH0001_081026_clean.1/log/kpath_1.4.cmp.log
+  Process PID:   24354
+  Exit code:     0
+  Wall time:     00:40:43 (2443.0 ms)
+  Memory (MB):   46909.5
+  Resources:    
+    ru_utime:    00:46:43 (2803.1 ms)
+    ru_stime:    00:03:13 (193.8 ms)
+    ru_maxrss:   48035288
+    ru_minflt:   2151108
+    ru_majflt:   25
+    ru_inblock:  5531776
+    ru_oublock:  1144104
+    ru_nvcsw:    13518724
+    ru_nivcsw:   483580
+  GNU time:     
+    real:        00:40:43 (2443.0 ms)
+    user:        00:46:43 (2803.1 ms)
+    sys:         00:03:13 (193.8 ms)
+  Size (MB):     155.35 (162897920 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-15 20:10:41 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux decode -p=4 -ref=data/sam/ref/hg19.fa.gz -reads=MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath -out=MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.fq
+  stderr:      MH0001_081026_clean.1/log/kpath_1.4.dec.log
+  Process PID:   24872
+  Exit code:     0
+  Wall time:     00:28:55 (1735.0 ms)
+  Memory (MB):   47391.2
+  Resources:    
+    ru_utime:    00:34:30 (2070.1 ms)
+    ru_stime:    00:02:22 (142.2 ms)
+    ru_maxrss:   48528608
+    ru_minflt:   590702
+    ru_majflt:   25
+    ru_inblock:  1980120
+    ru_oublock:  1251560
+    ru_nvcsw:    12689873
+    ru_nivcsw:   355063
+  GNU time:     
+    real:        00:28:54 (1734.9 ms)
+    user:        00:34:30 (2070.1 ms)
+    sys:         00:02:22 (142.2 ms)
+  Size (MB):     611.08 (640766634 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: MH0001_081026_clean_1.fastq)
+*** 2016-02-20 04:12:45 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e MH0001_081026_clean_1.fastq MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon 4 
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_1.fastq.leon.4.cmp.log
+  Process PID:   16482
+  Exit code:     0
+  Wall time:     00:03:35 (215.8 ms)
+  Memory (MB):   165.2
+  Resources:    
+    ru_utime:    00:13:14 (794.4 ms)
+    ru_stime:    00:00:10 (10.2 ms)
+    ru_maxrss:   169208
+    ru_minflt:   85650
+    ru_majflt:   87
+    ru_inblock:  3712120
+    ru_oublock:  1526072
+    ru_nvcsw:    338589
+    ru_nivcsw:   91796
+  GNU time:     
+    real:        00:03:35 (215.6 ms)
+    user:        00:13:14 (794.4 ms)
+    sys:         00:00:10 (10.2 ms)
+  Size (MB):     278.02 (291525558 bytes) (MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon, MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon.qual)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+*** 2016-02-20 04:16:21 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_1.fastq.fq 4
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_1.fastq.leon.4.dec.log
+  Process PID:   16850
+  Exit code:     0
+  Wall time:     00:01:05 (65.8 ms)
+  Memory (MB):   94.2
+  Resources:    
+    ru_utime:    00:02:47 (167.8 ms)
+    ru_stime:    00:00:02 (2.3 ms)
+    ru_maxrss:   96444
+    ru_minflt:   22729
+    ru_majflt:   42
+    ru_inblock:  603256
+    ru_oublock:  2904992
+    ru_nvcsw:    1881
+    ru_nivcsw:   19385
+  GNU time:     
+    real:        00:01:05 (65.6 ms)
+    user:        00:02:47 (167.8 ms)
+    sys:         00:00:02 (2.3 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_1.fastq.fq)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+
+>>> leon (File 2: MH0001_081026_clean_2.fastq)
+*** 2016-03-02 11:41:40 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e MH0001_081026_clean_2.fastq MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon 4 
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_2.fastq.leon.4.cmp.log
+  Process PID:   9720
+  Exit code:     0
+  Wall time:     00:03:15 (195.0 ms)
+  Memory (MB):   184.8
+  Resources:    
+    ru_utime:    00:11:52 (712.5 ms)
+    ru_stime:    00:00:11 (11.2 ms)
+    ru_maxrss:   189284
+    ru_minflt:   78622
+    ru_majflt:   89
+    ru_inblock:  3715448
+    ru_oublock:  1608984
+    ru_nvcsw:    443394
+    ru_nivcsw:   83745
+  GNU time:     
+    real:        00:03:14 (194.9 ms)
+    user:        00:11:52 (712.5 ms)
+    sys:         00:00:11 (11.1 ms)
+  Size (MB):     348.47 (365401874 bytes) (MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon, MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-02 11:44:56 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_2.fastq.fq 4
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_2.fastq.leon.4.dec.log
+  Process PID:   10235
+  Exit code:     0
+  Wall time:     00:01:11 (71.6 ms)
+  Memory (MB):   93.3
+  Resources:    
+    ru_utime:    00:02:47 (167.1 ms)
+    ru_stime:    00:00:02 (2.3 ms)
+    ru_maxrss:   95580
+    ru_minflt:   23410
+    ru_majflt:   43
+    ru_inblock:  747576
+    ru_oublock:  2904920
+    ru_nvcsw:    2320
+    ru_nivcsw:   19450
+  GNU time:     
+    real:        00:01:11 (71.5 ms)
+    user:        00:02:47 (167.1 ms)
+    sys:         00:00:02 (2.3 ms)
+  Size (MB):     1,418.39 (1487287773 bytes) (MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                mince                                 # 
+########################################################################
+>>> mince (File 1: MH0001_081026_clean.1.fq)
+*** 2016-08-21 17:10:31 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince 4  MH0001_081026_clean.2.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince.4.cmp.log
+  Process PID:   6658
+  Exit code:     0
+  Wall time:     00:16:47 (1007.7 ms)
+  Memory (MB):   6386.2
+  Resources:    
+    ru_utime:    00:48:55 (2935.0 ms)
+    ru_stime:    00:02:06 (126.8 ms)
+    ru_maxrss:   6539508
+    ru_minflt:   3807660
+    ru_majflt:   31
+    ru_inblock:  7376904
+    ru_oublock:  442088
+    ru_nvcsw:    5645107
+    ru_nivcsw:   329168
+  GNU time:     
+    real:        00:16:47 (1007.6 ms)
+    user:        00:48:55 (2935.0 ms)
+    sys:         00:02:06 (126.8 ms)
+  Size (MB):     166.74 (174841351 bytes) (MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.seqs.lz, MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.offs.lz, MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.nlocs.lz, MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.flips.lz)
+  Free space:      2.8T  1.8T  985G  65% /local-scratch
+*** 2016-08-21 17:27:19 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq 4 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince.4.dec.log
+  Process PID:   6918
+  Exit code:     0
+  Wall time:     00:00:40 (40.7 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:00:53 (53.2 ms)
+    ru_stime:    00:00:05 (5.3 ms)
+    ru_maxrss:   248416
+    ru_minflt:   25673
+    ru_majflt:   33
+    ru_inblock:  373312
+    ru_oublock:  2551288
+    ru_nvcsw:    61769
+    ru_nivcsw:   7646
+  GNU time:     
+    real:        00:00:40 (40.6 ms)
+    user:        00:00:53 (53.2 ms)
+    sys:         00:00:05 (5.3 ms)
+  Size (MB):     1,844.32 (1933908091 bytes) (MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq.log, MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq.fa, MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq1.fa, MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq2.fa)
+  Free space:      2.8T  1.8T  984G  65% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: MH0001_081026_clean.1.fq)
+*** 2016-08-09 11:43:31 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince 4 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince-single.4.cmp.log
+  Process PID:   15473
+  Exit code:     0
+  Wall time:     00:07:41 (461.9 ms)
+  Memory (MB):   5710.8
+  Resources:    
+    ru_utime:    00:20:01 (1201.8 ms)
+    ru_stime:    00:01:19 (79.9 ms)
+    ru_maxrss:   5847820
+    ru_minflt:   3425735
+    ru_majflt:   31
+    ru_inblock:  3702704
+    ru_oublock:  252816
+    ru_nvcsw:    3432969
+    ru_nivcsw:   163055
+  GNU time:     
+    real:        00:07:41 (461.8 ms)
+    user:        00:20:01 (1201.8 ms)
+    sys:         00:01:19 (79.9 ms)
+  Size (MB):     48.01 (50345692 bytes) (MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.seqs.lz, MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.offs.lz, MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.nlocs.lz, MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.flips.lz)
+  Free space:      2.8T  1.6T  1.2T  59% /local-scratch
+*** 2016-08-09 11:51:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince MH0001_081026_clean.1/output/decompressed/mince-single/MH0001_081026_clean.1.fq.fq 4 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince-single.4.dec.log
+  Process PID:   15609
+  Exit code:     0
+  Wall time:     00:00:33 (33.7 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:00:25 (25.7 ms)
+    ru_stime:    00:00:13 (13.7 ms)
+    ru_maxrss:   248392
+    ru_minflt:   23928
+    ru_majflt:   33
+    ru_inblock:  130208
+    ru_oublock:  1231648
+    ru_nvcsw:    29431
+    ru_nivcsw:   4554
+  GNU time:     
+    real:        00:00:33 (33.6 ms)
+    user:        00:00:25 (25.7 ms)
+    sys:         00:00:13 (13.7 ms)
+  Size (MB):     599.98 (629126800 bytes) (MH0001_081026_clean.1/output/decompressed/mince-single/MH0001_081026_clean.1.fq.fq.log, MH0001_081026_clean.1/output/decompressed/mince-single/MH0001_081026_clean.1.fq.fq.fa)
+  Free space:      2.8T  1.6T  1.2T  59% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: MH0001_081026_clean.1.fq)
+*** 2016-02-21 21:10:48 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic 4 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.kic.4.cmp.log
+  Process PID:   19075
+  Exit code:     0
+  Wall time:     00:14:47 (887.0 ms)
+  Memory (MB):   1939.1
+  Resources:    
+    ru_utime:    00:39:03 (2343.4 ms)
+    ru_stime:    00:02:00 (120.8 ms)
+    ru_maxrss:   1985660
+    ru_minflt:   106980
+    ru_majflt:   141
+    ru_inblock:  3726072
+    ru_oublock:  600560
+    ru_nvcsw:    12179234
+    ru_nivcsw:   381306
+  GNU time:     
+    real:        00:14:46 (886.9 ms)
+    user:        00:39:03 (2343.4 ms)
+    sys:         00:02:00 (120.8 ms)
+  Size (MB):     292.34 (306538093 bytes) (MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic.seq, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic.name, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic.qual)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+*** 2016-02-21 21:25:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic MH0001_081026_clean.1/output/decompressed/kic/MH0001_081026_clean.1.fq.fq 4
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.kic.4.dec.log
+  Process PID:   19541
+  Exit code:     0
+  Wall time:     00:01:13 (73.7 ms)
+  Memory (MB):   866.8
+  Resources:    
+    ru_utime:    00:03:24 (204.7 ms)
+    ru_stime:    00:00:26 (26.6 ms)
+    ru_maxrss:   887556
+    ru_minflt:   58238
+    ru_majflt:   146
+    ru_inblock:  652144
+    ru_oublock:  3672968
+    ru_nvcsw:    3340585
+    ru_nivcsw:   33982
+  GNU time:     
+    real:        00:01:13 (73.6 ms)
+    user:        00:03:24 (204.7 ms)
+    sys:         00:00:26 (26.6 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+>>> kic (File 2: MH0001_081026_clean.2.fq)
+*** 2016-02-21 21:27:23 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic 4 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.kic.4.cmp.log
+  Process PID:   19673
+  Exit code:     0
+  Wall time:     00:18:41 (1121.8 ms)
+  Memory (MB):   1913.0
+  Resources:    
+    ru_utime:    00:45:17 (2717.8 ms)
+    ru_stime:    00:02:23 (143.2 ms)
+    ru_maxrss:   1958868
+    ru_minflt:   107310
+    ru_majflt:   141
+    ru_inblock:  3726000
+    ru_oublock:  739288
+    ru_nvcsw:    14472689
+    ru_nivcsw:   481334
+  GNU time:     
+    real:        00:18:41 (1121.7 ms)
+    user:        00:45:17 (2717.8 ms)
+    sys:         00:02:23 (143.2 ms)
+  Size (MB):     359.88 (377364757 bytes) (MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic.seq, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic.qual, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic.name)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+*** 2016-02-21 21:46:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic MH0001_081026_clean.1/output/decompressed/kic/MH0001_081026_clean.2.fq.fq 4
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.kic.4.dec.log
+  Process PID:   20215
+  Exit code:     0
+  Wall time:     00:01:45 (105.0 ms)
+  Memory (MB):   888.6
+  Resources:    
+    ru_utime:    00:04:45 (285.5 ms)
+    ru_stime:    00:00:47 (47.7 ms)
+    ru_maxrss:   909936
+    ru_minflt:   82881
+    ru_majflt:   147
+    ru_inblock:  791088
+    ru_oublock:  3672864
+    ru_nvcsw:    6116584
+    ru_nivcsw:   45152
+  GNU time:     
+    real:        00:01:44 (104.9 ms)
+    user:        00:04:45 (285.5 ms)
+    sys:         00:00:47 (47.6 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                 MH0001_081026_clean.1 with 8 threads                 + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz_1
+*** 2015-11-14 11:44:53 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8  
+    stdin:       MH0001_081026_clean.1.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz
+  stderr:      MH0001_081026_clean.1/log/pigz_1.8.cmp.log
+  Process PID:   24785
+  Exit code:     0
+  Wall time:     00:00:24 (24.5 ms)
+  Memory (MB):   8.0
+  Resources:    
+    ru_utime:    00:03:09 (189.6 ms)
+    ru_stime:    00:00:04 (4.9 ms)
+    ru_maxrss:   8188
+    ru_minflt:   1932
+    ru_majflt:   7
+    ru_inblock:  3674936
+    ru_oublock:  978512
+    ru_nvcsw:    27441
+    ru_nivcsw:   24158
+  GNU time:     
+    real:        00:00:24 (24.4 ms)
+    user:        00:03:09 (189.6 ms)
+    sys:         00:00:04 (4.9 ms)
+  Size (MB):     477.78 (500992805 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 11:45:19 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz.fq
+  stderr:      MH0001_081026_clean.1/log/pigz_1.8.dec.log
+  Process PID:   24995
+  Exit code:     0
+  Wall time:     00:00:11 (11.5 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:00:16 (16.2 ms)
+    ru_stime:    00:00:06 (6.8 ms)
+    ru_maxrss:   5888
+    ru_minflt:   607
+    ru_majflt:   7
+    ru_inblock:  981008
+    ru_oublock:  3672736
+    ru_nvcsw:    134462
+    ru_nivcsw:   3659
+  GNU time:     
+    real:        00:00:11 (11.3 ms)
+    user:        00:00:16 (16.2 ms)
+    sys:         00:00:06 (6.7 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.gz.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+>>> pigz_2
+*** 2015-11-14 11:45:52 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8  
+    stdin:       MH0001_081026_clean.2.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz
+  stderr:      MH0001_081026_clean.1/log/pigz_2.8.cmp.log
+  Process PID:   25079
+  Exit code:     0
+  Wall time:     00:00:24 (24.0 ms)
+  Memory (MB):   8.0
+  Resources:    
+    ru_utime:    00:03:09 (189.8 ms)
+    ru_stime:    00:00:05 (5.1 ms)
+    ru_maxrss:   8192
+    ru_minflt:   1930
+    ru_majflt:   7
+    ru_inblock:  3674800
+    ru_oublock:  1121160
+    ru_nvcsw:    25096
+    ru_nivcsw:   25218
+  GNU time:     
+    real:        00:00:23 (23.9 ms)
+    user:        00:03:09 (189.8 ms)
+    sys:         00:00:05 (5.1 ms)
+  Size (MB):     547.44 (574028873 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 11:46:18 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz.fq
+  stderr:      MH0001_081026_clean.1/log/pigz_2.8.dec.log
+  Process PID:   25099
+  Exit code:     0
+  Wall time:     00:00:11 (11.4 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:00:16 (16.6 ms)
+    ru_stime:    00:00:06 (6.8 ms)
+    ru_maxrss:   5888
+    ru_minflt:   605
+    ru_majflt:   7
+    ru_inblock:  1122256
+    ru_oublock:  3672632
+    ru_nvcsw:    132689
+    ru_nivcsw:   4262
+  GNU time:     
+    real:        00:00:11 (11.3 ms)
+    user:        00:00:16 (16.6 ms)
+    sys:         00:00:06 (6.8 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.gz.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2_1
+*** 2015-11-14 11:46:46 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8  
+    stdin:       MH0001_081026_clean.1.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2
+  stderr:      MH0001_081026_clean.1/log/pbzip2_1.8.cmp.log
+  Process PID:   25113
+  Exit code:     0
+  Wall time:     00:00:32 (32.7 ms)
+  Memory (MB):   71.5
+  Resources:    
+    ru_utime:    00:04:06 (246.4 ms)
+    ru_stime:    00:00:10 (10.9 ms)
+    ru_maxrss:   73224
+    ru_minflt:   1208364
+    ru_majflt:   8
+    ru_inblock:  3697776
+    ru_oublock:  761272
+    ru_nvcsw:    11423
+    ru_nivcsw:   32957
+  GNU time:     
+    real:        00:00:32 (32.6 ms)
+    user:        00:04:06 (246.4 ms)
+    sys:         00:00:10 (10.8 ms)
+  Size (MB):     371.71 (389764284 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 11:47:21 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2.fq
+  stderr:      MH0001_081026_clean.1/log/pbzip2_1.8.dec.log
+  Process PID:   25136
+  Exit code:     0
+  Wall time:     00:00:09 (9.3 ms)
+  Memory (MB):   46.3
+  Resources:    
+    ru_utime:    00:01:07 (67.7 ms)
+    ru_stime:    00:00:07 (7.8 ms)
+    ru_maxrss:   47364
+    ru_minflt:   800866
+    ru_majflt:   8
+    ru_inblock:  786256
+    ru_oublock:  3672736
+    ru_nvcsw:    4423
+    ru_nivcsw:   9986
+  GNU time:     
+    real:        00:00:09 (9.2 ms)
+    user:        00:01:07 (67.7 ms)
+    sys:         00:00:07 (7.8 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.bz2.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+>>> pbzip2_2
+*** 2015-11-14 11:47:37 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8  
+    stdin:       MH0001_081026_clean.2.fq
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2
+  stderr:      MH0001_081026_clean.1/log/pbzip2_2.8.cmp.log
+  Process PID:   25155
+  Exit code:     0
+  Wall time:     00:00:38 (38.4 ms)
+  Memory (MB):   73.7
+  Resources:    
+    ru_utime:    00:04:21 (261.3 ms)
+    ru_stime:    00:00:10 (10.8 ms)
+    ru_maxrss:   75512
+    ru_minflt:   1295503
+    ru_majflt:   8
+    ru_inblock:  3697680
+    ru_oublock:  899776
+    ru_nvcsw:    10867
+    ru_nivcsw:   34846
+  GNU time:     
+    real:        00:00:38 (38.4 ms)
+    user:        00:04:21 (261.3 ms)
+    sys:         00:00:10 (10.8 ms)
+  Size (MB):     439.33 (460675589 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-14 11:48:16 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2
+    stdout:      MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2.fq
+  stderr:      MH0001_081026_clean.1/log/pbzip2_2.8.dec.log
+  Process PID:   25214
+  Exit code:     0
+  Wall time:     00:00:10 (10.2 ms)
+  Memory (MB):   47.0
+  Resources:    
+    ru_utime:    00:01:14 (74.4 ms)
+    ru_stime:    00:00:08 (8.5 ms)
+    ru_maxrss:   48148
+    ru_minflt:   880420
+    ru_majflt:   8
+    ru_inblock:  925904
+    ru_oublock:  3672632
+    ru_nvcsw:    4374
+    ru_nivcsw:   11645
+  GNU time:     
+    real:        00:00:10 (10.1 ms)
+    user:        00:01:14 (74.4 ms)
+    sys:         00:00:08 (8.4 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.bz2.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                scalce                                # 
+########################################################################
+>>> scalce (File 1: MH0001_081026_clean.1.fq)
+*** 2016-01-05 17:58:00 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 8 MH0001_081026_clean.1.fq -o MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce  -r
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.scalce.8.cmp.log
+  Process PID:   27716
+  Exit code:     0
+  Wall time:     00:02:17 (137.3 ms)
+  Memory (MB):   3166.0
+  Resources:    
+    ru_utime:    00:11:48 (708.1 ms)
+    ru_stime:    00:00:26 (26.8 ms)
+    ru_maxrss:   3241944
+    ru_minflt:   484178
+    ru_majflt:   10
+    ru_inblock:  7406488
+    ru_oublock:  4138776
+    ru_nvcsw:    2331
+    ru_nivcsw:   87786
+  GNU time:     
+    real:        00:02:17 (137.3 ms)
+    user:        00:11:48 (708.1 ms)
+    sys:         00:00:26 (26.8 ms)
+  Size (MB):     682.80 (715967164 bytes) (MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_1.scalceq, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_1.scalcen, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_1.scalcer, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_2.scalceq, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_2.scalcen, MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_2.scalcer)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2016-01-05 20:13:46 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -r -T 8 MH0001_081026_clean.1/output/compressed/scalce/MH0001_081026_clean.1.fq.scalce_1.scalcer -o MH0001_081026_clean.1/output/decompressed/scalce/MH0001_081026_clean.1.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.scalce.8.dec.log
+  Process PID:   3616
+  Exit code:     0
+  Wall time:     00:01:06 (66.2 ms)
+  Memory (MB):   1121.1
+  Resources:    
+    ru_utime:    00:04:36 (276.3 ms)
+    ru_stime:    00:00:04 (4.4 ms)
+    ru_maxrss:   1148040
+    ru_minflt:   243107
+    ru_majflt:   10
+    ru_inblock:  1459536
+    ru_oublock:  5809912
+    ru_nvcsw:    1775
+    ru_nivcsw:   32314
+  GNU time:     
+    real:        00:01:06 (66.1 ms)
+    user:        00:04:36 (276.3 ms)
+    sys:         00:00:04 (4.4 ms)
+  Size (MB):     2,836.85 (2974656494 bytes) (MH0001_081026_clean.1/output/decompressed/scalce/MH0001_081026_clean.1.fq.fq_1.fastq, MH0001_081026_clean.1/output/decompressed/scalce/MH0001_081026_clean.1.fq.fq_2.fastq)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single (File 1: MH0001_081026_clean.1.fq)
+*** 2016-01-05 18:00:21 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 8 MH0001_081026_clean.1.fq -o MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.scalce-single.8.cmp.log
+  Process PID:   27908
+  Exit code:     0
+  Wall time:     00:01:27 (87.1 ms)
+  Memory (MB):   2538.8
+  Resources:    
+    ru_utime:    00:06:23 (383.5 ms)
+    ru_stime:    00:00:16 (16.2 ms)
+    ru_maxrss:   2599768
+    ru_minflt:   483734
+    ru_majflt:   10
+    ru_inblock:  3733880
+    ru_oublock:  2410608
+    ru_nvcsw:    192
+    ru_nivcsw:   51221
+  GNU time:     
+    real:        00:01:27 (87.0 ms)
+    user:        00:06:23 (383.5 ms)
+    sys:         00:00:16 (16.2 ms)
+  Size (MB):     283.71 (297494904 bytes) (MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single_1.scalceq, MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single_1.scalcen, MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single_1.scalcer)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2016-01-05 20:15:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -T 8 MH0001_081026_clean.1/output/compressed/scalce-single/MH0001_081026_clean.1.fq.scalce-single_1.scalcer -o MH0001_081026_clean.1/output/decompressed/scalce-single/MH0001_081026_clean.1.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.scalce-single.8.dec.log
+  Process PID:   3736
+  Exit code:     0
+  Wall time:     00:00:35 (35.8 ms)
+  Memory (MB):   1103.9
+  Resources:    
+    ru_utime:    00:02:17 (137.9 ms)
+    ru_stime:    00:00:02 (2.6 ms)
+    ru_maxrss:   1130384
+    ru_minflt:   243233
+    ru_majflt:   10
+    ru_inblock:  643256
+    ru_oublock:  2904968
+    ru_nvcsw:    932
+    ru_nivcsw:   15710
+  GNU time:     
+    real:        00:00:35 (35.7 ms)
+    user:        00:02:17 (137.9 ms)
+    sys:         00:00:02 (2.6 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean.1/output/decompressed/scalce-single/MH0001_081026_clean.1.fq.fq_1.fastq)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc_1
+*** 2015-12-05 16:00:46 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8   MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc
+  stderr:      MH0001_081026_clean.1/log/dsrc_1.8.cmp.log
+  Process PID:   5963
+  Exit code:     0
+  Wall time:     00:00:06 (6.9 ms)
+  Memory (MB):   170.3
+  Resources:    
+    ru_utime:    00:00:42 (42.5 ms)
+    ru_stime:    00:00:04 (4.3 ms)
+    ru_maxrss:   174356
+    ru_minflt:   25134
+    ru_majflt:   8
+    ru_inblock:  3697904
+    ru_oublock:  609560
+    ru_nvcsw:    9113
+    ru_nivcsw:   9598
+  GNU time:     
+    real:        00:00:06 (6.9 ms)
+    user:        00:00:42 (42.5 ms)
+    sys:         00:00:04 (4.3 ms)
+  Size (MB):     297.63 (312084801 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+*** 2015-12-05 16:00:54 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc_1.8.dec.log
+  Process PID:   5982
+  Exit code:     0
+  Wall time:     00:00:11 (11.9 ms)
+  Memory (MB):   257.3
+  Resources:    
+    ru_utime:    00:00:23 (23.1 ms)
+    ru_stime:    00:00:03 (3.5 ms)
+    ru_maxrss:   263432
+    ru_minflt:   18768
+    ru_majflt:   10
+    ru_inblock:  634688
+    ru_oublock:  3672744
+    ru_nvcsw:    1668
+    ru_nivcsw:   4145
+  GNU time:     
+    real:        00:00:11 (11.9 ms)
+    user:        00:00:23 (23.1 ms)
+    sys:         00:00:03 (3.5 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc.fq)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+
+>>> dsrc_2
+*** 2015-12-05 16:01:07 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8   MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc
+  stderr:      MH0001_081026_clean.1/log/dsrc_2.8.cmp.log
+  Process PID:   6011
+  Exit code:     0
+  Wall time:     00:00:09 (9.0 ms)
+  Memory (MB):   196.5
+  Resources:    
+    ru_utime:    00:00:45 (45.1 ms)
+    ru_stime:    00:00:04 (4.3 ms)
+    ru_maxrss:   201224
+    ru_minflt:   28460
+    ru_majflt:   8
+    ru_inblock:  3698552
+    ru_oublock:  754440
+    ru_nvcsw:    8639
+    ru_nivcsw:   10176
+  GNU time:     
+    real:        00:00:08 (8.9 ms)
+    user:        00:00:45 (45.1 ms)
+    sys:         00:00:04 (4.3 ms)
+  Size (MB):     368.37 (386261190 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+*** 2015-12-05 16:01:17 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc_2.8.dec.log
+  Process PID:   6027
+  Exit code:     0
+  Wall time:     00:00:21 (21.1 ms)
+  Memory (MB):   254.8
+  Resources:    
+    ru_utime:    00:00:27 (27.0 ms)
+    ru_stime:    00:00:03 (3.6 ms)
+    ru_maxrss:   260884
+    ru_minflt:   20658
+    ru_majflt:   10
+    ru_inblock:  779600
+    ru_oublock:  3672640
+    ru_nvcsw:    1776
+    ru_nivcsw:   5127
+  GNU time:     
+    real:        00:00:21 (21.1 ms)
+    user:        00:00:27 (27.0 ms)
+    sys:         00:00:03 (3.6 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc.fq)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2_1
+*** 2015-12-05 16:01:40 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8 -m2  MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc-m2
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_1.8.cmp.log
+  Process PID:   6051
+  Exit code:     0
+  Wall time:     00:00:30 (30.8 ms)
+  Memory (MB):   2669.5
+  Resources:    
+    ru_utime:    00:02:34 (154.2 ms)
+    ru_stime:    00:00:05 (5.0 ms)
+    ru_maxrss:   2733576
+    ru_minflt:   37570
+    ru_majflt:   8
+    ru_inblock:  3697936
+    ru_oublock:  559840
+    ru_nvcsw:    8143
+    ru_nivcsw:   22534
+  GNU time:     
+    real:        00:00:30 (30.7 ms)
+    user:        00:02:34 (154.2 ms)
+    sys:         00:00:05 (5.0 ms)
+  Size (MB):     273.35 (286627600 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc-m2)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+*** 2015-12-05 16:02:12 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 MH0001_081026_clean.1/output/MH0001_081026_clean.1.dsrc-m2 MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc-m2.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_1.8.dec.log
+  Process PID:   6069
+  Exit code:     0
+  Wall time:     00:00:46 (46.3 ms)
+  Memory (MB):   2764.5
+  Resources:    
+    ru_utime:    00:02:38 (158.2 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   2830828
+    ru_minflt:   20390
+    ru_majflt:   10
+    ru_inblock:  585000
+    ru_oublock:  3672744
+    ru_nvcsw:    1713
+    ru_nivcsw:   17405
+  GNU time:     
+    real:        00:00:46 (46.3 ms)
+    user:        00:02:38 (158.2 ms)
+    sys:         00:00:04 (4.1 ms)
+  Size (MB):     1,793.32 (1880433138 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.dsrc-m2.fq)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+
+>>> dsrc-m2_2
+*** 2015-12-05 16:02:59 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8 -m2  MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc-m2
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_2.8.cmp.log
+  Process PID:   6093
+  Exit code:     0
+  Wall time:     00:00:33 (33.9 ms)
+  Memory (MB):   2717.5
+  Resources:    
+    ru_utime:    00:02:45 (165.4 ms)
+    ru_stime:    00:00:05 (5.0 ms)
+    ru_maxrss:   2782732
+    ru_minflt:   39133
+    ru_majflt:   8
+    ru_inblock:  3697768
+    ru_oublock:  684008
+    ru_nvcsw:    7695
+    ru_nivcsw:   23859
+  GNU time:     
+    real:        00:00:33 (33.8 ms)
+    user:        00:02:45 (165.4 ms)
+    sys:         00:00:05 (5.0 ms)
+  Size (MB):     333.97 (350197808 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc-m2)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+*** 2015-12-05 16:03:34 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 MH0001_081026_clean.1/output/MH0001_081026_clean.2.dsrc-m2 MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc-m2.fq
+  stderr:      MH0001_081026_clean.1/log/dsrc-m2_2.8.dec.log
+  Process PID:   6116
+  Exit code:     0
+  Wall time:     00:00:45 (45.8 ms)
+  Memory (MB):   2824.4
+  Resources:    
+    ru_utime:    00:02:44 (164.1 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   2892180
+    ru_minflt:   19882
+    ru_majflt:   10
+    ru_inblock:  709184
+    ru_oublock:  3672640
+    ru_nvcsw:    1880
+    ru_nivcsw:   18348
+  GNU time:     
+    real:        00:00:45 (45.7 ms)
+    user:        00:02:44 (164.1 ms)
+    sys:         00:00:04 (4.1 ms)
+  Size (MB):     1,793.27 (1880381894 bytes) (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.2.dsrc-m2.fq)
+  Free space:      2.8T  1.9T  915G  68% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1: MH0001_081026_clean.1.fq)
+*** 2015-12-29 00:25:09 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom e 8 'MH0001_081026_clean.1.fq' MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.orcom.8.cmp.log
+  Process PID:   4168
+  Exit code:     0
+  Wall time:     00:00:26 (26.9 ms)
+  Memory (MB):   1393.8
+  Resources:    
+    ru_utime:    00:02:39 (159.0 ms)
+    ru_stime:    00:00:05 (5.9 ms)
+    ru_maxrss:   1427208
+    ru_minflt:   489316
+    ru_majflt:   14
+    ru_inblock:  3699688
+    ru_oublock:  339584
+    ru_nvcsw:    36332
+    ru_nivcsw:   22735
+  GNU time:     
+    real:        00:00:26 (26.8 ms)
+    user:        00:02:39 (159.0 ms)
+    sys:         00:00:05 (5.9 ms)
+  Size (MB):     49.09 (51469560 bytes) (MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom.cmeta, MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom.cdna)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+*** 2015-12-29 00:25:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom d 8 MH0001_081026_clean.1/output/compressed/orcom/MH0001_081026_clean.1.fq.orcom MH0001_081026_clean.1/output/decompressed/orcom/MH0001_081026_clean.1.fq.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.orcom.8.dec.log
+  Process PID:   4207
+  Exit code:     0
+  Wall time:     00:00:03 (3.3 ms)
+  Memory (MB):   124.3
+  Resources:    
+    ru_utime:    00:00:21 (21.6 ms)
+    ru_stime:    00:00:02 (2.7 ms)
+    ru_maxrss:   127308
+    ru_minflt:   611945
+    ru_majflt:   12
+    ru_inblock:  126744
+    ru_oublock:  1023128
+    ru_nvcsw:    9771
+    ru_nivcsw:   2736
+  GNU time:     
+    real:        00:00:03 (3.1 ms)
+    user:        00:00:21 (21.6 ms)
+    sys:         00:00:02 (2.7 ms)
+  Size (MB):     499.56 (523830330 bytes) (MH0001_081026_clean.1/output/decompressed/orcom/MH0001_081026_clean.1.fq.fq)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath_1
+*** 2015-11-15 21:51:04 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=8 -ref=data/sam/ref/hg19.fa.gz -reads=MH0001_081026_clean.1.fq -out=MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath  
+  stderr:      MH0001_081026_clean.1/log/kpath_1.8.cmp.log
+  Process PID:   26296
+  Exit code:     0
+  Wall time:     00:42:46 (2566.1 ms)
+  Memory (MB):   37332.0
+  Resources:    
+    ru_utime:    00:49:06 (2946.6 ms)
+    ru_stime:    00:03:13 (193.4 ms)
+    ru_maxrss:   38227928
+    ru_minflt:   2005554
+    ru_majflt:   25
+    ru_inblock:  5531776
+    ru_oublock:  1144088
+    ru_nvcsw:    13552603
+    ru_nivcsw:   542536
+  GNU time:     
+    real:        00:42:46 (2566.0 ms)
+    user:        00:49:06 (2946.6 ms)
+    sys:         00:03:13 (193.3 ms)
+  Size (MB):     155.35 (162897920 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2015-11-15 22:33:51 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux decode -p=8 -ref=data/sam/ref/hg19.fa.gz -reads=MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath -out=MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.fq
+  stderr:      MH0001_081026_clean.1/log/kpath_1.8.dec.log
+  Process PID:   26821
+  Exit code:     0
+  Wall time:     00:29:08 (1748.4 ms)
+  Memory (MB):   47521.7
+  Resources:    
+    ru_utime:    00:34:55 (2095.4 ms)
+    ru_stime:    00:02:30 (150.5 ms)
+    ru_maxrss:   48662248
+    ru_minflt:   519366
+    ru_majflt:   25
+    ru_inblock:  1980072
+    ru_oublock:  1251560
+    ru_nvcsw:    13548752
+    ru_nivcsw:   331686
+  GNU time:     
+    real:        00:29:08 (1748.3 ms)
+    user:        00:34:55 (2095.4 ms)
+    sys:         00:02:30 (150.5 ms)
+  Size (MB):     611.08 (640766634 bytes) (MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: MH0001_081026_clean_1.fastq)
+*** 2016-02-20 04:17:55 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e MH0001_081026_clean_1.fastq MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon 8 
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_1.fastq.leon.8.cmp.log
+  Process PID:   17160
+  Exit code:     0
+  Wall time:     00:02:15 (135.0 ms)
+  Memory (MB):   300.8
+  Resources:    
+    ru_utime:    00:13:37 (817.7 ms)
+    ru_stime:    00:00:13 (13.9 ms)
+    ru_maxrss:   307984
+    ru_minflt:   135606
+    ru_majflt:   87
+    ru_inblock:  3714696
+    ru_oublock:  1526680
+    ru_nvcsw:    564742
+    ru_nivcsw:   101779
+  GNU time:     
+    real:        00:02:14 (134.6 ms)
+    user:        00:13:37 (817.7 ms)
+    sys:         00:00:13 (13.8 ms)
+  Size (MB):     278.05 (291561167 bytes) (MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon, MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon.qual)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+*** 2016-02-20 04:20:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_1.fastq.fq 8
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_1.fastq.leon.8.dec.log
+  Process PID:   17529
+  Exit code:     0
+  Wall time:     00:00:45 (45.0 ms)
+  Memory (MB):   154.1
+  Resources:    
+    ru_utime:    00:02:48 (168.2 ms)
+    ru_stime:    00:00:02 (2.5 ms)
+    ru_maxrss:   157796
+    ru_minflt:   34862
+    ru_majflt:   40
+    ru_inblock:  602640
+    ru_oublock:  2904992
+    ru_nvcsw:    1869
+    ru_nivcsw:   19750
+  GNU time:     
+    real:        00:00:44 (44.9 ms)
+    user:        00:02:48 (168.2 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     1,418.43 (1487328247 bytes) (MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_1.fastq.fq)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+
+>>> leon (File 2: MH0001_081026_clean_2.fastq)
+*** 2016-03-02 11:46:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e MH0001_081026_clean_2.fastq MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon 8 
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_2.fastq.leon.8.cmp.log
+  Process PID:   10543
+  Exit code:     0
+  Wall time:     00:02:03 (123.3 ms)
+  Memory (MB):   316.0
+  Resources:    
+    ru_utime:    00:12:15 (735.7 ms)
+    ru_stime:    00:00:15 (15.4 ms)
+    ru_maxrss:   323584
+    ru_minflt:   117930
+    ru_majflt:   89
+    ru_inblock:  3714312
+    ru_oublock:  1609496
+    ru_nvcsw:    823090
+    ru_nivcsw:   93479
+  GNU time:     
+    real:        00:02:03 (123.2 ms)
+    user:        00:12:15 (735.7 ms)
+    sys:         00:00:15 (15.4 ms)
+  Size (MB):     348.51 (365435808 bytes) (MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon, MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-02 11:48:40 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_2.fastq.leon MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_2.fastq.fq 8
+    stderr:      MH0001_081026_clean/log/MH0001_081026_clean_2.fastq.leon.8.dec.log
+  Process PID:   10941
+  Exit code:     0
+  Wall time:     00:00:48 (48.3 ms)
+  Memory (MB):   158.5
+  Resources:    
+    ru_utime:    00:02:45 (165.3 ms)
+    ru_stime:    00:00:02 (2.5 ms)
+    ru_maxrss:   162336
+    ru_minflt:   35478
+    ru_majflt:   44
+    ru_inblock:  747872
+    ru_oublock:  2904912
+    ru_nvcsw:    2184
+    ru_nivcsw:   19308
+  GNU time:     
+    real:        00:00:48 (48.2 ms)
+    user:        00:02:45 (165.3 ms)
+    sys:         00:00:02 (2.5 ms)
+  Size (MB):     1,418.39 (1487287773 bytes) (MH0001_081026_clean/output/decompressed/leon/MH0001_081026_clean_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                mince                                 # 
+########################################################################
+>>> mince (File 1: MH0001_081026_clean.1.fq)
+*** 2016-08-21 17:40:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince 8  MH0001_081026_clean.2.fq
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince.8.cmp.log
+  Process PID:   7169
+  Exit code:     0
+  Wall time:     00:11:21 (681.3 ms)
+  Memory (MB):   6485.8
+  Resources:    
+    ru_utime:    00:48:49 (2929.1 ms)
+    ru_stime:    00:02:11 (131.7 ms)
+    ru_maxrss:   6641420
+    ru_minflt:   4108042
+    ru_majflt:   30
+    ru_inblock:  7377320
+    ru_oublock:  442008
+    ru_nvcsw:    5669615
+    ru_nivcsw:   343668
+  GNU time:     
+    real:        00:11:21 (681.2 ms)
+    user:        00:48:49 (2929.1 ms)
+    sys:         00:02:11 (131.7 ms)
+  Size (MB):     166.74 (174841351 bytes) (MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.seqs.lz, MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.offs.lz, MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.nlocs.lz, MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince.flips.lz)
+  Free space:      2.8T  1.8T  983G  65% /local-scratch
+*** 2016-08-21 17:51:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq 8 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince.8.dec.log
+  Process PID:   7374
+  Exit code:     0
+  Wall time:     00:00:40 (40.3 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:00:52 (52.2 ms)
+    ru_stime:    00:00:05 (5.3 ms)
+    ru_maxrss:   248416
+    ru_minflt:   65137
+    ru_majflt:   31
+    ru_inblock:  373440
+    ru_oublock:  2551296
+    ru_nvcsw:    61621
+    ru_nivcsw:   7121
+  GNU time:     
+    real:        00:00:40 (40.2 ms)
+    user:        00:00:52 (52.2 ms)
+    sys:         00:00:05 (5.3 ms)
+  Size (MB):     1,844.32 (1933908932 bytes) (MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq.log, MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq.fa, MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq1.fa, MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq2.fa)
+  Free space:      2.8T  1.8T  983G  65% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: MH0001_081026_clean.1.fq)
+*** 2016-08-09 11:58:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince 8 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince-single.8.cmp.log
+  Process PID:   15834
+  Exit code:     0
+  Wall time:     00:06:16 (376.3 ms)
+  Memory (MB):   5845.7
+  Resources:    
+    ru_utime:    00:21:04 (1264.8 ms)
+    ru_stime:    00:01:25 (85.0 ms)
+    ru_maxrss:   5986004
+    ru_minflt:   3598057
+    ru_majflt:   31
+    ru_inblock:  3704352
+    ru_oublock:  252808
+    ru_nvcsw:    3442756
+    ru_nivcsw:   170436
+  GNU time:     
+    real:        00:06:16 (376.2 ms)
+    user:        00:21:04 (1264.8 ms)
+    sys:         00:01:25 (85.0 ms)
+  Size (MB):     48.01 (50345692 bytes) (MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.seqs.lz, MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.offs.lz, MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.nlocs.lz, MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince.flips.lz)
+  Free space:      2.8T  1.6T  1.2T  59% /local-scratch
+*** 2016-08-09 12:05:06 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d MH0001_081026_clean.1/output/compressed/mince-single/MH0001_081026_clean.1.fq.mince MH0001_081026_clean.1/output/decompressed/mince-single/MH0001_081026_clean.1.fq.fq 8 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.mince-single.8.dec.log
+  Process PID:   15978
+  Exit code:     0
+  Wall time:     00:00:40 (40.1 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:00:25 (25.0 ms)
+    ru_stime:    00:00:13 (13.3 ms)
+    ru_maxrss:   248392
+    ru_minflt:   41689
+    ru_majflt:   32
+    ru_inblock:  130040
+    ru_oublock:  1231648
+    ru_nvcsw:    29670
+    ru_nivcsw:   4237
+  GNU time:     
+    real:        00:00:40 (40.0 ms)
+    user:        00:00:25 (25.0 ms)
+    sys:         00:00:13 (13.3 ms)
+  Size (MB):     599.98 (629127703 bytes) (MH0001_081026_clean.1/output/decompressed/mince-single/MH0001_081026_clean.1.fq.fq.log, MH0001_081026_clean.1/output/decompressed/mince-single/MH0001_081026_clean.1.fq.fq.fa)
+  Free space:      2.8T  1.6T  1.2T  59% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: MH0001_081026_clean.1.fq)
+*** 2016-02-21 21:51:04 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic 8 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.kic.8.cmp.log
+  Process PID:   21015
+  Exit code:     0
+  Wall time:     00:15:21 (921.5 ms)
+  Memory (MB):   1962.8
+  Resources:    
+    ru_utime:    00:42:37 (2557.8 ms)
+    ru_stime:    00:03:01 (181.4 ms)
+    ru_maxrss:   2009912
+    ru_minflt:   128487
+    ru_majflt:   143
+    ru_inblock:  3725728
+    ru_oublock:  600528
+    ru_nvcsw:    15062319
+    ru_nivcsw:   455955
+  GNU time:     
+    real:        00:15:21 (921.5 ms)
+    user:        00:42:37 (2557.8 ms)
+    sys:         00:03:01 (181.4 ms)
+  Size (MB):     292.34 (306536049 bytes) (MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic.qual, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic.name, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic.seq)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+*** 2016-02-21 22:06:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.1.fq.kic MH0001_081026_clean.1/output/decompressed/kic/MH0001_081026_clean.1.fq.fq 8
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.1.fq.kic.8.dec.log
+  Process PID:   21505
+  Exit code:     0
+  Wall time:     00:01:21 (81.5 ms)
+  Memory (MB):   874.0
+  Resources:    
+    ru_utime:    00:03:52 (232.2 ms)
+    ru_stime:    00:00:30 (30.3 ms)
+    ru_maxrss:   895020
+    ru_minflt:   63083
+    ru_majflt:   147
+    ru_inblock:  652816
+    ru_oublock:  3672968
+    ru_nvcsw:    4092921
+    ru_nivcsw:   33981
+  GNU time:     
+    real:        00:01:21 (81.4 ms)
+    user:        00:03:52 (232.2 ms)
+    sys:         00:00:30 (30.3 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+>>> kic (File 2: MH0001_081026_clean.2.fq)
+*** 2016-02-21 22:08:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e MH0001_081026_clean.2.fq MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic 8 
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.kic.8.cmp.log
+  Process PID:   21639
+  Exit code:     0
+  Wall time:     00:17:30 (1050.8 ms)
+  Memory (MB):   1956.0
+  Resources:    
+    ru_utime:    00:46:00 (2760.5 ms)
+    ru_stime:    00:03:09 (189.9 ms)
+    ru_maxrss:   2002944
+    ru_minflt:   115300
+    ru_majflt:   143
+    ru_inblock:  3725624
+    ru_oublock:  739264
+    ru_nvcsw:    15696084
+    ru_nivcsw:   505325
+  GNU time:     
+    real:        00:17:30 (1050.7 ms)
+    user:        00:46:00 (2760.4 ms)
+    sys:         00:03:09 (189.9 ms)
+  Size (MB):     359.89 (377369821 bytes) (MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic.seq, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic.qual, MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic.name)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+*** 2016-02-21 22:25:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic MH0001_081026_clean.1/output/decompressed/kic/MH0001_081026_clean.2.fq.fq 8
+    stderr:      MH0001_081026_clean.1/log/MH0001_081026_clean.2.fq.kic.8.dec.log
+  Process PID:   22177
+  Exit code:     0
+  Wall time:     00:01:36 (96.0 ms)
+  Memory (MB):   878.2
+  Resources:    
+    ru_utime:    00:04:22 (262.6 ms)
+    ru_stime:    00:00:45 (45.2 ms)
+    ru_maxrss:   899288
+    ru_minflt:   77739
+    ru_majflt:   147
+    ru_inblock:  791152
+    ru_oublock:  3672864
+    ru_nvcsw:    5895133
+    ru_nivcsw:   42619
+  GNU time:     
+    real:        00:01:35 (95.9 ms)
+    user:        00:04:22 (262.6 ms)
+    sys:         00:00:45 (45.2 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+
+Done!

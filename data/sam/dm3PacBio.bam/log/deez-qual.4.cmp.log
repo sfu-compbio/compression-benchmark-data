@@ -1,0 +1,60 @@
+DeeZ 0x12 (v1.1-16-gbdc7119-dirty)
+Loaded reference file data/sam/ref/dm3.fa
+Loaded reference index data/sam/ref/dm3.fa.fai
+Using quality mode samcomp
+	  1.6% [Chr chr2L      Block      1]	  3.2% [Chr chr2L      Block      2]	  4.9% [Chr chr2L      Block      3]	  6.5% [Chr chr2L      Block      4]	  8.1% [Chr chr2L      Block      5]	  9.7% [Chr chr2L      Block      6]	 11.4% [Chr chr2L      Block      7]	 13.0% [Chr chr2L      Block      8]	 14.6% [Chr chr2L      Block      9]	 16.2% [Chr chr2L      Block     10]	 17.9% [Chr chr2L      Block     11]	 19.5% [Chr chr2L      Block     12]	 19.6% [Chr chr2L      Block     13]	 19.9% [Chr chr2LHet   Block     14]	 21.5% [Chr chr2R      Block     15]	 23.1% [Chr chr2R      Block     16]	 24.7% [Chr chr2R      Block     17]	 26.4% [Chr chr2R      Block     18]	 28.0% [Chr chr2R      Block     19]	 29.6% [Chr chr2R      Block     20]	 31.2% [Chr chr2R      Block     21]	 32.9% [Chr chr2R      Block     22]	 34.5% [Chr chr2R      Block     23]	 36.1% [Chr chr2R      Block     24]	 36.7% [Chr chr2R      Block     25]	 38.3% [Chr chr2RHet   Block     26]	 39.2% [Chr chr2RHet   Block     27]	 40.9% [Chr chr3L      Block     28]	 42.5% [Chr chr3L      Block     29]	 44.1% [Chr chr3L      Block     30]	 45.7% [Chr chr3L      Block     31]	 47.4% [Chr chr3L      Block     32]	 49.0% [Chr chr3L      Block     33]	 50.6% [Chr chr3L      Block     34]	 52.2% [Chr chr3L      Block     35]	 53.8% [Chr chr3L      Block     36]	 55.5% [Chr chr3L      Block     37]	 57.1% [Chr chr3L      Block     38]	 58.7% [Chr chr3L      Block     39]	 59.5% [Chr chr3L      Block     40]	 61.1% [Chr chr3LHet   Block     41]	 61.6% [Chr chr3LHet   Block     42]	 63.3% [Chr chr3R      Block     43]	 64.9% [Chr chr3R      Block     44]	 66.5% [Chr chr3R      Block     45]	 68.1% [Chr chr3R      Block     46]	 69.8% [Chr chr3R      Block     47]	 71.4% [Chr chr3R      Block     48]	 73.0% [Chr chr3R      Block     49]	 74.6% [Chr chr3R      Block     50]	 76.3% [Chr chr3R      Block     51]	 77.9% [Chr chr3R      Block     52]	 79.5% [Chr chr3R      Block     53]	 81.1% [Chr chr3R      Block     54]	 82.8% [Chr chr3R      Block     55]	 84.2% [Chr chr3R      Block     56]	 85.9% [Chr chr3RHet   Block     57]	 86.1% [Chr chr3RHet   Block     58]	 87.2% [Chr chr4       Block     59]	 87.2% [Chr chrM       Block     60]	 87.5% [Chr chrUextra  Block     61]	 89.1% [Chr chrU       Block     62]	 90.2% [Chr chrU       Block     63]	 91.8% [Chr chrX       Block     64]	 93.4% [Chr chrX       Block     65]	 95.1% [Chr chrX       Block     66]	 96.7% [Chr chrX       Block     67]	 98.3% [Chr chrX       Block     68]	 98.8% [Chr chrX       Block     69]	 99.9% [Chr chrXHet    Block     70]	100.0% [Chr chrYHet    Block     71]
+Written 1,446,514 lines
+Paired 0 out of 1,446,514 reads
+Reference                  189,705
+  Fixes     :              114,489
+  Fixes St  :               29,920
+  Replace   :               45,296
+Sequences            1,553,683,777
+  Positions :            1,278,880 
+  Stitches  :              407,419 
+  Opcode    :          272,408,807 
+  SeqPos    :          851,080,085 
+  SeqLen    :            3,245,439 
+  XLen      :            6,691,073 
+  HSLen     :                    0 
+  AnyLen    :          146,768,305 
+  OPLen     :            2,573,218 
+  ACGTMiss  :           40,328,409 
+  ACGTIns   :          228,896,888 
+  ACGTUnmap :                5,254 
+Read Names              10,818,402
+  Index     :              876,231
+  Content   :            9,942,171
+  Paired    :                    0
+Flags                      244,620
+Map. Quals                  89,475
+Qualities            4,995,656,280
+Paired End               6,953,485
+  Diff      :            3,966,610 
+  Chr       :                3,680 
+  Template  :            2,747,969 
+  Bits      :              235,226 
+Optionals               16,780,250
+  Tags      :              520,092
+  ASk       :            1,664,101
+  ASm       :            1,347,388
+  FIj       :              575,151
+  FIk       :            1,311,974
+  FIm       :               21,023
+  NMi       :                    0
+  RG^       :            1,007,335
+  XEj       :                2,686
+  XEk       :            2,785,352
+  XEm       :               52,283
+  XLj       :               10,994
+  XLk       :            2,747,859
+  XLm       :                  602
+  XQk       :            2,753,251
+  XQm       :               69,222
+  XSj       :              574,903
+  XSk       :            1,311,757
+  XSm       :               21,023
+  XTj       :                3,254
+
+################################################################################
+

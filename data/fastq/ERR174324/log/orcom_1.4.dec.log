@@ -1,0 +1,7 @@
+
+################################################################################
+
+d,4,ERR174324/output/compressed/orcom/ERR174324_1.fastq.orcom,ERR174324/output/decompressed/orcom/ERR174324_1.fastq.fq
+
+tools/orcom/bin/orcom_pack d -v -t4 -iERR174324/output/compressed/orcom/ERR174324_1.fastq.orcom -oERR174324/output/decompressed/orcom/ERR174324_1.fastq.fq
+

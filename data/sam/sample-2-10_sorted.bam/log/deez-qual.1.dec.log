@@ -1,0 +1,12 @@
+DeeZ 0x12 (v1.1-16-gbdc7119-dirty)
+Decompressing sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz to sample-2-10_sorted.bam/output/decompressed/deez-qual/sample-2-10_sorted.bam.sam.sam ...
+File format: DZ v1.2
+Using bzip decoding
+Loaded reference file data/sam/ref/Homo_sapiens_assembly19.fasta
+Loaded reference index data/sam/ref/Homo_sapiens_assembly19.fasta.fai
+Using quality mode samcomp
+	 6.02% [Chr 1         ]	10.88% [Chr 1         ]	16.58% [Chr 2         ]	19.29% [Chr 2         ]	24.95% [Chr 3         ]	25.30% [Chr 3         ]	27.82% [Chr 4         ]	31.53% [Chr 5         ]	37.25% [Chr 6         ]	41.62% [Chr 6         ]	47.38% [Chr 7         ]	48.97% [Chr 7         ]	54.64% [Chr 8         ]	54.89% [Chr 8         ]	58.55% [Chr 9         ]	62.29% [Chr 10        ]	67.86% [Chr 11        ]	72.39% [Chr 12        ]	73.82% [Chr 13        ]	76.00% [Chr 14        ]	78.47% [Chr 15        ]	82.16% [Chr 16        ]	87.27% [Chr 17        ]	88.61% [Chr 18        ]	91.63% [Chr 19        ]	94.47% [Chr 20        ]	94.92% [Chr 21        ]	96.75% [Chr 22        ]	99.15% [Chr X         ]	99.15% [Chr Y         ]	99.15% [Chr MT        ]	99.94% [Chr *         ]
+Decompressed 17,480,371 records, 32 blocks
+
+################################################################################
+

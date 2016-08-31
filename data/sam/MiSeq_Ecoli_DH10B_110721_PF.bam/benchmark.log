@@ -1,0 +1,1852 @@
+Namespace(force=False, log='benchmark.log', ref='data/sam/ref/CP000948.fa', sam='MiSeq_Ecoli_DH10B_110721_PF.bam.sam')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++            MiSeq_Ecoli_DH10B_110721_PF.bam with 1 threads            + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -p 1
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.gz
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/pigz.1.cmp.log
+  Process PID:   25547
+  Exit code:     0
+  Wall time:     00:08:00 (480.8 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:07:47 (467.7 ms)
+    ru_stime:    00:00:07 (7.1 ms)
+    ru_maxrss:   5896
+    ru_minflt:   1002
+    ru_majflt:   7
+    ru_inblock:  10899632
+    ru_oublock:  2608936
+    ru_nvcsw:    284
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:08:00 (480.6 ms)
+    user:        00:07:47 (467.7 ms)
+    sys:         00:00:07 (7.0 ms)
+  Size (MB):     1,273.84 (1335716886 bytes)
+  Free space:     
+                      2.8T  466G  2.3T  17% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.gz
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.gz.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/pigz.1.dec.log
+  Process PID:   25770
+  Exit code:     0
+  Wall time:     00:01:09 (69.9 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:00:48 (48.5 ms)
+    ru_stime:    00:00:07 (7.0 ms)
+    ru_maxrss:   5916
+    ru_minflt:   870
+    ru_majflt:   7
+    ru_inblock:  2611328
+    ru_oublock:  10896568
+    ru_nvcsw:    670
+    ru_nivcsw:   6
+  GNU time:     
+    real:        00:01:09 (69.8 ms)
+    user:        00:00:48 (48.5 ms)
+    sys:         00:00:07 (7.0 ms)
+  Size (MB):     5,320.58 (5579036306 bytes)
+  Free space:     
+                      2.8T  471G  2.3T  17% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -p1
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.bz2
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/pbzip2.1.cmp.log
+  Process PID:   25851
+  Exit code:     0
+  Wall time:     00:17:02 (1022.8 ms)
+  Memory (MB):   12.4
+  Resources:    
+    ru_utime:    00:16:24 (984.9 ms)
+    ru_stime:    00:00:25 (25.3 ms)
+    ru_maxrss:   12748
+    ru_minflt:   5255093
+    ru_majflt:   8
+    ru_inblock:  10923344
+    ru_oublock:  2098696
+    ru_nvcsw:    34297
+    ru_nivcsw:   12
+  GNU time:     
+    real:        00:17:02 (1022.6 ms)
+    user:        00:16:24 (984.9 ms)
+    sys:         00:00:25 (25.3 ms)
+  Size (MB):     1,024.64 (1074409206 bytes)
+  Free space:     
+                      2.8T  466G  2.3T  17% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.bz2
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.bz2.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/pbzip2.1.dec.log
+  Process PID:   26320
+  Exit code:     0
+  Wall time:     00:05:51 (351.3 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:05:34 (334.8 ms)
+    ru_stime:    00:00:09 (9.2 ms)
+    ru_maxrss:   5948
+    ru_minflt:   2812
+    ru_majflt:   8
+    ru_inblock:  2125200
+    ru_oublock:  10896568
+    ru_nvcsw:    345
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:05:51 (351.2 ms)
+    user:        00:05:34 (334.8 ms)
+    sys:         00:00:09 (9.2 ms)
+  Size (MB):     5,320.58 (5579036306 bytes)
+  Free space:     
+                      2.8T  471G  2.3T  17% /local-scratch
+
+######################################################################## 
+#                               samtools                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -b MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.bam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/samtools.1.cmp.log
+  Process PID:   26522
+  Exit code:     0
+  Wall time:     00:10:21 (621.2 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:09:58 (598.1 ms)
+    ru_stime:    00:00:16 (16.3 ms)
+    ru_maxrss:   5948
+    ru_minflt:   2195207
+    ru_majflt:   10
+    ru_inblock:  10900168
+    ru_oublock:  2747520
+    ru_nvcsw:    310
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:10:21 (621.1 ms)
+    user:        00:09:58 (598.1 ms)
+    sys:         00:00:16 (16.3 ms)
+  Size (MB):     1,341.48 (1406645765 bytes)
+  Free space:     
+                      2.8T  466G  2.3T  17% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -h MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.bam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.bam.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/samtools.1.dec.log
+  Process PID:   26814
+  Exit code:     0
+  Wall time:     00:01:51 (111.0 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:01:19 (79.3 ms)
+    ru_stime:    00:00:10 (10.9 ms)
+    ru_maxrss:   5948
+    ru_minflt:   894
+    ru_majflt:   9
+    ru_inblock:  2750904
+    ru_oublock:  10896608
+    ru_nvcsw:    1849
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:01:50 (110.9 ms)
+    user:        00:01:19 (79.3 ms)
+    sys:         00:00:10 (10.9 ms)
+  Size (MB):     5,320.58 (5579036306 bytes)
+  Free space:     
+                      2.8T  471G  2.3T  17% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 1 -r data/sam/ref/CP000948.fa MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.scramble.cram
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/scramble.1.cmp.log
+  Process PID:   13917
+  Exit code:     0
+  Wall time:     00:02:22 (142.7 ms)
+  Memory (MB):   39.0
+  Resources:    
+    ru_utime:    00:01:57 (117.8 ms)
+    ru_stime:    00:00:09 (9.9 ms)
+    ru_maxrss:   39960
+    ru_minflt:   1835490
+    ru_majflt:   37
+    ru_inblock:  10915152
+    ru_oublock:  1684960
+    ru_nvcsw:    21688
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:02:22 (142.6 ms)
+    user:        00:01:57 (117.8 ms)
+    sys:         00:00:09 (9.8 ms)
+  Size (MB):     822.72 (862679816 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 1 -r data/sam/ref/CP000948.fa MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.scramble.cram MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.scramble.cram.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/scramble.1.dec.log
+  Process PID:   13950
+  Exit code:     0
+  Wall time:     00:01:24 (84.2 ms)
+  Memory (MB):   13.2
+  Resources:    
+    ru_utime:    00:00:53 (53.4 ms)
+    ru_stime:    00:00:12 (12.5 ms)
+    ru_maxrss:   13476
+    ru_minflt:   2868792
+    ru_majflt:   39
+    ru_inblock:  1703664
+    ru_oublock:  10715536
+    ru_nvcsw:    3427
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:01:24 (84.1 ms)
+    user:        00:00:53 (53.4 ms)
+    sys:         00:00:12 (12.5 ms)
+  Size (MB):     5,232.19 (5486348401 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I sam -O cram -t 1 MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.scramble-noref.cram
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/scramble-noref.1.cmp.log
+  Process PID:   13991
+  Exit code:     0
+  Wall time:     00:02:57 (177.1 ms)
+  Memory (MB):   36.2
+  Resources:    
+    ru_utime:    00:02:32 (152.8 ms)
+    ru_stime:    00:00:10 (10.7 ms)
+    ru_maxrss:   37020
+    ru_minflt:   2289211
+    ru_majflt:   39
+    ru_inblock:  10905920
+    ru_oublock:  1755272
+    ru_nvcsw:    21648
+    ru_nivcsw:   6
+  GNU time:     
+    real:        00:02:57 (177.0 ms)
+    user:        00:02:32 (152.8 ms)
+    sys:         00:00:10 (10.7 ms)
+  Size (MB):     857.04 (898671029 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I cram -O sam -t 1 MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.scramble-noref.cram MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.scramble-noref.cram.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/scramble-noref.1.dec.log
+  Process PID:   14026
+  Exit code:     0
+  Wall time:     00:01:21 (81.9 ms)
+  Memory (MB):   14.7
+  Resources:    
+    ru_utime:    00:00:58 (58.1 ms)
+    ru_stime:    00:00:13 (13.9 ms)
+    ru_maxrss:   15044
+    ru_minflt:   3483760
+    ru_majflt:   39
+    ru_inblock:  1760424
+    ru_oublock:  10896568
+    ru_nvcsw:    3354
+    ru_nivcsw:   6
+  GNU time:     
+    real:        00:01:21 (81.8 ms)
+    user:        00:00:58 (58.1 ms)
+    sys:         00:00:13 (13.8 ms)
+  Size (MB):     5,320.58 (5579036912 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -7 -I sam -O cram -t 1 -r data/sam/ref/CP000948.fa MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.scramble-bz2.cram
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/scramble-bzip2.1.cmp.log
+  Process PID:   14057
+  Exit code:     0
+  Wall time:     00:07:51 (471.1 ms)
+  Memory (MB):   43.5
+  Resources:    
+    ru_utime:    00:07:00 (420.8 ms)
+    ru_stime:    00:00:20 (20.8 ms)
+    ru_maxrss:   44568
+    ru_minflt:   2342814
+    ru_majflt:   37
+    ru_inblock:  10915160
+    ru_oublock:  1662408
+    ru_nvcsw:    21734
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:07:51 (471.1 ms)
+    user:        00:07:00 (420.8 ms)
+    sys:         00:00:20 (20.8 ms)
+  Size (MB):     811.67 (851094382 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -I cram -O sam -t 1 -r data/sam/ref/CP000948.fa MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.scramble-bz2.cram MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.scramble-bz2.cram.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/scramble-bzip2.1.dec.log
+  Process PID:   14179
+  Exit code:     0
+  Wall time:     00:01:38 (98.8 ms)
+  Memory (MB):   14.4
+  Resources:    
+    ru_utime:    00:01:03 (63.6 ms)
+    ru_stime:    00:00:10 (10.6 ms)
+    ru_maxrss:   14732
+    ru_minflt:   1903922
+    ru_majflt:   39
+    ru_inblock:  1681064
+    ru_oublock:  10715536
+    ru_nvcsw:    3429
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:01:38 (98.7 ms)
+    user:        00:01:03 (63.6 ms)
+    sys:         00:00:10 (10.5 ms)
+  Size (MB):     5,232.19 (5486348422 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 1 MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.sambamba.bam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/sambamba.1.cmp.log
+  Process PID:   26941
+  Exit code:     0
+  Wall time:     00:10:50 (650.6 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:10:30 (630.4 ms)
+    ru_stime:    00:00:17 (17.7 ms)
+    ru_maxrss:   5948
+    ru_minflt:   2138609
+    ru_majflt:   25
+    ru_inblock:  10903576
+    ru_oublock:  2747568
+    ru_nvcsw:    582
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:10:50 (650.5 ms)
+    user:        00:10:30 (630.4 ms)
+    sys:         00:00:17 (17.6 ms)
+  Size (MB):     1,341.48 (1406645763 bytes)
+  Free space:     
+                      2.8T  466G  2.3T  17% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -h -t 1 MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.sambamba.bam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.sambamba.bam.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/sambamba.1.dec.log
+  Process PID:   27188
+  Exit code:     0
+  Wall time:     00:01:59 (119.8 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:01:35 (95.9 ms)
+    ru_stime:    00:00:10 (10.2 ms)
+    ru_maxrss:   5948
+    ru_minflt:   2114
+    ru_majflt:   23
+    ru_inblock:  2754664
+    ru_oublock:  10896568
+    ru_nvcsw:    1651
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:01:59 (119.7 ms)
+    user:        00:01:35 (95.9 ms)
+    sys:         00:00:10 (10.2 ms)
+  Size (MB):     5,320.58 (5579036306 bytes)
+  Free space:     
+                      2.8T  471G  2.3T  17% /local-scratch
+
+######################################################################## 
+#                               sam_comp                               # 
+########################################################################
+>>> sam_comp (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-01-10 19:52:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -r data/sam/ref/CP000948.fa.sc 
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sam_comp/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.zam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam_comp.1.cmp.log
+  Process PID:   29777
+  Exit code:     0
+  Wall time:     00:07:04 (424.5 ms)
+  Memory (MB):   434.4
+  Resources:    
+    ru_utime:    00:06:50 (410.7 ms)
+    ru_stime:    00:00:08 (8.6 ms)
+    ru_maxrss:   444820
+    ru_minflt:   2736
+    ru_majflt:   8
+    ru_inblock:  10932816
+    ru_oublock:  1366528
+    ru_nvcsw:    267
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:07:04 (424.4 ms)
+    user:        00:06:50 (410.7 ms)
+    sys:         00:00:08 (8.6 ms)
+  Size (MB):     667.24 (699651270 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sam_comp/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.zam)
+  Free space:      2.8T  1.2T  1.6T  42% /local-scratch
+*** 2016-01-10 19:59:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -d -r data/sam/ref/CP000948.fa.sc
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sam_comp/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.zam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/sam_comp/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam_comp.1.dec.log
+  Process PID:   29858
+  Exit code:     0
+  Wall time:     00:06:13 (373.3 ms)
+  Memory (MB):   436.1
+  Resources:    
+    ru_utime:    00:06:00 (360.4 ms)
+    ru_stime:    00:00:07 (7.3 ms)
+    ru_maxrss:   446612
+    ru_minflt:   2645
+    ru_majflt:   8
+    ru_inblock:  1402480
+    ru_oublock:  9290680
+    ru_nvcsw:    242
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:06:13 (373.2 ms)
+    user:        00:06:00 (360.4 ms)
+    sys:         00:00:07 (7.2 ms)
+  Size (MB):     4,536.46 (4756818083 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/sam_comp/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+
+######################################################################## 
+#                                 tsc                                  # 
+########################################################################
+>>> tsc (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-07 13:25:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.5/src/tsc -f -s -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/tsc/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.tsc MiSeq_Ecoli_DH10B_110721_PF.bam.sam 
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.tsc.1.cmp.log
+  Process PID:   14400
+  Exit code:     0
+  Wall time:     00:22:51 (1371.9 ms)
+  Memory (MB):   14.8
+  Resources:    
+    ru_utime:    00:22:35 (1355.8 ms)
+    ru_stime:    00:00:08 (8.9 ms)
+    ru_maxrss:   15196
+    ru_minflt:   3064
+    ru_majflt:   7
+    ru_inblock:  10900000
+    ru_oublock:  2158648
+    ru_nvcsw:    324
+    ru_nivcsw:   5
+  GNU time:     
+    real:        00:22:51 (1371.5 ms)
+    user:        00:22:35 (1355.8 ms)
+    sys:         00:00:08 (8.9 ms)
+  Size (MB):     1,053.71 (1104898991 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/tsc/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.tsc)
+  Free space:      2.8T  992G  1.8T  36% /local-scratch
+*** 2016-03-07 13:48:20 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.5/src/tsc -f -s -d -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/tsc/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/tsc/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.tsc
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.tsc.1.dec.log
+  Process PID:   15023
+  Exit code:     0
+  Wall time:     00:16:44 (1004.9 ms)
+  Memory (MB):   16.5
+  Resources:    
+    ru_utime:    00:15:33 (933.6 ms)
+    ru_stime:    00:00:29 (29.3 ms)
+    ru_maxrss:   16860
+    ru_minflt:   5846821
+    ru_majflt:   7
+    ru_inblock:  2161520
+    ru_oublock:  10896576
+    ru_nvcsw:    4657
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:16:44 (1004.8 ms)
+    user:        00:15:33 (933.6 ms)
+    sys:         00:00:29 (29.3 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/tsc/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  997G  1.8T  36% /local-scratch
+
+######################################################################## 
+#                                 cbc                                  # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/cbc/simulations/main.run MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.cbc
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/cbc.1.cmp.log
+  Process PID:   27590
+  Exit code:     0
+  Wall time:     00:01:00 (60.8 ms)
+  Memory (MB):   332.4
+  Resources:    
+    ru_utime:    00:00:55 (55.7 ms)
+    ru_stime:    00:00:04 (4.2 ms)
+    ru_maxrss:   340384
+    ru_minflt:   12712
+    ru_majflt:   4
+    ru_inblock:  10898696
+    ru_oublock:  3376
+    ru_nvcsw:    194
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:01:00 (60.7 ms)
+    user:        00:00:55 (55.7 ms)
+    sys:         00:00:04 (4.2 ms)
+  Size (MB):     1.62 (1700387 bytes)
+  Free space:     
+                      2.8T  465G  2.3T  17% /local-scratch
+*** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/cbc/simulations/main.run MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.cbc data/sam/ref/CP000948.fa.cbc MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.cbc.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/cbc.1.dec.log
+  Process PID:   27603
+  Exit code:     2816
+  Wall time:     00:00:00 (0.1 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   5948
+    ru_minflt:   795
+    ru_majflt:   4
+    ru_inblock:  776
+    ru_oublock:  8
+    ru_nvcsw:    67
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:00:00 (0.1 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     ?
+  Free space:     
+                      2.8T  465G  2.3T  17% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.qp
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/quip.1.cmp.log
+  Process PID:   26292
+  Exit code:     0
+  Wall time:     00:06:58 (418.8 ms)
+  Memory (MB):   396.1
+  Resources:    
+    ru_utime:    00:06:45 (405.6 ms)
+    ru_stime:    00:00:06 (6.4 ms)
+    ru_maxrss:   405604
+    ru_minflt:   18466
+    ru_majflt:   16
+    ru_inblock:  10901056
+    ru_oublock:  2155024
+    ru_nvcsw:    3134
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:06:58 (418.5 ms)
+    user:        00:06:45 (405.6 ms)
+    sys:         00:00:06 (6.4 ms)
+  Size (MB):     1,052.12 (1103227473 bytes)
+  Free space:     
+                      2.8T  1.5T  1.3T  54% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -d -o sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.qp
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.qp.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/quip.1.dec.log
+  Process PID:   5043
+  Exit code:     0
+  Wall time:     00:19:46 (1186.2 ms)
+  Memory (MB):   395.4
+  Resources:    
+    ru_utime:    00:19:13 (1153.4 ms)
+    ru_stime:    00:00:16 (16.3 ms)
+    ru_maxrss:   404880
+    ru_minflt:   23075
+    ru_majflt:   16
+    ru_inblock:  2158976
+    ru_oublock:  10896568
+    ru_nvcsw:    9283
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:19:46 (1186.1 ms)
+    user:        00:19:13 (1153.4 ms)
+    sys:         00:00:16 (16.3 ms)
+  Size (MB):     5,320.58 (5579036306 bytes)
+  Free space:     
+                      2.8T  1.5T  1.3T  55% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -r data/sam/ref/CP000948.fa MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.ref.qp
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/quip-ref.1.cmp.log
+  Process PID:   16109
+  Exit code:     0
+  Wall time:     00:06:54 (414.7 ms)
+  Memory (MB):   396.1
+  Resources:    
+    ru_utime:    00:06:42 (402.5 ms)
+    ru_stime:    00:00:05 (5.9 ms)
+    ru_maxrss:   405624
+    ru_minflt:   18637
+    ru_majflt:   16
+    ru_inblock:  10910088
+    ru_oublock:  1569248
+    ru_nvcsw:    3152
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:06:54 (414.7 ms)
+    user:        00:06:42 (402.4 ms)
+    sys:         00:00:05 (5.8 ms)
+  Size (MB):     766.09 (803308047 bytes)
+  Free space:     
+                      2.8T  1.5T  1.3T  54% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -d -o sam -r data/sam/ref/CP000948.fa MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.ref.qp
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.ref.qp.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/quip-ref.1.dec.log
+  Process PID:   26730
+  Exit code:     0
+  Wall time:     00:18:37 (1117.1 ms)
+  Memory (MB):   395.7
+  Resources:    
+    ru_utime:    00:18:11 (1091.3 ms)
+    ru_stime:    00:00:14 (14.3 ms)
+    ru_maxrss:   405160
+    ru_minflt:   19222
+    ru_majflt:   16
+    ru_inblock:  1581432
+    ru_oublock:  10896576
+    ru_nvcsw:    6705
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:18:37 (1117.1 ms)
+    user:        00:18:11 (1091.3 ms)
+    sys:         00:00:14 (14.3 ms)
+  Size (MB):     5,320.58 (5579036306 bytes)
+  Free space:     
+                      2.8T  1.5T  1.3T  55% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -a -v -c MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.asm.qp
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/quip-asm.1.cmp.log
+  Process PID:   5664
+  Exit code:     0
+  Wall time:     00:10:35 (635.8 ms)
+  Memory (MB):   779.8
+  Resources:    
+    ru_utime:    00:10:15 (615.2 ms)
+    ru_stime:    00:00:07 (7.1 ms)
+    ru_maxrss:   798484
+    ru_minflt:   22952
+    ru_majflt:   16
+    ru_inblock:  10901040
+    ru_oublock:  2155072
+    ru_nvcsw:    3749
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:10:35 (635.7 ms)
+    user:        00:10:15 (615.2 ms)
+    sys:         00:00:07 (7.1 ms)
+  Size (MB):     1,052.12 (1103227481 bytes)
+  Free space:     
+                      2.8T  1.5T  1.3T  54% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -a -v -c -d -o sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.asm.qp
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.asm.qp.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/quip-asm.1.dec.log
+  Process PID:   16353
+  Exit code:     0
+  Wall time:     00:23:37 (1417.1 ms)
+  Memory (MB):   776.8
+  Resources:    
+    ru_utime:    00:23:10 (1390.0 ms)
+    ru_stime:    00:00:16 (16.5 ms)
+    ru_maxrss:   795468
+    ru_minflt:   26117
+    ru_majflt:   16
+    ru_inblock:  2158960
+    ru_oublock:  10896576
+    ru_nvcsw:    8024
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:23:37 (1417.0 ms)
+    user:        00:23:10 (1390.0 ms)
+    sys:         00:00:16 (16.5 ms)
+  Size (MB):     5,320.58 (5579036306 bytes)
+  Free space:     
+                      2.8T  1.5T  1.3T  55% /local-scratch
+
+########################################################################
+#                                 deez                                 #
+########################################################################
+>>> deez (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-01-14 12:19:47 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/CP000948.fa -! MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez.1.cmp.log
+  Process PID:   8923
+  Exit code:     0
+  Wall time:     00:05:50 (350.7 ms)
+  Memory (MB):   1697.3
+  Resources:
+    ru_utime:    00:05:33 (333.9 ms)
+    ru_stime:    00:00:09 (9.2 ms)
+    ru_maxrss:   1738056
+    ru_minflt:   326268
+    ru_majflt:   39
+    ru_inblock:  10939448
+    ru_oublock:  1606944
+    ru_nvcsw:    683
+    ru_nivcsw:   12
+  GNU time:
+    real:        00:05:49 (349.9 ms)
+    user:        00:05:33 (333.9 ms)
+    sys:         00:00:09 (9.2 ms)
+  Size (MB):     784.57 (822676958 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+*** 2016-01-14 12:25:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/CP000948.fa -! MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez.1.dec.log
+  Process PID:   9048
+  Exit code:     0
+  Wall time:     00:07:13 (433.4 ms)
+  Memory (MB):   3120.7
+  Resources:
+    ru_utime:    00:06:30 (390.4 ms)
+    ru_stime:    00:00:17 (17.3 ms)
+    ru_maxrss:   3195604
+    ru_minflt:   651247
+    ru_majflt:   42
+    ru_inblock:  1649449
+    ru_oublock:  10896672
+    ru_nvcsw:    4164
+    ru_nivcsw:   10
+  GNU time:
+    real:        00:07:13 (433.0 ms)
+    user:        00:06:30 (390.4 ms)
+    sys:         00:00:17 (17.3 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+
+########################################################################
+#                              deez-qual                               #
+########################################################################
+>>> deez-qual (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-01-14 12:32:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/CP000948.fa -! MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz -q1 -b
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez-qual.1.cmp.log
+  Process PID:   9158
+  Exit code:     0
+  Wall time:     00:09:25 (565.4 ms)
+  Memory (MB):   2110.3
+  Resources:
+    ru_utime:    00:09:11 (551.7 ms)
+    ru_stime:    00:00:09 (9.6 ms)
+    ru_maxrss:   2160956
+    ru_minflt:   392815
+    ru_majflt:   43
+    ru_inblock:  10939392
+    ru_oublock:  1426864
+    ru_nvcsw:    665
+    ru_nivcsw:   7
+  GNU time:
+    real:        00:09:25 (565.3 ms)
+    user:        00:09:11 (551.7 ms)
+    sys:         00:00:09 (9.6 ms)
+  Size (MB):     696.61 (730446168 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+*** 2016-01-14 12:42:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/CP000948.fa -! MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez-qual.1.dec.log
+  Process PID:   9326
+  Exit code:     0
+  Wall time:     00:18:42 (1122.1 ms)
+  Memory (MB):   3378.0
+  Resources:
+    ru_utime:    00:18:19 (1099.9 ms)
+    ru_stime:    00:00:18 (18.3 ms)
+    ru_maxrss:   3459120
+    ru_minflt:   887497
+    ru_majflt:   42
+    ru_inblock:  1469048
+    ru_oublock:  10896688
+    ru_nvcsw:    3531
+    ru_nivcsw:   6
+  GNU time:
+    real:        00:18:41 (1121.9 ms)
+    user:        00:18:19 (1099.9 ms)
+    sys:         00:00:18 (18.3 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+
+######################################################################## 
+#                                picard                                # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=MiSeq_Ecoli_DH10B_110721_PF.bam.sam O=MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.picard.bam VALIDATION_STRINGENCY=SILENT
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/picard.1.cmp.log
+  Process PID:   25324
+  Exit code:     0
+  Wall time:     00:14:39 (879.9 ms)
+  Memory (MB):   633.5
+  Resources:    
+    ru_utime:    00:14:22 (862.6 ms)
+    ru_stime:    00:00:08 (8.6 ms)
+    ru_maxrss:   648752
+    ru_minflt:   22404
+    ru_majflt:   128
+    ru_inblock:  10974192
+    ru_oublock:  2784064
+    ru_nvcsw:    12194
+    ru_nivcsw:   56468
+  GNU time:     
+    real:        00:14:39 (879.8 ms)
+    user:        00:14:22 (862.6 ms)
+    sys:         00:00:08 (8.5 ms)
+  Size (MB):     1,358.84 (1424843382 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.picard.bam O=MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.picard.bam.sam VALIDATION_STRINGENCY=SILENT
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/picard.1.dec.log
+  Process PID:   25566
+  Exit code:     0
+  Wall time:     00:05:06 (306.2 ms)
+  Memory (MB):   591.4
+  Resources:    
+    ru_utime:    00:04:43 (283.6 ms)
+    ru_stime:    00:00:10 (10.2 ms)
+    ru_maxrss:   605544
+    ru_minflt:   61537
+    ru_majflt:   128
+    ru_inblock:  2860768
+    ru_oublock:  10897008
+    ru_nvcsw:    7248
+    ru_nivcsw:   21584
+  GNU time:     
+    real:        00:05:06 (306.1 ms)
+    user:        00:04:43 (283.6 ms)
+    sys:         00:00:10 (10.2 ms)
+  Size (MB):     5,320.58 (5579036306 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+
+######################################################################## 
+#                              cramtools                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar cram --ignore-md5-mismatch --capture-all-tags --input-is-sam -Q -n -R data/sam/ref/CP000948.fa -I MiSeq_Ecoli_DH10B_110721_PF.bam.sam -O MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.cram
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/cramtools.1.cmp.log
+  Process PID:   29426
+  Exit code:     0
+  Wall time:     00:09:37 (577.8 ms)
+  Memory (MB):   2107.2
+  Resources:    
+    ru_utime:    00:09:12 (552.8 ms)
+    ru_stime:    00:00:07 (7.7 ms)
+    ru_maxrss:   2157752
+    ru_minflt:   428938
+    ru_majflt:   122
+    ru_inblock:  10950024
+    ru_oublock:  2083448
+    ru_nvcsw:    9736
+    ru_nivcsw:   13777
+  GNU time:     
+    real:        00:09:37 (577.8 ms)
+    user:        00:09:12 (552.8 ms)
+    sys:         00:00:07 (7.7 ms)
+  Size (MB):     1,016.89 (1066281686 bytes)
+  Free space:     
+                      2.8T  466G  2.3T  17% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar bam --ignore-md5-mismatch --print-sam-header -R data/sam/ref/CP000948.fa -I MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.cram -O MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.cram.sam
+  stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/cramtools.1.dec.log
+  Process PID:   29693
+  Exit code:     0
+  Wall time:     00:03:09 (189.8 ms)
+  Memory (MB):   6730.5
+  Resources:    
+    ru_utime:    00:02:49 (169.3 ms)
+    ru_stime:    00:00:07 (7.4 ms)
+    ru_maxrss:   6892028
+    ru_minflt:   230382
+    ru_majflt:   122
+    ru_inblock:  2144432
+    ru_oublock:  10715840
+    ru_nvcsw:    7976
+    ru_nivcsw:   2916
+  GNU time:     
+    real:        00:03:09 (189.7 ms)
+    user:        00:02:49 (169.3 ms)
+    sys:         00:00:07 (7.3 ms)
+  Size (MB):     5,232.19 (5486347069 bytes)
+  Free space:     
+                      2.8T  471G  2.3T  17% /local-scratch
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++            MiSeq_Ecoli_DH10B_110721_PF.bam with 4 threads            + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 18:59:52 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4 
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.gz
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.pigz.4.cmp.log
+  Process PID:   3120
+  Exit code:     0
+  Wall time:     00:01:17 (77.6 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:04:47 (287.9 ms)
+    ru_stime:    00:00:15 (15.3 ms)
+    ru_maxrss:   5960
+    ru_minflt:   1381
+    ru_majflt:   8
+    ru_inblock:  10900240
+    ru_oublock:  2608856
+    ru_nvcsw:    87695
+    ru_nivcsw:   50157
+  GNU time:     
+    real:        00:01:17 (77.4 ms)
+    user:        00:04:47 (287.9 ms)
+    sys:         00:00:15 (15.2 ms)
+  Size (MB):     1,273.84 (1335716886 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.gz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:01:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.gz
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.pigz.4.dec.log
+  Process PID:   3163
+  Exit code:     0
+  Wall time:     00:00:29 (29.2 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:00:46 (46.8 ms)
+    ru_stime:    00:00:19 (19.4 ms)
+    ru_maxrss:   6000
+    ru_minflt:   667
+    ru_majflt:   7
+    ru_inblock:  2612312
+    ru_oublock:  10896568
+    ru_nvcsw:    426520
+    ru_nivcsw:   10394
+  GNU time:     
+    real:        00:00:29 (29.1 ms)
+    user:        00:00:46 (46.8 ms)
+    sys:         00:00:19 (19.4 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:03:29 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4 
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.bz2
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.pbzip2.4.cmp.log
+  Process PID:   3241
+  Exit code:     0
+  Wall time:     00:04:11 (251.9 ms)
+  Memory (MB):   39.9
+  Resources:    
+    ru_utime:    00:15:50 (950.3 ms)
+    ru_stime:    00:00:28 (28.3 ms)
+    ru_maxrss:   40844
+    ru_minflt:   3870577
+    ru_majflt:   8
+    ru_inblock:  10923824
+    ru_oublock:  2098520
+    ru_nvcsw:    33698
+    ru_nivcsw:   118377
+  GNU time:     
+    real:        00:04:11 (251.8 ms)
+    user:        00:15:50 (950.3 ms)
+    sys:         00:00:28 (28.3 ms)
+  Size (MB):     1,024.64 (1074409206 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.bz2)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:07:42 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.bz2
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.pbzip2.4.dec.log
+  Process PID:   3379
+  Exit code:     0
+  Wall time:     00:01:44 (104.1 ms)
+  Memory (MB):   25.2
+  Resources:    
+    ru_utime:    00:03:17 (197.3 ms)
+    ru_stime:    00:00:21 (21.5 ms)
+    ru_maxrss:   25820
+    ru_minflt:   2753086
+    ru_majflt:   8
+    ru_inblock:  2125120
+    ru_oublock:  10896568
+    ru_nvcsw:    14860
+    ru_nivcsw:   32113
+  GNU time:     
+    real:        00:01:44 (104.0 ms)
+    user:        00:03:17 (197.3 ms)
+    sys:         00:00:21 (21.5 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:11:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram -r data/sam/ref/CP000948.fa
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.4.cmp.log
+  Process PID:   3512
+  Exit code:     0
+  Wall time:     00:00:50 (50.9 ms)
+  Memory (MB):   309.5
+  Resources:    
+    ru_utime:    00:01:45 (105.8 ms)
+    ru_stime:    00:00:08 (8.2 ms)
+    ru_maxrss:   316948
+    ru_minflt:   785202
+    ru_majflt:   43
+    ru_inblock:  10919040
+    ru_oublock:  1684944
+    ru_nvcsw:    33171
+    ru_nivcsw:   26754
+  GNU time:     
+    real:        00:00:50 (50.8 ms)
+    user:        00:01:45 (105.8 ms)
+    sys:         00:00:08 (8.2 ms)
+  Size (MB):     822.72 (862680483 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:11:59 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.4.dec.log
+  Process PID:   3530
+  Exit code:     0
+  Wall time:     00:00:19 (19.5 ms)
+  Memory (MB):   184.9
+  Resources:    
+    ru_utime:    00:00:48 (48.7 ms)
+    ru_stime:    00:00:04 (4.8 ms)
+    ru_maxrss:   189368
+    ru_minflt:   116714
+    ru_majflt:   42
+    ru_inblock:  1707064
+    ru_oublock:  10715536
+    ru_nvcsw:    5822
+    ru_nivcsw:   8389
+  GNU time:     
+    real:        00:00:19 (19.4 ms)
+    user:        00:00:48 (48.7 ms)
+    sys:         00:00:04 (4.8 ms)
+  Size (MB):     5,232.19 (5486348461 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:13:56 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram -j -7 -r data/sam/ref/CP000948.fa
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble-bzip2.4.cmp.log
+  Process PID:   3610
+  Exit code:     0
+  Wall time:     00:00:56 (56.7 ms)
+  Memory (MB):   299.6
+  Resources:    
+    ru_utime:    00:02:50 (170.1 ms)
+    ru_stime:    00:00:08 (8.7 ms)
+    ru_maxrss:   306832
+    ru_minflt:   1287348
+    ru_majflt:   43
+    ru_inblock:  10918912
+    ru_oublock:  1662320
+    ru_nvcsw:    33415
+    ru_nivcsw:   29696
+  GNU time:     
+    real:        00:00:56 (56.6 ms)
+    user:        00:02:50 (170.1 ms)
+    sys:         00:00:08 (8.7 ms)
+  Size (MB):     811.67 (851095819 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:14:54 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble-bzip2.4.dec.log
+  Process PID:   3630
+  Exit code:     0
+  Wall time:     00:00:21 (21.2 ms)
+  Memory (MB):   158.2
+  Resources:    
+    ru_utime:    00:01:00 (60.6 ms)
+    ru_stime:    00:00:05 (5.6 ms)
+    ru_maxrss:   162008
+    ru_minflt:   319184
+    ru_majflt:   42
+    ru_inblock:  1684368
+    ru_oublock:  10715536
+    ru_nvcsw:    4042
+    ru_nivcsw:   9945
+  GNU time:     
+    real:        00:00:21 (21.0 ms)
+    user:        00:01:00 (60.6 ms)
+    sys:         00:00:05 (5.5 ms)
+  Size (MB):     5,232.19 (5486348485 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:16:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram -x
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble-noref.4.cmp.log
+  Process PID:   3697
+  Exit code:     0
+  Wall time:     00:00:51 (51.4 ms)
+  Memory (MB):   297.8
+  Resources:    
+    ru_utime:    00:02:13 (133.7 ms)
+    ru_stime:    00:00:08 (8.6 ms)
+    ru_maxrss:   304964
+    ru_minflt:   1002644
+    ru_majflt:   41
+    ru_inblock:  10909256
+    ru_oublock:  1755240
+    ru_nvcsw:    29769
+    ru_nivcsw:   29934
+  GNU time:     
+    real:        00:00:51 (51.3 ms)
+    user:        00:02:13 (133.7 ms)
+    sys:         00:00:08 (8.6 ms)
+  Size (MB):     857.04 (898671041 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:17:45 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble-noref.4.dec.log
+  Process PID:   3758
+  Exit code:     0
+  Wall time:     00:00:21 (21.3 ms)
+  Memory (MB):   242.1
+  Resources:    
+    ru_utime:    00:00:54 (54.6 ms)
+    ru_stime:    00:00:06 (6.1 ms)
+    ru_maxrss:   247952
+    ru_minflt:   387208
+    ru_majflt:   42
+    ru_inblock:  1767496
+    ru_oublock:  10896568
+    ru_nvcsw:    7429
+    ru_nivcsw:   9587
+  GNU time:     
+    real:        00:00:21 (21.3 ms)
+    user:        00:00:54 (54.6 ms)
+    sys:         00:00:06 (6.1 ms)
+  Size (MB):     5,320.58 (5579036969 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:19:45 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 4 MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.bam 
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.4.cmp.log
+  Process PID:   3837
+  Exit code:     0
+  Wall time:     00:01:15 (75.5 ms)
+  Memory (MB):   13.5
+  Resources:    
+    ru_utime:    00:05:00 (300.6 ms)
+    ru_stime:    00:00:11 (11.7 ms)
+    ru_maxrss:   13868
+    ru_minflt:   2181501
+    ru_majflt:   25
+    ru_inblock:  10904520
+    ru_oublock:  2747432
+    ru_nvcsw:    23664
+    ru_nivcsw:   59611
+  GNU time:     
+    real:        00:01:15 (75.3 ms)
+    user:        00:05:00 (300.6 ms)
+    sys:         00:00:11 (11.6 ms)
+  Size (MB):     1,341.49 (1406659331 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.bam, MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.bam.bai)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:21:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -h -t 4 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.bam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.4.dec.log
+  Process PID:   3863
+  Exit code:     0
+  Wall time:     00:00:16 (16.8 ms)
+  Memory (MB):   13.3
+  Resources:    
+    ru_utime:    00:00:55 (55.7 ms)
+    ru_stime:    00:00:09 (9.0 ms)
+    ru_maxrss:   13660
+    ru_minflt:   2342
+    ru_majflt:   23
+    ru_inblock:  2755112
+    ru_oublock:  10896568
+    ru_nvcsw:    94288
+    ru_nivcsw:   18177
+  GNU time:     
+    real:        00:00:16 (16.7 ms)
+    user:        00:00:55 (55.7 ms)
+    sys:         00:00:08 (8.9 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:23:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v MiSeq_Ecoli_DH10B_110721_PF.bam.sam 
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/quip/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.qp
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.quip.4.cmp.log
+  Process PID:   3966
+  Exit code:     0
+  Wall time:     00:04:50 (290.1 ms)
+  Memory (MB):   395.2
+  Resources:    
+    ru_utime:    00:07:58 (478.7 ms)
+    ru_stime:    00:00:07 (7.5 ms)
+    ru_maxrss:   404652
+    ru_minflt:   16920
+    ru_majflt:   16
+    ru_inblock:  10901120
+    ru_oublock:  2154992
+    ru_nvcsw:    10953
+    ru_nivcsw:   100487
+  GNU time:     
+    real:        00:04:50 (290.0 ms)
+    user:        00:07:58 (478.7 ms)
+    sys:         00:00:07 (7.5 ms)
+  Size (MB):     1,052.12 (1103227473 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/quip/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.qp)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:27:58 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/quip/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.qp
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/quip/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.quip.4.dec.log
+  Process PID:   14721
+  Exit code:     0
+  Wall time:     00:06:06 (366.3 ms)
+  Memory (MB):   395.4
+  Resources:    
+    ru_utime:    00:09:24 (564.4 ms)
+    ru_stime:    00:00:08 (8.4 ms)
+    ru_maxrss:   404880
+    ru_minflt:   22835
+    ru_majflt:   16
+    ru_inblock:  2158720
+    ru_oublock:  10896568
+    ru_nvcsw:    14702
+    ru_nivcsw:   73066
+  GNU time:     
+    real:        00:06:06 (366.2 ms)
+    user:        00:09:24 (564.4 ms)
+    sys:         00:00:08 (8.4 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/quip/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+>>> quip-ref (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:35:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v MiSeq_Ecoli_DH10B_110721_PF.bam.sam -r data/sam/ref/CP000948.fa
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/quip-ref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.qp
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.quip-ref.4.cmp.log
+  Process PID:   25517
+  Exit code:     0
+  Wall time:     00:04:44 (284.8 ms)
+  Memory (MB):   396.7
+  Resources:    
+    ru_utime:    00:07:37 (457.6 ms)
+    ru_stime:    00:00:07 (7.1 ms)
+    ru_maxrss:   406208
+    ru_minflt:   18038
+    ru_majflt:   16
+    ru_inblock:  10910464
+    ru_oublock:  1569216
+    ru_nvcsw:    10933
+    ru_nivcsw:   97059
+  GNU time:     
+    real:        00:04:44 (284.7 ms)
+    user:        00:07:37 (457.6 ms)
+    sys:         00:00:07 (7.0 ms)
+  Size (MB):     766.09 (803308075 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/quip-ref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.qp)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-07 14:06:45 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -r data/sam/ref/CP000948.fa -v -d -o sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/quip-ref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.qp
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/quip-ref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.quip-ref.4.dec.log
+  Process PID:   15518
+  Exit code:     0
+  Wall time:     00:05:30 (330.9 ms)
+  Memory (MB):   394.0
+  Resources:    
+    ru_utime:    00:08:48 (528.8 ms)
+    ru_stime:    00:00:08 (8.2 ms)
+    ru_maxrss:   403472
+    ru_minflt:   18484
+    ru_majflt:   16
+    ru_inblock:  1582928
+    ru_oublock:  10896576
+    ru_nvcsw:    14288
+    ru_nivcsw:   69057
+  GNU time:     
+    real:        00:05:30 (330.4 ms)
+    user:        00:08:48 (528.8 ms)
+    sys:         00:00:08 (8.2 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/quip-ref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  996G  1.8T  36% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:40:30 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/CP000948.fa -! -v1 MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz 
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez.4.cmp.log
+  Process PID:   4313
+  Exit code:     0
+  Wall time:     00:02:26 (146.2 ms)
+  Memory (MB):   1745.5
+  Resources:    
+    ru_utime:    00:04:33 (273.6 ms)
+    ru_stime:    00:00:13 (13.5 ms)
+    ru_maxrss:   1787436
+    ru_minflt:   373489
+    ru_majflt:   48
+    ru_inblock:  10941168
+    ru_oublock:  1606864
+    ru_nvcsw:    306108
+    ru_nivcsw:   71157
+  GNU time:     
+    real:        00:02:26 (146.2 ms)
+    user:        00:04:33 (273.6 ms)
+    sys:         00:00:13 (13.4 ms)
+  Size (MB):     784.57 (822676958 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:42:58 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/CP000948.fa -! -v1 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez.4.dec.log
+  Process PID:   4605
+  Exit code:     0
+  Wall time:     00:02:02 (122.9 ms)
+  Memory (MB):   4793.0
+  Resources:    
+    ru_utime:    00:03:12 (192.3 ms)
+    ru_stime:    00:00:31 (31.2 ms)
+    ru_maxrss:   4908024
+    ru_minflt:   1215993
+    ru_majflt:   47
+    ru_inblock:  1652648
+    ru_oublock:  10896608
+    ru_nvcsw:    2029460
+    ru_nivcsw:   25772
+  GNU time:     
+    real:        00:02:02 (122.8 ms)
+    user:        00:03:12 (192.3 ms)
+    sys:         00:00:31 (31.2 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:46:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/CP000948.fa -! -v1 MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz -q1 -b
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez-qual.4.cmp.log
+  Process PID:   4837
+  Exit code:     0
+  Wall time:     00:04:15 (255.9 ms)
+  Memory (MB):   2198.2
+  Resources:    
+    ru_utime:    00:07:47 (467.9 ms)
+    ru_stime:    00:00:14 (14.7 ms)
+    ru_maxrss:   2250980
+    ru_minflt:   466692
+    ru_majflt:   48
+    ru_inblock:  10942488
+    ru_oublock:  1426776
+    ru_nvcsw:    364673
+    ru_nivcsw:   91279
+  GNU time:     
+    real:        00:04:15 (255.8 ms)
+    user:        00:07:47 (467.9 ms)
+    sys:         00:00:14 (14.7 ms)
+  Size (MB):     696.61 (730446168 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:50:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/CP000948.fa -! -v1 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez-qual.4.dec.log
+  Process PID:   5185
+  Exit code:     0
+  Wall time:     00:05:05 (305.5 ms)
+  Memory (MB):   5255.5
+  Resources:    
+    ru_utime:    00:06:55 (415.2 ms)
+    ru_stime:    00:00:21 (21.9 ms)
+    ru_maxrss:   5381640
+    ru_minflt:   1325530
+    ru_majflt:   47
+    ru_inblock:  1472488
+    ru_oublock:  10896632
+    ru_nvcsw:    1179815
+    ru_nivcsw:   46168
+  GNU time:     
+    real:        00:05:05 (305.4 ms)
+    user:        00:06:55 (415.2 ms)
+    sys:         00:00:21 (21.9 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++            MiSeq_Ecoli_DH10B_110721_PF.bam with 8 threads            + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 19:57:34 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8 
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.gz
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.pigz.8.cmp.log
+  Process PID:   5495
+  Exit code:     0
+  Wall time:     00:00:48 (48.9 ms)
+  Memory (MB):   8.0
+  Resources:    
+    ru_utime:    00:04:48 (288.7 ms)
+    ru_stime:    00:00:13 (13.7 ms)
+    ru_maxrss:   8236
+    ru_minflt:   2002
+    ru_majflt:   8
+    ru_inblock:  10899928
+    ru_oublock:  2608848
+    ru_nvcsw:    80701
+    ru_nivcsw:   45442
+  GNU time:     
+    real:        00:00:48 (48.8 ms)
+    user:        00:04:48 (288.7 ms)
+    sys:         00:00:13 (13.7 ms)
+  Size (MB):     1,273.84 (1335716886 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.gz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 19:58:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.gz
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.pigz.8.dec.log
+  Process PID:   5539
+  Exit code:     0
+  Wall time:     00:00:28 (28.6 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:00:46 (46.2 ms)
+    ru_stime:    00:00:19 (19.2 ms)
+    ru_maxrss:   6032
+    ru_minflt:   662
+    ru_majflt:   7
+    ru_inblock:  2611984
+    ru_oublock:  10896568
+    ru_nvcsw:    441415
+    ru_nivcsw:   10469
+  GNU time:     
+    real:        00:00:28 (28.4 ms)
+    user:        00:00:46 (46.2 ms)
+    sys:         00:00:19 (19.2 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/pigz/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 20:00:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8 
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam.sam
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.bz2
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.pbzip2.8.cmp.log
+  Process PID:   5627
+  Exit code:     0
+  Wall time:     00:02:14 (134.8 ms)
+  Memory (MB):   74.7
+  Resources:    
+    ru_utime:    00:16:16 (976.6 ms)
+    ru_stime:    00:00:31 (31.2 ms)
+    ru_maxrss:   76520
+    ru_minflt:   3878866
+    ru_majflt:   8
+    ru_inblock:  10923496
+    ru_oublock:  2098504
+    ru_nvcsw:    32849
+    ru_nivcsw:   121528
+  GNU time:     
+    real:        00:02:14 (134.7 ms)
+    user:        00:16:16 (976.6 ms)
+    sys:         00:00:31 (31.2 ms)
+  Size (MB):     1,024.64 (1074409206 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.bz2)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 20:02:51 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.bz2
+    stdout:      MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.pbzip2.8.dec.log
+  Process PID:   5680
+  Exit code:     0
+  Wall time:     00:00:30 (30.1 ms)
+  Memory (MB):   47.9
+  Resources:    
+    ru_utime:    00:03:33 (213.0 ms)
+    ru_stime:    00:00:24 (24.8 ms)
+    ru_maxrss:   49004
+    ru_minflt:   2694706
+    ru_majflt:   7
+    ru_inblock:  2124888
+    ru_oublock:  10896568
+    ru_nvcsw:    12528
+    ru_nivcsw:   30578
+  GNU time:     
+    real:        00:00:29 (29.9 ms)
+    user:        00:03:33 (213.0 ms)
+    sys:         00:00:24 (24.8 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/pbzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 20:05:01 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram -r data/sam/ref/CP000948.fa
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.8.cmp.log
+  Process PID:   5755
+  Exit code:     0
+  Wall time:     00:00:49 (49.4 ms)
+  Memory (MB):   288.6
+  Resources:    
+    ru_utime:    00:01:46 (106.1 ms)
+    ru_stime:    00:00:08 (8.0 ms)
+    ru_maxrss:   295540
+    ru_minflt:   789692
+    ru_majflt:   7
+    ru_inblock:  10910336
+    ru_oublock:  1684944
+    ru_nvcsw:    32631
+    ru_nivcsw:   26298
+  GNU time:     
+    real:        00:00:49 (49.3 ms)
+    user:        00:01:46 (106.1 ms)
+    sys:         00:00:08 (8.0 ms)
+  Size (MB):     822.72 (862680185 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 20:05:51 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.8.dec.log
+  Process PID:   5813
+  Exit code:     0
+  Wall time:     00:00:21 (21.3 ms)
+  Memory (MB):   396.1
+  Resources:    
+    ru_utime:    00:00:51 (51.4 ms)
+    ru_stime:    00:00:06 (6.2 ms)
+    ru_maxrss:   405616
+    ru_minflt:   406351
+    ru_majflt:   42
+    ru_inblock:  1707256
+    ru_oublock:  10715536
+    ru_nvcsw:    16275
+    ru_nivcsw:   8970
+  GNU time:     
+    real:        00:00:21 (21.2 ms)
+    user:        00:00:51 (51.4 ms)
+    sys:         00:00:06 (6.2 ms)
+  Size (MB):     5,232.19 (5486348461 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 20:07:51 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram -j -7 -r data/sam/ref/CP000948.fa
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble-bzip2.8.cmp.log
+  Process PID:   5899
+  Exit code:     0
+  Wall time:     00:00:53 (53.3 ms)
+  Memory (MB):   562.8
+  Resources:    
+    ru_utime:    00:02:58 (178.7 ms)
+    ru_stime:    00:00:09 (9.2 ms)
+    ru_maxrss:   576268
+    ru_minflt:   1216828
+    ru_majflt:   43
+    ru_inblock:  10918920
+    ru_oublock:  1662312
+    ru_nvcsw:    32798
+    ru_nivcsw:   30618
+  GNU time:     
+    real:        00:00:53 (53.1 ms)
+    user:        00:02:58 (178.7 ms)
+    sys:         00:00:09 (9.1 ms)
+  Size (MB):     811.67 (851093990 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 20:08:45 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble-bzip2.8.dec.log
+  Process PID:   5925
+  Exit code:     0
+  Wall time:     00:00:20 (20.4 ms)
+  Memory (MB):   318.2
+  Resources:    
+    ru_utime:    00:01:01 (61.9 ms)
+    ru_stime:    00:00:06 (6.0 ms)
+    ru_maxrss:   325872
+    ru_minflt:   250306
+    ru_majflt:   42
+    ru_inblock:  1684584
+    ru_oublock:  10715536
+    ru_nvcsw:    4845
+    ru_nivcsw:   10156
+  GNU time:     
+    real:        00:00:20 (20.3 ms)
+    user:        00:01:01 (61.9 ms)
+    sys:         00:00:06 (6.0 ms)
+  Size (MB):     5,232.19 (5486348485 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble-bzip2/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 20:10:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram -x
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble-noref.8.cmp.log
+  Process PID:   6001
+  Exit code:     0
+  Wall time:     00:00:54 (54.9 ms)
+  Memory (MB):   358.1
+  Resources:    
+    ru_utime:    00:02:17 (137.1 ms)
+    ru_stime:    00:00:08 (8.2 ms)
+    ru_maxrss:   366736
+    ru_minflt:   936930
+    ru_majflt:   43
+    ru_inblock:  10909624
+    ru_oublock:  1755240
+    ru_nvcsw:    33367
+    ru_nivcsw:   28040
+  GNU time:     
+    real:        00:00:54 (54.8 ms)
+    user:        00:02:17 (137.1 ms)
+    sys:         00:00:08 (8.2 ms)
+  Size (MB):     857.04 (898671120 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 20:11:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble.cram MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.scramble-noref.8.dec.log
+  Process PID:   6021
+  Exit code:     0
+  Wall time:     00:00:21 (21.5 ms)
+  Memory (MB):   456.2
+  Resources:    
+    ru_utime:    00:00:55 (55.0 ms)
+    ru_stime:    00:00:06 (6.3 ms)
+    ru_maxrss:   467168
+    ru_minflt:   409493
+    ru_majflt:   42
+    ru_inblock:  1762520
+    ru_oublock:  10896568
+    ru_nvcsw:    17587
+    ru_nivcsw:   9582
+  GNU time:     
+    real:        00:00:21 (21.4 ms)
+    user:        00:00:55 (55.0 ms)
+    sys:         00:00:06 (6.3 ms)
+  Size (MB):     5,320.58 (5579036969 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/scramble-noref/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 20:13:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 8 MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.bam 
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.8.cmp.log
+  Process PID:   6096
+  Exit code:     0
+  Wall time:     00:00:56 (56.1 ms)
+  Memory (MB):   24.6
+  Resources:    
+    ru_utime:    00:04:52 (292.2 ms)
+    ru_stime:    00:00:11 (11.8 ms)
+    ru_maxrss:   25152
+    ru_minflt:   2181642
+    ru_majflt:   25
+    ru_inblock:  10904288
+    ru_oublock:  2747432
+    ru_nvcsw:    62354
+    ru_nivcsw:   76600
+  GNU time:     
+    real:        00:00:56 (56.0 ms)
+    user:        00:04:52 (292.2 ms)
+    sys:         00:00:11 (11.7 ms)
+  Size (MB):     1,341.49 (1406659331 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.bam, MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.bam.bai)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 20:14:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -h -t 8 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.bam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sambamba.8.dec.log
+  Process PID:   6119
+  Exit code:     0
+  Wall time:     00:00:17 (17.9 ms)
+  Memory (MB):   32.1
+  Resources:    
+    ru_utime:    00:01:44 (104.3 ms)
+    ru_stime:    00:00:09 (9.8 ms)
+    ru_maxrss:   32852
+    ru_minflt:   3598
+    ru_majflt:   23
+    ru_inblock:  2754824
+    ru_oublock:  10896568
+    ru_nvcsw:    95016
+    ru_nivcsw:   25309
+  GNU time:     
+    real:        00:00:17 (17.8 ms)
+    user:        00:01:44 (104.3 ms)
+    sys:         00:00:09 (9.8 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/sambamba/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 20:16:38 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/CP000948.fa -! -v1 MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz 
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez.8.cmp.log
+  Process PID:   6204
+  Exit code:     0
+  Wall time:     00:02:04 (124.7 ms)
+  Memory (MB):   1775.1
+  Resources:    
+    ru_utime:    00:05:45 (345.8 ms)
+    ru_stime:    00:00:16 (16.7 ms)
+    ru_maxrss:   1817684
+    ru_minflt:   402282
+    ru_majflt:   48
+    ru_inblock:  10942312
+    ru_oublock:  1606864
+    ru_nvcsw:    447343
+    ru_nivcsw:   79229
+  GNU time:     
+    real:        00:02:04 (124.6 ms)
+    user:        00:05:45 (345.8 ms)
+    sys:         00:00:16 (16.7 ms)
+  Size (MB):     784.57 (822676958 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 20:18:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/CP000948.fa -! -v1 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez.8.dec.log
+  Process PID:   6714
+  Exit code:     0
+  Wall time:     00:02:15 (135.4 ms)
+  Memory (MB):   6774.6
+  Resources:    
+    ru_utime:    00:03:20 (200.7 ms)
+    ru_stime:    00:00:31 (31.4 ms)
+    ru_maxrss:   6937148
+    ru_minflt:   1946984
+    ru_majflt:   47
+    ru_inblock:  1652616
+    ru_oublock:  10896608
+    ru_nvcsw:    1515097
+    ru_nivcsw:   27108
+  GNU time:     
+    real:        00:02:15 (135.3 ms)
+    user:        00:03:20 (200.7 ms)
+    sys:         00:00:31 (31.4 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+*** 2016-03-03 20:22:34 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/CP000948.fa -! -v1 MiSeq_Ecoli_DH10B_110721_PF.bam.sam -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz -q1 -b
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez-qual.8.cmp.log
+  Process PID:   7062
+  Exit code:     0
+  Wall time:     00:04:08 (248.6 ms)
+  Memory (MB):   2213.1
+  Resources:    
+    ru_utime:    00:09:09 (549.1 ms)
+    ru_stime:    00:00:15 (15.8 ms)
+    ru_maxrss:   2266212
+    ru_minflt:   502708
+    ru_majflt:   47
+    ru_inblock:  10942312
+    ru_oublock:  1426776
+    ru_nvcsw:    420302
+    ru_nivcsw:   100277
+  GNU time:     
+    real:        00:04:08 (248.5 ms)
+    user:        00:09:09 (549.1 ms)
+    sys:         00:00:15 (15.8 ms)
+  Size (MB):     696.61 (730446168 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 20:26:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/CP000948.fa -! -v1 MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz -o MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam
+    stderr:      MiSeq_Ecoli_DH10B_110721_PF.bam/log/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.deez-qual.8.dec.log
+  Process PID:   7626
+  Exit code:     0
+  Wall time:     00:04:57 (297.0 ms)
+  Memory (MB):   6843.5
+  Resources:    
+    ru_utime:    00:07:04 (424.9 ms)
+    ru_stime:    00:00:17 (17.7 ms)
+    ru_maxrss:   7007744
+    ru_minflt:   1724999
+    ru_majflt:   47
+    ru_inblock:  1472480
+    ru_oublock:  10896632
+    ru_nvcsw:    404613
+    ru_nivcsw:   47141
+  GNU time:     
+    real:        00:04:56 (296.9 ms)
+    user:        00:07:04 (424.9 ms)
+    sys:         00:00:17 (17.7 ms)
+  Size (MB):     5,320.58 (5579036306 bytes) (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez-qual/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+
+Done!

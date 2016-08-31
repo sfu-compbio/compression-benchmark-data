@@ -1,0 +1,7 @@
+Reading ../../../sam/dm3PacBio.bam.sam, dm3PacBio.bam.sam.sam; maxline=10000000
+> ORIG       1446514 (../../../sam/dm3PacBio.bam.sam)
+< COPY       1446514 (dm3PacBio.bam.sam.sam)
+Comments   not equal
+
+AS                 0 missing,          0 extra,         12 unequal
+Done ../../../sam/dm3PacBio.bam.sam

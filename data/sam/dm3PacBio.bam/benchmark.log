@@ -1,0 +1,1828 @@
+Namespace(force=False, log='benchmark.log', ref='data/sam/ref/dm3.fa', sam='dm3PacBio.bam.sam')
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                     dm3PacBio.bam with 1 threads                     + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -p 1
+    stdin:       dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.gz
+    stderr:      dm3PacBio.bam/log/pigz.1.cmp.log
+  Process PID:   14811
+  Exit code:     0
+  Wall time:     02:07:29 (7649.4 ms)
+  Memory (MB):   5.6
+  Resources:    
+    ru_utime:    02:05:43 (7543.0 ms)
+    ru_stime:    00:00:43 (43.2 ms)
+    ru_maxrss:   5780
+    ru_minflt:   1007
+    ru_majflt:   5
+    ru_inblock:  58754296
+    ru_oublock:  24053696
+    ru_nvcsw:    955
+    ru_nivcsw:   8
+  GNU time:     
+    real:        02:07:29 (7649.0 ms)
+    user:        02:05:43 (7543.0 ms)
+    sys:         00:00:43 (43.2 ms)
+  Size (MB):     11,744.09 (12314572665 bytes)
+  Free space:     
+                      2.8T  688G  2.1T  25% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       dm3PacBio.bam/output/dm3PacBio.bam.gz
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.gz.sam
+    stderr:      dm3PacBio.bam/log/pigz.1.dec.log
+  Process PID:   16211
+  Exit code:     0
+  Wall time:     00:13:36 (816.9 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:06:20 (380.3 ms)
+    ru_stime:    00:00:43 (43.3 ms)
+    ru_maxrss:   5792
+    ru_minflt:   867
+    ru_majflt:   7
+    ru_inblock:  24054632
+    ru_oublock:  58752224
+    ru_nvcsw:    7725
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:13:36 (816.8 ms)
+    user:        00:06:20 (380.3 ms)
+    sys:         00:00:43 (43.3 ms)
+  Size (MB):     28,687.60 (30081132500 bytes)
+  Free space:     
+                      2.8T  716G  2.1T  26% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -p1
+    stdin:       dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.bz2
+    stderr:      dm3PacBio.bam/log/pbzip2.1.cmp.log
+  Process PID:   16367
+  Exit code:     0
+  Wall time:     01:05:42 (3942.6 ms)
+  Memory (MB):   12.0
+  Resources:    
+    ru_utime:    01:01:40 (3700.2 ms)
+    ru_stime:    00:02:20 (140.3 ms)
+    ru_maxrss:   12320
+    ru_minflt:   31725532
+    ru_majflt:   8
+    ru_inblock:  58778688
+    ru_oublock:  18978880
+    ru_nvcsw:    184270
+    ru_nivcsw:   9
+  GNU time:     
+    real:        01:05:42 (3942.5 ms)
+    user:        01:01:40 (3700.2 ms)
+    sys:         00:02:20 (140.3 ms)
+  Size (MB):     9,266.58 (9716716652 bytes)
+  Free space:     
+                      2.8T  725G  2.1T  26% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       dm3PacBio.bam/output/dm3PacBio.bam.bz2
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.bz2.sam
+    stderr:      dm3PacBio.bam/log/pbzip2.1.dec.log
+  Process PID:   17105
+  Exit code:     0
+  Wall time:     00:50:41 (3041.7 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:47:38 (2858.6 ms)
+    ru_stime:    00:01:06 (66.5 ms)
+    ru_maxrss:   5792
+    ru_minflt:   2310
+    ru_majflt:   8
+    ru_inblock:  19004408
+    ru_oublock:  58752224
+    ru_nvcsw:    1632
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:50:41 (3041.6 ms)
+    user:        00:47:38 (2858.6 ms)
+    sys:         00:01:06 (66.5 ms)
+  Size (MB):     28,687.60 (30081132500 bytes)
+  Free space:     
+                      2.8T  753G  2.0T  27% /local-scratch
+
+######################################################################## 
+#                               samtools                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -b dm3PacBio.bam.sam -o dm3PacBio.bam/output/dm3PacBio.bam.bam
+    stderr:      dm3PacBio.bam/log/samtools.1.cmp.log
+  Process PID:   17678
+  Exit code:     0
+  Wall time:     01:31:52 (5512.6 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    01:29:04 (5344.1 ms)
+    ru_stime:    00:01:31 (91.8 ms)
+    ru_maxrss:   5792
+    ru_minflt:   8484802
+    ru_majflt:   10
+    ru_inblock:  58755808
+    ru_oublock:  25105632
+    ru_nvcsw:    1217
+    ru_nivcsw:   10
+  GNU time:     
+    real:        01:31:52 (5512.5 ms)
+    user:        01:29:04 (5344.1 ms)
+    sys:         00:01:31 (91.8 ms)
+  Size (MB):     12,257.87 (12853303795 bytes)
+  Free space:     
+                      2.8T  765G  2.0T  28% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -h dm3PacBio.bam/output/dm3PacBio.bam.bam -o dm3PacBio.bam/output/dm3PacBio.bam.bam.sam
+    stderr:      dm3PacBio.bam/log/samtools.1.dec.log
+  Process PID:   18693
+  Exit code:     0
+  Wall time:     00:17:19 (1039.4 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:10:28 (628.5 ms)
+    ru_stime:    00:00:51 (51.4 ms)
+    ru_maxrss:   5796
+    ru_minflt:   965
+    ru_majflt:   9
+    ru_inblock:  25107640
+    ru_oublock:  58752488
+    ru_nvcsw:    5444
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:17:19 (1039.3 ms)
+    user:        00:10:28 (628.5 ms)
+    sys:         00:00:51 (51.4 ms)
+  Size (MB):     28,687.60 (30081132500 bytes)
+  Free space:     
+                      2.8T  793G  2.0T  29% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 1 -r data/sam/ref/dm3.fa dm3PacBio.bam.sam dm3PacBio.bam/output/dm3PacBio.bam.scramble.cram
+  stderr:      dm3PacBio.bam/log/scramble.1.cmp.log
+  Process PID:   9544
+  Exit code:     0
+  Wall time:     00:12:43 (763.8 ms)
+  Memory (MB):   3102.8
+  Resources:    
+    ru_utime:    00:10:47 (647.2 ms)
+    ru_stime:    00:00:42 (42.8 ms)
+    ru_maxrss:   3177292
+    ru_minflt:   2735769
+    ru_majflt:   37
+    ru_inblock:  59097296
+    ru_oublock:  12794312
+    ru_nvcsw:    116026
+    ru_nivcsw:   11
+  GNU time:     
+    real:        00:12:43 (763.6 ms)
+    user:        00:10:47 (647.1 ms)
+    sys:         00:00:42 (42.8 ms)
+  Size (MB):     6,247.13 (6550593806 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 1 -r data/sam/ref/dm3.fa dm3PacBio.bam/output/dm3PacBio.bam.scramble.cram dm3PacBio.bam/output/dm3PacBio.bam.scramble.cram.sam
+  stderr:      dm3PacBio.bam/log/scramble.1.dec.log
+  Process PID:   9711
+  Exit code:     0
+  Wall time:     00:10:01 (601.1 ms)
+  Memory (MB):   87.6
+  Resources:    
+    ru_utime:    00:07:47 (467.6 ms)
+    ru_stime:    00:00:50 (50.0 ms)
+    ru_maxrss:   89696
+    ru_minflt:   2304079
+    ru_majflt:   37
+    ru_inblock:  13138664
+    ru_oublock:  58680848
+    ru_nvcsw:    27491
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:10:01 (601.0 ms)
+    user:        00:07:47 (467.6 ms)
+    sys:         00:00:50 (50.0 ms)
+  Size (MB):     28,652.75 (30044586550 bytes)
+  Free space:     
+                      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I sam -O cram -t 1 dm3PacBio.bam.sam dm3PacBio.bam/output/dm3PacBio.bam.scramble-noref.cram
+  stderr:      dm3PacBio.bam/log/scramble-noref.1.cmp.log
+  Process PID:   9917
+  Exit code:     0
+  Wall time:     00:19:30 (1170.7 ms)
+  Memory (MB):   3100.7
+  Resources:    
+    ru_utime:    00:16:11 (971.8 ms)
+    ru_stime:    00:01:27 (87.5 ms)
+    ru_maxrss:   3175108
+    ru_minflt:   10283031
+    ru_majflt:   37
+    ru_inblock:  58761008
+    ru_oublock:  20628624
+    ru_nvcsw:    115533
+    ru_nivcsw:   6
+  GNU time:     
+    real:        00:19:30 (1170.7 ms)
+    user:        00:16:11 (971.8 ms)
+    sys:         00:01:27 (87.5 ms)
+  Size (MB):     10,072.44 (10561718236 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I cram -O sam -t 1 dm3PacBio.bam/output/dm3PacBio.bam.scramble-noref.cram dm3PacBio.bam/output/dm3PacBio.bam.scramble-noref.cram.sam
+  stderr:      dm3PacBio.bam/log/scramble-noref.1.dec.log
+  Process PID:   10171
+  Exit code:     0
+  Wall time:     00:19:46 (1186.0 ms)
+  Memory (MB):   48.6
+  Resources:    
+    ru_utime:    00:16:22 (982.3 ms)
+    ru_stime:    00:01:43 (103.5 ms)
+    ru_maxrss:   49752
+    ru_minflt:   11747627
+    ru_majflt:   39
+    ru_inblock:  20637536
+    ru_oublock:  58707384
+    ru_nvcsw:    39501
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:19:45 (1185.9 ms)
+    user:        00:16:22 (982.3 ms)
+    sys:         00:01:43 (103.5 ms)
+  Size (MB):     28,665.71 (30058174026 bytes)
+  Free space:     
+                      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -7 -I sam -O cram -t 1 -r data/sam/ref/dm3.fa dm3PacBio.bam.sam dm3PacBio.bam/output/dm3PacBio.bam.scramble-bz2.cram
+  stderr:      dm3PacBio.bam/log/scramble-bzip2.1.cmp.log
+  Process PID:   10510
+  Exit code:     0
+  Wall time:     00:15:19 (919.1 ms)
+  Memory (MB):   3102.8
+  Resources:    
+    ru_utime:    00:13:18 (798.9 ms)
+    ru_stime:    00:00:43 (43.2 ms)
+    ru_maxrss:   3177236
+    ru_minflt:   2766427
+    ru_majflt:   39
+    ru_inblock:  59097544
+    ru_oublock:  12634376
+    ru_nvcsw:    116097
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:15:19 (919.0 ms)
+    user:        00:13:18 (798.9 ms)
+    sys:         00:00:43 (43.2 ms)
+  Size (MB):     6,169.02 (6468691463 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -I cram -O sam -t 1 -r data/sam/ref/dm3.fa dm3PacBio.bam/output/dm3PacBio.bam.scramble-bz2.cram dm3PacBio.bam/output/dm3PacBio.bam.scramble-bz2.cram.sam
+  stderr:      dm3PacBio.bam/log/scramble-bzip2.1.dec.log
+  Process PID:   10692
+  Exit code:     0
+  Wall time:     00:11:37 (697.2 ms)
+  Memory (MB):   88.9
+  Resources:    
+    ru_utime:    00:09:35 (575.0 ms)
+    ru_stime:    00:00:48 (48.6 ms)
+    ru_maxrss:   91008
+    ru_minflt:   2190141
+    ru_majflt:   37
+    ru_inblock:  12979232
+    ru_oublock:  58680848
+    ru_nvcsw:    26919
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:11:37 (697.2 ms)
+    user:        00:09:35 (575.0 ms)
+    sys:         00:00:48 (48.5 ms)
+  Size (MB):     28,652.75 (30044586571 bytes)
+  Free space:     
+                      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: dm3PacBio.bam.sam)
+*** 2016-03-09 19:43:58 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.6.0 view -S -f bam -t 1 dm3PacBio.bam.sam -o dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam 
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.sambamba.1.cmp.log
+  Process PID:   10275
+  Exit code:     0
+  Wall time:     03:47:44 (13664.3 ms)
+  Memory (MB):   16.4
+  Resources:    
+    ru_utime:    03:44:39 (13479.7 ms)
+    ru_stime:    00:02:29 (149.7 ms)
+    ru_maxrss:   16832
+    ru_minflt:   18081654
+    ru_majflt:   24
+    ru_inblock:  58760696
+    ru_oublock:  25118176
+    ru_nvcsw:    3590
+    ru_nivcsw:   8
+  GNU time:     
+    real:        03:47:44 (13664.0 ms)
+    user:        03:44:39 (13479.7 ms)
+    sys:         00:02:29 (149.7 ms)
+  Size (MB):     12,263.11 (12858799627 bytes) (dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam, dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam.bai)
+  Free space:      2.8T  998G  1.8T  36% /local-scratch
+*** 2016-03-09 23:31:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.6.0 view -h -t 1 dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam -o dm3PacBio.bam/output/decompressed/sambamba/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.sambamba.1.dec.log
+  Process PID:   16005
+  Exit code:     0
+  Wall time:     00:33:12 (1992.7 ms)
+  Memory (MB):   41.0
+  Resources:    
+    ru_utime:    00:29:09 (1749.3 ms)
+    ru_stime:    00:00:57 (57.3 ms)
+    ru_maxrss:   41964
+    ru_minflt:   2895
+    ru_majflt:   23
+    ru_inblock:  25112272
+    ru_oublock:  58752224
+    ru_nvcsw:    6632
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:33:12 (1992.5 ms)
+    user:        00:29:09 (1749.3 ms)
+    sys:         00:00:57 (57.3 ms)
+  Size (MB):     28,687.60 (30081132680 bytes) (dm3PacBio.bam/output/decompressed/sambamba/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.1T  1.8T  37% /local-scratch
+
+######################################################################## 
+#                               sam_comp                               # 
+########################################################################
+>>> sam_comp (File 1: dm3PacBio.bam.sam)
+*** 2016-01-14 23:27:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -r data/sam/ref/dm3.fa.sc 
+    stdin:       dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/compressed/sam_comp/dm3PacBio.bam.sam.zam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.sam_comp.1.cmp.log
+  Process PID:   27431
+  Exit code:     0
+  Wall time:     00:47:00 (2820.0 ms)
+  Memory (MB):   482.4
+  Resources:    
+    ru_utime:    00:44:46 (2686.8 ms)
+    ru_stime:    00:00:48 (48.6 ms)
+    ru_maxrss:   494012
+    ru_minflt:   5804
+    ru_majflt:   6
+    ru_inblock:  59114672
+    ru_oublock:  16319784
+    ru_nvcsw:    1368
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:46:59 (2819.4 ms)
+    user:        00:44:46 (2686.8 ms)
+    sys:         00:00:48 (48.6 ms)
+  Size (MB):     7,968.60 (8355679712 bytes) (dm3PacBio.bam/output/compressed/sam_comp/dm3PacBio.bam.sam.zam)
+  Free space:      2.8T  2.1T  707G  75% /local-scratch
+*** 2016-01-15 00:14:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -d -r data/sam/ref/dm3.fa.sc
+    stdin:       dm3PacBio.bam/output/compressed/sam_comp/dm3PacBio.bam.sam.zam
+    stdout:      dm3PacBio.bam/output/decompressed/sam_comp/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.sam_comp.1.dec.log
+  Process PID:   27988
+  Exit code:     0
+  Wall time:     01:35:05 (5705.7 ms)
+  Memory (MB):   482.1
+  Resources:    
+    ru_utime:    01:31:05 (5465.2 ms)
+    ru_stime:    00:01:10 (70.0 ms)
+    ru_maxrss:   493680
+    ru_minflt:   4653
+    ru_majflt:   8
+    ru_inblock:  16682272
+    ru_oublock:  58479784
+    ru_nvcsw:    1366
+    ru_nivcsw:   8
+  GNU time:     
+    real:        01:35:05 (5705.5 ms)
+    user:        01:31:05 (5465.2 ms)
+    sys:         00:01:10 (70.0 ms)
+  Size (MB):     28,554.53 (29941599110 bytes) (dm3PacBio.bam/output/decompressed/sam_comp/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  2.1T  707G  75% /local-scratch
+
+######################################################################## 
+#                                 tsc                                  # 
+########################################################################
+>>> tsc (File 1: dm3PacBio.bam.sam)
+*** 2016-03-07 14:14:01 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.5/src/tsc -f -s -o dm3PacBio.bam/output/compressed/tsc/dm3PacBio.bam.sam.tsc dm3PacBio.bam.sam 
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.tsc.1.cmp.log
+  Process PID:   26295
+  Exit code:     0
+  Wall time:     04:48:12 (17292.8 ms)
+  Memory (MB):   263.9
+  Resources:    
+    ru_utime:    04:45:52 (17152.1 ms)
+    ru_stime:    00:01:39 (99.2 ms)
+    ru_maxrss:   270256
+    ru_minflt:   2990031
+    ru_majflt:   7
+    ru_inblock:  58755992
+    ru_oublock:  16404144
+    ru_nvcsw:    803
+    ru_nivcsw:   10
+  GNU time:     
+    real:        04:48:12 (17292.1 ms)
+    user:        04:45:52 (17152.1 ms)
+    sys:         00:01:39 (99.2 ms)
+  Size (MB):     8,008.42 (8397432655 bytes) (dm3PacBio.bam/output/compressed/tsc/dm3PacBio.bam.sam.tsc)
+  Free space:      2.8T  998G  1.8T  36% /local-scratch
+*** 2016-03-07 19:02:21 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.5/src/tsc -f -s -d -o dm3PacBio.bam/output/decompressed/tsc/dm3PacBio.bam.sam.sam dm3PacBio.bam/output/compressed/tsc/dm3PacBio.bam.sam.tsc
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.tsc.1.dec.log
+  Process PID:   1119
+  Exit code:     0
+  Wall time:     01:51:53 (6713.4 ms)
+  Memory (MB):   325.2
+  Resources:    
+    ru_utime:    01:49:34 (6574.4 ms)
+    ru_stime:    00:01:44 (104.0 ms)
+    ru_maxrss:   333016
+    ru_minflt:   7288435
+    ru_majflt:   9
+    ru_inblock:  16405200
+    ru_oublock:  58752232
+    ru_nvcsw:    36246
+    ru_nivcsw:   13
+  GNU time:     
+    real:        01:51:53 (6713.0 ms)
+    user:        01:49:34 (6574.4 ms)
+    sys:         00:01:43 (103.9 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/tsc/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.1T  1.8T  37% /local-scratch
+
+######################################################################## 
+#                                 cbc                                  # 
+########################################################################
+*** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/cbc/simulations/main.run dm3PacBio.bam.sam dm3PacBio.bam/output/dm3PacBio.bam.cbc
+    stderr:      dm3PacBio.bam/log/cbc.1.cmp.log
+  Process PID:   21437
+  Exit code:     2816
+  Wall time:     00:00:00 (0.1 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   5800
+    ru_minflt:   845
+    ru_majflt:   4
+    ru_inblock:  1008
+    ru_oublock:  8
+    ru_nvcsw:    17
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:00:00 (0.1 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     ?
+  Free space:     
+                      2.8T  936G  1.9T  34% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.qp
+  stderr:      dm3PacBio.bam/log/quip.1.cmp.log
+  Process PID:   27382
+  Exit code:     0
+  Wall time:     00:40:31 (2431.6 ms)
+  Memory (MB):   1049.9
+  Resources:    
+    ru_utime:    00:39:28 (2368.6 ms)
+    ru_stime:    00:00:34 (34.3 ms)
+    ru_maxrss:   1075144
+    ru_minflt:   198242
+    ru_majflt:   16
+    ru_inblock:  58756680
+    ru_oublock:  17625048
+    ru_nvcsw:    2186
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:40:31 (2431.3 ms)
+    user:        00:39:28 (2368.6 ms)
+    sys:         00:00:34 (34.3 ms)
+  Size (MB):     8,605.66 (9023690268 bytes)
+  Free space:     
+                      2.8T  1.6T  1.3T  56% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -d -o sam dm3PacBio.bam/output/dm3PacBio.bam.qp
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.qp.sam
+  stderr:      dm3PacBio.bam/log/quip.1.dec.log
+  Process PID:   28976
+  Exit code:     0
+  Wall time:     02:10:21 (7821.4 ms)
+  Memory (MB):   982.1
+  Resources:    
+    ru_utime:    02:08:30 (7710.1 ms)
+    ru_stime:    00:01:14 (74.9 ms)
+    ru_maxrss:   1005620
+    ru_minflt:   159724
+    ru_majflt:   16
+    ru_inblock:  17628624
+    ru_oublock:  58752224
+    ru_nvcsw:    54851
+    ru_nivcsw:   4
+  GNU time:     
+    real:        02:10:21 (7821.3 ms)
+    user:        02:08:30 (7710.1 ms)
+    sys:         00:01:14 (74.9 ms)
+  Size (MB):     28,687.60 (30081132500 bytes)
+  Free space:     
+                      2.8T  1.6T  1.2T  57% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -r data/sam/ref/dm3.fa dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.ref.qp
+  stderr:      dm3PacBio.bam/log/quip-ref.1.cmp.log
+  Process PID:   31939
+  Exit code:     0
+  Wall time:     00:37:28 (2248.2 ms)
+  Memory (MB):   1096.3
+  Resources:    
+    ru_utime:    00:36:37 (2197.3 ms)
+    ru_stime:    00:00:30 (30.2 ms)
+    ru_maxrss:   1122564
+    ru_minflt:   205270
+    ru_majflt:   16
+    ru_inblock:  59092600
+    ru_oublock:  12620224
+    ru_nvcsw:    2034
+    ru_nivcsw:   5
+  GNU time:     
+    real:        00:37:28 (2248.1 ms)
+    user:        00:36:37 (2197.3 ms)
+    sys:         00:00:30 (30.2 ms)
+  Size (MB):     6,161.91 (6461232361 bytes)
+  Free space:     
+                      2.8T  1.6T  1.3T  56% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -d -o sam -r data/sam/ref/dm3.fa dm3PacBio.bam/output/dm3PacBio.bam.ref.qp
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.ref.qp.sam
+  stderr:      dm3PacBio.bam/log/quip-ref.1.dec.log
+  Process PID:   1166
+  Exit code:     0
+  Wall time:     02:04:35 (7475.0 ms)
+  Memory (MB):   1031.5
+  Resources:    
+    ru_utime:    02:02:56 (7376.2 ms)
+    ru_stime:    00:01:09 (69.4 ms)
+    ru_maxrss:   1056260
+    ru_minflt:   172650
+    ru_majflt:   16
+    ru_inblock:  12959720
+    ru_oublock:  58752232
+    ru_nvcsw:    27858
+    ru_nivcsw:   10
+  GNU time:     
+    real:        02:04:34 (7474.9 ms)
+    user:        02:02:56 (7376.2 ms)
+    sys:         00:01:09 (69.4 ms)
+  Size (MB):     28,687.60 (30081132500 bytes)
+  Free space:     
+                      2.8T  1.6T  1.2T  57% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -a -v -c dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.asm.qp
+  stderr:      dm3PacBio.bam/log/quip-asm.1.cmp.log
+  Process PID:   4113
+  Exit code:     0
+  Wall time:     02:53:50 (10430.3 ms)
+  Memory (MB):   1419.3
+  Resources:    
+    ru_utime:    02:52:57 (10377.3 ms)
+    ru_stime:    00:00:37 (37.8 ms)
+    ru_maxrss:   1453340
+    ru_minflt:   197566
+    ru_majflt:   16
+    ru_inblock:  58756440
+    ru_oublock:  17625968
+    ru_nvcsw:    1841
+    ru_nivcsw:   8
+  GNU time:     
+    real:        02:53:50 (10430.2 ms)
+    user:        02:52:57 (10377.3 ms)
+    sys:         00:00:37 (37.8 ms)
+  Size (MB):     8,605.66 (9023690276 bytes)
+  Free space:     
+                      2.8T  1.6T  1.3T  56% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -a -v -c -d -o sam dm3PacBio.bam/output/dm3PacBio.bam.asm.qp
+    stdout:      dm3PacBio.bam/output/dm3PacBio.bam.asm.qp.sam
+  stderr:      dm3PacBio.bam/log/quip-asm.1.dec.log
+  Process PID:   8368
+  Exit code:     0
+  Wall time:     06:09:06 (22146.8 ms)
+  Memory (MB):   1349.8
+  Resources:    
+    ru_utime:    06:07:26 (22046.9 ms)
+    ru_stime:    00:01:15 (75.5 ms)
+    ru_maxrss:   1382184
+    ru_minflt:   159323
+    ru_majflt:   16
+    ru_inblock:  17628288
+    ru_oublock:  58752224
+    ru_nvcsw:    55125
+    ru_nivcsw:   10
+  GNU time:     
+    real:        06:09:06 (22146.7 ms)
+    user:        06:07:26 (22046.9 ms)
+    sys:         00:01:15 (75.4 ms)
+  Size (MB):     28,687.60 (30081132500 bytes)
+  Free space:     
+                      2.8T  1.6T  1.2T  57% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: dm3PacBio.bam.sam)
+*** 2016-01-14 21:34:23 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/dm3.fa -! dm3PacBio.bam.sam -o dm3PacBio.bam/output/compressed/deez/dm3PacBio.bam.sam.dz 
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez.1.cmp.log
+  Process PID:   25554
+  Exit code:     0
+  Wall time:     00:46:57 (2817.7 ms)
+  Memory (MB):   2763.3
+  Resources:    
+    ru_utime:    00:45:24 (2724.7 ms)
+    ru_stime:    00:01:07 (67.9 ms)
+    ru_maxrss:   2829576
+    ru_minflt:   1847327
+    ru_majflt:   39
+    ru_inblock:  59121096
+    ru_oublock:  13050496
+    ru_nvcsw:    13663
+    ru_nivcsw:   11
+  GNU time:     
+    real:        00:46:56 (2816.9 ms)
+    user:        00:45:24 (2724.7 ms)
+    sys:         00:01:07 (67.8 ms)
+  Size (MB):     6,371.81 (6681329673 bytes) (dm3PacBio.bam/output/compressed/deez/dm3PacBio.bam.sam.dz)
+  Free space:      2.8T  2.1T  707G  75% /local-scratch
+*** 2016-01-14 22:21:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/dm3.fa -! dm3PacBio.bam/output/compressed/deez/dm3PacBio.bam.sam.dz -o dm3PacBio.bam/output/decompressed/deez/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez.1.dec.log
+  Process PID:   26464
+  Exit code:     0
+  Wall time:     00:30:40 (1840.7 ms)
+  Memory (MB):   4549.2
+  Resources:    
+    ru_utime:    00:28:27 (1707.1 ms)
+    ru_stime:    00:01:01 (61.3 ms)
+    ru_maxrss:   4658412
+    ru_minflt:   957989
+    ru_majflt:   42
+    ru_inblock:  13418680
+    ru_oublock:  58752648
+    ru_nvcsw:    30583
+    ru_nivcsw:   11
+  GNU time:     
+    real:        00:30:40 (1840.1 ms)
+    user:        00:28:27 (1707.1 ms)
+    sys:         00:01:01 (61.3 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/deez/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  2.1T  707G  75% /local-scratch
+  
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: dm3PacBio.bam.sam)
+*** 2016-01-15 01:50:32 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/dm3.fa -! dm3PacBio.bam.sam -o dm3PacBio.bam/output/compressed/deez-qual/dm3PacBio.bam.sam.dz -q1 -b
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez-qual.1.cmp.log
+  Process PID:   29049
+  Exit code:     0
+  Wall time:     01:04:47 (3887.4 ms)
+  Memory (MB):   3167.6
+  Resources:    
+    ru_utime:    01:03:09 (3789.3 ms)
+    ru_stime:    00:01:09 (69.1 ms)
+    ru_maxrss:   3243588
+    ru_minflt:   2028028
+    ru_majflt:   43
+    ru_inblock:  59121504
+    ru_oublock:  12862552
+    ru_nvcsw:    16173
+    ru_nivcsw:   8
+  GNU time:     
+    real:        01:04:46 (3886.9 ms)
+    user:        01:03:09 (3789.3 ms)
+    sys:         00:01:09 (69.1 ms)
+  Size (MB):     6,279.99 (6585046876 bytes) (dm3PacBio.bam/output/compressed/deez-qual/dm3PacBio.bam.sam.dz)
+  Free space:      2.8T  2.1T  701G  75% /local-scratch
+*** 2016-01-15 02:55:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/dm3.fa -! dm3PacBio.bam/output/compressed/deez-qual/dm3PacBio.bam.sam.dz -o dm3PacBio.bam/output/decompressed/deez-qual/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez-qual.1.dec.log
+  Process PID:   30039
+  Exit code:     0
+  Wall time:     01:24:14 (5054.0 ms)
+  Memory (MB):   5005.5
+  Resources:    
+    ru_utime:    01:22:18 (4938.6 ms)
+    ru_stime:    00:01:02 (62.4 ms)
+    ru_maxrss:   5125624
+    ru_minflt:   999413
+    ru_majflt:   42
+    ru_inblock:  13230648
+    ru_oublock:  58752816
+    ru_nvcsw:    29093
+    ru_nivcsw:   7
+  GNU time:     
+    real:        01:24:13 (5053.9 ms)
+    user:        01:22:18 (4938.6 ms)
+    sys:         00:01:02 (62.4 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/deez-qual/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  2.1T  673G  76% /local-scratch
+
+######################################################################## 
+#                                picard                                # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=dm3PacBio.bam.sam O=dm3PacBio.bam/output/dm3PacBio.bam.picard.bam VALIDATION_STRINGENCY=SILENT
+  stderr:      dm3PacBio.bam/log/picard.1.cmp.log
+  Process PID:   11074
+  Exit code:     0
+  Wall time:     01:07:53 (4073.7 ms)
+  Memory (MB):   629.4
+  Resources:    
+    ru_utime:    01:05:58 (3958.9 ms)
+    ru_stime:    00:00:59 (59.8 ms)
+    ru_maxrss:   644456
+    ru_minflt:   23423
+    ru_majflt:   128
+    ru_inblock:  58828968
+    ru_oublock:  25078960
+    ru_nvcsw:    87593
+    ru_nivcsw:   445395
+  GNU time:     
+    real:        01:07:53 (4073.7 ms)
+    user:        01:05:58 (3958.9 ms)
+    sys:         00:00:59 (59.8 ms)
+  Size (MB):     12,242.25 (12836931529 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=dm3PacBio.bam/output/dm3PacBio.bam.picard.bam O=dm3PacBio.bam/output/dm3PacBio.bam.picard.bam.sam VALIDATION_STRINGENCY=SILENT
+  stderr:      dm3PacBio.bam/log/picard.1.dec.log
+  Process PID:   11837
+  Exit code:     0
+  Wall time:     00:18:56 (1136.5 ms)
+  Memory (MB):   677.5
+  Resources:    
+    ru_utime:    00:16:28 (988.9 ms)
+    ru_stime:    00:00:52 (52.3 ms)
+    ru_maxrss:   693744
+    ru_minflt:   20292
+    ru_majflt:   128
+    ru_inblock:  25150144
+    ru_oublock:  58753504
+    ru_nvcsw:    33606
+    ru_nivcsw:   128378
+  GNU time:     
+    real:        00:18:56 (1136.4 ms)
+    user:        00:16:28 (988.9 ms)
+    sys:         00:00:52 (52.3 ms)
+  Size (MB):     28,687.60 (30081132498 bytes)
+  Free space:     
+                      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                              cramtools                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar cram --ignore-md5-mismatch --capture-all-tags --input-is-sam -Q -n -R data/sam/ref/dm3.fa -I dm3PacBio.bam.sam -O dm3PacBio.bam/output/dm3PacBio.bam.cram
+    stderr:      dm3PacBio.bam/log/cramtools.1.cmp.log
+  Process PID:   25663
+  Exit code:     0
+  Wall time:     01:25:14 (5114.8 ms)
+  Memory (MB):   12266.6
+  Resources:    
+    ru_utime:    01:24:11 (5051.2 ms)
+    ru_stime:    00:00:49 (49.5 ms)
+    ru_maxrss:   12561020
+    ru_minflt:   152580
+    ru_majflt:   122
+    ru_inblock:  59136264
+    ru_oublock:  14802552
+    ru_nvcsw:    11119
+    ru_nivcsw:   16227
+  GNU time:     
+    real:        01:25:14 (5114.7 ms)
+    user:        01:24:11 (5051.2 ms)
+    sys:         00:00:49 (49.5 ms)
+  Size (MB):     7,225.56 (7576547836 bytes)
+  Free space:     
+                      2.8T  979G  1.8T  36% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar bam --ignore-md5-mismatch --print-sam-header -R data/sam/ref/dm3.fa -I dm3PacBio.bam/output/dm3PacBio.bam.cram -O dm3PacBio.bam/output/dm3PacBio.bam.cram.sam
+    stderr:      dm3PacBio.bam/log/cramtools.1.dec.log
+  Process PID:   26634
+  Exit code:     0
+  Wall time:     00:35:28 (2128.8 ms)
+  Memory (MB):   10998.7
+  Resources:    
+    ru_utime:    00:33:49 (2029.0 ms)
+    ru_stime:    00:00:45 (45.0 ms)
+    ru_maxrss:   11262700
+    ru_minflt:   426933
+    ru_majflt:   122
+    ru_inblock:  15186360
+    ru_oublock:  58727912
+    ru_nvcsw:    42327
+    ru_nivcsw:   11024
+  GNU time:     
+    real:        00:35:28 (2128.7 ms)
+    user:        00:33:49 (2029.0 ms)
+    sys:         00:00:44 (44.9 ms)
+  Size (MB):     28,674.65 (30067544727 bytes)
+  Free space:     
+                      2.8T 1007G  1.8T  37% /local-scratch
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                     dm3PacBio.bam with 4 threads                     + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 02:48:15 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4 
+    stdin:       dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/compressed/pigz/dm3PacBio.bam.sam.gz
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.pigz.4.cmp.log
+  Process PID:   3219
+  Exit code:     0
+  Wall time:     00:20:26 (1226.1 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    01:15:07 (4507.4 ms)
+    ru_stime:    00:01:32 (92.3 ms)
+    ru_maxrss:   5964
+    ru_minflt:   1375
+    ru_majflt:   8
+    ru_inblock:  58755872
+    ru_oublock:  24052248
+    ru_nvcsw:    461794
+    ru_nivcsw:   575520
+  GNU time:     
+    real:        00:20:25 (1225.8 ms)
+    user:        01:15:07 (4507.4 ms)
+    sys:         00:01:32 (92.3 ms)
+  Size (MB):     11,744.09 (12314572665 bytes) (dm3PacBio.bam/output/compressed/pigz/dm3PacBio.bam.sam.gz)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 03:08:47 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       dm3PacBio.bam/output/compressed/pigz/dm3PacBio.bam.sam.gz
+    stdout:      dm3PacBio.bam/output/decompressed/pigz/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.pigz.4.dec.log
+  Process PID:   3828
+  Exit code:     0
+  Wall time:     00:09:49 (589.9 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:05:20 (320.9 ms)
+    ru_stime:    00:01:53 (113.7 ms)
+    ru_maxrss:   6000
+    ru_minflt:   668
+    ru_majflt:   3
+    ru_inblock:  24054392
+    ru_oublock:  58752224
+    ru_nvcsw:    2215779
+    ru_nivcsw:   87782
+  GNU time:     
+    real:        00:09:49 (589.8 ms)
+    user:        00:05:20 (320.9 ms)
+    sys:         00:01:53 (113.7 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/pigz/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 03:26:04 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4 
+    stdin:       dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/compressed/pbzip2/dm3PacBio.bam.sam.bz2
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.pbzip2.4.cmp.log
+  Process PID:   4577
+  Exit code:     0
+  Wall time:     00:17:05 (1025.9 ms)
+  Memory (MB):   41.9
+  Resources:    
+    ru_utime:    00:59:23 (3563.5 ms)
+    ru_stime:    00:02:38 (158.3 ms)
+    ru_maxrss:   42892
+    ru_minflt:   17943585
+    ru_majflt:   8
+    ru_inblock:  58778984
+    ru_oublock:  18978208
+    ru_nvcsw:    173097
+    ru_nivcsw:   511755
+  GNU time:     
+    real:        00:17:05 (1025.7 ms)
+    user:        00:59:23 (3563.5 ms)
+    sys:         00:02:38 (158.3 ms)
+  Size (MB):     9,266.58 (9716716652 bytes) (dm3PacBio.bam/output/compressed/pbzip2/dm3PacBio.bam.sam.bz2)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 03:43:16 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       dm3PacBio.bam/output/compressed/pbzip2/dm3PacBio.bam.sam.bz2
+    stdout:      dm3PacBio.bam/output/decompressed/pbzip2/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.pbzip2.4.dec.log
+  Process PID:   7667
+  Exit code:     0
+  Wall time:     00:11:05 (665.7 ms)
+  Memory (MB):   26.2
+  Resources:    
+    ru_utime:    00:25:08 (1508.6 ms)
+    ru_stime:    00:01:56 (116.9 ms)
+    ru_maxrss:   26792
+    ru_minflt:   15133533
+    ru_majflt:   8
+    ru_inblock:  19005000
+    ru_oublock:  58752296
+    ru_nvcsw:    102576
+    ru_nivcsw:   226729
+  GNU time:     
+    real:        00:11:05 (665.5 ms)
+    user:        00:25:08 (1508.6 ms)
+    sys:         00:01:56 (116.9 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/pbzip2/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 04:01:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 dm3PacBio.bam.sam dm3PacBio.bam/output/compressed/scramble/dm3PacBio.bam.sam.scramble.cram -r data/sam/ref/dm3.fa
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble.4.cmp.log
+  Process PID:   8155
+  Exit code:     0
+  Wall time:     00:07:49 (469.1 ms)
+  Memory (MB):   6826.7
+  Resources:    
+    ru_utime:    00:11:17 (677.1 ms)
+    ru_stime:    00:00:51 (51.3 ms)
+    ru_maxrss:   6990588
+    ru_minflt:   6113949
+    ru_majflt:   39
+    ru_inblock:  59101064
+    ru_oublock:  12796392
+    ru_nvcsw:    134723
+    ru_nivcsw:   179518
+  GNU time:     
+    real:        00:07:48 (468.9 ms)
+    user:        00:11:17 (677.1 ms)
+    sys:         00:00:51 (51.3 ms)
+  Size (MB):     6,248.19 (6551701473 bytes) (dm3PacBio.bam/output/compressed/scramble/dm3PacBio.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-04 04:09:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 dm3PacBio.bam/output/compressed/scramble/dm3PacBio.bam.sam.scramble.cram dm3PacBio.bam/output/decompressed/scramble/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble.4.dec.log
+  Process PID:   9397
+  Exit code:     0
+  Wall time:     00:08:20 (500.6 ms)
+  Memory (MB):   839.8
+  Resources:    
+    ru_utime:    00:04:22 (262.7 ms)
+    ru_stime:    00:00:30 (30.5 ms)
+    ru_maxrss:   859940
+    ru_minflt:   734466
+    ru_majflt:   39
+    ru_inblock:  13144992
+    ru_oublock:  58680848
+    ru_nvcsw:    31209
+    ru_nivcsw:   51299
+  GNU time:     
+    real:        00:08:20 (500.5 ms)
+    user:        00:04:22 (262.6 ms)
+    sys:         00:00:30 (30.5 ms)
+  Size (MB):     28,652.75 (30044586615 bytes) (dm3PacBio.bam/output/decompressed/scramble/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 04:24:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 dm3PacBio.bam.sam dm3PacBio.bam/output/compressed/scramble-bzip2/dm3PacBio.bam.sam.scramble.cram -j -7 -r data/sam/ref/dm3.fa
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble-bzip2.4.cmp.log
+  Process PID:   9817
+  Exit code:     0
+  Wall time:     00:08:08 (488.3 ms)
+  Memory (MB):   8261.4
+  Resources:    
+    ru_utime:    00:13:15 (795.1 ms)
+    ru_stime:    00:00:52 (52.5 ms)
+    ru_maxrss:   8459668
+    ru_minflt:   7601853
+    ru_majflt:   39
+    ru_inblock:  59100928
+    ru_oublock:  12634280
+    ru_nvcsw:    119818
+    ru_nivcsw:   171134
+  GNU time:     
+    real:        00:08:08 (488.1 ms)
+    user:        00:13:15 (795.1 ms)
+    sys:         00:00:52 (52.5 ms)
+  Size (MB):     6,169.03 (6468694089 bytes) (dm3PacBio.bam/output/compressed/scramble-bzip2/dm3PacBio.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-04 04:32:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 dm3PacBio.bam/output/compressed/scramble-bzip2/dm3PacBio.bam.sam.scramble.cram dm3PacBio.bam/output/decompressed/scramble-bzip2/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble-bzip2.4.dec.log
+  Process PID:   10012
+  Exit code:     0
+  Wall time:     00:07:10 (430.0 ms)
+  Memory (MB):   790.7
+  Resources:    
+    ru_utime:    00:05:31 (331.8 ms)
+    ru_stime:    00:00:32 (32.3 ms)
+    ru_maxrss:   809656
+    ru_minflt:   973430
+    ru_majflt:   39
+    ru_inblock:  12982880
+    ru_oublock:  58680848
+    ru_nvcsw:    30974
+    ru_nivcsw:   59522
+  GNU time:     
+    real:        00:07:09 (429.8 ms)
+    user:        00:05:31 (331.8 ms)
+    sys:         00:00:32 (32.3 ms)
+  Size (MB):     28,652.75 (30044586639 bytes) (dm3PacBio.bam/output/decompressed/scramble-bzip2/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 04:46:12 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 dm3PacBio.bam.sam dm3PacBio.bam/output/compressed/scramble-noref/dm3PacBio.bam.sam.scramble.cram -x
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble-noref.4.cmp.log
+  Process PID:   11435
+  Exit code:     0
+  Wall time:     00:08:57 (537.2 ms)
+  Memory (MB):   8159.0
+  Resources:    
+    ru_utime:    00:16:07 (967.9 ms)
+    ru_stime:    00:01:28 (88.0 ms)
+    ru_maxrss:   8354796
+    ru_minflt:   11769524
+    ru_majflt:   39
+    ru_inblock:  58764800
+    ru_oublock:  20676016
+    ru_nvcsw:    136892
+    ru_nivcsw:   206654
+  GNU time:     
+    real:        00:08:57 (537.1 ms)
+    user:        00:16:07 (967.9 ms)
+    sys:         00:01:28 (88.0 ms)
+  Size (MB):     10,095.66 (10586064874 bytes) (dm3PacBio.bam/output/compressed/scramble-noref/dm3PacBio.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 04:55:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 dm3PacBio.bam/output/compressed/scramble-noref/dm3PacBio.bam.sam.scramble.cram dm3PacBio.bam/output/decompressed/scramble-noref/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble-noref.4.dec.log
+  Process PID:   11674
+  Exit code:     0
+  Wall time:     00:08:52 (532.1 ms)
+  Memory (MB):   970.5
+  Resources:    
+    ru_utime:    00:07:57 (477.4 ms)
+    ru_stime:    00:00:38 (38.1 ms)
+    ru_maxrss:   993748
+    ru_minflt:   1696928
+    ru_majflt:   39
+    ru_inblock:  20688480
+    ru_oublock:  58707384
+    ru_nvcsw:    49168
+    ru_nivcsw:   81588
+  GNU time:     
+    real:        00:08:52 (532.0 ms)
+    user:        00:07:57 (477.4 ms)
+    sys:         00:00:38 (38.1 ms)
+  Size (MB):     28,665.71 (30058174083 bytes) (dm3PacBio.bam/output/decompressed/scramble-noref/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: dm3PacBio.bam.sam)
+*** 2016-03-10 00:12:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.6.0 view -S -f bam -t 4 dm3PacBio.bam.sam -o dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam 
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.sambamba.4.cmp.log
+  Process PID:   17086
+  Exit code:     0
+  Wall time:     00:22:46 (1366.9 ms)
+  Memory (MB):   24.6
+  Resources:    
+    ru_utime:    01:30:20 (5420.0 ms)
+    ru_stime:    00:02:09 (129.6 ms)
+    ru_maxrss:   25176
+    ru_minflt:   18389618
+    ru_majflt:   19
+    ru_inblock:  58759168
+    ru_oublock:  25115312
+    ru_nvcsw:    360200
+    ru_nivcsw:   758861
+  GNU time:     
+    real:        00:22:46 (1366.6 ms)
+    user:        01:30:20 (5420.0 ms)
+    sys:         00:02:09 (129.6 ms)
+  Size (MB):     12,263.11 (12858799627 bytes) (dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam, dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam.bai)
+  Free space:      2.8T  998G  1.8T  36% /local-scratch
+*** 2016-03-10 00:35:29 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.6.0 view -h -t 4 dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam -o dm3PacBio.bam/output/decompressed/sambamba/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.sambamba.4.dec.log
+  Process PID:   17693
+  Exit code:     0
+  Wall time:     00:08:08 (488.2 ms)
+  Memory (MB):   75.7
+  Resources:    
+    ru_utime:    00:15:42 (942.5 ms)
+    ru_stime:    00:01:40 (100.5 ms)
+    ru_maxrss:   77484
+    ru_minflt:   3944
+    ru_majflt:   23
+    ru_inblock:  25111352
+    ru_oublock:  58752224
+    ru_nvcsw:    360101
+    ru_nivcsw:   143339
+  GNU time:     
+    real:        00:08:08 (488.1 ms)
+    user:        00:15:42 (942.5 ms)
+    sys:         00:01:40 (100.5 ms)
+  Size (MB):     28,687.60 (30081132680 bytes) (dm3PacBio.bam/output/decompressed/sambamba/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.1T  1.8T  37% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 05:11:19 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v dm3PacBio.bam.sam 
+    stdout:      dm3PacBio.bam/output/compressed/quip/dm3PacBio.bam.sam.qp
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.quip.4.cmp.log
+  Process PID:   13180
+  Exit code:     0
+  Wall time:     00:28:32 (1712.7 ms)
+  Memory (MB):   1047.4
+  Resources:    
+    ru_utime:    00:34:36 (2076.2 ms)
+    ru_stime:    00:00:26 (26.5 ms)
+    ru_maxrss:   1072492
+    ru_minflt:   195995
+    ru_majflt:   13
+    ru_inblock:  58754816
+    ru_oublock:  17624920
+    ru_nvcsw:    2362
+    ru_nivcsw:   441392
+  GNU time:     
+    real:        00:28:32 (1712.7 ms)
+    user:        00:34:36 (2076.2 ms)
+    sys:         00:00:26 (26.4 ms)
+  Size (MB):     8,605.66 (9023690268 bytes) (dm3PacBio.bam/output/compressed/quip/dm3PacBio.bam.sam.qp)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 05:39:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o sam dm3PacBio.bam/output/compressed/quip/dm3PacBio.bam.sam.qp
+    stdout:      dm3PacBio.bam/output/decompressed/quip/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.quip.4.dec.log
+  Process PID:   16160
+  Exit code:     0
+  Wall time:     00:39:38 (2378.1 ms)
+  Memory (MB):   979.4
+  Resources:    
+    ru_utime:    00:48:51 (2931.0 ms)
+    ru_stime:    00:00:35 (35.4 ms)
+    ru_maxrss:   1002908
+    ru_minflt:   158825
+    ru_majflt:   16
+    ru_inblock:  17628944
+    ru_oublock:  58752224
+    ru_nvcsw:    40055
+    ru_nivcsw:   329429
+  GNU time:     
+    real:        00:39:38 (2378.0 ms)
+    user:        00:48:51 (2931.0 ms)
+    sys:         00:00:35 (35.4 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/quip/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+>>> quip-ref (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 06:26:31 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v dm3PacBio.bam.sam -r data/sam/ref/dm3.fa
+    stdout:      dm3PacBio.bam/output/compressed/quip-ref/dm3PacBio.bam.sam.qp
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.quip-ref.4.cmp.log
+  Process PID:   19580
+  Exit code:     0
+  Wall time:     00:20:00 (1200.4 ms)
+  Memory (MB):   1096.2
+  Resources:    
+    ru_utime:    00:25:31 (1531.2 ms)
+    ru_stime:    00:00:25 (25.3 ms)
+    ru_maxrss:   1122528
+    ru_minflt:   206083
+    ru_majflt:   14
+    ru_inblock:  59092688
+    ru_oublock:  12620024
+    ru_nvcsw:    2530
+    ru_nivcsw:   387002
+  GNU time:     
+    real:        00:20:00 (1200.3 ms)
+    user:        00:25:31 (1531.2 ms)
+    sys:         00:00:25 (25.3 ms)
+  Size (MB):     6,161.91 (6461232389 bytes) (dm3PacBio.bam/output/compressed/quip-ref/dm3PacBio.bam.sam.qp)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-07 21:01:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -r data/sam/ref/dm3.fa -v -d -o sam dm3PacBio.bam/output/compressed/quip-ref/dm3PacBio.bam.sam.qp
+    stdout:      dm3PacBio.bam/output/decompressed/quip-ref/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.quip-ref.4.dec.log
+  Process PID:   4514
+  Exit code:     0
+  Wall time:     00:26:43 (1603.2 ms)
+  Memory (MB):   1016.5
+  Resources:    
+    ru_utime:    00:36:27 (2187.5 ms)
+    ru_stime:    00:00:30 (30.6 ms)
+    ru_maxrss:   1040892
+    ru_minflt:   169097
+    ru_majflt:   17
+    ru_inblock:  12960576
+    ru_oublock:  58752232
+    ru_nvcsw:    32284
+    ru_nivcsw:   239671
+  GNU time:     
+    real:        00:26:43 (1603.1 ms)
+    user:        00:36:27 (2187.5 ms)
+    sys:         00:00:30 (30.6 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/quip-ref/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T 1018G  1.8T  37% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 06:46:42 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/dm3.fa -! -v1 dm3PacBio.bam.sam -o dm3PacBio.bam/output/compressed/deez/dm3PacBio.bam.sam.dz 
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez.4.cmp.log
+  Process PID:   22328
+  Exit code:     0
+  Wall time:     00:14:52 (892.9 ms)
+  Memory (MB):   3004.8
+  Resources:    
+    ru_utime:    00:22:51 (1371.5 ms)
+    ru_stime:    00:00:44 (44.7 ms)
+    ru_maxrss:   3076888
+    ru_minflt:   2122377
+    ru_majflt:   45
+    ru_inblock:  59122872
+    ru_oublock:  13049960
+    ru_nvcsw:    534790
+    ru_nivcsw:   251846
+  GNU time:     
+    real:        00:14:52 (892.9 ms)
+    user:        00:22:51 (1371.5 ms)
+    sys:         00:00:44 (44.7 ms)
+  Size (MB):     6,371.81 (6681329673 bytes) (dm3PacBio.bam/output/compressed/deez/dm3PacBio.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 07:01:40 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/dm3.fa -! -v1 dm3PacBio.bam/output/compressed/deez/dm3PacBio.bam.sam.dz -o dm3PacBio.bam/output/decompressed/deez/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez.4.dec.log
+  Process PID:   23856
+  Exit code:     0
+  Wall time:     00:09:55 (595.1 ms)
+  Memory (MB):   5466.1
+  Resources:    
+    ru_utime:    00:11:05 (665.3 ms)
+    ru_stime:    00:00:43 (43.6 ms)
+    ru_maxrss:   5597300
+    ru_minflt:   1247743
+    ru_majflt:   44
+    ru_inblock:  13421368
+    ru_oublock:  58752440
+    ru_nvcsw:    69826
+    ru_nivcsw:   95769
+  GNU time:     
+    real:        00:09:55 (595.0 ms)
+    user:        00:11:05 (665.3 ms)
+    sys:         00:00:43 (43.5 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/deez/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 07:18:10 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/dm3.fa -! -v1 dm3PacBio.bam.sam -o dm3PacBio.bam/output/compressed/deez-qual/dm3PacBio.bam.sam.dz -q1 -b
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez-qual.4.cmp.log
+  Process PID:   25936
+  Exit code:     0
+  Wall time:     00:17:35 (1055.2 ms)
+  Memory (MB):   3450.5
+  Resources:    
+    ru_utime:    00:30:19 (1819.8 ms)
+    ru_stime:    00:00:44 (44.1 ms)
+    ru_maxrss:   3533300
+    ru_minflt:   2024932
+    ru_majflt:   45
+    ru_inblock:  59124184
+    ru_oublock:  12861984
+    ru_nvcsw:    517445
+    ru_nivcsw:   297156
+  GNU time:     
+    real:        00:17:35 (1055.1 ms)
+    user:        00:30:19 (1819.8 ms)
+    sys:         00:00:44 (44.0 ms)
+  Size (MB):     6,279.99 (6585046876 bytes) (dm3PacBio.bam/output/compressed/deez-qual/dm3PacBio.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 07:35:51 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/dm3.fa -! -v1 dm3PacBio.bam/output/compressed/deez-qual/dm3PacBio.bam.sam.dz -o dm3PacBio.bam/output/decompressed/deez-qual/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez-qual.4.dec.log
+  Process PID:   27881
+  Exit code:     0
+  Wall time:     00:24:21 (1461.3 ms)
+  Memory (MB):   5856.5
+  Resources:    
+    ru_utime:    00:30:58 (1858.6 ms)
+    ru_stime:    00:00:41 (41.9 ms)
+    ru_maxrss:   5997052
+    ru_minflt:   1339456
+    ru_majflt:   44
+    ru_inblock:  13233584
+    ru_oublock:  58752568
+    ru_nvcsw:    49738
+    ru_nivcsw:   212163
+  GNU time:     
+    real:        00:24:21 (1461.2 ms)
+    user:        00:30:58 (1858.6 ms)
+    sys:         00:00:41 (41.9 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/deez-qual/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                     dm3PacBio.bam with 8 threads                     + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 08:06:46 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8 
+    stdin:       dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/compressed/pigz/dm3PacBio.bam.sam.gz
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.pigz.8.cmp.log
+  Process PID:   30949
+  Exit code:     0
+  Wall time:     00:11:28 (688.6 ms)
+  Memory (MB):   8.2
+  Resources:    
+    ru_utime:    01:15:09 (4509.7 ms)
+    ru_stime:    00:01:30 (90.9 ms)
+    ru_maxrss:   8360
+    ru_minflt:   2031
+    ru_majflt:   3
+    ru_inblock:  58755136
+    ru_oublock:  24052088
+    ru_nvcsw:    460162
+    ru_nivcsw:   570198
+  GNU time:     
+    real:        00:11:28 (688.4 ms)
+    user:        01:15:09 (4509.7 ms)
+    sys:         00:01:30 (90.9 ms)
+  Size (MB):     11,744.09 (12314572665 bytes) (dm3PacBio.bam/output/compressed/pigz/dm3PacBio.bam.sam.gz)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 08:18:21 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       dm3PacBio.bam/output/compressed/pigz/dm3PacBio.bam.sam.gz
+    stdout:      dm3PacBio.bam/output/decompressed/pigz/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.pigz.8.dec.log
+  Process PID:   31380
+  Exit code:     0
+  Wall time:     00:09:40 (580.4 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:05:19 (319.5 ms)
+    ru_stime:    00:01:52 (112.5 ms)
+    ru_maxrss:   6032
+    ru_minflt:   664
+    ru_majflt:   7
+    ru_inblock:  24055456
+    ru_oublock:  58752224
+    ru_nvcsw:    2216127
+    ru_nivcsw:   88581
+  GNU time:     
+    real:        00:09:40 (580.3 ms)
+    user:        00:05:19 (319.5 ms)
+    sys:         00:01:52 (112.5 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/pigz/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 08:35:30 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8 
+    stdin:       dm3PacBio.bam.sam
+    stdout:      dm3PacBio.bam/output/compressed/pbzip2/dm3PacBio.bam.sam.bz2
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.pbzip2.8.cmp.log
+  Process PID:   32065
+  Exit code:     0
+  Wall time:     00:10:01 (601.3 ms)
+  Memory (MB):   76.7
+  Resources:    
+    ru_utime:    01:01:23 (3683.0 ms)
+    ru_stime:    00:03:07 (187.6 ms)
+    ru_maxrss:   78584
+    ru_minflt:   21864578
+    ru_majflt:   8
+    ru_inblock:  58779432
+    ru_oublock:  18978088
+    ru_nvcsw:    168615
+    ru_nivcsw:   518183
+  GNU time:     
+    real:        00:10:01 (601.2 ms)
+    user:        01:01:22 (3682.9 ms)
+    sys:         00:03:07 (187.5 ms)
+  Size (MB):     9,266.58 (9716716652 bytes) (dm3PacBio.bam/output/compressed/pbzip2/dm3PacBio.bam.sam.bz2)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 08:45:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       dm3PacBio.bam/output/compressed/pbzip2/dm3PacBio.bam.sam.bz2
+    stdout:      dm3PacBio.bam/output/decompressed/pbzip2/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.pbzip2.8.dec.log
+  Process PID:   822
+  Exit code:     0
+  Wall time:     00:08:55 (535.5 ms)
+  Memory (MB):   49.4
+  Resources:    
+    ru_utime:    00:27:37 (1657.4 ms)
+    ru_stime:    00:02:16 (136.6 ms)
+    ru_maxrss:   50556
+    ru_minflt:   17996165
+    ru_majflt:   8
+    ru_inblock:  19005160
+    ru_oublock:  58752288
+    ru_nvcsw:    85016
+    ru_nivcsw:   238360
+  GNU time:     
+    real:        00:08:55 (535.4 ms)
+    user:        00:27:37 (1657.4 ms)
+    sys:         00:02:16 (136.6 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/pbzip2/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 09:01:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 dm3PacBio.bam.sam dm3PacBio.bam/output/compressed/scramble/dm3PacBio.bam.sam.scramble.cram -r data/sam/ref/dm3.fa
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble.8.cmp.log
+  Process PID:   1269
+  Exit code:     0
+  Wall time:     00:07:44 (464.9 ms)
+  Memory (MB):   6704.0
+  Resources:    
+    ru_utime:    00:11:08 (668.3 ms)
+    ru_stime:    00:00:46 (46.8 ms)
+    ru_maxrss:   6864920
+    ru_minflt:   5505104
+    ru_majflt:   39
+    ru_inblock:  59101072
+    ru_oublock:  12796256
+    ru_nvcsw:    132991
+    ru_nivcsw:   161659
+  GNU time:     
+    real:        00:07:44 (464.7 ms)
+    user:        00:11:08 (668.3 ms)
+    sys:         00:00:46 (46.8 ms)
+  Size (MB):     6,248.12 (6551630136 bytes) (dm3PacBio.bam/output/compressed/scramble/dm3PacBio.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 09:09:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 dm3PacBio.bam/output/compressed/scramble/dm3PacBio.bam.sam.scramble.cram dm3PacBio.bam/output/decompressed/scramble/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble.8.dec.log
+  Process PID:   2653
+  Exit code:     0
+  Wall time:     00:08:18 (498.9 ms)
+  Memory (MB):   1398.8
+  Resources:    
+    ru_utime:    00:04:28 (268.0 ms)
+    ru_stime:    00:00:31 (31.8 ms)
+    ru_maxrss:   1432372
+    ru_minflt:   1065059
+    ru_majflt:   39
+    ru_inblock:  13144856
+    ru_oublock:  58680848
+    ru_nvcsw:    33515
+    ru_nivcsw:   52217
+  GNU time:     
+    real:        00:08:18 (498.7 ms)
+    user:        00:04:28 (268.0 ms)
+    sys:         00:00:31 (31.8 ms)
+  Size (MB):     28,652.75 (30044586615 bytes) (dm3PacBio.bam/output/decompressed/scramble/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 09:24:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 dm3PacBio.bam.sam dm3PacBio.bam/output/compressed/scramble-bzip2/dm3PacBio.bam.sam.scramble.cram -j -7 -r data/sam/ref/dm3.fa
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble-bzip2.8.cmp.log
+  Process PID:   3241
+  Exit code:     0
+  Wall time:     00:07:50 (470.7 ms)
+  Memory (MB):   8856.0
+  Resources:    
+    ru_utime:    00:14:04 (844.7 ms)
+    ru_stime:    00:00:51 (51.2 ms)
+    ru_maxrss:   9068508
+    ru_minflt:   6276571
+    ru_majflt:   39
+    ru_inblock:  59100744
+    ru_oublock:  12634272
+    ru_nvcsw:    128758
+    ru_nivcsw:   184897
+  GNU time:     
+    real:        00:07:50 (470.6 ms)
+    user:        00:14:04 (844.7 ms)
+    sys:         00:00:51 (51.2 ms)
+  Size (MB):     6,169.03 (6468694024 bytes) (dm3PacBio.bam/output/compressed/scramble-bzip2/dm3PacBio.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 09:32:12 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 dm3PacBio.bam/output/compressed/scramble-bzip2/dm3PacBio.bam.sam.scramble.cram dm3PacBio.bam/output/decompressed/scramble-bzip2/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble-bzip2.8.dec.log
+  Process PID:   3816
+  Exit code:     0
+  Wall time:     00:06:59 (419.8 ms)
+  Memory (MB):   1385.6
+  Resources:    
+    ru_utime:    00:05:35 (335.1 ms)
+    ru_stime:    00:00:31 (31.3 ms)
+    ru_maxrss:   1418856
+    ru_minflt:   910727
+    ru_majflt:   39
+    ru_inblock:  12982640
+    ru_oublock:  58680848
+    ru_nvcsw:    31838
+    ru_nivcsw:   59572
+  GNU time:     
+    real:        00:06:59 (419.7 ms)
+    user:        00:05:35 (335.1 ms)
+    sys:         00:00:31 (31.3 ms)
+  Size (MB):     28,652.75 (30044586639 bytes) (dm3PacBio.bam/output/decompressed/scramble-bzip2/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 09:45:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 dm3PacBio.bam.sam dm3PacBio.bam/output/compressed/scramble-noref/dm3PacBio.bam.sam.scramble.cram -x
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble-noref.8.cmp.log
+  Process PID:   5467
+  Exit code:     0
+  Wall time:     00:08:27 (507.6 ms)
+  Memory (MB):   8041.4
+  Resources:    
+    ru_utime:    00:15:48 (948.2 ms)
+    ru_stime:    00:01:25 (85.5 ms)
+    ru_maxrss:   8234384
+    ru_minflt:   12251493
+    ru_majflt:   39
+    ru_inblock:  58764744
+    ru_oublock:  20662456
+    ru_nvcsw:    135154
+    ru_nivcsw:   198407
+  GNU time:     
+    real:        00:08:27 (507.4 ms)
+    user:        00:15:48 (948.2 ms)
+    sys:         00:01:25 (85.5 ms)
+  Size (MB):     10,089.04 (10579128054 bytes) (dm3PacBio.bam/output/compressed/scramble-noref/dm3PacBio.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 09:54:21 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 dm3PacBio.bam/output/compressed/scramble-noref/dm3PacBio.bam.sam.scramble.cram dm3PacBio.bam/output/decompressed/scramble-noref/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.scramble-noref.8.dec.log
+  Process PID:   5700
+  Exit code:     0
+  Wall time:     00:07:10 (430.9 ms)
+  Memory (MB):   1800.7
+  Resources:    
+    ru_utime:    00:08:01 (481.4 ms)
+    ru_stime:    00:00:37 (37.5 ms)
+    ru_maxrss:   1843936
+    ru_minflt:   1496296
+    ru_majflt:   39
+    ru_inblock:  20674840
+    ru_oublock:  58707384
+    ru_nvcsw:    52168
+    ru_nivcsw:   82449
+  GNU time:     
+    real:        00:07:10 (430.8 ms)
+    user:        00:08:01 (481.4 ms)
+    sys:         00:00:37 (37.5 ms)
+  Size (MB):     28,665.71 (30058174083 bytes) (dm3PacBio.bam/output/decompressed/scramble-noref/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: dm3PacBio.bam.sam)
+*** 2016-03-17 12:14:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.6.0 view -S -f bam -t 8 dm3PacBio.bam.sam -o dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam 
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.sambamba.8.cmp.log
+  Process PID:   28763
+  Exit code:     0
+  Wall time:     00:12:23 (743.2 ms)
+  Memory (MB):   31.6
+  Resources:    
+    ru_utime:    01:26:59 (5219.0 ms)
+    ru_stime:    00:01:37 (97.0 ms)
+    ru_maxrss:   32408
+    ru_minflt:   18389214
+    ru_majflt:   19
+    ru_inblock:  58758152
+    ru_oublock:  25115056
+    ru_nvcsw:    256100
+    ru_nivcsw:   704638
+  GNU time:     
+    real:        00:12:22 (742.9 ms)
+    user:        01:26:59 (5219.0 ms)
+    sys:         00:01:37 (97.0 ms)
+  Size (MB):     12,263.11 (12858799627 bytes) (dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam, dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam.bai)
+  Free space:      2.8T  988G  1.8T  36% /local-scratch
+*** 2016-03-17 12:26:42 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.6.0 view -h -t 8 dm3PacBio.bam/output/compressed/sambamba/dm3PacBio.bam.sam.sambamba.bam -o dm3PacBio.bam/output/decompressed/sambamba/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.sambamba.8.dec.log
+  Process PID:   28920
+  Exit code:     0
+  Wall time:     00:06:43 (403.7 ms)
+  Memory (MB):   115.6
+  Resources:    
+    ru_utime:    00:15:36 (936.4 ms)
+    ru_stime:    00:00:54 (54.0 ms)
+    ru_maxrss:   118384
+    ru_minflt:   5310
+    ru_majflt:   23
+    ru_inblock:  25111296
+    ru_oublock:  58752224
+    ru_nvcsw:    243305
+    ru_nivcsw:   148876
+  GNU time:     
+    real:        00:06:42 (402.9 ms)
+    user:        00:15:36 (936.4 ms)
+    sys:         00:00:54 (54.0 ms)
+  Size (MB):     28,687.60 (30081132680 bytes) (dm3PacBio.bam/output/decompressed/sambamba/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T 1016G  1.8T  37% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: dm3PacBio.bam.sam)
+*** 2016-03-04 10:08:46 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/dm3.fa -! -v1 dm3PacBio.bam.sam -o dm3PacBio.bam/output/compressed/deez/dm3PacBio.bam.sam.dz 
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez.8.cmp.log
+  Process PID:   7123
+  Exit code:     0
+  Wall time:     00:14:24 (864.5 ms)
+  Memory (MB):   3130.4
+  Resources:    
+    ru_utime:    00:27:09 (1629.8 ms)
+    ru_stime:    00:00:45 (45.0 ms)
+    ru_maxrss:   3205532
+    ru_minflt:   1807156
+    ru_majflt:   45
+    ru_inblock:  59124184
+    ru_oublock:  13057344
+    ru_nvcsw:    668348
+    ru_nivcsw:   277887
+  GNU time:     
+    real:        00:14:24 (864.3 ms)
+    user:        00:27:09 (1629.8 ms)
+    sys:         00:00:45 (45.0 ms)
+  Size (MB):     6,375.43 (6685121497 bytes) (dm3PacBio.bam/output/compressed/deez/dm3PacBio.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 10:23:15 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/dm3.fa -! -v1 dm3PacBio.bam/output/compressed/deez/dm3PacBio.bam.sam.dz -o dm3PacBio.bam/output/decompressed/deez/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez.8.dec.log
+  Process PID:   9966
+  Exit code:     0
+  Wall time:     00:10:08 (608.8 ms)
+  Memory (MB):   6682.8
+  Resources:    
+    ru_utime:    00:11:03 (663.3 ms)
+    ru_stime:    00:00:44 (44.0 ms)
+    ru_maxrss:   6843228
+    ru_minflt:   1676104
+    ru_majflt:   44
+    ru_inblock:  13428792
+    ru_oublock:  58752424
+    ru_nvcsw:    86941
+    ru_nivcsw:   96190
+  GNU time:     
+    real:        00:10:08 (608.7 ms)
+    user:        00:11:03 (663.3 ms)
+    sys:         00:00:43 (43.9 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/deez/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: dm3PacBio.bam.sam)
+*** 2016-01-15 05:02:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/dm3.fa -! dm3PacBio.bam.sam -o dm3PacBio.bam/output/compressed/deez-qual/dm3PacBio.bam.sam.dz -q1 -b
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez-qual.8.cmp.log
+  Process PID:   1273
+  Exit code:     0
+  Wall time:     00:17:08 (1028.1 ms)
+  Memory (MB):   3549.2
+  Resources:    
+    ru_utime:    00:35:05 (2105.4 ms)
+    ru_stime:    00:00:45 (45.7 ms)
+    ru_maxrss:   3634356
+    ru_minflt:   1841418
+    ru_majflt:   43
+    ru_inblock:  59121552
+    ru_oublock:  12869368
+    ru_nvcsw:    665298
+    ru_nivcsw:   328348
+  GNU time:     
+    real:        00:17:07 (1027.8 ms)
+    user:        00:35:05 (2105.4 ms)
+    sys:         00:00:45 (45.6 ms)
+  Size (MB):     6,283.61 (6588842214 bytes) (dm3PacBio.bam/output/compressed/deez-qual/dm3PacBio.bam.sam.dz)
+  Free space:      2.8T  2.1T  673G  76% /local-scratch
+*** 2016-01-15 05:19:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/dm3.fa -! dm3PacBio.bam/output/compressed/deez-qual/dm3PacBio.bam.sam.dz -o dm3PacBio.bam/output/decompressed/deez-qual/dm3PacBio.bam.sam.sam
+    stderr:      dm3PacBio.bam/log/dm3PacBio.bam.sam.deez-qual.8.dec.log
+  Process PID:   4106
+  Exit code:     0
+  Wall time:     00:24:07 (1447.7 ms)
+  Memory (MB):   7144.1
+  Resources:    
+    ru_utime:    00:31:04 (1864.8 ms)
+    ru_stime:    00:00:43 (43.3 ms)
+    ru_maxrss:   7315588
+    ru_minflt:   1633186
+    ru_majflt:   42
+    ru_inblock:  13238208
+    ru_oublock:  58752568
+    ru_nvcsw:    67903
+    ru_nivcsw:   215770
+  GNU time:     
+    real:        00:24:07 (1447.4 ms)
+    user:        00:31:04 (1864.8 ms)
+    sys:         00:00:43 (43.3 ms)
+  Size (MB):     28,687.60 (30081132500 bytes) (dm3PacBio.bam/output/decompressed/deez-qual/dm3PacBio.bam.sam.sam)
+  Free space:      2.8T  2.1T  673G  76% /local-scratch
+
+
+Done!

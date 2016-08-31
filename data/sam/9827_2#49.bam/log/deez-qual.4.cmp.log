@@ -1,0 +1,65 @@
+DeeZ 0x12 (v1.1-16-gbdc7119-dirty)
+Loaded reference file data/sam/ref/hs37d5.fa
+Loaded reference index data/sam/ref/hs37d5.fa.fai
+Using quality mode samcomp
+	  1.8% [Chr 1          Block      1]	  3.5% [Chr 1          Block      2]	  5.3% [Chr 1          Block      3]	  7.1% [Chr 1          Block      4]	  7.4% [Chr 1          Block      5]	  9.2% [Chr 2          Block      6]	 11.0% [Chr 2          Block      7]	 12.7% [Chr 2          Block      8]	 14.5% [Chr 2          Block      9]	 15.4% [Chr 2          Block     10]	 17.1% [Chr 3          Block     11]	 18.9% [Chr 3          Block     12]	 20.7% [Chr 3          Block     13]	 21.9% [Chr 3          Block     14]	 23.6% [Chr 4          Block     15]	 25.4% [Chr 4          Block     16]	 27.2% [Chr 4          Block     17]	 28.3% [Chr 4          Block     18]	 30.0% [Chr 5          Block     19]	 31.8% [Chr 5          Block     20]	 33.6% [Chr 5          Block     21]	 34.2% [Chr 5          Block     22]	 36.0% [Chr 6          Block     23]	 37.8% [Chr 6          Block     24]	 39.6% [Chr 6          Block     25]	 39.9% [Chr 6          Block     26]	 41.7% [Chr 7          Block     27]	 43.4% [Chr 7          Block     28]	 45.0% [Chr 7          Block     29]	 46.8% [Chr 8          Block     30]	 48.6% [Chr 8          Block     31]	 49.9% [Chr 8          Block     32]	 51.7% [Chr 9          Block     33]	 53.5% [Chr 9          Block     34]	 53.8% [Chr 9          Block     35]	 55.6% [Chr 10         Block     36]	 57.4% [Chr 10         Block     37]	 58.1% [Chr 10         Block     38]	 59.8% [Chr 11         Block     39]	 61.6% [Chr 11         Block     40]	 62.3% [Chr 11         Block     41]	 64.1% [Chr 12         Block     42]	 65.9% [Chr 12         Block     43]	 66.6% [Chr 12         Block     44]	 68.4% [Chr 13         Block     45]	 69.8% [Chr 13         Block     46]	 71.6% [Chr 14         Block     47]	 72.8% [Chr 14         Block     48]	 74.5% [Chr 15         Block     49]	 75.4% [Chr 15         Block     50]	 77.2% [Chr 16         Block     51]	 78.3% [Chr 16         Block     52]	 80.1% [Chr 17         Block     53]	 80.7% [Chr 17         Block     54]	 82.5% [Chr 18         Block     55]	 83.2% [Chr 18         Block     56]	 84.8% [Chr 19         Block     57]	 86.6% [Chr 20         Block     58]	 86.7% [Chr 20         Block     59]	 87.9% [Chr 21         Block     60]	 88.9% [Chr 22         Block     61]	 90.7% [Chr X          Block     62]	 91.6% [Chr X          Block     63]	 92.3% [Chr Y          Block     64]	 92.3% [Chr MT         Block     65]	 92.3% [Chr GL000207.1 Block     66]	 92.5% [Chr GL000226.1 Block     67]	 92.5% [Chr GL000229.1 Block     68]	 92.5% [Chr GL000231.1 Block     69]	 92.5% [Chr GL000210.1 Block     70]	 92.5% [Chr GL000239.1 Block     71]	 92.5% [Chr GL000235.1 Block     72]	 92.5% [Chr GL000201.1 Block     73]	 92.5% [Chr GL000247.1 Block     74]	 92.5% [Chr GL000245.1 Block     75]	 92.5% [Chr GL000197.1 Block     76]	 92.5% [Chr GL000203.1 Block     77]	 92.5% [Chr GL000246.1 Block     78]	 92.5% [Chr GL000249.1 Block     79]	 92.5% [Chr GL000196.1 Block     80]	 92.5% [Chr GL000248.1 Block     81]	 92.5% [Chr GL000244.1 Block     82]	 92.5% [Chr GL000238.1 Block     83]	 92.5% [Chr GL000202.1 Block     84]	 92.5% [Chr GL000234.1 Block     85]	 92.5% [Chr GL000232.1 Block     86]	 92.5% [Chr GL000206.1 Block     87]	 92.5% [Chr GL000240.1 Block     88]	 92.5% [Chr GL000236.1 Block     89]	 92.5% [Chr GL000241.1 Block     90]	 92.5% [Chr GL000243.1 Block     91]	 92.5% [Chr GL000242.1 Block     92]	 92.5% [Chr GL000230.1 Block     93]	 92.5% [Chr GL000237.1 Block     94]	 92.5% [Chr GL000233.1 Block     95]	 92.5% [Chr GL000204.1 Block     96]	 92.6% [Chr GL000198.1 Block     97]	 92.6% [Chr GL000208.1 Block     98]	 92.6% [Chr GL000191.1 Block     99]	 92.6% [Chr GL000227.1 Block    100]	 92.6% [Chr GL000228.1 Block    101]	 92.6% [Chr GL000214.1 Block    102]	 92.6% [Chr GL000221.1 Block    103]	 92.6% [Chr GL000209.1 Block    104]	 92.6% [Chr GL000218.1 Block    105]	 93.0% [Chr GL000220.1 Block    106]	 93.0% [Chr GL000213.1 Block    107]	 93.0% [Chr GL000211.1 Block    108]	 93.1% [Chr GL000199.1 Block    109]	 93.1% [Chr GL000217.1 Block    110]	 93.1% [Chr GL000216.1 Block    111]	 93.1% [Chr GL000215.1 Block    112]	 93.1% [Chr GL000205.1 Block    113]	 93.1% [Chr GL000219.1 Block    114]	 93.2% [Chr GL000224.1 Block    115]	 93.2% [Chr GL000223.1 Block    116]	 93.2% [Chr GL000195.1 Block    117]	 93.2% [Chr GL000212.1 Block    118]	 93.2% [Chr GL000222.1 Block    119]	 93.2% [Chr GL000200.1 Block    120]	 93.2% [Chr GL000193.1 Block    121]	 93.2% [Chr GL000194.1 Block    122]	 93.2% [Chr GL000225.1 Block    123]	 93.3% [Chr GL000192.1 Block    124]	 93.3% [Chr NC_007605  Block    125]	 95.1% [Chr hs37d5     Block    126]	 97.0% [Chr hs37d5     Block    127]	 98.6% [Chr hs37d5     Block    128]	 99.9% [Chr *          Block    129]	100.0% [Chr *          Block    130]
+Written 56,463,236 lines
+Paired 25,850,162 out of 56,463,236 reads
+Reference               16,235,059
+  Fixes     :            8,098,328
+  Fixes St  :            4,956,610
+  Replace   :            3,180,121
+Sequences              121,432,612
+  Positions :           47,374,748 
+  Stitches  :            2,572,749 
+  Opcode    :            2,746,997 
+  SeqPos    :           22,657,853 
+  SeqLen    :               57,465 
+  XLen      :            1,562,432 
+  HSLen     :              941,675 
+  AnyLen    :              455,137 
+  OPLen     :           12,180,304 
+  ACGTMiss  :            6,631,799 
+  ACGTIns   :            4,234,486 
+  ACGTUnmap :           20,016,967 
+Read Names             191,871,137
+  Index     :           13,795,682
+  Content   :          165,203,526
+  Paired    :           12,871,929
+Flags                   16,541,898
+Map. Quals               6,341,692
+Qualities            2,240,972,380
+Paired End              21,412,947
+  Diff      :            4,048,191 
+  Chr       :              688,544 
+  Template  :            4,860,906 
+  Bits      :           11,815,306 
+Optionals              118,109,655
+  Tags      :           13,311,915
+  AMj       :            5,542,261
+  BCZ       :            1,984,652
+  MDZ       :               30,560
+  NMi       :                    0
+  NMj       :                3,228
+  QTZ       :           50,679,983
+  RG^       :                6,108
+  SMj       :            4,936,338
+  X0j       :            1,899,771
+  X0k       :              271,093
+  X0m       :                1,617
+  X1j       :            2,518,886
+  X1k       :              389,994
+  X1m       :                  733
+  XAZ       :           17,554,705
+  XCj       :              393,308
+  XGj       :            1,622,961
+  XMj       :           12,919,291
+  XNj       :                2,826
+  XOj       :            1,419,467
+  XTA       :            2,441,070
+  a3j       :              175,782
+  ahj       :                3,106
+MD stats: 4,654 failed out of 51,831,356
+
+################################################################################
+

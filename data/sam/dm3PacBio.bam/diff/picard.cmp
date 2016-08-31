@@ -1,0 +1,6 @@
+Reading dm3PacBio.bam.sam, dm3PacBio.bam/output/dm3PacBio.bam.picard.bam.sam; maxline=300000
+> ORIG       1446514 (dm3PacBio.bam.sam)
+< COPY       1446514 (dm3PacBio.bam/output/dm3PacBio.bam.picard.bam.sam)
+Comments   not equal
+
+Done dm3PacBio.bam.sam

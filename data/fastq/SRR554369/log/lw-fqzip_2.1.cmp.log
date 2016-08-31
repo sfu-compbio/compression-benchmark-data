@@ -1,0 +1,7 @@
+
+################################################################################
+
+e,SRR554369_2.fastq,SRR554369/output/compressed/lw-fqzip/SRR554369_2.fastq.lz,data/sam/ref/NC_002516.2.fa,tools/LWFQZip-v1.02,SRR554369/output/compressed/lw-fqzip
+
+./LWFQZip -c -t 1 -i SRR554369_2.fastq -r NC_002516.2.fa
+

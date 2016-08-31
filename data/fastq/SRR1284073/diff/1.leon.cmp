@@ -1,0 +1,116 @@
+Reading ../../../../SRR1284073.fastq, SRR1284073.fastq.fq; maxline=2000000
+../../../../SRR1284073.fastq SRR1284073.fastq.fq differ: byte 219, line 3
+Read 163464 (163464) / 163460 (163460) lines, 163464
+> ORIG        163464 (../../../../SRR1284073.fastq)
+< COPY        163460 (SRR1284073.fastq.fq)
+Miss               4 lines
+
+COMMENT       163460 lines unequal
+QUAL           48625 lines unequal
+                     35 mismatches: 2 lines
+                     37 mismatches: 1 lines
+                     38 mismatches: 5 lines
+                     39 mismatches: 7 lines
+                     40 mismatches: 7 lines
+                     41 mismatches: 11 lines
+                     42 mismatches: 17 lines
+                     43 mismatches: 13 lines
+                     44 mismatches: 17 lines
+                     45 mismatches: 18 lines
+                     46 mismatches: 23 lines
+                     47 mismatches: 24 lines
+                     48 mismatches: 31 lines
+                     49 mismatches: 42 lines
+                     50 mismatches: 44 lines
+                     51 mismatches: 44 lines
+                     52 mismatches: 47 lines
+                     53 mismatches: 45 lines
+                     54 mismatches: 49 lines
+                     55 mismatches: 53 lines
+                     56 mismatches: 52 lines
+                     57 mismatches: 59 lines
+                     58 mismatches: 54 lines
+                     59 mismatches: 61 lines
+                     60 mismatches: 64 lines
+                     61 mismatches: 72 lines
+                     62 mismatches: 63 lines
+                     63 mismatches: 71 lines
+                     64 mismatches: 77 lines
+                     65 mismatches: 82 lines
+                     66 mismatches: 70 lines
+                     67 mismatches: 60 lines
+                     68 mismatches: 81 lines
+                     69 mismatches: 72 lines
+                     70 mismatches: 65 lines
+                     71 mismatches: 74 lines
+                     72 mismatches: 62 lines
+                     73 mismatches: 63 lines
+                     74 mismatches: 68 lines
+                     75 mismatches: 55 lines
+                     76 mismatches: 69 lines
+                     77 mismatches: 58 lines
+                     78 mismatches: 59 lines
+                     79 mismatches: 73 lines
+                     80 mismatches: 65 lines
+                     81 mismatches: 61 lines
+                     82 mismatches: 60 lines
+                     83 mismatches: 57 lines
+                     84 mismatches: 57 lines
+                     85 mismatches: 56 lines
+                     86 mismatches: 59 lines
+                     87 mismatches: 56 lines
+                     88 mismatches: 46 lines
+                     89 mismatches: 62 lines
+                     90 mismatches: 57 lines
+                     91 mismatches: 64 lines
+                     92 mismatches: 60 lines
+                     93 mismatches: 55 lines
+                     94 mismatches: 49 lines
+                     95 mismatches: 46 lines
+                     96 mismatches: 28 lines
+                     97 mismatches: 41 lines
+                     98 mismatches: 55 lines
+                     99 mismatches: 45 lines
+                     100 mismatches: 54 lines
+                     101 mismatches: 33 lines
+                     102 mismatches: 42 lines
+                     103 mismatches: 37 lines
+                     104 mismatches: 43 lines
+                     105 mismatches: 54 lines
+                     106 mismatches: 50 lines
+                     107 mismatches: 39 lines
+                     108 mismatches: 34 lines
+                     109 mismatches: 31 lines
+                     110 mismatches: 36 lines
+                     111 mismatches: 32 lines
+                     112 mismatches: 33 lines
+                     113 mismatches: 29 lines
+                     114 mismatches: 29 lines
+                     115 mismatches: 31 lines
+                     116 mismatches: 29 lines
+                     117 mismatches: 31 lines
+                     118 mismatches: 38 lines
+                     119 mismatches: 31 lines
+                     120 mismatches: 24 lines
+                     121 mismatches: 22 lines
+                     122 mismatches: 23 lines
+                     123 mismatches: 26 lines
+                     124 mismatches: 22 lines
+                     125 mismatches: 22 lines
+                     126 mismatches: 24 lines
+                     127 mismatches: 27 lines
+                     128 mismatches: 24 lines
+                     129 mismatches: 27 lines
+                     130 mismatches: 17 lines
+                     131 mismatches: 22 lines
+                     132 mismatches: 20 lines
+                     133 mismatches: 12 lines
+                     134 mismatches: 25 lines
+                     135 mismatches: 13 lines
+                     136 mismatches: 17 lines
+...
+Skipping block 99996 from file 1: @SRR1284073.100006
+Skipping block 99997 from file 1: @SRR1284073.100007
+Skipping block 99998 from file 1: @SRR1284073.100008
+Skipping block 99999 from file 1: @SRR1284073.100009
+Done ../../../../SRR1284073.fastq

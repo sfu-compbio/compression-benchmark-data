@@ -1,0 +1,11 @@
+DeeZ 0x12 (v1.1-16-gbdc7119-dirty)
+Decompressing MiSeq_Ecoli_DH10B_110721_PF.bam/output/compressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.dz to MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/deez/MiSeq_Ecoli_DH10B_110721_PF.bam.sam.sam ...
+File format: DZ v1.2
+Loaded reference file data/sam/ref/CP000948.fa
+Loaded reference index data/sam/ref/CP000948.fa.fai
+Using quality mode default
+	 7.62% [Chr EcoliDH10B]	15.24% [Chr EcoliDH10B]	22.81% [Chr EcoliDH10B]	30.33% [Chr EcoliDH10B]	37.86% [Chr EcoliDH10B]	45.38% [Chr EcoliDH10B]	52.99% [Chr EcoliDH10B]	60.62% [Chr EcoliDH10B]	68.17% [Chr EcoliDH10B]	75.77% [Chr EcoliDH10B]	83.38% [Chr EcoliDH10B]	90.98% [Chr EcoliDH10B]	98.60% [Chr EcoliDH10B]	99.94% [Chr EcoliDH10B]
+Decompressed 13,175,679 records, 14 blocks
+
+################################################################################
+

@@ -1,0 +1,59 @@
+2015/11/16 20:19:20 Starting kpath version 0.6.3 (1-6-15)
+2015/11/16 20:19:20 Maximum threads = 10
+kpath (encode): 2015/11/16 20:19:20 Using kmer size = 16
+kpath (encode): 2015/11/16 20:19:20 Option: psudeoCount = 1
+kpath (encode): 2015/11/16 20:19:20 Option: observationWeight = 10
+kpath (encode): 2015/11/16 20:19:20 Option: seenThreshold = 2
+kpath (encode): 2015/11/16 20:19:20 Option: flipReadsOption = true
+kpath (encode): 2015/11/16 20:19:20 Option: dupsOption = true
+kpath (encode): 2015/11/16 20:19:20 Option: updateReference = true
+kpath (encode): 2015/11/16 20:19:20 Reading from SRR870667_1.fastq
+kpath (encode): 2015/11/16 20:19:20 Writing to SRR870667_1/output/SRR870667_1.kpath.enc, SRR870667_1/output/SRR870667_1.kpath.bittree, SRR870667_1/output/SRR870667_1.kpath.counts
+kpath (encode): 2015/11/16 20:19:20 Reading Reference File...
+kpath (encode): 2015/11/16 20:20:17 Reading reads...
+kpath (encode): 2015/11/16 20:43:18 Time: read 69100987 reads; spent 1380.478838209 seconds.
+panic: runtime error: integer divide by zero
+[signal 0x8 code=0x1 addr=0x40623e pc=0x40623e]
+
+goroutine 16 [running]:
+runtime.panic(0x51d260, 0x5f4f48)
+	/usr/local/go/src/pkg/runtime/panic.c:279 +0xf5
+main.readAndFlipReads(0x7fff6570891c, 0x2d, 0xc23893e360, 0xc208043801, 0x0, 0x0, 0x0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:483 +0x54e
+main.preprocessWithBuckets(0x7fff6570891c, 0x2d, 0x7fff6570894f, 0x24, 0xc23893e360, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:606 +0xcf
+main.main()
+	/home/carlk/g/src/kingsford/kpath/kpath.go:1246 +0x113b
+
+goroutine 19 [finalizer wait, 23 minutes]:
+runtime.park(0x424170, 0x5f9720, 0x5f7a29)
+	/usr/local/go/src/pkg/runtime/proc.c:1369 +0x89
+runtime.parkunlock(0x5f9720, 0x5f7a29)
+	/usr/local/go/src/pkg/runtime/proc.c:1385 +0x3b
+runfinq()
+	/usr/local/go/src/pkg/runtime/mgc0.c:2644 +0xcf
+runtime.goexit()
+	/usr/local/go/src/pkg/runtime/proc.c:1445
+
+goroutine 20 [runnable]:
+os.(*File).Close(0xc2377e2000, 0x0, 0x54f930)
+	/usr/local/go/src/pkg/os/file_unix.go:93
+main.ReadFastQ(0x7fff6570891c, 0x2d, 0xc261ba0000)
+	/home/carlk/g/src/kingsford/kpath/fastq.go:147 +0x84f
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:467 +0x110
+
+################################################################################
+
+kpath  Copyright (C) 2014  Carl Kingsford & Rob Patro
+
+
+
+This program comes with ABSOLUTELY NO WARRANTY; This is free software, and
+
+you are welcome to redistribute it under certain conditions; see
+
+accompanying LICENSE.txt file.
+
+
+

@@ -1,0 +1,20 @@
+[Mon Nov 23 17:09:35 PST 2015] picard.sam.SamFormatConverter INPUT=MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.picard.bam OUTPUT=MiSeq_Ecoli_DH10B_110721_PF.bam/output/MiSeq_Ecoli_DH10B_110721_PF.bam.picard.bam.sam VALIDATION_STRINGENCY=SILENT    VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json
+[Mon Nov 23 17:09:35 PST 2015] Executing as <redacted> on Linux 2.6.32-573.3.1.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.7.0_80-b15; Picard version: 1.138(aa51703435dc6a423013e74e56b0b68405facd79_1439324166) IntelDeflater
+INFO	2015-11-23 17:11:20	SamFormatConverter	Processed     1,000,000 records.  Elapsed time: 00:01:43s.  Time for last 1,000,000:  103s.  Last read position: EcoliDH10B.fa:342,636
+INFO	2015-11-23 17:11:46	SamFormatConverter	Processed     2,000,000 records.  Elapsed time: 00:02:09s.  Time for last 1,000,000:   26s.  Last read position: EcoliDH10B.fa:908,643
+INFO	2015-11-23 17:12:11	SamFormatConverter	Processed     3,000,000 records.  Elapsed time: 00:02:35s.  Time for last 1,000,000:   25s.  Last read position: EcoliDH10B.fa:1,248,676
+INFO	2015-11-23 17:12:28	SamFormatConverter	Processed     4,000,000 records.  Elapsed time: 00:02:52s.  Time for last 1,000,000:   17s.  Last read position: EcoliDH10B.fa:1,596,210
+INFO	2015-11-23 17:12:36	SamFormatConverter	Processed     5,000,000 records.  Elapsed time: 00:02:59s.  Time for last 1,000,000:    7s.  Last read position: EcoliDH10B.fa:1,939,785
+INFO	2015-11-23 17:12:44	SamFormatConverter	Processed     6,000,000 records.  Elapsed time: 00:03:08s.  Time for last 1,000,000:    8s.  Last read position: EcoliDH10B.fa:2,282,965
+INFO	2015-11-23 17:13:07	SamFormatConverter	Processed     7,000,000 records.  Elapsed time: 00:03:31s.  Time for last 1,000,000:   23s.  Last read position: EcoliDH10B.fa:2,623,524
+INFO	2015-11-23 17:13:22	SamFormatConverter	Processed     8,000,000 records.  Elapsed time: 00:03:45s.  Time for last 1,000,000:   14s.  Last read position: EcoliDH10B.fa:2,962,729
+INFO	2015-11-23 17:13:30	SamFormatConverter	Processed     9,000,000 records.  Elapsed time: 00:03:54s.  Time for last 1,000,000:    8s.  Last read position: EcoliDH10B.fa:3,297,805
+INFO	2015-11-23 17:13:55	SamFormatConverter	Processed    10,000,000 records.  Elapsed time: 00:04:19s.  Time for last 1,000,000:   25s.  Last read position: EcoliDH10B.fa:3,628,982
+INFO	2015-11-23 17:14:18	SamFormatConverter	Processed    11,000,000 records.  Elapsed time: 00:04:42s.  Time for last 1,000,000:   22s.  Last read position: EcoliDH10B.fa:3,957,646
+INFO	2015-11-23 17:14:29	SamFormatConverter	Processed    12,000,000 records.  Elapsed time: 00:04:52s.  Time for last 1,000,000:   10s.  Last read position: EcoliDH10B.fa:4,292,711
+INFO	2015-11-23 17:14:37	SamFormatConverter	Processed    13,000,000 records.  Elapsed time: 00:05:00s.  Time for last 1,000,000:    7s.  Last read position: EcoliDH10B.fa:4,626,554
+[Mon Nov 23 17:14:38 PST 2015] picard.sam.SamFormatConverter done. Elapsed time: 5.05 minutes.
+Runtime.totalMemory()=1894776832
+
+################################################################################
+

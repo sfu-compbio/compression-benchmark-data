@@ -1,0 +1,11 @@
+Reading ../../../NA12878_S1.bam.sam, quip-ref/NA12878_S1.bam.sam.sam; maxline=3000000
+../../../NA12878_S1.bam.sam quip-ref/NA12878_S1.bam.sam.sam differ: byte 733, line 28
+> ORIG    1582771014 (../../../NA12878_S1.bam.sam)
+< COPY    1582771014 (quip-ref/NA12878_S1.bam.sam.sam)
+
+REFNAME      9193515 lines unequal
+POS          9193515 lines unequal
+CIGAR        3352427 lines unequal
+REFNEXT   1517544774 lines unequal
+POSNEXT      9192726 lines unequal
+Done ../../../NA12878_S1.bam.sam

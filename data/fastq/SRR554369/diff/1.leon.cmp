@@ -1,0 +1,9 @@
+Reading ../../../SRR554369_1.fastq, leon/SRR554369_1.fastq.fq; maxline=1000000
+../../../SRR554369_1.fastq leon/SRR554369_1.fastq.fq differ: byte 162, line 3
+Read 1000000 (1000000) / 1000000 (1000000) lines, 1000000
+Read 651564 (1651564) / 651564 (1651564) lines, 651564
+> ORIG       1651564 (../../../SRR554369_1.fastq)
+< COPY       1651564 (leon/SRR554369_1.fastq.fq)
+
+COMMENT      1651564 lines unequal
+Done ../../../SRR554369_1.fastq

@@ -1,0 +1,2009 @@
+2015-12-16T20:13:45 latf-load.2.5.2 warn: Deprecated argument '-q' may not be supported in future releases. Please use '--quality' instead.
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1:14:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:5:14:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:9:14:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:13:14:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:17:14:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:21:14:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:25:14:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:29:14:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:33:14:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:37:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:41:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:45:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:49:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:53:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:57:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:61:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:65:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:69:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:73:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:77:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:81:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:85:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:89:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:93:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:97:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:101:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:105:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:109:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:113:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:117:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:121:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:125:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:129:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:133:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:137:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:141:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:145:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:149:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:153:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:157:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:161:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:165:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:169:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:173:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:177:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:181:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:185:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:189:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:193:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:197:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:201:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:205:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:209:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:213:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:217:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:221:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:225:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:229:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:233:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:237:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:241:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:245:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:249:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:253:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:257:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:261:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:265:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:269:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:273:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:277:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:281:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:285:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:289:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:293:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:297:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:301:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:305:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:309:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:313:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:317:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:321:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:325:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:329:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:333:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:337:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:341:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:345:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:349:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:353:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:357:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:361:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:365:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:369:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:373:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:377:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:381:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:385:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:389:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:393:15:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:397:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:401:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:405:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:409:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:413:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:417:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:421:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:425:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:429:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:433:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:437:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:441:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:445:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:449:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:453:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:457:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:461:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:465:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:469:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:473:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:477:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:481:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:485:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:489:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:493:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:497:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:501:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:505:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:509:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:513:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:517:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:521:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:525:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:529:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:533:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:537:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:541:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:545:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:549:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:553:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:557:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:561:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:565:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:569:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:573:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:577:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:581:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:585:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:589:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:593:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:597:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:601:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:605:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:609:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:613:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:617:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:621:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:625:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:629:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:633:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:637:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:641:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:645:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:649:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:653:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:657:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:661:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:665:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:669:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:673:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:677:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:681:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:685:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:689:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:693:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:697:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:701:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:705:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:709:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:713:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:717:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:721:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:725:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:729:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:733:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:737:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:741:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:745:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:749:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:753:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:757:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:761:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:765:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:769:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:773:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:777:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:781:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:785:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:789:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:793:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:797:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:801:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:805:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:809:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:813:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:817:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:821:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:825:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:829:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:833:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:837:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:841:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:845:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:849:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:853:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:857:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:861:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:865:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:869:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:873:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:877:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:881:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:885:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:889:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:893:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:897:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:901:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:905:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:909:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:913:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:917:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:921:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:925:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:929:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:933:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:937:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:941:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:945:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:949:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:953:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:957:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:961:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:965:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:969:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:973:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:977:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:981:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:985:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:989:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:993:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:997:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1001:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1005:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1009:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1013:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1017:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1021:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1025:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1029:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1033:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1037:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1041:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1045:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1049:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1053:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1057:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1061:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1065:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1069:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1073:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1077:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1081:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1085:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1089:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1093:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1097:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1101:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1105:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1109:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1113:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1117:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1121:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1125:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1129:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1133:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1137:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1141:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1145:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1149:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1153:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1157:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1161:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1165:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1169:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1173:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1177:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1181:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1185:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1189:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1193:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1197:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1201:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1205:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1209:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1213:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1217:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1221:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1225:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1229:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1233:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1237:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1241:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1245:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1249:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1253:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1257:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1261:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1265:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1269:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1273:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1277:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1281:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1285:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1289:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1293:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1297:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1301:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1305:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1309:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1313:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1317:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1321:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1325:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1329:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1333:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1337:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1341:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1345:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1349:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1353:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1357:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1361:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1365:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1369:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1373:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1377:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1381:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1385:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1389:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1393:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1397:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1401:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1405:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1409:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1413:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1417:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1421:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1425:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1429:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1433:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1437:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1441:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1445:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1449:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1453:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1457:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1461:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1465:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1469:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1473:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1477:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1481:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1485:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1489:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1493:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1497:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1501:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1505:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1509:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1513:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1517:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1521:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1525:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1529:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1533:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1537:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1541:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1545:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1549:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1553:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1557:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1561:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1565:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1569:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1573:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1577:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1581:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1585:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1589:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1593:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1597:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1601:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1605:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1609:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1613:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1617:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1621:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1625:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1629:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1633:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1637:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1641:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1645:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1649:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1653:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1657:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1661:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1665:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1669:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1673:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1677:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1681:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1685:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1689:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1693:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1697:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1701:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1705:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1709:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1713:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1717:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1721:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1725:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1729:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1733:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1737:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1741:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1745:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1749:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1753:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1757:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1761:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1765:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1769:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1773:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1777:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1781:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1785:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1789:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1793:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1797:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1801:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1805:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1809:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1813:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1817:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1821:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1825:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1829:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1833:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1837:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1841:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1845:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1849:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1853:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1857:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1861:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1865:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1869:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1873:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1877:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1881:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1885:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1889:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1893:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1897:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1901:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1905:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1909:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1913:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1917:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1921:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1925:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1929:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1933:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1937:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1941:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1945:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1949:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1953:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1957:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1961:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1965:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1969:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1973:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1977:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1981:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1985:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1989:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1993:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:1997:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2001:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2005:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2009:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2013:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2017:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2021:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2025:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2029:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2033:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2037:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2041:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2045:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2049:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2053:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2057:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2061:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2065:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2069:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2073:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2077:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2081:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2085:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2089:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2093:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2097:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2101:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2105:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2109:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2113:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2117:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2121:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2125:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2129:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2133:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2137:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2141:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2145:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2149:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2153:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2157:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2161:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2165:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2169:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2173:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2177:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2181:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2185:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2189:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2193:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2197:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2201:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2205:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2209:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2213:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2217:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2221:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2225:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2229:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2233:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2237:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2241:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2245:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2249:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2253:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2257:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2261:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2265:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2269:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2273:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2277:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2281:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2285:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2289:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2293:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2297:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2301:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2305:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2309:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2313:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2317:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2321:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2325:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2329:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2333:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2337:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2341:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2345:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2349:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2353:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2357:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2361:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2365:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2369:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2373:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2377:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2381:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2385:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2389:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2393:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2397:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2401:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2405:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2409:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2413:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2417:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2421:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2425:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2429:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2433:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2437:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2441:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2445:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2449:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2453:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2457:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2461:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2465:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2469:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2473:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2477:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2481:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2485:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2489:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2493:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2497:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2501:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2505:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2509:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2513:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2517:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2521:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2525:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2529:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2533:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2537:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2541:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2545:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2549:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2553:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2557:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2561:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2565:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2569:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2573:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2577:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2581:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2585:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2589:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2593:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2597:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2601:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2605:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2609:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2613:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2617:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2621:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2625:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2629:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2633:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2637:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2641:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2645:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2649:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2653:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2657:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2661:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2665:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2669:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2673:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2677:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2681:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2685:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2689:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2693:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2697:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2701:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2705:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2709:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2713:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2717:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2721:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2725:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2729:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2733:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2737:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2741:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2745:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2749:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2753:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2757:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2761:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2765:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2769:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2773:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2777:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2781:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2785:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2789:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2793:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2797:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2801:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2805:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2809:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2813:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2817:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2821:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2825:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2829:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2833:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2837:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2841:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2845:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2849:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2853:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2857:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2861:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2865:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2869:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2873:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2877:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2881:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2885:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2889:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2893:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2897:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2901:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2905:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2909:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2913:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2917:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2921:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2925:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2929:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2933:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2937:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2941:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2945:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2949:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2953:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2957:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2961:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2965:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2969:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2973:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2977:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2981:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2985:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2989:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2993:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:2997:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3001:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3005:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3009:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3013:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3017:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3021:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3025:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3029:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3033:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3037:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3041:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3045:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3049:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3053:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3057:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3061:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3065:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3069:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3073:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3077:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3081:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3085:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3089:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3093:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3097:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3101:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3105:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3109:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3113:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3117:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3121:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3125:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3129:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3133:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3137:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3141:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3145:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3149:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3153:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3157:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3161:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3165:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3169:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3173:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3177:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3181:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3185:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3189:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3193:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3197:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3201:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3205:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3209:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3213:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3217:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3221:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3225:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3229:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3233:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3237:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3241:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3245:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3249:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3253:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3257:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3261:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3265:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3269:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3273:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3277:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3281:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3285:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3289:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3293:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3297:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3301:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3305:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3309:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3313:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3317:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3321:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3325:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3329:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3333:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3337:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3341:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3345:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3349:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3353:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3357:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3361:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3365:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3369:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3373:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3377:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3381:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3385:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3389:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3393:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3397:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3401:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3405:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3409:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3413:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3417:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3421:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3425:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3429:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3433:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3437:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3441:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3445:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3449:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3453:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3457:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3461:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3465:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3469:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3473:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3477:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3481:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3485:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3489:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3493:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3497:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3501:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3505:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3509:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3513:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3517:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3521:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3525:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3529:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3533:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3537:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3541:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3545:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3549:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3553:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3557:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3561:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3565:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3569:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3573:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3577:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3581:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3585:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3589:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3593:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3597:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3601:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3605:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3609:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3613:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3617:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3621:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3625:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3629:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3633:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3637:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3641:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3645:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3649:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3653:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3657:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3661:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3665:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3669:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3673:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3677:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3681:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3685:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3689:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3693:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3697:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3701:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3705:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3709:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3713:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3717:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3721:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3725:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3729:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3733:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3737:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3741:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3745:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3749:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3753:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3757:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3761:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3765:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3769:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3773:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3777:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3781:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3785:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3789:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3793:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3797:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3801:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3805:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3809:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3813:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3817:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3821:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3825:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3829:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3833:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3837:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3841:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3845:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3849:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3853:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3857:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3861:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3865:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3869:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3873:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3877:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3881:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3885:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3889:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3893:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3897:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3901:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3905:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3909:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3913:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3917:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3921:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3925:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3929:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3933:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3937:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3941:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3945:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3949:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3953:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3957:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3961:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3965:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3969:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3973:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3977:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3981:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3985:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3989:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3993:16:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:3997:17:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 warn: file="SRR1284073.fastq"
+2015-12-16T20:13:46 latf-load.2.5.2 warn: SRR1284073.fastq:4001:17:syntax error, unexpected fqWS, expecting fqENDLINE
+2015-12-16T20:13:46 latf-load.2.5.2 err: error excessive while reading file within alignment module - Number of errors 1001 exceeds limit of 1000: Exiting
+2015-12-16T20:13:46 latf-load.2.5.2 err: error excessive while reading file within alignment module - accession="SRR1284073.fastq.sra" errors="1001" status="failure"
+2015-12-16T20:13:46 latf-load.2.5.2 err: error excessive while reading file within alignment module - load failed
+
+################################################################################
+

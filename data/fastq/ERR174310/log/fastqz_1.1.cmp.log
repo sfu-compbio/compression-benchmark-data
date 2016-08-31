@@ -1,0 +1,19 @@
+
+################################################################################
+
+encoding ERR174310_1.fastq -> ERR174310_1/output/ERR174310_1.fastqz read length 101
+
+compressing ERR174310_1/output/ERR174310_1.fastqz.fxq
+
+compressing ERR174310_1/output/ERR174310_1.fastqz.fxb
+
+compressing ERR174310_1/output/ERR174310_1.fastqz.fxh
+
+compressed ERR174310_1/output/ERR174310_1.fastqz.fxh.zpaq
+
+compressed ERR174310_1/output/ERR174310_1.fastqz.fxq.zpaq
+
+compressed ERR174310_1/output/ERR174310_1.fastqz.fxb.zpaq
+
+26407.57 seconds
+

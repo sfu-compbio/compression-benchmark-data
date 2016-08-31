@@ -1,0 +1,12 @@
+[ decode] => { }
+[ threads] => { 1 }
+[ input] => { SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince }
+[ output] => { SRR870667/output/decompressed/mince-single/SRR870667_1.fastq.fq }
+[2015-12-29 23:42:25.263] [jointLog] [info] You requested 1 threads, but the minimum is 4. Setting # threads to 4.
+[2015-12-29 23:42:25.263] [jointLog] [info] reading seq buffer with command plzip -d -c -n 1 SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.seqs.lz
+[2015-12-29 23:42:25.264] [jointLog] [info] reading offset buffer with command plzip -d -c -n 1 SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.offs.lz
+[2015-12-29 23:42:25.265] [jointLog] [info] reading Ns buffer with command plzip -d -c -n 1 SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.nlocs.lz
+terminate called after throwing an instance of 'char const*'
+  SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.nlocs.lz: plzip: Write error: Broken pipe
+  SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.offs.lz: plzip: Write error: Broken pipe
+  SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.seqs.lz: plzip: Write error: Broken pipe

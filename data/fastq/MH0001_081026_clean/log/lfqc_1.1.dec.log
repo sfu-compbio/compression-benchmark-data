@@ -1,0 +1,102 @@
+tools/lfqc/lfqc/lfqcd.rb:77: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+2978.668 seconds (all OK)
+550.728 seconds (all OK)
+
+################################################################################
+
+Work dir MH0001_081026_clean/output/compressed/lfqc/tmp_a4358d7d5b482398c551b67e2e9332ca_MH0001_081026_clean_1.fastq.lfqc
+
+Running tar xf MH0001_081026_clean/output/compressed/lfqc/MH0001_081026_clean_1.fastq.lfqc -C MH0001_081026_clean/output/compressed/lfqc/tmp_a4358d7d5b482398c551b67e2e9332ca_MH0001_081026_clean_1.fastq.lfqc
+
+Unzipping qual file MH0001_081026_clean/output/compressed/lfqc/tmp_a4358d7d5b482398c551b67e2e9332ca_MH0001_081026_clean_1.fastq.lfqc/MH0001_081026_clean_1.fastq_qual_noEOL.zpaq
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq e MH0001_081026_clean/output/compressed/lfqc/tmp_a4358d7d5b482398c551b67e2e9332ca_MH0001_081026_clean_1.fastq.lfqc/MH0001_081026_clean_1.fastq_qual_noEOL.zpaq -threads 4
+
+Unzipping data file MH0001_081026_clean/output/compressed/lfqc/tmp_a4358d7d5b482398c551b67e2e9332ca_MH0001_081026_clean_1.fastq.lfqc/MH0001_081026_clean_1.fastq_data_noEOL.lpaq
+
+Running tools/lfqc/lfqc/../lpaq8/lpaq8 d MH0001_081026_clean/output/compressed/lfqc/tmp_a4358d7d5b482398c551b67e2e9332ca_MH0001_081026_clean_1.fastq.lfqc/MH0001_081026_clean_1.fastq_data_noEOL.lpaq MH0001_081026_clean/output/compressed/lfqc/tmp_a4358d7d5b482398c551b67e2e9332ca_MH0001_081026_clean_1.fastq.lfqc/MH0001_081026_clean_1.fastq_data_noEOL
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+MH0001_081026_clean/output/compressed/lfqc/tmp_a4358d7d5b482398c551b67e2e9332ca_MH0001_081026_clean_1.fastq.lfqc/MH0001_081026_clean_1.fastq_qual_noEOL.zpaq: 1 versions, 1 files, 7239 fragments, 146.739233 MB
+
+Extracting 512.189659 MB in 1 files -threads 4
+
+[2903..3855] -> 67051952
+
+> MH0001_081026_clean_1.fastq_qual_noEOL
+
+13.09% 2:45:45 [1945..2902] -> 66677465
+
+26.11% 1:13:42 [991..1944] -> 66982031
+
+39.18% 0:42:17 [1..990] -> 67098160
+
+52.28% 0:40:54 [6610..7239] -> 43637045
+
+60.80% 0:31:18 [3856..4784] -> 67001496
+
+73.88% 0:17:25 [4785..5672] -> 67076096
+
+86.98% 0:07:25 [5673..6609] -> 66693648
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq e MH0001_081026_clean_1.fastq_name_sep.zpaq -threads 4
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+MH0001_081026_clean_1.fastq_name_sep.zpaq: 103209934 -> 512189656 in 782.320 sec. using 1542 MB memory
+
+1 versions, 9 files, 1182 fragments, 16.149071 MB
+
+Extracting 168.240993 MB in 9 files -threads 4
+
+[756..1182] -> 36931639
+
+> 0_rle
+
+> 1_rev
+
+13.84% 0:37:02 > 2_rle
+
+13.84% 0:37:02 > 3_rev
+
+27.68% 0:15:33 > 4_dif
+
+41.51% 0:08:23 > 5_dif
+
+55.35% 0:04:48 > 7_rev
+
+69.19% 0:02:39 > sep
+
+69.19% 0:04:05 [1..755] -> 51836841
+
+69.19% 0:04:05 > 6_rev
+
+Processing file 0_rle
+
+Processing file 1_rev
+
+Processing file 2_rle
+
+Processing file 3_rev
+
+Processing file 4_dif
+
+Processing file 5_dif
+
+Processing file 7_rev
+
+Processing file 6_rev
+
+Max Column 7
+
+Cleaning up...
+
+Done.
+
+lfqcd MH0001_081026_clean/output/compressed/lfqc/MH0001_081026_clean_1.fastq.lfqc 403.240000   4.180000 3935.520000 (3940.902595)
+
+
+
+lfqcdSize MH0001_081026_clean/output/decompressed/lfqc/MH0001_081026_clean_1.fastq.fq 1487328247 compressed size 266106880
+

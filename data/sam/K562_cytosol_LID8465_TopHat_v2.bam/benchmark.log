@@ -1,0 +1,1829 @@
+Namespace(force=False, log='benchmark.log', ref='data/sam/ref/hg19.fa', sam='K562_cytosol_LID8465_TopHat_v2.bam.sam')
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++          K562_cytosol_LID8465_TopHat_v2.bam with 1 threads           + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -p 1
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.gz
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/pigz.1.cmp.log
+  Process PID:   359
+  Exit code:     0
+  Wall time:     01:28:38 (5318.5 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    01:25:29 (5129.5 ms)
+    ru_stime:    00:01:36 (96.7 ms)
+    ru_maxrss:   5916
+    ru_minflt:   999
+    ru_majflt:   7
+    ru_inblock:  148274424
+    ru_oublock:  24972416
+    ru_nvcsw:    2073
+    ru_nivcsw:   8
+  GNU time:     
+    real:        01:28:38 (5318.2 ms)
+    user:        01:25:29 (5129.5 ms)
+    sys:         00:01:36 (96.7 ms)
+  Size (MB):     12,192.94 (12785224589 bytes)
+  Free space:     
+                      2.8T  1.1T  1.7T  40% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.gz
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.gz.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/pigz.1.dec.log
+  Process PID:   1401
+  Exit code:     0
+  Wall time:     00:19:04 (1144.4 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:10:05 (605.0 ms)
+    ru_stime:    00:01:48 (108.7 ms)
+    ru_maxrss:   5920
+    ru_minflt:   875
+    ru_majflt:   7
+    ru_inblock:  24973928
+    ru_oublock:  148271496
+    ru_nvcsw:    12907
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:19:04 (1144.3 ms)
+    user:        00:10:05 (605.0 ms)
+    sys:         00:01:48 (108.6 ms)
+  Size (MB):     72,398.19 (75915001196 bytes)
+  Free space:     
+                      2.8T  1.2T  1.6T  42% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -p1
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.bz2
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/pbzip2.1.cmp.log
+  Process PID:   1651
+  Exit code:     0
+  Wall time:     04:59:18 (17958.1 ms)
+  Memory (MB):   11.3
+  Resources:    
+    ru_utime:    04:49:46 (17386.3 ms)
+    ru_stime:    00:05:31 (331.9 ms)
+    ru_maxrss:   11592
+    ru_minflt:   47301838
+    ru_majflt:   8
+    ru_inblock:  148298016
+    ru_oublock:  20025808
+    ru_nvcsw:    485369
+    ru_nivcsw:   10
+  GNU time:     
+    real:        04:59:18 (17958.0 ms)
+    user:        04:49:46 (17386.3 ms)
+    sys:         00:05:31 (331.9 ms)
+  Size (MB):     9,776.21 (10251095308 bytes)
+  Free space:     
+                      2.8T  1.2T  1.6T  42% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.bz2
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.bz2.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/pbzip2.1.dec.log
+  Process PID:   5182
+  Exit code:     0
+  Wall time:     01:07:16 (4036.2 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    01:03:01 (3781.3 ms)
+    ru_stime:    00:02:14 (134.1 ms)
+    ru_maxrss:   5920
+    ru_minflt:   1790
+    ru_majflt:   8
+    ru_inblock:  20048176
+    ru_oublock:  148271496
+    ru_nvcsw:    2685
+    ru_nivcsw:   11
+  GNU time:     
+    real:        01:07:16 (4036.1 ms)
+    user:        01:03:01 (3781.3 ms)
+    sys:         00:02:14 (134.1 ms)
+  Size (MB):     72,398.19 (75915001196 bytes)
+  Free space:     
+                      2.8T  1.3T  1.6T  45% /local-scratch
+
+######################################################################## 
+#                               samtools                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -b K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.bam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/samtools.1.cmp.log
+  Process PID:   5901
+  Exit code:     0
+  Wall time:     01:23:44 (5024.8 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    01:19:20 (4760.3 ms)
+    ru_stime:    00:02:45 (165.8 ms)
+    ru_maxrss:   5920
+    ru_minflt:   27817493
+    ru_majflt:   10
+    ru_inblock:  148275096
+    ru_oublock:  26869544
+    ru_nvcsw:    2667
+    ru_nivcsw:   6
+  GNU time:     
+    real:        01:23:44 (5024.7 ms)
+    user:        01:19:20 (4760.3 ms)
+    sys:         00:02:45 (165.7 ms)
+  Size (MB):     13,119.22 (13756503759 bytes)
+  Free space:     
+                      2.8T  1.3T  1.6T  45% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -h K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.bam -o K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.bam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/samtools.1.dec.log
+  Process PID:   6805
+  Exit code:     0
+  Wall time:     00:27:19 (1639.9 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:18:40 (1120.7 ms)
+    ru_stime:    00:02:23 (143.6 ms)
+    ru_maxrss:   5920
+    ru_minflt:   896
+    ru_majflt:   9
+    ru_inblock:  26871440
+    ru_oublock:  148272720
+    ru_nvcsw:    12180
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:27:19 (1639.8 ms)
+    user:        00:18:40 (1120.7 ms)
+    sys:         00:02:23 (143.6 ms)
+  Size (MB):     72,398.19 (75915001196 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  48% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 1 -r data/sam/ref/hg19.fa K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.scramble.cram
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/scramble.1.cmp.log
+  Process PID:   32188
+  Exit code:     0
+  Wall time:     00:31:44 (1904.1 ms)
+  Memory (MB):   582.2
+  Resources:    
+    ru_utime:    00:27:00 (1620.3 ms)
+    ru_stime:    00:02:16 (136.1 ms)
+    ru_maxrss:   596204
+    ru_minflt:   27612747
+    ru_majflt:   23
+    ru_inblock:  154460344
+    ru_oublock:  18088344
+    ru_nvcsw:    302772
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:31:43 (1903.9 ms)
+    user:        00:27:00 (1620.3 ms)
+    sys:         00:02:16 (136.1 ms)
+  Size (MB):     8,831.99 (9261017598 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  47% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 1 -r data/sam/ref/hg19.fa K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.scramble.cram K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.scramble.cram.sam
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/scramble.1.dec.log
+  Process PID:   32561
+  Exit code:     0
+  Wall time:     00:18:12 (1092.7 ms)
+  Memory (MB):   521.4
+  Resources:    
+    ru_utime:    00:13:32 (812.9 ms)
+    ru_stime:    00:01:21 (81.3 ms)
+    ru_maxrss:   533868
+    ru_minflt:   1445829
+    ru_majflt:   39
+    ru_inblock:  24162616
+    ru_oublock:  140651008
+    ru_nvcsw:    43477
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:18:12 (1092.6 ms)
+    user:        00:13:32 (812.9 ms)
+    sys:         00:01:21 (81.3 ms)
+  Size (MB):     68,677.24 (72013308856 bytes)
+  Free space:     
+                      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I sam -O cram -t 1 K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.scramble-noref.cram
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/scramble-noref.1.cmp.log
+  Process PID:   617
+  Exit code:     0
+  Wall time:     00:36:17 (2177.0 ms)
+  Memory (MB):   28.0
+  Resources:    
+    ru_utime:    00:31:27 (1887.8 ms)
+    ru_stime:    00:02:24 (144.5 ms)
+    ru_maxrss:   28688
+    ru_minflt:   34587068
+    ru_majflt:   37
+    ru_inblock:  148280392
+    ru_oublock:  19216800
+    ru_nvcsw:    290005
+    ru_nivcsw:   4
+  GNU time:     
+    real:        00:36:16 (2176.9 ms)
+    user:        00:31:27 (1887.8 ms)
+    sys:         00:02:24 (144.5 ms)
+  Size (MB):     9,382.96 (9838745630 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  47% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I cram -O sam -t 1 K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.scramble-noref.cram K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.scramble-noref.cram.sam
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/scramble-noref.1.dec.log
+  Process PID:   1025
+  Exit code:     0
+  Wall time:     00:21:21 (1281.9 ms)
+  Memory (MB):   16.0
+  Resources:    
+    ru_utime:    00:15:08 (908.8 ms)
+    ru_stime:    00:03:21 (201.3 ms)
+    ru_maxrss:   16372
+    ru_minflt:   48956549
+    ru_majflt:   37
+    ru_inblock:  19225232
+    ru_oublock:  148271496
+    ru_nvcsw:    31785
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:21:21 (1281.8 ms)
+    user:        00:15:08 (908.8 ms)
+    sys:         00:03:21 (201.3 ms)
+  Size (MB):     72,398.19 (75915001782 bytes)
+  Free space:     
+                      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -7 -I sam -O cram -t 1 -r data/sam/ref/hg19.fa K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.scramble-bz2.cram
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/scramble-bzip2.1.cmp.log
+  Process PID:   1523
+  Exit code:     0
+  Wall time:     01:46:41 (6401.4 ms)
+  Memory (MB):   584.3
+  Resources:    
+    ru_utime:    01:37:19 (5839.6 ms)
+    ru_stime:    00:04:13 (253.4 ms)
+    ru_maxrss:   598372
+    ru_minflt:   39063618
+    ru_majflt:   21
+    ru_inblock:  154459648
+    ru_oublock:  16819168
+    ru_nvcsw:    302750
+    ru_nivcsw:   9
+  GNU time:     
+    real:        01:46:41 (6401.4 ms)
+    user:        01:37:19 (5839.6 ms)
+    sys:         00:04:13 (253.4 ms)
+  Size (MB):     8,211.76 (8610657131 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  47% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -I cram -O sam -t 1 -r data/sam/ref/hg19.fa K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.scramble-bz2.cram K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.scramble-bz2.cram.sam
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/scramble-bzip2.1.dec.log
+  Process PID:   2861
+  Exit code:     0
+  Wall time:     00:22:13 (1333.6 ms)
+  Memory (MB):   519.5
+  Resources:    
+    ru_utime:    00:17:50 (1070.6 ms)
+    ru_stime:    00:01:19 (79.4 ms)
+    ru_maxrss:   531924
+    ru_minflt:   1828245
+    ru_majflt:   37
+    ru_inblock:  22892128
+    ru_oublock:  140651008
+    ru_nvcsw:    40638
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:22:13 (1333.5 ms)
+    user:        00:17:50 (1070.6 ms)
+    sys:         00:01:19 (79.4 ms)
+  Size (MB):     68,677.24 (72013308877 bytes)
+  Free space:     
+                      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 1 K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.sambamba.bam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/sambamba.1.cmp.log
+  Process PID:   11951
+  Exit code:     0
+  Wall time:     01:28:19 (5299.1 ms)
+  Memory (MB):   8.1
+  Resources:    
+    ru_utime:    01:24:12 (5052.6 ms)
+    ru_stime:    00:03:04 (184.9 ms)
+    ru_maxrss:   8260
+    ru_minflt:   27616328
+    ru_majflt:   25
+    ru_inblock:  148277696
+    ru_oublock:  26881000
+    ru_nvcsw:    8565
+    ru_nivcsw:   5
+  GNU time:     
+    real:        01:28:19 (5299.1 ms)
+    user:        01:24:12 (5052.6 ms)
+    sys:         00:03:04 (184.8 ms)
+  Size (MB):     13,119.22 (13756503760 bytes)
+  Free space:     
+                      2.8T  1.4T  1.5T  48% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -h -t 1 K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.sambamba.bam -o K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.sambamba.bam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/sambamba.1.dec.log
+  Process PID:   12934
+  Exit code:     0
+  Wall time:     00:26:28 (1588.0 ms)
+  Memory (MB):   11.3
+  Resources:    
+    ru_utime:    00:19:46 (1186.8 ms)
+    ru_stime:    00:02:14 (134.5 ms)
+    ru_maxrss:   11604
+    ru_minflt:   2136
+    ru_majflt:   23
+    ru_inblock:  26875208
+    ru_oublock:  148271496
+    ru_nvcsw:    24223
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:26:28 (1588.0 ms)
+    user:        00:19:46 (1186.8 ms)
+    sys:         00:02:14 (134.5 ms)
+  Size (MB):     72,398.19 (75915001196 bytes)
+  Free space:     
+                      2.8T  1.4T  1.4T  51% /local-scratch
+
+######################################################################## 
+#                               sam_comp                               # 
+########################################################################
+>>> sam_comp (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-01-11 08:20:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -r data/sam/ref/hg19.fa.sc 
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sam_comp/K562_cytosol_LID8465_TopHat_v2.bam.sam.zam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam_comp.1.cmp.log
+  Process PID:   30524
+  Exit code:     0
+  Wall time:     00:59:35 (3575.5 ms)
+  Memory (MB):   697.5
+  Resources:    
+    ru_utime:    00:57:19 (3439.2 ms)
+    ru_stime:    00:01:28 (88.9 ms)
+    ru_maxrss:   714264
+    ru_minflt:   10999
+    ru_majflt:   6
+    ru_inblock:  154477496
+    ru_oublock:  13716112
+    ru_nvcsw:    2374
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:59:35 (3575.2 ms)
+    user:        00:57:19 (3439.2 ms)
+    sys:         00:01:28 (88.9 ms)
+  Size (MB):     6,697.21 (7022531238 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sam_comp/K562_cytosol_LID8465_TopHat_v2.bam.sam.zam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-01-11 09:20:03 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -d -r data/sam/ref/hg19.fa.sc
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sam_comp/K562_cytosol_LID8465_TopHat_v2.bam.sam.zam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/sam_comp/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam_comp.1.dec.log
+  Process PID:   31215
+  Exit code:     0
+  Wall time:     01:37:23 (5843.5 ms)
+  Memory (MB):   698.6
+  Resources:    
+    ru_utime:    01:34:03 (5643.8 ms)
+    ru_stime:    00:01:52 (112.7 ms)
+    ru_maxrss:   715372
+    ru_minflt:   11031
+    ru_majflt:   6
+    ru_inblock:  19921688
+    ru_oublock:  108132576
+    ru_nvcsw:    2142
+    ru_nivcsw:   14
+  GNU time:     
+    real:        01:37:23 (5843.3 ms)
+    user:        01:34:03 (5643.8 ms)
+    sys:         00:01:52 (112.7 ms)
+  Size (MB):     52,799.00 (55363760444 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/sam_comp/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+######################################################################## 
+#                                 tsc                                  # 
+########################################################################
+>>> tsc (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-01-11 10:57:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.2/src/tsc -f -s -o K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/tsc/K562_cytosol_LID8465_TopHat_v2.bam.sam.tsc K562_cytosol_LID8465_TopHat_v2.bam.sam 
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.tsc.1.cmp.log
+  Process PID:   32554
+  Exit code:     0
+  Wall time:     04:25:26 (15926.2 ms)
+  Memory (MB):   1598.3
+  Resources:    
+    ru_utime:    04:21:27 (15687.2 ms)
+    ru_stime:    00:02:05 (125.7 ms)
+    ru_maxrss:   1636680
+    ru_minflt:   11643120
+    ru_majflt:   6
+    ru_inblock:  148273408
+    ru_oublock:  40757152
+    ru_nvcsw:    6404
+    ru_nivcsw:   9
+  GNU time:     
+    real:        04:25:26 (15926.0 ms)
+    user:        04:21:27 (15687.2 ms)
+    sys:         00:02:05 (125.7 ms)
+  Size (MB):     19,897.35 (20863888098 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/tsc/K562_cytosol_LID8465_TopHat_v2.bam.sam.tsc)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+*** 2016-01-11 15:23:16 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.2/src/tsc -f -s -d -o K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/tsc/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/tsc/K562_cytosol_LID8465_TopHat_v2.bam.sam.tsc
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.tsc.1.dec.log
+  Process PID:   3866
+  Exit code:     0
+  Wall time:     02:51:19 (10279.1 ms)
+  Memory (MB):   1586.1
+  Resources:    
+    ru_utime:    02:46:15 (9975.1 ms)
+    ru_stime:    00:01:59 (119.8 ms)
+    ru_maxrss:   1624172
+    ru_minflt:   190656
+    ru_majflt:   6
+    ru_inblock:  40752024
+    ru_oublock:  148271504
+    ru_nvcsw:    55755
+    ru_nivcsw:   9
+  GNU time:     
+    real:        02:51:18 (10278.9 ms)
+    user:        02:46:15 (9975.1 ms)
+    sys:         00:01:59 (119.8 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/tsc/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.3T  54% /local-scratch
+
+######################################################################## 
+#                                 cbc                                  # 
+########################################################################
+*** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/cbc/simulations/main.run K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.cbc
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/cbc.1.cmp.log
+  Process PID:   15250
+  Exit code:     2816
+  Wall time:     00:00:00 (0.7 ms)
+  Memory (MB):   25.3
+  Resources:    
+    ru_utime:    00:00:00 (0.5 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   25924
+    ru_minflt:   7164
+    ru_majflt:   4
+    ru_inblock:  25640
+    ru_oublock:  24
+    ru_nvcsw:    98
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:00:00 (0.6 ms)
+    user:        00:00:00 (0.5 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     0.01 (8192 bytes)
+  Free space:     
+                      2.8T  1.5T  1.3T  55% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.qp
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/quip.1.cmp.log
+  Process PID:   13960
+  Exit code:     0
+  Wall time:     01:39:52 (5992.1 ms)
+  Memory (MB):   580.6
+  Resources:    
+    ru_utime:    01:37:09 (5829.5 ms)
+    ru_stime:    00:01:41 (101.6 ms)
+    ru_maxrss:   594532
+    ru_minflt:   152170
+    ru_majflt:   16
+    ru_inblock:  148275952
+    ru_oublock:  21849808
+    ru_nvcsw:    52334
+    ru_nivcsw:   9
+  GNU time:     
+    real:        01:39:51 (5991.9 ms)
+    user:        01:37:09 (5829.5 ms)
+    sys:         00:01:41 (101.6 ms)
+  Size (MB):     10,667.38 (11185554241 bytes)
+  Free space:     
+                      2.8T  1.6T  1.2T  58% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -d -o sam K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.qp
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.qp.sam
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/quip.1.dec.log
+  Process PID:   21000
+  Exit code:     0
+  Wall time:     03:46:05 (13565.1 ms)
+  Memory (MB):   576.8
+  Resources:    
+    ru_utime:    03:40:10 (13210.8 ms)
+    ru_stime:    00:03:48 (228.7 ms)
+    ru_maxrss:   590652
+    ru_minflt:   161096
+    ru_majflt:   16
+    ru_inblock:  21851016
+    ru_oublock:  148271504
+    ru_nvcsw:    103252
+    ru_nivcsw:   6
+  GNU time:     
+    real:        03:46:05 (13565.1 ms)
+    user:        03:40:10 (13210.8 ms)
+    sys:         00:03:48 (228.7 ms)
+  Size (MB):     72,398.19 (75915001196 bytes)
+  Free space:     
+                      2.8T  1.7T  1.1T  61% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -r data/sam/ref/hg19.fa K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.ref.qp
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/quip-ref.1.cmp.log
+  Process PID:   29909
+  Exit code:     0
+  Wall time:     01:38:15 (5895.7 ms)
+  Memory (MB):   1665.3
+  Resources:    
+    ru_utime:    01:35:49 (5749.6 ms)
+    ru_stime:    00:01:34 (94.0 ms)
+    ru_maxrss:   1705304
+    ru_minflt:   221434
+    ru_majflt:   16
+    ru_inblock:  154525528
+    ru_oublock:  17078328
+    ru_nvcsw:    52606
+    ru_nivcsw:   9
+  GNU time:     
+    real:        01:38:15 (5895.7 ms)
+    user:        01:35:49 (5749.6 ms)
+    sys:         00:01:34 (94.0 ms)
+  Size (MB):     8,337.56 (8742568412 bytes)
+  Free space:     
+                      2.8T  1.6T  1.2T  58% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -d -o sam -r data/sam/ref/hg19.fa K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.ref.qp
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.ref.qp.sam
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/quip-ref.1.dec.log
+  Process PID:   5433
+  Exit code:     0
+  Wall time:     03:44:05 (13445.9 ms)
+  Memory (MB):   1662.4
+  Resources:    
+    ru_utime:    03:38:19 (13099.9 ms)
+    ru_stime:    00:03:42 (222.9 ms)
+    ru_maxrss:   1702348
+    ru_minflt:   223442
+    ru_majflt:   16
+    ru_inblock:  23329936
+    ru_oublock:  148271512
+    ru_nvcsw:    91541
+    ru_nivcsw:   8
+  GNU time:     
+    real:        03:44:05 (13445.8 ms)
+    user:        03:38:19 (13099.9 ms)
+    sys:         00:03:42 (222.9 ms)
+  Size (MB):     72,398.19 (75915001196 bytes)
+  Free space:     
+                      2.8T  1.7T  1.1T  61% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -a -v -c K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.asm.qp
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/quip-asm.1.cmp.log
+  Process PID:   13998
+  Exit code:     0
+  Wall time:     01:39:20 (5960.9 ms)
+  Memory (MB):   779.3
+  Resources:    
+    ru_utime:    01:36:40 (5800.9 ms)
+    ru_stime:    00:01:35 (95.9 ms)
+    ru_maxrss:   798044
+    ru_minflt:   154033
+    ru_majflt:   16
+    ru_inblock:  148276000
+    ru_oublock:  21849792
+    ru_nvcsw:    52669
+    ru_nivcsw:   9
+  GNU time:     
+    real:        01:39:20 (5960.8 ms)
+    user:        01:36:40 (5800.9 ms)
+    sys:         00:01:35 (95.8 ms)
+  Size (MB):     10,667.38 (11185554249 bytes)
+  Free space:     
+                      2.8T  1.6T  1.2T  58% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -a -v -c -d -o sam K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.asm.qp
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.asm.qp.sam
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/quip-asm.1.dec.log
+  Process PID:   21399
+  Exit code:     0
+  Wall time:     04:01:59 (14519.7 ms)
+  Memory (MB):   776.9
+  Resources:    
+    ru_utime:    03:54:47 (14087.6 ms)
+    ru_stime:    00:04:02 (242.2 ms)
+    ru_maxrss:   795548
+    ru_minflt:   160968
+    ru_majflt:   16
+    ru_inblock:  21850992
+    ru_oublock:  148271504
+    ru_nvcsw:    101141
+    ru_nivcsw:   6
+  GNU time:     
+    real:        04:01:59 (14519.6 ms)
+    user:        03:54:47 (14087.6 ms)
+    sys:         00:04:02 (242.2 ms)
+  Size (MB):     72,398.19 (75915001196 bytes)
+  Free space:     
+                      2.8T  1.7T  1.1T  61% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-01-14 14:44:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz 
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez.1.cmp.log
+  Process PID:   22168
+  Exit code:     0
+  Wall time:     01:16:51 (4611.5 ms)
+  Memory (MB):   2440.5
+  Resources:    
+    ru_utime:    01:13:59 (4439.7 ms)
+    ru_stime:    00:02:06 (126.8 ms)
+    ru_maxrss:   2499048
+    ru_minflt:   4420603
+    ru_majflt:   43
+    ru_inblock:  154485328
+    ru_oublock:  15860616
+    ru_nvcsw:    5686
+    ru_nivcsw:   9
+  GNU time:     
+    real:        01:16:51 (4611.2 ms)
+    user:        01:13:59 (4439.7 ms)
+    sys:         00:02:06 (126.8 ms)
+  Size (MB):     7,743.37 (8119514652 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+*** 2016-01-14 16:01:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz -o K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez.1.dec.log
+  Process PID:   24363
+  Exit code:     0
+  Wall time:     01:31:27 (5487.3 ms)
+  Memory (MB):   4303.9
+  Resources:    
+    ru_utime:    01:21:06 (4866.8 ms)
+    ru_stime:    00:02:42 (162.8 ms)
+    ru_maxrss:   4407180
+    ru_minflt:   742623
+    ru_majflt:   42
+    ru_inblock:  22072152
+    ru_oublock:  148272752
+    ru_nvcsw:    37086
+    ru_nivcsw:   10
+  GNU time:     
+    real:        01:31:27 (5487.0 ms)
+    user:        01:21:06 (4866.8 ms)
+    sys:         00:02:42 (162.8 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-01-19 13:43:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz -q1 -b
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez-qual.1.cmp.log
+  Process PID:   23658
+  Exit code:     0
+  Wall time:     02:48:41 (10121.4 ms)
+  Memory (MB):   2862.8
+  Resources:    
+    ru_utime:    02:45:51 (9951.4 ms)
+    ru_stime:    00:02:06 (126.8 ms)
+    ru_maxrss:   2931516
+    ru_minflt:   5108307
+    ru_majflt:   43
+    ru_inblock:  154485528
+    ru_oublock:  14194128
+    ru_nvcsw:    5457
+    ru_nivcsw:   7
+  GNU time:     
+    real:        02:48:40 (10120.9 ms)
+    user:        02:45:51 (9951.4 ms)
+    sys:         00:02:06 (126.8 ms)
+  Size (MB):     6,929.00 (7265583388 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz)
+  Free space:      2.8T  2.1T  701G  75% /local-scratch
+*** 2016-01-19 16:32:19 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz -o K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez-qual.1.dec.log
+  Process PID:   26755
+  Exit code:     0
+  Wall time:     03:36:09 (12969.3 ms)
+  Memory (MB):   4725.8
+  Resources:    
+    ru_utime:    03:31:48 (12708.8 ms)
+    ru_stime:    00:03:12 (192.7 ms)
+    ru_maxrss:   4839208
+    ru_minflt:   733946
+    ru_majflt:   42
+    ru_inblock:  20404584
+    ru_oublock:  148273584
+    ru_nvcsw:    34239
+    ru_nivcsw:   10
+  GNU time:     
+    real:        03:36:09 (12969.1 ms)
+    user:        03:31:48 (12708.8 ms)
+    sys:         00:03:12 (192.7 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  2.1T  701G  75% /local-scratch
+
+######################################################################## 
+#                                picard                                # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=K562_cytosol_LID8465_TopHat_v2.bam.sam O=K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.picard.bam VALIDATION_STRINGENCY=SILENT
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/picard.1.cmp.log
+  Process PID:   3467
+  Exit code:     0
+  Wall time:     02:03:59 (7439.3 ms)
+  Memory (MB):   635.0
+  Resources:    
+    ru_utime:    02:01:15 (7275.6 ms)
+    ru_stime:    00:01:39 (99.4 ms)
+    ru_maxrss:   650268
+    ru_minflt:   31278
+    ru_majflt:   128
+    ru_inblock:  148348328
+    ru_oublock:  27002656
+    ru_nvcsw:    184263
+    ru_nivcsw:   961306
+  GNU time:     
+    real:        02:03:59 (7439.3 ms)
+    user:        02:01:15 (7275.6 ms)
+    sys:         00:01:39 (99.3 ms)
+  Size (MB):     13,178.28 (13818427448 bytes)
+  Free space:     
+                      2.8T  1.3T  1.5T  47% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.picard.bam O=K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.picard.bam.sam VALIDATION_STRINGENCY=SILENT
+  stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/picard.1.dec.log
+  Process PID:   5253
+  Exit code:     0
+  Wall time:     01:06:39 (3999.7 ms)
+  Memory (MB):   718.0
+  Resources:    
+    ru_utime:    01:02:36 (3756.0 ms)
+    ru_stime:    00:02:07 (127.6 ms)
+    ru_maxrss:   735184
+    ru_minflt:   31513
+    ru_majflt:   128
+    ru_inblock:  27067656
+    ru_oublock:  148277872
+    ru_nvcsw:    88561
+    ru_nivcsw:   429786
+  GNU time:     
+    real:        01:06:39 (3999.6 ms)
+    user:        01:02:36 (3756.0 ms)
+    sys:         00:02:07 (127.6 ms)
+  Size (MB):     72,398.19 (75915001196 bytes)
+  Free space:     
+                      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                              cramtools                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar cram --ignore-md5-mismatch --capture-all-tags --input-is-sam -Q -n -R data/sam/ref/hg19.fa -I K562_cytosol_LID8465_TopHat_v2.bam.sam -O K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.cram
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/cramtools.1.cmp.log
+  Process PID:   1766
+  Exit code:     0
+  Wall time:     02:22:09 (8529.9 ms)
+  Memory (MB):   5332.6
+  Resources:    
+    ru_utime:    02:18:47 (8327.1 ms)
+    ru_stime:    00:01:31 (91.5 ms)
+    ru_maxrss:   5460616
+    ru_minflt:   5016643
+    ru_majflt:   122
+    ru_inblock:  154500056
+    ru_oublock:  20215808
+    ru_nvcsw:    87086
+    ru_nivcsw:   184887
+  GNU time:     
+    real:        02:22:09 (8529.8 ms)
+    user:        02:18:47 (8327.1 ms)
+    sys:         00:01:31 (91.5 ms)
+  Size (MB):     9,864.99 (10344189349 bytes)
+  Free space:     
+                      2.8T  1.7T  1.1T  61% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar bam --ignore-md5-mismatch --print-sam-header -R data/sam/ref/hg19.fa -I K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.cram -O K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.cram.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/cramtools.1.dec.log
+  Process PID:   3687
+  Exit code:     0
+  Wall time:     00:54:39 (3279.6 ms)
+  Memory (MB):   7641.1
+  Resources:    
+    ru_utime:    00:50:04 (3004.3 ms)
+    ru_stime:    00:01:20 (80.6 ms)
+    ru_maxrss:   7824500
+    ru_minflt:   1920209
+    ru_majflt:   122
+    ru_inblock:  26436256
+    ru_oublock:  140589728
+    ru_nvcsw:    92410
+    ru_nivcsw:   59984
+  GNU time:     
+    real:        00:54:39 (3279.5 ms)
+    user:        00:50:04 (3004.3 ms)
+    sys:         00:01:20 (80.6 ms)
+  Size (MB):     68,645.38 (71979901192 bytes)
+  Free space:     
+                      2.8T  1.8T  1.1T  63% /local-scratch
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++          K562_cytosol_LID8465_TopHat_v2.bam with 4 threads           + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 10:40:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4 
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.gz
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.pigz.4.cmp.log
+  Process PID:   12780
+  Exit code:     0
+  Wall time:     00:15:07 (907.3 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:51:07 (3067.9 ms)
+    ru_stime:    00:03:08 (188.9 ms)
+    ru_maxrss:   6080
+    ru_minflt:   1351
+    ru_majflt:   8
+    ru_inblock:  148275168
+    ru_oublock:  24971392
+    ru_nvcsw:    1300523
+    ru_nivcsw:   532175
+  GNU time:     
+    real:        00:15:06 (906.7 ms)
+    user:        00:51:07 (3067.9 ms)
+    sys:         00:03:08 (188.9 ms)
+  Size (MB):     12,192.94 (12785224589 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.gz)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 10:55:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.gz
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.pigz.4.dec.log
+  Process PID:   13197
+  Exit code:     0
+  Wall time:     00:19:29 (1169.6 ms)
+  Memory (MB):   6.0
+  Resources:    
+    ru_utime:    00:09:49 (589.3 ms)
+    ru_stime:    00:04:24 (264.0 ms)
+    ru_maxrss:   6104
+    ru_minflt:   662
+    ru_majflt:   7
+    ru_inblock:  24974392
+    ru_oublock:  148271496
+    ru_nvcsw:    7211015
+    ru_nivcsw:   141845
+  GNU time:     
+    real:        00:19:29 (1169.5 ms)
+    user:        00:09:49 (589.3 ms)
+    sys:         00:04:23 (263.9 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 11:29:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4 
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.bz2
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.pbzip2.4.cmp.log
+  Process PID:   14114
+  Exit code:     0
+  Wall time:     01:08:03 (4083.1 ms)
+  Memory (MB):   39.9
+  Resources:    
+    ru_utime:    04:25:15 (15915.3 ms)
+    ru_stime:    00:05:45 (345.9 ms)
+    ru_maxrss:   40884
+    ru_minflt:   35581750
+    ru_majflt:   8
+    ru_inblock:  148298480
+    ru_oublock:  20022744
+    ru_nvcsw:    469267
+    ru_nivcsw:   1934257
+  GNU time:     
+    real:        01:08:03 (4083.0 ms)
+    user:        04:25:15 (15915.3 ms)
+    sys:         00:05:45 (345.9 ms)
+  Size (MB):     9,776.21 (10251095308 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.bz2)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 12:37:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.bz2
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.pbzip2.4.dec.log
+  Process PID:   16045
+  Exit code:     0
+  Wall time:     00:25:59 (1559.5 ms)
+  Memory (MB):   25.1
+  Resources:    
+    ru_utime:    00:38:24 (2304.6 ms)
+    ru_stime:    00:04:25 (265.8 ms)
+    ru_maxrss:   25720
+    ru_minflt:   37242430
+    ru_majflt:   4
+    ru_inblock:  20048200
+    ru_oublock:  148271552
+    ru_nvcsw:    176936
+    ru_nivcsw:   350493
+  GNU time:     
+    real:        00:25:59 (1559.4 ms)
+    user:        00:38:24 (2304.6 ms)
+    sys:         00:04:25 (265.8 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 13:17:19 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram -r data/sam/ref/hg19.fa
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.4.cmp.log
+  Process PID:   17075
+  Exit code:     0
+  Wall time:     00:13:04 (784.9 ms)
+  Memory (MB):   810.5
+  Resources:    
+    ru_utime:    00:29:32 (1772.9 ms)
+    ru_stime:    00:01:49 (109.6 ms)
+    ru_maxrss:   829984
+    ru_minflt:   9982672
+    ru_majflt:   41
+    ru_inblock:  154465016
+    ru_oublock:  18088464
+    ru_nvcsw:    555176
+    ru_nivcsw:   411453
+  GNU time:     
+    real:        00:13:04 (784.8 ms)
+    user:        00:29:32 (1772.9 ms)
+    sys:         00:01:49 (109.6 ms)
+  Size (MB):     8,832.17 (9261206440 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 13:30:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.4.dec.log
+  Process PID:   17482
+  Exit code:     0
+  Wall time:     00:17:47 (1067.1 ms)
+  Memory (MB):   619.2
+  Resources:    
+    ru_utime:    00:12:56 (776.6 ms)
+    ru_stime:    00:01:14 (74.1 ms)
+    ru_maxrss:   634104
+    ru_minflt:   2610406
+    ru_majflt:   40
+    ru_inblock:  24281640
+    ru_oublock:  140651008
+    ru_nvcsw:    63136
+    ru_nivcsw:   151116
+  GNU time:     
+    real:        00:17:47 (1067.0 ms)
+    user:        00:12:56 (776.6 ms)
+    sys:         00:01:14 (74.1 ms)
+  Size (MB):     68,677.24 (72013308920 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 14:01:34 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram -j -7 -r data/sam/ref/hg19.fa
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble-bzip2.4.cmp.log
+  Process PID:   18322
+  Exit code:     0
+  Wall time:     00:14:45 (885.1 ms)
+  Memory (MB):   830.2
+  Resources:    
+    ru_utime:    00:57:56 (3476.4 ms)
+    ru_stime:    00:02:16 (136.0 ms)
+    ru_maxrss:   850168
+    ru_minflt:   21369769
+    ru_majflt:   40
+    ru_inblock:  154464752
+    ru_oublock:  16818288
+    ru_nvcsw:    566776
+    ru_nivcsw:   544239
+  GNU time:     
+    real:        00:14:44 (884.9 ms)
+    user:        00:57:56 (3476.4 ms)
+    sys:         00:02:16 (136.0 ms)
+  Size (MB):     8,211.96 (8610865465 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 14:16:29 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble-bzip2.4.dec.log
+  Process PID:   18705
+  Exit code:     0
+  Wall time:     00:21:14 (1274.8 ms)
+  Memory (MB):   617.8
+  Resources:    
+    ru_utime:    00:17:40 (1060.6 ms)
+    ru_stime:    00:01:35 (95.7 ms)
+    ru_maxrss:   632648
+    ru_minflt:   11266239
+    ru_majflt:   40
+    ru_inblock:  23011448
+    ru_oublock:  140651008
+    ru_nvcsw:    52418
+    ru_nivcsw:   177648
+  GNU time:     
+    real:        00:21:14 (1274.7 ms)
+    user:        00:17:40 (1060.6 ms)
+    sys:         00:01:35 (95.7 ms)
+  Size (MB):     68,677.24 (72013308944 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 14:50:51 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram -x
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble-noref.4.cmp.log
+  Process PID:   19660
+  Exit code:     0
+  Wall time:     00:13:48 (828.7 ms)
+  Memory (MB):   206.0
+  Resources:    
+    ru_utime:    00:35:49 (2149.4 ms)
+    ru_stime:    00:01:50 (110.1 ms)
+    ru_maxrss:   210960
+    ru_minflt:   12874982
+    ru_majflt:   41
+    ru_inblock:  148284376
+    ru_oublock:  19216488
+    ru_nvcsw:    565700
+    ru_nivcsw:   416876
+  GNU time:     
+    real:        00:13:48 (828.6 ms)
+    user:        00:35:49 (2149.4 ms)
+    sys:         00:01:50 (110.0 ms)
+  Size (MB):     9,382.96 (9838744175 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 15:04:50 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble-noref.4.dec.log
+  Process PID:   20042
+  Exit code:     0
+  Wall time:     00:18:36 (1116.3 ms)
+  Memory (MB):   240.9
+  Resources:    
+    ru_utime:    00:14:53 (893.6 ms)
+    ru_stime:    00:01:21 (81.2 ms)
+    ru_maxrss:   246728
+    ru_minflt:   6791742
+    ru_majflt:   40
+    ru_inblock:  19229136
+    ru_oublock:  148271496
+    ru_nvcsw:    51391
+    ru_nivcsw:   161736
+  GNU time:     
+    real:        00:18:36 (1116.2 ms)
+    user:        00:14:53 (893.6 ms)
+    sys:         00:01:21 (81.2 ms)
+  Size (MB):     72,398.19 (75915001839 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 15:37:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 4 K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.bam 
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.4.cmp.log
+  Process PID:   20925
+  Exit code:     0
+  Wall time:     00:13:41 (821.5 ms)
+  Memory (MB):   18.1
+  Resources:    
+    ru_utime:    00:51:58 (3118.5 ms)
+    ru_stime:    00:02:00 (120.7 ms)
+    ru_maxrss:   18568
+    ru_minflt:   27525598
+    ru_majflt:   25
+    ru_inblock:  148279560
+    ru_oublock:  26879816
+    ru_nvcsw:    279531
+    ru_nivcsw:   732551
+  GNU time:     
+    real:        00:13:41 (821.4 ms)
+    user:        00:51:58 (3118.5 ms)
+    sys:         00:02:00 (120.7 ms)
+  Size (MB):     13,124.73 (13762281904 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.bam, K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.bam.bai)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-03-04 15:51:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -h -t 4 K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.bam -o K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.4.dec.log
+  Process PID:   21302
+  Exit code:     0
+  Wall time:     00:20:54 (1254.6 ms)
+  Memory (MB):   20.2
+  Resources:    
+    ru_utime:    00:13:05 (785.7 ms)
+    ru_stime:    00:01:50 (110.3 ms)
+    ru_maxrss:   20660
+    ru_minflt:   2299
+    ru_majflt:   23
+    ru_inblock:  26875736
+    ru_oublock:  148271496
+    ru_nvcsw:    1224013
+    ru_nivcsw:   220234
+  GNU time:     
+    real:        00:20:54 (1254.4 ms)
+    user:        00:13:05 (785.7 ms)
+    sys:         00:01:50 (110.3 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 16:26:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v K562_cytosol_LID8465_TopHat_v2.bam.sam 
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/quip/K562_cytosol_LID8465_TopHat_v2.bam.sam.qp
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.quip.4.cmp.log
+  Process PID:   22264
+  Exit code:     0
+  Wall time:     00:57:37 (3457.1 ms)
+  Memory (MB):   583.2
+  Resources:    
+    ru_utime:    01:42:38 (6158.4 ms)
+    ru_stime:    00:01:38 (98.7 ms)
+    ru_maxrss:   597228
+    ru_minflt:   152466
+    ru_majflt:   17
+    ru_inblock:  148276224
+    ru_oublock:  21849224
+    ru_nvcsw:    192885
+    ru_nivcsw:   1343740
+  GNU time:     
+    real:        00:57:37 (3457.0 ms)
+    user:        01:42:38 (6158.4 ms)
+    sys:         00:01:38 (98.7 ms)
+  Size (MB):     10,667.38 (11185554241 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/quip/K562_cytosol_LID8465_TopHat_v2.bam.sam.qp)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-04 17:24:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o sam K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/quip/K562_cytosol_LID8465_TopHat_v2.bam.sam.qp
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/quip/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.quip.4.dec.log
+  Process PID:   29705
+  Exit code:     0
+  Wall time:     01:06:25 (3985.4 ms)
+  Memory (MB):   576.8
+  Resources:    
+    ru_utime:    01:56:01 (6961.9 ms)
+    ru_stime:    00:02:03 (123.7 ms)
+    ru_maxrss:   590668
+    ru_minflt:   154396
+    ru_majflt:   17
+    ru_inblock:  21851480
+    ru_oublock:  148271496
+    ru_nvcsw:    219334
+    ru_nivcsw:   945443
+  GNU time:     
+    real:        01:06:25 (3985.3 ms)
+    user:        01:56:01 (6961.9 ms)
+    sys:         00:02:03 (123.7 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/quip/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+>>> quip-ref (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 18:44:50 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v K562_cytosol_LID8465_TopHat_v2.bam.sam -r data/sam/ref/hg19.fa
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/quip-ref/K562_cytosol_LID8465_TopHat_v2.bam.sam.qp
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.quip-ref.4.cmp.log
+  Process PID:   5828
+  Exit code:     0
+  Wall time:     00:57:28 (3448.7 ms)
+  Memory (MB):   1668.0
+  Resources:    
+    ru_utime:    01:45:57 (6357.6 ms)
+    ru_stime:    00:01:37 (97.8 ms)
+    ru_maxrss:   1708080
+    ru_minflt:   221416
+    ru_majflt:   17
+    ru_inblock:  154526080
+    ru_oublock:  17077776
+    ru_nvcsw:    188619
+    ru_nivcsw:   1392380
+  GNU time:     
+    real:        00:57:28 (3448.6 ms)
+    user:        01:45:57 (6357.6 ms)
+    sys:         00:01:37 (97.8 ms)
+  Size (MB):     8,337.56 (8742568440 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/quip-ref/K562_cytosol_LID8465_TopHat_v2.bam.sam.qp)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-08 20:54:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -r data/sam/ref/hg19.fa -v -d -o sam K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/quip-ref/K562_cytosol_LID8465_TopHat_v2.bam.sam.qp
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/quip-ref/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.quip-ref.4.dec.log
+  Process PID:   15257
+  Exit code:     0
+  Wall time:     01:05:50 (3950.9 ms)
+  Memory (MB):   1662.5
+  Resources:    
+    ru_utime:    01:54:32 (6872.3 ms)
+    ru_stime:    00:01:59 (119.1 ms)
+    ru_maxrss:   1702360
+    ru_minflt:   223211
+    ru_majflt:   16
+    ru_inblock:  23329952
+    ru_oublock:  148271512
+    ru_nvcsw:    225411
+    ru_nivcsw:   965260
+  GNU time:     
+    real:        01:05:50 (3950.1 ms)
+    user:        01:54:32 (6872.3 ms)
+    sys:         00:01:59 (119.1 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/quip-ref/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-01-14 17:33:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz 
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez.4.cmp.log
+  Process PID:   26250
+  Exit code:     0
+  Wall time:     00:37:50 (2270.1 ms)
+  Memory (MB):   2426.4
+  Resources:    
+    ru_utime:    01:14:50 (4490.0 ms)
+    ru_stime:    00:02:22 (142.9 ms)
+    ru_maxrss:   2484680
+    ru_minflt:   14278739
+    ru_majflt:   43
+    ru_inblock:  154484800
+    ru_oublock:  15872784
+    ru_nvcsw:    4203475
+    ru_nivcsw:   1071353
+  GNU time:     
+    real:        00:37:50 (2270.0 ms)
+    user:        01:14:50 (4490.0 ms)
+    sys:         00:02:22 (142.9 ms)
+  Size (MB):     7,749.77 (8126221802 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+*** 2016-01-14 18:11:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz -o K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez.4.dec.log
+  Process PID:   31770
+  Exit code:     0
+  Wall time:     00:38:05 (2285.2 ms)
+  Memory (MB):   5086.7
+  Resources:    
+    ru_utime:    00:48:08 (2888.2 ms)
+    ru_stime:    00:06:25 (385.7 ms)
+    ru_maxrss:   5208780
+    ru_minflt:   3013305
+    ru_majflt:   42
+    ru_inblock:  22085360
+    ru_oublock:  148272208
+    ru_nvcsw:    32416758
+    ru_nivcsw:   385208
+  GNU time:     
+    real:        00:38:05 (2285.1 ms)
+    user:        00:48:08 (2888.2 ms)
+    sys:         00:06:25 (385.6 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-01-19 20:21:55 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz -q1 -b
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez-qual.4.cmp.log
+  Process PID:   29938
+  Exit code:     0
+  Wall time:     01:01:28 (3688.1 ms)
+  Memory (MB):   2880.2
+  Resources:    
+    ru_utime:    02:15:20 (8120.2 ms)
+    ru_stime:    00:02:40 (160.1 ms)
+    ru_maxrss:   2949316
+    ru_minflt:   20532147
+    ru_majflt:   43
+    ru_inblock:  154485376
+    ru_oublock:  14205904
+    ru_nvcsw:    4960557
+    ru_nivcsw:   1441282
+  GNU time:     
+    real:        01:01:27 (3687.9 ms)
+    user:        02:15:20 (8120.2 ms)
+    sys:         00:02:40 (160.1 ms)
+  Size (MB):     6,935.58 (7272480161 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz)
+  Free space:      2.8T  2.0T  771G  73% /local-scratch
+*** 2016-01-19 21:23:32 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz -o K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez-qual.4.dec.log
+  Process PID:   3650
+  Exit code:     0
+  Wall time:     00:55:47 (3347.3 ms)
+  Memory (MB):   5303.2
+  Resources:    
+    ru_utime:    01:24:21 (5061.6 ms)
+    ru_stime:    00:05:03 (303.8 ms)
+    ru_maxrss:   5430520
+    ru_minflt:   6557631
+    ru_majflt:   42
+    ru_inblock:  20417920
+    ru_oublock:  148272424
+    ru_nvcsw:    23114826
+    ru_nivcsw:   582897
+  GNU time:     
+    real:        00:55:47 (3347.1 ms)
+    user:        01:24:21 (5061.6 ms)
+    sys:         00:05:03 (303.8 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  2.1T  701G  75% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++          K562_cytosol_LID8465_TopHat_v2.bam with 8 threads           + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 19:42:29 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8 
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.gz
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.pigz.8.cmp.log
+  Process PID:   13268
+  Exit code:     0
+  Wall time:     00:09:08 (548.1 ms)
+  Memory (MB):   9.9
+  Resources:    
+    ru_utime:    00:51:25 (3085.3 ms)
+    ru_stime:    00:02:51 (171.6 ms)
+    ru_maxrss:   10100
+    ru_minflt:   1956
+    ru_majflt:   8
+    ru_inblock:  148273768
+    ru_oublock:  24971264
+    ru_nvcsw:    1167351
+    ru_nivcsw:   530686
+  GNU time:     
+    real:        00:09:08 (548.1 ms)
+    user:        00:51:25 (3085.3 ms)
+    sys:         00:02:51 (171.6 ms)
+  Size (MB):     12,192.94 (12785224589 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.gz)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-03-04 19:51:47 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.gz
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.pigz.8.dec.log
+  Process PID:   13508
+  Exit code:     0
+  Wall time:     00:18:49 (1129.8 ms)
+  Memory (MB):   6.0
+  Resources:    
+    ru_utime:    00:09:46 (586.8 ms)
+    ru_stime:    00:04:28 (268.6 ms)
+    ru_maxrss:   6136
+    ru_minflt:   662
+    ru_majflt:   7
+    ru_inblock:  24974656
+    ru_oublock:  148271496
+    ru_nvcsw:    7209929
+    ru_nivcsw:   142606
+  GNU time:     
+    real:        00:18:49 (1129.7 ms)
+    user:        00:09:46 (586.8 ms)
+    sys:         00:04:28 (268.6 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/pigz/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 20:24:56 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8 
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam.sam
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.bz2
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.pbzip2.8.cmp.log
+  Process PID:   14415
+  Exit code:     0
+  Wall time:     00:36:06 (2166.7 ms)
+  Memory (MB):   75.4
+  Resources:    
+    ru_utime:    04:35:02 (16502.7 ms)
+    ru_stime:    00:06:35 (395.0 ms)
+    ru_maxrss:   77168
+    ru_minflt:   43981579
+    ru_majflt:   8
+    ru_inblock:  148298768
+    ru_oublock:  20022208
+    ru_nvcsw:    440024
+    ru_nivcsw:   1996261
+  GNU time:     
+    real:        00:36:06 (2166.6 ms)
+    user:        04:35:02 (16502.7 ms)
+    sys:         00:06:35 (395.0 ms)
+  Size (MB):     9,776.21 (10251095308 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.bz2)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-03-04 21:01:12 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.bz2
+    stdout:      K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.pbzip2.8.dec.log
+  Process PID:   15352
+  Exit code:     0
+  Wall time:     00:22:17 (1337.3 ms)
+  Memory (MB):   47.5
+  Resources:    
+    ru_utime:    00:43:09 (2589.5 ms)
+    ru_stime:    00:05:08 (308.1 ms)
+    ru_maxrss:   48600
+    ru_minflt:   37534241
+    ru_majflt:   8
+    ru_inblock:  20048616
+    ru_oublock:  148271496
+    ru_nvcsw:    152900
+    ru_nivcsw:   370356
+  GNU time:     
+    real:        00:22:17 (1337.2 ms)
+    user:        00:43:09 (2589.5 ms)
+    sys:         00:05:08 (308.1 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/pbzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 21:37:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram -r data/sam/ref/hg19.fa
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.8.cmp.log
+  Process PID:   16331
+  Exit code:     0
+  Wall time:     00:13:17 (797.2 ms)
+  Memory (MB):   1048.9
+  Resources:    
+    ru_utime:    00:30:33 (1833.1 ms)
+    ru_stime:    00:01:50 (110.1 ms)
+    ru_maxrss:   1074112
+    ru_minflt:   10016029
+    ru_majflt:   41
+    ru_inblock:  154464808
+    ru_oublock:  18091648
+    ru_nvcsw:    558731
+    ru_nivcsw:   466910
+  GNU time:     
+    real:        00:13:17 (797.0 ms)
+    user:        00:30:33 (1833.1 ms)
+    sys:         00:01:50 (110.0 ms)
+  Size (MB):     8,833.73 (9262839283 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-03-04 21:50:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.8.dec.log
+  Process PID:   16709
+  Exit code:     0
+  Wall time:     00:17:11 (1031.4 ms)
+  Memory (MB):   713.9
+  Resources:    
+    ru_utime:    00:13:03 (783.7 ms)
+    ru_stime:    00:01:19 (79.4 ms)
+    ru_maxrss:   731020
+    ru_minflt:   4266554
+    ru_majflt:   25
+    ru_inblock:  24282800
+    ru_oublock:  140651008
+    ru_nvcsw:    69944
+    ru_nivcsw:   147395
+  GNU time:     
+    real:        00:17:11 (1031.3 ms)
+    user:        00:13:03 (783.7 ms)
+    sys:         00:01:19 (79.4 ms)
+  Size (MB):     68,677.24 (72013308920 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 22:21:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram -j -7 -r data/sam/ref/hg19.fa
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble-bzip2.8.cmp.log
+  Process PID:   17518
+  Exit code:     0
+  Wall time:     00:13:12 (792.6 ms)
+  Memory (MB):   1099.6
+  Resources:    
+    ru_utime:    00:58:23 (3503.3 ms)
+    ru_stime:    00:02:26 (146.1 ms)
+    ru_maxrss:   1126028
+    ru_minflt:   25362514
+    ru_majflt:   41
+    ru_inblock:  154464640
+    ru_oublock:  16821496
+    ru_nvcsw:    557099
+    ru_nivcsw:   601783
+  GNU time:     
+    real:        00:13:12 (792.5 ms)
+    user:        00:58:23 (3503.3 ms)
+    sys:         00:02:26 (146.1 ms)
+  Size (MB):     8,213.53 (8612514129 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-03-04 22:34:32 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble-bzip2.8.dec.log
+  Process PID:   17884
+  Exit code:     0
+  Wall time:     00:20:58 (1258.5 ms)
+  Memory (MB):   753.8
+  Resources:    
+    ru_utime:    00:17:43 (1063.8 ms)
+    ru_stime:    00:01:40 (100.2 ms)
+    ru_maxrss:   771856
+    ru_minflt:   11942436
+    ru_majflt:   40
+    ru_inblock:  23014440
+    ru_oublock:  140651008
+    ru_nvcsw:    56854
+    ru_nivcsw:   176528
+  GNU time:     
+    real:        00:20:58 (1258.4 ms)
+    user:        00:17:43 (1063.8 ms)
+    sys:         00:01:40 (100.2 ms)
+  Size (MB):     68,677.24 (72013308944 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble-bzip2/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 23:08:41 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram -x
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble-noref.8.cmp.log
+  Process PID:   18799
+  Exit code:     0
+  Wall time:     00:13:15 (795.5 ms)
+  Memory (MB):   210.6
+  Resources:    
+    ru_utime:    00:35:25 (2125.6 ms)
+    ru_stime:    00:01:43 (103.6 ms)
+    ru_maxrss:   215704
+    ru_minflt:   13214671
+    ru_majflt:   41
+    ru_inblock:  148284080
+    ru_oublock:  19216368
+    ru_nvcsw:    561050
+    ru_nivcsw:   404419
+  GNU time:     
+    real:        00:13:15 (795.3 ms)
+    user:        00:35:25 (2125.6 ms)
+    sys:         00:01:43 (103.6 ms)
+  Size (MB):     9,382.91 (9838689842 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-03-04 23:22:06 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble.cram K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.scramble-noref.8.dec.log
+  Process PID:   19174
+  Exit code:     0
+  Wall time:     00:18:30 (1110.8 ms)
+  Memory (MB):   509.8
+  Resources:    
+    ru_utime:    00:14:50 (890.0 ms)
+    ru_stime:    00:01:23 (83.7 ms)
+    ru_maxrss:   522056
+    ru_minflt:   7938543
+    ru_majflt:   40
+    ru_inblock:  19228736
+    ru_oublock:  148271496
+    ru_nvcsw:    61287
+    ru_nivcsw:   158183
+  GNU time:     
+    real:        00:18:30 (1110.6 ms)
+    user:        00:14:50 (890.0 ms)
+    sys:         00:01:23 (83.7 ms)
+  Size (MB):     72,398.19 (75915001839 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/scramble-noref/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-03-04 23:54:31 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 8 K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.bam 
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.8.cmp.log
+  Process PID:   20064
+  Exit code:     0
+  Wall time:     00:12:01 (721.9 ms)
+  Memory (MB):   26.8
+  Resources:    
+    ru_utime:    01:07:36 (4056.7 ms)
+    ru_stime:    00:02:39 (159.7 ms)
+    ru_maxrss:   27396
+    ru_minflt:   27525751
+    ru_majflt:   22
+    ru_inblock:  148278080
+    ru_oublock:  26879728
+    ru_nvcsw:    870612
+    ru_nivcsw:   1083928
+  GNU time:     
+    real:        00:12:01 (721.7 ms)
+    user:        01:07:36 (4056.7 ms)
+    sys:         00:02:39 (159.7 ms)
+  Size (MB):     13,124.73 (13762281904 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.bam, K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.bam.bai)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-03-05 00:06:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -h -t 8 K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.bam -o K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.sambamba.8.dec.log
+  Process PID:   20444
+  Exit code:     0
+  Wall time:     00:19:41 (1181.9 ms)
+  Memory (MB):   41.8
+  Resources:    
+    ru_utime:    00:22:57 (1377.5 ms)
+    ru_stime:    00:01:58 (118.2 ms)
+    ru_maxrss:   42844
+    ru_minflt:   3916
+    ru_majflt:   23
+    ru_inblock:  26875736
+    ru_oublock:  148271496
+    ru_nvcsw:    1358070
+    ru_nivcsw:   325460
+  GNU time:     
+    real:        00:19:41 (1181.7 ms)
+    user:        00:22:57 (1377.5 ms)
+    sys:         00:01:58 (118.2 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/sambamba/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-01-14 18:49:40 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz 
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez.8.cmp.log
+  Process PID:   2833
+  Exit code:     0
+  Wall time:     00:35:35 (2135.5 ms)
+  Memory (MB):   2397.8
+  Resources:    
+    ru_utime:    01:38:04 (5884.9 ms)
+    ru_stime:    00:03:05 (185.1 ms)
+    ru_maxrss:   2455324
+    ru_minflt:   32948264
+    ru_majflt:   43
+    ru_inblock:  154484784
+    ru_oublock:  15892920
+    ru_nvcsw:    4594270
+    ru_nivcsw:   1222570
+  GNU time:     
+    real:        00:35:35 (2135.3 ms)
+    user:        01:38:04 (5884.9 ms)
+    sys:         00:03:05 (185.1 ms)
+  Size (MB):     7,759.62 (8136552973 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+*** 2016-01-14 19:25:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz -o K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez.8.dec.log
+  Process PID:   13640
+  Exit code:     0
+  Wall time:     00:33:44 (2024.6 ms)
+  Memory (MB):   7736.1
+  Resources:    
+    ru_utime:    00:47:22 (2842.7 ms)
+    ru_stime:    00:04:31 (271.8 ms)
+    ru_maxrss:   7921720
+    ru_minflt:   7480161
+    ru_majflt:   42
+    ru_inblock:  22105288
+    ru_oublock:  148272136
+    ru_nvcsw:    19702873
+    ru_nivcsw:   367261
+  GNU time:     
+    real:        00:33:44 (2024.3 ms)
+    user:        00:47:22 (2842.7 ms)
+    sys:         00:04:31 (271.8 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  2.1T  741G  74% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: K562_cytosol_LID8465_TopHat_v2.bam.sam)
+*** 2016-01-19 22:32:48 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam.sam -o K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz -q1 -b
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez-qual.8.cmp.log
+  Process PID:   7451
+  Exit code:     0
+  Wall time:     00:58:56 (3536.2 ms)
+  Memory (MB):   2886.5
+  Resources:    
+    ru_utime:    02:40:15 (9615.6 ms)
+    ru_stime:    00:03:02 (182.8 ms)
+    ru_maxrss:   2955796
+    ru_minflt:   31282773
+    ru_majflt:   43
+    ru_inblock:  154485368
+    ru_oublock:  14224192
+    ru_nvcsw:    4814753
+    ru_nivcsw:   1599020
+  GNU time:     
+    real:        00:58:56 (3536.0 ms)
+    user:        02:40:15 (9615.6 ms)
+    sys:         00:03:02 (182.8 ms)
+  Size (MB):     6,944.53 (7281869529 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz)
+  Free space:      2.8T  2.0T  771G  73% /local-scratch
+*** 2016-01-19 23:31:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/hg19.fa -! K562_cytosol_LID8465_TopHat_v2.bam/output/compressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.dz -o K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam
+    stderr:      K562_cytosol_LID8465_TopHat_v2.bam/log/K562_cytosol_LID8465_TopHat_v2.bam.sam.deez-qual.8.dec.log
+  Process PID:   18229
+  Exit code:     0
+  Wall time:     00:53:54 (3234.8 ms)
+  Memory (MB):   8258.7
+  Resources:    
+    ru_utime:    01:25:41 (5141.7 ms)
+    ru_stime:    00:04:06 (246.8 ms)
+    ru_maxrss:   8456916
+    ru_minflt:   10849835
+    ru_majflt:   42
+    ru_inblock:  20436288
+    ru_oublock:  148272408
+    ru_nvcsw:    14527590
+    ru_nivcsw:   587553
+  GNU time:     
+    real:        00:53:54 (3234.5 ms)
+    user:        01:25:41 (5141.7 ms)
+    sys:         00:04:06 (246.8 ms)
+  Size (MB):     72,398.19 (75915001196 bytes) (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/deez-qual/K562_cytosol_LID8465_TopHat_v2.bam.sam.sam)
+  Free space:      2.8T  2.1T  701G  75% /local-scratch
+
+
+Done!

@@ -1,0 +1,88 @@
+tools/lfqc/lfqc/lfqcd.rb:77: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+3767.142 seconds (all OK)
+14.306 seconds (all OK)
+
+################################################################################
+
+Work dir SRR1284073/output/compressed/lfqc/tmp_80c5f37b480a05c57815de73a875752d_SRR1284073.fastq.lfqc
+
+Running tar xf SRR1284073/output/compressed/lfqc/SRR1284073.fastq.lfqc -C SRR1284073/output/compressed/lfqc/tmp_80c5f37b480a05c57815de73a875752d_SRR1284073.fastq.lfqc
+
+Unzipping qual file SRR1284073/output/compressed/lfqc/tmp_80c5f37b480a05c57815de73a875752d_SRR1284073.fastq.lfqc/SRR1284073.fastq_qual_noEOL.zpaq
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq e SRR1284073/output/compressed/lfqc/tmp_80c5f37b480a05c57815de73a875752d_SRR1284073.fastq.lfqc/SRR1284073.fastq_qual_noEOL.zpaq -threads 4
+
+Unzipping data file SRR1284073/output/compressed/lfqc/tmp_80c5f37b480a05c57815de73a875752d_SRR1284073.fastq.lfqc/SRR1284073.fastq_data_noEOL.lpaq
+
+Running tools/lfqc/lfqc/../lpaq8/lpaq8 d SRR1284073/output/compressed/lfqc/tmp_80c5f37b480a05c57815de73a875752d_SRR1284073.fastq.lfqc/SRR1284073.fastq_data_noEOL.lpaq SRR1284073/output/compressed/lfqc/tmp_80c5f37b480a05c57815de73a875752d_SRR1284073.fastq.lfqc/SRR1284073.fastq_data_noEOL
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+SRR1284073/output/compressed/lfqc/tmp_80c5f37b480a05c57815de73a875752d_SRR1284073.fastq.lfqc/SRR1284073.fastq_qual_noEOL.zpaq: 1 versions, 1 files, 9507 fragments, 250.437847 MB
+
+Extracting 649.429891 MB in 1 files -threads 4
+
+[2943..3981] -> 66922426
+
+> SRR1284073.fastq_qual_noEOL
+
+10.30% 3:36:44 [1..986] -> 67025991
+
+20.62% 1:36:16 [987..1964] -> 67080948
+
+30.95% 0:55:53 [1965..2942] -> 66938315
+
+41.26% 1:10:36 [5901..6876] -> 67080145
+
+51.59% 0:46:45 [3982..4956] -> 67021533
+
+61.91% 0:30:43 [6877..7855] -> 67087282
+
+61.91% 0:30:43 [4957..5900] -> 67076096
+
+82.57% 0:12:37 [8811..9507] -> 46170112
+
+89.67% 0:07:13 [7856..8810] -> 67059712
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq e SRR1284073.fastq_name_sep.zpaq -threads 4
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+SRR1284073.fastq_name_sep.zpaq: 1 versions, 5 files, 18 fragments, 0.255236 MB
+
+Extracting 1.073216 MB in 5 files -threads 4
+
+[1..18] -> 1063637
+
+> 0_rle
+
+> 1_dif
+
+> 2_rle
+
+> 3_rev
+
+100.00% 0:00:00 > sep
+
+155803551 -> 649429887 in 1002.020 sec. using 1542 MB memory
+
+Processing file 0_rle
+
+Processing file 1_dif
+
+Processing file 2_rle
+
+Processing file 3_rev
+
+Max Column 3
+
+Cleaning up...
+
+Done.
+
+lfqcd SRR1284073/output/compressed/lfqc/SRR1284073.fastq.lfqc   3.340000   0.240000 3893.750000 (3898.990689)
+
+
+
+lfqcdSize SRR1284073/output/decompressed/lfqc/SRR1284073.fastq.fq 67982324 compressed size 406507520
+

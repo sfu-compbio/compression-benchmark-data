@@ -1,0 +1,50 @@
+2015/11/15 22:33:51 Starting kpath version 0.6.3 (1-6-15)
+2015/11/15 22:33:51 Maximum threads = 10
+kpath (decode): 2015/11/15 22:33:51 Using kmer size = 16
+kpath (decode): 2015/11/15 22:33:51 Option: psudeoCount = 1
+kpath (decode): 2015/11/15 22:33:51 Option: observationWeight = 10
+kpath (decode): 2015/11/15 22:33:51 Option: seenThreshold = 2
+kpath (decode): 2015/11/15 22:33:51 Option: flipReadsOption = true
+kpath (decode): 2015/11/15 22:33:51 Option: dupsOption = true
+kpath (decode): 2015/11/15 22:33:51 Option: updateReference = true
+kpath (decode): 2015/11/15 22:33:51 Reading from MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.enc, MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.bittree, and MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.counts
+kpath (decode): 2015/11/15 22:33:51 Reading Reference File...
+kpath (decode): 2015/11/15 22:33:51 Decoding kmer buckets from MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.bittree
+kpath (decode): 2015/11/15 22:33:51 Reading locations of Ns from MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.ns
+kpath (decode): 2015/11/15 22:33:51 Writing to MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.fq
+kpath (decode): 2015/11/15 22:33:51 Reading bucket counts from MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.counts
+kpath (decode): 2015/11/15 22:33:51 Reading flipped bits from MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.flipped
+kpath (decode): 2015/11/15 22:33:51 Read 11640680 bits indicating whether reads were flipped.
+kpath (decode): 2015/11/15 22:33:56 Read locations for 5403 Ns.
+kpath (decode): 2015/11/15 22:34:05 Number of uniform buckets = 1525073
+kpath (decode): 2015/11/15 22:34:05 Total counts = 11640674
+kpath (decode): 2015/11/15 22:34:05 done; read 7915169 counts
+kpath (decode): 2015/11/15 22:35:26 Stopping after 129281217 bits
+kpath (decode): 2015/11/15 22:35:26 Processed 129281213 bits
+kpath (decode): 2015/11/15 22:35:26 done; found 7915169 kmers
+kpath (decode): 2015/11/15 22:36:28 Creating small kmer count model.
+kpath (decode): 2015/11/15 22:36:28 Counting 16-mer transitions in reference file...
+kpath (decode): 2015/11/15 22:58:58 Time: Took 1506.858013493 seconds to read reference.
+kpath (decode): 2015/11/15 22:58:58 Read length = 44
+kpath (decode): 2015/11/15 22:58:58 Decoding reads...
+kpath (decode): 2015/11/15 22:58:58 Currently have 4 Go routines...
+kpath (decode): 2015/11/15 23:02:59 Added back 5403 Ns to the reads.
+kpath (decode): 2015/11/15 23:02:59 MD5 hash of reads = 200c237dbaf28edec51688f23d675f15
+kpath (decode): 2015/11/15 23:02:59 done. Wrote 11640674 reads; 5810367 were flipped
+kpath (decode): 2015/11/15 23:02:59 Default interval used 63126317 times and context used 185681887 times
+kpath (decode): 2015/11/15 23:02:59 kpath took 1747.866430969 to run.
+
+################################################################################
+
+kpath  Copyright (C) 2014  Carl Kingsford & Rob Patro
+
+
+
+This program comes with ABSOLUTELY NO WARRANTY; This is free software, and
+
+you are welcome to redistribute it under certain conditions; see
+
+accompanying LICENSE.txt file.
+
+
+

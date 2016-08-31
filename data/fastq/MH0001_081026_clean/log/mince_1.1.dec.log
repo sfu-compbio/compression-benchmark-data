@@ -1,0 +1,19 @@
+[ decode] => { }
+[ input] => { MH0001_081026_clean.1.fq.mince }
+[ threads] => { 1 }
+[ output] => { MH0001_081026_clean.1.fq.fq }
+[2016-08-23 19:20:13.191] [jointLog] [info] You requested 1 threads, but the minimum is 4. Setting # threads to 4.
+[2016-08-23 19:20:13.191] [jointLog] [info] reading seq buffer with command plzip -d -c -n 1 MH0001_081026_clean.1.fq.mince.seqs.lz
+[2016-08-23 19:20:13.192] [jointLog] [info] reading offset buffer with command plzip -d -c -n 1 MH0001_081026_clean.1.fq.mince.offs.lz
+[2016-08-23 19:20:13.192] [jointLog] [info] reading Ns buffer with command plzip -d -c -n 1 MH0001_081026_clean.1.fq.mince.nlocs.lz
+[2016-08-23 19:20:13.808] [jointLog] [info] opened flip file "MH0001_081026_clean.1.fq.mince.flips.lz"
+[2016-08-23 19:20:13.809] [jointLog] [info] bucket string length = 15
+[2016-08-23 19:20:13.809] [jointLog] [info] effective read length = 88
+[2016-08-23 19:20:13.809] [jointLog] [info] num onsies = 
+[2016-08-23 19:20:21.335] [jointLog] [info] done with onsies.
+[2016-08-23 19:20:21.335] [jointLog] [info] reset effective read length to 19
+wrote read 100000wrote read 200000wrote read 300000wrote read 400000wrote read 500000wrote read 600000wrote read 700000wrote read 800000wrote read 900000wrote read 1000000wrote read 1100000wrote read 1200000wrote read 1300000wrote read 1400000wrote read 1500000wrote read 1600000wrote read 1700000wrote read 1800000wrote read 1900000wrote read 2000000wrote read 2100000wrote read 2200000wrote read 2300000wrote read 2400000wrote read 2500000wrote read 2600000wrote read 2700000wrote read 2800000wrote read 2900000wrote read 3000000wrote read 3100000wrote read 3200000wrote read 3300000wrote read 3400000wrote read 3500000wrote read 3600000wrote read 3700000wrote read 3800000wrote read 3900000wrote read 4000000wrote read 4100000wrote read 4200000wrote read 4300000wrote read 4400000wrote read 4500000wrote read 4600000wrote read 4700000wrote read 4800000wrote read 4900000wrote read 5000000wrote read 5100000wrote read 5200000wrote read 5300000wrote read 5400000wrote read 5500000wrote read 5600000wrote read 5700000wrote read 5800000wrote read 5900000wrote read 6000000wrote read 6100000wrote read 6200000wrote read 6300000wrote read 6400000wrote read 6500000wrote read 6600000wrote read 6700000wrote read 6800000wrote read 6900000wrote read 7000000wrote read 7100000wrote read 7200000wrote read 7300000wrote read 7400000wrote read 7500000wrote read 7600000wrote read 7700000wrote read 7800000wrote read 7900000wrote read 8000000wrote read 8100000wrote read 8200000wrote read 8300000wrote read 8400000wrote read 8500000wrote read 8600000wrote read 8700000wrote read 8800000wrote read 8900000wrote read 9000000wrote read 9100000wrote read 9200000wrote read 9300000wrote read 9400000wrote read 9500000wrote read 9600000wrote read 9700000wrote read 9800000wrote read 9900000wrote read 10000000wrote read 10100000wrote read 10200000wrote read 10300000wrote read 10400000wrote read 10500000
+################################################################################
+
+Parameters: ,d,MH0001_081026_clean.1/output/compressed/mince/MH0001_081026_clean.1.fq.mince,MH0001_081026_clean.1/output/decompressed/mince/MH0001_081026_clean.1.fq.fq,1,tools/mince,MH0001_081026_clean.1/output/decompressed/mince
+

@@ -1,0 +1,15 @@
+
+################################################################################
+
+d,SRR870667/output/compressed/kic/SRR870667_2.fastq.kic,SRR870667/output/decompressed/kic/SRR870667_2.fastq.fq,8,tools/kic-0.2,SRR870667/output/decompressed/kic
+
+SRR870667_2.fastq.kic
+
+SRR870667_2.fastq.kic.name
+
+SRR870667_2.fastq.kic.qual
+
+SRR870667_2.fastq.kic.seq
+
+java -Xmx2000m -jar tools/kic-0.2/kid.jar SRR870667_2.fastq.kic
+

@@ -1,0 +1,56 @@
+DeeZ 0x12 (v1.1-16-gbdc7119-dirty)
+Loaded reference file data/sam/ref/Homo_sapiens_assembly19.fasta
+Loaded reference index data/sam/ref/Homo_sapiens_assembly19.fasta.fai
+Using quality mode samcomp
+	  5.8% [Chr 1          Block      1]	 10.7% [Chr 1          Block      2]	 16.4% [Chr 2          Block      3]	 19.2% [Chr 2          Block      4]	 24.9% [Chr 3          Block      5]	 25.2% [Chr 3          Block      6]	 27.7% [Chr 4          Block      7]	 31.5% [Chr 5          Block      8]	 37.2% [Chr 6          Block      9]	 41.6% [Chr 6          Block     10]	 47.4% [Chr 7          Block     11]	 49.1% [Chr 7          Block     12]	 54.8% [Chr 8          Block     13]	 55.0% [Chr 8          Block     14]	 58.7% [Chr 9          Block     15]	 62.4% [Chr 10         Block     16]	 68.1% [Chr 11         Block     17]	 72.6% [Chr 12         Block     18]	 74.0% [Chr 13         Block     19]	 76.2% [Chr 14         Block     20]	 78.7% [Chr 15         Block     21]	 82.4% [Chr 16         Block     22]	 87.5% [Chr 17         Block     23]	 88.9% [Chr 18         Block     24]	 91.9% [Chr 19         Block     25]	 94.7% [Chr 20         Block     26]	 95.2% [Chr 21         Block     27]	 97.0% [Chr 22         Block     28]	 99.4% [Chr X          Block     29]	 99.4% [Chr Y          Block     30]	 99.4% [Chr MT         Block     31]	100.0% [Chr *          Block     32]
+Written 17,480,371 lines
+Paired 0 out of 17,480,371 reads
+Reference                   80,672
+  Fixes     :               21,401
+  Fixes St  :               49,809
+  Replace   :                9,462
+Sequences               33,924,197
+  Positions :              737,980 
+  Stitches  :              237,818 
+  Opcode    :            2,744,375 
+  SeqPos    :            8,373,680 
+  SeqLen    :            7,980,260 
+  XLen      :              102,761 
+  HSLen     :            1,089,598 
+  AnyLen    :              498,105 
+  OPLen     :            4,202,324 
+  ACGTMiss  :              296,479 
+  ACGTIns   :            5,662,651 
+  ACGTUnmap :            1,998,166 
+Read Names              57,196,581
+  Index     :            1,059,061
+  Content   :           56,137,520
+  Paired    :                    0
+Flags                      224,124
+Map. Quals               6,333,657
+Qualities              794,073,812
+Paired End               5,364,060
+  Diff      :            5,164,566 
+  Chr       :                1,730 
+  Template  :                2,149 
+  Bits      :              195,615 
+Optionals               20,300,412
+  Tags      :            3,904,435
+  ASj       :            6,890,486
+  ASk       :              813,434
+  MDZ       :                1,658
+  NMi       :                    0
+  NMj       :                   63
+  PG^       :                1,533
+  RG^       :                1,533
+  XAZ       :            2,842,457
+  XEj       :            5,375,997
+  XEk       :                7,269
+  XFj       :                1,404
+  XSj       :              452,387
+  XSk       :                5,211
+  XSm       :                2,545
+MD stats: 55 failed out of 17,141,109
+
+################################################################################
+

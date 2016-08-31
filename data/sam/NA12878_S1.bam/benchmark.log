@@ -1,0 +1,585 @@
+Namespace(clear_cache=True, force=False, input='NA12878_S1.bam.sam', output_dir='temp/', ref='data/sam/ref/hg19.fa', rt=False)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                    NA12878_S1.bam with 1 threads                     + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                               samtools                               # 
+########################################################################
+>>> samtools (File 1)
+*** 2015-12-14 10:26:01 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -b NA12878_S1.bam.sam -o NA12878_S1.bam/output/compressed/samtools/NA12878_S1.bam.sam.bam 
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.samtools.1.cmp.log
+  Process PID:   1075
+  Exit code:     0
+  Wall time:     16:56:47 (61007.8 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    16:11:40 (58300.8 ms)
+    ru_stime:    00:31:37 (1897.2 ms)
+    ru_maxrss:   5956
+    ru_minflt:   222787699
+    ru_majflt:   13
+    ru_inblock:  1150556160
+    ru_oublock:  237730176
+    ru_nvcsw:    16237
+    ru_nivcsw:   9
+  GNU time:     
+    real:        16:56:47 (61007.5 ms)
+    user:        16:11:40 (58300.8 ms)
+    sys:         00:31:37 (1897.2 ms)
+  Size (MB):     116,071.36 (121709643615 bytes) (NA12878_S1.bam/output/compressed/samtools/NA12878_S1.bam.sam.bam)
+  Free space:      2.8T  1.3T  1.6T  45% /local-scratch
+*** 2015-12-15 03:23:29 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -h NA12878_S1.bam/output/compressed/samtools/NA12878_S1.bam.sam.bam -o NA12878_S1.bam/output/decompressed/samtools/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.samtools.1.dec.log
+  Process PID:   13442
+  Exit code:     0
+  Wall time:     03:57:43 (14263.8 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    02:36:59 (9419.7 ms)
+    ru_stime:    00:22:30 (1350.6 ms)
+    ru_maxrss:   5984
+    ru_minflt:   888
+    ru_majflt:   12
+    ru_inblock:  237718185
+    ru_oublock:  1150556584
+    ru_nvcsw:    50214
+    ru_nivcsw:   10
+  GNU time:     
+    real:        03:57:43 (14263.7 ms)
+    user:        02:36:59 (9419.7 ms)
+    sys:         00:22:30 (1350.6 ms)
+  Size (MB):     561,793.07 (589082725404 bytes) (NA12878_S1.bam/output/decompressed/samtools/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  1.8T 1002G  65% /local-scratch
+
+######################################################################## 
+#                               sam_comp                               # 
+########################################################################
+>>> sam_comp (File 1: NA12878_S1.bam.sam)
+*** 2016-02-22 03:19:29 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/sam_comp-0.10/sam_comp -r data/sam/ref/hg19.fa.sc 
+    stdin:       NA12878_S1.bam.sam
+    stdout:      NA12878_S1.bam/output/compressed/sam_comp/NA12878_S1.bam.sam.zam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.sam_comp.1.cmp.log
+  Process PID:   3773
+  Exit code:     0
+  Wall time:     06:13:59 (22439.2 ms)
+  Memory (MB):   701.1
+  Resources:    
+    ru_utime:    05:50:05 (21005.0 ms)
+    ru_stime:    00:10:10 (610.0 ms)
+    ru_maxrss:   717928
+    ru_minflt:   10211
+    ru_majflt:   11
+    ru_inblock:  1156770912
+    ru_oublock:  104028656
+    ru_nvcsw:    24641
+    ru_nivcsw:   6671142
+  GNU time:     
+    real:        06:13:58 (22438.6 ms)
+    user:        05:50:05 (21005.0 ms)
+    sys:         00:10:10 (610.0 ms)
+  Size (MB):     50,795.14 (53262565181 bytes) (NA12878_S1.bam/output/compressed/sam_comp/NA12878_S1.bam.sam.zam)
+  Free space:      2.8T  1.5T  1.4T  53% /local-scratch
+*** 2016-02-22 09:33:58 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/sam_comp-0.10/sam_comp -d -r data/sam/ref/hg19.fa.sc
+    stdin:       NA12878_S1.bam/output/compressed/sam_comp/NA12878_S1.bam.sam.zam
+    stdout:      NA12878_S1.bam/output/decompressed/sam_comp/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.sam_comp.1.dec.log
+  Process PID:   27162
+  Exit code:     0
+  Wall time:     07:54:54 (28494.4 ms)
+  Memory (MB):   699.0
+  Resources:    
+    ru_utime:    07:13:22 (26002.0 ms)
+    ru_stime:    00:10:59 (659.5 ms)
+    ru_maxrss:   715760
+    ru_minflt:   10436
+    ru_majflt:   8
+    ru_inblock:  110223633
+    ru_oublock:  855465256
+    ru_nvcsw:    30037
+    ru_nivcsw:   3149241
+  GNU time:     
+    real:        07:54:54 (28494.2 ms)
+    user:        07:13:22 (26002.0 ms)
+    sys:         00:10:59 (659.5 ms)
+  Size (MB):     417,707.54 (437998103487 bytes) (NA12878_S1.bam/output/decompressed/sam_comp/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  1.9T  931G  67% /local-scratch
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                    NA12878_S1.bam with 4 threads                     + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1)
+*** 2015-12-12 01:07:45 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4 
+    stdin:       NA12878_S1.bam.sam
+    stdout:      NA12878_S1.bam/output/compressed/pigz/NA12878_S1.bam.sam.gz
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.pigz.4.cmp.log
+  Process PID:   25300
+  Exit code:     0
+  Wall time:     02:13:38 (8018.5 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    07:51:35 (28295.5 ms)
+    ru_stime:    00:26:28 (1588.2 ms)
+    ru_maxrss:   6032
+    ru_minflt:   1326
+    ru_majflt:   9
+    ru_inblock:  1150554856
+    ru_oublock:  221608144
+    ru_nvcsw:    9547590
+    ru_nivcsw:   4541111
+  GNU time:     
+    real:        02:13:38 (8018.2 ms)
+    user:        07:51:35 (28295.5 ms)
+    sys:         00:26:28 (1588.2 ms)
+  Size (MB):     108,206.06 (113462278494 bytes) (NA12878_S1.bam/output/compressed/pigz/NA12878_S1.bam.sam.gz)
+  Free space:      2.8T  1.3T  1.6T  45% /local-scratch
+*** 2015-12-12 03:21:54 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       NA12878_S1.bam/output/compressed/pigz/NA12878_S1.bam.sam.gz
+    stdout:      NA12878_S1.bam/output/decompressed/pigz/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.pigz.4.dec.log
+  Process PID:   27050
+  Exit code:     0
+  Wall time:     02:22:07 (8527.6 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    01:19:36 (4776.3 ms)
+    ru_stime:    00:36:17 (2177.6 ms)
+    ru_maxrss:   6040
+    ru_minflt:   605
+    ru_majflt:   9
+    ru_inblock:  221608216
+    ru_oublock:  1150552208
+    ru_nvcsw:    55249051
+    ru_nivcsw:   1184469
+  GNU time:     
+    real:        02:22:07 (8527.4 ms)
+    user:        01:19:36 (4776.3 ms)
+    sys:         00:36:17 (2177.6 ms)
+  Size (MB):     561,793.07 (589082725404 bytes) (NA12878_S1.bam/output/decompressed/pigz/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  1.8T 1009G  64% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1)
+*** 2015-12-12 07:25:51 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4 
+    stdin:       NA12878_S1.bam.sam
+    stdout:      NA12878_S1.bam/output/compressed/pbzip2/NA12878_S1.bam.sam.bz2
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.pbzip2.4.cmp.log
+  Process PID:   29713
+  Exit code:     0
+  Wall time:     07:50:19 (28219.0 ms)
+  Memory (MB):   45.8
+  Resources:    
+    ru_utime:    06:31:54 (109914.8 ms)
+    ru_stime:    00:56:05 (3365.3 ms)
+    ru_maxrss:   46868
+    ru_minflt:   473498252
+    ru_majflt:   12
+    ru_inblock:  1150601920
+    ru_oublock:  175024432
+    ru_nvcsw:    3729183
+    ru_nivcsw:   13597588
+  GNU time:     
+    real:        07:50:18 (28218.8 ms)
+    user:        06:31:54 (109914.8 ms)
+    sys:         00:56:05 (3365.3 ms)
+  Size (MB):     85,446.97 (89597641012 bytes) (NA12878_S1.bam/output/compressed/pbzip2/NA12878_S1.bam.sam.bz2)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+*** 2015-12-12 15:16:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       NA12878_S1.bam/output/compressed/pbzip2/NA12878_S1.bam.sam.bz2
+    stdout:      NA12878_S1.bam/output/decompressed/pbzip2/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.pbzip2.4.dec.log
+  Process PID:   2494
+  Exit code:     0
+  Wall time:     02:19:10 (8350.8 ms)
+  Memory (MB):   65.5
+  Resources:    
+    ru_utime:    05:44:12 (20652.6 ms)
+    ru_stime:    00:42:37 (2557.8 ms)
+    ru_maxrss:   67116
+    ru_minflt:   381628697
+    ru_majflt:   12
+    ru_inblock:  175045080
+    ru_oublock:  1150604560
+    ru_nvcsw:    1408180
+    ru_nivcsw:   3141415
+  GNU time:     
+    real:        02:19:10 (8350.6 ms)
+    user:        05:44:12 (20652.6 ms)
+    sys:         00:42:37 (2557.8 ms)
+  Size (MB):     561,793.07 (589082725404 bytes) (NA12878_S1.bam/output/decompressed/pbzip2/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  1.8T  1.1T  64% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1)
+*** 2015-12-12 19:14:30 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 NA12878_S1.bam.sam NA12878_S1.bam/output/compressed/scramble/NA12878_S1.bam.sam.scramble.cram -r data/sam/ref/hg19.fa
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.scramble.4.cmp.log
+  Process PID:   6119
+  Exit code:     0
+  Wall time:     01:44:21 (6261.6 ms)
+  Memory (MB):   1143.9
+  Resources:    
+    ru_utime:    03:31:00 (12660.7 ms)
+    ru_stime:    00:13:28 (808.8 ms)
+    ru_maxrss:   1171328
+    ru_minflt:   56275712
+    ru_majflt:   45
+    ru_inblock:  1160326720
+    ru_oublock:  130142824
+    ru_nvcsw:    3104289
+    ru_nivcsw:   2925810
+  GNU time:     
+    real:        01:44:21 (6261.4 ms)
+    user:        03:31:00 (12660.7 ms)
+    sys:         00:13:28 (808.8 ms)
+  Size (MB):     63,545.41 (66632186856 bytes) (NA12878_S1.bam/output/compressed/scramble/NA12878_S1.bam.sam.scramble.cram)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2015-12-12 20:59:20 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 NA12878_S1.bam/output/compressed/scramble/NA12878_S1.bam.sam.scramble.cram NA12878_S1.bam/output/decompressed/scramble/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.scramble.4.dec.log
+  Process PID:   7279
+  Exit code:     0
+  Wall time:     01:58:34 (7114.2 ms)
+  Memory (MB):   595.0
+  Resources:    
+    ru_utime:    01:31:02 (5462.9 ms)
+    ru_stime:    00:10:27 (627.0 ms)
+    ru_maxrss:   609232
+    ru_minflt:   20232410
+    ru_majflt:   45
+    ru_inblock:  136323088
+    ru_oublock:  1100783712
+    ru_nvcsw:    323237
+    ru_nivcsw:   1013920
+  GNU time:     
+    real:        01:58:34 (7114.0 ms)
+    user:        01:31:02 (5462.9 ms)
+    sys:         00:10:27 (627.0 ms)
+  Size (MB):     537,492.01 (563601224680 bytes) (NA12878_S1.bam/output/decompressed/scramble/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1)
+*** 2015-12-13 00:31:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 NA12878_S1.bam.sam NA12878_S1.bam/output/compressed/scramble-noref/NA12878_S1.bam.sam.scramble.cram -x
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.scramble-noref.4.cmp.log
+  Process PID:   9974
+  Exit code:     0
+  Wall time:     01:42:08 (6128.0 ms)
+  Memory (MB):   384.7
+  Resources:    
+    ru_utime:    04:17:57 (15477.3 ms)
+    ru_stime:    00:13:28 (808.7 ms)
+    ru_maxrss:   393976
+    ru_minflt:   79510176
+    ru_majflt:   42
+    ru_inblock:  1150562376
+    ru_oublock:  141420976
+    ru_nvcsw:    3458217
+    ru_nivcsw:   3090128
+  GNU time:     
+    real:        01:42:07 (6127.8 ms)
+    user:        04:17:57 (15477.3 ms)
+    sys:         00:13:28 (808.7 ms)
+  Size (MB):     69,052.58 (72406878657 bytes) (NA12878_S1.bam/output/compressed/scramble-noref/NA12878_S1.bam.sam.scramble.cram)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2015-12-13 02:13:42 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 NA12878_S1.bam/output/compressed/scramble-noref/NA12878_S1.bam.sam.scramble.cram NA12878_S1.bam/output/decompressed/scramble-noref/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.scramble-noref.4.dec.log
+  Process PID:   11170
+  Exit code:     0
+  Wall time:     01:51:16 (6676.2 ms)
+  Memory (MB):   275.8
+  Resources:    
+    ru_utime:    01:44:17 (6257.4 ms)
+    ru_stime:    00:11:11 (671.7 ms)
+    ru_maxrss:   282428
+    ru_minflt:   24423090
+    ru_majflt:   45
+    ru_inblock:  141430824
+    ru_oublock:  1150520368
+    ru_nvcsw:    299269
+    ru_nivcsw:   1090142
+  GNU time:     
+    real:        01:51:16 (6676.0 ms)
+    user:        01:44:17 (6257.4 ms)
+    sys:         00:11:11 (671.7 ms)
+  Size (MB):     561,777.52 (589066421223 bytes) (NA12878_S1.bam/output/decompressed/scramble-noref/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1)
+*** 2015-12-13 05:41:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 4 NA12878_S1.bam.sam -o NA12878_S1.bam/output/compressed/sambamba/NA12878_S1.bam.sam.sambamba.bam 
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.sambamba.4.cmp.log
+  Process PID:   13719
+  Exit code:     0
+  Wall time:     02:09:23 (7763.9 ms)
+  Memory (MB):   14.8
+  Resources:    
+    ru_utime:    07:50:23 (28223.6 ms)
+    ru_stime:    00:19:33 (1173.9 ms)
+    ru_maxrss:   15156
+    ru_minflt:   219765824
+    ru_majflt:   39
+    ru_inblock:  1150561320
+    ru_oublock:  237716056
+    ru_nvcsw:    2327089
+    ru_nivcsw:   5895523
+  GNU time:     
+    real:        02:09:23 (7763.8 ms)
+    user:        07:50:23 (28223.6 ms)
+    sys:         00:19:33 (1173.9 ms)
+  Size (MB):     116,071.36 (121709642745 bytes) (NA12878_S1.bam/output/compressed/sambamba/NA12878_S1.bam.sam.sambamba.bam)
+  Free space:      2.8T  1.3T  1.6T  45% /local-scratch
+*** 2015-12-13 07:51:31 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -h -t 4 NA12878_S1.bam/output/compressed/sambamba/NA12878_S1.bam.sam.sambamba.bam -o NA12878_S1.bam/output/decompressed/sambamba/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.sambamba.4.dec.log
+  Process PID:   15126
+  Exit code:     0
+  Wall time:     02:06:53 (7613.4 ms)
+  Memory (MB):   19.7
+  Resources:    
+    ru_utime:    01:44:21 (6261.5 ms)
+    ru_stime:    00:16:18 (978.7 ms)
+    ru_maxrss:   20148
+    ru_minflt:   2302
+    ru_majflt:   39
+    ru_inblock:  237722800
+    ru_oublock:  1150552208
+    ru_nvcsw:    9439232
+    ru_nivcsw:   1874064
+  GNU time:     
+    real:        02:06:53 (7613.2 ms)
+    user:        01:44:21 (6261.5 ms)
+    sys:         00:16:18 (978.7 ms)
+  Size (MB):     561,793.07 (589082725415 bytes) (NA12878_S1.bam/output/decompressed/sambamba/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  1.8T 1002G  65% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1: NA12878_S1.bam.sam)
+*** 2016-02-14 12:34:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v NA12878_S1.bam.sam 
+    stdout:      NA12878_S1.bam/output/compressed/quip/NA12878_S1.bam.sam.qp
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.quip.4.cmp.log
+  Process PID:   18077
+  Exit code:     0
+  Wall time:     07:32:05 (27125.7 ms)
+  Memory (MB):   465.4
+  Resources:    
+    ru_utime:    14:29:07 (52147.6 ms)
+    ru_stime:    00:13:42 (822.5 ms)
+    ru_maxrss:   476592
+    ru_minflt:   659384
+    ru_majflt:   20
+    ru_inblock:  1150556728
+    ru_oublock:  189797160
+    ru_nvcsw:    1147019
+    ru_nivcsw:   10264028
+  GNU time:     
+    real:        07:32:05 (27125.2 ms)
+    user:        14:29:07 (52147.6 ms)
+    sys:         00:13:42 (822.5 ms)
+  Size (MB):     92,664.13 (97165386872 bytes) (NA12878_S1.bam/output/compressed/quip/NA12878_S1.bam.sam.qp)
+  Free space:      2.8T  1.8T  955G  66% /local-scratch
+*** 2016-02-14 20:07:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o sam NA12878_S1.bam/output/compressed/quip/NA12878_S1.bam.sam.qp
+    stdout:      NA12878_S1.bam/output/decompressed/quip/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.quip.4.dec.log
+  Process PID:   20685
+  Exit code:     0
+  Wall time:     08:37:55 (31075.5 ms)
+  Memory (MB):   459.2
+  Resources:    
+    ru_utime:    15:31:17 (55877.4 ms)
+    ru_stime:    00:16:26 (986.0 ms)
+    ru_maxrss:   470200
+    ru_minflt:   661743
+    ru_majflt:   22
+    ru_inblock:  189780952
+    ru_oublock:  1150202240
+    ru_nvcsw:    1502473
+    ru_nivcsw:   7344779
+  GNU time:     
+    real:        08:37:55 (31075.2 ms)
+    user:        15:31:17 (55877.4 ms)
+    sys:         00:16:25 (985.9 ms)
+  Size (MB):     561,622.17 (588903529320 bytes) (NA12878_S1.bam/output/decompressed/quip/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  2.4T  407G  86% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+>>> quip-ref (File 1: NA12878_S1.bam.sam)
+*** 2016-02-15 07:56:32 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v NA12878_S1.bam.sam -r data/sam/ref/hg19.fa
+    stdout:      NA12878_S1.bam/output/compressed/quip-ref/NA12878_S1.bam.sam.qp
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.quip-ref.4.cmp.log
+  Process PID:   8965
+  Exit code:     0
+  Wall time:     07:19:15 (26355.8 ms)
+  Memory (MB):   1549.1
+  Resources:    
+    ru_utime:    14:08:47 (50927.8 ms)
+    ru_stime:    00:12:44 (764.5 ms)
+    ru_maxrss:   1586272
+    ru_minflt:   729580
+    ru_majflt:   22
+    ru_inblock:  1156806840
+    ru_oublock:  125983984
+    ru_nvcsw:    1218187
+    ru_nivcsw:   9899333
+  GNU time:     
+    real:        07:19:15 (26355.1 ms)
+    user:        14:08:47 (50927.8 ms)
+    sys:         00:12:44 (764.5 ms)
+  Size (MB):     61,505.50 (64493188480 bytes) (NA12878_S1.bam/output/compressed/quip-ref/NA12878_S1.bam.sam.qp)
+  Free space:      2.8T  1.8T  986G  65% /local-scratch
+*** 2016-02-23 19:35:17 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -r data/sam/ref/hg19.fa -v -d -o sam NA12878_S1.bam/output/compressed/quip-ref/NA12878_S1.bam.sam.qp
+    stdout:      NA12878_S1.bam/output/decompressed/quip-ref/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.quip-ref.4.dec.log
+  Process PID:   8407
+  Exit code:     0
+  Wall time:     08:43:54 (31434.7 ms)
+  Memory (MB):   1544.9
+  Resources:    
+    ru_utime:    15:24:37 (55477.2 ms)
+    ru_stime:    00:15:57 (957.5 ms)
+    ru_maxrss:   1581960
+    ru_minflt:   732247
+    ru_majflt:   20
+    ru_inblock:  132218120
+    ru_oublock:  1150202232
+    ru_nvcsw:    1543311
+    ru_nivcsw:   7160006
+  GNU time:     
+    real:        08:43:54 (31434.6 ms)
+    user:        15:24:37 (55477.2 ms)
+    sys:         00:15:57 (957.5 ms)
+  Size (MB):     561,622.17 (588903529320 bytes) (NA12878_S1.bam/output/decompressed/quip-ref/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  2.0T  838G  70% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: NA12878_S1.bam.sam)
+*** 2016-02-15 15:16:17 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/hg19.fa -! NA12878_S1.bam.sam -o NA12878_S1.bam/output/compressed/deez/NA12878_S1.bam.sam.dz 
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.deez.4.cmp.log
+  Process PID:   27360
+  Exit code:     0
+  Wall time:     04:20:09 (15609.2 ms)
+  Memory (MB):   2269.2
+  Resources:    
+    ru_utime:    07:55:26 (28526.0 ms)
+    ru_stime:    00:34:48 (2088.1 ms)
+    ru_maxrss:   2323708
+    ru_minflt:   8071104
+    ru_majflt:   52
+    ru_inblock:  1156781328
+    ru_oublock:  123321016
+    ru_nvcsw:    111032
+    ru_nivcsw:   7515147
+  GNU time:     
+    real:        04:20:08 (15608.6 ms)
+    user:        07:55:26 (28526.0 ms)
+    sys:         00:34:48 (2088.1 ms)
+  Size (MB):     60,049.40 (62966355485 bytes) (NA12878_S1.bam/output/compressed/deez/NA12878_S1.bam.sam.dz)
+  Free space:      2.8T  1.8T  986G  65% /local-scratch
+*** 2016-02-15 19:36:54 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/hg19.fa -! NA12878_S1.bam/output/compressed/deez/NA12878_S1.bam.sam.dz -o NA12878_S1.bam/output/decompressed/deez/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.deez.4.dec.log
+  Process PID:   3097
+  Exit code:     0
+  Wall time:     03:58:47 (14327.9 ms)
+  Memory (MB):   5642.9
+  Resources:    
+    ru_utime:    05:01:49 (18109.9 ms)
+    ru_stime:    00:40:41 (2441.1 ms)
+    ru_maxrss:   5778372
+    ru_minflt:   2632604
+    ru_majflt:   56
+    ru_inblock:  129212664
+    ru_oublock:  1151487096
+    ru_nvcsw:    114641081
+    ru_nivcsw:   2260142
+  GNU time:     
+    real:        03:58:47 (14327.1 ms)
+    user:        05:01:49 (18109.9 ms)
+    sys:         00:40:41 (2441.1 ms)
+  Size (MB):     561,793.07 (589082725404 bytes) (NA12878_S1.bam/output/decompressed/deez/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  1.9T  880G  69% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: NA12878_S1.bam.sam)
+*** 2016-02-25 12:24:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/hg19.fa -! -v1 NA12878_S1.bam.sam -o NA12878_S1.bam/output/compressed/deez-qual/NA12878_S1.bam.sam.dz -q1 -b
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.deez-qual.4.cmp.log
+  Process PID:   24299
+  Exit code:     0
+  Wall time:     06:54:29 (24869.3 ms)
+  Memory (MB):   2566.8
+  Resources:    
+    ru_utime:    13:40:46 (49246.9 ms)
+    ru_stime:    00:41:12 (2472.6 ms)
+    ru_maxrss:   2628368
+    ru_minflt:   23238196
+    ru_majflt:   54
+    ru_inblock:  1156782761
+    ru_oublock:  104797728
+    ru_nvcsw:    127364
+    ru_nivcsw:   9644711
+  GNU time:     
+    real:        06:54:28 (24868.8 ms)
+    user:        13:40:46 (49246.9 ms)
+    sys:         00:41:12 (2472.6 ms)
+  Size (MB):     51,018.66 (53496946454 bytes) (NA12878_S1.bam/output/compressed/deez-qual/NA12878_S1.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-02-25 19:19:46 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/hg19.fa -! -v1 NA12878_S1.bam/output/compressed/deez-qual/NA12878_S1.bam.sam.dz -o NA12878_S1.bam/output/decompressed/deez-qual/NA12878_S1.bam.sam.sam
+    stderr:      NA12878_S1.bam/log/NA12878_S1.bam.sam.deez-qual.4.dec.log
+  Process PID:   28273
+  Exit code:     0
+  Wall time:     07:31:17 (27077.1 ms)
+  Memory (MB):   6391.1
+  Resources:    
+    ru_utime:    10:28:23 (37703.3 ms)
+    ru_stime:    00:40:53 (2453.4 ms)
+    ru_maxrss:   6544476
+    ru_minflt:   3017145
+    ru_majflt:   56
+    ru_inblock:  110719064
+    ru_oublock:  1151447392
+    ru_nvcsw:    129079425
+    ru_nivcsw:   4287258
+  GNU time:     
+    real:        07:31:16 (27076.7 ms)
+    user:        10:28:23 (37703.3 ms)
+    sys:         00:40:53 (2453.4 ms)
+  Size (MB):     561,793.07 (589082725404 bytes) (NA12878_S1.bam/output/decompressed/deez-qual/NA12878_S1.bam.sam.sam)
+  Free space:      2.8T  1.9T  850G  70% /local-scratch

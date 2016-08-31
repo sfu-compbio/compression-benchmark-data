@@ -1,0 +1,1687 @@
+Namespace(clear_cache=True, force=False, glob='', input='sample-2-10_sorted.bam.sam', output_dir='temp', ref='data/sam/ref/Homo_sapiens_assembly19.fasta', rt=True)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                sample-2-10_sorted.bam with 1 threads                 + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 12:00:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -p 1 
+    stdin:       sample-2-10_sorted.bam.sam
+    stdout:      sample-2-10_sorted.bam/output/compressed/pigz/sample-2-10_sorted.bam.sam.gz
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pigz.1.cmp.log
+  Process PID:   19381
+  Exit code:     0
+  Wall time:     00:09:18 (558.1 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:08:54 (534.2 ms)
+    ru_stime:    00:00:09 (9.6 ms)
+    ru_maxrss:   5964
+    ru_minflt:   1059
+    ru_majflt:   7
+    ru_inblock:  11573416
+    ru_oublock:  2692080
+    ru_nvcsw:    313
+    ru_nivcsw:   11
+  GNU time:     
+    real:        00:09:17 (557.8 ms)
+    user:        00:08:54 (534.2 ms)
+    sys:         00:00:09 (9.6 ms)
+  Size (MB):     1,314.41 (1378257521 bytes) (sample-2-10_sorted.bam/output/compressed/pigz/sample-2-10_sorted.bam.sam.gz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 12:10:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       sample-2-10_sorted.bam/output/compressed/pigz/sample-2-10_sorted.bam.sam.gz
+    stdout:      sample-2-10_sorted.bam/output/decompressed/pigz/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pigz.1.dec.log
+  Process PID:   19632
+  Exit code:     0
+  Wall time:     00:01:02 (62.6 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:00:34 (34.3 ms)
+    ru_stime:    00:00:05 (5.5 ms)
+    ru_maxrss:   6004
+    ru_minflt:   932
+    ru_majflt:   7
+    ru_inblock:  2696024
+    ru_oublock:  11569368
+    ru_nvcsw:    604
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:01:02 (62.5 ms)
+    user:        00:00:34 (34.3 ms)
+    sys:         00:00:05 (5.5 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/pigz/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 12:13:09 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -p1 
+    stdin:       sample-2-10_sorted.bam.sam
+    stdout:      sample-2-10_sorted.bam/output/compressed/pbzip2/sample-2-10_sorted.bam.sam.bz2
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pbzip2.1.cmp.log
+  Process PID:   19751
+  Exit code:     0
+  Wall time:     00:25:19 (1519.1 ms)
+  Memory (MB):   12.1
+  Resources:    
+    ru_utime:    00:24:18 (1458.7 ms)
+    ru_stime:    00:00:27 (27.5 ms)
+    ru_maxrss:   12384
+    ru_minflt:   5742136
+    ru_majflt:   8
+    ru_inblock:  11597192
+    ru_oublock:  2200784
+    ru_nvcsw:    38510
+    ru_nivcsw:   15
+  GNU time:     
+    real:        00:25:19 (1519.0 ms)
+    user:        00:24:18 (1458.7 ms)
+    sys:         00:00:27 (27.5 ms)
+  Size (MB):     1,074.43 (1126619628 bytes) (sample-2-10_sorted.bam/output/compressed/pbzip2/sample-2-10_sorted.bam.sam.bz2)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 12:38:29 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       sample-2-10_sorted.bam/output/compressed/pbzip2/sample-2-10_sorted.bam.sam.bz2
+    stdout:      sample-2-10_sorted.bam/output/decompressed/pbzip2/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pbzip2.1.dec.log
+  Process PID:   20396
+  Exit code:     0
+  Wall time:     00:07:59 (479.1 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:07:09 (429.2 ms)
+    ru_stime:    00:00:12 (12.4 ms)
+    ru_maxrss:   6008
+    ru_minflt:   1862
+    ru_majflt:   8
+    ru_inblock:  2227968
+    ru_oublock:  11569368
+    ru_nvcsw:    393
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:07:58 (478.9 ms)
+    user:        00:07:09 (429.2 ms)
+    sys:         00:00:12 (12.3 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/pbzip2/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               samtools                               # 
+########################################################################
+>>> samtools (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 12:48:17 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -b sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/samtools/sample-2-10_sorted.bam.sam.bam 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.samtools.1.cmp.log
+  Process PID:   20655
+  Exit code:     0
+  Wall time:     00:06:16 (376.2 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:05:49 (349.4 ms)
+    ru_stime:    00:00:12 (12.5 ms)
+    ru_maxrss:   6008
+    ru_minflt:   2440190
+    ru_majflt:   10
+    ru_inblock:  11574072
+    ru_oublock:  2868480
+    ru_nvcsw:    393
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:06:16 (376.1 ms)
+    user:        00:05:49 (349.4 ms)
+    sys:         00:00:12 (12.5 ms)
+  Size (MB):     1,400.56 (1468589056 bytes) (sample-2-10_sorted.bam/output/compressed/samtools/sample-2-10_sorted.bam.sam.bam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 12:54:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -h sample-2-10_sorted.bam/output/compressed/samtools/sample-2-10_sorted.bam.sam.bam -o sample-2-10_sorted.bam/output/decompressed/samtools/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.samtools.1.dec.log
+  Process PID:   20828
+  Exit code:     0
+  Wall time:     00:02:08 (128.7 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:01:14 (74.9 ms)
+    ru_stime:    00:00:10 (10.3 ms)
+    ru_maxrss:   6020
+    ru_minflt:   950
+    ru_majflt:   9
+    ru_inblock:  2873000
+    ru_oublock:  11569392
+    ru_nvcsw:    1054
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:02:08 (128.7 ms)
+    user:        00:01:14 (74.9 ms)
+    sys:         00:00:10 (10.2 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/samtools/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 12:58:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 1 sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/scramble/sample-2-10_sorted.bam.sam.scramble.cram -r data/sam/ref/Homo_sapiens_assembly19.fasta
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble.1.cmp.log
+  Process PID:   20955
+  Exit code:     0
+  Wall time:     00:03:55 (235.0 ms)
+  Memory (MB):   288.8
+  Resources:    
+    ru_utime:    00:03:08 (188.5 ms)
+    ru_stime:    00:00:18 (18.8 ms)
+    ru_maxrss:   295760
+    ru_minflt:   2289971
+    ru_majflt:   42
+    ru_inblock:  17704488
+    ru_oublock:  2011928
+    ru_nvcsw:    36741
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:03:54 (234.9 ms)
+    user:        00:03:08 (188.5 ms)
+    sys:         00:00:18 (18.7 ms)
+  Size (MB):     982.36 (1030079724 bytes) (sample-2-10_sorted.bam/output/compressed/scramble/sample-2-10_sorted.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 13:02:31 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 1 sample-2-10_sorted.bam/output/compressed/scramble/sample-2-10_sorted.bam.sam.scramble.cram sample-2-10_sorted.bam/output/decompressed/scramble/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble.1.dec.log
+  Process PID:   21083
+  Exit code:     0
+  Wall time:     00:03:23 (203.7 ms)
+  Memory (MB):   139.5
+  Resources:    
+    ru_utime:    00:02:09 (129.5 ms)
+    ru_stime:    00:00:11 (11.1 ms)
+    ru_maxrss:   142844
+    ru_minflt:   23249
+    ru_majflt:   42
+    ru_inblock:  8000568
+    ru_oublock:  11003808
+    ru_nvcsw:    18546
+    ru_nivcsw:   12
+  GNU time:     
+    real:        00:03:23 (203.6 ms)
+    user:        00:02:09 (129.5 ms)
+    sys:         00:00:11 (11.1 ms)
+  Size (MB):     5,372.94 (5633940313 bytes) (sample-2-10_sorted.bam/output/decompressed/scramble/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 13:07:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 1 sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/scramble-bzip2/sample-2-10_sorted.bam.sam.scramble.cram -j -7 -r data/sam/ref/Homo_sapiens_assembly19.fasta
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-bzip2.1.cmp.log
+  Process PID:   21225
+  Exit code:     0
+  Wall time:     00:09:24 (564.1 ms)
+  Memory (MB):   295.8
+  Resources:    
+    ru_utime:    00:08:20 (500.5 ms)
+    ru_stime:    00:00:27 (27.5 ms)
+    ru_maxrss:   302904
+    ru_minflt:   3041348
+    ru_majflt:   42
+    ru_inblock:  17704400
+    ru_oublock:  1949680
+    ru_nvcsw:    36884
+    ru_nivcsw:   11
+  GNU time:     
+    real:        00:09:24 (564.0 ms)
+    user:        00:08:20 (500.5 ms)
+    sys:         00:00:27 (27.5 ms)
+  Size (MB):     951.93 (998172234 bytes) (sample-2-10_sorted.bam/output/compressed/scramble-bzip2/sample-2-10_sorted.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 13:17:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 1 sample-2-10_sorted.bam/output/compressed/scramble-bzip2/sample-2-10_sorted.bam.sam.scramble.cram sample-2-10_sorted.bam/output/decompressed/scramble-bzip2/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-bzip2.1.dec.log
+  Process PID:   21462
+  Exit code:     0
+  Wall time:     00:03:41 (221.2 ms)
+  Memory (MB):   132.7
+  Resources:    
+    ru_utime:    00:02:24 (144.9 ms)
+    ru_stime:    00:00:11 (11.5 ms)
+    ru_maxrss:   135920
+    ru_minflt:   26659
+    ru_majflt:   42
+    ru_inblock:  7938256
+    ru_oublock:  11003808
+    ru_nvcsw:    17668
+    ru_nivcsw:   11
+  GNU time:     
+    real:        00:03:41 (221.1 ms)
+    user:        00:02:24 (144.9 ms)
+    sys:         00:00:11 (11.4 ms)
+  Size (MB):     5,372.94 (5633940337 bytes) (sample-2-10_sorted.bam/output/decompressed/scramble-bzip2/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 13:22:20 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 1 sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/scramble-noref/sample-2-10_sorted.bam.sam.scramble.cram -x
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-noref.1.cmp.log
+  Process PID:   21924
+  Exit code:     0
+  Wall time:     00:02:49 (169.2 ms)
+  Memory (MB):   50.8
+  Resources:    
+    ru_utime:    00:02:17 (137.7 ms)
+    ru_stime:    00:00:12 (12.1 ms)
+    ru_maxrss:   52040
+    ru_minflt:   2867885
+    ru_majflt:   41
+    ru_inblock:  11582272
+    ru_oublock:  2174072
+    ru_nvcsw:    23033
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:02:49 (169.1 ms)
+    user:        00:02:17 (137.7 ms)
+    sys:         00:00:12 (12.1 ms)
+  Size (MB):     1,061.54 (1113102683 bytes) (sample-2-10_sorted.bam/output/compressed/scramble-noref/sample-2-10_sorted.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 13:25:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 1 sample-2-10_sorted.bam/output/compressed/scramble-noref/sample-2-10_sorted.bam.sam.scramble.cram sample-2-10_sorted.bam/output/decompressed/scramble-noref/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-noref.1.dec.log
+  Process PID:   21990
+  Exit code:     0
+  Wall time:     00:02:16 (136.7 ms)
+  Memory (MB):   13.4
+  Resources:    
+    ru_utime:    00:01:14 (74.2 ms)
+    ru_stime:    00:00:14 (14.1 ms)
+    ru_maxrss:   13684
+    ru_minflt:   3114933
+    ru_majflt:   41
+    ru_inblock:  2186112
+    ru_oublock:  11569368
+    ru_nvcsw:    4312
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:02:16 (136.6 ms)
+    user:        00:01:14 (74.2 ms)
+    sys:         00:00:14 (14.1 ms)
+  Size (MB):     5,649.10 (5923510254 bytes) (sample-2-10_sorted.bam/output/decompressed/scramble-noref/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 13:29:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 1 sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/sambamba/sample-2-10_sorted.bam.sam.sambamba.bam 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.sambamba.1.cmp.log
+  Process PID:   22115
+  Exit code:     0
+  Wall time:     00:07:01 (421.3 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:06:35 (395.7 ms)
+    ru_stime:    00:00:14 (14.9 ms)
+    ru_maxrss:   6024
+    ru_minflt:   2402136
+    ru_majflt:   25
+    ru_inblock:  11577992
+    ru_oublock:  2868448
+    ru_nvcsw:    868
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:07:01 (421.2 ms)
+    user:        00:06:35 (395.7 ms)
+    sys:         00:00:14 (14.9 ms)
+  Size (MB):     1,400.56 (1468589057 bytes) (sample-2-10_sorted.bam/output/compressed/sambamba/sample-2-10_sorted.bam.sam.sambamba.bam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 13:36:16 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -h -t 1 sample-2-10_sorted.bam/output/compressed/sambamba/sample-2-10_sorted.bam.sam.sambamba.bam -o sample-2-10_sorted.bam/output/decompressed/sambamba/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.sambamba.1.dec.log
+  Process PID:   22301
+  Exit code:     0
+  Wall time:     00:02:05 (125.3 ms)
+  Memory (MB):   9.0
+  Resources:    
+    ru_utime:    00:01:26 (86.3 ms)
+    ru_stime:    00:00:09 (9.2 ms)
+    ru_maxrss:   9208
+    ru_minflt:   2892
+    ru_majflt:   23
+    ru_inblock:  2876704
+    ru_oublock:  11569368
+    ru_nvcsw:    2460
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:02:05 (125.2 ms)
+    user:        00:01:26 (86.3 ms)
+    sys:         00:00:09 (9.2 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/sambamba/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+########################################################################
+#                                 quip                                 #
+########################################################################
+>>> quip (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-08-29 18:21:01 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset 1 tools/quip/bin/quip -c -v sample-2-10_sorted.bam.sam
+    stdout:      sample-2-10_sorted.bam/output/compressed/quip/sample-2-10_sorted.bam.sam.qp
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.quip.1.cmp.log
+  Process PID:   17272
+  Exit code:     0
+  Wall time:     00:07:13 (433.6 ms)
+  Memory (MB):   453.6
+  Resources:
+    ru_utime:    00:06:57 (417.2 ms)
+    ru_stime:    00:00:07 (7.0 ms)
+    ru_maxrss:   464444
+    ru_minflt:   31479
+    ru_majflt:   16
+    ru_inblock:  11573816
+    ru_oublock:  2401816
+    ru_nvcsw:    14289
+    ru_nivcsw:   69086
+  GNU time:
+    real:        00:07:13 (433.4 ms)
+    user:        00:06:57 (417.2 ms)
+    sys:         00:00:06 (6.9 ms)
+  Size (MB):     1,172.62 (1229582357 bytes) (sample-2-10_sorted.bam/output/compressed/quip/sample-2-10_sorted.bam.sam.qp)
+  Free space:      2.8T  1.4T  1.4T  52% /local-scratch
+*** 2016-08-29 18:28:15 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset 1 tools/quip/bin/quip -c -v -d -o sam sample-2-10_sorted.bam/output/compressed/quip/sample-2-10_sorted.bam.sam.qp
+    stdout:      sample-2-10_sorted.bam/output/decompressed/quip/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.quip.1.dec.log
+  Process PID:   31392
+  Exit code:     0
+  Wall time:     00:09:30 (570.4 ms)
+  Memory (MB):   447.9
+  Resources:
+    ru_utime:    00:08:28 (508.8 ms)
+    ru_stime:    00:00:09 (9.2 ms)
+    ru_maxrss:   458684
+    ru_minflt:   35407
+    ru_majflt:   16
+    ru_inblock:  2405968
+    ru_oublock:  11569368
+    ru_nvcsw:    19367
+    ru_nivcsw:   84083
+  GNU time:
+    real:        00:09:30 (570.3 ms)
+    user:        00:08:28 (508.8 ms)
+    sys:         00:00:09 (9.2 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/quip/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.4T  52% /local-scratch
+
+######################################################################## 
+#                               sam_comp                               # 
+########################################################################
+>>> sam_comp (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 13:40:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -r data/sam/ref/Homo_sapiens_assembly19.fasta.sc 
+    stdin:       sample-2-10_sorted.bam.sam
+    stdout:      sample-2-10_sorted.bam/output/compressed/sam_comp/sample-2-10_sorted.bam.sam.zam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.sam_comp.1.cmp.log
+  Process PID:   22432
+  Exit code:     0
+  Wall time:     00:07:33 (453.0 ms)
+  Memory (MB):   699.6
+  Resources:    
+    ru_utime:    00:07:06 (426.5 ms)
+    ru_stime:    00:00:14 (14.9 ms)
+    ru_maxrss:   716384
+    ru_minflt:   11127
+    ru_majflt:   8
+    ru_inblock:  17719200
+    ru_oublock:  1740504
+    ru_nvcsw:    1665
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:07:32 (452.9 ms)
+    user:        00:07:06 (426.5 ms)
+    sys:         00:00:14 (14.9 ms)
+  Size (MB):     849.81 (891091539 bytes) (sample-2-10_sorted.bam/output/compressed/sam_comp/sample-2-10_sorted.bam.sam.zam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 13:47:43 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -d -r data/sam/ref/Homo_sapiens_assembly19.fasta.sc
+    stdin:       sample-2-10_sorted.bam/output/compressed/sam_comp/sample-2-10_sorted.bam.sam.zam
+    stdout:      sample-2-10_sorted.bam/output/decompressed/sam_comp/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.sam_comp.1.dec.log
+  Process PID:   22655
+  Exit code:     0
+  Wall time:     00:14:02 (842.1 ms)
+  Memory (MB):   699.2
+  Resources:    
+    ru_utime:    00:13:18 (798.4 ms)
+    ru_stime:    00:00:20 (20.4 ms)
+    ru_maxrss:   715992
+    ru_minflt:   8366
+    ru_majflt:   8
+    ru_inblock:  7890096
+    ru_oublock:  9265192
+    ru_nvcsw:    1952
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:14:02 (842.0 ms)
+    user:        00:13:18 (798.4 ms)
+    sys:         00:00:20 (20.4 ms)
+  Size (MB):     4,523.94 (4743699972 bytes) (sample-2-10_sorted.bam/output/decompressed/sam_comp/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 tsc                                  # 
+########################################################################
+>>> tsc (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 14:03:09 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.5/src/tsc -f -s -o sample-2-10_sorted.bam/output/compressed/tsc/sample-2-10_sorted.bam.sam.tsc sample-2-10_sorted.bam.sam 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.tsc.1.cmp.log
+  Process PID:   23103
+  Exit code:     0
+  Wall time:     00:15:58 (958.0 ms)
+  Memory (MB):   14.3
+  Resources:    
+    ru_utime:    00:15:41 (941.4 ms)
+    ru_stime:    00:00:06 (6.9 ms)
+    ru_maxrss:   14664
+    ru_minflt:   3357
+    ru_majflt:   7
+    ru_inblock:  11573040
+    ru_oublock:  2329568
+    ru_nvcsw:    392
+    ru_nivcsw:   10
+  GNU time:     
+    real:        00:15:57 (957.9 ms)
+    user:        00:15:41 (941.4 ms)
+    sys:         00:00:06 (6.9 ms)
+  Size (MB):     1,137.27 (1192518344 bytes) (sample-2-10_sorted.bam/output/compressed/tsc/sample-2-10_sorted.bam.sam.tsc)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 14:19:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.5/src/tsc -f -s -d -o sample-2-10_sorted.bam/output/decompressed/tsc/sample-2-10_sorted.bam.sam.sam sample-2-10_sorted.bam/output/compressed/tsc/sample-2-10_sorted.bam.sam.tsc
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.tsc.1.dec.log
+  Process PID:   23520
+  Exit code:     0
+  Wall time:     00:14:28 (868.3 ms)
+  Memory (MB):   18.6
+  Resources:    
+    ru_utime:    00:13:16 (796.4 ms)
+    ru_stime:    00:00:26 (26.9 ms)
+    ru_maxrss:   19032
+    ru_minflt:   6148788
+    ru_majflt:   7
+    ru_inblock:  2332832
+    ru_oublock:  11569376
+    ru_nvcsw:    3823
+    ru_nivcsw:   8
+  GNU time:     
+    real:        00:14:28 (868.3 ms)
+    user:        00:13:16 (796.4 ms)
+    sys:         00:00:26 (26.9 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/tsc/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 cbc                                  # 
+########################################################################
+>>> cbc (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 14:35:20 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/cbc/simulations/main.run sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/cbc/sample-2-10_sorted.bam.sam.cbc 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.cbc.1.cmp.log
+  Process PID:   23973
+  Exit code:     2816
+  Wall time:     00:00:01 (1.8 ms)
+  Memory (MB):   336.8
+  Resources:    
+    ru_utime:    00:00:01 (1.3 ms)
+    ru_stime:    00:00:00 (0.2 ms)
+    ru_maxrss:   344836
+    ru_minflt:   14477
+    ru_majflt:   5
+    ru_inblock:  9824
+    ru_oublock:  8
+    ru_nvcsw:    106
+    ru_nivcsw:   9
+  GNU time:     
+    real:        00:00:01 (1.7 ms)
+    user:        00:00:01 (1.3 ms)
+    sys:         00:00:00 (0.2 ms)
+  Size (MB):     ? (sample-2-10_sorted.bam/output/compressed/cbc/sample-2-10_sorted.bam.sam.cbc_F.ido, sample-2-10_sorted.bam/output/compressed/cbc/sample-2-10_sorted.bam.sam.cbc_P.ido, sample-2-10_sorted.bam/output/compressed/cbc/sample-2-10_sorted.bam.sam.cbc_P_A.ido, sample-2-10_sorted.bam/output/compressed/cbc/sample-2-10_sorted.bam.sam.cbc_M.ido, sample-2-10_sorted.bam/output/compressed/cbc/sample-2-10_sorted.bam.sam.cbc_S.ido, sample-2-10_sorted.bam/output/compressed/cbc/sample-2-10_sorted.bam.sam.cbc_I.ido, sample-2-10_sorted.bam/output/compressed/cbc/sample-2-10_sorted.bam.sam.cbc_pos.ido, sample-2-10_sorted.bam/output/compressed/cbc/sample-2-10_sorted.bam.sam.cbc_char.ido)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 14:35:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/deez/sample-2-10_sorted.bam.sam.dz 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez.1.cmp.log
+  Process PID:   23981
+  Exit code:     0
+  Wall time:     00:11:20 (680.1 ms)
+  Memory (MB):   3997.9
+  Resources:    
+    ru_utime:    00:10:38 (638.6 ms)
+    ru_stime:    00:00:31 (31.7 ms)
+    ru_maxrss:   4093808
+    ru_minflt:   642925
+    ru_majflt:   50
+    ru_inblock:  17727768
+    ru_oublock:  2007160
+    ru_nvcsw:    1139
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:11:20 (680.0 ms)
+    user:        00:10:38 (638.6 ms)
+    sys:         00:00:31 (31.7 ms)
+  Size (MB):     979.92 (1027524602 bytes) (sample-2-10_sorted.bam/output/compressed/deez/sample-2-10_sorted.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 14:46:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam/output/compressed/deez/sample-2-10_sorted.bam.sam.dz -o sample-2-10_sorted.bam/output/decompressed/deez/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez.1.dec.log
+  Process PID:   24398
+  Exit code:     0
+  Wall time:     00:11:48 (708.7 ms)
+  Memory (MB):   3435.4
+  Resources:    
+    ru_utime:    00:10:48 (648.6 ms)
+    ru_stime:    00:00:20 (20.5 ms)
+    ru_maxrss:   3517848
+    ru_minflt:   657904
+    ru_majflt:   49
+    ru_inblock:  8166360
+    ru_oublock:  11569504
+    ru_nvcsw:    5104
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:11:48 (708.5 ms)
+    user:        00:10:48 (648.6 ms)
+    sys:         00:00:20 (20.5 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/deez/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 15:00:17 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz -q1 -b
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez-qual.1.cmp.log
+  Process PID:   24880
+  Exit code:     0
+  Wall time:     00:21:54 (1314.5 ms)
+  Memory (MB):   4422.9
+  Resources:    
+    ru_utime:    00:21:14 (1274.5 ms)
+    ru_stime:    00:00:32 (32.1 ms)
+    ru_maxrss:   4529024
+    ru_minflt:   851920
+    ru_majflt:   50
+    ru_inblock:  17729296
+    ru_oublock:  1793528
+    ru_nvcsw:    1143
+    ru_nivcsw:   11
+  GNU time:     
+    real:        00:21:54 (1314.4 ms)
+    user:        00:21:14 (1274.5 ms)
+    sys:         00:00:32 (32.1 ms)
+  Size (MB):     875.53 (918061523 bytes) (sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 15:22:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz -o sample-2-10_sorted.bam/output/decompressed/deez-qual/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez-qual.1.dec.log
+  Process PID:   25552
+  Exit code:     0
+  Wall time:     00:21:09 (1269.3 ms)
+  Memory (MB):   3867.2
+  Resources:    
+    ru_utime:    00:20:08 (1208.0 ms)
+    ru_stime:    00:00:21 (21.7 ms)
+    ru_maxrss:   3960000
+    ru_minflt:   685123
+    ru_majflt:   46
+    ru_inblock:  7952432
+    ru_oublock:  11569528
+    ru_nvcsw:    4821
+    ru_nivcsw:   14
+  GNU time:     
+    real:        00:21:09 (1269.1 ms)
+    user:        00:20:08 (1208.0 ms)
+    sys:         00:00:21 (21.7 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/deez-qual/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                picard                                # 
+########################################################################
+>>> picard (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 15:45:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=sample-2-10_sorted.bam.sam O=sample-2-10_sorted.bam/output/compressed/picard/sample-2-10_sorted.bam.sam.picard.bam VALIDATION_STRINGENCY=SILENT 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.picard.1.cmp.log
+  Process PID:   26218
+  Exit code:     0
+  Wall time:     00:11:23 (683.5 ms)
+  Memory (MB):   600.8
+  Resources:    
+    ru_utime:    00:11:00 (660.1 ms)
+    ru_stime:    00:00:08 (8.9 ms)
+    ru_maxrss:   615256
+    ru_minflt:   48947
+    ru_majflt:   142
+    ru_inblock:  11654016
+    ru_oublock:  2880392
+    ru_nvcsw:    16832
+    ru_nivcsw:   63977
+  GNU time:     
+    real:        00:11:23 (683.4 ms)
+    user:        00:11:00 (660.1 ms)
+    sys:         00:00:08 (8.9 ms)
+  Size (MB):     1,405.85 (1474136128 bytes) (sample-2-10_sorted.bam/output/compressed/picard/sample-2-10_sorted.bam.sam.picard.bam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 15:56:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=sample-2-10_sorted.bam/output/compressed/picard/sample-2-10_sorted.bam.sam.picard.bam O=sample-2-10_sorted.bam/output/decompressed/picard/sample-2-10_sorted.bam.sam.sam VALIDATION_STRINGENCY=SILENT
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.picard.1.dec.log
+  Process PID:   26546
+  Exit code:     0
+  Wall time:     00:04:30 (270.2 ms)
+  Memory (MB):   1041.0
+  Resources:    
+    ru_utime:    00:03:43 (223.1 ms)
+    ru_stime:    00:00:09 (9.2 ms)
+    ru_maxrss:   1065992
+    ru_minflt:   46975
+    ru_majflt:   140
+    ru_inblock:  2962672
+    ru_oublock:  11569904
+    ru_nvcsw:    8756
+    ru_nivcsw:   22974
+  GNU time:     
+    real:        00:04:30 (270.0 ms)
+    user:        00:03:43 (223.1 ms)
+    sys:         00:00:09 (9.2 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/picard/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                              cramtools                               # 
+########################################################################
+>>> cramtools (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 16:02:46 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar cram --ignore-md5-mismatch --capture-all-tags --input-is-sam -Q -n -R data/sam/ref/Homo_sapiens_assembly19.fasta -I sample-2-10_sorted.bam.sam -O sample-2-10_sorted.bam/output/compressed/cramtools/sample-2-10_sorted.bam.sam.cram 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.cramtools.1.cmp.log
+  Process PID:   26789
+  Exit code:     0
+  Wall time:     00:13:17 (797.2 ms)
+  Memory (MB):   4974.3
+  Resources:    
+    ru_utime:    00:12:41 (761.7 ms)
+    ru_stime:    00:00:13 (13.2 ms)
+    ru_maxrss:   5093668
+    ru_minflt:   610187
+    ru_majflt:   137
+    ru_inblock:  17747072
+    ru_oublock:  2286336
+    ru_nvcsw:    22171
+    ru_nivcsw:   12717
+  GNU time:     
+    real:        00:13:17 (797.1 ms)
+    user:        00:12:41 (761.7 ms)
+    sys:         00:00:13 (13.2 ms)
+  Size (MB):     1,115.75 (1169950744 bytes) (sample-2-10_sorted.bam/output/compressed/cramtools/sample-2-10_sorted.bam.sam.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 16:16:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar bam --ignore-md5-mismatch --print-sam-header -R data/sam/ref/Homo_sapiens_assembly19.fasta -I sample-2-10_sorted.bam/output/compressed/cramtools/sample-2-10_sorted.bam.sam.cram -O sample-2-10_sorted.bam/output/decompressed/cramtools/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.cramtools.1.dec.log
+  Process PID:   27189
+  Exit code:     0
+  Wall time:     00:10:35 (635.1 ms)
+  Memory (MB):   10155.7
+  Resources:    
+    ru_utime:    00:09:35 (575.6 ms)
+    ru_stime:    00:00:13 (13.6 ms)
+    ru_maxrss:   10399464
+    ru_minflt:   290794
+    ru_majflt:   137
+    ru_inblock:  8462576
+    ru_oublock:  11004360
+    ru_nvcsw:    24452
+    ru_nivcsw:   4303
+  GNU time:     
+    real:        00:10:34 (634.9 ms)
+    user:        00:09:35 (575.5 ms)
+    sys:         00:00:13 (13.6 ms)
+  Size (MB):     5,372.94 (5633938582 bytes) (sample-2-10_sorted.bam/output/decompressed/cramtools/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                sample-2-10_sorted.bam with 4 threads                 + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 16:28:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4 
+    stdin:       sample-2-10_sorted.bam.sam
+    stdout:      sample-2-10_sorted.bam/output/compressed/pigz/sample-2-10_sorted.bam.sam.gz
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pigz.4.cmp.log
+  Process PID:   27516
+  Exit code:     0
+  Wall time:     00:01:09 (69.7 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:04:09 (249.3 ms)
+    ru_stime:    00:00:15 (15.5 ms)
+    ru_maxrss:   6056
+    ru_minflt:   1378
+    ru_majflt:   7
+    ru_inblock:  11572904
+    ru_oublock:  2691928
+    ru_nvcsw:    93503
+    ru_nivcsw:   41361
+  GNU time:     
+    real:        00:01:09 (69.6 ms)
+    user:        00:04:09 (249.3 ms)
+    sys:         00:00:15 (15.5 ms)
+  Size (MB):     1,314.41 (1378257521 bytes) (sample-2-10_sorted.bam/output/compressed/pigz/sample-2-10_sorted.bam.sam.gz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 16:29:38 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       sample-2-10_sorted.bam/output/compressed/pigz/sample-2-10_sorted.bam.sam.gz
+    stdout:      sample-2-10_sorted.bam/output/decompressed/pigz/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pigz.4.dec.log
+  Process PID:   27570
+  Exit code:     0
+  Wall time:     00:00:30 (30.8 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:00:49 (49.0 ms)
+    ru_stime:    00:00:20 (20.3 ms)
+    ru_maxrss:   6056
+    ru_minflt:   659
+    ru_majflt:   7
+    ru_inblock:  2695216
+    ru_oublock:  11569368
+    ru_nvcsw:    473671
+    ru_nivcsw:   10870
+  GNU time:     
+    real:        00:00:30 (30.7 ms)
+    user:        00:00:49 (49.0 ms)
+    sys:         00:00:20 (20.3 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/pigz/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 16:31:56 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4 
+    stdin:       sample-2-10_sorted.bam.sam
+    stdout:      sample-2-10_sorted.bam/output/compressed/pbzip2/sample-2-10_sorted.bam.sam.bz2
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pbzip2.4.cmp.log
+  Process PID:   27642
+  Exit code:     0
+  Wall time:     00:05:35 (335.7 ms)
+  Memory (MB):   40.1
+  Resources:    
+    ru_utime:    00:21:46 (1306.9 ms)
+    ru_stime:    00:00:33 (33.0 ms)
+    ru_maxrss:   41036
+    ru_minflt:   5819975
+    ru_majflt:   8
+    ru_inblock:  11596432
+    ru_oublock:  2200512
+    ru_nvcsw:    33641
+    ru_nivcsw:   160203
+  GNU time:     
+    real:        00:05:35 (335.6 ms)
+    user:        00:21:46 (1306.9 ms)
+    sys:         00:00:33 (33.0 ms)
+  Size (MB):     1,074.43 (1126619628 bytes) (sample-2-10_sorted.bam/output/compressed/pbzip2/sample-2-10_sorted.bam.sam.bz2)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 16:37:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       sample-2-10_sorted.bam/output/compressed/pbzip2/sample-2-10_sorted.bam.sam.bz2
+    stdout:      sample-2-10_sorted.bam/output/decompressed/pbzip2/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pbzip2.4.dec.log
+  Process PID:   27784
+  Exit code:     0
+  Wall time:     00:01:53 (113.0 ms)
+  Memory (MB):   25.7
+  Resources:    
+    ru_utime:    00:03:33 (213.2 ms)
+    ru_stime:    00:00:23 (23.0 ms)
+    ru_maxrss:   26304
+    ru_minflt:   2998285
+    ru_majflt:   7
+    ru_inblock:  2226856
+    ru_oublock:  11569376
+    ru_nvcsw:    15925
+    ru_nivcsw:   33317
+  GNU time:     
+    real:        00:01:52 (112.8 ms)
+    user:        00:03:33 (213.2 ms)
+    sys:         00:00:23 (23.0 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/pbzip2/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 16:41:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/scramble/sample-2-10_sorted.bam.sam.scramble.cram -r data/sam/ref/Homo_sapiens_assembly19.fasta
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble.4.cmp.log
+  Process PID:   27918
+  Exit code:     0
+  Wall time:     00:01:57 (117.7 ms)
+  Memory (MB):   1101.6
+  Resources:    
+    ru_utime:    00:02:38 (158.7 ms)
+    ru_stime:    00:00:18 (18.5 ms)
+    ru_maxrss:   1128060
+    ru_minflt:   1268787
+    ru_majflt:   41
+    ru_inblock:  17704248
+    ru_oublock:  2011872
+    ru_nvcsw:    40041
+    ru_nivcsw:   47437
+  GNU time:     
+    real:        00:01:57 (117.6 ms)
+    user:        00:02:38 (158.7 ms)
+    sys:         00:00:18 (18.5 ms)
+  Size (MB):     982.34 (1030060732 bytes) (sample-2-10_sorted.bam/output/compressed/scramble/sample-2-10_sorted.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 16:43:10 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 sample-2-10_sorted.bam/output/compressed/scramble/sample-2-10_sorted.bam.sam.scramble.cram sample-2-10_sorted.bam/output/decompressed/scramble/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble.4.dec.log
+  Process PID:   27986
+  Exit code:     0
+  Wall time:     00:01:40 (100.1 ms)
+  Memory (MB):   755.1
+  Resources:    
+    ru_utime:    00:01:17 (77.0 ms)
+    ru_stime:    00:00:13 (13.5 ms)
+    ru_maxrss:   773228
+    ru_minflt:   838575
+    ru_majflt:   40
+    ru_inblock:  8145816
+    ru_oublock:  11003808
+    ru_nvcsw:    18972
+    ru_nivcsw:   22931
+  GNU time:     
+    real:        00:01:40 (100.0 ms)
+    user:        00:01:17 (77.0 ms)
+    sys:         00:00:13 (13.4 ms)
+  Size (MB):     5,372.94 (5633940313 bytes) (sample-2-10_sorted.bam/output/decompressed/scramble/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 16:46:30 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/scramble-bzip2/sample-2-10_sorted.bam.sam.scramble.cram -j -7 -r data/sam/ref/Homo_sapiens_assembly19.fasta
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-bzip2.4.cmp.log
+  Process PID:   28062
+  Exit code:     0
+  Wall time:     00:01:52 (112.6 ms)
+  Memory (MB):   1183.9
+  Resources:    
+    ru_utime:    00:04:46 (286.7 ms)
+    ru_stime:    00:00:19 (19.2 ms)
+    ru_maxrss:   1212356
+    ru_minflt:   1737659
+    ru_majflt:   41
+    ru_inblock:  17703232
+    ru_oublock:  1949704
+    ru_nvcsw:    40767
+    ru_nivcsw:   60625
+  GNU time:     
+    real:        00:01:52 (112.5 ms)
+    user:        00:04:46 (286.7 ms)
+    sys:         00:00:19 (19.1 ms)
+  Size (MB):     951.99 (998231544 bytes) (sample-2-10_sorted.bam/output/compressed/scramble-bzip2/sample-2-10_sorted.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 16:48:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 sample-2-10_sorted.bam/output/compressed/scramble-bzip2/sample-2-10_sorted.bam.sam.scramble.cram sample-2-10_sorted.bam/output/decompressed/scramble-bzip2/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-bzip2.4.dec.log
+  Process PID:   28135
+  Exit code:     0
+  Wall time:     00:01:34 (94.6 ms)
+  Memory (MB):   730.0
+  Resources:    
+    ru_utime:    00:01:28 (88.2 ms)
+    ru_stime:    00:00:13 (13.8 ms)
+    ru_maxrss:   747480
+    ru_minflt:   879909
+    ru_majflt:   40
+    ru_inblock:  8083528
+    ru_oublock:  11003808
+    ru_nvcsw:    18260
+    ru_nivcsw:   23680
+  GNU time:     
+    real:        00:01:34 (94.5 ms)
+    user:        00:01:28 (88.2 ms)
+    sys:         00:00:13 (13.8 ms)
+  Size (MB):     5,372.94 (5633940337 bytes) (sample-2-10_sorted.bam/output/decompressed/scramble-bzip2/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 16:51:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/scramble-noref/sample-2-10_sorted.bam.sam.scramble.cram -x
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-noref.4.cmp.log
+  Process PID:   28257
+  Exit code:     0
+  Wall time:     00:01:08 (68.0 ms)
+  Memory (MB):   412.0
+  Resources:    
+    ru_utime:    00:02:23 (143.9 ms)
+    ru_stime:    00:00:10 (10.7 ms)
+    ru_maxrss:   421916
+    ru_minflt:   1270107
+    ru_majflt:   43
+    ru_inblock:  11582104
+    ru_oublock:  2174056
+    ru_nvcsw:    37387
+    ru_nivcsw:   37580
+  GNU time:     
+    real:        00:01:08 (68.0 ms)
+    user:        00:02:23 (143.9 ms)
+    sys:         00:00:10 (10.7 ms)
+  Size (MB):     1,061.54 (1113104491 bytes) (sample-2-10_sorted.bam/output/compressed/scramble-noref/sample-2-10_sorted.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 16:52:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 sample-2-10_sorted.bam/output/compressed/scramble-noref/sample-2-10_sorted.bam.sam.scramble.cram sample-2-10_sorted.bam/output/decompressed/scramble-noref/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-noref.4.dec.log
+  Process PID:   28281
+  Exit code:     0
+  Wall time:     00:00:26 (26.4 ms)
+  Memory (MB):   210.1
+  Resources:    
+    ru_utime:    00:01:07 (67.4 ms)
+    ru_stime:    00:00:07 (7.0 ms)
+    ru_maxrss:   215176
+    ru_minflt:   557156
+    ru_majflt:   42
+    ru_inblock:  2186752
+    ru_oublock:  11569368
+    ru_nvcsw:    6892
+    ru_nivcsw:   11594
+  GNU time:     
+    real:        00:00:26 (26.3 ms)
+    user:        00:01:07 (67.3 ms)
+    sys:         00:00:07 (7.0 ms)
+  Size (MB):     5,649.10 (5923510254 bytes) (sample-2-10_sorted.bam/output/decompressed/scramble-noref/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 16:54:56 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 4 sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/sambamba/sample-2-10_sorted.bam.sam.sambamba.bam 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.sambamba.4.cmp.log
+  Process PID:   28354
+  Exit code:     0
+  Wall time:     00:01:07 (67.1 ms)
+  Memory (MB):   11.3
+  Resources:    
+    ru_utime:    00:04:07 (247.5 ms)
+    ru_stime:    00:00:11 (11.1 ms)
+    ru_maxrss:   11608
+    ru_minflt:   2419944
+    ru_majflt:   25
+    ru_inblock:  11577288
+    ru_oublock:  2868360
+    ru_nvcsw:    27838
+    ru_nivcsw:   62031
+  GNU time:     
+    real:        00:01:07 (67.0 ms)
+    user:        00:04:07 (247.5 ms)
+    sys:         00:00:11 (11.1 ms)
+  Size (MB):     1,400.56 (1468589057 bytes) (sample-2-10_sorted.bam/output/compressed/sambamba/sample-2-10_sorted.bam.sam.sambamba.bam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 16:56:10 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -h -t 4 sample-2-10_sorted.bam/output/compressed/sambamba/sample-2-10_sorted.bam.sam.sambamba.bam -o sample-2-10_sorted.bam/output/decompressed/sambamba/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.sambamba.4.dec.log
+  Process PID:   28410
+  Exit code:     0
+  Wall time:     00:00:17 (17.4 ms)
+  Memory (MB):   19.0
+  Resources:    
+    ru_utime:    00:00:59 (59.6 ms)
+    ru_stime:    00:00:08 (8.9 ms)
+    ru_maxrss:   19412
+    ru_minflt:   2989
+    ru_majflt:   23
+    ru_inblock:  2876128
+    ru_oublock:  11569368
+    ru_nvcsw:    104373
+    ru_nivcsw:   19004
+  GNU time:     
+    real:        00:00:17 (17.3 ms)
+    user:        00:00:59 (59.6 ms)
+    sys:         00:00:08 (8.9 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/sambamba/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 16:58:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v sample-2-10_sorted.bam.sam 
+    stdout:      sample-2-10_sorted.bam/output/compressed/quip/sample-2-10_sorted.bam.sam.qp
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.quip.4.cmp.log
+  Process PID:   28480
+  Exit code:     0
+  Wall time:     00:06:01 (361.8 ms)
+  Memory (MB):   449.2
+  Resources:    
+    ru_utime:    00:09:29 (569.9 ms)
+    ru_stime:    00:00:08 (8.3 ms)
+    ru_maxrss:   460004
+    ru_minflt:   31448
+    ru_majflt:   17
+    ru_inblock:  11573928
+    ru_oublock:  2401800
+    ru_nvcsw:    14362
+    ru_nivcsw:   119774
+  GNU time:     
+    real:        00:06:01 (361.7 ms)
+    user:        00:09:29 (569.9 ms)
+    sys:         00:00:08 (8.3 ms)
+  Size (MB):     1,172.62 (1229582357 bytes) (sample-2-10_sorted.bam/output/compressed/quip/sample-2-10_sorted.bam.sam.qp)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 17:04:21 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o sam sample-2-10_sorted.bam/output/compressed/quip/sample-2-10_sorted.bam.sam.qp
+    stdout:      sample-2-10_sorted.bam/output/decompressed/quip/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.quip.4.dec.log
+  Process PID:   10727
+  Exit code:     0
+  Wall time:     00:07:14 (434.3 ms)
+  Memory (MB):   449.9
+  Resources:    
+    ru_utime:    00:11:06 (666.8 ms)
+    ru_stime:    00:00:11 (11.1 ms)
+    ru_maxrss:   460724
+    ru_minflt:   36141
+    ru_majflt:   17
+    ru_inblock:  2406192
+    ru_oublock:  11569368
+    ru_nvcsw:    19148
+    ru_nivcsw:   88106
+  GNU time:     
+    real:        00:07:14 (434.2 ms)
+    user:        00:11:06 (666.8 ms)
+    sys:         00:00:11 (11.1 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/quip/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+>>> quip-ref (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 17:13:19 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v sample-2-10_sorted.bam.sam -r data/sam/ref/Homo_sapiens_assembly19.fasta
+    stdout:      sample-2-10_sorted.bam/output/compressed/quip-ref/sample-2-10_sorted.bam.sam.qp
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.quip-ref.4.cmp.log
+  Process PID:   24984
+  Exit code:     256
+  Wall time:     00:01:21 (81.3 ms)
+  Memory (MB):   1467.4
+  Resources:    
+    ru_utime:    00:01:42 (102.8 ms)
+    ru_stime:    00:00:03 (3.3 ms)
+    ru_maxrss:   1502612
+    ru_minflt:   78189
+    ru_majflt:   17
+    ru_inblock:  7378368
+    ru_oublock:  223376
+    ru_nvcsw:    1682
+    ru_nivcsw:   40980
+  GNU time:     
+    real:        00:01:21 (81.2 ms)
+    user:        00:01:42 (102.8 ms)
+    sys:         00:00:03 (3.3 ms)
+  Size (MB):     109.04 (114341394 bytes) (sample-2-10_sorted.bam/output/compressed/quip-ref/sample-2-10_sorted.bam.sam.qp)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 17:14:41 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/deez/sample-2-10_sorted.bam.sam.dz 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez.4.cmp.log
+  Process PID:   26517
+  Exit code:     0
+  Wall time:     00:05:47 (347.3 ms)
+  Memory (MB):   4022.5
+  Resources:    
+    ru_utime:    00:08:17 (497.3 ms)
+    ru_stime:    00:00:31 (31.2 ms)
+    ru_maxrss:   4118992
+    ru_minflt:   784370
+    ru_majflt:   48
+    ru_inblock:  17727648
+    ru_oublock:  2007056
+    ru_nvcsw:    384049
+    ru_nivcsw:   122089
+  GNU time:     
+    real:        00:05:46 (346.9 ms)
+    user:        00:08:17 (497.3 ms)
+    sys:         00:00:31 (31.2 ms)
+  Size (MB):     979.92 (1027524602 bytes) (sample-2-10_sorted.bam/output/compressed/deez/sample-2-10_sorted.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 17:20:30 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam/output/compressed/deez/sample-2-10_sorted.bam.sam.dz -o sample-2-10_sorted.bam/output/decompressed/deez/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez.4.dec.log
+  Process PID:   27198
+  Exit code:     0
+  Wall time:     00:04:12 (252.5 ms)
+  Memory (MB):   5011.2
+  Resources:    
+    ru_utime:    00:06:11 (371.5 ms)
+    ru_stime:    00:00:42 (42.5 ms)
+    ru_maxrss:   5131464
+    ru_minflt:   1060824
+    ru_majflt:   47
+    ru_inblock:  8165376
+    ru_oublock:  11569440
+    ru_nvcsw:    2825853
+    ru_nivcsw:   66658
+  GNU time:     
+    real:        00:04:12 (252.1 ms)
+    user:        00:06:11 (371.5 ms)
+    sys:         00:00:42 (42.5 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/deez/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 17:26:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz -q1 -b
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez-qual.4.cmp.log
+  Process PID:   27609
+  Exit code:     0
+  Wall time:     00:08:10 (490.4 ms)
+  Memory (MB):   4489.3
+  Resources:    
+    ru_utime:    00:14:44 (884.1 ms)
+    ru_stime:    00:00:33 (33.3 ms)
+    ru_maxrss:   4597052
+    ru_minflt:   1137333
+    ru_majflt:   48
+    ru_inblock:  17727992
+    ru_oublock:  1793336
+    ru_nvcsw:    424257
+    ru_nivcsw:   161297
+  GNU time:     
+    real:        00:08:10 (490.3 ms)
+    user:        00:14:44 (884.1 ms)
+    sys:         00:00:33 (33.2 ms)
+  Size (MB):     875.53 (918061523 bytes) (sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 17:34:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz -o sample-2-10_sorted.bam/output/decompressed/deez-qual/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez-qual.4.dec.log
+  Process PID:   28339
+  Exit code:     0
+  Wall time:     00:06:29 (389.6 ms)
+  Memory (MB):   5746.0
+  Resources:    
+    ru_utime:    00:10:37 (637.0 ms)
+    ru_stime:    00:00:39 (39.6 ms)
+    ru_maxrss:   5883924
+    ru_minflt:   1176384
+    ru_majflt:   47
+    ru_inblock:  7951904
+    ru_oublock:  11569464
+    ru_nvcsw:    2502160
+    ru_nivcsw:   94058
+  GNU time:     
+    real:        00:06:29 (389.5 ms)
+    user:        00:10:37 (637.0 ms)
+    sys:         00:00:39 (39.5 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/deez-qual/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                sample-2-10_sorted.bam with 8 threads                 + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 17:42:48 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8 
+    stdin:       sample-2-10_sorted.bam.sam
+    stdout:      sample-2-10_sorted.bam/output/compressed/pigz/sample-2-10_sorted.bam.sam.gz
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pigz.8.cmp.log
+  Process PID:   28847
+  Exit code:     0
+  Wall time:     00:00:33 (33.0 ms)
+  Memory (MB):   8.1
+  Resources:    
+    ru_utime:    00:04:13 (253.1 ms)
+    ru_stime:    00:00:14 (14.3 ms)
+    ru_maxrss:   8304
+    ru_minflt:   2017
+    ru_majflt:   8
+    ru_inblock:  11572744
+    ru_oublock:  2691920
+    ru_nvcsw:    87509
+    ru_nivcsw:   44039
+  GNU time:     
+    real:        00:00:33 (33.0 ms)
+    user:        00:04:13 (253.1 ms)
+    sys:         00:00:14 (14.3 ms)
+  Size (MB):     1,314.41 (1378257521 bytes) (sample-2-10_sorted.bam/output/compressed/pigz/sample-2-10_sorted.bam.sam.gz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 17:43:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       sample-2-10_sorted.bam/output/compressed/pigz/sample-2-10_sorted.bam.sam.gz
+    stdout:      sample-2-10_sorted.bam/output/decompressed/pigz/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pigz.8.dec.log
+  Process PID:   28869
+  Exit code:     0
+  Wall time:     00:00:30 (30.9 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:00:49 (49.1 ms)
+    ru_stime:    00:00:20 (20.9 ms)
+    ru_maxrss:   6060
+    ru_minflt:   667
+    ru_majflt:   7
+    ru_inblock:  2693448
+    ru_oublock:  11569368
+    ru_nvcsw:    484117
+    ru_nivcsw:   11471
+  GNU time:     
+    real:        00:00:30 (30.8 ms)
+    user:        00:00:49 (49.1 ms)
+    sys:         00:00:20 (20.9 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/pigz/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 17:45:54 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8 
+    stdin:       sample-2-10_sorted.bam.sam
+    stdout:      sample-2-10_sorted.bam/output/compressed/pbzip2/sample-2-10_sorted.bam.sam.bz2
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pbzip2.8.cmp.log
+  Process PID:   29215
+  Exit code:     0
+  Wall time:     00:02:58 (178.6 ms)
+  Memory (MB):   74.3
+  Resources:    
+    ru_utime:    00:22:21 (1341.9 ms)
+    ru_stime:    00:00:34 (34.9 ms)
+    ru_maxrss:   76036
+    ru_minflt:   5425666
+    ru_majflt:   8
+    ru_inblock:  11596624
+    ru_oublock:  2200488
+    ru_nvcsw:    33562
+    ru_nivcsw:   163145
+  GNU time:     
+    real:        00:02:58 (178.5 ms)
+    user:        00:22:21 (1341.9 ms)
+    sys:         00:00:34 (34.9 ms)
+  Size (MB):     1,074.43 (1126619628 bytes) (sample-2-10_sorted.bam/output/compressed/pbzip2/sample-2-10_sorted.bam.sam.bz2)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 17:48:55 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       sample-2-10_sorted.bam/output/compressed/pbzip2/sample-2-10_sorted.bam.sam.bz2
+    stdout:      sample-2-10_sorted.bam/output/decompressed/pbzip2/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.pbzip2.8.dec.log
+  Process PID:   29330
+  Exit code:     0
+  Wall time:     00:00:31 (31.7 ms)
+  Memory (MB):   48.8
+  Resources:    
+    ru_utime:    00:03:51 (231.1 ms)
+    ru_stime:    00:00:26 (26.3 ms)
+    ru_maxrss:   49960
+    ru_minflt:   2944544
+    ru_majflt:   8
+    ru_inblock:  2227392
+    ru_oublock:  11569368
+    ru_nvcsw:    13659
+    ru_nivcsw:   33577
+  GNU time:     
+    real:        00:00:31 (31.6 ms)
+    user:        00:03:51 (231.1 ms)
+    sys:         00:00:26 (26.3 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/pbzip2/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 17:51:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/scramble/sample-2-10_sorted.bam.sam.scramble.cram -r data/sam/ref/Homo_sapiens_assembly19.fasta
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble.8.cmp.log
+  Process PID:   29426
+  Exit code:     0
+  Wall time:     00:01:50 (110.7 ms)
+  Memory (MB):   1577.8
+  Resources:    
+    ru_utime:    00:02:41 (161.5 ms)
+    ru_stime:    00:00:19 (19.6 ms)
+    ru_maxrss:   1615668
+    ru_minflt:   1555133
+    ru_majflt:   41
+    ru_inblock:  17704584
+    ru_oublock:  2012024
+    ru_nvcsw:    40129
+    ru_nivcsw:   48249
+  GNU time:     
+    real:        00:01:50 (110.7 ms)
+    user:        00:02:41 (161.5 ms)
+    sys:         00:00:19 (19.6 ms)
+  Size (MB):     982.42 (1030137035 bytes) (sample-2-10_sorted.bam/output/compressed/scramble/sample-2-10_sorted.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 17:53:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 sample-2-10_sorted.bam/output/compressed/scramble/sample-2-10_sorted.bam.sam.scramble.cram sample-2-10_sorted.bam/output/decompressed/scramble/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble.8.dec.log
+  Process PID:   29492
+  Exit code:     0
+  Wall time:     00:01:46 (106.8 ms)
+  Memory (MB):   928.6
+  Resources:    
+    ru_utime:    00:01:18 (78.7 ms)
+    ru_stime:    00:00:15 (15.0 ms)
+    ru_maxrss:   950916
+    ru_minflt:   1176030
+    ru_majflt:   42
+    ru_inblock:  8146488
+    ru_oublock:  11003808
+    ru_nvcsw:    20511
+    ru_nivcsw:   21399
+  GNU time:     
+    real:        00:01:46 (106.7 ms)
+    user:        00:01:18 (78.7 ms)
+    sys:         00:00:15 (15.0 ms)
+  Size (MB):     5,372.94 (5633940313 bytes) (sample-2-10_sorted.bam/output/decompressed/scramble/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 17:56:31 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/scramble-bzip2/sample-2-10_sorted.bam.sam.scramble.cram -j -7 -r data/sam/ref/Homo_sapiens_assembly19.fasta
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-bzip2.8.cmp.log
+  Process PID:   29581
+  Exit code:     0
+  Wall time:     00:01:51 (111.0 ms)
+  Memory (MB):   1636.3
+  Resources:    
+    ru_utime:    00:05:00 (300.5 ms)
+    ru_stime:    00:00:21 (21.6 ms)
+    ru_maxrss:   1675540
+    ru_minflt:   2069360
+    ru_majflt:   41
+    ru_inblock:  17704192
+    ru_oublock:  1949992
+    ru_nvcsw:    40147
+    ru_nivcsw:   63465
+  GNU time:     
+    real:        00:01:50 (110.9 ms)
+    user:        00:05:00 (300.5 ms)
+    sys:         00:00:21 (21.6 ms)
+  Size (MB):     952.13 (998377390 bytes) (sample-2-10_sorted.bam/output/compressed/scramble-bzip2/sample-2-10_sorted.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 17:58:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 sample-2-10_sorted.bam/output/compressed/scramble-bzip2/sample-2-10_sorted.bam.sam.scramble.cram sample-2-10_sorted.bam/output/decompressed/scramble-bzip2/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-bzip2.8.dec.log
+  Process PID:   29651
+  Exit code:     0
+  Wall time:     00:01:36 (96.3 ms)
+  Memory (MB):   930.7
+  Resources:    
+    ru_utime:    00:01:29 (89.1 ms)
+    ru_stime:    00:00:15 (15.6 ms)
+    ru_maxrss:   953064
+    ru_minflt:   1342882
+    ru_majflt:   40
+    ru_inblock:  8084224
+    ru_oublock:  11003808
+    ru_nvcsw:    19063
+    ru_nivcsw:   23212
+  GNU time:     
+    real:        00:01:36 (96.2 ms)
+    user:        00:01:29 (89.1 ms)
+    sys:         00:00:15 (15.6 ms)
+  Size (MB):     5,372.94 (5633940337 bytes) (sample-2-10_sorted.bam/output/decompressed/scramble-bzip2/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 18:01:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 sample-2-10_sorted.bam.sam sample-2-10_sorted.bam/output/compressed/scramble-noref/sample-2-10_sorted.bam.sam.scramble.cram -x
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-noref.8.cmp.log
+  Process PID:   29796
+  Exit code:     0
+  Wall time:     00:01:19 (79.8 ms)
+  Memory (MB):   345.1
+  Resources:    
+    ru_utime:    00:02:33 (153.9 ms)
+    ru_stime:    00:00:11 (11.0 ms)
+    ru_maxrss:   353372
+    ru_minflt:   1734868
+    ru_majflt:   43
+    ru_inblock:  11582592
+    ru_oublock:  2173976
+    ru_nvcsw:    24991
+    ru_nivcsw:   36153
+  GNU time:     
+    real:        00:01:19 (79.7 ms)
+    user:        00:02:33 (153.9 ms)
+    sys:         00:00:11 (11.0 ms)
+  Size (MB):     1,061.50 (1113061082 bytes) (sample-2-10_sorted.bam/output/compressed/scramble-noref/sample-2-10_sorted.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 18:03:01 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 sample-2-10_sorted.bam/output/compressed/scramble-noref/sample-2-10_sorted.bam.sam.scramble.cram sample-2-10_sorted.bam/output/decompressed/scramble-noref/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.scramble-noref.8.dec.log
+  Process PID:   29827
+  Exit code:     0
+  Wall time:     00:00:26 (26.4 ms)
+  Memory (MB):   448.5
+  Resources:    
+    ru_utime:    00:01:08 (68.3 ms)
+    ru_stime:    00:00:07 (7.0 ms)
+    ru_maxrss:   459300
+    ru_minflt:   585489
+    ru_majflt:   42
+    ru_inblock:  2181296
+    ru_oublock:  11569368
+    ru_nvcsw:    14297
+    ru_nivcsw:   11760
+  GNU time:     
+    real:        00:00:26 (26.3 ms)
+    user:        00:01:08 (68.3 ms)
+    sys:         00:00:07 (7.0 ms)
+  Size (MB):     5,649.10 (5923510254 bytes) (sample-2-10_sorted.bam/output/decompressed/scramble-noref/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 18:05:09 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 8 sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/sambamba/sample-2-10_sorted.bam.sam.sambamba.bam 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.sambamba.8.cmp.log
+  Process PID:   29897
+  Exit code:     0
+  Wall time:     00:00:56 (56.9 ms)
+  Memory (MB):   22.3
+  Resources:    
+    ru_utime:    00:04:42 (282.6 ms)
+    ru_stime:    00:00:12 (12.9 ms)
+    ru_maxrss:   22836
+    ru_minflt:   2420088
+    ru_majflt:   25
+    ru_inblock:  11577360
+    ru_oublock:  2868376
+    ru_nvcsw:    68138
+    ru_nivcsw:   80154
+  GNU time:     
+    real:        00:00:56 (56.7 ms)
+    user:        00:04:42 (282.6 ms)
+    sys:         00:00:12 (12.9 ms)
+  Size (MB):     1,400.56 (1468589057 bytes) (sample-2-10_sorted.bam/output/compressed/sambamba/sample-2-10_sorted.bam.sam.sambamba.bam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 18:06:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -h -t 8 sample-2-10_sorted.bam/output/compressed/sambamba/sample-2-10_sorted.bam.sam.sambamba.bam -o sample-2-10_sorted.bam/output/decompressed/sambamba/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.sambamba.8.dec.log
+  Process PID:   29955
+  Exit code:     0
+  Wall time:     00:00:18 (18.7 ms)
+  Memory (MB):   37.6
+  Resources:    
+    ru_utime:    00:01:51 (111.1 ms)
+    ru_stime:    00:00:10 (10.3 ms)
+    ru_maxrss:   38528
+    ru_minflt:   3982
+    ru_majflt:   23
+    ru_inblock:  2875592
+    ru_oublock:  11569368
+    ru_nvcsw:    109461
+    ru_nivcsw:   26666
+  GNU time:     
+    real:        00:00:18 (18.6 ms)
+    user:        00:01:51 (111.0 ms)
+    sys:         00:00:10 (10.2 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/sambamba/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 18:08:17 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/deez/sample-2-10_sorted.bam.sam.dz 
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez.8.cmp.log
+  Process PID:   30037
+  Exit code:     0
+  Wall time:     00:05:31 (331.3 ms)
+  Memory (MB):   4078.5
+  Resources:    
+    ru_utime:    00:09:40 (580.7 ms)
+    ru_stime:    00:00:33 (33.7 ms)
+    ru_maxrss:   4176384
+    ru_minflt:   836143
+    ru_majflt:   48
+    ru_inblock:  17727976
+    ru_oublock:  2007056
+    ru_nvcsw:    523163
+    ru_nivcsw:   131757
+  GNU time:     
+    real:        00:05:31 (331.2 ms)
+    user:        00:09:40 (580.7 ms)
+    sys:         00:00:33 (33.7 ms)
+  Size (MB):     979.92 (1027524605 bytes) (sample-2-10_sorted.bam/output/compressed/deez/sample-2-10_sorted.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 18:13:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam/output/compressed/deez/sample-2-10_sorted.bam.sam.dz -o sample-2-10_sorted.bam/output/decompressed/deez/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez.8.dec.log
+  Process PID:   31188
+  Exit code:     0
+  Wall time:     00:03:50 (230.9 ms)
+  Memory (MB):   7394.2
+  Resources:    
+    ru_utime:    00:06:13 (373.0 ms)
+    ru_stime:    00:00:33 (33.4 ms)
+    ru_maxrss:   7571612
+    ru_minflt:   1677143
+    ru_majflt:   47
+    ru_inblock:  8165752
+    ru_oublock:  11569432
+    ru_nvcsw:    1383508
+    ru_nivcsw:   66103
+  GNU time:     
+    real:        00:03:50 (230.8 ms)
+    user:        00:06:13 (373.0 ms)
+    sys:         00:00:33 (33.4 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/deez/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: sample-2-10_sorted.bam.sam)
+*** 2016-03-03 18:19:23 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam.sam -o sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz -q1 -b
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez-qual.8.cmp.log
+  Process PID:   31875
+  Exit code:     0
+  Wall time:     00:07:55 (475.4 ms)
+  Memory (MB):   4488.5
+  Resources:    
+    ru_utime:    00:16:18 (978.4 ms)
+    ru_stime:    00:00:34 (34.7 ms)
+    ru_maxrss:   4596244
+    ru_minflt:   1033308
+    ru_majflt:   48
+    ru_inblock:  17728144
+    ru_oublock:  1793320
+    ru_nvcsw:    495401
+    ru_nivcsw:   171664
+  GNU time:     
+    real:        00:07:55 (475.3 ms)
+    user:        00:16:18 (978.4 ms)
+    sys:         00:00:34 (34.6 ms)
+  Size (MB):     875.53 (918061523 bytes) (sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 18:27:20 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -r data/sam/ref/Homo_sapiens_assembly19.fasta -! -v1 sample-2-10_sorted.bam/output/compressed/deez-qual/sample-2-10_sorted.bam.sam.dz -o sample-2-10_sorted.bam/output/decompressed/deez-qual/sample-2-10_sorted.bam.sam.sam
+    stderr:      sample-2-10_sorted.bam/log/sample-2-10_sorted.bam.sam.deez-qual.8.dec.log
+  Process PID:   741
+  Exit code:     0
+  Wall time:     00:06:13 (373.1 ms)
+  Memory (MB):   7910.3
+  Resources:    
+    ru_utime:    00:10:50 (650.9 ms)
+    ru_stime:    00:00:34 (34.9 ms)
+    ru_maxrss:   8100116
+    ru_minflt:   1714317
+    ru_majflt:   47
+    ru_inblock:  7951656
+    ru_oublock:  11569464
+    ru_nvcsw:    1686993
+    ru_nivcsw:   95660
+  GNU time:     
+    real:        00:06:13 (373.0 ms)
+    user:        00:10:50 (650.9 ms)
+    sys:         00:00:34 (34.9 ms)
+  Size (MB):     5,649.10 (5923509697 bytes) (sample-2-10_sorted.bam/output/decompressed/deez-qual/sample-2-10_sorted.bam.sam.sam)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+
+Done!

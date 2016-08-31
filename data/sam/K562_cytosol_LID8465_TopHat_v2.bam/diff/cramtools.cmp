@@ -1,0 +1,13 @@
+Reading K562_cytosol_LID8465_TopHat_v2.bam.sam, K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.cram.sam; maxline=300000
+> ORIG     246476391 (K562_cytosol_LID8465_TopHat_v2.bam.sam)
+< COPY     246476391 (K562_cytosol_LID8465_TopHat_v2.bam/output/K562_cytosol_LID8465_TopHat_v2.bam.cram.sam)
+Comments   not equal
+
+FLAG        16639096 lines unequal
+REFNEXT       537246 lines unequal
+POSNEXT     17137058 lines unequal
+TLEN        36041988 lines unequal
+SEQ         48488623 lines unequal
+MD         246476391 missing,          0 extra,          0 unequal
+NM         246476391 missing,          0 extra,          0 unequal
+Done K562_cytosol_LID8465_TopHat_v2.bam.sam

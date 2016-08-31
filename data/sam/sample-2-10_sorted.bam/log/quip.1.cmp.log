@@ -1,0 +1,2577 @@
+[samopen] SAM header is present: 25 sequences.
+writing a block of 5493490 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 205541 / 850000 (24.18%)
+	aux: 245611 / 2988635 (8.22%)
+	seq: 492475 / 5493490 (8.96%)
+	qual: 2673961 / 5493490 (48.68%)
+writing a block of 5173629 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175090 / 765000 (22.89%)
+	aux: 198652 / 2656406 (7.48%)
+	seq: 406681 / 5173629 (7.86%)
+	qual: 2239273 / 5173629 (43.28%)
+writing a block of 5061446 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175497 / 765000 (22.94%)
+	aux: 184891 / 2640913 (7.00%)
+	seq: 366208 / 5061446 (7.24%)
+	qual: 2130253 / 5061446 (42.09%)
+writing a block of 5158971 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173566 / 765000 (22.69%)
+	aux: 184782 / 2646904 (6.98%)
+	seq: 372425 / 5158971 (7.22%)
+	qual: 2156894 / 5158971 (41.81%)
+writing a block of 5022185 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 178360 / 765000 (23.32%)
+	aux: 207497 / 2683058 (7.73%)
+	seq: 455079 / 5022185 (9.06%)
+	qual: 2106363 / 5022185 (41.94%)
+writing a block of 5000835 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174645 / 765000 (22.83%)
+	aux: 190826 / 2663424 (7.16%)
+	seq: 392762 / 5000835 (7.85%)
+	qual: 2086029 / 5000835 (41.71%)
+writing a block of 5097284 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176963 / 765000 (23.13%)
+	aux: 198350 / 2663518 (7.45%)
+	seq: 442013 / 5097284 (8.67%)
+	qual: 2111883 / 5097284 (41.43%)
+writing a block of 5243314 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193309 / 850000 (22.74%)
+	aux: 231464 / 3023391 (7.66%)
+	seq: 474985 / 5243314 (9.06%)
+	qual: 2175012 / 5243314 (41.48%)
+writing a block of 5101578 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174000 / 765000 (22.75%)
+	aux: 189975 / 2646216 (7.18%)
+	seq: 401705 / 5101578 (7.87%)
+	qual: 2115220 / 5101578 (41.46%)
+writing a block of 5275859 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174489 / 765000 (22.81%)
+	aux: 185007 / 2644493 (7.00%)
+	seq: 398328 / 5275859 (7.55%)
+	qual: 2175838 / 5275859 (41.24%)
+writing a block of 5385242 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 194283 / 850000 (22.86%)
+	aux: 202371 / 2926622 (6.91%)
+	seq: 428368 / 5385242 (7.95%)
+	qual: 2206002 / 5385242 (40.96%)
+writing a block of 5548226 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193546 / 850000 (22.77%)
+	aux: 202378 / 2932228 (6.90%)
+	seq: 436383 / 5548226 (7.87%)
+	qual: 2262338 / 5548226 (40.78%)
+writing a block of 5244948 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173478 / 765000 (22.68%)
+	aux: 184412 / 2651372 (6.96%)
+	seq: 394464 / 5244948 (7.52%)
+	qual: 2141433 / 5244948 (40.83%)
+writing a block of 5354320 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 169216 / 765000 (22.12%)
+	aux: 248186 / 2742977 (9.05%)
+	seq: 389776 / 5354320 (7.28%)
+	qual: 2189174 / 5354320 (40.89%)
+writing a block of 5107536 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170394 / 765000 (22.27%)
+	aux: 204851 / 2647158 (7.74%)
+	seq: 370925 / 5107536 (7.26%)
+	qual: 2091955 / 5107536 (40.96%)
+writing a block of 5437650 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 186336 / 850000 (21.92%)
+	aux: 226502 / 2939710 (7.70%)
+	seq: 374430 / 5437650 (6.89%)
+	qual: 2220270 / 5437650 (40.83%)
+writing a block of 5346010 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 184163 / 850000 (21.67%)
+	aux: 219003 / 2943367 (7.44%)
+	seq: 349106 / 5346010 (6.53%)
+	qual: 2180229 / 5346010 (40.78%)
+writing a block of 5517971 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 165345 / 765000 (21.61%)
+	aux: 192900 / 2657981 (7.26%)
+	seq: 327102 / 5517971 (5.93%)
+	qual: 2245851 / 5517971 (40.70%)
+writing a block of 5503606 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 185737 / 850000 (21.85%)
+	aux: 236999 / 2992653 (7.92%)
+	seq: 381956 / 5503606 (6.94%)
+	qual: 2239794 / 5503606 (40.70%)
+writing a block of 5299366 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172495 / 765000 (22.55%)
+	aux: 196499 / 2670264 (7.36%)
+	seq: 398374 / 5299366 (7.52%)
+	qual: 2189469 / 5299366 (41.32%)
+writing a block of 5221272 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173874 / 765000 (22.73%)
+	aux: 202106 / 2672852 (7.56%)
+	seq: 419730 / 5221272 (8.04%)
+	qual: 2166365 / 5221272 (41.49%)
+writing a block of 5016163 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173960 / 765000 (22.74%)
+	aux: 199134 / 2678063 (7.44%)
+	seq: 390933 / 5016163 (7.79%)
+	qual: 2073059 / 5016163 (41.33%)
+writing a block of 5343919 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173610 / 765000 (22.69%)
+	aux: 205633 / 2690506 (7.64%)
+	seq: 431708 / 5343919 (8.08%)
+	qual: 2189402 / 5343919 (40.97%)
+writing a block of 5092470 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174614 / 765000 (22.83%)
+	aux: 208449 / 2681666 (7.77%)
+	seq: 475585 / 5092470 (9.34%)
+	qual: 2083978 / 5092470 (40.92%)
+writing a block of 5611075 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191059 / 850000 (22.48%)
+	aux: 224429 / 2972305 (7.55%)
+	seq: 445651 / 5611075 (7.94%)
+	qual: 2286296 / 5611075 (40.75%)
+writing a block of 5096821 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172079 / 765000 (22.49%)
+	aux: 187834 / 2653306 (7.08%)
+	seq: 405819 / 5096821 (7.96%)
+	qual: 2086264 / 5096821 (40.93%)
+writing a block of 5294115 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171298 / 765000 (22.39%)
+	aux: 183066 / 2649623 (6.91%)
+	seq: 391777 / 5294115 (7.40%)
+	qual: 2153329 / 5294115 (40.67%)
+writing a block of 5517263 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190160 / 850000 (22.37%)
+	aux: 213270 / 2929818 (7.28%)
+	seq: 418220 / 5517263 (7.58%)
+	qual: 2245036 / 5517263 (40.69%)
+writing a block of 5549725 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190115 / 850000 (22.37%)
+	aux: 196938 / 2922332 (6.74%)
+	seq: 429072 / 5549725 (7.73%)
+	qual: 2271339 / 5549725 (40.93%)
+writing a block of 5428224 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190842 / 850000 (22.45%)
+	aux: 192460 / 2911409 (6.61%)
+	seq: 429200 / 5428224 (7.91%)
+	qual: 2238886 / 5428224 (41.25%)
+writing a block of 5216029 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189581 / 850000 (22.30%)
+	aux: 189623 / 2900165 (6.54%)
+	seq: 402556 / 5216029 (7.72%)
+	qual: 2139172 / 5216029 (41.01%)
+writing a block of 5557559 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193034 / 850000 (22.71%)
+	aux: 212550 / 2948802 (7.21%)
+	seq: 478271 / 5557559 (8.61%)
+	qual: 2283842 / 5557559 (41.09%)
+writing a block of 5089133 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172589 / 765000 (22.56%)
+	aux: 196439 / 2671473 (7.35%)
+	seq: 429902 / 5089133 (8.45%)
+	qual: 2076392 / 5089133 (40.80%)
+writing a block of 5241829 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172696 / 765000 (22.57%)
+	aux: 193158 / 2653674 (7.28%)
+	seq: 426323 / 5241829 (8.13%)
+	qual: 2146819 / 5241829 (40.96%)
+writing a block of 5019819 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172443 / 765000 (22.54%)
+	aux: 188917 / 2653256 (7.12%)
+	seq: 440819 / 5019819 (8.78%)
+	qual: 2060552 / 5019819 (41.05%)
+writing a block of 5387129 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172156 / 765000 (22.50%)
+	aux: 196246 / 2645298 (7.42%)
+	seq: 445765 / 5387129 (8.27%)
+	qual: 2204758 / 5387129 (40.93%)
+writing a block of 5038155 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173214 / 765000 (22.64%)
+	aux: 198504 / 2648586 (7.49%)
+	seq: 444072 / 5038155 (8.81%)
+	qual: 2079339 / 5038155 (41.27%)
+writing a block of 5428530 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189999 / 850000 (22.35%)
+	aux: 220132 / 2957895 (7.44%)
+	seq: 446948 / 5428530 (8.23%)
+	qual: 2229478 / 5428530 (41.07%)
+writing a block of 5545475 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191215 / 850000 (22.50%)
+	aux: 209906 / 2932489 (7.16%)
+	seq: 451080 / 5545475 (8.13%)
+	qual: 2272373 / 5545475 (40.98%)
+writing a block of 5344872 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192318 / 850000 (22.63%)
+	aux: 201391 / 2923586 (6.89%)
+	seq: 475836 / 5344872 (8.90%)
+	qual: 2169493 / 5344872 (40.59%)
+writing a block of 5053788 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170037 / 765000 (22.23%)
+	aux: 170617 / 2622513 (6.51%)
+	seq: 372156 / 5053788 (7.36%)
+	qual: 2054536 / 5053788 (40.65%)
+writing a block of 5039227 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171563 / 765000 (22.43%)
+	aux: 190131 / 2663057 (7.14%)
+	seq: 417598 / 5039227 (8.29%)
+	qual: 2046971 / 5039227 (40.62%)
+writing a block of 5075950 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173314 / 765000 (22.66%)
+	aux: 204063 / 2680446 (7.61%)
+	seq: 476749 / 5075950 (9.39%)
+	qual: 2097511 / 5075950 (41.32%)
+writing a block of 5601682 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191143 / 850000 (22.49%)
+	aux: 218232 / 2962109 (7.37%)
+	seq: 463998 / 5601682 (8.28%)
+	qual: 2277946 / 5601682 (40.67%)
+writing a block of 5009510 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173351 / 765000 (22.66%)
+	aux: 179095 / 2636512 (6.79%)
+	seq: 415229 / 5009510 (8.29%)
+	qual: 2061851 / 5009510 (41.16%)
+writing a block of 5255300 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189754 / 850000 (22.32%)
+	aux: 186779 / 2901983 (6.44%)
+	seq: 407996 / 5255300 (7.76%)
+	qual: 2145266 / 5255300 (40.82%)
+writing a block of 5260356 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189008 / 850000 (22.24%)
+	aux: 193385 / 2914466 (6.64%)
+	seq: 408928 / 5260356 (7.77%)
+	qual: 2149824 / 5260356 (40.87%)
+writing a block of 5109222 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172293 / 765000 (22.52%)
+	aux: 188578 / 2648409 (7.12%)
+	seq: 433688 / 5109222 (8.49%)
+	qual: 2090982 / 5109222 (40.93%)
+writing a block of 5521438 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189951 / 850000 (22.35%)
+	aux: 197131 / 2921473 (6.75%)
+	seq: 454630 / 5521438 (8.23%)
+	qual: 2257187 / 5521438 (40.88%)
+writing a block of 5401190 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191739 / 850000 (22.56%)
+	aux: 200167 / 2930843 (6.83%)
+	seq: 478443 / 5401190 (8.86%)
+	qual: 2220484 / 5401190 (41.11%)
+writing a block of 5064053 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174405 / 765000 (22.80%)
+	aux: 202388 / 2684344 (7.54%)
+	seq: 499397 / 5064053 (9.86%)
+	qual: 2076692 / 5064053 (41.01%)
+writing a block of 5196586 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173405 / 765000 (22.67%)
+	aux: 203661 / 2680290 (7.60%)
+	seq: 486200 / 5196586 (9.36%)
+	qual: 2131907 / 5196586 (41.03%)
+writing a block of 5210057 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172491 / 765000 (22.55%)
+	aux: 194549 / 2667102 (7.29%)
+	seq: 457145 / 5210057 (8.77%)
+	qual: 2131975 / 5210057 (40.92%)
+writing a block of 5536083 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191654 / 850000 (22.55%)
+	aux: 205151 / 2934762 (6.99%)
+	seq: 484037 / 5536083 (8.74%)
+	qual: 2240844 / 5536083 (40.48%)
+writing a block of 5480753 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190470 / 850000 (22.41%)
+	aux: 200094 / 2927224 (6.84%)
+	seq: 452194 / 5480753 (8.25%)
+	qual: 2219123 / 5480753 (40.49%)
+writing a block of 5412354 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189966 / 850000 (22.35%)
+	aux: 196931 / 2920215 (6.74%)
+	seq: 448957 / 5412354 (8.30%)
+	qual: 2200048 / 5412354 (40.65%)
+writing a block of 5515813 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189916 / 850000 (22.34%)
+	aux: 196306 / 2918939 (6.73%)
+	seq: 457646 / 5515813 (8.30%)
+	qual: 2240560 / 5515813 (40.62%)
+writing a block of 5059936 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172516 / 765000 (22.55%)
+	aux: 185166 / 2641712 (7.01%)
+	seq: 427888 / 5059936 (8.46%)
+	qual: 2081020 / 5059936 (41.13%)
+writing a block of 5404624 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190259 / 850000 (22.38%)
+	aux: 202538 / 2934440 (6.90%)
+	seq: 461514 / 5404624 (8.54%)
+	qual: 2219143 / 5404624 (41.06%)
+writing a block of 5331758 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189311 / 850000 (22.27%)
+	aux: 194954 / 2916923 (6.68%)
+	seq: 466698 / 5331758 (8.75%)
+	qual: 2181424 / 5331758 (40.91%)
+writing a block of 5345780 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189555 / 850000 (22.30%)
+	aux: 194070 / 2910411 (6.67%)
+	seq: 431926 / 5345780 (8.08%)
+	qual: 2188826 / 5345780 (40.94%)
+writing a block of 5061512 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189134 / 850000 (22.25%)
+	aux: 188439 / 2908259 (6.48%)
+	seq: 419083 / 5061512 (8.28%)
+	qual: 2045981 / 5061512 (40.42%)
+writing a block of 5124779 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170302 / 765000 (22.26%)
+	aux: 188726 / 2653475 (7.11%)
+	seq: 429097 / 5124779 (8.37%)
+	qual: 2086863 / 5124779 (40.72%)
+writing a block of 5380170 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189298 / 850000 (22.27%)
+	aux: 193418 / 2907813 (6.65%)
+	seq: 454880 / 5380170 (8.45%)
+	qual: 2176576 / 5380170 (40.46%)
+writing a block of 5165333 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 169434 / 765000 (22.15%)
+	aux: 186181 / 2648662 (7.03%)
+	seq: 414980 / 5165333 (8.03%)
+	qual: 2107061 / 5165333 (40.79%)
+writing a block of 5101199 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170555 / 765000 (22.29%)
+	aux: 180394 / 2640080 (6.83%)
+	seq: 413503 / 5101199 (8.11%)
+	qual: 2051420 / 5101199 (40.21%)
+writing a block of 5386374 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 188555 / 850000 (22.18%)
+	aux: 200424 / 2936331 (6.83%)
+	seq: 444366 / 5386374 (8.25%)
+	qual: 2164195 / 5386374 (40.18%)
+writing a block of 5090754 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170211 / 765000 (22.25%)
+	aux: 186112 / 2651165 (7.02%)
+	seq: 430395 / 5090754 (8.45%)
+	qual: 2059406 / 5090754 (40.45%)
+writing a block of 5041457 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172410 / 765000 (22.54%)
+	aux: 183427 / 2642798 (6.94%)
+	seq: 458961 / 5041457 (9.10%)
+	qual: 2042529 / 5041457 (40.51%)
+writing a block of 5147413 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172192 / 765000 (22.51%)
+	aux: 192256 / 2658746 (7.23%)
+	seq: 474551 / 5147413 (9.22%)
+	qual: 2106321 / 5147413 (40.92%)
+writing a block of 5510800 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195155 / 850000 (22.96%)
+	aux: 226054 / 2948624 (7.67%)
+	seq: 568048 / 5510800 (10.31%)
+	qual: 2243299 / 5510800 (40.71%)
+writing a block of 5118048 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175082 / 765000 (22.89%)
+	aux: 191905 / 2634914 (7.28%)
+	seq: 513778 / 5118048 (10.04%)
+	qual: 2077309 / 5118048 (40.59%)
+writing a block of 5032014 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174932 / 765000 (22.87%)
+	aux: 181564 / 2636816 (6.89%)
+	seq: 478823 / 5032014 (9.52%)
+	qual: 2034088 / 5032014 (40.42%)
+writing a block of 5111536 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175089 / 765000 (22.89%)
+	aux: 196368 / 2667254 (7.36%)
+	seq: 548130 / 5111536 (10.72%)
+	qual: 2078815 / 5111536 (40.67%)
+writing a block of 5486334 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 194275 / 850000 (22.86%)
+	aux: 202808 / 2922236 (6.94%)
+	seq: 557273 / 5486334 (10.16%)
+	qual: 2245699 / 5486334 (40.93%)
+writing a block of 5032090 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173879 / 765000 (22.73%)
+	aux: 190977 / 2661585 (7.18%)
+	seq: 535887 / 5032090 (10.65%)
+	qual: 2037836 / 5032090 (40.50%)
+writing a block of 5016600 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174201 / 765000 (22.77%)
+	aux: 185462 / 2643788 (7.02%)
+	seq: 496033 / 5016600 (9.89%)
+	qual: 2038774 / 5016600 (40.64%)
+writing a block of 5003638 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176650 / 765000 (23.09%)
+	aux: 186441 / 2639925 (7.06%)
+	seq: 542965 / 5003638 (10.85%)
+	qual: 2039984 / 5003638 (40.77%)
+writing a block of 5091004 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177561 / 765000 (23.21%)
+	aux: 184759 / 2643643 (6.99%)
+	seq: 560720 / 5091004 (11.01%)
+	qual: 2081258 / 5091004 (40.88%)
+writing a block of 5497538 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193203 / 850000 (22.73%)
+	aux: 198603 / 2925722 (6.79%)
+	seq: 569235 / 5497538 (10.35%)
+	qual: 2247929 / 5497538 (40.89%)
+writing a block of 5061551 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175470 / 765000 (22.94%)
+	aux: 183115 / 2637675 (6.94%)
+	seq: 519585 / 5061551 (10.27%)
+	qual: 2069461 / 5061551 (40.89%)
+writing a block of 5088139 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174501 / 765000 (22.81%)
+	aux: 181878 / 2641162 (6.89%)
+	seq: 518920 / 5088139 (10.20%)
+	qual: 2077507 / 5088139 (40.83%)
+writing a block of 5058720 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175238 / 765000 (22.91%)
+	aux: 182713 / 2640343 (6.92%)
+	seq: 511830 / 5058720 (10.12%)
+	qual: 2058675 / 5058720 (40.70%)
+writing a block of 5292816 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177708 / 765000 (23.23%)
+	aux: 202125 / 2676972 (7.55%)
+	seq: 598061 / 5292816 (11.30%)
+	qual: 2167869 / 5292816 (40.96%)
+writing a block of 5431766 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189428 / 850000 (22.29%)
+	aux: 197264 / 2920390 (6.75%)
+	seq: 492172 / 5431766 (9.06%)
+	qual: 2220693 / 5431766 (40.88%)
+writing a block of 5286600 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189786 / 850000 (22.33%)
+	aux: 190535 / 2907133 (6.55%)
+	seq: 460624 / 5286600 (8.71%)
+	qual: 2157788 / 5286600 (40.82%)
+writing a block of 5305440 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 206176 / 935000 (22.05%)
+	aux: 212232 / 3202707 (6.63%)
+	seq: 473031 / 5305440 (8.92%)
+	qual: 2157702 / 5305440 (40.67%)
+writing a block of 5356195 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190334 / 850000 (22.39%)
+	aux: 197220 / 2916147 (6.76%)
+	seq: 488454 / 5356195 (9.12%)
+	qual: 2176120 / 5356195 (40.63%)
+writing a block of 5077008 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189781 / 850000 (22.33%)
+	aux: 196901 / 2917150 (6.75%)
+	seq: 454914 / 5077008 (8.96%)
+	qual: 2069438 / 5077008 (40.76%)
+writing a block of 5204402 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190035 / 850000 (22.36%)
+	aux: 203134 / 2915289 (6.97%)
+	seq: 486595 / 5204402 (9.35%)
+	qual: 2121670 / 5204402 (40.77%)
+writing a block of 5201228 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172117 / 765000 (22.50%)
+	aux: 197699 / 2664282 (7.42%)
+	seq: 482699 / 5201228 (9.28%)
+	qual: 2122902 / 5201228 (40.82%)
+writing a block of 5197322 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173750 / 765000 (22.71%)
+	aux: 210204 / 2691761 (7.81%)
+	seq: 534514 / 5197322 (10.28%)
+	qual: 2146334 / 5197322 (41.30%)
+writing a block of 5054385 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174096 / 765000 (22.76%)
+	aux: 204015 / 2690117 (7.58%)
+	seq: 566502 / 5054385 (11.21%)
+	qual: 2075528 / 5054385 (41.06%)
+writing a block of 5427760 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175966 / 765000 (23.00%)
+	aux: 186920 / 2646222 (7.06%)
+	seq: 591845 / 5427760 (10.90%)
+	qual: 2229167 / 5427760 (41.07%)
+writing a block of 5152347 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177384 / 765000 (23.19%)
+	aux: 189247 / 2650849 (7.14%)
+	seq: 563286 / 5152347 (10.93%)
+	qual: 2105764 / 5152347 (40.87%)
+writing a block of 5147045 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174124 / 765000 (22.76%)
+	aux: 178282 / 2631112 (6.78%)
+	seq: 523046 / 5147045 (10.16%)
+	qual: 2078927 / 5147045 (40.39%)
+writing a block of 5118466 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172849 / 765000 (22.59%)
+	aux: 182424 / 2647772 (6.89%)
+	seq: 524923 / 5118466 (10.26%)
+	qual: 2083966 / 5118466 (40.71%)
+writing a block of 5426525 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192625 / 850000 (22.66%)
+	aux: 201868 / 2928563 (6.89%)
+	seq: 536285 / 5426525 (9.88%)
+	qual: 2192100 / 5426525 (40.40%)
+writing a block of 5059268 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176077 / 765000 (23.02%)
+	aux: 188201 / 2646487 (7.11%)
+	seq: 568989 / 5059268 (11.25%)
+	qual: 2070593 / 5059268 (40.93%)
+writing a block of 5051629 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175658 / 765000 (22.96%)
+	aux: 185551 / 2642674 (7.02%)
+	seq: 560612 / 5051629 (11.10%)
+	qual: 2052541 / 5051629 (40.63%)
+writing a block of 5057371 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173404 / 765000 (22.67%)
+	aux: 173669 / 2625007 (6.62%)
+	seq: 515345 / 5057371 (10.19%)
+	qual: 2060684 / 5057371 (40.75%)
+writing a block of 5533329 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 196674 / 850000 (23.14%)
+	aux: 204223 / 2933581 (6.96%)
+	seq: 615510 / 5533329 (11.12%)
+	qual: 2255023 / 5533329 (40.75%)
+writing a block of 5248272 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175447 / 765000 (22.93%)
+	aux: 205952 / 2650533 (7.77%)
+	seq: 557534 / 5248272 (10.62%)
+	qual: 2144225 / 5248272 (40.86%)
+writing a block of 5490702 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193502 / 850000 (22.76%)
+	aux: 212997 / 2947907 (7.23%)
+	seq: 591766 / 5490702 (10.78%)
+	qual: 2241375 / 5490702 (40.82%)
+writing a block of 5272447 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192181 / 850000 (22.61%)
+	aux: 200416 / 2902972 (6.90%)
+	seq: 545088 / 5272447 (10.34%)
+	qual: 2153407 / 5272447 (40.84%)
+writing a block of 5276328 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175280 / 765000 (22.91%)
+	aux: 188434 / 2644879 (7.12%)
+	seq: 562411 / 5276328 (10.66%)
+	qual: 2164843 / 5276328 (41.03%)
+writing a block of 5429433 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192444 / 850000 (22.64%)
+	aux: 197580 / 2915528 (6.78%)
+	seq: 538949 / 5429433 (9.93%)
+	qual: 2191552 / 5429433 (40.36%)
+writing a block of 5228362 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173403 / 765000 (22.67%)
+	aux: 185595 / 2645733 (7.01%)
+	seq: 543880 / 5228362 (10.40%)
+	qual: 2142159 / 5228362 (40.97%)
+writing a block of 5235694 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192353 / 850000 (22.63%)
+	aux: 193957 / 2909174 (6.67%)
+	seq: 550288 / 5235694 (10.51%)
+	qual: 2130148 / 5235694 (40.69%)
+writing a block of 5493471 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193217 / 850000 (22.73%)
+	aux: 217628 / 2931873 (7.42%)
+	seq: 613811 / 5493471 (11.17%)
+	qual: 2227378 / 5493471 (40.55%)
+writing a block of 5535872 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192922 / 850000 (22.70%)
+	aux: 225982 / 2976179 (7.59%)
+	seq: 622879 / 5535872 (11.25%)
+	qual: 2244397 / 5535872 (40.54%)
+writing a block of 5441250 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195241 / 850000 (22.97%)
+	aux: 220988 / 2948674 (7.49%)
+	seq: 636943 / 5441250 (11.71%)
+	qual: 2211575 / 5441250 (40.64%)
+writing a block of 5135399 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172690 / 765000 (22.57%)
+	aux: 192498 / 2663193 (7.23%)
+	seq: 543049 / 5135399 (10.57%)
+	qual: 2094849 / 5135399 (40.79%)
+writing a block of 5426194 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190341 / 850000 (22.39%)
+	aux: 200965 / 2934164 (6.85%)
+	seq: 550228 / 5426194 (10.14%)
+	qual: 2214621 / 5426194 (40.81%)
+writing a block of 5065069 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174777 / 765000 (22.85%)
+	aux: 193961 / 2666317 (7.27%)
+	seq: 568964 / 5065069 (11.23%)
+	qual: 2066292 / 5065069 (40.79%)
+writing a block of 5576273 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192046 / 850000 (22.59%)
+	aux: 209331 / 2945134 (7.11%)
+	seq: 570963 / 5576273 (10.24%)
+	qual: 2258951 / 5576273 (40.51%)
+writing a block of 5067669 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175423 / 765000 (22.93%)
+	aux: 201239 / 2675179 (7.52%)
+	seq: 588457 / 5067669 (11.61%)
+	qual: 2082049 / 5067669 (41.08%)
+writing a block of 5306313 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175380 / 765000 (22.93%)
+	aux: 209077 / 2697081 (7.75%)
+	seq: 626734 / 5306313 (11.81%)
+	qual: 2161736 / 5306313 (40.74%)
+writing a block of 5219009 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192675 / 850000 (22.67%)
+	aux: 218893 / 2960703 (7.39%)
+	seq: 605162 / 5219009 (11.60%)
+	qual: 2137602 / 5219009 (40.96%)
+writing a block of 5087422 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173531 / 765000 (22.68%)
+	aux: 200348 / 2670594 (7.50%)
+	seq: 584812 / 5087422 (11.50%)
+	qual: 2086070 / 5087422 (41.00%)
+writing a block of 5192236 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173742 / 765000 (22.71%)
+	aux: 201826 / 2637330 (7.65%)
+	seq: 548128 / 5192236 (10.56%)
+	qual: 2103791 / 5192236 (40.52%)
+writing a block of 5382567 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170290 / 765000 (22.26%)
+	aux: 175779 / 2634744 (6.67%)
+	seq: 489937 / 5382567 (9.10%)
+	qual: 2186085 / 5382567 (40.61%)
+writing a block of 5055596 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170850 / 765000 (22.33%)
+	aux: 180523 / 2636819 (6.85%)
+	seq: 487375 / 5055596 (9.64%)
+	qual: 2054679 / 5055596 (40.64%)
+writing a block of 5095729 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171486 / 765000 (22.42%)
+	aux: 176183 / 2628982 (6.70%)
+	seq: 471978 / 5095729 (9.26%)
+	qual: 2064515 / 5095729 (40.51%)
+writing a block of 5252488 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171207 / 765000 (22.38%)
+	aux: 181487 / 2642213 (6.87%)
+	seq: 507084 / 5252488 (9.65%)
+	qual: 2137364 / 5252488 (40.69%)
+writing a block of 5141230 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173039 / 765000 (22.62%)
+	aux: 185546 / 2649334 (7.00%)
+	seq: 527728 / 5141230 (10.26%)
+	qual: 2102819 / 5141230 (40.90%)
+writing a block of 5232538 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170764 / 765000 (22.32%)
+	aux: 170340 / 2629852 (6.48%)
+	seq: 504536 / 5232538 (9.64%)
+	qual: 2151772 / 5232538 (41.12%)
+writing a block of 5228638 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190695 / 850000 (22.43%)
+	aux: 184223 / 2902790 (6.35%)
+	seq: 527580 / 5228638 (10.09%)
+	qual: 2129264 / 5228638 (40.72%)
+writing a block of 5300428 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 187236 / 850000 (22.03%)
+	aux: 186376 / 2902410 (6.42%)
+	seq: 501066 / 5300428 (9.45%)
+	qual: 2150966 / 5300428 (40.58%)
+writing a block of 5044088 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 169544 / 765000 (22.16%)
+	aux: 166157 / 2622696 (6.34%)
+	seq: 496177 / 5044088 (9.84%)
+	qual: 2051503 / 5044088 (40.67%)
+writing a block of 5000807 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170932 / 765000 (22.34%)
+	aux: 172787 / 2617032 (6.60%)
+	seq: 495124 / 5000807 (9.90%)
+	qual: 2043525 / 5000807 (40.86%)
+writing a block of 5150345 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170177 / 765000 (22.25%)
+	aux: 169920 / 2624685 (6.47%)
+	seq: 509752 / 5150345 (9.90%)
+	qual: 2113551 / 5150345 (41.04%)
+writing a block of 5249230 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 188264 / 850000 (22.15%)
+	aux: 188722 / 2901758 (6.50%)
+	seq: 525142 / 5249230 (10.00%)
+	qual: 2126375 / 5249230 (40.51%)
+writing a block of 5065203 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173296 / 765000 (22.65%)
+	aux: 174121 / 2630021 (6.62%)
+	seq: 528979 / 5065203 (10.44%)
+	qual: 2066042 / 5065203 (40.79%)
+writing a block of 5441872 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191697 / 850000 (22.55%)
+	aux: 195442 / 2920456 (6.69%)
+	seq: 584849 / 5441872 (10.75%)
+	qual: 2216837 / 5441872 (40.74%)
+writing a block of 5430019 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192312 / 850000 (22.62%)
+	aux: 202133 / 2917275 (6.93%)
+	seq: 596736 / 5430019 (10.99%)
+	qual: 2221768 / 5430019 (40.92%)
+writing a block of 5532096 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191695 / 850000 (22.55%)
+	aux: 211249 / 2934776 (7.20%)
+	seq: 620205 / 5532096 (11.21%)
+	qual: 2265890 / 5532096 (40.96%)
+writing a block of 5548132 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192423 / 850000 (22.64%)
+	aux: 195491 / 2907884 (6.72%)
+	seq: 586969 / 5548132 (10.58%)
+	qual: 2262747 / 5548132 (40.78%)
+writing a block of 5486036 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191064 / 850000 (22.48%)
+	aux: 197362 / 2921844 (6.75%)
+	seq: 583360 / 5486036 (10.63%)
+	qual: 2226601 / 5486036 (40.59%)
+writing a block of 5289690 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175888 / 765000 (22.99%)
+	aux: 186253 / 2649491 (7.03%)
+	seq: 590334 / 5289690 (11.16%)
+	qual: 2160661 / 5289690 (40.85%)
+writing a block of 5241765 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172669 / 765000 (22.57%)
+	aux: 189537 / 2659461 (7.13%)
+	seq: 565022 / 5241765 (10.78%)
+	qual: 2150859 / 5241765 (41.03%)
+writing a block of 5122771 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173734 / 765000 (22.71%)
+	aux: 197035 / 2665914 (7.39%)
+	seq: 576522 / 5122771 (11.25%)
+	qual: 2085960 / 5122771 (40.72%)
+writing a block of 5263320 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172798 / 765000 (22.59%)
+	aux: 184457 / 2644484 (6.98%)
+	seq: 580586 / 5263320 (11.03%)
+	qual: 2135416 / 5263320 (40.57%)
+writing a block of 5160751 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171720 / 765000 (22.45%)
+	aux: 174259 / 2629555 (6.63%)
+	seq: 537858 / 5160751 (10.42%)
+	qual: 2100958 / 5160751 (40.71%)
+writing a block of 5030112 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172465 / 765000 (22.54%)
+	aux: 182419 / 2640293 (6.91%)
+	seq: 545280 / 5030112 (10.84%)
+	qual: 2043221 / 5030112 (40.62%)
+writing a block of 5127884 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172539 / 765000 (22.55%)
+	aux: 173926 / 2628647 (6.62%)
+	seq: 543308 / 5127884 (10.60%)
+	qual: 2085189 / 5127884 (40.66%)
+writing a block of 5168427 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173226 / 765000 (22.64%)
+	aux: 184419 / 2640387 (6.98%)
+	seq: 551632 / 5168427 (10.67%)
+	qual: 2104841 / 5168427 (40.72%)
+writing a block of 5453124 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190152 / 850000 (22.37%)
+	aux: 200127 / 2925869 (6.84%)
+	seq: 594230 / 5453124 (10.90%)
+	qual: 2209613 / 5453124 (40.52%)
+writing a block of 5440691 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191555 / 850000 (22.54%)
+	aux: 187034 / 2903047 (6.44%)
+	seq: 603712 / 5440691 (11.10%)
+	qual: 2221149 / 5440691 (40.82%)
+writing a block of 5001664 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172016 / 765000 (22.49%)
+	aux: 180167 / 2631012 (6.85%)
+	seq: 557748 / 5001664 (11.15%)
+	qual: 2037842 / 5001664 (40.74%)
+writing a block of 5407679 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174981 / 765000 (22.87%)
+	aux: 177459 / 2641062 (6.72%)
+	seq: 601815 / 5407679 (11.13%)
+	qual: 2205591 / 5407679 (40.79%)
+writing a block of 5091993 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172732 / 765000 (22.58%)
+	aux: 178525 / 2636477 (6.77%)
+	seq: 546749 / 5091993 (10.74%)
+	qual: 2051271 / 5091993 (40.28%)
+writing a block of 5428703 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174975 / 765000 (22.87%)
+	aux: 203108 / 2683619 (7.57%)
+	seq: 628919 / 5428703 (11.59%)
+	qual: 2194095 / 5428703 (40.42%)
+writing a block of 5219376 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175115 / 765000 (22.89%)
+	aux: 197859 / 2672055 (7.40%)
+	seq: 618784 / 5219376 (11.86%)
+	qual: 2120004 / 5219376 (40.62%)
+writing a block of 5386331 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189935 / 850000 (22.35%)
+	aux: 217212 / 2926424 (7.42%)
+	seq: 571143 / 5386331 (10.60%)
+	qual: 2170968 / 5386331 (40.31%)
+writing a block of 5170958 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174320 / 765000 (22.79%)
+	aux: 185759 / 2635553 (7.05%)
+	seq: 592718 / 5170958 (11.46%)
+	qual: 2121213 / 5170958 (41.02%)
+writing a block of 5152208 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170229 / 765000 (22.25%)
+	aux: 188265 / 2652491 (7.10%)
+	seq: 563539 / 5152208 (10.94%)
+	qual: 2101837 / 5152208 (40.79%)
+writing a block of 5509630 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192707 / 850000 (22.67%)
+	aux: 217733 / 2948168 (7.39%)
+	seq: 640174 / 5509630 (11.62%)
+	qual: 2234977 / 5509630 (40.56%)
+writing a block of 5048922 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172298 / 765000 (22.52%)
+	aux: 173092 / 2627626 (6.59%)
+	seq: 575411 / 5048922 (11.40%)
+	qual: 2065041 / 5048922 (40.90%)
+writing a block of 5393569 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191411 / 850000 (22.52%)
+	aux: 198837 / 2920369 (6.81%)
+	seq: 623629 / 5393569 (11.56%)
+	qual: 2207919 / 5393569 (40.94%)
+writing a block of 5151487 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171694 / 765000 (22.44%)
+	aux: 179667 / 2645172 (6.79%)
+	seq: 564967 / 5151487 (10.97%)
+	qual: 2091887 / 5151487 (40.61%)
+writing a block of 5429875 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189415 / 850000 (22.28%)
+	aux: 188854 / 2905357 (6.50%)
+	seq: 580364 / 5429875 (10.69%)
+	qual: 2221824 / 5429875 (40.92%)
+writing a block of 5041331 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170598 / 765000 (22.30%)
+	aux: 170078 / 2618492 (6.50%)
+	seq: 524664 / 5041331 (10.41%)
+	qual: 2065419 / 5041331 (40.97%)
+writing a block of 5188608 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170965 / 765000 (22.35%)
+	aux: 180616 / 2639304 (6.84%)
+	seq: 549640 / 5188608 (10.59%)
+	qual: 2110409 / 5188608 (40.67%)
+writing a block of 5227160 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172250 / 765000 (22.52%)
+	aux: 181767 / 2642416 (6.88%)
+	seq: 567794 / 5227160 (10.86%)
+	qual: 2128165 / 5227160 (40.71%)
+writing a block of 5273248 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171249 / 765000 (22.39%)
+	aux: 183915 / 2645859 (6.95%)
+	seq: 558712 / 5273248 (10.60%)
+	qual: 2129723 / 5273248 (40.39%)
+writing a block of 5251791 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171783 / 765000 (22.46%)
+	aux: 192210 / 2662624 (7.22%)
+	seq: 556667 / 5251791 (10.60%)
+	qual: 2147712 / 5251791 (40.89%)
+writing a block of 5272534 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172693 / 765000 (22.57%)
+	aux: 191599 / 2659824 (7.20%)
+	seq: 572691 / 5272534 (10.86%)
+	qual: 2143776 / 5272534 (40.66%)
+writing a block of 5016496 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170116 / 765000 (22.24%)
+	aux: 171523 / 2622410 (6.54%)
+	seq: 520241 / 5016496 (10.37%)
+	qual: 2031405 / 5016496 (40.49%)
+writing a block of 5403323 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189272 / 850000 (22.27%)
+	aux: 197229 / 2925262 (6.74%)
+	seq: 564429 / 5403323 (10.45%)
+	qual: 2195592 / 5403323 (40.63%)
+writing a block of 5404196 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190467 / 850000 (22.41%)
+	aux: 201936 / 2920692 (6.91%)
+	seq: 581162 / 5404196 (10.75%)
+	qual: 2191276 / 5404196 (40.55%)
+writing a block of 5208756 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172963 / 765000 (22.61%)
+	aux: 204732 / 2671813 (7.66%)
+	seq: 612879 / 5208756 (11.77%)
+	qual: 2130543 / 5208756 (40.90%)
+writing a block of 5017108 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173861 / 765000 (22.73%)
+	aux: 182122 / 2638097 (6.90%)
+	seq: 582431 / 5017108 (11.61%)
+	qual: 2060189 / 5017108 (41.06%)
+writing a block of 5389224 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191507 / 850000 (22.53%)
+	aux: 212226 / 2914233 (7.28%)
+	seq: 655985 / 5389224 (12.17%)
+	qual: 2191082 / 5389224 (40.66%)
+writing a block of 5053709 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172544 / 765000 (22.55%)
+	aux: 199442 / 2669653 (7.47%)
+	seq: 601416 / 5053709 (11.90%)
+	qual: 2049749 / 5053709 (40.56%)
+writing a block of 5064617 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172209 / 765000 (22.51%)
+	aux: 180580 / 2635911 (6.85%)
+	seq: 566037 / 5064617 (11.18%)
+	qual: 2058148 / 5064617 (40.64%)
+writing a block of 5067560 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170487 / 765000 (22.29%)
+	aux: 179104 / 2634280 (6.80%)
+	seq: 564441 / 5067560 (11.14%)
+	qual: 2079833 / 5067560 (41.04%)
+writing a block of 5528111 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190998 / 850000 (22.47%)
+	aux: 197644 / 2919194 (6.77%)
+	seq: 599627 / 5528111 (10.85%)
+	qual: 2248172 / 5528111 (40.67%)
+writing a block of 5205461 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 187681 / 850000 (22.08%)
+	aux: 192924 / 2898445 (6.66%)
+	seq: 540533 / 5205461 (10.38%)
+	qual: 2111624 / 5205461 (40.57%)
+writing a block of 5324690 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 185269 / 850000 (21.80%)
+	aux: 206179 / 2907579 (7.09%)
+	seq: 531181 / 5324690 (9.98%)
+	qual: 2143161 / 5324690 (40.25%)
+writing a block of 5450903 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195219 / 850000 (22.97%)
+	aux: 210613 / 2933797 (7.18%)
+	seq: 703697 / 5450903 (12.91%)
+	qual: 2228828 / 5450903 (40.89%)
+writing a block of 5419981 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192969 / 850000 (22.70%)
+	aux: 214178 / 2944832 (7.27%)
+	seq: 703057 / 5419981 (12.97%)
+	qual: 2222542 / 5419981 (41.01%)
+writing a block of 5126000 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175429 / 765000 (22.93%)
+	aux: 197602 / 2664560 (7.42%)
+	seq: 645680 / 5126000 (12.60%)
+	qual: 2092785 / 5126000 (40.83%)
+writing a block of 5076730 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174101 / 765000 (22.76%)
+	aux: 186937 / 2646286 (7.06%)
+	seq: 620688 / 5076730 (12.23%)
+	qual: 2054922 / 5076730 (40.48%)
+writing a block of 5425182 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191837 / 850000 (22.57%)
+	aux: 195824 / 2913123 (6.72%)
+	seq: 640240 / 5425182 (11.80%)
+	qual: 2223238 / 5425182 (40.98%)
+writing a block of 5139470 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173854 / 765000 (22.73%)
+	aux: 193669 / 2654188 (7.30%)
+	seq: 627900 / 5139470 (12.22%)
+	qual: 2096474 / 5139470 (40.79%)
+writing a block of 5010266 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174350 / 765000 (22.79%)
+	aux: 178285 / 2631068 (6.78%)
+	seq: 615881 / 5010266 (12.29%)
+	qual: 2048438 / 5010266 (40.88%)
+writing a block of 5209779 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172925 / 765000 (22.60%)
+	aux: 180886 / 2645520 (6.84%)
+	seq: 621804 / 5209779 (11.94%)
+	qual: 2123264 / 5209779 (40.76%)
+writing a block of 5019271 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173497 / 765000 (22.68%)
+	aux: 176177 / 2626302 (6.71%)
+	seq: 604093 / 5019271 (12.04%)
+	qual: 2041868 / 5019271 (40.68%)
+writing a block of 5395247 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191431 / 850000 (22.52%)
+	aux: 187769 / 2905416 (6.46%)
+	seq: 626960 / 5395247 (11.62%)
+	qual: 2184102 / 5395247 (40.48%)
+writing a block of 5343960 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173542 / 765000 (22.69%)
+	aux: 183055 / 2643820 (6.92%)
+	seq: 622797 / 5343960 (11.65%)
+	qual: 2181741 / 5343960 (40.83%)
+writing a block of 5522032 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192157 / 850000 (22.61%)
+	aux: 200392 / 2933137 (6.83%)
+	seq: 647275 / 5522032 (11.72%)
+	qual: 2247572 / 5522032 (40.70%)
+writing a block of 5054634 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172043 / 765000 (22.49%)
+	aux: 174342 / 2624078 (6.64%)
+	seq: 590227 / 5054634 (11.68%)
+	qual: 2068380 / 5054634 (40.92%)
+writing a block of 5449083 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192202 / 850000 (22.61%)
+	aux: 197640 / 2920089 (6.77%)
+	seq: 656275 / 5449083 (12.04%)
+	qual: 2238446 / 5449083 (41.08%)
+writing a block of 5174689 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170517 / 765000 (22.29%)
+	aux: 183731 / 2644373 (6.95%)
+	seq: 588873 / 5174689 (11.38%)
+	qual: 2109267 / 5174689 (40.76%)
+writing a block of 5290297 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189873 / 850000 (22.34%)
+	aux: 202724 / 2925020 (6.93%)
+	seq: 598381 / 5290297 (11.31%)
+	qual: 2150536 / 5290297 (40.65%)
+writing a block of 5457549 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189684 / 850000 (22.32%)
+	aux: 198308 / 2919854 (6.79%)
+	seq: 631081 / 5457549 (11.56%)
+	qual: 2226181 / 5457549 (40.79%)
+writing a block of 5220576 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189473 / 850000 (22.29%)
+	aux: 181869 / 2898396 (6.27%)
+	seq: 560581 / 5220576 (10.74%)
+	qual: 2115236 / 5220576 (40.52%)
+writing a block of 5185552 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189937 / 850000 (22.35%)
+	aux: 185872 / 2899201 (6.41%)
+	seq: 597366 / 5185552 (11.52%)
+	qual: 2114073 / 5185552 (40.77%)
+writing a block of 5264484 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190949 / 850000 (22.46%)
+	aux: 190956 / 2901472 (6.58%)
+	seq: 611550 / 5264484 (11.62%)
+	qual: 2145326 / 5264484 (40.75%)
+writing a block of 5085552 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170936 / 765000 (22.34%)
+	aux: 183972 / 2642465 (6.96%)
+	seq: 563393 / 5085552 (11.08%)
+	qual: 2074020 / 5085552 (40.78%)
+writing a block of 5475693 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195826 / 850000 (23.04%)
+	aux: 220683 / 2967913 (7.44%)
+	seq: 736723 / 5475693 (13.45%)
+	qual: 2231678 / 5475693 (40.76%)
+writing a block of 5482932 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195570 / 850000 (23.01%)
+	aux: 215613 / 2955549 (7.30%)
+	seq: 766878 / 5482932 (13.99%)
+	qual: 2253603 / 5482932 (41.10%)
+writing a block of 5128075 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173550 / 765000 (22.69%)
+	aux: 180751 / 2636062 (6.86%)
+	seq: 644571 / 5128075 (12.57%)
+	qual: 2090818 / 5128075 (40.77%)
+writing a block of 5147958 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174348 / 765000 (22.79%)
+	aux: 183020 / 2627057 (6.97%)
+	seq: 680497 / 5147958 (13.22%)
+	qual: 2103526 / 5147958 (40.86%)
+writing a block of 5325008 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195150 / 850000 (22.96%)
+	aux: 218754 / 2909053 (7.52%)
+	seq: 712676 / 5325008 (13.38%)
+	qual: 2163439 / 5325008 (40.63%)
+writing a block of 5223386 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176397 / 765000 (23.06%)
+	aux: 205403 / 2654838 (7.74%)
+	seq: 703909 / 5223386 (13.48%)
+	qual: 2133848 / 5223386 (40.85%)
+writing a block of 5022480 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175961 / 765000 (23.00%)
+	aux: 200599 / 2644827 (7.58%)
+	seq: 683933 / 5022480 (13.62%)
+	qual: 2045119 / 5022480 (40.72%)
+writing a block of 5051786 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176753 / 765000 (23.10%)
+	aux: 192415 / 2657240 (7.24%)
+	seq: 662336 / 5051786 (13.11%)
+	qual: 2051430 / 5051786 (40.61%)
+writing a block of 5111090 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175855 / 765000 (22.99%)
+	aux: 185435 / 2645939 (7.01%)
+	seq: 688953 / 5111090 (13.48%)
+	qual: 2092234 / 5111090 (40.94%)
+writing a block of 5080400 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174775 / 765000 (22.85%)
+	aux: 182110 / 2647877 (6.88%)
+	seq: 670817 / 5080400 (13.20%)
+	qual: 2082568 / 5080400 (40.99%)
+writing a block of 5535771 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193100 / 850000 (22.72%)
+	aux: 216316 / 2959894 (7.31%)
+	seq: 750179 / 5535771 (13.55%)
+	qual: 2265430 / 5535771 (40.92%)
+writing a block of 5107041 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175429 / 765000 (22.93%)
+	aux: 181609 / 2637054 (6.89%)
+	seq: 688511 / 5107041 (13.48%)
+	qual: 2077310 / 5107041 (40.68%)
+writing a block of 5224958 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174884 / 765000 (22.86%)
+	aux: 191163 / 2653447 (7.20%)
+	seq: 694905 / 5224958 (13.30%)
+	qual: 2126392 / 5224958 (40.70%)
+writing a block of 5234675 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 178339 / 765000 (23.31%)
+	aux: 203811 / 2683678 (7.59%)
+	seq: 763216 / 5234675 (14.58%)
+	qual: 2143759 / 5234675 (40.95%)
+writing a block of 5224051 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 179427 / 765000 (23.45%)
+	aux: 198457 / 2676401 (7.42%)
+	seq: 766383 / 5224051 (14.67%)
+	qual: 2137945 / 5224051 (40.93%)
+writing a block of 5079209 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174136 / 765000 (22.76%)
+	aux: 202182 / 2679584 (7.55%)
+	seq: 663589 / 5079209 (13.06%)
+	qual: 2093256 / 5079209 (41.21%)
+writing a block of 5220877 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173741 / 765000 (22.71%)
+	aux: 187817 / 2650096 (7.09%)
+	seq: 637047 / 5220877 (12.20%)
+	qual: 2124915 / 5220877 (40.70%)
+writing a block of 5087743 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172052 / 765000 (22.49%)
+	aux: 192112 / 2651840 (7.24%)
+	seq: 652089 / 5087743 (12.82%)
+	qual: 2079952 / 5087743 (40.88%)
+writing a block of 5337631 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 189353 / 850000 (22.28%)
+	aux: 207921 / 2909036 (7.15%)
+	seq: 652242 / 5337631 (12.22%)
+	qual: 2179270 / 5337631 (40.83%)
+writing a block of 5065710 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170630 / 765000 (22.30%)
+	aux: 185287 / 2632194 (7.04%)
+	seq: 580338 / 5065710 (11.46%)
+	qual: 2086018 / 5065710 (41.18%)
+writing a block of 5079479 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171320 / 765000 (22.39%)
+	aux: 186367 / 2632188 (7.08%)
+	seq: 602622 / 5079479 (11.86%)
+	qual: 2083874 / 5079479 (41.03%)
+writing a block of 5297337 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 188333 / 850000 (22.16%)
+	aux: 199912 / 2926274 (6.83%)
+	seq: 599890 / 5297337 (11.32%)
+	qual: 2166482 / 5297337 (40.90%)
+writing a block of 5360041 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171531 / 765000 (22.42%)
+	aux: 196780 / 2666741 (7.38%)
+	seq: 637490 / 5360041 (11.89%)
+	qual: 2193022 / 5360041 (40.91%)
+writing a block of 5173506 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172947 / 765000 (22.61%)
+	aux: 196378 / 2619244 (7.50%)
+	seq: 615433 / 5173506 (11.90%)
+	qual: 2101372 / 5173506 (40.62%)
+writing a block of 5144178 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171859 / 765000 (22.47%)
+	aux: 193458 / 2661116 (7.27%)
+	seq: 638195 / 5144178 (12.41%)
+	qual: 2108523 / 5144178 (40.99%)
+writing a block of 5547384 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193179 / 850000 (22.73%)
+	aux: 217091 / 2958470 (7.34%)
+	seq: 726116 / 5547384 (13.09%)
+	qual: 2274197 / 5547384 (41.00%)
+writing a block of 5245429 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173480 / 765000 (22.68%)
+	aux: 205859 / 2671717 (7.71%)
+	seq: 687539 / 5245429 (13.11%)
+	qual: 2138253 / 5245429 (40.76%)
+writing a block of 5440170 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192653 / 850000 (22.67%)
+	aux: 217087 / 2960613 (7.33%)
+	seq: 691295 / 5440170 (12.71%)
+	qual: 2221164 / 5440170 (40.83%)
+writing a block of 5490755 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193483 / 850000 (22.76%)
+	aux: 211722 / 2952035 (7.17%)
+	seq: 699814 / 5490755 (12.75%)
+	qual: 2236740 / 5490755 (40.74%)
+writing a block of 5209016 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173842 / 765000 (22.72%)
+	aux: 183560 / 2646382 (6.94%)
+	seq: 642740 / 5209016 (12.34%)
+	qual: 2103437 / 5209016 (40.38%)
+writing a block of 5162433 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172605 / 765000 (22.56%)
+	aux: 187891 / 2652168 (7.08%)
+	seq: 668439 / 5162433 (12.95%)
+	qual: 2129603 / 5162433 (41.25%)
+writing a block of 5027058 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174325 / 765000 (22.79%)
+	aux: 184750 / 2645133 (6.98%)
+	seq: 650463 / 5027058 (12.94%)
+	qual: 2050522 / 5027058 (40.79%)
+writing a block of 5170776 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173375 / 765000 (22.66%)
+	aux: 183675 / 2649985 (6.93%)
+	seq: 641749 / 5170776 (12.41%)
+	qual: 2088585 / 5170776 (40.39%)
+writing a block of 5133298 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174118 / 765000 (22.76%)
+	aux: 199817 / 2662684 (7.50%)
+	seq: 669665 / 5133298 (13.05%)
+	qual: 2104088 / 5133298 (40.99%)
+writing a block of 5174853 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174620 / 765000 (22.83%)
+	aux: 206114 / 2689145 (7.66%)
+	seq: 688503 / 5174853 (13.30%)
+	qual: 2110362 / 5174853 (40.78%)
+writing a block of 5040694 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172495 / 765000 (22.55%)
+	aux: 186937 / 2648791 (7.06%)
+	seq: 691508 / 5040694 (13.72%)
+	qual: 2051966 / 5040694 (40.71%)
+writing a block of 5042697 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173343 / 765000 (22.66%)
+	aux: 195887 / 2640682 (7.42%)
+	seq: 704752 / 5042697 (13.98%)
+	qual: 2046085 / 5042697 (40.58%)
+writing a block of 5541162 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190269 / 850000 (22.38%)
+	aux: 208393 / 2920979 (7.13%)
+	seq: 685313 / 5541162 (12.37%)
+	qual: 2266517 / 5541162 (40.90%)
+writing a block of 5503329 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191337 / 850000 (22.51%)
+	aux: 197245 / 2911266 (6.78%)
+	seq: 669627 / 5503329 (12.17%)
+	qual: 2250453 / 5503329 (40.89%)
+writing a block of 5279556 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172387 / 765000 (22.53%)
+	aux: 175773 / 2624190 (6.70%)
+	seq: 657681 / 5279556 (12.46%)
+	qual: 2164861 / 5279556 (41.00%)
+writing a block of 5495458 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191855 / 850000 (22.57%)
+	aux: 190413 / 2906596 (6.55%)
+	seq: 684168 / 5495458 (12.45%)
+	qual: 2258357 / 5495458 (41.09%)
+writing a block of 5183176 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190573 / 850000 (22.42%)
+	aux: 194814 / 2914999 (6.68%)
+	seq: 658140 / 5183176 (12.70%)
+	qual: 2108467 / 5183176 (40.68%)
+writing a block of 5576292 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192611 / 850000 (22.66%)
+	aux: 202226 / 2920901 (6.92%)
+	seq: 731572 / 5576292 (13.12%)
+	qual: 2290770 / 5576292 (41.08%)
+writing a block of 5101037 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170843 / 765000 (22.33%)
+	aux: 179802 / 2644327 (6.80%)
+	seq: 628104 / 5101037 (12.31%)
+	qual: 2097717 / 5101037 (41.12%)
+writing a block of 5004318 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170688 / 765000 (22.31%)
+	aux: 175181 / 2629687 (6.66%)
+	seq: 602782 / 5004318 (12.05%)
+	qual: 2033274 / 5004318 (40.63%)
+writing a block of 5145981 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170660 / 765000 (22.31%)
+	aux: 174419 / 2633087 (6.62%)
+	seq: 613554 / 5145981 (11.92%)
+	qual: 2095063 / 5145981 (40.71%)
+writing a block of 5035390 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172593 / 765000 (22.56%)
+	aux: 183204 / 2637938 (6.94%)
+	seq: 623378 / 5035390 (12.38%)
+	qual: 2061779 / 5035390 (40.95%)
+writing a block of 5083781 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172580 / 765000 (22.56%)
+	aux: 188450 / 2645953 (7.12%)
+	seq: 629854 / 5083781 (12.39%)
+	qual: 2069889 / 5083781 (40.72%)
+writing a block of 5387301 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190100 / 850000 (22.36%)
+	aux: 198739 / 2925497 (6.79%)
+	seq: 665826 / 5387301 (12.36%)
+	qual: 2184003 / 5387301 (40.54%)
+writing a block of 5073437 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171856 / 765000 (22.46%)
+	aux: 189471 / 2645337 (7.16%)
+	seq: 643360 / 5073437 (12.68%)
+	qual: 2056882 / 5073437 (40.54%)
+writing a block of 5494090 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193970 / 850000 (22.82%)
+	aux: 217601 / 2953620 (7.37%)
+	seq: 726261 / 5494090 (13.22%)
+	qual: 2229514 / 5494090 (40.58%)
+writing a block of 5321009 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190315 / 850000 (22.39%)
+	aux: 191420 / 2909508 (6.58%)
+	seq: 627010 / 5321009 (11.78%)
+	qual: 2149532 / 5321009 (40.40%)
+writing a block of 5445460 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190164 / 850000 (22.37%)
+	aux: 192672 / 2915179 (6.61%)
+	seq: 652512 / 5445460 (11.98%)
+	qual: 2207191 / 5445460 (40.53%)
+writing a block of 5451932 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190273 / 850000 (22.39%)
+	aux: 196958 / 2911229 (6.77%)
+	seq: 648662 / 5451932 (11.90%)
+	qual: 2204002 / 5451932 (40.43%)
+writing a block of 5110494 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171080 / 765000 (22.36%)
+	aux: 177170 / 2632637 (6.73%)
+	seq: 614631 / 5110494 (12.03%)
+	qual: 2072466 / 5110494 (40.55%)
+writing a block of 5110633 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173123 / 765000 (22.63%)
+	aux: 190713 / 2657821 (7.18%)
+	seq: 690331 / 5110633 (13.51%)
+	qual: 2090248 / 5110633 (40.90%)
+writing a block of 5301358 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173995 / 765000 (22.74%)
+	aux: 205192 / 2683977 (7.65%)
+	seq: 756171 / 5301358 (14.26%)
+	qual: 2171499 / 5301358 (40.96%)
+writing a block of 5601825 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195133 / 850000 (22.96%)
+	aux: 213509 / 2964484 (7.20%)
+	seq: 773743 / 5601825 (13.81%)
+	qual: 2302628 / 5601825 (41.10%)
+writing a block of 5493167 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193651 / 850000 (22.78%)
+	aux: 224641 / 2977217 (7.55%)
+	seq: 770609 / 5493167 (14.03%)
+	qual: 2259055 / 5493167 (41.12%)
+writing a block of 5173932 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173055 / 765000 (22.62%)
+	aux: 189956 / 2651141 (7.17%)
+	seq: 652087 / 5173932 (12.60%)
+	qual: 2093701 / 5173932 (40.47%)
+writing a block of 5086599 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172387 / 765000 (22.53%)
+	aux: 194275 / 2669341 (7.28%)
+	seq: 641249 / 5086599 (12.61%)
+	qual: 2078596 / 5086599 (40.86%)
+writing a block of 5505247 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195273 / 850000 (22.97%)
+	aux: 214848 / 2940218 (7.31%)
+	seq: 749629 / 5505247 (13.62%)
+	qual: 2242939 / 5505247 (40.74%)
+writing a block of 5347119 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173850 / 765000 (22.73%)
+	aux: 210766 / 2676421 (7.87%)
+	seq: 737408 / 5347119 (13.79%)
+	qual: 2181134 / 5347119 (40.79%)
+writing a block of 5165797 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174584 / 765000 (22.82%)
+	aux: 206427 / 2686222 (7.68%)
+	seq: 714046 / 5165797 (13.82%)
+	qual: 2123828 / 5165797 (41.11%)
+writing a block of 5309584 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173193 / 765000 (22.64%)
+	aux: 190601 / 2655017 (7.18%)
+	seq: 680618 / 5309584 (12.82%)
+	qual: 2156281 / 5309584 (40.61%)
+writing a block of 5235159 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172830 / 765000 (22.59%)
+	aux: 189618 / 2665575 (7.11%)
+	seq: 683083 / 5235159 (13.05%)
+	qual: 2127242 / 5235159 (40.63%)
+writing a block of 5523257 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 194398 / 850000 (22.87%)
+	aux: 209384 / 2920927 (7.17%)
+	seq: 770241 / 5523257 (13.95%)
+	qual: 2249369 / 5523257 (40.73%)
+writing a block of 5536522 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192431 / 850000 (22.64%)
+	aux: 206035 / 2903528 (7.10%)
+	seq: 746645 / 5536522 (13.49%)
+	qual: 2259338 / 5536522 (40.81%)
+writing a block of 5320130 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193875 / 850000 (22.81%)
+	aux: 204469 / 2915307 (7.01%)
+	seq: 691568 / 5320130 (13.00%)
+	qual: 2159331 / 5320130 (40.59%)
+writing a block of 5002265 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175368 / 765000 (22.92%)
+	aux: 181592 / 2633377 (6.90%)
+	seq: 703260 / 5002265 (14.06%)
+	qual: 2040467 / 5002265 (40.79%)
+writing a block of 5132201 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177215 / 765000 (23.17%)
+	aux: 200894 / 2664795 (7.54%)
+	seq: 727420 / 5132201 (14.17%)
+	qual: 2112775 / 5132201 (41.17%)
+writing a block of 5059097 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174627 / 765000 (22.83%)
+	aux: 192495 / 2650120 (7.26%)
+	seq: 697724 / 5059097 (13.79%)
+	qual: 2045927 / 5059097 (40.44%)
+writing a block of 5126792 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172125 / 765000 (22.50%)
+	aux: 182768 / 2637731 (6.93%)
+	seq: 681889 / 5126792 (13.30%)
+	qual: 2080865 / 5126792 (40.59%)
+writing a block of 5410197 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193647 / 850000 (22.78%)
+	aux: 199231 / 2920181 (6.82%)
+	seq: 730655 / 5410197 (13.51%)
+	qual: 2211150 / 5410197 (40.87%)
+writing a block of 5139738 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175385 / 765000 (22.93%)
+	aux: 199834 / 2650548 (7.54%)
+	seq: 733764 / 5139738 (14.28%)
+	qual: 2088511 / 5139738 (40.63%)
+writing a block of 5464124 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192132 / 850000 (22.60%)
+	aux: 193423 / 2919238 (6.63%)
+	seq: 749060 / 5464124 (13.71%)
+	qual: 2242096 / 5464124 (41.03%)
+writing a block of 5011695 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173538 / 765000 (22.68%)
+	aux: 192972 / 2643481 (7.30%)
+	seq: 679775 / 5011695 (13.56%)
+	qual: 2051317 / 5011695 (40.93%)
+writing a block of 5482153 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192101 / 850000 (22.60%)
+	aux: 191293 / 2910215 (6.57%)
+	seq: 719426 / 5482153 (13.12%)
+	qual: 2234522 / 5482153 (40.76%)
+writing a block of 5519187 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193465 / 850000 (22.76%)
+	aux: 223693 / 2929925 (7.63%)
+	seq: 762379 / 5519187 (13.81%)
+	qual: 2251288 / 5519187 (40.79%)
+writing a block of 5219782 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175960 / 765000 (23.00%)
+	aux: 197174 / 2664038 (7.40%)
+	seq: 747952 / 5219782 (14.33%)
+	qual: 2115528 / 5219782 (40.53%)
+writing a block of 5006800 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174307 / 765000 (22.79%)
+	aux: 185539 / 2639846 (7.03%)
+	seq: 683105 / 5006800 (13.64%)
+	qual: 2030460 / 5006800 (40.55%)
+writing a block of 5379211 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193219 / 850000 (22.73%)
+	aux: 196219 / 2913016 (6.74%)
+	seq: 748749 / 5379211 (13.92%)
+	qual: 2188625 / 5379211 (40.69%)
+writing a block of 5434780 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193063 / 850000 (22.71%)
+	aux: 202165 / 2926592 (6.91%)
+	seq: 775717 / 5434780 (14.27%)
+	qual: 2222019 / 5434780 (40.89%)
+writing a block of 5042642 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176111 / 765000 (23.02%)
+	aux: 196344 / 2671533 (7.35%)
+	seq: 774443 / 5042642 (15.36%)
+	qual: 2062420 / 5042642 (40.90%)
+writing a block of 5557256 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193471 / 850000 (22.76%)
+	aux: 203885 / 2909751 (7.01%)
+	seq: 785813 / 5557256 (14.14%)
+	qual: 2266838 / 5557256 (40.79%)
+writing a block of 5216698 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177262 / 765000 (23.17%)
+	aux: 200652 / 2675002 (7.50%)
+	seq: 812840 / 5216698 (15.58%)
+	qual: 2122663 / 5216698 (40.69%)
+writing a block of 5555695 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193405 / 850000 (22.75%)
+	aux: 202525 / 2932357 (6.91%)
+	seq: 792470 / 5555695 (14.26%)
+	qual: 2266463 / 5555695 (40.80%)
+writing a block of 5162342 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174633 / 765000 (22.83%)
+	aux: 173594 / 2630277 (6.60%)
+	seq: 710677 / 5162342 (13.77%)
+	qual: 2089126 / 5162342 (40.47%)
+writing a block of 5107762 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174459 / 765000 (22.81%)
+	aux: 190855 / 2651777 (7.20%)
+	seq: 701937 / 5107762 (13.74%)
+	qual: 2077267 / 5107762 (40.67%)
+writing a block of 5149824 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173079 / 765000 (22.62%)
+	aux: 193263 / 2663780 (7.26%)
+	seq: 710905 / 5149824 (13.80%)
+	qual: 2101050 / 5149824 (40.80%)
+writing a block of 5164462 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175583 / 765000 (22.95%)
+	aux: 196036 / 2659508 (7.37%)
+	seq: 748426 / 5164462 (14.49%)
+	qual: 2097357 / 5164462 (40.61%)
+writing a block of 5058116 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172125 / 765000 (22.50%)
+	aux: 178204 / 2635700 (6.76%)
+	seq: 665771 / 5058116 (13.16%)
+	qual: 2057133 / 5058116 (40.67%)
+writing a block of 5419637 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191329 / 850000 (22.51%)
+	aux: 202597 / 2936941 (6.90%)
+	seq: 719846 / 5419637 (13.28%)
+	qual: 2214351 / 5419637 (40.86%)
+writing a block of 5086918 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170994 / 765000 (22.35%)
+	aux: 183614 / 2633168 (6.97%)
+	seq: 668183 / 5086918 (13.14%)
+	qual: 2065727 / 5086918 (40.61%)
+writing a block of 5197118 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173039 / 765000 (22.62%)
+	aux: 186604 / 2642566 (7.06%)
+	seq: 708463 / 5197118 (13.63%)
+	qual: 2121197 / 5197118 (40.81%)
+writing a block of 5310021 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172350 / 765000 (22.53%)
+	aux: 183385 / 2644021 (6.94%)
+	seq: 689354 / 5310021 (12.98%)
+	qual: 2176168 / 5310021 (40.98%)
+writing a block of 5506182 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193867 / 850000 (22.81%)
+	aux: 212160 / 2950013 (7.19%)
+	seq: 823916 / 5506182 (14.96%)
+	qual: 2262641 / 5506182 (41.09%)
+writing a block of 5528787 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 190885 / 850000 (22.46%)
+	aux: 193961 / 2917767 (6.65%)
+	seq: 717735 / 5528787 (12.98%)
+	qual: 2251135 / 5528787 (40.72%)
+writing a block of 5144234 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172333 / 765000 (22.53%)
+	aux: 201943 / 2677988 (7.54%)
+	seq: 704178 / 5144234 (13.69%)
+	qual: 2101680 / 5144234 (40.86%)
+writing a block of 5227280 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174154 / 765000 (22.77%)
+	aux: 199461 / 2674088 (7.46%)
+	seq: 725675 / 5227280 (13.88%)
+	qual: 2128943 / 5227280 (40.73%)
+writing a block of 5042152 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175765 / 765000 (22.98%)
+	aux: 187923 / 2650672 (7.09%)
+	seq: 721397 / 5042152 (14.31%)
+	qual: 2043788 / 5042152 (40.53%)
+writing a block of 5257112 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172877 / 765000 (22.60%)
+	aux: 188503 / 2654127 (7.10%)
+	seq: 733230 / 5257112 (13.95%)
+	qual: 2131038 / 5257112 (40.54%)
+writing a block of 5043112 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175283 / 765000 (22.91%)
+	aux: 196727 / 2669714 (7.37%)
+	seq: 730858 / 5043112 (14.49%)
+	qual: 2046348 / 5043112 (40.58%)
+writing a block of 5513650 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195048 / 850000 (22.95%)
+	aux: 225695 / 2976359 (7.58%)
+	seq: 839551 / 5513650 (15.23%)
+	qual: 2245052 / 5513650 (40.72%)
+writing a block of 5442395 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195734 / 850000 (23.03%)
+	aux: 227649 / 2967075 (7.67%)
+	seq: 851166 / 5442395 (15.64%)
+	qual: 2231946 / 5442395 (41.01%)
+writing a block of 5181463 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176483 / 765000 (23.07%)
+	aux: 198794 / 2652346 (7.50%)
+	seq: 772200 / 5181463 (14.90%)
+	qual: 2118254 / 5181463 (40.88%)
+writing a block of 5058775 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173176 / 765000 (22.64%)
+	aux: 191818 / 2665135 (7.20%)
+	seq: 671219 / 5058775 (13.27%)
+	qual: 2065215 / 5058775 (40.82%)
+writing a block of 5510701 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191951 / 850000 (22.58%)
+	aux: 207503 / 2909104 (7.13%)
+	seq: 744247 / 5510701 (13.51%)
+	qual: 2247671 / 5510701 (40.79%)
+writing a block of 5038329 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173556 / 765000 (22.69%)
+	aux: 178778 / 2632058 (6.79%)
+	seq: 679714 / 5038329 (13.49%)
+	qual: 2063123 / 5038329 (40.95%)
+writing a block of 5085052 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173629 / 765000 (22.70%)
+	aux: 184955 / 2641623 (7.00%)
+	seq: 727481 / 5085052 (14.31%)
+	qual: 2082501 / 5085052 (40.95%)
+writing a block of 5561034 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193504 / 850000 (22.77%)
+	aux: 216646 / 2955597 (7.33%)
+	seq: 841768 / 5561034 (15.14%)
+	qual: 2270105 / 5561034 (40.82%)
+writing a block of 5195584 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175874 / 765000 (22.99%)
+	aux: 205133 / 2668997 (7.69%)
+	seq: 785861 / 5195584 (15.13%)
+	qual: 2125327 / 5195584 (40.91%)
+writing a block of 5336041 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175877 / 765000 (22.99%)
+	aux: 200399 / 2675776 (7.49%)
+	seq: 756732 / 5336041 (14.18%)
+	qual: 2176475 / 5336041 (40.79%)
+writing a block of 5075099 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177907 / 765000 (23.26%)
+	aux: 209743 / 2693031 (7.79%)
+	seq: 818199 / 5075099 (16.12%)
+	qual: 2098588 / 5075099 (41.35%)
+writing a block of 5434374 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 192457 / 850000 (22.64%)
+	aux: 197851 / 2916502 (6.78%)
+	seq: 747005 / 5434374 (13.75%)
+	qual: 2233415 / 5434374 (41.10%)
+writing a block of 5420637 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 194480 / 850000 (22.88%)
+	aux: 215994 / 2935878 (7.36%)
+	seq: 811420 / 5420637 (14.97%)
+	qual: 2220804 / 5420637 (40.97%)
+writing a block of 5060827 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174134 / 765000 (22.76%)
+	aux: 200894 / 2671957 (7.52%)
+	seq: 754690 / 5060827 (14.91%)
+	qual: 2070438 / 5060827 (40.91%)
+writing a block of 5386427 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172704 / 765000 (22.58%)
+	aux: 202845 / 2674779 (7.58%)
+	seq: 740800 / 5386427 (13.75%)
+	qual: 2181830 / 5386427 (40.51%)
+writing a block of 5374892 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171747 / 765000 (22.45%)
+	aux: 195029 / 2665403 (7.32%)
+	seq: 697527 / 5374892 (12.98%)
+	qual: 2170038 / 5374892 (40.37%)
+writing a block of 5307468 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172227 / 765000 (22.51%)
+	aux: 188701 / 2653310 (7.11%)
+	seq: 719986 / 5307468 (13.57%)
+	qual: 2159281 / 5307468 (40.68%)
+writing a block of 5258414 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175359 / 765000 (22.92%)
+	aux: 184294 / 2648402 (6.96%)
+	seq: 750846 / 5258414 (14.28%)
+	qual: 2128201 / 5258414 (40.47%)
+writing a block of 5222106 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 173026 / 765000 (22.62%)
+	aux: 176374 / 2633221 (6.70%)
+	seq: 688886 / 5222106 (13.19%)
+	qual: 2108679 / 5222106 (40.38%)
+writing a block of 5310257 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 193801 / 850000 (22.80%)
+	aux: 201150 / 2916212 (6.90%)
+	seq: 784190 / 5310257 (14.77%)
+	qual: 2153922 / 5310257 (40.56%)
+writing a block of 5445593 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195726 / 850000 (23.03%)
+	aux: 209324 / 2950403 (7.09%)
+	seq: 864508 / 5445593 (15.88%)
+	qual: 2232954 / 5445593 (41.00%)
+writing a block of 5031797 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176637 / 765000 (23.09%)
+	aux: 187148 / 2638160 (7.09%)
+	seq: 787133 / 5031797 (15.64%)
+	qual: 2057171 / 5031797 (40.88%)
+writing a block of 5138994 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177314 / 765000 (23.18%)
+	aux: 194341 / 2659744 (7.31%)
+	seq: 799500 / 5138994 (15.56%)
+	qual: 2078942 / 5138994 (40.45%)
+writing a block of 5219737 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 179744 / 765000 (23.50%)
+	aux: 220198 / 2708321 (8.13%)
+	seq: 905255 / 5219737 (17.34%)
+	qual: 2144715 / 5219737 (41.09%)
+writing a block of 5146546 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177076 / 765000 (23.15%)
+	aux: 200259 / 2664380 (7.52%)
+	seq: 825160 / 5146546 (16.03%)
+	qual: 2099829 / 5146546 (40.80%)
+writing a block of 5174552 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175640 / 765000 (22.96%)
+	aux: 185765 / 2649762 (7.01%)
+	seq: 741603 / 5174552 (14.33%)
+	qual: 2087689 / 5174552 (40.35%)
+writing a block of 5352086 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176605 / 765000 (23.09%)
+	aux: 200692 / 2678638 (7.49%)
+	seq: 831587 / 5352086 (15.54%)
+	qual: 2198741 / 5352086 (41.08%)
+writing a block of 5553530 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 191422 / 850000 (22.52%)
+	aux: 207754 / 2934133 (7.08%)
+	seq: 730128 / 5553530 (13.15%)
+	qual: 2274289 / 5553530 (40.95%)
+writing a block of 5005149 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 172283 / 765000 (22.52%)
+	aux: 203447 / 2666422 (7.63%)
+	seq: 647426 / 5005149 (12.94%)
+	qual: 2043213 / 5005149 (40.82%)
+writing a block of 5084095 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171083 / 765000 (22.36%)
+	aux: 201500 / 2677822 (7.52%)
+	seq: 730932 / 5084095 (14.38%)
+	qual: 2073593 / 5084095 (40.79%)
+writing a block of 5164576 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176477 / 765000 (23.07%)
+	aux: 212779 / 2684600 (7.93%)
+	seq: 868898 / 5164576 (16.82%)
+	qual: 2126534 / 5164576 (41.18%)
+writing a block of 5458084 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195797 / 850000 (23.03%)
+	aux: 225871 / 2982819 (7.57%)
+	seq: 907620 / 5458084 (16.63%)
+	qual: 2245228 / 5458084 (41.14%)
+writing a block of 5129180 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176216 / 765000 (23.03%)
+	aux: 198745 / 2680347 (7.41%)
+	seq: 797056 / 5129180 (15.54%)
+	qual: 2109283 / 5129180 (41.12%)
+writing a block of 5076470 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177112 / 765000 (23.15%)
+	aux: 194374 / 2661303 (7.30%)
+	seq: 805817 / 5076470 (15.87%)
+	qual: 2067798 / 5076470 (40.73%)
+writing a block of 5251811 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 168987 / 765000 (22.09%)
+	aux: 183851 / 2647338 (6.94%)
+	seq: 650884 / 5251811 (12.39%)
+	qual: 2135417 / 5251811 (40.66%)
+writing a block of 5137491 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 168468 / 765000 (22.02%)
+	aux: 186181 / 2657184 (7.01%)
+	seq: 610118 / 5137491 (11.88%)
+	qual: 2090124 / 5137491 (40.68%)
+writing a block of 5511336 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 171382 / 765000 (22.40%)
+	aux: 204934 / 2683449 (7.64%)
+	seq: 734778 / 5511336 (13.33%)
+	qual: 2260856 / 5511336 (41.02%)
+writing a block of 5191515 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 169336 / 765000 (22.14%)
+	aux: 181717 / 2644290 (6.87%)
+	seq: 643901 / 5191515 (12.40%)
+	qual: 2132962 / 5191515 (41.09%)
+writing a block of 5121654 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 167938 / 765000 (21.95%)
+	aux: 188408 / 2620580 (7.19%)
+	seq: 608150 / 5121654 (11.87%)
+	qual: 2087199 / 5121654 (40.75%)
+writing a block of 5141688 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 169395 / 765000 (22.14%)
+	aux: 189004 / 2661415 (7.10%)
+	seq: 654732 / 5141688 (12.73%)
+	qual: 2087214 / 5141688 (40.59%)
+writing a block of 5220808 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 169900 / 765000 (22.21%)
+	aux: 190731 / 2663592 (7.16%)
+	seq: 623072 / 5220808 (11.93%)
+	qual: 2109913 / 5220808 (40.41%)
+writing a block of 5426424 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 169359 / 765000 (22.14%)
+	aux: 187059 / 2660654 (7.03%)
+	seq: 660698 / 5426424 (12.18%)
+	qual: 2204125 / 5426424 (40.62%)
+writing a block of 5008895 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 170863 / 765000 (22.34%)
+	aux: 191918 / 2630787 (7.30%)
+	seq: 633583 / 5008895 (12.65%)
+	qual: 2025716 / 5008895 (40.44%)
+writing a block of 5224205 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 169707 / 765000 (22.18%)
+	aux: 206926 / 2682612 (7.71%)
+	seq: 673147 / 5224205 (12.89%)
+	qual: 2144998 / 5224205 (41.06%)
+writing a block of 5111705 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176422 / 765000 (23.06%)
+	aux: 203071 / 2653666 (7.65%)
+	seq: 726149 / 5111705 (14.21%)
+	qual: 2081889 / 5111705 (40.73%)
+writing a block of 5331805 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 174440 / 765000 (22.80%)
+	aux: 203754 / 2676418 (7.61%)
+	seq: 767877 / 5331805 (14.40%)
+	qual: 2172564 / 5331805 (40.75%)
+writing a block of 5203061 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177922 / 765000 (23.26%)
+	aux: 190527 / 2654667 (7.18%)
+	seq: 814264 / 5203061 (15.65%)
+	qual: 2132777 / 5203061 (40.99%)
+writing a block of 5242922 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177328 / 765000 (23.18%)
+	aux: 208917 / 2687029 (7.78%)
+	seq: 865618 / 5242922 (16.51%)
+	qual: 2128007 / 5242922 (40.59%)
+writing a block of 5561818 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 195473 / 850000 (23.00%)
+	aux: 223342 / 2965248 (7.53%)
+	seq: 885430 / 5561818 (15.92%)
+	qual: 2275394 / 5561818 (40.91%)
+writing a block of 5270089 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 175698 / 765000 (22.97%)
+	aux: 194047 / 2655929 (7.31%)
+	seq: 873674 / 5270089 (16.58%)
+	qual: 2143913 / 5270089 (40.68%)
+writing a block of 5251119 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177608 / 765000 (23.22%)
+	aux: 206679 / 2672629 (7.73%)
+	seq: 847485 / 5251119 (16.14%)
+	qual: 2136396 / 5251119 (40.68%)
+writing a block of 5550786 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 194039 / 850000 (22.83%)
+	aux: 204783 / 2929391 (6.99%)
+	seq: 839558 / 5550786 (15.13%)
+	qual: 2273122 / 5550786 (40.95%)
+writing a block of 5102178 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177463 / 765000 (23.20%)
+	aux: 207554 / 2685597 (7.73%)
+	seq: 835174 / 5102178 (16.37%)
+	qual: 2082284 / 5102178 (40.81%)
+writing a block of 5410804 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 196016 / 850000 (23.06%)
+	aux: 203713 / 2931930 (6.95%)
+	seq: 856773 / 5410804 (15.83%)
+	qual: 2203647 / 5410804 (40.73%)
+writing a block of 5403707 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 197122 / 850000 (23.19%)
+	aux: 209141 / 2916082 (7.17%)
+	seq: 903721 / 5403707 (16.72%)
+	qual: 2209733 / 5403707 (40.89%)
+writing a block of 5040943 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 178318 / 765000 (23.31%)
+	aux: 205952 / 2668017 (7.72%)
+	seq: 920201 / 5040943 (18.25%)
+	qual: 2068392 / 5040943 (41.03%)
+writing a block of 5119495 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 177102 / 765000 (23.15%)
+	aux: 192261 / 2659207 (7.23%)
+	seq: 874940 / 5119495 (17.09%)
+	qual: 2078103 / 5119495 (40.59%)
+writing a block of 5233031 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 178472 / 765000 (23.33%)
+	aux: 198604 / 2645797 (7.51%)
+	seq: 837516 / 5233031 (16.00%)
+	qual: 2140466 / 5233031 (40.90%)
+writing a block of 5417157 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 196503 / 850000 (23.12%)
+	aux: 211390 / 2903204 (7.28%)
+	seq: 807689 / 5417157 (14.91%)
+	qual: 2198474 / 5417157 (40.58%)
+writing a block of 5329937 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 197183 / 850000 (23.20%)
+	aux: 192983 / 2902039 (6.65%)
+	seq: 909068 / 5329937 (17.06%)
+	qual: 2186391 / 5329937 (41.02%)
+writing a block of 5070383 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 176901 / 765000 (23.12%)
+	aux: 186960 / 2643443 (7.07%)
+	seq: 852631 / 5070383 (16.82%)
+	qual: 2076344 / 5070383 (40.95%)
+writing a block of 5050703 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 357054 / 1360000 (26.25%)
+	aux: 192879 / 2884497 (6.69%)
+	seq: 1013040 / 5050703 (20.06%)
+	qual: 2097091 / 5050703 (41.52%)
+writing a block of 5050105 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 992811 / 3655000 (27.16%)
+	aux: 7079 / 3655000 (0.19%)
+	seq: 1291020 / 5050105 (25.56%)
+	qual: 2166983 / 5050105 (42.91%)
+writing a block of 2342136 compressed bases...
+0.0% aligned to reference.
+0.0% aligned to assembled contigs.
+	id: 209838 / 1366307 (15.36%)
+	aux: 1335 / 1366307 (0.10%)
+	seq: 677567 / 2342136 (28.93%)
+	qual: 960913 / 2342136 (41.03%)

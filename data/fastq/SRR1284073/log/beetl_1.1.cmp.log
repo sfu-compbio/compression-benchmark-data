@@ -1,0 +1,7 @@
+
+################################################################################
+
+e,SRR1284073.fastq,SRR1284073/output/compressed/beetl/SRR1284073.fastq.beetl,tools/BEETL,SRR1284073/output/compressed/beetl
+
+tools/BEETL/bin/beetl-bwt -i SRR1284073.fastq -o xbeetl --output-format ASCII --sap-ordering --algorithm ext
+

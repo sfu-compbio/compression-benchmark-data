@@ -1,0 +1,70 @@
+
+real	5m47.179s
+user	3m59.379s
+sys	0m17.316s
+Start BCR decode
+$	1	0	36
+A	1	1	65
+C	1	2	67
+G	1	3	71
+N	1	4	78
+T	1	5	84
+sizeof(type size of alpha): 1
+sizeof(type of #sequences): 4
+sizeof(type of #characters): 8
+
+Number of sequences: 69100987
+Length of each sequence: 108
+
+Total length (without $): 7462906596
+Total length (with $): 7532007583
+TableOcc: 
+0:	0	22638836	11842896	11747288	2160	22869807	
+1:	22870793	939446808	469693648	423103574	307886	609107509	
+2:	11892762	347047962	261506913	226452370	169398	427969735	
+3:	11719066	407852685	118581268	258284466	159320	463942661	
+4:	0	309264	170369	159192	103831	304449	
+5:	22618366	747234663	413244046	340792576	304510	937556506	
+Inverse BWT by Backward direction.
+It is using the sampling of the BWT. It requires more memory!
+In order to do this, it uses a sampling of the occurrences for each segment: 2048 size.
+The cyc files have been built. Building the sequences.
+
+################################################################################
+
+d,SRR870667/output/compressed/beetl/SRR870667_1.fastq.beetl,SRR870667/output/decompressed/beetl/SRR870667_1.fastq.fq,tools/BEETL,SRR870667/output/decompressed/beetl
+
+xbeetl-B00
+
+xbeetl-B01
+
+xbeetl-B02
+
+xbeetl-B03
+
+xbeetl-B04
+
+xbeetl-B05
+
+xbeetl-P01
+
+xbeetl-P02
+
+xbeetl-P03
+
+xbeetl-P04
+
+xbeetl-P05
+
+xbeetl-S01
+
+xbeetl-S02
+
+xbeetl-S03
+
+xbeetl-S04
+
+xbeetl-S05
+
+tools/BEETL/bin/beetl-unbwt -i xbeetl -o SRR870667_1.fastq.fq --output-format fasta
+

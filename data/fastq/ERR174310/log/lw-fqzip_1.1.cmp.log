@@ -1,0 +1,7 @@
+Error opening file ERR174310_1.fastq.map.txt 2.
+################################################################################
+
+e,ERR174310_1.fastq,ERR174310/output/compressed/lw-fqzip/ERR174310_1.fastq.lz,data/sam/ref/hg19.fa,tools/LWFQZip-v1.02,ERR174310/output/compressed/lw-fqzip
+
+./LWFQZip -c -t 1 -i ERR174310_1.fastq -r hg19.fa
+

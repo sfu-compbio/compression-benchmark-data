@@ -1,0 +1,7 @@
+Reading 9827_2#49.bam.sam, 9827_2#49.bam/output/decompressed/9827_2#49.bam.qp.sam; maxline=3000000
+> ORIG      56463236 (9827_2#49.bam.sam)
+< COPY      56463236 (9827_2#49.bam/output/decompressed/9827_2#49.bam.qp.sam)
+
+REFNEXT     54997699 lines unequal
+POSNEXT       295311 lines unequal
+Done 9827_2#49.bam.sam

@@ -1,0 +1,9 @@
+Reading HCC1954.mix1.n80t20.bam.sam, HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.cram.sam; maxline=300000
+> ORIG     942395158 (HCC1954.mix1.n80t20.bam.sam)
+< COPY     942395158 (HCC1954.mix1.n80t20.bam/output/HCC1954.mix1.n80t20.bam.cram.sam)
+Comments   not equal
+
+TLEN       821197004 lines unequal
+NM         878449335 missing,          0 extra,          0 unequal
+MD         875727206 missing,          0 extra,          0 unequal
+Done HCC1954.mix1.n80t20.bam.sam

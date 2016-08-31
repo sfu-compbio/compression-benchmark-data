@@ -1,0 +1,140 @@
+2015/12/16 23:53:28 Starting kpath version 0.6.3 (1-6-15)
+2015/12/16 23:53:28 Maximum threads = 10
+kpath (encode): 2015/12/16 23:53:28 Using kmer size = 16
+kpath (encode): 2015/12/16 23:53:28 Option: psudeoCount = 1
+kpath (encode): 2015/12/16 23:53:28 Option: observationWeight = 10
+kpath (encode): 2015/12/16 23:53:28 Option: seenThreshold = 2
+kpath (encode): 2015/12/16 23:53:28 Option: flipReadsOption = true
+kpath (encode): 2015/12/16 23:53:28 Option: dupsOption = true
+kpath (encode): 2015/12/16 23:53:28 Option: updateReference = true
+kpath (encode): 2015/12/16 23:53:28 Reading from SRR1284073.fastq
+kpath (encode): 2015/12/16 23:53:28 Writing to SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath.enc, SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath.bittree, SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath.counts
+kpath (encode): 2015/12/16 23:53:28 Reading Reference File...
+kpath (encode): 2015/12/16 23:53:51 Reading reads...
+kpath (encode): 2015/12/16 23:54:14 Time: read 163464 reads; spent 23.255358006 seconds.
+kpath (encode): 2015/12/16 23:54:14 Have 7 read flippers, each working on 23353 reads
+kpath (encode): 2015/12/16 23:54:14 Worker 0 flipping [0, 23353)...
+kpath (encode): 2015/12/16 23:54:14 Worker 2 flipping [46706, 70059)...
+kpath (encode): 2015/12/16 23:54:14 Worker 1 flipping [23353, 46706)...
+kpath (encode): 2015/12/16 23:54:14 Worker 6 flipping [140118, 163464)...
+kpath (encode): 2015/12/16 23:54:14 Worker 4 flipping [93412, 116765)...
+kpath (encode): 2015/12/16 23:54:14 Worker 5 flipping [116765, 140118)...
+kpath (encode): 2015/12/16 23:54:14 Worker 3 flipping [70059, 93412)...
+panic: runtime error: slice bounds out of range
+
+goroutine 52 [running]:
+runtime.panic(0x51d260, 0x5f578f)
+	/usr/local/go/src/pkg/runtime/panic.c:279 +0xf5
+main.countMatchingObservations(0xc223fe13c0, 0xc264894000, 0x6, 0xc264890000)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:404 +0x200
+main.flipRange(0xc249066720, 0x5b39, 0x97299c, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:441 +0xbb
+main.func·001(0x4, 0xc28005e240)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+goroutine 16 [chan receive]:
+main.readAndFlipReads(0x7ffe3566e909, 0x2c, 0xc223fe13c0, 0xc211921b01, 0x0, 0x0, 0x0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:503 +0x77c
+main.preprocessWithBuckets(0x7ffe3566e909, 0x2c, 0x7ffe3566e93b, 0x39, 0xc223fe13c0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:606 +0xcf
+main.main()
+	/home/carlk/g/src/kingsford/kpath/kpath.go:1246 +0x113b
+
+goroutine 19 [finalizer wait]:
+runtime.park(0x424170, 0x5f9720, 0x5f7a29)
+	/usr/local/go/src/pkg/runtime/proc.c:1369 +0x89
+runtime.parkunlock(0x5f9720, 0x5f7a29)
+	/usr/local/go/src/pkg/runtime/proc.c:1385 +0x3b
+runfinq()
+	/usr/local/go/src/pkg/runtime/mgc0.c:2644 +0xcf
+runtime.goexit()
+	/usr/local/go/src/pkg/runtime/proc.c:1445
+
+goroutine 48 [runnable]:
+main.acgt(0xc2a2764047, 0x1)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:124
+main.countMatchingObservations(0xc223fe13c0, 0xc2a2764000, 0x7102, 0x30)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:406 +0xa4
+main.flipRange(0xc248fb0000, 0x5b39, 0x989680, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:443 +0x131
+main.func·001(0x0, 0xc28005e000)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+goroutine 49 [runnable]:
+main.acgt(0xc268e42054, 0x0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:124
+main.countMatchingObservations(0xc223fe13c0, 0xc268e42000, 0x1c8f, 0xc268e40148)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:406 +0xa4
+main.flipRange(0xc248fdd9c8, 0x5b39, 0x983b47, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:441 +0xbb
+main.func·001(0x1, 0xc28005e0c0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+goroutine 50 [runnable]:
+main.acgt(0xc268c02041, 0x1)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:124
+main.countMatchingObservations(0xc223fe13c0, 0xc268c02000, 0x5339, 0xc268c000ae)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:406 +0xa4
+main.flipRange(0xc24900b390, 0x5b39, 0x97e00e, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:441 +0xbb
+main.func·001(0x2, 0xc28005e120)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+goroutine 51 [runnable]:
+main.RC(0x4e0643, 0x4443)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:185
+main.reverseComplement(0xc26a836500, 0x449a, 0x0, 0x0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:205 +0x99
+main.flipRange(0xc249038d58, 0x5b39, 0x9784d5, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:442 +0x102
+main.func·001(0x3, 0xc28005e1e0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+goroutine 53 [runnable]:
+main.acgt(0xc2186d8047, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:124
+main.countMatchingObservations(0xc223fe13c0, 0xc2186d8000, 0x4fd3, 0x1a0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:406 +0xa4
+main.flipRange(0xc2490940e8, 0x5b39, 0x96ce63, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:443 +0x131
+main.func·001(0x5, 0xc28005e300)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+goroutine 54 [runnable]:
+main.acgt(0xc27b1ad054, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:124
+main.countMatchingObservations(0xc223fe13c0, 0xc27b1ad000, 0x1534, 0xc27b1a0000)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:406 +0xa4
+main.flipRange(0xc2490c1ab0, 0x5b32, 0x96732a, 0xc223fe13c0, 0x3)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:441 +0xbb
+main.func·001(0x6, 0xc28005e3c0)
+	/home/carlk/g/src/kingsford/kpath/kpath.go:493 +0x1a2
+created by main.readAndFlipReads
+	/home/carlk/g/src/kingsford/kpath/kpath.go:498 +0x6cd
+
+################################################################################
+
+kpath  Copyright (C) 2014  Carl Kingsford & Rob Patro
+
+
+
+This program comes with ABSOLUTELY NO WARRANTY; This is free software, and
+
+you are welcome to redistribute it under certain conditions; see
+
+accompanying LICENSE.txt file.
+
+
+

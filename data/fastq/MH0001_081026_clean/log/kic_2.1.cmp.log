@@ -1,0 +1,7 @@
+
+################################################################################
+
+e,MH0001_081026_clean.2.fq,MH0001_081026_clean.1/output/compressed/kic/MH0001_081026_clean.2.fq.kic,1,tools/kic-0.2,MH0001_081026_clean.1/output/compressed/kic
+
+java -Xmx2000m -jar tools/kic-0.2/kic.jar MH0001_081026_clean.2.fq -n 1
+

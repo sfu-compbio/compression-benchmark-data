@@ -1,0 +1,10 @@
+Reading ../../../HCC1954.mix1.n80t20.bam.sam, HCC1954.mix1.n80t20.bam.qp.sam; maxline=3000000
+../../../HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam.qp.sam differ: byte 23508, line 110
+> ORIG     942395158 (../../../HCC1954.mix1.n80t20.bam.sam)
+< COPY     942395158 (HCC1954.mix1.n80t20.bam.qp.sam)
+
+REFNAME     19597685 lines unequal
+POS         19597685 lines unequal
+REFNEXT    890301020 lines unequal
+POSNEXT     19597685 lines unequal
+Done ../../../HCC1954.mix1.n80t20.bam.sam

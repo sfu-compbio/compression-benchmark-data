@@ -1,0 +1,63 @@
+
+################################################################################
+
+Parameters: ,e,SRR554369_1.fastq,SRR554369/output/compressed/mince/SRR554369_1.fastq.mince,1,tools/mince,SRR554369/output/compressed/mince
+
+[ encode] => { }
+
+[ unmated_reads] => { SRR554369_1.fastq }
+
+[ threads] => { 1 }
+
+[ output] => { SRR554369_1.fastq.mince }
+
+there is 1 lib
+
+[2016-08-10 18:20:13.405] [jointLog] [info] You requested 1 threads, but the minimum is 4. Setting # threads to 4.
+
+[2016-08-10 18:20:13.405] [jointLog] [info] Starting 4 processing threads
+
+processed 1 readsprocessed 1000001 reads[2016-08-10 18:24:01.219] [jointLog] [info] finished parsing files
+
+Num buckets = 177176
+
+[2016-08-10 18:24:01.486] [jointLog] [info] Marking and collecting onsies
+
+[2016-08-10 18:24:01.486] [jointLog] [info] Read length (assumed = for all reads) is 100
+
+[2016-08-10 18:24:01.920] [jointLog] [info] erasing onsies from individual maps
+
+[2016-08-10 18:24:02.167] [jointLog] [info] |keys| = 123012
+
+[2016-08-10 18:24:02.167] [jointLog] [info] total number of reads = 1651564
+
+[2016-08-10 18:24:02.167] [jointLog] [info] total number of onsies = 54164
+
+[2016-08-10 18:24:02.167] [jointLog] [info] re-assigning onsies
+
+[2016-08-10 18:24:09.014] [jointLog] [info] done re-assigning onsies
+
+[2016-08-10 18:24:09.014] [jointLog] [info] |keys| = 177176
+
+[2016-08-10 18:24:09.014] [jointLog] [info] now there are 54164 onsies
+
+[2016-08-10 18:24:09.014] [jointLog] [info] re-bucked 54164 reads
+
+[2016-08-10 18:24:09.014] [jointLog] [info] sorting onsies
+
+[2016-08-10 18:24:09.120] [jointLog] [info] done sorting onsies
+
+[2016-08-10 18:24:09.120] [jointLog] [info] writing seq buffer with command plzip -o SRR554369_1.fastq.mince.seqs -f -n 1 -
+
+[2016-08-10 18:24:09.149] [jointLog] [info] writing offset buffer with command plzip -o SRR554369_1.fastq.mince.offs -f -n 1 -
+
+[2016-08-10 18:24:09.187] [jointLog] [info] writing nloc buffer with command plzip -o SRR554369_1.fastq.mince.nlocs -f -n 1 -
+
+[2016-08-10 18:24:09.773] [jointLog] [info] wrote out onsies
+
+processed 1000 bucketsprocessed 2000 bucketsprocessed 3000 bucketsprocessed 4000 bucketsprocessed 5000 bucketsprocessed 6000 bucketsprocessed 7000 bucketsprocessed 8000 bucketsprocessed 9000 bucketsprocessed 10000 bucketsprocessed 11000 bucketsprocessed 12000 bucketsprocessed 13000 bucketsprocessed 14000 bucketsprocessed 15000 bucketsprocessed 16000 bucketsprocessed 17000 bucketsprocessed 18000 bucketsprocessed 19000 bucketsprocessed 20000 bucketsprocessed 21000 bucketsprocessed 22000 bucketsprocessed 23000 bucketsprocessed 24000 bucketsprocessed 25000 bucketsprocessed 26000 bucketsprocessed 27000 bucketsprocessed 28000 bucketsprocessed 29000 bucketsprocessed 30000 bucketsprocessed 31000 bucketsprocessed 32000 bucketsprocessed 33000 bucketsprocessed 34000 bucketsprocessed 35000 bucketsprocessed 36000 bucketsprocessed 37000 bucketsprocessed 38000 bucketsprocessed 39000 bucketsprocessed 40000 bucketsprocessed 41000 bucketsprocessed 42000 bucketsprocessed 43000 bucketsprocessed 44000 bucketsprocessed 45000 bucketsprocessed 46000 bucketsprocessed 47000 bucketsprocessed 48000 bucketsprocessed 49000 bucketsprocessed 50000 bucketsprocessed 51000 bucketsprocessed 52000 bucketsprocessed 53000 bucketsprocessed 54000 bucketsprocessed 55000 bucketsprocessed 56000 bucketsprocessed 57000 bucketsprocessed 58000 bucketsprocessed 59000 bucketsprocessed 60000 bucketsprocessed 61000 bucketsprocessed 62000 bucketsprocessed 63000 bucketsprocessed 64000 bucketsprocessed 65000 bucketsprocessed 66000 bucketsprocessed 67000 bucketsprocessed 68000 bucketsprocessed 69000 bucketsprocessed 70000 bucketsprocessed 71000 bucketsprocessed 72000 bucketsprocessed 73000 bucketsprocessed 74000 bucketsprocessed 75000 bucketsprocessed 76000 bucketsprocessed 77000 bucketsprocessed 78000 bucketsprocessed 79000 bucketsprocessed 80000 bucketsprocessed 81000 bucketsprocessed 82000 bucketsprocessed 83000 bucketsprocessed 84000 bucketsprocessed 85000 bucketsprocessed 86000 bucketsprocessed 87000 bucketsprocessed 88000 bucketsprocessed 89000 bucketsprocessed 90000 bucketsprocessed 91000 bucketsprocessed 92000 bucketsprocessed 93000 bucketsprocessed 94000 bucketsprocessed 95000 bucketsprocessed 96000 bucketsprocessed 97000 bucketsprocessed 98000 bucketsprocessed 99000 bucketsprocessed 100000 bucketsprocessed 101000 bucketsprocessed 102000 bucketsprocessed 103000 bucketsprocessed 104000 bucketsprocessed 105000 bucketsprocessed 106000 bucketsprocessed 107000 bucketsprocessed 108000 bucketsprocessed 109000 bucketsprocessed 110000 bucketsprocessed 111000 bucketsprocessed 112000 bucketsprocessed 113000 bucketsprocessed 114000 bucketsprocessed 115000 bucketsprocessed 116000 bucketsprocessed 117000 bucketsprocessed 118000 bucketsprocessed 119000 bucketsprocessed 120000 bucketsprocessed 121000 bucketsprocessed 122000 bucketsprocessed 123000 bucketsprocessed 124000 bucketsprocessed 125000 bucketsprocessed 126000 bucketsprocessed 127000 bucketsprocessed 128000 bucketsprocessed 129000 bucketsprocessed 130000 bucketsprocessed 131000 bucketsprocessed 132000 bucketsprocessed 133000 bucketsprocessed 134000 bucketsprocessed 135000 bucketsprocessed 136000 bucketsprocessed 137000 bucketsprocessed 138000 bucketsprocessed 139000 bucketsprocessed 140000 bucketsprocessed 141000 bucketsprocessed 142000 bucketsprocessed 143000 bucketsprocessed 144000 bucketsprocessed 145000 bucketsprocessed 146000 bucketsprocessed 147000 bucketsprocessed 148000 bucketsprocessed 149000 bucketsprocessed 150000 bucketsprocessed 151000 bucketsprocessed 152000 bucketsprocessed 153000 bucketsprocessed 154000 bucketsprocessed 155000 bucketsprocessed 156000 bucketsprocessed 157000 bucketsprocessed 158000 bucketsprocessed 159000 bucketsprocessed 160000 bucketsprocessed 161000 bucketsprocessed 162000 bucketsprocessed 163000 bucketsprocessed 164000 bucketsprocessed 165000 bucketsprocessed 166000 bucketsprocessed 167000 bucketsprocessed 168000 bucketsprocessed 169000 bucketsprocessed 170000 bucketsprocessed 171000 bucketsprocessed 172000 bucketsprocessed 173000 bucketsprocessed 174000 bucketsprocessed 175000 bucketsprocessed 176000 bucketsprocessed 177000 buckets[2016-08-10 18:24:41.855] [jointLog] [info] Done with calls to write; waiting for files to close!
+
+[2016-08-10 18:24:49.804] [jointLog] [info] Wrote 1651564 reads in 177176 buckets
+
+[2016-08-10 18:24:49.804] [jointLog] [info] Done writing all buckets
+

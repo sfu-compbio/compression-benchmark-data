@@ -1,0 +1,421 @@
+Reading ../../../ERR174310_1.fastq, ./ERR174310_2.fastqz.fq; maxline=1000000
+../../../ERR174310_1.fastq ./ERR174310_2.fastqz.fq differ: byte 43, line 1
+Read 1000000 (1000000) / 1000000 (1000000) lines, 1000000
+Read 1000000 (2000000) / 1000000 (2000000) lines, 1000000
+Read 1000000 (3000000) / 1000000 (3000000) lines, 1000000
+Read 1000000 (4000000) / 1000000 (4000000) lines, 1000000
+Read 1000000 (5000000) / 1000000 (5000000) lines, 1000000
+Read 1000000 (6000000) / 1000000 (6000000) lines, 1000000
+Read 1000000 (7000000) / 1000000 (7000000) lines, 1000000
+Read 1000000 (8000000) / 1000000 (8000000) lines, 1000000
+Read 1000000 (9000000) / 1000000 (9000000) lines, 1000000
+Read 1000000 (10000000) / 1000000 (10000000) lines, 1000000
+Read 1000000 (11000000) / 1000000 (11000000) lines, 1000000
+Read 1000000 (12000000) / 1000000 (12000000) lines, 1000000
+Read 1000000 (13000000) / 1000000 (13000000) lines, 1000000
+Read 1000000 (14000000) / 1000000 (14000000) lines, 1000000
+Read 1000000 (15000000) / 1000000 (15000000) lines, 1000000
+Read 1000000 (16000000) / 1000000 (16000000) lines, 1000000
+Read 1000000 (17000000) / 1000000 (17000000) lines, 1000000
+Read 1000000 (18000000) / 1000000 (18000000) lines, 1000000
+Read 1000000 (19000000) / 1000000 (19000000) lines, 1000000
+Read 1000000 (20000000) / 1000000 (20000000) lines, 1000000
+Read 1000000 (21000000) / 1000000 (21000000) lines, 1000000
+Read 1000000 (22000000) / 1000000 (22000000) lines, 1000000
+Read 1000000 (23000000) / 1000000 (23000000) lines, 1000000
+Read 1000000 (24000000) / 1000000 (24000000) lines, 1000000
+Read 1000000 (25000000) / 1000000 (25000000) lines, 1000000
+Read 1000000 (26000000) / 1000000 (26000000) lines, 1000000
+Read 1000000 (27000000) / 1000000 (27000000) lines, 1000000
+Read 1000000 (28000000) / 1000000 (28000000) lines, 1000000
+Read 1000000 (29000000) / 1000000 (29000000) lines, 1000000
+Read 1000000 (30000000) / 1000000 (30000000) lines, 1000000
+Read 1000000 (31000000) / 1000000 (31000000) lines, 1000000
+Read 1000000 (32000000) / 1000000 (32000000) lines, 1000000
+Read 1000000 (33000000) / 1000000 (33000000) lines, 1000000
+Read 1000000 (34000000) / 1000000 (34000000) lines, 1000000
+Read 1000000 (35000000) / 1000000 (35000000) lines, 1000000
+Read 1000000 (36000000) / 1000000 (36000000) lines, 1000000
+Read 1000000 (37000000) / 1000000 (37000000) lines, 1000000
+Read 1000000 (38000000) / 1000000 (38000000) lines, 1000000
+Read 1000000 (39000000) / 1000000 (39000000) lines, 1000000
+Read 1000000 (40000000) / 1000000 (40000000) lines, 1000000
+Read 1000000 (41000000) / 1000000 (41000000) lines, 1000000
+Read 1000000 (42000000) / 1000000 (42000000) lines, 1000000
+Read 1000000 (43000000) / 1000000 (43000000) lines, 1000000
+Read 1000000 (44000000) / 1000000 (44000000) lines, 1000000
+Read 1000000 (45000000) / 1000000 (45000000) lines, 1000000
+Read 1000000 (46000000) / 1000000 (46000000) lines, 1000000
+Read 1000000 (47000000) / 1000000 (47000000) lines, 1000000
+Read 1000000 (48000000) / 1000000 (48000000) lines, 1000000
+Read 1000000 (49000000) / 1000000 (49000000) lines, 1000000
+Read 1000000 (50000000) / 1000000 (50000000) lines, 1000000
+Read 1000000 (51000000) / 1000000 (51000000) lines, 1000000
+Read 1000000 (52000000) / 1000000 (52000000) lines, 1000000
+Read 1000000 (53000000) / 1000000 (53000000) lines, 1000000
+Read 1000000 (54000000) / 1000000 (54000000) lines, 1000000
+Read 1000000 (55000000) / 1000000 (55000000) lines, 1000000
+Read 1000000 (56000000) / 1000000 (56000000) lines, 1000000
+Read 1000000 (57000000) / 1000000 (57000000) lines, 1000000
+Read 1000000 (58000000) / 1000000 (58000000) lines, 1000000
+Read 1000000 (59000000) / 1000000 (59000000) lines, 1000000
+Read 1000000 (60000000) / 1000000 (60000000) lines, 1000000
+Read 1000000 (61000000) / 1000000 (61000000) lines, 1000000
+Read 1000000 (62000000) / 1000000 (62000000) lines, 1000000
+Read 1000000 (63000000) / 1000000 (63000000) lines, 1000000
+Read 1000000 (64000000) / 1000000 (64000000) lines, 1000000
+Read 1000000 (65000000) / 1000000 (65000000) lines, 1000000
+Read 1000000 (66000000) / 1000000 (66000000) lines, 1000000
+Read 1000000 (67000000) / 1000000 (67000000) lines, 1000000
+Read 1000000 (68000000) / 1000000 (68000000) lines, 1000000
+Read 1000000 (69000000) / 1000000 (69000000) lines, 1000000
+Read 1000000 (70000000) / 1000000 (70000000) lines, 1000000
+Read 1000000 (71000000) / 1000000 (71000000) lines, 1000000
+Read 1000000 (72000000) / 1000000 (72000000) lines, 1000000
+Read 1000000 (73000000) / 1000000 (73000000) lines, 1000000
+Read 1000000 (74000000) / 1000000 (74000000) lines, 1000000
+Read 1000000 (75000000) / 1000000 (75000000) lines, 1000000
+Read 1000000 (76000000) / 1000000 (76000000) lines, 1000000
+Read 1000000 (77000000) / 1000000 (77000000) lines, 1000000
+Read 1000000 (78000000) / 1000000 (78000000) lines, 1000000
+Read 1000000 (79000000) / 1000000 (79000000) lines, 1000000
+Read 1000000 (80000000) / 1000000 (80000000) lines, 1000000
+Read 1000000 (81000000) / 1000000 (81000000) lines, 1000000
+Read 1000000 (82000000) / 1000000 (82000000) lines, 1000000
+Read 1000000 (83000000) / 1000000 (83000000) lines, 1000000
+Read 1000000 (84000000) / 1000000 (84000000) lines, 1000000
+Read 1000000 (85000000) / 1000000 (85000000) lines, 1000000
+Read 1000000 (86000000) / 1000000 (86000000) lines, 1000000
+Read 1000000 (87000000) / 1000000 (87000000) lines, 1000000
+Read 1000000 (88000000) / 1000000 (88000000) lines, 1000000
+Read 1000000 (89000000) / 1000000 (89000000) lines, 1000000
+Read 1000000 (90000000) / 1000000 (90000000) lines, 1000000
+Read 1000000 (91000000) / 1000000 (91000000) lines, 1000000
+Read 1000000 (92000000) / 1000000 (92000000) lines, 1000000
+Read 1000000 (93000000) / 1000000 (93000000) lines, 1000000
+Read 1000000 (94000000) / 1000000 (94000000) lines, 1000000
+Read 1000000 (95000000) / 1000000 (95000000) lines, 1000000
+Read 1000000 (96000000) / 1000000 (96000000) lines, 1000000
+Read 1000000 (97000000) / 1000000 (97000000) lines, 1000000
+Read 1000000 (98000000) / 1000000 (98000000) lines, 1000000
+Read 1000000 (99000000) / 1000000 (99000000) lines, 1000000
+Read 1000000 (100000000) / 1000000 (100000000) lines, 1000000
+Read 1000000 (101000000) / 1000000 (101000000) lines, 1000000
+Read 1000000 (102000000) / 1000000 (102000000) lines, 1000000
+Read 1000000 (103000000) / 1000000 (103000000) lines, 1000000
+Read 1000000 (104000000) / 1000000 (104000000) lines, 1000000
+Read 1000000 (105000000) / 1000000 (105000000) lines, 1000000
+Read 1000000 (106000000) / 1000000 (106000000) lines, 1000000
+Read 1000000 (107000000) / 1000000 (107000000) lines, 1000000
+Read 1000000 (108000000) / 1000000 (108000000) lines, 1000000
+Read 1000000 (109000000) / 1000000 (109000000) lines, 1000000
+Read 1000000 (110000000) / 1000000 (110000000) lines, 1000000
+Read 1000000 (111000000) / 1000000 (111000000) lines, 1000000
+Read 1000000 (112000000) / 1000000 (112000000) lines, 1000000
+Read 1000000 (113000000) / 1000000 (113000000) lines, 1000000
+Read 1000000 (114000000) / 1000000 (114000000) lines, 1000000
+Read 1000000 (115000000) / 1000000 (115000000) lines, 1000000
+Read 1000000 (116000000) / 1000000 (116000000) lines, 1000000
+Read 1000000 (117000000) / 1000000 (117000000) lines, 1000000
+Read 1000000 (118000000) / 1000000 (118000000) lines, 1000000
+Read 1000000 (119000000) / 1000000 (119000000) lines, 1000000
+Read 1000000 (120000000) / 1000000 (120000000) lines, 1000000
+Read 1000000 (121000000) / 1000000 (121000000) lines, 1000000
+Read 1000000 (122000000) / 1000000 (122000000) lines, 1000000
+Read 1000000 (123000000) / 1000000 (123000000) lines, 1000000
+Read 1000000 (124000000) / 1000000 (124000000) lines, 1000000
+Read 1000000 (125000000) / 1000000 (125000000) lines, 1000000
+Read 1000000 (126000000) / 1000000 (126000000) lines, 1000000
+Read 1000000 (127000000) / 1000000 (127000000) lines, 1000000
+Read 1000000 (128000000) / 1000000 (128000000) lines, 1000000
+Read 1000000 (129000000) / 1000000 (129000000) lines, 1000000
+Read 1000000 (130000000) / 1000000 (130000000) lines, 1000000
+Read 1000000 (131000000) / 1000000 (131000000) lines, 1000000
+Read 1000000 (132000000) / 1000000 (132000000) lines, 1000000
+Read 1000000 (133000000) / 1000000 (133000000) lines, 1000000
+Read 1000000 (134000000) / 1000000 (134000000) lines, 1000000
+Read 1000000 (135000000) / 1000000 (135000000) lines, 1000000
+Read 1000000 (136000000) / 1000000 (136000000) lines, 1000000
+Read 1000000 (137000000) / 1000000 (137000000) lines, 1000000
+Read 1000000 (138000000) / 1000000 (138000000) lines, 1000000
+Read 1000000 (139000000) / 1000000 (139000000) lines, 1000000
+Read 1000000 (140000000) / 1000000 (140000000) lines, 1000000
+Read 1000000 (141000000) / 1000000 (141000000) lines, 1000000
+Read 1000000 (142000000) / 1000000 (142000000) lines, 1000000
+Read 1000000 (143000000) / 1000000 (143000000) lines, 1000000
+Read 1000000 (144000000) / 1000000 (144000000) lines, 1000000
+Read 1000000 (145000000) / 1000000 (145000000) lines, 1000000
+Read 1000000 (146000000) / 1000000 (146000000) lines, 1000000
+Read 1000000 (147000000) / 1000000 (147000000) lines, 1000000
+Read 1000000 (148000000) / 1000000 (148000000) lines, 1000000
+Read 1000000 (149000000) / 1000000 (149000000) lines, 1000000
+Read 1000000 (150000000) / 1000000 (150000000) lines, 1000000
+Read 1000000 (151000000) / 1000000 (151000000) lines, 1000000
+Read 1000000 (152000000) / 1000000 (152000000) lines, 1000000
+Read 1000000 (153000000) / 1000000 (153000000) lines, 1000000
+Read 1000000 (154000000) / 1000000 (154000000) lines, 1000000
+Read 1000000 (155000000) / 1000000 (155000000) lines, 1000000
+Read 1000000 (156000000) / 1000000 (156000000) lines, 1000000
+Read 1000000 (157000000) / 1000000 (157000000) lines, 1000000
+Read 1000000 (158000000) / 1000000 (158000000) lines, 1000000
+Read 1000000 (159000000) / 1000000 (159000000) lines, 1000000
+Read 1000000 (160000000) / 1000000 (160000000) lines, 1000000
+Read 1000000 (161000000) / 1000000 (161000000) lines, 1000000
+Read 1000000 (162000000) / 1000000 (162000000) lines, 1000000
+Read 1000000 (163000000) / 1000000 (163000000) lines, 1000000
+Read 1000000 (164000000) / 1000000 (164000000) lines, 1000000
+Read 1000000 (165000000) / 1000000 (165000000) lines, 1000000
+Read 1000000 (166000000) / 1000000 (166000000) lines, 1000000
+Read 1000000 (167000000) / 1000000 (167000000) lines, 1000000
+Read 1000000 (168000000) / 1000000 (168000000) lines, 1000000
+Read 1000000 (169000000) / 1000000 (169000000) lines, 1000000
+Read 1000000 (170000000) / 1000000 (170000000) lines, 1000000
+Read 1000000 (171000000) / 1000000 (171000000) lines, 1000000
+Read 1000000 (172000000) / 1000000 (172000000) lines, 1000000
+Read 1000000 (173000000) / 1000000 (173000000) lines, 1000000
+Read 1000000 (174000000) / 1000000 (174000000) lines, 1000000
+Read 1000000 (175000000) / 1000000 (175000000) lines, 1000000
+Read 1000000 (176000000) / 1000000 (176000000) lines, 1000000
+Read 1000000 (177000000) / 1000000 (177000000) lines, 1000000
+Read 1000000 (178000000) / 1000000 (178000000) lines, 1000000
+Read 1000000 (179000000) / 1000000 (179000000) lines, 1000000
+Read 1000000 (180000000) / 1000000 (180000000) lines, 1000000
+Read 1000000 (181000000) / 1000000 (181000000) lines, 1000000
+Read 1000000 (182000000) / 1000000 (182000000) lines, 1000000
+Read 1000000 (183000000) / 1000000 (183000000) lines, 1000000
+Read 1000000 (184000000) / 1000000 (184000000) lines, 1000000
+Read 1000000 (185000000) / 1000000 (185000000) lines, 1000000
+Read 1000000 (186000000) / 1000000 (186000000) lines, 1000000
+Read 1000000 (187000000) / 1000000 (187000000) lines, 1000000
+Read 1000000 (188000000) / 1000000 (188000000) lines, 1000000
+Read 1000000 (189000000) / 1000000 (189000000) lines, 1000000
+Read 1000000 (190000000) / 1000000 (190000000) lines, 1000000
+Read 1000000 (191000000) / 1000000 (191000000) lines, 1000000
+Read 1000000 (192000000) / 1000000 (192000000) lines, 1000000
+Read 1000000 (193000000) / 1000000 (193000000) lines, 1000000
+Read 1000000 (194000000) / 1000000 (194000000) lines, 1000000
+Read 1000000 (195000000) / 1000000 (195000000) lines, 1000000
+Read 1000000 (196000000) / 1000000 (196000000) lines, 1000000
+Read 1000000 (197000000) / 1000000 (197000000) lines, 1000000
+Read 1000000 (198000000) / 1000000 (198000000) lines, 1000000
+Read 1000000 (199000000) / 1000000 (199000000) lines, 1000000
+Read 1000000 (200000000) / 1000000 (200000000) lines, 1000000
+Read 1000000 (201000000) / 1000000 (201000000) lines, 1000000
+Read 1000000 (202000000) / 1000000 (202000000) lines, 1000000
+Read 1000000 (203000000) / 1000000 (203000000) lines, 1000000
+Read 1000000 (204000000) / 1000000 (204000000) lines, 1000000
+Read 1000000 (205000000) / 1000000 (205000000) lines, 1000000
+Read 1000000 (206000000) / 1000000 (206000000) lines, 1000000
+Read 1000000 (207000000) / 1000000 (207000000) lines, 1000000
+Read 579467 (207579467) / 520809 (207520809) lines, 579467
+> ORIG     207579467 (../../../ERR174310_1.fastq)
+< COPY     207520809 (./ERR174310_2.fastqz.fq)
+Miss           58658 lines
+
+SEQ        207520809 lines unequal
+                     2 mismatches: 1 lines
+                     3 mismatches: 1 lines
+                     9 mismatches: 2 lines
+                     10 mismatches: 1 lines
+                     11 mismatches: 1 lines
+                     12 mismatches: 1 lines
+                     13 mismatches: 2 lines
+                     14 mismatches: 2 lines
+                     15 mismatches: 5 lines
+                     16 mismatches: 7 lines
+                     17 mismatches: 12 lines
+                     18 mismatches: 10 lines
+                     19 mismatches: 12 lines
+                     20 mismatches: 17 lines
+                     21 mismatches: 20 lines
+                     22 mismatches: 29 lines
+                     23 mismatches: 38 lines
+                     24 mismatches: 31 lines
+                     25 mismatches: 43 lines
+                     26 mismatches: 52 lines
+                     27 mismatches: 59 lines
+                     28 mismatches: 66 lines
+                     29 mismatches: 82 lines
+                     30 mismatches: 97 lines
+                     31 mismatches: 112 lines
+                     32 mismatches: 122 lines
+                     33 mismatches: 150 lines
+                     34 mismatches: 153 lines
+                     35 mismatches: 185 lines
+                     36 mismatches: 185 lines
+                     37 mismatches: 183 lines
+                     38 mismatches: 216 lines
+                     39 mismatches: 234 lines
+                     40 mismatches: 245 lines
+                     41 mismatches: 271 lines
+                     42 mismatches: 286 lines
+                     43 mismatches: 307 lines
+                     44 mismatches: 324 lines
+                     45 mismatches: 354 lines
+                     46 mismatches: 391 lines
+                     47 mismatches: 402 lines
+                     48 mismatches: 498 lines
+                     49 mismatches: 658 lines
+                     50 mismatches: 795 lines
+                     51 mismatches: 1051 lines
+                     52 mismatches: 1717 lines
+                     53 mismatches: 2749 lines
+                     54 mismatches: 5286 lines
+                     55 mismatches: 9579 lines
+                     56 mismatches: 18391 lines
+                     57 mismatches: 34207 lines
+                     58 mismatches: 63766 lines
+                     59 mismatches: 114303 lines
+                     60 mismatches: 202722 lines
+                     61 mismatches: 346257 lines
+                     62 mismatches: 576456 lines
+                     63 mismatches: 932408 lines
+                     64 mismatches: 1456465 lines
+                     65 mismatches: 2193391 lines
+                     66 mismatches: 3198512 lines
+                     67 mismatches: 4497738 lines
+                     68 mismatches: 6110124 lines
+                     69 mismatches: 7985256 lines
+                     70 mismatches: 10053113 lines
+                     71 mismatches: 12179809 lines
+                     72 mismatches: 14187281 lines
+                     73 mismatches: 15856858 lines
+                     74 mismatches: 16999163 lines
+                     75 mismatches: 17445538 lines
+                     76 mismatches: 17145474 lines
+                     77 mismatches: 16094290 lines
+                     78 mismatches: 14426281 lines
+                     79 mismatches: 12312242 lines
+                     80 mismatches: 9993342 lines
+                     81 mismatches: 7702825 lines
+                     82 mismatches: 5622100 lines
+                     83 mismatches: 3876068 lines
+                     84 mismatches: 2523769 lines
+                     85 mismatches: 1545092 lines
+                     86 mismatches: 890053 lines
+                     87 mismatches: 478652 lines
+                     88 mismatches: 238945 lines
+                     89 mismatches: 112216 lines
+                     90 mismatches: 48749 lines
+                     91 mismatches: 19601 lines
+                     92 mismatches: 7683 lines
+                     93 mismatches: 2891 lines
+                     94 mismatches: 1045 lines
+                     95 mismatches: 423 lines
+                     96 mismatches: 150 lines
+                     97 mismatches: 68 lines
+                     98 mismatches: 32 lines
+                     99 mismatches: 11 lines
+                     100 mismatches: 5 lines
+
+COMMENT            1 lines unequal
+QUAL       207520745 lines unequal
+                     1 mismatches: 6 lines
+                     2 mismatches: 3 lines
+                     3 mismatches: 12 lines
+                     4 mismatches: 30 lines
+                     5 mismatches: 67 lines
+                     6 mismatches: 78 lines
+                     7 mismatches: 117 lines
+                     8 mismatches: 143 lines
+                     9 mismatches: 183 lines
+                     10 mismatches: 221 lines
+                     11 mismatches: 243 lines
+                     12 mismatches: 327 lines
+                     13 mismatches: 405 lines
+                     14 mismatches: 537 lines
+                     15 mismatches: 644 lines
+                     16 mismatches: 827 lines
+                     17 mismatches: 1049 lines
+                     18 mismatches: 1423 lines
+                     19 mismatches: 1880 lines
+                     20 mismatches: 2460 lines
+                     21 mismatches: 3454 lines
+                     22 mismatches: 4445 lines
+                     23 mismatches: 5845 lines
+                     24 mismatches: 7979 lines
+                     25 mismatches: 10461 lines
+                     26 mismatches: 12916 lines
+                     27 mismatches: 16193 lines
+                     28 mismatches: 21240 lines
+                     29 mismatches: 27588 lines
+                     30 mismatches: 36513 lines
+                     31 mismatches: 47866 lines
+                     32 mismatches: 62561 lines
+                     33 mismatches: 82374 lines
+                     34 mismatches: 107712 lines
+                     35 mismatches: 138372 lines
+                     36 mismatches: 178030 lines
+                     37 mismatches: 227556 lines
+                     38 mismatches: 287083 lines
+                     39 mismatches: 358688 lines
+                     40 mismatches: 445197 lines
+                     41 mismatches: 546498 lines
+                     42 mismatches: 664853 lines
+                     43 mismatches: 798629 lines
+                     44 mismatches: 957318 lines
+                     45 mismatches: 1130111 lines
+                     46 mismatches: 1321496 lines
+                     47 mismatches: 1526147 lines
+                     48 mismatches: 1744154 lines
+                     49 mismatches: 1974523 lines
+                     50 mismatches: 2208549 lines
+                     51 mismatches: 2453105 lines
+                     52 mismatches: 2699135 lines
+                     53 mismatches: 2930595 lines
+                     54 mismatches: 3159415 lines
+                     55 mismatches: 3369848 lines
+                     56 mismatches: 3564102 lines
+                     57 mismatches: 3735506 lines
+                     58 mismatches: 3882671 lines
+                     59 mismatches: 3999544 lines
+                     60 mismatches: 4103343 lines
+                     61 mismatches: 4169742 lines
+                     62 mismatches: 4223496 lines
+                     63 mismatches: 4251149 lines
+                     64 mismatches: 4244884 lines
+                     65 mismatches: 4241030 lines
+                     66 mismatches: 4223834 lines
+                     67 mismatches: 4201995 lines
+                     68 mismatches: 4169674 lines
+                     69 mismatches: 4139817 lines
+                     70 mismatches: 4082270 lines
+                     71 mismatches: 4047133 lines
+                     72 mismatches: 4015563 lines
+                     73 mismatches: 3987968 lines
+                     74 mismatches: 3978998 lines
+                     75 mismatches: 3982562 lines
+                     76 mismatches: 3994241 lines
+                     77 mismatches: 4028517 lines
+                     78 mismatches: 4076686 lines
+                     79 mismatches: 4134918 lines
+                     80 mismatches: 4212472 lines
+                     81 mismatches: 4302455 lines
+                     82 mismatches: 4399998 lines
+                     83 mismatches: 4513110 lines
+                     84 mismatches: 4625628 lines
+                     85 mismatches: 4757678 lines
+                     86 mismatches: 4858714 lines
+                     87 mismatches: 4937871 lines
+                     88 mismatches: 4986682 lines
+                     89 mismatches: 4987914 lines
+                     90 mismatches: 4932139 lines
+                     91 mismatches: 4799152 lines
+                     92 mismatches: 4574994 lines
+                     93 mismatches: 4251699 lines
+                     94 mismatches: 3815857 lines
+                     95 mismatches: 3275841 lines
+                     96 mismatches: 2667789 lines
+                     97 mismatches: 2020556 lines
+                     98 mismatches: 1424589 lines
+                     99 mismatches: 922315 lines
+                     100 mismatches: 563066 lines
+                     101 mismatches: 633479 lines
+
+COMMENTX   207520809 lines unequal
+Nucleotide A missed: 4430749292
+Nucleotide C missed: 3325444960
+Nucleotide G missed: 3398020502
+Nucleotide T missed: 4363129516
+Wrong N quality: 8323110 of 15154035642
+Done ../../../ERR174310_1.fastq

@@ -1,0 +1,3698 @@
+Namespace(force=False, input='ERR174310_1.fastq', log='benchmark.log', ref='data/sam/ref/hg19.fa')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                      ERR174310_1 with 1 threads                      + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz_1
+*** 2015-11-02 01:09:35 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -p 1  
+    stdin:       ERR174310_1.fastq
+    stdout:      ERR174310_1/output/ERR174310_1.gz
+  stderr:      ERR174310_1/log/pigz_1.1.cmp.log
+  Process PID:   16281
+  Exit code:     0
+  Wall time:     02:08:45 (7725.1 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    02:06:08 (7568.0 ms)
+    ru_stime:    00:00:50 (50.4 ms)
+    ru_maxrss:   5788
+    ru_minflt:   847
+    ru_majflt:   7
+    ru_inblock:  105214952
+    ru_oublock:  36323280
+    ru_nvcsw:    1501
+    ru_nivcsw:   1179418
+  GNU time:     
+    real:        02:08:45 (7725.0 ms)
+    user:        02:06:08 (7568.0 ms)
+    sys:         00:00:50 (50.4 ms)
+  Size (MB):     17,735.11 (18596613800 bytes) (ERR174310_1/output/ERR174310_1.gz)
+  Free space:      2.8T  461G  2.3T  17% /local-scratch
+*** 2015-11-02 03:18:29 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       ERR174310_1/output/ERR174310_1.gz
+    stdout:      ERR174310_1/output/ERR174310_1.gz.fq
+  stderr:      ERR174310_1/log/pigz_1.1.dec.log
+  Process PID:   17980
+  Exit code:     0
+  Wall time:     00:15:48 (948.8 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:05:27 (327.4 ms)
+    ru_stime:    00:00:48 (48.6 ms)
+    ru_maxrss:   5824
+    ru_minflt:   716
+    ru_majflt:   7
+    ru_inblock:  36323416
+    ru_oublock:  105212680
+    ru_nvcsw:    3813
+    ru_nivcsw:   182923
+  GNU time:     
+    real:        00:15:48 (948.8 ms)
+    user:        00:05:27 (327.4 ms)
+    sys:         00:00:48 (48.6 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_1.gz.fq)
+  Free space:      2.8T  511G  2.3T  19% /local-scratch
+
+>>> pigz_2
+*** 2015-11-02 03:34:55 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -p 1  
+    stdin:       ERR174310_2.fastq
+    stdout:      ERR174310_1/output/ERR174310_2.gz
+  stderr:      ERR174310_1/log/pigz_2.1.cmp.log
+  Process PID:   18199
+  Exit code:     0
+  Wall time:     02:07:30 (7650.2 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    02:04:55 (7495.5 ms)
+    ru_stime:    00:00:50 (50.0 ms)
+    ru_maxrss:   5824
+    ru_minflt:   846
+    ru_majflt:   7
+    ru_inblock:  105214880
+    ru_oublock:  35350296
+    ru_nvcsw:    1500
+    ru_nivcsw:   1172097
+  GNU time:     
+    real:        02:07:30 (7650.1 ms)
+    user:        02:04:55 (7495.5 ms)
+    sys:         00:00:50 (50.0 ms)
+  Size (MB):     17,259.89 (18098304911 bytes) (ERR174310_1/output/ERR174310_2.gz)
+  Free space:      2.8T  528G  2.3T  19% /local-scratch
+*** 2015-11-02 05:42:34 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       ERR174310_1/output/ERR174310_2.gz
+    stdout:      ERR174310_1/output/ERR174310_2.gz.fq
+  stderr:      ERR174310_1/log/pigz_2.1.dec.log
+  Process PID:   19882
+  Exit code:     0
+  Wall time:     00:14:49 (889.6 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:05:19 (319.9 ms)
+    ru_stime:    00:00:48 (48.7 ms)
+    ru_maxrss:   5824
+    ru_minflt:   717
+    ru_majflt:   7
+    ru_inblock:  35350152
+    ru_oublock:  105212680
+    ru_nvcsw:    3796
+    ru_nivcsw:   178906
+  GNU time:     
+    real:        00:14:49 (889.6 ms)
+    user:        00:05:19 (319.9 ms)
+    sys:         00:00:48 (48.7 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_2.gz.fq)
+  Free space:      2.8T  578G  2.2T  21% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2_1
+*** 2015-11-02 05:57:57 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -p1  
+    stdin:       ERR174310_1.fastq
+    stdout:      ERR174310_1/output/ERR174310_1.bz2
+  stderr:      ERR174310_1/log/pbzip2_1.1.cmp.log
+  Process PID:   20055
+  Exit code:     0
+  Wall time:     01:44:03 (6243.4 ms)
+  Memory (MB):   12.0
+  Resources:    
+    ru_utime:    01:39:31 (5971.4 ms)
+    ru_stime:    00:03:48 (228.6 ms)
+    ru_maxrss:   12320
+    ru_minflt:   21084525
+    ru_majflt:   8
+    ru_inblock:  105238624
+    ru_oublock:  29077440
+    ru_nvcsw:    430912
+    ru_nivcsw:   1102266
+  GNU time:     
+    real:        01:44:03 (6243.3 ms)
+    user:        01:39:31 (5971.4 ms)
+    sys:         00:03:48 (228.6 ms)
+  Size (MB):     14,197.22 (14886866456 bytes) (ERR174310_1/output/ERR174310_1.bz2)
+  Free space:      2.8T  592G  2.2T  22% /local-scratch
+*** 2015-11-02 07:42:11 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       ERR174310_1/output/ERR174310_1.bz2
+    stdout:      ERR174310_1/output/ERR174310_1.bz2.fq
+  stderr:      ERR174310_1/log/pbzip2_1.1.dec.log
+  Process PID:   21194
+  Exit code:     0
+  Wall time:     00:44:44 (2684.2 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:39:04 (2344.8 ms)
+    ru_stime:    00:01:05 (65.7 ms)
+    ru_maxrss:   5824
+    ru_minflt:   1622
+    ru_majflt:   8
+    ru_inblock:  29102072
+    ru_oublock:  105212680
+    ru_nvcsw:    3851
+    ru_nivcsw:   354710
+  GNU time:     
+    real:        00:44:44 (2684.1 ms)
+    user:        00:39:04 (2344.8 ms)
+    sys:         00:01:05 (65.7 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_1.bz2.fq)
+  Free space:      2.8T  642G  2.1T  23% /local-scratch
+
+>>> pbzip2_2
+*** 2015-11-02 08:27:08 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -p1  
+    stdin:       ERR174310_2.fastq
+    stdout:      ERR174310_1/output/ERR174310_2.bz2
+  stderr:      ERR174310_1/log/pbzip2_2.1.cmp.log
+  Process PID:   21730
+  Exit code:     0
+  Wall time:     01:41:23 (6083.7 ms)
+  Memory (MB):   12.0
+  Resources:    
+    ru_utime:    01:36:46 (5806.3 ms)
+    ru_stime:    00:03:48 (228.5 ms)
+    ru_maxrss:   12324
+    ru_minflt:   20313465
+    ru_majflt:   8
+    ru_inblock:  105238592
+    ru_oublock:  28155128
+    ru_nvcsw:    486033
+    ru_nivcsw:   1141564
+  GNU time:     
+    real:        01:41:23 (6083.6 ms)
+    user:        01:36:46 (5806.3 ms)
+    sys:         00:03:48 (228.5 ms)
+  Size (MB):     13,746.92 (14414692766 bytes) (ERR174310_1/output/ERR174310_2.bz2)
+  Free space:      2.8T  656G  2.1T  24% /local-scratch
+*** 2015-11-02 10:08:43 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       ERR174310_1/output/ERR174310_2.bz2
+    stdout:      ERR174310_1/output/ERR174310_2.bz2.fq
+  stderr:      ERR174310_1/log/pbzip2_2.1.dec.log
+  Process PID:   22819
+  Exit code:     0
+  Wall time:     00:49:29 (2969.3 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:43:48 (2628.0 ms)
+    ru_stime:    00:01:06 (66.5 ms)
+    ru_maxrss:   5824
+    ru_minflt:   2622
+    ru_majflt:   8
+    ru_inblock:  28179616
+    ru_oublock:  105212680
+    ru_nvcsw:    3788
+    ru_nivcsw:   381851
+  GNU time:     
+    real:        00:49:29 (2969.2 ms)
+    user:        00:43:48 (2628.0 ms)
+    sys:         00:01:06 (66.5 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_2.bz2.fq)
+  Free space:      2.8T  706G  2.1T  26% /local-scratch
+
+######################################################################## 
+#                                scalce                                # 
+########################################################################
+>>> scalce_1
+*** 2015-11-02 10:58:23 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -T 1 ERR174310_1.fastq -o ERR174310_1/output/ERR174310_1.scalce  -r
+  stderr:      ERR174310_1/log/scalce_1.1.cmp.log
+  Process PID:   23373
+  Exit code:     0
+  Wall time:     02:18:14 (8294.2 ms)
+  Memory (MB):   5378.8
+  Resources:    
+    ru_utime:    01:58:02 (7082.0 ms)
+    ru_stime:    00:05:38 (338.5 ms)
+    ru_maxrss:   5507840
+    ru_minflt:   254134
+    ru_majflt:   10
+    ru_inblock:  210487392
+    ru_oublock:  267086992
+    ru_nvcsw:    72754
+    ru_nivcsw:   1138416
+  GNU time:     
+    real:        02:18:14 (8294.1 ms)
+    user:        01:58:02 (7082.0 ms)
+    sys:         00:05:38 (338.4 ms)
+  Size (MB):     21,689.91 (22743522998 bytes) (ERR174310_1/output/ERR174310_1.scalce_1.scalcen, ERR174310_1/output/ERR174310_1.scalce_1.scalceq, ERR174310_1/output/ERR174310_1.scalce_1.scalcer, ERR174310_1/output/ERR174310_1.scalce_2.scalcen, ERR174310_1/output/ERR174310_1.scalce_2.scalceq, ERR174310_1/output/ERR174310_1.scalce_2.scalcer)
+  Free space:      2.8T  727G  2.1T  27% /local-scratch
+*** 2015-11-02 13:16:55 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -d -T 1 ERR174310_1/output/ERR174310_1.scalce_1.scalcer -o ERR174310_1/output/ERR174310_1.scalce.fq
+  stderr:      ERR174310_1/log/scalce_1.1.dec.log
+  Process PID:   2641
+  Exit code:     0
+  Wall time:     01:13:19 (4399.2 ms)
+  Memory (MB):   1006.9
+  Resources:    
+    ru_utime:    01:09:39 (4179.3 ms)
+    ru_stime:    00:00:48 (48.7 ms)
+    ru_maxrss:   1031100
+    ru_minflt:   243430
+    ru_majflt:   10
+    ru_inblock:  21228688
+    ru_oublock:  91815320
+    ru_nvcsw:    38094
+    ru_nivcsw:   472292
+  GNU time:     
+    real:        01:13:19 (4399.1 ms)
+    user:        01:09:39 (4179.3 ms)
+    sys:         00:00:48 (48.7 ms)
+  Size (MB):     44,831.68 (47009427907 bytes) (ERR174310_1/output/ERR174310_1.scalce.fq_1.fastq)
+  Free space:      2.8T  771G  2.0T  28% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single_1
+*** 2015-12-05 22:45:18 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -T 1 ERR174310_1.fastq -o ERR174310_1/output/ERR174310_1.scalce-single  
+  stderr:      ERR174310_1/log/scalce-single_1.1.cmp.log
+  Process PID:   16089
+  Exit code:     0
+  Wall time:     01:15:46 (4546.5 ms)
+  Memory (MB):   5322.1
+  Resources:    
+    ru_utime:    01:08:45 (4125.2 ms)
+    ru_stime:    00:02:40 (160.0 ms)
+    ru_maxrss:   5449832
+    ru_minflt:   252693
+    ru_majflt:   7
+    ru_inblock:  105274376
+    ru_oublock:  139138952
+    ru_nvcsw:    5355
+    ru_nivcsw:   843716
+  GNU time:     
+    real:        01:15:46 (4546.3 ms)
+    user:        01:08:45 (4125.2 ms)
+    sys:         00:02:40 (160.0 ms)
+  Size (MB):     10,325.28 (10826837457 bytes) (ERR174310_1/output/ERR174310_1.scalce-single_1.scalcen, ERR174310_1/output/ERR174310_1.scalce-single_1.scalceq, ERR174310_1/output/ERR174310_1.scalce-single_1.scalcer)
+  Free space:      2.8T  2.0T  796G  72% /local-scratch
+*** 2015-12-06 00:01:13 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -d -T 1 ERR174310_1/output/ERR174310_1.scalce-single_1.scalcer -o ERR174310_1/output/decompressed/ERR174310_1.scalce-single.fq
+  stderr:      ERR174310_1/log/scalce-single_1.1.dec.log
+  Process PID:   18960
+  Exit code:     0
+  Wall time:     01:12:19 (4339.9 ms)
+  Memory (MB):   1006.9
+  Resources:    
+    ru_utime:    01:09:39 (4179.4 ms)
+    ru_stime:    00:00:48 (48.5 ms)
+    ru_maxrss:   1031100
+    ru_minflt:   243418
+    ru_majflt:   10
+    ru_inblock:  21208448
+    ru_oublock:  91815320
+    ru_nvcsw:    38178
+    ru_nivcsw:   471177
+  GNU time:     
+    real:        01:12:19 (4339.8 ms)
+    user:        01:09:39 (4179.4 ms)
+    sys:         00:00:48 (48.5 ms)
+  Size (MB):     44,831.68 (47009427907 bytes) (ERR174310_1/output/decompressed/ERR174310_1.scalce-single.fq_1.fastq)
+  Free space:      2.8T  2.0T  752G  74% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc_1
+*** 2015-12-06 01:15:30 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1   ERR174310_1.fastq ERR174310_1/output/ERR174310_1.dsrc
+  stderr:      ERR174310_1/log/dsrc_1.1.cmp.log
+  Process PID:   21804
+  Exit code:     0
+  Wall time:     00:25:43 (1543.2 ms)
+  Memory (MB):   20.0
+  Resources:    
+    ru_utime:    00:21:58 (1318.4 ms)
+    ru_stime:    00:00:59 (59.2 ms)
+    ru_maxrss:   20440
+    ru_minflt:   4986
+    ru_majflt:   10
+    ru_inblock:  105238696
+    ru_oublock:  25809072
+    ru_nvcsw:    240615
+    ru_nivcsw:   261247
+  GNU time:     
+    real:        00:25:43 (1543.1 ms)
+    user:        00:21:58 (1318.4 ms)
+    sys:         00:00:59 (59.1 ms)
+  Size (MB):     12,601.91 (13214060181 bytes) (ERR174310_1/output/ERR174310_1.dsrc)
+  Free space:      2.8T  2.0T  750G  74% /local-scratch
+*** 2015-12-06 01:41:22 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 ERR174310_1/output/ERR174310_1.dsrc ERR174310_1/output/decompressed/ERR174310_1.dsrc.fq
+  stderr:      ERR174310_1/log/dsrc_1.1.dec.log
+  Process PID:   22109
+  Exit code:     0
+  Wall time:     00:19:13 (1153.9 ms)
+  Memory (MB):   29.4
+  Resources:    
+    ru_utime:    00:14:44 (884.4 ms)
+    ru_stime:    00:01:03 (63.5 ms)
+    ru_maxrss:   30072
+    ru_minflt:   17880
+    ru_majflt:   10
+    ru_inblock:  25834752
+    ru_oublock:  105212688
+    ru_nvcsw:    61178
+    ru_nivcsw:   126727
+  GNU time:     
+    real:        00:19:13 (1153.8 ms)
+    user:        00:14:44 (884.4 ms)
+    sys:         00:01:03 (63.5 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_1.dsrc.fq)
+  Free space:      2.8T  2.1T  700G  75% /local-scratch
+
+>>> dsrc_2
+*** 2015-12-06 02:02:58 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1   ERR174310_2.fastq ERR174310_1/output/ERR174310_2.dsrc
+  stderr:      ERR174310_1/log/dsrc_2.1.cmp.log
+  Process PID:   22361
+  Exit code:     0
+  Wall time:     00:25:47 (1547.8 ms)
+  Memory (MB):   21.5
+  Resources:    
+    ru_utime:    00:21:41 (1301.1 ms)
+    ru_stime:    00:01:02 (62.1 ms)
+    ru_maxrss:   22024
+    ru_minflt:   5158
+    ru_majflt:   10
+    ru_inblock:  105238696
+    ru_oublock:  24950312
+    ru_nvcsw:    233510
+    ru_nivcsw:   251416
+  GNU time:     
+    real:        00:25:47 (1547.7 ms)
+    user:        00:21:41 (1301.1 ms)
+    sys:         00:01:02 (62.1 ms)
+  Size (MB):     12,182.59 (12774367962 bytes) (ERR174310_1/output/ERR174310_2.dsrc)
+  Free space:      2.8T  2.1T  700G  75% /local-scratch
+*** 2015-12-06 02:28:54 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 ERR174310_1/output/ERR174310_2.dsrc ERR174310_1/output/decompressed/ERR174310_2.dsrc.fq
+  stderr:      ERR174310_1/log/dsrc_2.1.dec.log
+  Process PID:   22664
+  Exit code:     0
+  Wall time:     00:19:06 (1146.8 ms)
+  Memory (MB):   25.5
+  Resources:    
+    ru_utime:    00:14:07 (847.6 ms)
+    ru_stime:    00:01:02 (62.5 ms)
+    ru_maxrss:   26160
+    ru_minflt:   16884
+    ru_majflt:   10
+    ru_inblock:  24976232
+    ru_oublock:  105212688
+    ru_nvcsw:    58919
+    ru_nivcsw:   121281
+  GNU time:     
+    real:        00:19:06 (1146.7 ms)
+    user:        00:14:07 (847.6 ms)
+    sys:         00:01:02 (62.5 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_2.dsrc.fq)
+  Free space:      2.8T  2.1T  650G  77% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2_1
+*** 2015-12-06 02:50:18 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1 -m2  ERR174310_1.fastq ERR174310_1/output/ERR174310_1.dsrc-m2
+  stderr:      ERR174310_1/log/dsrc-m2_1.1.cmp.log
+  Process PID:   22935
+  Exit code:     0
+  Wall time:     01:26:21 (5181.4 ms)
+  Memory (MB):   485.6
+  Resources:    
+    ru_utime:    01:23:15 (4995.5 ms)
+    ru_stime:    00:01:33 (93.3 ms)
+    ru_maxrss:   497236
+    ru_minflt:   13811
+    ru_majflt:   10
+    ru_inblock:  105238704
+    ru_oublock:  22653024
+    ru_nvcsw:    237139
+    ru_nivcsw:   649117
+  GNU time:     
+    real:        01:26:21 (5181.3 ms)
+    user:        01:23:15 (4995.4 ms)
+    sys:         00:01:33 (93.3 ms)
+  Size (MB):     11,060.64 (11597918499 bytes) (ERR174310_1/output/ERR174310_1.dsrc-m2)
+  Free space:      2.8T  2.1T  651G  77% /local-scratch
+*** 2015-12-06 04:16:47 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 ERR174310_1/output/ERR174310_1.dsrc-m2 ERR174310_1/output/decompressed/ERR174310_1.dsrc-m2.fq
+  stderr:      ERR174310_1/log/dsrc-m2_1.1.dec.log
+  Process PID:   24190
+  Exit code:     0
+  Wall time:     01:31:24 (5484.0 ms)
+  Memory (MB):   392.5
+  Resources:    
+    ru_utime:    01:29:52 (5392.3 ms)
+    ru_stime:    00:01:07 (67.1 ms)
+    ru_maxrss:   401936
+    ru_minflt:   11499
+    ru_majflt:   10
+    ru_inblock:  22678449
+    ru_oublock:  105212688
+    ru_nvcsw:    46937
+    ru_nivcsw:   592006
+  GNU time:     
+    real:        01:31:23 (5483.9 ms)
+    user:        01:29:52 (5392.3 ms)
+    sys:         00:01:07 (67.1 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_1.dsrc-m2.fq)
+  Free space:      2.8T  2.2T  601G  79% /local-scratch
+
+>>> dsrc-m2_2
+*** 2015-12-06 05:50:16 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1 -m2  ERR174310_2.fastq ERR174310_1/output/ERR174310_2.dsrc-m2
+  stderr:      ERR174310_1/log/dsrc-m2_2.1.cmp.log
+  Process PID:   25201
+  Exit code:     0
+  Wall time:     01:27:07 (5227.6 ms)
+  Memory (MB):   488.2
+  Resources:    
+    ru_utime:    01:23:20 (5000.8 ms)
+    ru_stime:    00:01:29 (89.3 ms)
+    ru_maxrss:   499936
+    ru_minflt:   13610
+    ru_majflt:   10
+    ru_inblock:  105238712
+    ru_oublock:  21848640
+    ru_nvcsw:    229770
+    ru_nivcsw:   629086
+  GNU time:     
+    real:        01:27:07 (5227.6 ms)
+    user:        01:23:20 (5000.8 ms)
+    sys:         00:01:29 (89.3 ms)
+  Size (MB):     10,667.87 (11186077401 bytes) (ERR174310_1/output/ERR174310_2.dsrc-m2)
+  Free space:      2.8T  2.2T  601G  79% /local-scratch
+*** 2015-12-06 07:17:31 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 ERR174310_1/output/ERR174310_2.dsrc-m2 ERR174310_1/output/decompressed/ERR174310_2.dsrc-m2.fq
+  stderr:      ERR174310_1/log/dsrc-m2_2.1.dec.log
+  Process PID:   26187
+  Exit code:     0
+  Wall time:     01:31:20 (5480.1 ms)
+  Memory (MB):   390.9
+  Resources:    
+    ru_utime:    01:29:51 (5391.4 ms)
+    ru_stime:    00:01:06 (66.0 ms)
+    ru_maxrss:   400248
+    ru_minflt:   12657
+    ru_majflt:   10
+    ru_inblock:  21873832
+    ru_oublock:  105212688
+    ru_nvcsw:    47080
+    ru_nivcsw:   589213
+  GNU time:     
+    real:        01:31:20 (5480.0 ms)
+    user:        01:29:51 (5391.4 ms)
+    sys:         00:01:06 (66.0 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_2.dsrc-m2.fq)
+  Free space:      2.8T  2.2T  551G  81% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1: ERR174310_1.fastq)
+*** 2015-12-30 12:00:10 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/orcom/bin/orcom e 1 'ERR174310_1.fastq' ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom 
+    stderr:      ERR174310/log/ERR174310_1.fastq.orcom.1.cmp.log
+  Process PID:   10821
+  Exit code:     0
+  Wall time:     01:25:27 (5127.6 ms)
+  Memory (MB):   527.2
+  Resources:    
+    ru_utime:    01:22:10 (4930.1 ms)
+    ru_stime:    00:01:32 (92.2 ms)
+    ru_maxrss:   539808
+    ru_minflt:   37867
+    ru_majflt:   14
+    ru_inblock:  105239496
+    ru_oublock:  13630920
+    ru_nvcsw:    256254
+    ru_nivcsw:   606188
+  GNU time:     
+    real:        01:25:27 (5127.4 ms)
+    user:        01:22:10 (4930.1 ms)
+    sys:         00:01:32 (92.2 ms)
+  Size (MB):     1,714.47 (1797748923 bytes) (ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom.cmeta, ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom.cdna)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-30 13:25:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/orcom/bin/orcom d 1 ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom ERR174310/output/decompressed/orcom/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.orcom.1.dec.log
+  Process PID:   12344
+  Exit code:     0
+  Wall time:     00:13:07 (787.4 ms)
+  Memory (MB):   547.0
+  Resources:    
+    ru_utime:    00:11:45 (705.7 ms)
+    ru_stime:    00:00:21 (21.3 ms)
+    ru_maxrss:   560080
+    ru_minflt:   16495
+    ru_majflt:   12
+    ru_inblock:  3537544
+    ru_oublock:  41353744
+    ru_nvcsw:    7370
+    ru_nivcsw:   79407
+  GNU time:     
+    real:        00:13:07 (787.3 ms)
+    user:        00:11:45 (705.7 ms)
+    sys:         00:00:21 (21.3 ms)
+  Size (MB):     20,192.25 (21173105634 bytes) (ERR174310/output/decompressed/orcom/ERR174310_1.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  40% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip_1
+*** 2015-12-07 00:21:31 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v ERR174310_1.fastq  
+    stdout:      ERR174310_1/output/ERR174310_1.qp
+  stderr:      ERR174310_1/log/quip_1.1.cmp.log
+  Process PID:   26440
+  Exit code:     0
+  Wall time:     00:59:01 (3541.6 ms)
+  Memory (MB):   399.0
+  Resources:    
+    ru_utime:    00:55:44 (3344.9 ms)
+    ru_stime:    00:01:01 (61.7 ms)
+    ru_maxrss:   408608
+    ru_minflt:   94014
+    ru_majflt:   14
+    ru_inblock:  105216912
+    ru_oublock:  22095992
+    ru_nvcsw:    343200
+    ru_nivcsw:   549393
+  GNU time:     
+    real:        00:59:01 (3541.4 ms)
+    user:        00:55:44 (3344.9 ms)
+    sys:         00:01:01 (61.7 ms)
+  Size (MB):     10,787.76 (11311782905 bytes) (ERR174310_1/output/ERR174310_1.qp)
+  Free space:      2.8T  1.9T  849G  70% /local-scratch
+*** 2015-12-07 01:20:41 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq ERR174310_1/output/ERR174310_1.qp
+    stdout:      ERR174310_1/output/decompressed/ERR174310_1.qp.fq
+  stderr:      ERR174310_1/log/quip_1.1.dec.log
+  Process PID:   1491
+  Exit code:     0
+  Wall time:     01:22:28 (4948.4 ms)
+  Memory (MB):   389.6
+  Resources:    
+    ru_utime:    01:15:43 (4543.4 ms)
+    ru_stime:    00:01:08 (68.8 ms)
+    ru_maxrss:   398912
+    ru_minflt:   95924
+    ru_majflt:   16
+    ru_inblock:  22097488
+    ru_oublock:  105212680
+    ru_nvcsw:    141578
+    ru_nivcsw:   698636
+  GNU time:     
+    real:        01:22:28 (4948.3 ms)
+    user:        01:15:43 (4543.4 ms)
+    sys:         00:01:08 (68.8 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_1.qp.fq)
+  Free space:      2.8T  2.0T  799G  72% /local-scratch
+
+>>> quip_2
+*** 2015-12-07 02:45:11 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v ERR174310_2.fastq  
+    stdout:      ERR174310_1/output/ERR174310_2.qp
+  stderr:      ERR174310_1/log/quip_2.1.cmp.log
+  Process PID:   9604
+  Exit code:     0
+  Wall time:     00:59:28 (3568.1 ms)
+  Memory (MB):   399.9
+  Resources:    
+    ru_utime:    00:56:01 (3361.0 ms)
+    ru_stime:    00:01:00 (60.9 ms)
+    ru_maxrss:   409476
+    ru_minflt:   94860
+    ru_majflt:   16
+    ru_inblock:  105216576
+    ru_oublock:  21360248
+    ru_nvcsw:    307544
+    ru_nivcsw:   564503
+  GNU time:     
+    real:        00:59:28 (3568.0 ms)
+    user:        00:56:01 (3361.0 ms)
+    sys:         00:01:00 (60.8 ms)
+  Size (MB):     10,428.50 (10935078538 bytes) (ERR174310_1/output/ERR174310_2.qp)
+  Free space:      2.8T  2.0T  799G  72% /local-scratch
+*** 2015-12-07 03:44:47 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq ERR174310_1/output/ERR174310_2.qp
+    stdout:      ERR174310_1/output/decompressed/ERR174310_2.qp.fq
+  stderr:      ERR174310_1/log/quip_2.1.dec.log
+  Process PID:   17288
+  Exit code:     0
+  Wall time:     01:22:44 (4964.2 ms)
+  Memory (MB):   392.7
+  Resources:    
+    ru_utime:    01:15:27 (4527.0 ms)
+    ru_stime:    00:01:28 (88.4 ms)
+    ru_maxrss:   402132
+    ru_minflt:   77086
+    ru_majflt:   16
+    ru_inblock:  21361680
+    ru_oublock:  105212680
+    ru_nvcsw:    137289
+    ru_nivcsw:   698979
+  GNU time:     
+    real:        01:22:44 (4964.1 ms)
+    user:        01:15:27 (4527.0 ms)
+    sys:         00:01:28 (88.4 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_2.qp.fq)
+  Free space:      2.8T  2.0T  749G  74% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+>>> quip-asm_1
+*** 2015-12-07 05:09:31 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v ERR174310_1.fastq -a 
+    stdout:      ERR174310_1/output/ERR174310_1.qp-asm
+  stderr:      ERR174310_1/log/quip-asm_1.1.cmp.log
+  Process PID:   24957
+  Exit code:     0
+  Wall time:     01:08:08 (4088.4 ms)
+  Memory (MB):   775.0
+  Resources:    
+    ru_utime:    01:04:48 (3888.9 ms)
+    ru_stime:    00:01:00 (60.4 ms)
+    ru_maxrss:   793580
+    ru_minflt:   99507
+    ru_majflt:   16
+    ru_inblock:  105216840
+    ru_oublock:  22096112
+    ru_nvcsw:    333505
+    ru_nivcsw:   597281
+  GNU time:     
+    real:        01:08:08 (4088.3 ms)
+    user:        01:04:48 (3888.9 ms)
+    sys:         00:01:00 (60.4 ms)
+  Size (MB):     10,787.76 (11311782913 bytes) (ERR174310_1/output/ERR174310_1.qp-asm)
+  Free space:      2.8T  2.0T  749G  74% /local-scratch
+*** 2015-12-07 06:17:47 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq ERR174310_1/output/ERR174310_1.qp-asm
+    stdout:      ERR174310_1/output/decompressed/ERR174310_1.qp-asm.fq
+  stderr:      ERR174310_1/log/quip-asm_1.1.dec.log
+  Process PID:   32423
+  Exit code:     0
+  Wall time:     01:24:02 (5042.4 ms)
+  Memory (MB):   772.1
+  Resources:    
+    ru_utime:    01:19:17 (4757.1 ms)
+    ru_stime:    00:01:12 (72.9 ms)
+    ru_maxrss:   790660
+    ru_minflt:   100621
+    ru_majflt:   16
+    ru_inblock:  22097496
+    ru_oublock:  105212688
+    ru_nvcsw:    136226
+    ru_nivcsw:   720068
+  GNU time:     
+    real:        01:24:02 (5042.3 ms)
+    user:        01:19:17 (4757.1 ms)
+    sys:         00:01:12 (72.9 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_1.qp-asm.fq)
+  Free space:      2.8T  2.1T  698G  75% /local-scratch
+
+>>> quip-asm_2
+*** 2015-12-07 07:43:51 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v ERR174310_2.fastq -a 
+    stdout:      ERR174310_1/output/ERR174310_2.qp-asm
+  stderr:      ERR174310_1/log/quip-asm_2.1.cmp.log
+  Process PID:   8217
+  Exit code:     0
+  Wall time:     01:07:08 (4028.1 ms)
+  Memory (MB):   775.8
+  Resources:    
+    ru_utime:    01:03:42 (3822.3 ms)
+    ru_stime:    00:01:00 (60.1 ms)
+    ru_maxrss:   794424
+    ru_minflt:   99717
+    ru_majflt:   16
+    ru_inblock:  105216840
+    ru_oublock:  21360344
+    ru_nvcsw:    300638
+    ru_nivcsw:   598504
+  GNU time:     
+    real:        01:07:07 (4027.9 ms)
+    user:        01:03:42 (3822.3 ms)
+    sys:         00:01:00 (60.1 ms)
+  Size (MB):     10,428.50 (10935078546 bytes) (ERR174310_1/output/ERR174310_2.qp-asm)
+  Free space:      2.8T  2.1T  699G  75% /local-scratch
+*** 2015-12-07 08:51:07 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq ERR174310_1/output/ERR174310_2.qp-asm
+    stdout:      ERR174310_1/output/decompressed/ERR174310_2.qp-asm.fq
+  stderr:      ERR174310_1/log/quip-asm_2.1.dec.log
+  Process PID:   15711
+  Exit code:     0
+  Wall time:     01:22:04 (4924.9 ms)
+  Memory (MB):   773.7
+  Resources:    
+    ru_utime:    01:17:30 (4650.8 ms)
+    ru_stime:    00:01:09 (69.1 ms)
+    ru_maxrss:   792276
+    ru_minflt:   99925
+    ru_majflt:   16
+    ru_inblock:  21361488
+    ru_oublock:  105212688
+    ru_nvcsw:    135318
+    ru_nivcsw:   704784
+  GNU time:     
+    real:        01:22:04 (4924.8 ms)
+    user:        01:17:30 (4650.8 ms)
+    sys:         00:01:09 (69.1 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_2.qp-asm.fq)
+  Free space:      2.8T  2.1T  649G  77% /local-scratch
+
+######################################################################## 
+#                               fqzcomp                                # 
+########################################################################
+>>> fqzcomp_1
+*** 2015-11-02 23:06:53 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp   -P ERR174310_1.fastq ERR174310_1/output/ERR174310_1.fqz
+  stderr:      ERR174310_1/log/fqzcomp_1.1.cmp.log
+  Process PID:   12062
+  Exit code:     0
+  Wall time:     00:40:41 (2441.2 ms)
+  Memory (MB):   77.5
+  Resources:    
+    ru_utime:    00:35:07 (2107.5 ms)
+    ru_stime:    00:01:23 (83.5 ms)
+    ru_maxrss:   79404
+    ru_minflt:   2499
+    ru_majflt:   8
+    ru_inblock:  105237808
+    ru_oublock:  22110800
+    ru_nvcsw:    239997
+    ru_nivcsw:   356647
+  GNU time:     
+    real:        00:40:41 (2441.1 ms)
+    user:        00:35:07 (2107.5 ms)
+    sys:         00:01:23 (83.5 ms)
+  Size (MB):     10,796.01 (11320437816 bytes) (ERR174310_1/output/ERR174310_1.fqz)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-02 23:47:42 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P ERR174310_1/output/ERR174310_1.fqz ERR174310_1/output/ERR174310_1.fqz.fq
+  stderr:      ERR174310_1/log/fqzcomp_1.1.dec.log
+  Process PID:   12534
+  Exit code:     0
+  Wall time:     00:52:06 (3126.0 ms)
+  Memory (MB):   65.4
+  Resources:    
+    ru_utime:    00:46:24 (2784.9 ms)
+    ru_stime:    00:00:59 (59.2 ms)
+    ru_maxrss:   66984
+    ru_minflt:   2456
+    ru_majflt:   8
+    ru_inblock:  22136384
+    ru_oublock:  105213360
+    ru_nvcsw:    50369
+    ru_nivcsw:   322070
+  GNU time:     
+    real:        00:52:05 (3125.9 ms)
+    user:        00:46:24 (2784.9 ms)
+    sys:         00:00:59 (59.2 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_1.fqz.fq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+>>> fqzcomp_2
+*** 2015-11-03 00:39:59 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp   -P ERR174310_2.fastq ERR174310_1/output/ERR174310_2.fqz
+  stderr:      ERR174310_1/log/fqzcomp_2.1.cmp.log
+  Process PID:   13413
+  Exit code:     0
+  Wall time:     00:39:59 (2399.2 ms)
+  Memory (MB):   77.5
+  Resources:    
+    ru_utime:    00:34:43 (2083.4 ms)
+    ru_stime:    00:01:24 (84.0 ms)
+    ru_maxrss:   79408
+    ru_minflt:   2499
+    ru_majflt:   8
+    ru_inblock:  105238568
+    ru_oublock:  21336928
+    ru_nvcsw:    253439
+    ru_nivcsw:   338789
+  GNU time:     
+    real:        00:39:59 (2399.1 ms)
+    user:        00:34:43 (2083.4 ms)
+    sys:         00:01:24 (84.0 ms)
+  Size (MB):     10,418.15 (10924217730 bytes) (ERR174310_1/output/ERR174310_2.fqz)
+  Free space:      2.8T  1.2T  1.7T  41% /local-scratch
+*** 2015-11-03 01:20:06 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P ERR174310_1/output/ERR174310_2.fqz ERR174310_1/output/ERR174310_2.fqz.fq
+  stderr:      ERR174310_1/log/fqzcomp_2.1.dec.log
+  Process PID:   13853
+  Exit code:     0
+  Wall time:     00:51:34 (3094.5 ms)
+  Memory (MB):   67.4
+  Resources:    
+    ru_utime:    00:45:45 (2745.8 ms)
+    ru_stime:    00:00:57 (57.9 ms)
+    ru_maxrss:   69028
+    ru_minflt:   2461
+    ru_majflt:   5
+    ru_inblock:  21361984
+    ru_oublock:  105213360
+    ru_nvcsw:    53972
+    ru_nivcsw:   309795
+  GNU time:     
+    real:        00:51:34 (3094.4 ms)
+    user:        00:45:45 (2745.8 ms)
+    sys:         00:00:57 (57.9 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_2.fqz.fq)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+
+######################################################################## 
+#                            fqzcomp-extra                             # 
+########################################################################
+>>> fqzcomp-extra_1
+*** 2015-11-03 02:11:54 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -s9+ -q3 -n2 -e  -P ERR174310_1.fastq ERR174310_1/output/ERR174310_1.fqz-extra
+  stderr:      ERR174310_1/log/fqzcomp-extra_1.1.cmp.log
+  Process PID:   14430
+  Exit code:     0
+  Wall time:     00:44:05 (2645.5 ms)
+  Memory (MB):   330.5
+  Resources:    
+    ru_utime:    00:38:47 (2327.4 ms)
+    ru_stime:    00:01:23 (83.2 ms)
+    ru_maxrss:   338480
+    ru_minflt:   2372
+    ru_majflt:   8
+    ru_inblock:  105238576
+    ru_oublock:  22798904
+    ru_nvcsw:    238499
+    ru_nivcsw:   375533
+  GNU time:     
+    real:        00:44:05 (2645.4 ms)
+    user:        00:38:47 (2327.4 ms)
+    sys:         00:01:23 (83.1 ms)
+  Size (MB):     11,131.97 (11672721244 bytes) (ERR174310_1/output/ERR174310_1.fqz-extra)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2015-11-03 02:56:07 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P ERR174310_1/output/ERR174310_1.fqz-extra ERR174310_1/output/ERR174310_1.fqz-extra.fq
+  stderr:      ERR174310_1/log/fqzcomp-extra_1.1.dec.log
+  Process PID:   14926
+  Exit code:     0
+  Wall time:     00:54:53 (3293.5 ms)
+  Memory (MB):   318.4
+  Resources:    
+    ru_utime:    00:49:51 (2991.3 ms)
+    ru_stime:    00:00:58 (58.2 ms)
+    ru_maxrss:   326048
+    ru_minflt:   2326
+    ru_majflt:   8
+    ru_inblock:  22824192
+    ru_oublock:  105213432
+    ru_nvcsw:    52419
+    ru_nivcsw:   341083
+  GNU time:     
+    real:        00:54:53 (3293.4 ms)
+    user:        00:49:51 (2991.3 ms)
+    sys:         00:00:58 (58.2 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_1.fqz-extra.fq)
+  Free space:      2.8T  1.3T  1.6T  45% /local-scratch
+
+>>> fqzcomp-extra_2
+*** 2015-11-03 03:51:12 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -s9+ -q3 -n2 -e  -P ERR174310_2.fastq ERR174310_1/output/ERR174310_2.fqz-extra
+  stderr:      ERR174310_1/log/fqzcomp-extra_2.1.cmp.log
+  Process PID:   15535
+  Exit code:     0
+  Wall time:     00:43:47 (2627.1 ms)
+  Memory (MB):   328.5
+  Resources:    
+    ru_utime:    00:38:25 (2305.5 ms)
+    ru_stime:    00:01:24 (84.7 ms)
+    ru_maxrss:   336432
+    ru_minflt:   1861
+    ru_majflt:   8
+    ru_inblock:  105238568
+    ru_oublock:  21950352
+    ru_nvcsw:    252416
+    ru_nivcsw:   357757
+  GNU time:     
+    real:        00:43:47 (2627.0 ms)
+    user:        00:38:25 (2305.5 ms)
+    sys:         00:01:24 (84.7 ms)
+  Size (MB):     10,717.65 (11238267976 bytes) (ERR174310_1/output/ERR174310_2.fqz-extra)
+  Free space:      2.8T  1.3T  1.5T  46% /local-scratch
+*** 2015-11-03 04:35:07 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P ERR174310_1/output/ERR174310_2.fqz-extra ERR174310_1/output/ERR174310_2.fqz-extra.fq
+  stderr:      ERR174310_1/log/fqzcomp-extra_2.1.dec.log
+  Process PID:   16004
+  Exit code:     0
+  Wall time:     00:55:00 (3300.0 ms)
+  Memory (MB):   318.4
+  Resources:    
+    ru_utime:    00:49:24 (2964.3 ms)
+    ru_stime:    00:00:58 (58.0 ms)
+    ru_maxrss:   326048
+    ru_minflt:   1815
+    ru_majflt:   8
+    ru_inblock:  21975640
+    ru_oublock:  105213408
+    ru_nvcsw:    54116
+    ru_nivcsw:   333224
+  GNU time:     
+    real:        00:54:59 (3299.9 ms)
+    user:        00:49:24 (2964.3 ms)
+    sys:         00:00:57 (57.9 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_2.fqz-extra.fq)
+  Free space:      2.8T  1.3T  1.5T  47% /local-scratch
+
+######################################################################## 
+#                                fastqz                                # 
+########################################################################
+>>> fastqz_1
+*** 2015-11-03 05:30:20 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fastqz/fastqz c ERR174310_1.fastq ERR174310_1/output/ERR174310_1.fastqz  
+  stderr:      ERR174310_1/log/fastqz_1.1.cmp.log
+  Process PID:   16612
+  Exit code:     0
+  Wall time:     07:24:14 (26654.6 ms)
+  Memory (MB):   1527.3
+  Resources:    
+    ru_utime:    07:18:01 (26281.5 ms)
+    ru_stime:    00:02:06 (126.1 ms)
+    ru_maxrss:   1564004
+    ru_minflt:   10861
+    ru_majflt:   8
+    ru_inblock:  105238304
+    ru_oublock:  70045904
+    ru_nvcsw:    4055
+    ru_nivcsw:   3927537
+  GNU time:     
+    real:        07:24:14 (26654.5 ms)
+    user:        07:18:01 (26281.5 ms)
+    sys:         00:02:06 (126.1 ms)
+  Size (MB):     10,447.24 (10954722736 bytes) (ERR174310_1/output/ERR174310_1.fastqz.fxq.zpaq, ERR174310_1/output/ERR174310_1.fastqz.fxb.zpaq, ERR174310_1/output/ERR174310_1.fastqz.fxh.zpaq)
+  Free space:      2.8T  1.3T  1.5T  48% /local-scratch
+*** 2015-11-03 12:54:43 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fastqz/fastqz d ERR174310_1/output/ERR174310_1.fastqz ERR174310_1/output/ERR174310_1.fastqz.fq
+  stderr:      ERR174310_1/log/fastqz_1.1.dec.log
+  Process PID:   21590
+  Exit code:     256
+  Wall time:     07:05:40 (25540.1 ms)
+  Memory (MB):   1527.6
+  Resources:    
+    ru_utime:    07:03:14 (25394.9 ms)
+    ru_stime:    00:02:07 (127.6 ms)
+    ru_maxrss:   1564232
+    ru_minflt:   10913
+    ru_majflt:   8
+    ru_inblock:  21421744
+    ru_oublock:  153815072
+    ru_nvcsw:    1727
+    ru_nivcsw:   3481845
+  GNU time:     
+    real:        07:05:40 (25540.0 ms)
+    user:        07:03:14 (25394.9 ms)
+    sys:         00:02:07 (127.6 ms)
+  Size (MB):     51,350.15 (53844533458 bytes) (ERR174310_1/output/ERR174310_1.fastqz.fq)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+>>> fastqz_2
+*** 2015-11-03 20:00:41 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fastqz/fastqz c ERR174310_2.fastq ERR174310_1/output/ERR174310_2.fastqz  
+  stderr:      ERR174310_1/log/fastqz_2.1.cmp.log
+  Process PID:   26646
+  Exit code:     0
+  Wall time:     07:19:25 (26365.4 ms)
+  Memory (MB):   1527.3
+  Resources:    
+    ru_utime:    07:13:26 (26006.7 ms)
+    ru_stime:    00:02:03 (123.8 ms)
+    ru_maxrss:   1564004
+    ru_minflt:   10864
+    ru_majflt:   8
+    ru_inblock:  105237992
+    ru_oublock:  68890560
+    ru_nvcsw:    4211
+    ru_nivcsw:   3894458
+  GNU time:     
+    real:        07:19:25 (26365.4 ms)
+    user:        07:13:26 (26006.7 ms)
+    sys:         00:02:03 (123.8 ms)
+  Size (MB):     10,053.30 (10541649475 bytes) (ERR174310_1/output/ERR174310_2.fastqz.fxq.zpaq, ERR174310_1/output/ERR174310_2.fastqz.fxb.zpaq, ERR174310_1/output/ERR174310_2.fastqz.fxh.zpaq)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+*** 2015-11-04 03:20:15 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fastqz/fastqz d ERR174310_1/output/ERR174310_2.fastqz ERR174310_1/output/ERR174310_2.fastqz.fq
+  stderr:      ERR174310_1/log/fastqz_2.1.dec.log
+  Process PID:   31351
+  Exit code:     256
+  Wall time:     06:59:43 (25183.5 ms)
+  Memory (MB):   1527.6
+  Resources:    
+    ru_utime:    06:57:19 (25039.0 ms)
+    ru_stime:    00:02:06 (126.8 ms)
+    ru_maxrss:   1564232
+    ru_minflt:   10916
+    ru_majflt:   8
+    ru_inblock:  20615024
+    ru_oublock:  153484216
+    ru_nvcsw:    1771
+    ru_nivcsw:   3455688
+  GNU time:     
+    real:        06:59:43 (25183.4 ms)
+    user:        06:57:19 (25039.0 ms)
+    sys:         00:02:06 (126.8 ms)
+  Size (MB):     51,358.79 (53853599661 bytes) (ERR174310_1/output/ERR174310_2.fastqz.fq)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+
+######################################################################## 
+#                              slimfastq                               # 
+########################################################################
+>>> slimfastq_1
+*** 2015-11-04 11:50:10 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -u ERR174310_1.fastq -f ERR174310_1/output/ERR174310_1.slimfastq -O  
+  stderr:      ERR174310_1/log/slimfastq_1.1.cmp.log
+  Process PID:   5266
+  Exit code:     0
+  Wall time:     01:00:02 (3602.3 ms)
+  Memory (MB):   79.0
+  Resources:    
+    ru_utime:    00:57:36 (3456.6 ms)
+    ru_stime:    00:01:15 (75.7 ms)
+    ru_maxrss:   80880
+    ru_minflt:   1856
+    ru_majflt:   5
+    ru_inblock:  105237928
+    ru_oublock:  21579232
+    ru_nvcsw:    2287
+    ru_nivcsw:   765002
+  GNU time:     
+    real:        01:00:02 (3602.3 ms)
+    user:        00:57:36 (3456.6 ms)
+    sys:         00:01:15 (75.7 ms)
+  Size (MB):     10,533.10 (11044757504 bytes) (ERR174310_1/output/ERR174310_1.slimfastq)
+  Free space:      2.8T  1.6T  1.2T  59% /local-scratch
+*** 2015-11-04 12:50:21 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -d ERR174310_1/output/ERR174310_1.slimfastq  ERR174310_1/output/ERR174310_1.slimfastq.fq -O
+  stderr:      ERR174310_1/log/slimfastq_1.1.dec.log
+  Process PID:   5957
+  Exit code:     0
+  Wall time:     01:15:15 (4515.7 ms)
+  Memory (MB):   78.9
+  Resources:    
+    ru_utime:    01:12:15 (4335.6 ms)
+    ru_stime:    00:01:18 (78.8 ms)
+    ru_maxrss:   80772
+    ru_minflt:   2335
+    ru_majflt:   7
+    ru_inblock:  21597728
+    ru_oublock:  105212680
+    ru_nvcsw:    1587
+    ru_nivcsw:   533828
+  GNU time:     
+    real:        01:15:15 (4515.6 ms)
+    user:        01:12:15 (4335.6 ms)
+    sys:         00:01:18 (78.8 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_1.slimfastq.fq)
+  Free space:      2.8T  1.7T  1.1T  61% /local-scratch
+
+>>> slimfastq_2
+*** 2015-11-04 14:05:48 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -u ERR174310_2.fastq -f ERR174310_1/output/ERR174310_2.slimfastq -O  
+  stderr:      ERR174310_1/log/slimfastq_2.1.cmp.log
+  Process PID:   6762
+  Exit code:     0
+  Wall time:     00:59:42 (3582.0 ms)
+  Memory (MB):   79.0
+  Resources:    
+    ru_utime:    00:57:18 (3438.5 ms)
+    ru_stime:    00:01:14 (74.6 ms)
+    ru_maxrss:   80880
+    ru_minflt:   2365
+    ru_majflt:   7
+    ru_inblock:  105238616
+    ru_oublock:  20806448
+    ru_nvcsw:    2407
+    ru_nivcsw:   762760
+  GNU time:     
+    real:        00:59:41 (3581.9 ms)
+    user:        00:57:18 (3438.5 ms)
+    sys:         00:01:14 (74.6 ms)
+  Size (MB):     10,155.88 (10649206784 bytes) (ERR174310_1/output/ERR174310_2.slimfastq)
+  Free space:      2.8T  1.7T  1.1T  61% /local-scratch
+*** 2015-11-04 15:05:39 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -d ERR174310_1/output/ERR174310_2.slimfastq  ERR174310_1/output/ERR174310_2.slimfastq.fq -O
+  stderr:      ERR174310_1/log/slimfastq_2.1.dec.log
+  Process PID:   7453
+  Exit code:     0
+  Wall time:     01:14:33 (4473.5 ms)
+  Memory (MB):   78.9
+  Resources:    
+    ru_utime:    01:11:37 (4297.9 ms)
+    ru_stime:    00:01:17 (77.7 ms)
+    ru_maxrss:   80768
+    ru_minflt:   2335
+    ru_majflt:   5
+    ru_inblock:  20824448
+    ru_oublock:  105212680
+    ru_nvcsw:    1495
+    ru_nivcsw:   528011
+  GNU time:     
+    real:        01:14:33 (4473.5 ms)
+    user:        01:11:37 (4297.9 ms)
+    sys:         00:01:17 (77.7 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_2.slimfastq.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                 sra                                  # 
+########################################################################
+>>> sra_1
+*** 2015-11-04 16:20:24 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/sratoolkit.2.5.2-centos_linux64/bin/latf-load -p ILLUMINA -q PHRED_33 -o ERR174310_1/output/ERR174310_1.sra ERR174310_1.fastq  ERR174310_2.fastq
+  stderr:      ERR174310_1/log/sra_1.1.cmp.log
+  Process PID:   8276
+  Exit code:     768
+  Wall time:     00:00:00 (0.6 ms)
+  Memory (MB):   8.0
+  Resources:    
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   8152
+    ru_minflt:   3138
+    ru_majflt:   43
+    ru_inblock:  16608
+    ru_oublock:  608
+    ru_nvcsw:    193
+    ru_nivcsw:   49
+  GNU time:     
+    real:        00:00:00 (0.5 ms)
+    user:        00:00:00 (0.1 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     0.00 (51 bytes) (ERR174310_1/output/ERR174310_1.sra)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath_1
+*** 2015-11-04 16:20:25 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=1 -ref=data/sam/ref/hg19.fa.gz -reads=ERR174310_1.fastq -out=ERR174310_1/output/ERR174310_1.kpath  
+  stderr:      ERR174310_1/log/kpath_1.1.cmp.log
+  Process PID:   8284
+  Exit code:     512
+  Wall time:     01:07:10 (4030.0 ms)
+  Memory (MB):   51838.0
+  Resources:    
+    ru_utime:    00:50:49 (3049.9 ms)
+    ru_stime:    00:16:13 (973.0 ms)
+    ru_maxrss:   53082152
+    ru_minflt:   9966220
+    ru_majflt:   25
+    ru_inblock:  107071576
+    ru_oublock:  48
+    ru_nvcsw:    441318337
+    ru_nivcsw:   235404736
+  GNU time:     
+    real:        01:07:09 (4029.9 ms)
+    user:        00:50:49 (3049.9 ms)
+    sys:         00:16:13 (973.0 ms)
+  Size (MB):     0.00 (8 bytes) (ERR174310_1/output/ERR174310_1.kpath.enc)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+######################################################################## 
+#                                 lfqc                                 # 
+########################################################################
+>>> lfqc_1
+*** 2015-11-04 18:35:22 *** FAIL *** Process terminated with [Errno 4] Interrupted system call
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: ERR174310_1.fastq)
+*** 2016-02-19 10:40:16 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh e ERR174310_1.fastq ERR174310/output/compressed/leon/ERR174310_1.fastq.leon 1 
+    stderr:      ERR174310/log/ERR174310_1.fastq.leon.1.cmp.log
+  Process PID:   9429
+  Exit code:     0
+  Wall time:     07:21:03 (26463.2 ms)
+  Memory (MB):   3253.6
+  Resources:    
+    ru_utime:    07:10:21 (25821.0 ms)
+    ru_stime:    00:02:59 (179.2 ms)
+    ru_maxrss:   3331644
+    ru_minflt:   156776
+    ru_majflt:   87
+    ru_inblock:  105253736
+    ru_oublock:  132603840
+    ru_nvcsw:    232455
+    ru_nivcsw:   2792029
+  GNU time:     
+    real:        07:21:03 (26463.0 ms)
+    user:        07:10:21 (25821.0 ms)
+    sys:         00:02:59 (179.2 ms)
+  Size (MB):     12,991.79 (13622880407 bytes) (ERR174310/output/compressed/leon/ERR174310_1.fastq.leon, ERR174310/output/compressed/leon/ERR174310_1.fastq.leon.qual)
+  Free space:      2.8T  1.5T  1.3T  54% /local-scratch
+*** 2016-02-19 22:44:43 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh d ERR174310/output/compressed/leon/ERR174310_1.fastq.leon ERR174310/output/decompressed/leon/ERR174310_1.fastq.fq 1
+    stderr:      ERR174310/log/ERR174310_1.fastq.leon.1.dec.log
+  Process PID:   32474
+  Exit code:     0
+  Wall time:     02:32:55 (9175.9 ms)
+  Memory (MB):   2898.0
+  Resources:    
+    ru_utime:    02:25:54 (8754.6 ms)
+    ru_stime:    00:01:08 (68.6 ms)
+    ru_maxrss:   2967600
+    ru_minflt:   34750
+    ru_majflt:   41
+    ru_inblock:  26658624
+    ru_oublock:  105213512
+    ru_nvcsw:    62126
+    ru_nivcsw:   937977
+  GNU time:     
+    real:        02:32:55 (9175.6 ms)
+    user:        02:25:54 (8754.6 ms)
+    sys:         00:01:08 (68.6 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/leon/ERR174310_1.fastq.fq)
+  Free space:      2.8T  1.5T  1.3T  55% /local-scratch
+
+>>> leon (File 2: ERR174310_2.fastq)
+*** 2016-02-26 09:08:17 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh e ERR174310_2.fastq ERR174310/output/compressed/leon/ERR174310_2.fastq.leon 1 
+    stderr:      ERR174310/log/ERR174310_2.fastq.leon.1.cmp.log
+  Process PID:   12061
+  Exit code:     0
+  Wall time:     07:47:53 (28073.1 ms)
+  Memory (MB):   3223.2
+  Resources:    
+    ru_utime:    07:37:12 (27432.0 ms)
+    ru_stime:    00:03:00 (180.0 ms)
+    ru_maxrss:   3300568
+    ru_minflt:   155308
+    ru_majflt:   87
+    ru_inblock:  105255579
+    ru_oublock:  131435528
+    ru_nvcsw:    232763
+    ru_nivcsw:   2969176
+  GNU time:     
+    real:        07:47:52 (28072.9 ms)
+    user:        07:37:12 (27432.0 ms)
+    sys:         00:02:59 (179.9 ms)
+  Size (MB):     12,565.00 (13175354224 bytes) (ERR174310/output/compressed/leon/ERR174310_2.fastq.leon, ERR174310/output/compressed/leon/ERR174310_2.fastq.leon.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-02-26 16:56:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh d ERR174310/output/compressed/leon/ERR174310_2.fastq.leon ERR174310/output/decompressed/leon/ERR174310_2.fastq.fq 1
+    stderr:      ERR174310/log/ERR174310_2.fastq.leon.1.dec.log
+  Process PID:   24252
+  Exit code:     0
+  Wall time:     02:30:20 (9020.3 ms)
+  Memory (MB):   2875.6
+  Resources:    
+    ru_utime:    02:24:54 (8694.1 ms)
+    ru_stime:    00:01:08 (68.3 ms)
+    ru_maxrss:   2944648
+    ru_minflt:   35519
+    ru_majflt:   50
+    ru_inblock:  25767897
+    ru_oublock:  105213512
+    ru_nvcsw:    58889
+    ru_nivcsw:   933113
+  GNU time:     
+    real:        02:30:19 (9019.7 ms)
+    user:        02:24:54 (8694.1 ms)
+    sys:         00:01:08 (68.3 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/leon/ERR174310_2.fastq.fq)
+
+######################################################################## 
+#                                 fqc                                  # 
+########################################################################
+>>> fqc (File 1: ERR174310_1.fastq)
+*** 2015-12-30 21:07:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -c -i ERR174310_1.fastq -o ERR174310/output/compressed/fqc/ERR174310_1.fastq.fqc 
+    stderr:      ERR174310/log/ERR174310_1.fastq.fqc.1.cmp.log
+  Process PID:   17804
+  Exit code:     0
+  Wall time:     02:37:02 (9422.4 ms)
+  Memory (MB):   682.7
+  Resources:    
+    ru_utime:    02:34:02 (9242.0 ms)
+    ru_stime:    00:02:18 (138.8 ms)
+    ru_maxrss:   699128
+    ru_minflt:   27570
+    ru_majflt:   31
+    ru_inblock:  105243368
+    ru_oublock:  59651016
+    ru_nvcsw:    7624259
+    ru_nivcsw:   8090012
+  GNU time:     
+    real:        02:37:02 (9422.3 ms)
+    user:        02:34:02 (9242.0 ms)
+    sys:         00:02:18 (138.8 ms)
+  Size (MB):     10,880.81 (11409358618 bytes) (ERR174310/output/compressed/fqc/ERR174310_1.fastq.fqc)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-30 23:44:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -d -i ERR174310/output/compressed/fqc/ERR174310_1.fastq.fqc -o ERR174310/output/decompressed/fqc/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.fqc.1.dec.log
+  Process PID:   19577
+  Exit code:     0
+  Wall time:     01:30:42 (5442.4 ms)
+  Memory (MB):   163.0
+  Resources:    
+    ru_utime:    01:26:47 (5207.4 ms)
+    ru_stime:    00:02:23 (143.9 ms)
+    ru_maxrss:   166888
+    ru_minflt:   17789
+    ru_majflt:   33
+    ru_inblock:  22314544
+    ru_oublock:  163471888
+    ru_nvcsw:    4236658
+    ru_nivcsw:   4805941
+  GNU time:     
+    real:        01:30:42 (5442.3 ms)
+    user:        01:26:47 (5207.4 ms)
+    sys:         00:02:23 (143.9 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/fqc/ERR174310_1.fastq.fq.fastq)
+  Free space:      2.8T  1.2T  1.7T  41% /local-scratch
+
+>>> fqc (File 2: ERR174310_2.fastq)
+*** 2016-01-04 12:15:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -c -i ERR174310_2.fastq -o ERR174310/output/compressed/fqc/ERR174310_2.fastq.fqc 
+    stderr:      ERR174310/log/ERR174310_2.fastq.fqc.1.cmp.log
+  Process PID:   19872
+  Exit code:     0
+  Wall time:     02:36:04 (9364.8 ms)
+  Memory (MB):   682.9
+  Resources:    
+    ru_utime:    02:33:06 (9186.2 ms)
+    ru_stime:    00:02:15 (135.2 ms)
+    ru_maxrss:   699256
+    ru_minflt:   26865
+    ru_majflt:   29
+    ru_inblock:  105243288
+    ru_oublock:  57946608
+    ru_nvcsw:    7300119
+    ru_nivcsw:   7782885
+  GNU time:     
+    real:        02:36:04 (9364.7 ms)
+    user:        02:33:06 (9186.2 ms)
+    sys:         00:02:15 (135.2 ms)
+  Size (MB):     10,464.27 (10972587258 bytes) (ERR174310/output/compressed/fqc/ERR174310_2.fastq.fqc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+*** 2016-01-04 14:51:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -d -i ERR174310/output/compressed/fqc/ERR174310_2.fastq.fqc -o ERR174310/output/decompressed/fqc/ERR174310_2.fastq.fq
+    stderr:      ERR174310/log/ERR174310_2.fastq.fqc.1.dec.log
+  Process PID:   21898
+  Exit code:     0
+  Wall time:     01:29:07 (5347.3 ms)
+  Memory (MB):   180.2
+  Resources:    
+    ru_utime:    01:25:37 (5137.6 ms)
+    ru_stime:    00:02:19 (139.6 ms)
+    ru_maxrss:   184488
+    ru_minflt:   17599
+    ru_majflt:   30
+    ru_inblock:  21461897
+    ru_oublock:  162620376
+    ru_nvcsw:    4016073
+    ru_nivcsw:   4577661
+  GNU time:     
+    real:        01:29:07 (5347.0 ms)
+    user:        01:25:37 (5137.6 ms)
+    sys:         00:02:19 (139.6 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/fqc/ERR174310_2.fastq.fq.fastq)
+  Free space:      2.8T  1.2T  1.6T  42% /local-scratch
+
+######################################################################## 
+#                                mince                                 # 
+########################################################################
+>>> mince (File 1: ERR174310_1.fastq)
+*** 2015-12-31 08:01:11 *** Process terminated with [Errno 4] Interrupted system call
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: ERR174310_1.fastq)
+*** 2015-12-31 08:01:17 *** Process terminated with [Errno 4] Interrupted system call
+
+######################################################################## 
+#                               lw-fqzip                               # 
+########################################################################
+>>> lw-fqzip (File 1: ERR174310_1.fastq)
+*** 2016-01-04 16:20:54 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/LWFQZip-v1.02/LWFQZip -c -t 1 -i ERR174310_1.fastq -r data/sam/ref/hg19.fa 
+    stderr:      ERR174310/log/ERR174310_1.fastq.lw-fqzip.1.cmp.log
+  Process PID:   23225
+  Exit code:     256
+  Wall time:     00:00:10 (10.7 ms)
+  Memory (MB):   3052.3
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:07 (7.0 ms)
+    ru_maxrss:   3125512
+    ru_minflt:   3716
+    ru_majflt:   10
+    ru_inblock:  6252624
+    ru_oublock:  16
+    ru_nvcsw:    12576
+    ru_nivcsw:   12521
+  GNU time:     
+    real:        00:00:10 (10.6 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:07 (7.0 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.2T  1.6T  42% /local-scratch
+
+>>> lw-fqzip (File 2: ERR174310_2.fastq)
+*** 2016-02-26 19:38:38 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/LWFQZip-v1.02/lwfqzip.sh e ERR174310_2.fastq ERR174310/output/compressed/lw-fqzip/ERR174310_2.fastq.lz data/sam/ref/hg19.fa 
+    stderr:      ERR174310/log/ERR174310_2.fastq.lw-fqzip.1.cmp.log
+  Process PID:   32470
+  Exit code:     256
+  Wall time:     00:00:10 (10.8 ms)
+  Memory (MB):   3052.3
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:06 (6.6 ms)
+    ru_maxrss:   3125512
+    ru_minflt:   6184
+    ru_majflt:   19
+    ru_inblock:  6255914
+    ru_oublock:  24
+    ru_nvcsw:    12629
+    ru_nivcsw:   12586
+  GNU time:     
+    real:        00:00:10 (10.7 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:06 (6.5 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: ERR174310_1.fastq)
+*** 2016-02-26 19:38:49 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kic-0.2/kic.sh e ERR174310_1.fastq ERR174310/output/compressed/kic/ERR174310_1.fastq.kic 1 
+    stderr:      ERR174310/log/ERR174310_1.fastq.kic.1.cmp.log
+  Process PID:   32490
+  Exit code:     256
+  Wall time:     00:00:22 (22.8 ms)
+  Memory (MB):   997.7
+  Resources:    
+    ru_utime:    00:00:20 (20.4 ms)
+    ru_stime:    00:00:00 (0.4 ms)
+    ru_maxrss:   1021624
+    ru_minflt:   15532
+    ru_majflt:   148
+    ru_inblock:  45728
+    ru_oublock:  96
+    ru_nvcsw:    6564
+    ru_nivcsw:   45463
+  GNU time:     
+    real:        00:00:22 (22.7 ms)
+    user:        00:00:20 (20.4 ms)
+    sys:         00:00:00 (0.4 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+>>> kic (File 2: ERR174310_2.fastq)
+*** 2016-02-26 19:39:12 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kic-0.2/kic.sh e ERR174310_2.fastq ERR174310/output/compressed/kic/ERR174310_2.fastq.kic 1 
+    stderr:      ERR174310/log/ERR174310_2.fastq.kic.1.cmp.log
+  Process PID:   32581
+  Exit code:     256
+  Wall time:     00:00:23 (23.9 ms)
+  Memory (MB):   1077.6
+  Resources:    
+    ru_utime:    00:00:21 (21.5 ms)
+    ru_stime:    00:00:00 (0.5 ms)
+    ru_maxrss:   1103428
+    ru_minflt:   15961
+    ru_majflt:   148
+    ru_inblock:  48232
+    ru_oublock:  96
+    ru_nvcsw:    6322
+    ru_nivcsw:   82505
+  GNU time:     
+    real:        00:00:23 (23.8 ms)
+    user:        00:00:21 (21.5 ms)
+    sys:         00:00:00 (0.4 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                beetl                                 # 
+########################################################################
+>>> beetl (File 1: ERR174310_1.fastq)
+*** 2016-02-29 22:00:56 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh e ERR174310_1.fastq ERR174310/output/compressed/beetl/ERR174310_1.fastq.beetl 1 
+    stderr:      ERR174310/log/ERR174310_1.fastq.beetl.1.cmp.log
+  Process PID:   12422
+  Exit code:     0
+  Wall time:     09:24:14 (33854.5 ms)
+  Memory (MB):   7.7
+  Resources:    
+    ru_utime:    08:01:19 (28879.3 ms)
+    ru_stime:    01:08:20 (4100.8 ms)
+    ru_maxrss:   7892
+    ru_minflt:   8472
+    ru_majflt:   26
+    ru_inblock:  105245840
+    ru_oublock:  3478520776
+    ru_nvcsw:    5700038
+    ru_nivcsw:   9324745
+  GNU time:     
+    real:        09:24:14 (33854.4 ms)
+    user:        08:01:19 (28879.3 ms)
+    sys:         01:08:20 (4100.8 ms)
+  Size (MB):     3,730.69 (3911916329 bytes) (ERR174310/output/compressed/beetl/ERR174310_1.fastq.beetl)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-01 07:25:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh d ERR174310/output/compressed/beetl/ERR174310_1.fastq.beetl ERR174310/output/decompressed/beetl/ERR174310_1.fastq.fq 1
+    stderr:      ERR174310/log/ERR174310_1.fastq.beetl.1.dec.log
+  Process PID:   6259
+  Exit code:     0
+  Wall time:     05:31:21 (19881.1 ms)
+  Memory (MB):   3246.9
+  Resources:    
+    ru_utime:    05:10:15 (18615.4 ms)
+    ru_stime:    00:18:17 (1097.2 ms)
+    ru_maxrss:   3324820
+    ru_minflt:   21340
+    ru_majflt:   27
+    ru_inblock:  7674568
+    ru_oublock:  133982280
+    ru_nvcsw:    5633531
+    ru_nivcsw:   7649417
+  GNU time:     
+    real:        05:31:20 (19880.8 ms)
+    user:        05:10:15 (18615.4 ms)
+    sys:         00:18:17 (1097.2 ms)
+  Size (MB):     23,451.66 (24590845463 bytes) (ERR174310/output/decompressed/beetl/ERR174310_1.fastq.fq)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+>>> beetl (File 2: ERR174310_2.fastq)
+*** 2016-03-05 11:53:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh e ERR174310_2.fastq ERR174310/output/compressed/beetl/ERR174310_2.fastq.beetl 1 
+    stderr:      ERR174310/log/ERR174310_2.fastq.beetl.1.cmp.log
+  Process PID:   24968
+  Exit code:     0
+  Wall time:     09:20:57 (33657.3 ms)
+  Memory (MB):   7.7
+  Resources:    
+    ru_utime:    08:03:23 (29003.2 ms)
+    ru_stime:    01:08:10 (4090.5 ms)
+    ru_maxrss:   7888
+    ru_minflt:   7953
+    ru_majflt:   23
+    ru_inblock:  105242033
+    ru_oublock:  3478618344
+    ru_nvcsw:    5719398
+    ru_nivcsw:   9305067
+  GNU time:     
+    real:        09:20:57 (33657.0 ms)
+    user:        08:03:23 (29003.2 ms)
+    sys:         01:08:10 (4090.4 ms)
+  Size (MB):     3,778.56 (3962111360 bytes) (ERR174310/output/compressed/beetl/ERR174310_2.fastq.beetl)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-03-05 21:14:29 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh d ERR174310/output/compressed/beetl/ERR174310_2.fastq.beetl ERR174310/output/decompressed/beetl/ERR174310_2.fastq.fq 1
+    stderr:      ERR174310/log/ERR174310_2.fastq.beetl.1.dec.log
+  Process PID:   7228
+  Exit code:     0
+  Wall time:     05:35:20 (20120.8 ms)
+  Memory (MB):   3246.9
+  Resources:    
+    ru_utime:    05:14:31 (18871.9 ms)
+    ru_stime:    00:18:00 (1080.9 ms)
+    ru_maxrss:   3324816
+    ru_minflt:   21845
+    ru_majflt:   28
+    ru_inblock:  7772816
+    ru_oublock:  133982208
+    ru_nvcsw:    5633336
+    ru_nivcsw:   7670304
+  GNU time:     
+    real:        05:35:20 (20120.6 ms)
+    user:        05:14:31 (18871.9 ms)
+    sys:         00:18:00 (1080.9 ms)
+  Size (MB):     23,451.66 (24590845463 bytes) (ERR174310/output/decompressed/beetl/ERR174310_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                      ERR174310_1 with 4 threads                      + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz_1
+*** 2015-11-09 20:45:20 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4  
+    stdin:       ERR174310_1.fastq
+    stdout:      ERR174310_1/output/ERR174310_1.gz
+  stderr:      ERR174310_1/log/pigz_1.4.cmp.log
+  Process PID:   32158
+  Exit code:     0
+  Wall time:     00:33:32 (2012.9 ms)
+  Memory (MB):   7.5
+  Resources:    
+    ru_utime:    02:08:41 (7721.3 ms)
+    ru_stime:    00:02:37 (157.7 ms)
+    ru_maxrss:   7644
+    ru_minflt:   1308
+    ru_majflt:   7
+    ru_inblock:  105214744
+    ru_oublock:  36322096
+    ru_nvcsw:    833524
+    ru_nivcsw:   982016
+  GNU time:     
+    real:        00:33:32 (2012.8 ms)
+    user:        02:08:41 (7721.3 ms)
+    sys:         00:02:37 (157.6 ms)
+  Size (MB):     17,735.11 (18596613800 bytes) (ERR174310_1/output/ERR174310_1.gz)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+*** 2015-11-09 21:19:02 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       ERR174310_1/output/ERR174310_1.gz
+    stdout:      ERR174310_1/output/ERR174310_1.gz.fq
+  stderr:      ERR174310_1/log/pigz_1.4.dec.log
+  Process PID:   32556
+  Exit code:     0
+  Wall time:     00:12:22 (742.0 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:08:59 (539.2 ms)
+    ru_stime:    00:03:09 (189.7 ms)
+    ru_maxrss:   5840
+    ru_minflt:   611
+    ru_majflt:   7
+    ru_inblock:  36323208
+    ru_oublock:  105212680
+    ru_nvcsw:    3863079
+    ru_nivcsw:   129303
+  GNU time:     
+    real:        00:12:21 (741.9 ms)
+    user:        00:08:59 (539.2 ms)
+    sys:         00:03:09 (189.7 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_1.gz.fq)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+
+>>> pigz_2
+*** 2015-11-09 21:31:36 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4  
+    stdin:       ERR174310_2.fastq
+    stdout:      ERR174310_1/output/ERR174310_2.gz
+  stderr:      ERR174310_1/log/pigz_2.4.cmp.log
+  Process PID:   32746
+  Exit code:     0
+  Wall time:     00:33:26 (2006.2 ms)
+  Memory (MB):   7.4
+  Resources:    
+    ru_utime:    02:07:25 (7645.9 ms)
+    ru_stime:    00:02:35 (155.5 ms)
+    ru_maxrss:   7532
+    ru_minflt:   1310
+    ru_majflt:   2
+    ru_inblock:  105213848
+    ru_oublock:  35348768
+    ru_nvcsw:    835535
+    ru_nivcsw:   978207
+  GNU time:     
+    real:        00:33:26 (2006.2 ms)
+    user:        02:07:25 (7645.9 ms)
+    sys:         00:02:35 (155.5 ms)
+  Size (MB):     17,259.89 (18098304911 bytes) (ERR174310_1/output/ERR174310_2.gz)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+*** 2015-11-09 22:05:11 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       ERR174310_1/output/ERR174310_2.gz
+    stdout:      ERR174310_1/output/ERR174310_2.gz.fq
+  stderr:      ERR174310_1/log/pigz_2.4.dec.log
+  Process PID:   788
+  Exit code:     0
+  Wall time:     00:12:38 (758.7 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:08:53 (533.9 ms)
+    ru_stime:    00:03:08 (188.2 ms)
+    ru_maxrss:   5840
+    ru_minflt:   610
+    ru_majflt:   7
+    ru_inblock:  35350440
+    ru_oublock:  105212680
+    ru_nvcsw:    3848828
+    ru_nivcsw:   134451
+  GNU time:     
+    real:        00:12:38 (758.6 ms)
+    user:        00:08:53 (533.9 ms)
+    sys:         00:03:08 (188.2 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_2.gz.fq)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2_1
+*** 2015-11-09 22:18:13 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4  
+    stdin:       ERR174310_1.fastq
+    stdout:      ERR174310_1/output/ERR174310_1.bz2
+  stderr:      ERR174310_1/log/pbzip2_1.4.cmp.log
+  Process PID:   947
+  Exit code:     0
+  Wall time:     00:27:26 (1646.0 ms)
+  Memory (MB):   39.7
+  Resources:    
+    ru_utime:    01:41:48 (6108.1 ms)
+    ru_stime:    00:04:32 (272.9 ms)
+    ru_maxrss:   40612
+    ru_minflt:   30982891
+    ru_majflt:   8
+    ru_inblock:  105238600
+    ru_oublock:  29076296
+    ru_nvcsw:    317550
+    ru_nivcsw:   853469
+  GNU time:     
+    real:        00:27:25 (1645.9 ms)
+    user:        01:41:48 (6108.1 ms)
+    sys:         00:04:32 (272.9 ms)
+  Size (MB):     14,197.22 (14886866456 bytes) (ERR174310_1/output/ERR174310_1.bz2)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+*** 2015-11-09 22:45:47 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       ERR174310_1/output/ERR174310_1.bz2
+    stdout:      ERR174310_1/output/ERR174310_1.bz2.fq
+  stderr:      ERR174310_1/log/pbzip2_1.4.dec.log
+  Process PID:   1284
+  Exit code:     0
+  Wall time:     00:17:26 (1046.0 ms)
+  Memory (MB):   27.4
+  Resources:    
+    ru_utime:    00:40:24 (2424.2 ms)
+    ru_stime:    00:03:22 (202.7 ms)
+    ru_maxrss:   28020
+    ru_minflt:   26307617
+    ru_majflt:   8
+    ru_inblock:  29101744
+    ru_oublock:  105212800
+    ru_nvcsw:    161944
+    ru_nivcsw:   375833
+  GNU time:     
+    real:        00:17:25 (1045.9 ms)
+    user:        00:40:24 (2424.2 ms)
+    sys:         00:03:22 (202.7 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_1.bz2.fq)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+
+>>> pbzip2_2
+*** 2015-11-09 23:03:24 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4  
+    stdin:       ERR174310_2.fastq
+    stdout:      ERR174310_1/output/ERR174310_2.bz2
+  stderr:      ERR174310_1/log/pbzip2_2.4.cmp.log
+  Process PID:   1537
+  Exit code:     0
+  Wall time:     00:26:45 (1605.8 ms)
+  Memory (MB):   40.9
+  Resources:    
+    ru_utime:    01:38:39 (5919.1 ms)
+    ru_stime:    00:04:23 (263.6 ms)
+    ru_maxrss:   41840
+    ru_minflt:   23508161
+    ru_majflt:   8
+    ru_inblock:  105238544
+    ru_oublock:  28154088
+    ru_nvcsw:    327473
+    ru_nivcsw:   813010
+  GNU time:     
+    real:        00:26:45 (1605.7 ms)
+    user:        01:38:39 (5919.1 ms)
+    sys:         00:04:23 (263.5 ms)
+  Size (MB):     13,746.92 (14414692766 bytes) (ERR174310_1/output/ERR174310_2.bz2)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+*** 2015-11-09 23:30:18 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       ERR174310_1/output/ERR174310_2.bz2
+    stdout:      ERR174310_1/output/ERR174310_2.bz2.fq
+  stderr:      ERR174310_1/log/pbzip2_2.4.dec.log
+  Process PID:   1863
+  Exit code:     0
+  Wall time:     00:17:26 (1046.6 ms)
+  Memory (MB):   26.5
+  Resources:    
+    ru_utime:    00:39:29 (2369.0 ms)
+    ru_stime:    00:03:22 (202.9 ms)
+    ru_maxrss:   27116
+    ru_minflt:   25590460
+    ru_majflt:   8
+    ru_inblock:  28179520
+    ru_oublock:  105212808
+    ru_nvcsw:    160502
+    ru_nivcsw:   366576
+  GNU time:     
+    real:        00:17:26 (1046.6 ms)
+    user:        00:39:29 (2369.0 ms)
+    sys:         00:03:22 (202.9 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_2.bz2.fq)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+
+######################################################################## 
+#                                scalce                                # 
+########################################################################
+>>> scalce (File 1: ERR174310_1.fastq)
+*** 2016-01-05 18:28:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 4 ERR174310_1.fastq -o ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce  -r
+    stderr:      ERR174310/log/ERR174310_1.fastq.scalce.4.cmp.log
+  Process PID:   29897
+  Exit code:     0
+  Wall time:     01:18:31 (4711.7 ms)
+  Memory (MB):   5379.3
+  Resources:    
+    ru_utime:    04:31:21 (16281.5 ms)
+    ru_stime:    00:07:11 (431.2 ms)
+    ru_maxrss:   5508432
+    ru_minflt:   261412
+    ru_majflt:   10
+    ru_inblock:  210487592
+    ru_oublock:  248181480
+    ru_nvcsw:    91552
+    ru_nivcsw:   2137876
+  GNU time:     
+    real:        01:18:31 (4711.6 ms)
+    user:        04:31:21 (16281.5 ms)
+    sys:         00:07:11 (431.2 ms)
+  Size (MB):     21,694.33 (22748152675 bytes) (ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_1.scalceq, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_1.scalcen, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_1.scalcer, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_2.scalceq, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_2.scalcen, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_2.scalcer)
+  Free space:      2.8T  1.3T  1.6T  45% /local-scratch
+*** 2016-01-05 20:31:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -r -T 4 ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_1.scalcer -o ERR174310/output/decompressed/scalce/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.scalce.4.dec.log
+  Process PID:   5653
+  Exit code:     0
+  Wall time:     00:51:37 (3097.4 ms)
+  Memory (MB):   1057.5
+  Resources:    
+    ru_utime:    02:20:04 (8404.1 ms)
+    ru_stime:    00:01:42 (102.7 ms)
+    ru_maxrss:   1082892
+    ru_minflt:   244636
+    ru_majflt:   10
+    ru_inblock:  44492280
+    ru_oublock:  183630624
+    ru_nvcsw:    72714
+    ru_nivcsw:   953011
+  GNU time:     
+    real:        00:51:37 (3097.2 ms)
+    user:        02:20:04 (8404.1 ms)
+    sys:         00:01:42 (102.7 ms)
+  Size (MB):     89,663.37 (94018855814 bytes) (ERR174310/output/decompressed/scalce/ERR174310_1.fastq.fq_1.fastq, ERR174310/output/decompressed/scalce/ERR174310_1.fastq.fq_2.fastq)
+  Free space:      2.8T  1.3T  1.5T  48% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single (File 1: ERR174310_1.fastq)
+*** 2016-01-05 21:23:19 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 4 ERR174310_1.fastq -o ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single 
+    stderr:      ERR174310/log/ERR174310_1.fastq.scalce-single.4.cmp.log
+  Process PID:   10229
+  Exit code:     0
+  Wall time:     00:40:38 (2438.8 ms)
+  Memory (MB):   5321.2
+  Resources:    
+    ru_utime:    02:25:27 (8727.3 ms)
+    ru_stime:    00:03:43 (223.2 ms)
+    ru_maxrss:   5448884
+    ru_minflt:   256217
+    ru_majflt:   10
+    ru_inblock:  105274680
+    ru_oublock:  131163496
+    ru_nvcsw:    8746
+    ru_nivcsw:   1321429
+  GNU time:     
+    real:        00:40:38 (2438.7 ms)
+    user:        02:25:27 (8727.3 ms)
+    sys:         00:03:43 (223.2 ms)
+  Size (MB):     10,327.79 (10829470789 bytes) (ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single_1.scalceq, ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single_1.scalcen, ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single_1.scalcer)
+  Free space:      2.8T  1.4T  1.5T  48% /local-scratch
+*** 2016-01-05 22:04:09 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -T 4 ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single_1.scalcer -o ERR174310/output/decompressed/scalce-single/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.scalce-single.4.dec.log
+  Process PID:   12686
+  Exit code:     0
+  Wall time:     00:25:34 (1534.6 ms)
+  Memory (MB):   1055.4
+  Resources:    
+    ru_utime:    01:10:10 (4210.9 ms)
+    ru_stime:    00:00:52 (52.2 ms)
+    ru_maxrss:   1080716
+    ru_minflt:   244032
+    ru_majflt:   10
+    ru_inblock:  21213288
+    ru_oublock:  91815320
+    ru_nvcsw:    33217
+    ru_nivcsw:   479997
+  GNU time:     
+    real:        00:25:34 (1534.5 ms)
+    user:        01:10:10 (4210.9 ms)
+    sys:         00:00:52 (52.2 ms)
+  Size (MB):     44,831.68 (47009427907 bytes) (ERR174310/output/decompressed/scalce-single/ERR174310_1.fastq.fq_1.fastq)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc_1
+*** 2015-12-06 11:49:26 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4   ERR174310_1.fastq ERR174310_1/output/ERR174310_1.dsrc
+  stderr:      ERR174310_1/log/dsrc_1.4.cmp.log
+  Process PID:   954
+  Exit code:     0
+  Wall time:     00:07:28 (448.0 ms)
+  Memory (MB):   186.4
+  Resources:    
+    ru_utime:    00:22:46 (1366.9 ms)
+    ru_stime:    00:01:54 (114.2 ms)
+    ru_maxrss:   190840
+    ru_minflt:   35424
+    ru_majflt:   8
+    ru_inblock:  105238728
+    ru_oublock:  25808808
+    ru_nvcsw:    239231
+    ru_nivcsw:   311542
+  GNU time:     
+    real:        00:07:27 (447.9 ms)
+    user:        00:22:46 (1366.9 ms)
+    sys:         00:01:54 (114.2 ms)
+  Size (MB):     12,601.91 (13214060181 bytes) (ERR174310_1/output/ERR174310_1.dsrc)
+  Free space:      2.8T  2.3T  505G  82% /local-scratch
+*** 2015-12-06 11:57:11 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 ERR174310_1/output/ERR174310_1.dsrc ERR174310_1/output/decompressed/ERR174310_1.dsrc.fq
+  stderr:      ERR174310_1/log/dsrc_1.4.dec.log
+  Process PID:   1054
+  Exit code:     0
+  Wall time:     00:10:59 (659.6 ms)
+  Memory (MB):   208.0
+  Resources:    
+    ru_utime:    00:16:04 (964.0 ms)
+    ru_stime:    00:01:30 (90.7 ms)
+    ru_maxrss:   213024
+    ru_minflt:   78109
+    ru_majflt:   10
+    ru_inblock:  25834736
+    ru_oublock:  105212688
+    ru_nvcsw:    62448
+    ru_nivcsw:   156345
+  GNU time:     
+    real:        00:10:59 (659.5 ms)
+    user:        00:16:04 (964.0 ms)
+    sys:         00:01:30 (90.7 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_1.dsrc.fq)
+  Free space:      2.8T  2.3T  505G  82% /local-scratch
+
+>>> dsrc_2
+*** 2015-12-06 12:10:33 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4   ERR174310_2.fastq ERR174310_1/output/ERR174310_2.dsrc
+  stderr:      ERR174310_1/log/dsrc_2.4.cmp.log
+  Process PID:   1270
+  Exit code:     0
+  Wall time:     00:07:39 (459.6 ms)
+  Memory (MB):   199.4
+  Resources:    
+    ru_utime:    00:22:35 (1355.2 ms)
+    ru_stime:    00:01:54 (114.3 ms)
+    ru_maxrss:   204148
+    ru_minflt:   45698
+    ru_majflt:   8
+    ru_inblock:  105238672
+    ru_oublock:  24950040
+    ru_nvcsw:    235929
+    ru_nivcsw:   295619
+  GNU time:     
+    real:        00:07:39 (459.6 ms)
+    user:        00:22:35 (1355.2 ms)
+    sys:         00:01:54 (114.3 ms)
+  Size (MB):     12,182.59 (12774367962 bytes) (ERR174310_1/output/ERR174310_2.dsrc)
+  Free space:      2.8T  2.3T  505G  82% /local-scratch
+*** 2015-12-06 12:18:27 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 ERR174310_1/output/ERR174310_2.dsrc ERR174310_1/output/decompressed/ERR174310_2.dsrc.fq
+  stderr:      ERR174310_1/log/dsrc_2.4.dec.log
+  Process PID:   1363
+  Exit code:     0
+  Wall time:     00:10:36 (636.5 ms)
+  Memory (MB):   169.7
+  Resources:    
+    ru_utime:    00:15:34 (934.3 ms)
+    ru_stime:    00:01:31 (91.1 ms)
+    ru_maxrss:   173744
+    ru_minflt:   45312
+    ru_majflt:   10
+    ru_inblock:  24975960
+    ru_oublock:  105212688
+    ru_nvcsw:    60638
+    ru_nivcsw:   152508
+  GNU time:     
+    real:        00:10:36 (636.4 ms)
+    user:        00:15:34 (934.3 ms)
+    sys:         00:01:31 (91.1 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_2.dsrc.fq)
+  Free space:      2.8T  2.3T  505G  82% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2_1
+*** 2015-12-06 12:31:24 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4 -m2  ERR174310_1.fastq ERR174310_1/output/ERR174310_1.dsrc-m2
+  stderr:      ERR174310_1/log/dsrc-m2_1.4.cmp.log
+  Process PID:   1548
+  Exit code:     0
+  Wall time:     00:22:09 (1329.8 ms)
+  Memory (MB):   2706.3
+  Resources:    
+    ru_utime:    01:27:55 (5275.0 ms)
+    ru_stime:    00:01:46 (106.6 ms)
+    ru_maxrss:   2771212
+    ru_minflt:   270704
+    ru_majflt:   8
+    ru_inblock:  105238696
+    ru_oublock:  22652472
+    ru_nvcsw:    238984
+    ru_nivcsw:   689480
+  GNU time:     
+    real:        00:22:09 (1329.7 ms)
+    user:        01:27:55 (5275.0 ms)
+    sys:         00:01:46 (106.6 ms)
+  Size (MB):     11,060.64 (11597918499 bytes) (ERR174310_1/output/ERR174310_1.dsrc-m2)
+  Free space:      2.8T  2.3T  506G  82% /local-scratch
+*** 2015-12-06 12:53:41 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 ERR174310_1/output/ERR174310_1.dsrc-m2 ERR174310_1/output/decompressed/ERR174310_1.dsrc-m2.fq
+  stderr:      ERR174310_1/log/dsrc-m2_1.4.dec.log
+  Process PID:   1820
+  Exit code:     0
+  Wall time:     00:23:36 (1416.9 ms)
+  Memory (MB):   3015.6
+  Resources:    
+    ru_utime:    01:33:40 (5620.8 ms)
+    ru_stime:    00:01:15 (75.1 ms)
+    ru_maxrss:   3087960
+    ru_minflt:   50518
+    ru_majflt:   10
+    ru_inblock:  22678192
+    ru_oublock:  105212688
+    ru_nvcsw:    47674
+    ru_nivcsw:   621436
+  GNU time:     
+    real:        00:23:36 (1416.8 ms)
+    user:        01:33:40 (5620.8 ms)
+    sys:         00:01:15 (75.1 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_1.dsrc-m2.fq)
+  Free space:      2.8T  2.3T  506G  82% /local-scratch
+
+>>> dsrc-m2_2
+*** 2015-12-06 13:19:26 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4 -m2  ERR174310_2.fastq ERR174310_1/output/ERR174310_2.dsrc-m2
+  stderr:      ERR174310_1/log/dsrc-m2_2.4.cmp.log
+  Process PID:   2269
+  Exit code:     0
+  Wall time:     00:21:35 (1295.0 ms)
+  Memory (MB):   2695.6
+  Resources:    
+    ru_utime:    01:25:38 (5138.2 ms)
+    ru_stime:    00:01:37 (97.6 ms)
+    ru_maxrss:   2760260
+    ru_minflt:   271076
+    ru_majflt:   8
+    ru_inblock:  105238656
+    ru_oublock:  21848072
+    ru_nvcsw:    230802
+    ru_nivcsw:   647470
+  GNU time:     
+    real:        00:21:34 (1294.8 ms)
+    user:        01:25:38 (5138.1 ms)
+    sys:         00:01:37 (97.6 ms)
+  Size (MB):     10,667.87 (11186077401 bytes) (ERR174310_1/output/ERR174310_2.dsrc-m2)
+  Free space:      2.8T  2.3T  507G  82% /local-scratch
+*** 2015-12-06 13:41:08 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 ERR174310_1/output/ERR174310_2.dsrc-m2 ERR174310_1/output/decompressed/ERR174310_2.dsrc-m2.fq
+  stderr:      ERR174310_1/log/dsrc-m2_2.4.dec.log
+  Process PID:   2539
+  Exit code:     0
+  Wall time:     00:23:01 (1381.8 ms)
+  Memory (MB):   2988.9
+  Resources:    
+    ru_utime:    01:31:17 (5477.6 ms)
+    ru_stime:    00:01:13 (73.5 ms)
+    ru_maxrss:   3060616
+    ru_minflt:   42735
+    ru_majflt:   10
+    ru_inblock:  21873760
+    ru_oublock:  105212688
+    ru_nvcsw:    45475
+    ru_nivcsw:   603598
+  GNU time:     
+    real:        00:23:01 (1381.7 ms)
+    user:        01:31:17 (5477.6 ms)
+    sys:         00:01:13 (73.5 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_2.dsrc-m2.fq)
+  Free space:      2.8T  2.3T  507G  82% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1: ERR174310_1.fastq)
+*** 2015-12-31 08:01:23 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom e 4 'ERR174310_1.fastq' ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom 
+    stderr:      ERR174310/log/ERR174310_1.fastq.orcom.4.cmp.log
+  Process PID:   25630
+  Exit code:     0
+  Wall time:     00:20:47 (1247.7 ms)
+  Memory (MB):   4851.8
+  Resources:    
+    ru_utime:    01:22:41 (4961.7 ms)
+    ru_stime:    00:01:50 (110.4 ms)
+    ru_maxrss:   4968292
+    ru_minflt:   133230
+    ru_majflt:   14
+    ru_inblock:  105239384
+    ru_oublock:  13630680
+    ru_nvcsw:    282155
+    ru_nivcsw:   645310
+  GNU time:     
+    real:        00:20:47 (1247.6 ms)
+    user:        01:22:41 (4961.7 ms)
+    sys:         00:01:50 (110.4 ms)
+  Size (MB):     1,714.46 (1797744366 bytes) (ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom.cmeta, ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom.cdna)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-31 08:22:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom d 4 ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom ERR174310/output/decompressed/orcom/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.orcom.4.dec.log
+  Process PID:   25904
+  Exit code:     0
+  Wall time:     00:04:05 (245.6 ms)
+  Memory (MB):   2715.9
+  Resources:    
+    ru_utime:    00:11:56 (716.8 ms)
+    ru_stime:    00:00:29 (29.9 ms)
+    ru_maxrss:   2781088
+    ru_minflt:   83104
+    ru_majflt:   12
+    ru_inblock:  3537504
+    ru_oublock:  41353744
+    ru_nvcsw:    13293
+    ru_nivcsw:   82616
+  GNU time:     
+    real:        00:04:05 (245.5 ms)
+    user:        00:11:56 (716.8 ms)
+    sys:         00:00:29 (29.9 ms)
+  Size (MB):     20,192.25 (21173105634 bytes) (ERR174310/output/decompressed/orcom/ERR174310_1.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  40% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1: ERR174310_1.fastq)
+*** 2015-12-31 08:32:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v ERR174310_1.fastq 
+    stdout:      ERR174310/output/compressed/quip/ERR174310_1.fastq.qp
+    stderr:      ERR174310/log/ERR174310_1.fastq.quip.4.cmp.log
+  Process PID:   26037
+  Exit code:     0
+  Wall time:     00:49:07 (2947.1 ms)
+  Memory (MB):   398.6
+  Resources:    
+    ru_utime:    01:28:14 (5294.6 ms)
+    ru_stime:    00:01:42 (102.0 ms)
+    ru_maxrss:   408196
+    ru_minflt:   94394
+    ru_majflt:   16
+    ru_inblock:  105216360
+    ru_oublock:  22095856
+    ru_nvcsw:    381194
+    ru_nivcsw:   848661
+  GNU time:     
+    real:        00:49:07 (2947.0 ms)
+    user:        01:28:14 (5294.6 ms)
+    sys:         00:01:42 (102.0 ms)
+  Size (MB):     10,787.76 (11311782905 bytes) (ERR174310/output/compressed/quip/ERR174310_1.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-31 09:21:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq ERR174310/output/compressed/quip/ERR174310_1.fastq.qp
+    stdout:      ERR174310/output/decompressed/quip/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.quip.4.dec.log
+  Process PID:   981
+  Exit code:     0
+  Wall time:     01:00:39 (3639.2 ms)
+  Memory (MB):   390.4
+  Resources:    
+    ru_utime:    01:46:42 (6402.2 ms)
+    ru_stime:    00:01:43 (103.8 ms)
+    ru_maxrss:   399808
+    ru_minflt:   95324
+    ru_majflt:   16
+    ru_inblock:  22096968
+    ru_oublock:  105212680
+    ru_nvcsw:    147749
+    ru_nivcsw:   813512
+  GNU time:     
+    real:        01:00:39 (3639.1 ms)
+    user:        01:46:42 (6402.2 ms)
+    sys:         00:01:43 (103.8 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/quip/ERR174310_1.fastq.fq)
+  Free space:      2.8T  1.2T  1.7T  41% /local-scratch
+
+>>> quip (File 2: ERR174310_2.fastq)
+*** 2015-12-31 10:32:50 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v ERR174310_2.fastq 
+    stdout:      ERR174310/output/compressed/quip/ERR174310_2.fastq.qp
+    stderr:      ERR174310/log/ERR174310_2.fastq.quip.4.cmp.log
+  Process PID:   9001
+  Exit code:     0
+  Wall time:     00:48:11 (2891.0 ms)
+  Memory (MB):   400.1
+  Resources:    
+    ru_utime:    01:24:55 (5095.4 ms)
+    ru_stime:    00:01:44 (104.3 ms)
+    ru_maxrss:   409660
+    ru_minflt:   94766
+    ru_majflt:   16
+    ru_inblock:  105216304
+    ru_oublock:  21360096
+    ru_nvcsw:    320302
+    ru_nivcsw:   873520
+  GNU time:     
+    real:        00:48:10 (2890.9 ms)
+    user:        01:24:55 (5095.4 ms)
+    sys:         00:01:44 (104.2 ms)
+  Size (MB):     10,428.50 (10935078538 bytes) (ERR174310/output/compressed/quip/ERR174310_2.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-31 11:21:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq ERR174310/output/compressed/quip/ERR174310_2.fastq.qp
+    stdout:      ERR174310/output/decompressed/quip/ERR174310_2.fastq.fq
+    stderr:      ERR174310/log/ERR174310_2.fastq.quip.4.dec.log
+  Process PID:   16588
+  Exit code:     0
+  Wall time:     01:00:22 (3622.9 ms)
+  Memory (MB):   392.8
+  Resources:    
+    ru_utime:    01:46:02 (6362.4 ms)
+    ru_stime:    00:01:42 (102.1 ms)
+    ru_maxrss:   402264
+    ru_minflt:   98272
+    ru_majflt:   16
+    ru_inblock:  21361200
+    ru_oublock:  105212680
+    ru_nvcsw:    141993
+    ru_nivcsw:   810745
+  GNU time:     
+    real:        01:00:22 (3622.8 ms)
+    user:        01:46:02 (6362.4 ms)
+    sys:         00:01:42 (102.1 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/quip/ERR174310_2.fastq.fq)
+  Free space:      2.8T  1.2T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+>>> quip-asm (File 1: ERR174310_1.fastq)
+*** 2015-12-31 12:32:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v ERR174310_1.fastq -a
+    stdout:      ERR174310/output/compressed/quip-asm/ERR174310_1.fastq.qp
+    stderr:      ERR174310/log/ERR174310_1.fastq.quip-asm.4.cmp.log
+  Process PID:   24313
+  Exit code:     0
+  Wall time:     00:57:40 (3460.9 ms)
+  Memory (MB):   777.9
+  Resources:    
+    ru_utime:    01:36:12 (5772.5 ms)
+    ru_stime:    00:01:42 (102.0 ms)
+    ru_maxrss:   796544
+    ru_minflt:   99592
+    ru_majflt:   16
+    ru_inblock:  105216320
+    ru_oublock:  22095976
+    ru_nvcsw:    365924
+    ru_nivcsw:   897146
+  GNU time:     
+    real:        00:57:40 (3460.8 ms)
+    user:        01:36:12 (5772.5 ms)
+    sys:         00:01:42 (102.0 ms)
+  Size (MB):     10,787.76 (11311782913 bytes) (ERR174310/output/compressed/quip-asm/ERR174310_1.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-31 13:30:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq ERR174310/output/compressed/quip-asm/ERR174310_1.fastq.qp
+    stdout:      ERR174310/output/decompressed/quip-asm/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.quip-asm.4.dec.log
+  Process PID:   31682
+  Exit code:     0
+  Wall time:     01:03:25 (3805.5 ms)
+  Memory (MB):   772.1
+  Resources:    
+    ru_utime:    01:50:13 (6613.0 ms)
+    ru_stime:    00:01:50 (110.1 ms)
+    ru_maxrss:   790656
+    ru_minflt:   101053
+    ru_majflt:   14
+    ru_inblock:  22096752
+    ru_oublock:  105212688
+    ru_nvcsw:    142199
+    ru_nivcsw:   831438
+  GNU time:     
+    real:        01:03:25 (3805.4 ms)
+    user:        01:50:13 (6613.0 ms)
+    sys:         00:01:50 (110.1 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/quip-asm/ERR174310_1.fastq.fq)
+  Free space:      2.8T  1.2T  1.7T  41% /local-scratch
+
+>>> quip-asm (File 2: ERR174310_2.fastq)
+*** 2015-12-31 14:44:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v ERR174310_2.fastq -a
+    stdout:      ERR174310/output/compressed/quip-asm/ERR174310_2.fastq.qp
+    stderr:      ERR174310/log/ERR174310_2.fastq.quip-asm.4.cmp.log
+  Process PID:   7345
+  Exit code:     0
+  Wall time:     01:00:19 (3619.5 ms)
+  Memory (MB):   774.8
+  Resources:    
+    ru_utime:    01:37:20 (5840.4 ms)
+    ru_stime:    00:01:41 (101.3 ms)
+    ru_maxrss:   793412
+    ru_minflt:   99381
+    ru_majflt:   16
+    ru_inblock:  105216288
+    ru_oublock:  21360248
+    ru_nvcsw:    301628
+    ru_nivcsw:   950438
+  GNU time:     
+    real:        01:00:19 (3619.4 ms)
+    user:        01:37:20 (5840.4 ms)
+    sys:         00:01:41 (101.3 ms)
+  Size (MB):     10,428.50 (10935078546 bytes) (ERR174310/output/compressed/quip-asm/ERR174310_2.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-31 15:44:41 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq ERR174310/output/compressed/quip-asm/ERR174310_2.fastq.qp
+    stdout:      ERR174310/output/decompressed/quip-asm/ERR174310_2.fastq.fq
+    stderr:      ERR174310/log/ERR174310_2.fastq.quip-asm.4.dec.log
+  Process PID:   14774
+  Exit code:     0
+  Wall time:     01:01:06 (3666.7 ms)
+  Memory (MB):   772.0
+  Resources:    
+    ru_utime:    01:46:29 (6389.7 ms)
+    ru_stime:    00:01:38 (98.8 ms)
+    ru_maxrss:   790560
+    ru_minflt:   99583
+    ru_majflt:   16
+    ru_inblock:  21361184
+    ru_oublock:  105212688
+    ru_nvcsw:    138757
+    ru_nivcsw:   817708
+  GNU time:     
+    real:        01:01:06 (3666.6 ms)
+    user:        01:46:29 (6389.7 ms)
+    sys:         00:01:38 (98.8 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/quip-asm/ERR174310_2.fastq.fq)
+  Free space:      2.8T  1.2T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath_1
+*** 2015-11-10 04:21:12 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=4 -ref=data/sam/ref/hg19.fa.gz -reads=ERR174310_1.fastq -out=ERR174310_1/output/ERR174310_1.kpath  
+  stderr:      ERR174310_1/log/kpath_1.4.cmp.log
+  Process PID:   11930
+  Exit code:     0
+  Wall time:     06:55:08 (24908.3 ms)
+  Memory (MB):   85477.1
+  Resources:    
+    ru_utime:    12:11:38 (43898.0 ms)
+    ru_stime:    01:26:40 (5200.8 ms)
+    ru_maxrss:   87528540
+    ru_minflt:   13253791
+    ru_majflt:   25
+    ru_inblock:  107072833
+    ru_oublock:  45433504
+    ru_nvcsw:    481052093
+    ru_nivcsw:   9021897
+  GNU time:     
+    real:        06:55:08 (24908.3 ms)
+    user:        12:11:38 (43898.0 ms)
+    sys:         01:26:40 (5200.8 ms)
+  Size (MB):     1,991.68 (2088424431 bytes) (ERR174310_1/output/ERR174310_1.kpath.enc, ERR174310_1/output/ERR174310_1.kpath.flipped, ERR174310_1/output/ERR174310_1.kpath.ns, ERR174310_1/output/ERR174310_1.kpath.bittree, ERR174310_1/output/ERR174310_1.kpath.counts)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+*** 2015-11-10 11:16:27 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux decode -p=4 -ref=data/sam/ref/hg19.fa.gz -reads=ERR174310_1/output/ERR174310_1.kpath -out=ERR174310_1/output/ERR174310_1.kpath.fq
+  stderr:      ERR174310_1/log/kpath_1.4.dec.log
+  Process PID:   16398
+  Exit code:     0
+  Wall time:     04:21:58 (15718.3 ms)
+  Memory (MB):   53502.1
+  Resources:    
+    ru_utime:    05:36:45 (20205.3 ms)
+    ru_stime:    00:23:13 (1393.0 ms)
+    ru_maxrss:   54786148
+    ru_minflt:   841843
+    ru_majflt:   25
+    ru_inblock:  5938656
+    ru_oublock:  46001928
+    ru_nvcsw:    157656608
+    ru_nivcsw:   4269486
+  GNU time:     
+    real:        04:21:58 (15718.2 ms)
+    user:        05:36:45 (20205.3 ms)
+    sys:         00:23:13 (1393.0 ms)
+  Size (MB):     22,461.84 (23552948128 bytes) (ERR174310_1/output/ERR174310_1.kpath.fq)
+  Free space:      2.8T  1.7T  1.1T  61% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: ERR174310_1.fastq)
+*** 2016-02-19 18:02:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e ERR174310_1.fastq ERR174310/output/compressed/leon/ERR174310_1.fastq.leon 4 
+    stderr:      ERR174310/log/ERR174310_1.fastq.leon.4.cmp.log
+  Process PID:   21421
+  Exit code:     0
+  Wall time:     02:11:18 (7878.7 ms)
+  Memory (MB):   3400.4
+  Resources:    
+    ru_utime:    07:34:32 (27272.8 ms)
+    ru_stime:    00:04:32 (272.9 ms)
+    ru_maxrss:   3482032
+    ru_minflt:   390690
+    ru_majflt:   97
+    ru_inblock:  105256728
+    ru_oublock:  132542856
+    ru_nvcsw:    3364923
+    ru_nivcsw:   3019225
+  GNU time:     
+    real:        02:11:18 (7878.4 ms)
+    user:        07:34:32 (27272.8 ms)
+    sys:         00:04:32 (272.8 ms)
+  Size (MB):     12,997.80 (13629175944 bytes) (ERR174310/output/compressed/leon/ERR174310_1.fastq.leon, ERR174310/output/compressed/leon/ERR174310_1.fastq.leon.qual)
+  Free space:      2.8T  1.5T  1.3T  54% /local-scratch
+*** 2016-02-20 12:37:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d ERR174310/output/compressed/leon/ERR174310_1.fastq.leon ERR174310/output/decompressed/leon/ERR174310_1.fastq.fq 4
+    stderr:      ERR174310/log/ERR174310_1.fastq.leon.4.dec.log
+  Process PID:   16023
+  Exit code:     0
+  Wall time:     01:03:10 (3790.8 ms)
+  Memory (MB):   2898.9
+  Resources:    
+    ru_utime:    03:06:46 (11206.8 ms)
+    ru_stime:    00:01:19 (79.0 ms)
+    ru_maxrss:   2968460
+    ru_minflt:   53066
+    ru_majflt:   40
+    ru_inblock:  26658465
+    ru_oublock:  105213504
+    ru_nvcsw:    65303
+    ru_nivcsw:   1211276
+  GNU time:     
+    real:        01:03:10 (3790.6 ms)
+    user:        03:06:46 (11206.8 ms)
+    sys:         00:01:19 (79.0 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/leon/ERR174310_1.fastq.fq)
+  Free space:      2.8T  1.5T  1.3T  55% /local-scratch
+
+>>> leon (File 2: ERR174310_2.fastq)
+*** 2016-02-26 19:39:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e ERR174310_2.fastq ERR174310/output/compressed/leon/ERR174310_2.fastq.leon 4 
+    stderr:      ERR174310/log/ERR174310_2.fastq.leon.4.cmp.log
+  Process PID:   32640
+  Exit code:     0
+  Wall time:     02:17:31 (8251.4 ms)
+  Memory (MB):   3375.4
+  Resources:    
+    ru_utime:    08:00:26 (28826.4 ms)
+    ru_stime:    00:04:37 (277.6 ms)
+    ru_maxrss:   3456444
+    ru_minflt:   374061
+    ru_majflt:   99
+    ru_inblock:  105256336
+    ru_oublock:  131378496
+    ru_nvcsw:    3502429
+    ru_nivcsw:   3175685
+  GNU time:     
+    real:        02:17:31 (8251.3 ms)
+    user:        08:00:26 (28826.3 ms)
+    sys:         00:04:37 (277.6 ms)
+  Size (MB):     12,570.82 (13181456943 bytes) (ERR174310/output/compressed/leon/ERR174310_2.fastq.leon, ERR174310/output/compressed/leon/ERR174310_2.fastq.leon.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-02-26 21:57:50 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d ERR174310/output/compressed/leon/ERR174310_2.fastq.leon ERR174310/output/decompressed/leon/ERR174310_2.fastq.fq 4
+    stderr:      ERR174310/log/ERR174310_2.fastq.leon.4.dec.log
+  Process PID:   5154
+  Exit code:     0
+  Wall time:     01:01:53 (3713.4 ms)
+  Memory (MB):   2875.3
+  Resources:    
+    ru_utime:    03:06:11 (11171.1 ms)
+    ru_stime:    00:01:21 (81.0 ms)
+    ru_maxrss:   2944272
+    ru_minflt:   52746
+    ru_majflt:   50
+    ru_inblock:  25779480
+    ru_oublock:  105213448
+    ru_nvcsw:    63034
+    ru_nivcsw:   1204100
+  GNU time:     
+    real:        01:01:53 (3713.3 ms)
+    user:        03:06:11 (11171.1 ms)
+    sys:         00:01:21 (81.0 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/leon/ERR174310_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+######################################################################## 
+#                                mince                                 # 
+########################################################################
+>>> mince (File 1: ERR174310_1.fastq)
+*** 2016-08-22 02:54:55 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e ERR174310_1.fastq ERR174310/output/compressed/mince/ERR174310_1.fastq.mince 4  ERR174310_2.fastq
+    stderr:      ERR174310/log/ERR174310_1.fastq.mince.4.cmp.log
+  Process PID:   15049
+  Exit code:     0
+  Wall time:     12:48:05 (46085.6 ms)
+  Memory (MB):   88793.9
+  Resources:    
+    ru_utime:    23:22:25 (170545.8 ms)
+    ru_stime:    01:06:00 (3960.9 ms)
+    ru_maxrss:   90924948
+    ru_minflt:   37873078
+    ru_majflt:   29
+    ru_inblock:  210456712
+    ru_oublock:  12414392
+    ru_nvcsw:    208098084
+    ru_nivcsw:   18726549
+  GNU time:     
+    real:        12:48:05 (46085.4 ms)
+    user:        23:22:25 (170545.8 ms)
+    sys:         01:06:00 (3960.9 ms)
+  Size (MB):     5,777.54 (6058194321 bytes) (ERR174310/output/compressed/mince/ERR174310_1.fastq.mince.seqs.lz, ERR174310/output/compressed/mince/ERR174310_1.fastq.mince.offs.lz, ERR174310/output/compressed/mince/ERR174310_1.fastq.mince.nlocs.lz, ERR174310/output/compressed/mince/ERR174310_1.fastq.mince.flips.lz)
+  Free space:      2.8T  1.8T  952G  66% /local-scratch
+*** 2016-08-22 15:43:16 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d ERR174310/output/compressed/mince/ERR174310_1.fastq.mince ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq 4 
+    stderr:      ERR174310/log/ERR174310_1.fastq.mince.4.dec.log
+  Process PID:   14968
+  Exit code:     0
+  Wall time:     00:20:56 (1256.7 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:28:32 (1712.3 ms)
+    ru_stime:    00:02:57 (177.8 ms)
+    ru_maxrss:   248420
+    ru_minflt:   160245
+    ru_majflt:   31
+    ru_inblock:  11865217
+    ru_oublock:  92866184
+    ru_nvcsw:    2485976
+    ru_nivcsw:   245409
+  GNU time:     
+    real:        00:20:56 (1256.5 ms)
+    user:        00:28:32 (1712.3 ms)
+    sys:         00:02:57 (177.8 ms)
+  Size (MB):     67,583.49 (70866426293 bytes) (ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq.log, ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq.fa, ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq1.fa, ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq2.fa)
+  Free space:      2.8T  1.9T  908G  68% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: ERR174310_1.fastq)
+*** 2016-08-10 00:55:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e ERR174310_1.fastq ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince 4 
+    stderr:      ERR174310/log/ERR174310_1.fastq.mince-single.4.cmp.log
+  Process PID:   25930
+  Exit code:     0
+  Wall time:     05:31:04 (19864.2 ms)
+  Memory (MB):   68147.4
+  Resources:    
+    ru_utime:    20:21:31 (73291.8 ms)
+    ru_stime:    00:38:28 (2308.0 ms)
+    ru_maxrss:   69782988
+    ru_minflt:   35478713
+    ru_majflt:   29
+    ru_inblock:  105244056
+    ru_oublock:  4719408
+    ru_nvcsw:    84788424
+    ru_nivcsw:   8220481
+  GNU time:     
+    real:        05:31:04 (19864.0 ms)
+    user:        20:21:31 (73291.8 ms)
+    sys:         00:38:27 (2307.9 ms)
+  Size (MB):     1,864.60 (1955179400 bytes) (ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince.seqs.lz, ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince.offs.lz, ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince.nlocs.lz, ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince.flips.lz)
+  Free space:      2.8T  1.8T 1014G  64% /local-scratch
+*** 2016-08-10 06:26:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince ERR174310/output/decompressed/mince-single/ERR174310_1.fastq.fq 4 
+    stderr:      ERR174310/log/ERR174310_1.fastq.mince-single.4.dec.log
+  Process PID:   4765
+  Exit code:     0
+  Wall time:     00:14:13 (853.8 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:13:11 (791.9 ms)
+    ru_stime:    00:05:04 (304.1 ms)
+    ru_maxrss:   248400
+    ru_minflt:   72628
+    ru_majflt:   30
+    ru_inblock:  3850769
+    ru_oublock:  45647608
+    ru_nvcsw:    1216444
+    ru_nivcsw:   130527
+  GNU time:     
+    real:        00:14:13 (853.6 ms)
+    user:        00:13:11 (791.8 ms)
+    sys:         00:05:04 (304.1 ms)
+  Size (MB):     22,263.88 (23345369475 bytes) (ERR174310/output/decompressed/mince-single/ERR174310_1.fastq.fq.log, ERR174310/output/decompressed/mince-single/ERR174310_1.fastq.fq.fa)
+  Free space:      2.8T  1.8T  992G  65% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: ERR174310_1.fastq)
+*** 2016-02-26 23:11:23 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e ERR174310_1.fastq ERR174310/output/compressed/kic/ERR174310_1.fastq.kic 4 
+    stderr:      ERR174310/log/ERR174310_1.fastq.kic.4.cmp.log
+  Process PID:   11204
+  Exit code:     0
+  Wall time:     13:24:38 (48278.4 ms)
+  Memory (MB):   2127.9
+  Resources:    
+    ru_utime:    05:57:58 (107878.6 ms)
+    ru_stime:    00:34:45 (2085.3 ms)
+    ru_maxrss:   2178980
+    ru_minflt:   197436
+    ru_majflt:   147
+    ru_inblock:  105266360
+    ru_oublock:  25478392
+    ru_nvcsw:    223646570
+    ru_nivcsw:   18711258
+  GNU time:     
+    real:        13:24:38 (48278.3 ms)
+    user:        05:57:58 (107878.6 ms)
+    sys:         00:34:45 (2085.3 ms)
+  Size (MB):     12,403.69 (13006214239 bytes) (ERR174310/output/compressed/kic/ERR174310_1.fastq.kic, ERR174310/output/compressed/kic/ERR174310_1.fastq.kic.qual, ERR174310/output/compressed/kic/ERR174310_1.fastq.kic.seq, ERR174310/output/compressed/kic/ERR174310_1.fastq.kic.name)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-02-27 12:36:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d ERR174310/output/compressed/kic/ERR174310_1.fastq.kic ERR174310/output/decompressed/kic/ERR174310_1.fastq.fq 4
+    stderr:      ERR174310/log/ERR174310_1.fastq.kic.4.dec.log
+  Process PID:   20940
+  Exit code:     0
+  Wall time:     00:52:38 (3158.7 ms)
+  Memory (MB):   912.3
+  Resources:    
+    ru_utime:    02:32:05 (9125.8 ms)
+    ru_stime:    00:19:19 (1159.2 ms)
+    ru_maxrss:   934172
+    ru_minflt:   104996
+    ru_majflt:   140
+    ru_inblock:  25454121
+    ru_oublock:  105216960
+    ru_nvcsw:    99349630
+    ru_nivcsw:   1303088
+  GNU time:     
+    real:        00:52:38 (3158.0 ms)
+    user:        02:32:05 (9125.8 ms)
+    sys:         00:19:19 (1159.2 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+>>> kic (File 2: ERR174310_2.fastq)
+*** 2016-02-27 13:40:28 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e ERR174310_2.fastq ERR174310/output/compressed/kic/ERR174310_2.fastq.kic 4 
+    stderr:      ERR174310/log/ERR174310_2.fastq.kic.4.cmp.log
+  Process PID:   25360
+  Exit code:     0
+  Wall time:     13:01:26 (46886.9 ms)
+  Memory (MB):   2139.2
+  Resources:    
+    ru_utime:    05:21:44 (105704.6 ms)
+    ru_stime:    00:32:13 (1933.5 ms)
+    ru_maxrss:   2190496
+    ru_minflt:   188507
+    ru_majflt:   145
+    ru_inblock:  105266064
+    ru_oublock:  24570264
+    ru_nvcsw:    193356209
+    ru_nivcsw:   18194348
+  GNU time:     
+    real:        13:01:26 (46886.8 ms)
+    user:        05:21:44 (105704.6 ms)
+    sys:         00:32:13 (1933.5 ms)
+  Size (MB):     11,963.44 (12544575171 bytes) (ERR174310/output/compressed/kic/ERR174310_2.fastq.kic, ERR174310/output/compressed/kic/ERR174310_2.fastq.kic.seq, ERR174310/output/compressed/kic/ERR174310_2.fastq.kic.qual, ERR174310/output/compressed/kic/ERR174310_2.fastq.kic.name)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-02-28 02:42:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d ERR174310/output/compressed/kic/ERR174310_2.fastq.kic ERR174310/output/decompressed/kic/ERR174310_2.fastq.fq 4
+    stderr:      ERR174310/log/ERR174310_2.fastq.kic.4.dec.log
+  Process PID:   15063
+  Exit code:     0
+  Wall time:     00:48:34 (2914.8 ms)
+  Memory (MB):   891.6
+  Resources:    
+    ru_utime:    02:20:29 (8429.3 ms)
+    ru_stime:    00:17:57 (1077.3 ms)
+    ru_maxrss:   913004
+    ru_minflt:   105768
+    ru_majflt:   152
+    ru_inblock:  24554752
+    ru_oublock:  105216640
+    ru_nvcsw:    95834548
+    ru_nivcsw:   1209622
+  GNU time:     
+    real:        00:48:34 (2914.7 ms)
+    user:        02:20:29 (8429.3 ms)
+    sys:         00:17:57 (1077.3 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                      ERR174310_1 with 8 threads                      + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz_1
+*** 2015-11-11 02:35:14 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8  
+    stdin:       ERR174310_1.fastq
+    stdout:      ERR174310_1/output/ERR174310_1.gz
+  stderr:      ERR174310_1/log/pigz_1.8.cmp.log
+  Process PID:   26637
+  Exit code:     0
+  Wall time:     00:18:26 (1106.7 ms)
+  Memory (MB):   8.7
+  Resources:    
+    ru_utime:    02:08:40 (7720.8 ms)
+    ru_stime:    00:02:33 (153.2 ms)
+    ru_maxrss:   8928
+    ru_minflt:   1944
+    ru_majflt:   7
+    ru_inblock:  105214888
+    ru_oublock:  36321776
+    ru_nvcsw:    831802
+    ru_nivcsw:   977301
+  GNU time:     
+    real:        00:18:26 (1106.6 ms)
+    user:        02:08:40 (7720.8 ms)
+    sys:         00:02:33 (153.2 ms)
+  Size (MB):     17,735.11 (18596613800 bytes) (ERR174310_1/output/ERR174310_1.gz)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2015-11-11 02:53:51 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       ERR174310_1/output/ERR174310_1.gz
+    stdout:      ERR174310_1/output/ERR174310_1.gz.fq
+  stderr:      ERR174310_1/log/pigz_1.8.dec.log
+  Process PID:   26887
+  Exit code:     0
+  Wall time:     00:11:02 (662.1 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:08:56 (536.2 ms)
+    ru_stime:    00:03:13 (193.5 ms)
+    ru_maxrss:   5872
+    ru_minflt:   607
+    ru_majflt:   7
+    ru_inblock:  36323608
+    ru_oublock:  105212680
+    ru_nvcsw:    3864093
+    ru_nivcsw:   132783
+  GNU time:     
+    real:        00:11:02 (662.0 ms)
+    user:        00:08:56 (536.2 ms)
+    sys:         00:03:13 (193.5 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_1.gz.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+>>> pigz_2
+*** 2015-11-11 03:05:10 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8  
+    stdin:       ERR174310_2.fastq
+    stdout:      ERR174310_1/output/ERR174310_2.gz
+  stderr:      ERR174310_1/log/pigz_2.8.cmp.log
+  Process PID:   27024
+  Exit code:     0
+  Wall time:     00:19:09 (1149.6 ms)
+  Memory (MB):   10.8
+  Resources:    
+    ru_utime:    02:07:26 (7646.2 ms)
+    ru_stime:    00:02:32 (152.3 ms)
+    ru_maxrss:   11040
+    ru_minflt:   1939
+    ru_majflt:   7
+    ru_inblock:  105214824
+    ru_oublock:  35348528
+    ru_nvcsw:    837464
+    ru_nivcsw:   943509
+  GNU time:     
+    real:        00:19:09 (1149.5 ms)
+    user:        02:07:26 (7646.2 ms)
+    sys:         00:02:32 (152.3 ms)
+  Size (MB):     17,259.89 (18098304911 bytes) (ERR174310_1/output/ERR174310_2.gz)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2015-11-11 03:24:30 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       ERR174310_1/output/ERR174310_2.gz
+    stdout:      ERR174310_1/output/ERR174310_2.gz.fq
+  stderr:      ERR174310_1/log/pigz_2.8.dec.log
+  Process PID:   27281
+  Exit code:     0
+  Wall time:     00:12:02 (722.4 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:08:53 (533.2 ms)
+    ru_stime:    00:03:10 (190.6 ms)
+    ru_maxrss:   5872
+    ru_minflt:   606
+    ru_majflt:   7
+    ru_inblock:  35350368
+    ru_oublock:  105212680
+    ru_nvcsw:    3849552
+    ru_nivcsw:   132614
+  GNU time:     
+    real:        00:12:02 (722.3 ms)
+    user:        00:08:53 (533.2 ms)
+    sys:         00:03:10 (190.6 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_2.gz.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2_1
+*** 2015-11-11 03:36:45 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8  
+    stdin:       ERR174310_1.fastq
+    stdout:      ERR174310_1/output/ERR174310_1.bz2
+  stderr:      ERR174310_1/log/pbzip2_1.8.cmp.log
+  Process PID:   27432
+  Exit code:     0
+  Wall time:     00:15:55 (955.6 ms)
+  Memory (MB):   75.9
+  Resources:    
+    ru_utime:    01:46:04 (6364.8 ms)
+    ru_stime:    00:05:19 (319.4 ms)
+    ru_maxrss:   77748
+    ru_minflt:   37374513
+    ru_majflt:   8
+    ru_inblock:  105238328
+    ru_oublock:  29076128
+    ru_nvcsw:    312126
+    ru_nivcsw:   880463
+  GNU time:     
+    real:        00:15:55 (955.6 ms)
+    user:        01:46:04 (6364.8 ms)
+    sys:         00:05:19 (319.4 ms)
+  Size (MB):     14,197.22 (14886866456 bytes) (ERR174310_1/output/ERR174310_1.bz2)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2015-11-11 03:52:51 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       ERR174310_1/output/ERR174310_1.bz2
+    stdout:      ERR174310_1/output/ERR174310_1.bz2.fq
+  stderr:      ERR174310_1/log/pbzip2_1.8.dec.log
+  Process PID:   27661
+  Exit code:     0
+  Wall time:     00:12:52 (772.6 ms)
+  Memory (MB):   48.5
+  Resources:    
+    ru_utime:    00:42:57 (2577.8 ms)
+    ru_stime:    00:03:53 (233.5 ms)
+    ru_maxrss:   49636
+    ru_minflt:   26349811
+    ru_majflt:   8
+    ru_inblock:  29101512
+    ru_oublock:  105212720
+    ru_nvcsw:    145419
+    ru_nivcsw:   373259
+  GNU time:     
+    real:        00:12:52 (772.5 ms)
+    user:        00:42:57 (2577.8 ms)
+    sys:         00:03:53 (233.5 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_1.bz2.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+>>> pbzip2_2
+*** 2015-11-11 04:05:56 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8  
+    stdin:       ERR174310_2.fastq
+    stdout:      ERR174310_1/output/ERR174310_2.bz2
+  stderr:      ERR174310_1/log/pbzip2_2.8.cmp.log
+  Process PID:   27836
+  Exit code:     0
+  Wall time:     00:15:20 (920.8 ms)
+  Memory (MB):   74.9
+  Resources:    
+    ru_utime:    01:43:13 (6193.4 ms)
+    ru_stime:    00:05:14 (314.3 ms)
+    ru_maxrss:   76736
+    ru_minflt:   35565545
+    ru_majflt:   8
+    ru_inblock:  105238272
+    ru_oublock:  28153896
+    ru_nvcsw:    315475
+    ru_nivcsw:   850021
+  GNU time:     
+    real:        00:15:20 (920.7 ms)
+    user:        01:43:13 (6193.4 ms)
+    sys:         00:05:14 (314.3 ms)
+  Size (MB):     13,746.92 (14414692766 bytes) (ERR174310_1/output/ERR174310_2.bz2)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2015-11-11 04:21:25 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       ERR174310_1/output/ERR174310_2.bz2
+    stdout:      ERR174310_1/output/ERR174310_2.bz2.fq
+  stderr:      ERR174310_1/log/pbzip2_2.8.dec.log
+  Process PID:   28061
+  Exit code:     0
+  Wall time:     00:12:54 (774.6 ms)
+  Memory (MB):   50.8
+  Resources:    
+    ru_utime:    00:43:38 (2618.4 ms)
+    ru_stime:    00:03:52 (232.5 ms)
+    ru_maxrss:   51968
+    ru_minflt:   30530900
+    ru_majflt:   8
+    ru_inblock:  28179304
+    ru_oublock:  105212728
+    ru_nvcsw:    139903
+    ru_nivcsw:   372763
+  GNU time:     
+    real:        00:12:54 (774.5 ms)
+    user:        00:43:38 (2618.3 ms)
+    sys:         00:03:52 (232.5 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/ERR174310_2.bz2.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                                scalce                                # 
+########################################################################
+>>> scalce (File 1: ERR174310_1.fastq)
+*** 2016-01-05 22:29:56 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 8 ERR174310_1.fastq -o ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce  -r
+    stderr:      ERR174310/log/ERR174310_1.fastq.scalce.8.cmp.log
+  Process PID:   14985
+  Exit code:     0
+  Wall time:     01:11:43 (4303.9 ms)
+  Memory (MB):   5394.1
+  Resources:    
+    ru_utime:    08:28:37 (30517.8 ms)
+    ru_stime:    00:07:07 (427.6 ms)
+    ru_maxrss:   5523516
+    ru_minflt:   263779
+    ru_majflt:   10
+    ru_inblock:  210487376
+    ru_oublock:  248181472
+    ru_nvcsw:    81328
+    ru_nivcsw:   3587523
+  GNU time:     
+    real:        01:11:43 (4303.8 ms)
+    user:        08:28:37 (30517.8 ms)
+    sys:         00:07:07 (427.6 ms)
+  Size (MB):     21,694.33 (22748149935 bytes) (ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_1.scalceq, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_1.scalcen, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_1.scalcer, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_2.scalceq, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_2.scalcen, ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_2.scalcer)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+*** 2016-01-05 23:42:12 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -r -T 8 ERR174310/output/compressed/scalce/ERR174310_1.fastq.scalce_1.scalcer -o ERR174310/output/decompressed/scalce/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.scalce.8.dec.log
+  Process PID:   20084
+  Exit code:     0
+  Wall time:     00:36:24 (2184.0 ms)
+  Memory (MB):   1112.6
+  Resources:    
+    ru_utime:    02:20:01 (8401.9 ms)
+    ru_stime:    00:01:46 (106.2 ms)
+    ru_maxrss:   1139304
+    ru_minflt:   248225
+    ru_majflt:   10
+    ru_inblock:  44492224
+    ru_oublock:  183630624
+    ru_nvcsw:    68196
+    ru_nivcsw:   957335
+  GNU time:     
+    real:        00:36:23 (2183.8 ms)
+    user:        02:20:01 (8401.9 ms)
+    sys:         00:01:46 (106.2 ms)
+  Size (MB):     89,663.37 (94018855814 bytes) (ERR174310/output/decompressed/scalce/ERR174310_1.fastq.fq_1.fastq, ERR174310/output/decompressed/scalce/ERR174310_1.fastq.fq_2.fastq)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single (File 1: ERR174310_1.fastq)
+*** 2016-01-06 00:19:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 8 ERR174310_1.fastq -o ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single 
+    stderr:      ERR174310/log/ERR174310_1.fastq.scalce-single.8.cmp.log
+  Process PID:   24519
+  Exit code:     0
+  Wall time:     00:36:46 (2206.6 ms)
+  Memory (MB):   5335.6
+  Resources:    
+    ru_utime:    04:22:52 (15772.4 ms)
+    ru_stime:    00:03:49 (229.6 ms)
+    ru_maxrss:   5463688
+    ru_minflt:   258436
+    ru_majflt:   10
+    ru_inblock:  105274712
+    ru_oublock:  131163488
+    ru_nvcsw:    6523
+    ru_nivcsw:   2055640
+  GNU time:     
+    real:        00:36:46 (2206.5 ms)
+    user:        04:22:52 (15772.4 ms)
+    sys:         00:03:49 (229.6 ms)
+  Size (MB):     10,327.79 (10829471732 bytes) (ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single_1.scalceq, ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single_1.scalcen, ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single_1.scalcer)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-01-06 00:56:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -T 8 ERR174310/output/compressed/scalce-single/ERR174310_1.fastq.scalce-single_1.scalcer -o ERR174310/output/decompressed/scalce-single/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.scalce-single.8.dec.log
+  Process PID:   26985
+  Exit code:     0
+  Wall time:     00:17:59 (1079.6 ms)
+  Memory (MB):   1104.2
+  Resources:    
+    ru_utime:    01:10:11 (4211.8 ms)
+    ru_stime:    00:00:53 (53.8 ms)
+    ru_maxrss:   1130696
+    ru_minflt:   245753
+    ru_majflt:   10
+    ru_inblock:  21213072
+    ru_oublock:  91815320
+    ru_nvcsw:    30765
+    ru_nivcsw:   483084
+  GNU time:     
+    real:        00:17:59 (1079.5 ms)
+    user:        01:10:11 (4211.8 ms)
+    sys:         00:00:53 (53.8 ms)
+  Size (MB):     44,831.68 (47009427907 bytes) (ERR174310/output/decompressed/scalce-single/ERR174310_1.fastq.fq_1.fastq)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc_1
+*** 2015-12-06 15:38:52 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8   ERR174310_1.fastq ERR174310_1/output/ERR174310_1.dsrc
+  stderr:      ERR174310_1/log/dsrc_1.8.cmp.log
+  Process PID:   8301
+  Exit code:     0
+  Wall time:     00:04:35 (275.7 ms)
+  Memory (MB):   358.8
+  Resources:    
+    ru_utime:    00:24:02 (1442.6 ms)
+    ru_stime:    00:02:00 (120.8 ms)
+    ru_maxrss:   367420
+    ru_minflt:   80504
+    ru_majflt:   8
+    ru_inblock:  105238416
+    ru_oublock:  25808768
+    ru_nvcsw:    245211
+    ru_nivcsw:   311619
+  GNU time:     
+    real:        00:04:35 (275.6 ms)
+    user:        00:24:02 (1442.6 ms)
+    sys:         00:02:00 (120.8 ms)
+  Size (MB):     12,601.91 (13214060181 bytes) (ERR174310_1/output/ERR174310_1.dsrc)
+  Free space:      2.8T  2.3T  505G  82% /local-scratch
+*** 2015-12-06 15:43:52 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 ERR174310_1/output/ERR174310_1.dsrc ERR174310_1/output/decompressed/ERR174310_1.dsrc.fq
+  stderr:      ERR174310_1/log/dsrc_1.8.dec.log
+  Process PID:   8368
+  Exit code:     0
+  Wall time:     00:08:29 (509.3 ms)
+  Memory (MB):   400.2
+  Resources:    
+    ru_utime:    00:16:37 (997.7 ms)
+    ru_stime:    00:01:30 (90.7 ms)
+    ru_maxrss:   409844
+    ru_minflt:   138171
+    ru_majflt:   10
+    ru_inblock:  25834696
+    ru_oublock:  105212688
+    ru_nvcsw:    60798
+    ru_nivcsw:   158655
+  GNU time:     
+    real:        00:08:29 (509.3 ms)
+    user:        00:16:37 (997.6 ms)
+    sys:         00:01:30 (90.6 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_1.dsrc.fq)
+  Free space:      2.8T  2.3T  505G  82% /local-scratch
+
+>>> dsrc_2
+*** 2015-12-06 15:54:45 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8   ERR174310_2.fastq ERR174310_1/output/ERR174310_2.dsrc
+  stderr:      ERR174310_1/log/dsrc_2.8.cmp.log
+  Process PID:   8502
+  Exit code:     0
+  Wall time:     00:05:16 (316.7 ms)
+  Memory (MB):   358.7
+  Resources:    
+    ru_utime:    00:23:37 (1417.1 ms)
+    ru_stime:    00:01:55 (115.8 ms)
+    ru_maxrss:   367280
+    ru_minflt:   55688
+    ru_majflt:   8
+    ru_inblock:  105238656
+    ru_oublock:  24950016
+    ru_nvcsw:    238974
+    ru_nivcsw:   294409
+  GNU time:     
+    real:        00:05:16 (316.6 ms)
+    user:        00:23:37 (1417.1 ms)
+    sys:         00:01:55 (115.8 ms)
+  Size (MB):     12,182.59 (12774367962 bytes) (ERR174310_1/output/ERR174310_2.dsrc)
+  Free space:      2.8T  2.3T  505G  82% /local-scratch
+*** 2015-12-06 16:00:10 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 ERR174310_1/output/ERR174310_2.dsrc ERR174310_1/output/decompressed/ERR174310_2.dsrc.fq
+  stderr:      ERR174310_1/log/dsrc_2.8.dec.log
+  Process PID:   8607
+  Exit code:     0
+  Wall time:     00:10:28 (628.0 ms)
+  Memory (MB):   371.0
+  Resources:    
+    ru_utime:    00:16:05 (965.3 ms)
+    ru_stime:    00:01:30 (90.8 ms)
+    ru_maxrss:   379952
+    ru_minflt:   100831
+    ru_majflt:   10
+    ru_inblock:  24975952
+    ru_oublock:  105212688
+    ru_nvcsw:    59482
+    ru_nivcsw:   153439
+  GNU time:     
+    real:        00:10:27 (627.9 ms)
+    user:        00:16:05 (965.3 ms)
+    sys:         00:01:30 (90.8 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_2.dsrc.fq)
+  Free space:      2.8T  2.3T  505G  82% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2_1
+*** 2015-12-06 16:12:55 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8 -m2  ERR174310_1.fastq ERR174310_1/output/ERR174310_1.dsrc-m2
+  stderr:      ERR174310_1/log/dsrc-m2_1.8.cmp.log
+  Process PID:   8781
+  Exit code:     0
+  Wall time:     00:11:42 (702.7 ms)
+  Memory (MB):   5346.0
+  Resources:    
+    ru_utime:    01:31:00 (5460.9 ms)
+    ru_stime:    00:01:51 (111.6 ms)
+    ru_maxrss:   5474256
+    ru_minflt:   278577
+    ru_majflt:   8
+    ru_inblock:  105238680
+    ru_oublock:  22652344
+    ru_nvcsw:    245271
+    ru_nivcsw:   730486
+  GNU time:     
+    real:        00:11:42 (702.6 ms)
+    user:        01:31:00 (5460.9 ms)
+    sys:         00:01:51 (111.6 ms)
+  Size (MB):     11,060.64 (11597918499 bytes) (ERR174310_1/output/ERR174310_1.dsrc-m2)
+  Free space:      2.8T  2.3T  506G  82% /local-scratch
+*** 2015-12-06 16:24:45 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 ERR174310_1/output/ERR174310_1.dsrc-m2 ERR174310_1/output/decompressed/ERR174310_1.dsrc-m2.fq
+  stderr:      ERR174310_1/log/dsrc-m2_1.8.dec.log
+  Process PID:   8955
+  Exit code:     0
+  Wall time:     00:11:56 (716.3 ms)
+  Memory (MB):   6009.9
+  Resources:    
+    ru_utime:    01:33:56 (5636.0 ms)
+    ru_stime:    00:01:22 (82.1 ms)
+    ru_maxrss:   6154184
+    ru_minflt:   76787
+    ru_majflt:   10
+    ru_inblock:  22678096
+    ru_oublock:  105212688
+    ru_nvcsw:    48184
+    ru_nivcsw:   616950
+  GNU time:     
+    real:        00:11:56 (716.2 ms)
+    user:        01:33:55 (5635.9 ms)
+    sys:         00:01:22 (82.1 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_1.dsrc-m2.fq)
+  Free space:      2.8T  2.3T  506G  82% /local-scratch
+
+>>> dsrc-m2_2
+*** 2015-12-06 16:38:49 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8 -m2  ERR174310_2.fastq ERR174310_1/output/ERR174310_2.dsrc-m2
+  stderr:      ERR174310_1/log/dsrc-m2_2.8.cmp.log
+  Process PID:   9130
+  Exit code:     0
+  Wall time:     00:11:36 (696.7 ms)
+  Memory (MB):   5386.9
+  Resources:    
+    ru_utime:    01:30:42 (5442.1 ms)
+    ru_stime:    00:01:48 (108.2 ms)
+    ru_maxrss:   5516184
+    ru_minflt:   279414
+    ru_majflt:   8
+    ru_inblock:  105238672
+    ru_oublock:  21847952
+    ru_nvcsw:    229494
+    ru_nivcsw:   730215
+  GNU time:     
+    real:        00:11:36 (696.6 ms)
+    user:        01:30:42 (5442.1 ms)
+    sys:         00:01:48 (108.2 ms)
+  Size (MB):     10,667.87 (11186077401 bytes) (ERR174310_1/output/ERR174310_2.dsrc-m2)
+  Free space:      2.8T  2.3T  507G  82% /local-scratch
+*** 2015-12-06 16:50:33 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 ERR174310_1/output/ERR174310_2.dsrc-m2 ERR174310_1/output/decompressed/ERR174310_2.dsrc-m2.fq
+  stderr:      ERR174310_1/log/dsrc-m2_2.8.dec.log
+  Process PID:   9298
+  Exit code:     0
+  Wall time:     00:12:09 (729.0 ms)
+  Memory (MB):   5952.3
+  Resources:    
+    ru_utime:    01:35:04 (5704.4 ms)
+    ru_stime:    00:01:21 (81.3 ms)
+    ru_maxrss:   6095156
+    ru_minflt:   65927
+    ru_majflt:   10
+    ru_inblock:  21873672
+    ru_oublock:  105212688
+    ru_nvcsw:    46524
+    ru_nivcsw:   659354
+  GNU time:     
+    real:        00:12:08 (728.9 ms)
+    user:        01:35:04 (5704.4 ms)
+    sys:         00:01:21 (81.3 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310_1/output/decompressed/ERR174310_2.dsrc-m2.fq)
+  Free space:      2.8T  2.3T  507G  82% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1: ERR174310_1.fastq)
+*** 2016-01-01 12:49:41 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom e 8 'ERR174310_1.fastq' ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom 
+    stderr:      ERR174310/log/ERR174310_1.fastq.orcom.8.cmp.log
+  Process PID:   4606
+  Exit code:     0
+  Wall time:     00:11:51 (711.1 ms)
+  Memory (MB):   2635.3
+  Resources:    
+    ru_utime:    01:23:45 (5025.9 ms)
+    ru_stime:    00:01:49 (109.9 ms)
+    ru_maxrss:   2698536
+    ru_minflt:   199935
+    ru_majflt:   14
+    ru_inblock:  105239448
+    ru_oublock:  13630656
+    ru_nvcsw:    280085
+    ru_nivcsw:   643870
+  GNU time:     
+    real:        00:11:51 (711.0 ms)
+    user:        01:23:45 (5025.9 ms)
+    sys:         00:01:49 (109.9 ms)
+  Size (MB):     1,714.46 (1797746583 bytes) (ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom.cmeta, ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom.cdna)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2016-01-01 13:01:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom d 8 ERR174310/output/compressed/orcom/ERR174310_1.fastq.orcom ERR174310/output/decompressed/orcom/ERR174310_1.fastq.fq
+    stderr:      ERR174310/log/ERR174310_1.fastq.orcom.8.dec.log
+  Process PID:   4774
+  Exit code:     0
+  Wall time:     00:03:54 (234.6 ms)
+  Memory (MB):   4530.8
+  Resources:    
+    ru_utime:    00:12:03 (723.4 ms)
+    ru_stime:    00:00:31 (31.4 ms)
+    ru_maxrss:   4639504
+    ru_minflt:   136020
+    ru_majflt:   12
+    ru_inblock:  3537552
+    ru_oublock:  41353744
+    ru_nvcsw:    12463
+    ru_nivcsw:   83979
+  GNU time:     
+    real:        00:03:54 (234.5 ms)
+    user:        00:12:03 (723.4 ms)
+    sys:         00:00:31 (31.3 ms)
+  Size (MB):     20,192.25 (21173105634 bytes) (ERR174310/output/decompressed/orcom/ERR174310_1.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  40% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath_1
+*** 2015-11-11 08:00:59 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=8 -ref=data/sam/ref/hg19.fa.gz -reads=ERR174310_1.fastq -out=ERR174310_1/output/ERR174310_1.kpath  
+  stderr:      ERR174310_1/log/kpath_1.8.cmp.log
+  Process PID:   4970
+  Exit code:     0
+  Wall time:     06:26:33 (23193.2 ms)
+  Memory (MB):   84725.0
+  Resources:    
+    ru_utime:    12:01:26 (43286.7 ms)
+    ru_stime:    01:28:23 (5303.7 ms)
+    ru_maxrss:   86758444
+    ru_minflt:   12792133
+    ru_majflt:   25
+    ru_inblock:  107072584
+    ru_oublock:  45433488
+    ru_nvcsw:    481110734
+    ru_nivcsw:   8454527
+  GNU time:     
+    real:        06:26:33 (23193.1 ms)
+    user:        12:01:26 (43286.7 ms)
+    sys:         01:28:23 (5303.7 ms)
+  Size (MB):     1,991.68 (2088424431 bytes) (ERR174310_1/output/ERR174310_1.kpath.enc, ERR174310_1/output/ERR174310_1.kpath.flipped, ERR174310_1/output/ERR174310_1.kpath.ns, ERR174310_1/output/ERR174310_1.kpath.bittree, ERR174310_1/output/ERR174310_1.kpath.counts)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2015-11-11 14:27:39 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux decode -p=8 -ref=data/sam/ref/hg19.fa.gz -reads=ERR174310_1/output/ERR174310_1.kpath -out=ERR174310_1/output/ERR174310_1.kpath.fq
+  stderr:      ERR174310_1/log/kpath_1.8.dec.log
+  Process PID:   9409
+  Exit code:     0
+  Wall time:     04:20:54 (15654.2 ms)
+  Memory (MB):   51020.3
+  Resources:    
+    ru_utime:    05:35:00 (20100.7 ms)
+    ru_stime:    00:22:41 (1361.7 ms)
+    ru_maxrss:   52244820
+    ru_minflt:   658428
+    ru_majflt:   25
+    ru_inblock:  5938968
+    ru_oublock:  46001928
+    ru_nvcsw:    155470134
+    ru_nivcsw:   4525646
+  GNU time:     
+    real:        04:20:54 (15654.1 ms)
+    user:        05:35:00 (20100.7 ms)
+    sys:         00:22:41 (1361.7 ms)
+  Size (MB):     22,461.84 (23552948128 bytes) (ERR174310_1/output/ERR174310_1.kpath.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: ERR174310_1.fastq)
+*** 2016-02-19 20:14:12 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e ERR174310_1.fastq ERR174310/output/compressed/leon/ERR174310_1.fastq.leon 8 
+    stderr:      ERR174310/log/ERR174310_1.fastq.leon.8.cmp.log
+  Process PID:   25721
+  Exit code:     0
+  Wall time:     01:23:23 (5003.9 ms)
+  Memory (MB):   3658.4
+  Resources:    
+    ru_utime:    08:12:58 (29578.8 ms)
+    ru_stime:    00:06:48 (408.1 ms)
+    ru_maxrss:   3746216
+    ru_minflt:   494465
+    ru_majflt:   97
+    ru_inblock:  105253576
+    ru_oublock:  132554680
+    ru_nvcsw:    6549272
+    ru_nivcsw:   3548622
+  GNU time:     
+    real:        01:23:23 (5003.8 ms)
+    user:        08:12:58 (29578.8 ms)
+    sys:         00:06:48 (408.0 ms)
+  Size (MB):     13,000.48 (13631994700 bytes) (ERR174310/output/compressed/leon/ERR174310_1.fastq.leon, ERR174310/output/compressed/leon/ERR174310_1.fastq.leon.qual)
+  Free space:      2.8T  1.5T  1.3T  54% /local-scratch
+*** 2016-02-20 13:41:54 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d ERR174310/output/compressed/leon/ERR174310_1.fastq.leon ERR174310/output/decompressed/leon/ERR174310_1.fastq.fq 8
+    stderr:      ERR174310/log/ERR174310_1.fastq.leon.8.dec.log
+  Process PID:   21980
+  Exit code:     0
+  Wall time:     00:40:01 (2401.3 ms)
+  Memory (MB):   2990.9
+  Resources:    
+    ru_utime:    03:22:32 (12152.8 ms)
+    ru_stime:    00:01:24 (84.1 ms)
+    ru_maxrss:   3062636
+    ru_minflt:   75188
+    ru_majflt:   34
+    ru_inblock:  26658520
+    ru_oublock:  105213112
+    ru_nvcsw:    66729
+    ru_nivcsw:   1328780
+  GNU time:     
+    real:        00:40:00 (2400.9 ms)
+    user:        03:22:32 (12152.8 ms)
+    sys:         00:01:24 (84.0 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/leon/ERR174310_1.fastq.fq)
+  Free space:      2.8T  1.5T  1.3T  55% /local-scratch
+
+>>> leon (File 2: ERR174310_2.fastq)
+*** 2016-02-28 03:42:13 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e ERR174310_2.fastq ERR174310/output/compressed/leon/ERR174310_2.fastq.leon 8 
+    stderr:      ERR174310/log/ERR174310_2.fastq.leon.8.cmp.log
+  Process PID:   19483
+  Exit code:     0
+  Wall time:     01:27:47 (5267.2 ms)
+  Memory (MB):   3607.3
+  Resources:    
+    ru_utime:    08:40:50 (31250.2 ms)
+    ru_stime:    00:06:55 (415.5 ms)
+    ru_maxrss:   3693844
+    ru_minflt:   540734
+    ru_majflt:   91
+    ru_inblock:  105255714
+    ru_oublock:  131389152
+    ru_nvcsw:    7084083
+    ru_nivcsw:   3725803
+  GNU time:     
+    real:        01:27:47 (5267.0 ms)
+    user:        08:40:50 (31250.2 ms)
+    sys:         00:06:55 (415.4 ms)
+  Size (MB):     12,573.83 (13184612253 bytes) (ERR174310/output/compressed/leon/ERR174310_2.fastq.leon, ERR174310/output/compressed/leon/ERR174310_2.fastq.leon.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-02-28 05:10:40 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d ERR174310/output/compressed/leon/ERR174310_2.fastq.leon ERR174310/output/decompressed/leon/ERR174310_2.fastq.fq 8
+    stderr:      ERR174310/log/ERR174310_2.fastq.leon.8.dec.log
+  Process PID:   28422
+  Exit code:     0
+  Wall time:     00:39:08 (2348.7 ms)
+  Memory (MB):   2970.3
+  Resources:    
+    ru_utime:    03:23:11 (12191.7 ms)
+    ru_stime:    00:01:26 (86.7 ms)
+    ru_maxrss:   3041628
+    ru_minflt:   75241
+    ru_majflt:   46
+    ru_inblock:  25785561
+    ru_oublock:  105213112
+    ru_nvcsw:    64274
+    ru_nivcsw:   1347019
+  GNU time:     
+    real:        00:39:08 (2348.3 ms)
+    user:        03:23:11 (12191.7 ms)
+    sys:         00:01:26 (86.7 ms)
+  Size (MB):     51,373.37 (53868884409 bytes) (ERR174310/output/decompressed/leon/ERR174310_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+######################################################################## 
+#                                mince                                 # 
+########################################################################
+>>> mince (File 1: ERR174310_1.fastq)
+*** 2016-08-23 01:21:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e ERR174310_1.fastq ERR174310/output/compressed/mince/ERR174310_1.fastq.mince 8  ERR174310_2.fastq
+    stderr:      ERR174310/log/ERR174310_1.fastq.mince.8.cmp.log
+  Process PID:   7585
+  Exit code:     0
+  Wall time:     06:34:31 (23671.7 ms)
+  Memory (MB):   89707.4
+  Resources:    
+    ru_utime:    23:12:27 (169947.0 ms)
+    ru_stime:    01:09:41 (4181.1 ms)
+    ru_maxrss:   91860340
+    ru_minflt:   49827455
+    ru_majflt:   26
+    ru_inblock:  210456200
+    ru_oublock:  12412576
+    ru_nvcsw:    208270250
+    ru_nivcsw:   18429904
+  GNU time:     
+    real:        06:34:31 (23671.3 ms)
+    user:        23:12:27 (169947.0 ms)
+    sys:         01:09:41 (4181.1 ms)
+  Size (MB):     5,777.54 (6058194321 bytes) (ERR174310/output/compressed/mince/ERR174310_1.fastq.mince.seqs.lz, ERR174310/output/compressed/mince/ERR174310_1.fastq.mince.offs.lz, ERR174310/output/compressed/mince/ERR174310_1.fastq.mince.nlocs.lz, ERR174310/output/compressed/mince/ERR174310_1.fastq.mince.flips.lz)
+  Free space:      2.8T  1.9T  870G  69% /local-scratch
+*** 2016-08-23 07:55:55 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d ERR174310/output/compressed/mince/ERR174310_1.fastq.mince ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq 8 
+    stderr:      ERR174310/log/ERR174310_1.fastq.mince.8.dec.log
+  Process PID:   22864
+  Exit code:     0
+  Wall time:     00:21:02 (1262.9 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:28:55 (1735.5 ms)
+    ru_stime:    00:02:54 (174.5 ms)
+    ru_maxrss:   248412
+    ru_minflt:   143626
+    ru_majflt:   30
+    ru_inblock:  11864626
+    ru_oublock:  92866256
+    ru_nvcsw:    2488726
+    ru_nivcsw:   243759
+  GNU time:     
+    real:        00:21:02 (1262.6 ms)
+    user:        00:28:55 (1735.5 ms)
+    sys:         00:02:54 (174.4 ms)
+  Size (MB):     67,583.49 (70866427107 bytes) (ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq.log, ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq.fa, ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq1.fa, ERR174310/output/decompressed/mince/ERR174310_1.fastq.fq2.fa)
+  Free space:      2.8T  1.9T  870G  69% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: ERR174310_1.fastq)
+*** 2016-08-10 09:58:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e ERR174310_1.fastq ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince 8 
+    stderr:      ERR174310/log/ERR174310_1.fastq.mince-single.8.cmp.log
+  Process PID:   14787
+  Exit code:     0
+  Wall time:     03:02:52 (10972.1 ms)
+  Memory (MB):   69341.4
+  Resources:    
+    ru_utime:    20:37:52 (74272.4 ms)
+    ru_stime:    00:39:05 (2345.4 ms)
+    ru_maxrss:   71005604
+    ru_minflt:   42150554
+    ru_majflt:   30
+    ru_inblock:  105244241
+    ru_oublock:  4719296
+    ru_nvcsw:    85257816
+    ru_nivcsw:   8416476
+  GNU time:     
+    real:        03:02:52 (10972.0 ms)
+    user:        20:37:52 (74272.4 ms)
+    sys:         00:39:05 (2345.4 ms)
+  Size (MB):     1,864.60 (1955179400 bytes) (ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince.seqs.lz, ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince.offs.lz, ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince.nlocs.lz, ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince.flips.lz)
+  Free space:      2.8T  1.8T  991G  65% /local-scratch
+*** 2016-08-10 13:01:23 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince ERR174310/output/decompressed/mince-single/ERR174310_1.fastq.fq 8 
+    stderr:      ERR174310/log/ERR174310_1.fastq.mince-single.8.dec.log
+  Process PID:   24668
+  Exit code:     0
+  Wall time:     00:14:23 (863.6 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:13:28 (808.7 ms)
+    ru_stime:    00:05:01 (301.5 ms)
+    ru_maxrss:   248396
+    ru_minflt:   121643
+    ru_majflt:   32
+    ru_inblock:  3850569
+    ru_oublock:  45647608
+    ru_nvcsw:    1217032
+    ru_nivcsw:   130469
+  GNU time:     
+    real:        00:14:23 (863.5 ms)
+    user:        00:13:28 (808.7 ms)
+    sys:         00:05:01 (301.5 ms)
+  Size (MB):     22,263.88 (23345370289 bytes) (ERR174310/output/decompressed/mince-single/ERR174310_1.fastq.fq.log, ERR174310/output/decompressed/mince-single/ERR174310_1.fastq.fq.fa)
+  Free space:      2.8T  1.8T  991G  65% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: ERR174310_1.fastq)
+*** 2016-02-28 06:01:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e ERR174310_1.fastq ERR174310/output/compressed/kic/ERR174310_1.fastq.kic 8 
+    stderr:      ERR174310/log/ERR174310_1.fastq.kic.8.cmp.log
+  Process PID:   3999
+  Exit code:     0
+  Wall time:     14:00:27 (50427.6 ms)
+  Memory (MB):   2160.4
+  Resources:    
+    ru_utime:    09:12:59 (119579.6 ms)
+    ru_stime:    00:54:06 (3246.3 ms)
+    ru_maxrss:   2212248
+    ru_minflt:   207285
+    ru_majflt:   146
+    ru_inblock:  105266288
+    ru_oublock:  25452520
+    ru_nvcsw:    301786512
+    ru_nivcsw:   20847558
+  GNU time:     
+    real:        14:00:27 (50427.5 ms)
+    user:        09:12:59 (119579.6 ms)
+    sys:         00:54:06 (3246.2 ms)
+  Size (MB):     12,403.48 (13005986639 bytes) (ERR174310/output/compressed/kic/ERR174310_1.fastq.kic, ERR174310/output/compressed/kic/ERR174310_1.fastq.kic.qual, ERR174310/output/compressed/kic/ERR174310_1.fastq.kic.seq, ERR174310/output/compressed/kic/ERR174310_1.fastq.kic.name)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-02-28 20:02:01 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d ERR174310/output/compressed/kic/ERR174310_1.fastq.kic ERR174310/output/decompressed/kic/ERR174310_1.fastq.fq 8
+    stderr:      ERR174310/log/ERR174310_1.fastq.kic.8.dec.log
+  Process PID:   24477
+  Exit code:     0
+  Wall time:     00:53:15 (3195.5 ms)
+  Memory (MB):   917.7
+  Resources:    
+    ru_utime:    02:35:19 (9319.8 ms)
+    ru_stime:    00:19:07 (1147.7 ms)
+    ru_maxrss:   939692
+    ru_minflt:   102100
+    ru_majflt:   147
+    ru_inblock:  25455680
+    ru_oublock:  105217024
+    ru_nvcsw:    96966554
+    ru_nivcsw:   1317983
+  GNU time:     
+    real:        00:53:15 (3195.4 ms)
+    user:        02:35:19 (9319.8 ms)
+    sys:         00:19:07 (1147.7 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+>>> kic (File 2: ERR174310_2.fastq)
+*** 2016-02-28 21:06:55 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e ERR174310_2.fastq ERR174310/output/compressed/kic/ERR174310_2.fastq.kic 8 
+    stderr:      ERR174310/log/ERR174310_2.fastq.kic.8.cmp.log
+  Process PID:   29281
+  Exit code:     0
+  Wall time:     13:07:22 (47242.3 ms)
+  Memory (MB):   2063.3
+  Resources:    
+    ru_utime:    08:12:40 (115960.0 ms)
+    ru_stime:    00:54:36 (3276.0 ms)
+    ru_maxrss:   2112844
+    ru_minflt:   179592
+    ru_majflt:   141
+    ru_inblock:  105265888
+    ru_oublock:  24574728
+    ru_nvcsw:    306503397
+    ru_nivcsw:   19933471
+  GNU time:     
+    real:        13:07:22 (47242.2 ms)
+    user:        08:12:40 (115960.0 ms)
+    sys:         00:54:36 (3276.0 ms)
+  Size (MB):     11,963.37 (12544507431 bytes) (ERR174310/output/compressed/kic/ERR174310_2.fastq.kic, ERR174310/output/compressed/kic/ERR174310_2.fastq.kic.name, ERR174310/output/compressed/kic/ERR174310_2.fastq.kic.seq, ERR174310/output/compressed/kic/ERR174310_2.fastq.kic.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-02-29 10:14:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d ERR174310/output/compressed/kic/ERR174310_2.fastq.kic ERR174310/output/decompressed/kic/ERR174310_2.fastq.fq 8
+    stderr:      ERR174310/log/ERR174310_2.fastq.kic.8.dec.log
+  Process PID:   14810
+  Exit code:     0
+  Wall time:     00:49:18 (2958.0 ms)
+  Memory (MB):   899.4
+  Resources:    
+    ru_utime:    02:19:17 (8357.5 ms)
+    ru_stime:    00:18:47 (1127.8 ms)
+    ru_maxrss:   921012
+    ru_minflt:   99684
+    ru_majflt:   152
+    ru_inblock:  24555409
+    ru_oublock:  105216896
+    ru_nvcsw:    98415596
+    ru_nivcsw:   1226903
+  GNU time:     
+    real:        00:49:17 (2957.9 ms)
+    user:        02:19:17 (8357.5 ms)
+    sys:         00:18:47 (1127.8 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+
+Done!

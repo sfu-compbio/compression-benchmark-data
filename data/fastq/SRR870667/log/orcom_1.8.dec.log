@@ -1,0 +1,7 @@
+
+################################################################################
+
+d,8,SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom,SRR870667/output/decompressed/orcom/SRR870667_1.fastq.fq
+
+tools/orcom/bin/orcom_pack d -v -t8 -iSRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom -oSRR870667/output/decompressed/orcom/SRR870667_1.fastq.fq
+

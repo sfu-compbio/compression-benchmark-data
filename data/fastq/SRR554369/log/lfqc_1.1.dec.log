@@ -1,0 +1,102 @@
+tools/lfqc/lfqc/lfqcd.rb:77: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+995.917 seconds (all OK)
+87.139 seconds (all OK)
+
+################################################################################
+
+Work dir SRR554369/output/compressed/lfqc/tmp_db81743345f73aa3344e41de147f6f11_SRR554369_1.fastq.lfqc
+
+Running tar xf SRR554369/output/compressed/lfqc/SRR554369_1.fastq.lfqc -C SRR554369/output/compressed/lfqc/tmp_db81743345f73aa3344e41de147f6f11_SRR554369_1.fastq.lfqc
+
+Unzipping qual file SRR554369/output/compressed/lfqc/tmp_db81743345f73aa3344e41de147f6f11_SRR554369_1.fastq.lfqc/SRR554369_1.fastq_qual_noEOL.zpaq
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq e SRR554369/output/compressed/lfqc/tmp_db81743345f73aa3344e41de147f6f11_SRR554369_1.fastq.lfqc/SRR554369_1.fastq_qual_noEOL.zpaq -threads 4
+
+Unzipping data file SRR554369/output/compressed/lfqc/tmp_db81743345f73aa3344e41de147f6f11_SRR554369_1.fastq.lfqc/SRR554369_1.fastq_data_noEOL.lpaq
+
+Running tools/lfqc/lfqc/../lpaq8/lpaq8 d SRR554369/output/compressed/lfqc/tmp_db81743345f73aa3344e41de147f6f11_SRR554369_1.fastq.lfqc/SRR554369_1.fastq_data_noEOL.lpaq SRR554369/output/compressed/lfqc/tmp_db81743345f73aa3344e41de147f6f11_SRR554369_1.fastq.lfqc/SRR554369_1.fastq_data_noEOL
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+SRR554369/output/compressed/lfqc/tmp_db81743345f73aa3344e41de147f6f11_SRR554369_1.fastq.lfqc/SRR554369_1.fastq_qual_noEOL.zpaq: 17291920 -> 165156400 in 237.300 sec. using 1542 MB memory
+
+1 versions, 1 files, 2378 fragments, 48.450682 MB
+
+Extracting 165.156404 MB in 1 files -threads 4
+
+[1907..2378] -> 31101681
+
+> SRR554369_1.fastq_qual_noEOL
+
+18.83% 1:11:25 [1..899] -> 66994176
+
+59.39% 0:11:20 [900..1906] -> 67066686
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq e SRR554369_1.fastq_name_sep.zpaq -threads 4
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+SRR554369_1.fastq_name_sep.zpaq: 1 versions, 12 files, 272 fragments, 3.624551 MB
+
+Extracting 25.391847 MB in 12 files -threads 4
+
+[1..272] -> 19065194
+
+> 0_rle
+
+> 10_dif
+
+13.01% 0:09:42 > 1_dif
+
+26.02% 0:04:07 > 2_rle
+
+26.02% 0:04:07 > 3_rle
+
+26.02% 0:04:07 > 4_rle
+
+26.02% 0:04:07 > 5_rev
+
+39.03% 0:02:16 > 6_dif
+
+52.04% 0:01:20 > 7_dif
+
+83.62% 0:00:17 > 8_dif
+
+100.00% 0:00:00 > 9_rle
+
+100.00% 0:00:00 > sep
+
+Processing file 0_rle
+
+Processing file 10_dif
+
+Processing file 1_dif
+
+Processing file 2_rle
+
+Processing file 3_rle
+
+Processing file 4_rle
+
+Processing file 5_rev
+
+Processing file 6_dif
+
+Processing file 7_dif
+
+Processing file 8_dif
+
+Processing file 9_rle
+
+Max Column 10
+
+Cleaning up...
+
+Done.
+
+lfqcd SRR554369/output/compressed/lfqc/SRR554369_1.fastq.lfqc  78.910000   1.160000 1162.420000 (1165.191275)
+
+
+
+lfqcdSize SRR554369/output/decompressed/lfqc/SRR554369_1.fastq.fq 445193333 compressed size 69376000
+

@@ -1,0 +1,10 @@
+Reading 9827_2#49.bam.sam, 9827_2#49.bam/output/decompressed/9827_2#49.bam.zam.sam; maxline=5000000
+9827_2#49.bam.sam 9827_2#49.bam/output/decompressed/9827_2#49.bam.zam.sam differ: byte 1, line 1
+> ORIG      56463236 (9827_2#49.bam.sam)
+< COPY      56463236 (9827_2#49.bam/output/decompressed/9827_2#49.bam.zam.sam)
+Comments   not equal
+
+REFNEXT     55357963 lines unequal
+POSNEXT     55357963 lines unequal
+TLEN        54702368 lines unequal
+Done 9827_2#49.bam.sam

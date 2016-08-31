@@ -1,0 +1,7 @@
+Error opening file MH0001_081026_clean_1.fastq.map.txt 2.
+################################################################################
+
+e,MH0001_081026_clean_1.fastq,MH0001_081026_clean/output/compressed/lw-fqzip/MH0001_081026_clean_1.fastq.lz,data/sam/ref/hg19.fa,tools/LWFQZip-v1.02,MH0001_081026_clean/output/compressed/lw-fqzip
+
+./LWFQZip -c -t 1 -i MH0001_081026_clean_1.fastq -r hg19.fa
+

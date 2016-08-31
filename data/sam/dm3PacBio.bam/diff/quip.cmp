@@ -1,0 +1,6 @@
+Reading dm3PacBio.bam.sam, dm3PacBio.bam/output/decompressed/dm3PacBio.bam.qp.sam; maxline=3000000
+> ORIG       1446514 (dm3PacBio.bam.sam)
+< COPY       1446514 (dm3PacBio.bam/output/decompressed/dm3PacBio.bam.qp.sam)
+
+Equal
+Done dm3PacBio.bam.sam

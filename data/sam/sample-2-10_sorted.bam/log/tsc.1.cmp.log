@@ -1,0 +1,173 @@
+
+################################################################################
+
+Compressing: sample-2-10_sorted.bam.sam
+
+Block size: 10000
+
+Compressed 17480371 record(s)
+
+Wrote 1749 block(s)
+
+Took 957728368 us ~= 957.73 s
+
+Nuccodec CR: 2.10%
+
+
+
+samcodec stats:
+
+---------------
+
+Number of records   :     17480371
+
+Number of blocks    :         1749
+
+
+
+SAM file size       :   5923509697 (100.00%)
+
+  QNAME             :    297166307 (  5.02%)
+
+  FLAG              :     26018369 (  0.44%)
+
+  RNAME             :     24043133 (  0.41%)
+
+  POS               :    142957148 (  2.41%)
+
+  MAPQ              :     43572567 (  0.74%)
+
+  CIGAR             :    105819130 (  1.79%)
+
+  RNEXT             :     17480371 (  0.30%)
+
+  PNEXT             :     17480371 (  0.30%)
+
+  TLEN              :     17480371 (  0.30%)
+
+  SEQ               :   1929699062 ( 32.58%)
+
+  QUAL              :   1929699062 ( 32.58%)
+
+  OPT               :   1162328512 ( 19.62%)
+
+  CTRL (\t, \n)     :    209764452 (  3.54%)
+
+  HEAD (SAM header) :          842 (  0.00%)
+
+
+
+Tsc file size       :   1192518344 (100.00%)
+
+  File header       :           35 (  0.00%)
+
+  SAM header        :          850 (  0.00%)
+
+  Block header(s)   :       111936 (  0.01%)
+
+  Aux               :     62621936 (  5.25%)
+
+  Id                :     93060786 (  7.80%)
+
+  Nuc               :     46263708 (  3.88%)
+
+  Pair              :       274507 (  0.02%)
+
+  Qual              :    990184586 ( 83.03%)
+
+
+
+Compression ratios             SAM /          tsc
+
+  Total             :   5923509697 /   1192518344 ( 20.13%)
+
+  Aux               :   1231919448 /     62621936 (  5.08%)
+
+  Id                :    297166307 /     93060786 ( 31.32%)
+
+  Nuc               :   2202518473 /     46263708 (  2.10%)
+
+  Pair              :     52441113 /       274507 (  0.52%)
+
+  Qual              :   1929699062 /    990184586 ( 51.31%)
+
+
+
+Timing
+
+  Total time elapsed:    957728368 us ~=       957.73 s (100.00%)
+
+  Aux               :     56821446 us ~=        56.82 s (  5.93%)
+
+  Id                :     41091212 us ~=        41.09 s (  4.29%)
+
+  Nuc               :    504569921 us ~=       504.57 s ( 52.68%)
+
+  Pair              :      1048446 us ~=         1.05 s (  0.11%)
+
+  Qual              :    309629764 us ~=       309.63 s ( 32.33%)
+
+  Remaining         :     44567579 us ~=        44.57 s (  4.65%)
+
+
+
+Speed (with respect to SAM sizes)
+
+  Total             :         6.18 MB/s
+
+  Aux               :        21.68 MB/s
+
+  Id                :         7.23 MB/s
+
+  Nuc               :         4.37 MB/s
+
+  Pair              :        50.02 MB/s
+
+  Qual              :         6.23 MB/s
+
+
+
+
+
+nuccodec stats:
+
+---------------
+
+mrecords:          339269 (  1.94%)
+
+irecords:           67998 (  0.39%)
+
+precords:        17073111 ( 97.67%)
+
+--
+
+ctrl_sz:           145436 (  0.32%)
+
+rname_sz:           65626 (  0.14%)
+
+pos_sz:            346601 (  0.76%)
+
+seq_sz:           2246992 (  4.91%)
+
+seqlen_sz:         471147 (  1.03%)
+
+exs_sz:           1869148 (  4.08%)
+
+posoff_sz:        1169680 (  2.56%)
+
+stogy_sz:        23229289 ( 50.76%)
+
+inserts_sz:       5975443 ( 13.06%)
+
+modcnt_sz:        2814363 (  6.15%)
+
+modpos_sz:        5792352 ( 12.66%)
+
+modbases_sz:      1332370 (  2.91%)
+
+trail_sz:          777277 (  1.70%)
+
+
+
+Finished: sample-2-10_sorted.bam/output/compressed/tsc/sample-2-10_sorted.bam.sam.tsc
+

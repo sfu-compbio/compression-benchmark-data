@@ -1,0 +1,124 @@
+SCALCE 1 [pthreads; available cores=5]
+Buffer size: 131072K, bucket storage size: 8388608K
+Allocating pool... OK!
+Preprocessing FASTQ files ...
+	Paired end #1, quality offset: 33
+	               read length: 101
+OK
+Using 4 threads...
+	Created temp file 0
+	Created temp file 1
+	Created temp file 2
+	Created temp file 3
+	Done with file ERR174324_1.fastq, 223571196 reads found
+	Created temp file 4
+	Created temp file 5
+	Created temp file 6
+	Created temp file 7
+	Created temp file 8
+	Done with file ERR174325_1.fastq, 215927761 reads found
+	Created temp file 9
+	Created temp file 10
+	Created temp file 11
+	Created temp file 12
+	Done with file ERR174326_1.fastq, 212759388 reads found
+	Created temp file 13
+	Created temp file 14
+	Created temp file 15
+	Created temp file 16
+	Created temp file 17
+	Done with file ERR174327_1.fastq, 211682743 reads found
+	Created temp file 18
+	Created temp file 19
+	Created temp file 20
+	Created temp file 21
+	Done with file ERR174328_1.fastq, 211437919 reads found
+	Created temp file 22
+	Created temp file 23
+	Created temp file 24
+	Created temp file 25
+	Created temp file 26
+	Done with file ERR174329_1.fastq, 211710517 reads found
+	Created temp file 27
+	Created temp file 28
+	Created temp file 29
+	Created temp file 30
+	Done with file ERR174330_1.fastq, 209646017 reads found
+	Created temp file 31
+	Created temp file 32
+	Created temp file 33
+	Created temp file 34
+	Created temp file 35
+	Done with file ERR174331_1.fastq, 221290320 reads found
+	Created temp file 36
+	Created temp file 37
+	Created temp file 38
+	Created temp file 39
+	Done with file ERR174332_1.fastq, 199926151 reads found
+	Created temp file 40
+	Created temp file 41
+	Created temp file 42
+	Created temp file 43
+	Done with file ERR174333_1.fastq, 196779406 reads found
+	Created temp file 44
+	Created temp file 45
+	Created temp file 46
+	Created temp file 47
+	Created temp file 48
+	Done with file ERR174334_1.fastq, 198734315 reads found
+	Created temp file 49
+	Created temp file 50
+	Created temp file 51
+	Created temp file 52
+	Done with file ERR174335_1.fastq, 197606617 reads found
+	Created temp file 53
+	Created temp file 54
+	Created temp file 55
+	Created temp file 56
+	Done with file ERR174336_1.fastq, 200477709 reads found
+	Created temp file 57
+	Created temp file 58
+	Created temp file 59
+	Created temp file 60
+	Done with file ERR174337_1.fastq, 201494060 reads found
+	Created temp file 61
+	Created temp file 62
+	Created temp file 63
+	Created temp file 64
+	Created temp file 65
+	Done with file ERR174338_1.fastq, 200964798 reads found
+	Created temp file 66
+	Created temp file 67
+	Created temp file 68
+	Created temp file 69
+	Done with file ERR174339_1.fastq, 196784117 reads found
+	Created temp file 70
+	Created temp file 71
+	Created temp file 72
+	Done with file ERR174340_1.fastq, 147444746 reads found
+	Created temp file 73
+	Created temp file 74
+	Created temp file 75
+	Created temp file 76
+	Done with file ERR174341_1.fastq, 187135789 reads found
+	Created temp file 77
+Merging results ... 78
+Generating 1 scalce file(s) from temp #78 compression: pigz
+shrink factor for 0: 86
+	Read bit size:    paired end 0 = 0.62
+	Quality bit size: paired end 0 = 2.22
+Cleaning ...
+Statistics:
+	Total number of reads: 3645373569
+	Read length: first end 101
+	Unbucketed reads count: 1587641, bucketed percentage 99.96
+	Lossy percentage: 0
+	Time elapsed:     18:21:43
+	Compression time: 04:04:21
+	Original size: 900117.53M, new size: 144321.37M, compression factor: 6.24
+Done!
+
+################################################################################
+
+Written 4312378 cores
+

@@ -1,0 +1,144 @@
+tools/lfqc/lfqc/CompressionMethod.rb:17: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+
+0.000000 + (512.189659 -> 512.189659 -> 146.739233) = 146.739233 MB
+3316.535 seconds (all OK)
+
+0.000000 + (168.240993 -> 88.763736 -> 16.149071) = 16.149071 MB
+569.153 seconds (all OK)
+
+################################################################################
+
+Current Dir .
+
+Compressing MH0001_081026_clean_1.fastq
+
+Work dir tmp_c3b95747bf8982acc50652844bbde953_MH0001_081026_clean_1.fastq
+
+Splitting fastq...
+
+Processing names...
+
+Compressing qual...
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq a MH0001_081026_clean_1.fastq_qual_noEOL.zpaq MH0001_081026_clean_1.fastq_qual_noEOL -method 5 -threads 4
+
+Compressing data...
+
+Running tools/lfqc/lfqc/../lpaq8/lpaq8 9 MH0001_081026_clean_1.fastq_data_noEOL  MH0001_081026_clean_1.fastq_data_noEOL.lpaq
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+Adding 512.189659 MB in 1 files -method 56 -threads 4 at 2016-02-20 09:45:59.
+
+13.10% 0:00:18 [1..990] 67098160 -method 56,216,0
+
+26.21% 0:00:19 [991..1944] 66982031 -method 56,218,0
+
+39.29% 0:00:19 [1945..2902] 66677465 -method 56,220,0
+
+52.30% 0:00:17 [2903..3855] 67051952 -method 56,223,0
+
+65.40% 0:00:14 [3856..4784] 67001496 -method 56,221,0
+
+78.48% 0:00:09 [4785..5672] 67076882 -method 56,220,0
+
+91.57% 0:00:03 [5673..6609] 66693648 -method 56,219,0
+
+100.00% 0:00:00 + MH0001_081026_clean_1.fastq_qual_noEOL 512189659
+
+100.00% 0:00:00 [6610..7239] 43637045 -method 56,216,0
+
+1 +added, 0 -removed.
+
+File matching [0-9]*: 0
+
+Transformed name for 0 = 0_rle
+
+File matching [0-9]*: 1
+
+Transformed name for 1 = 1_rev
+
+File matching [0-9]*: 2
+
+Transformed name for 2 = 2_rle
+
+File matching [0-9]*: 3
+
+Transformed name for 3 = 3_rev
+
+File matching [0-9]*: 4
+
+Transformed name for 4 = 4_dif
+
+File matching [0-9]*: 5
+
+Transformed name for 5 = 5_dif
+
+File matching [0-9]*: 6
+
+Transformed name for 6 = 6_rev
+
+File matching [0-9]*: 7
+
+Transformed name for 7 = 7_rev
+
+Qual compression time 341.970000   4.880000 2699.510000 (3317.911509)
+
+
+
+Compressing names...
+
+Running tools/lfqc/lfqc/../zpaq702/zpaq a tmp_c3b95747bf8982acc50652844bbde953_MH0001_081026_clean_1.fastq/MH0001_081026_clean_1.fastq_name_sep.zpaq 0_rle 1_rev 2_rle 3_rev 4_dif 5_dif 6_rev 7_rev sep -method 5 -threads 4
+
+512189656 -> 103209934 in 789.680 sec. using 1542 MB memory
+
+zpaq v7.02 journaling archiver, compiled Aug 19 2015
+
+Adding 168.240993 MB in 9 files -method 56 -threads 4 at 2016-02-20 10:41:16.
+
+30.81% 0:00:03 + 6_rev 51833813
+
+30.86% 0:00:03 [1..755] 51836841 -method 56,246,0
+
+44.65% 0:00:03 + 5_dif 23281744
+
+58.49% 0:00:02 + 1_rev 23281348 -> 31054
+
+72.32% 0:00:01 + 3_rev 23281348 -> 81722
+
+86.16% 0:00:00 + 4_dif 23281348 -> 13535359
+
+100.00% 0:00:00 + 7_rev 23281348 -> 0
+
+100.00% 0:00:00 + 0_rle 15
+
+100.00% 0:00:00 + 2_rle 21
+
+100.00% 0:00:00 + sep 8
+
+100.00% 0:00:00 [756..1182] 36931639 -method 56,254,0
+
+9 +added, 0 -removed.
+
+Data compression time 341.970000   4.880000 3489.330000 (3784.412537)
+
+
+
+Name compression time   0.000000   0.000000 1185.010000 (569.293868)
+
+
+
+Bundling all to MH0001_081026_clean_1.fastq.lfqc...
+
+Running tar cf MH0001_081026_clean_1.fastq.lfqc MH0001_081026_clean_1.fastq_name_sep.zpaq MH0001_081026_clean_1.fastq_data_noEOL.lpaq MH0001_081026_clean_1.fastq_qual_noEOL.zpaq
+
+Clean up...
+
+Done.
+
+lfqc MH0001_081026_clean_1.fastq 380.880000   7.680000 3927.070000 (3943.892050)
+
+
+
+lfqcSize MH0001_081026_clean_1.fastq 266106880 uncompressed size 1880433138
+

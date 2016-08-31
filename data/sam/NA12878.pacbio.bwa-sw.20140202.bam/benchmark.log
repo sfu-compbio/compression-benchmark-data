@@ -1,0 +1,1779 @@
+Namespace(force=False, log='benchmark.log', ref='data/sam/ref/hs37d5.fa', sam='NA12878.pacbio.bwa-sw.20140202.bam.sam')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++          NA12878.pacbio.bwa-sw.20140202.bam with 1 threads           + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -p 1
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.gz
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/pigz.1.cmp.log
+  Process PID:   14415
+  Exit code:     0
+  Wall time:     07:14:19 (26059.9 ms)
+  Memory (MB):   5.6
+  Resources:    
+    ru_utime:    07:07:39 (25659.0 ms)
+    ru_stime:    00:03:30 (210.5 ms)
+    ru_maxrss:   5776
+    ru_minflt:   1005
+    ru_majflt:   7
+    ru_inblock:  247160544
+    ru_oublock:  103353984
+    ru_nvcsw:    3811
+    ru_nivcsw:   6
+  GNU time:     
+    real:        07:14:19 (26059.7 ms)
+    user:        07:07:39 (25659.0 ms)
+    sys:         00:03:30 (210.5 ms)
+  Size (MB):     50,462.74 (52914017618 bytes)
+  Free space:     
+                      2.8T  632G  2.2T  23% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.gz
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.gz.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/pigz.1.dec.log
+  Process PID:   25592
+  Exit code:     0
+  Wall time:     00:38:37 (2317.0 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:22:57 (1377.5 ms)
+    ru_stime:    00:03:14 (194.4 ms)
+    ru_maxrss:   5788
+    ru_minflt:   863
+    ru_majflt:   7
+    ru_inblock:  103350824
+    ru_oublock:  247157712
+    ru_nvcsw:    25229
+    ru_nivcsw:   7
+  GNU time:     
+    real:        00:38:36 (2316.9 ms)
+    user:        00:22:57 (1377.5 ms)
+    sys:         00:03:14 (194.4 ms)
+  Size (MB):     120,682.47 (126544741664 bytes)
+  Free space:     
+                      2.8T  750G  2.0T  27% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -p1
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.bz2
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/pbzip2.1.cmp.log
+  Process PID:   27518
+  Exit code:     0
+  Wall time:     04:56:56 (17816.7 ms)
+  Memory (MB):   12.0
+  Resources:    
+    ru_utime:    04:40:54 (16854.4 ms)
+    ru_stime:    00:09:57 (597.9 ms)
+    ru_maxrss:   12320
+    ru_minflt:   68898392
+    ru_majflt:   8
+    ru_inblock:  247184456
+    ru_oublock:  84237608
+    ru_nvcsw:    786897
+    ru_nivcsw:   8
+  GNU time:     
+    real:        04:56:56 (17816.7 ms)
+    user:        04:40:54 (16854.4 ms)
+    sys:         00:09:57 (597.9 ms)
+  Size (MB):     41,129.65 (43127561028 bytes)
+  Free space:     
+                      2.8T  623G  2.2T  23% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.bz2
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.bz2.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/pbzip2.1.dec.log
+  Process PID:   2974
+  Exit code:     0
+  Wall time:     03:36:14 (12974.5 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    03:26:31 (12391.0 ms)
+    ru_stime:    00:05:22 (322.9 ms)
+    ru_maxrss:   5816
+    ru_minflt:   1795
+    ru_majflt:   8
+    ru_inblock:  84259688
+    ru_oublock:  247157712
+    ru_nvcsw:    5589
+    ru_nivcsw:   9
+  GNU time:     
+    real:        03:36:14 (12974.4 ms)
+    user:        03:26:31 (12391.0 ms)
+    sys:         00:05:22 (322.9 ms)
+  Size (MB):     120,682.47 (126544741664 bytes)
+  Free space:     
+                      2.8T  741G  2.1T  27% /local-scratch
+
+######################################################################## 
+#                               samtools                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -b NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.bam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/samtools.1.cmp.log
+  Process PID:   9941
+  Exit code:     0
+  Wall time:     05:17:30 (19050.6 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    05:05:46 (18346.4 ms)
+    ru_stime:    00:08:04 (484.0 ms)
+    ru_maxrss:   5808
+    ru_minflt:   60307770
+    ru_majflt:   7
+    ru_inblock:  247171432
+    ru_oublock:  111507816
+    ru_nvcsw:    4534
+    ru_nivcsw:   55
+  GNU time:     
+    real:        05:17:30 (19050.5 ms)
+    user:        05:05:46 (18346.4 ms)
+    sys:         00:08:04 (484.0 ms)
+  Size (MB):     54,444.80 (57089510428 bytes)
+  Free space:     
+                      2.8T  636G  2.2T  23% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/samtools/samtools view -h NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.bam -o NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.bam.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/samtools.1.dec.log
+  Process PID:   17911
+  Exit code:     0
+  Wall time:     00:54:54 (3294.2 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:39:55 (2395.8 ms)
+    ru_stime:    00:04:29 (269.1 ms)
+    ru_maxrss:   5808
+    ru_minflt:   946
+    ru_majflt:   10
+    ru_inblock:  111516984
+    ru_oublock:  247159536
+    ru_nvcsw:    19715
+    ru_nivcsw:   50
+  GNU time:     
+    real:        00:54:54 (3294.1 ms)
+    user:        00:39:55 (2395.8 ms)
+    sys:         00:04:29 (269.0 ms)
+  Size (MB):     120,682.47 (126544741664 bytes)
+  Free space:     
+                      2.8T  754G  2.0T  27% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 1 -r data/sam/ref/hs37d5.fa NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.scramble.cram
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/scramble.1.cmp.log
+  Process PID:   29764
+  Exit code:     0
+  Wall time:     01:36:57 (5817.0 ms)
+  Memory (MB):   2594.7
+  Resources:    
+    ru_utime:    01:25:16 (5116.3 ms)
+    ru_stime:    00:04:32 (272.1 ms)
+    ru_maxrss:   2656968
+    ru_minflt:   22358605
+    ru_majflt:   38
+    ru_inblock:  253314384
+    ru_oublock:  67238480
+    ru_nvcsw:    497084
+    ru_nivcsw:   8
+  GNU time:     
+    real:        01:36:56 (5816.8 ms)
+    user:        01:25:16 (5116.3 ms)
+    sys:         00:04:32 (272.1 ms)
+  Size (MB):     32,830.64 (34425423672 bytes)
+  Free space:     
+                      2.8T  1.3T  1.6T  45% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 1 -r data/sam/ref/hs37d5.fa NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.scramble.cram NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.scramble.cram.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/scramble.1.dec.log
+  Process PID:   30837
+  Exit code:     0
+  Wall time:     00:46:01 (2761.9 ms)
+  Memory (MB):   454.3
+  Resources:    
+    ru_utime:    00:35:35 (2135.3 ms)
+    ru_stime:    00:03:11 (191.9 ms)
+    ru_maxrss:   465156
+    ru_minflt:   2186490
+    ru_majflt:   38
+    ru_inblock:  73393352
+    ru_oublock:  246732392
+    ru_nvcsw:    149252
+    ru_nivcsw:   4
+  GNU time:     
+    real:        00:46:01 (2761.8 ms)
+    user:        00:35:35 (2135.3 ms)
+    sys:         00:03:11 (191.9 ms)
+  Size (MB):     120,474.80 (126326980334 bytes)
+  Free space:     
+                      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I sam -O cram -t 1 NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.scramble-noref.cram
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/scramble-noref.1.cmp.log
+  Process PID:   31641
+  Exit code:     0
+  Wall time:     02:26:14 (8774.2 ms)
+  Memory (MB):   2250.5
+  Resources:    
+    ru_utime:    02:11:17 (7877.8 ms)
+    ru_stime:    00:06:20 (380.9 ms)
+    ru_maxrss:   2304504
+    ru_minflt:   33908999
+    ru_majflt:   38
+    ru_inblock:  247166776
+    ru_oublock:  87586888
+    ru_nvcsw:    486249
+    ru_nivcsw:   8
+  GNU time:     
+    real:        02:26:14 (8774.1 ms)
+    user:        02:11:17 (7877.8 ms)
+    sys:         00:06:20 (380.9 ms)
+  Size (MB):     42,766.06 (44843462244 bytes)
+  Free space:     
+                      2.8T  1.3T  1.6T  45% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -x -I cram -O sam -t 1 NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.scramble-noref.cram NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.scramble-noref.cram.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/scramble-noref.1.dec.log
+  Process PID:   920
+  Exit code:     0
+  Wall time:     01:24:42 (5082.1 ms)
+  Memory (MB):   77.7
+  Resources:    
+    ru_utime:    01:11:04 (4264.5 ms)
+    ru_stime:    00:06:31 (391.4 ms)
+    ru_maxrss:   79580
+    ru_minflt:   25537925
+    ru_majflt:   38
+    ru_inblock:  87593784
+    ru_oublock:  247157712
+    ru_nvcsw:    175967
+    ru_nivcsw:   10
+  GNU time:     
+    real:        01:24:42 (5082.1 ms)
+    user:        01:11:04 (4264.4 ms)
+    sys:         00:06:31 (391.4 ms)
+  Size (MB):     120,682.47 (126544742867 bytes)
+  Free space:     
+                      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -7 -I sam -O cram -t 1 -r data/sam/ref/hs37d5.fa NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.scramble-bz2.cram
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/scramble-bzip2.1.cmp.log
+  Process PID:   2567
+  Exit code:     0
+  Wall time:     02:31:22 (9082.0 ms)
+  Memory (MB):   2596.9
+  Resources:    
+    ru_utime:    02:17:59 (8279.3 ms)
+    ru_stime:    00:05:01 (301.3 ms)
+    ru_maxrss:   2659196
+    ru_minflt:   31363412
+    ru_majflt:   40
+    ru_inblock:  253323648
+    ru_oublock:  66254832
+    ru_nvcsw:    499421
+    ru_nivcsw:   36
+  GNU time:     
+    real:        02:31:21 (9081.9 ms)
+    user:        02:17:59 (8279.3 ms)
+    sys:         00:05:01 (301.3 ms)
+  Size (MB):     32,349.96 (33921390779 bytes)
+  Free space:     
+                      2.8T  1.3T  1.6T  45% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/io_lib-1.14.6/progs/scramble -j -I cram -O sam -t 1 -r data/sam/ref/hs37d5.fa NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.scramble-bz2.cram NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.scramble-bz2.cram.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/scramble-bzip2.1.dec.log
+  Process PID:   4525
+  Exit code:     0
+  Wall time:     01:29:35 (5375.5 ms)
+  Memory (MB):   454.2
+  Resources:    
+    ru_utime:    01:17:48 (4668.2 ms)
+    ru_stime:    00:03:48 (228.9 ms)
+    ru_maxrss:   465136
+    ru_minflt:   2236838
+    ru_majflt:   40
+    ru_inblock:  72418368
+    ru_oublock:  246732392
+    ru_nvcsw:    146671
+    ru_nivcsw:   35
+  GNU time:     
+    real:        01:29:35 (5375.4 ms)
+    user:        01:17:48 (4668.1 ms)
+    sys:         00:03:48 (228.9 ms)
+  Size (MB):     120,474.80 (126326980376 bytes)
+  Free space:     
+                      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 1 NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.sambamba.bam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/sambamba.1.cmp.log
+  Process PID:   28517
+  Exit code:     0
+  Wall time:     04:55:52 (17752.0 ms)
+  Memory (MB):   12.4
+  Resources:    
+    ru_utime:    04:46:08 (17168.8 ms)
+    ru_stime:    00:08:12 (492.8 ms)
+    ru_maxrss:   12668
+    ru_minflt:   64053185
+    ru_majflt:   25
+    ru_inblock:  247164968
+    ru_oublock:  111537936
+    ru_nvcsw:    12417
+    ru_nivcsw:   11
+  GNU time:     
+    real:        04:55:51 (17751.7 ms)
+    user:        04:46:08 (17168.8 ms)
+    sys:         00:08:12 (492.7 ms)
+  Size (MB):     54,444.80 (57089510401 bytes)
+  Free space:     
+                      2.8T  636G  2.2T  23% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sambamba/sambamba_v0.5.8 view -h -t 1 NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.sambamba.bam -o NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.sambamba.bam.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/sambamba.1.dec.log
+  Process PID:   3866
+  Exit code:     0
+  Wall time:     01:01:15 (3675.2 ms)
+  Memory (MB):   76.5
+  Resources:    
+    ru_utime:    00:49:46 (2986.5 ms)
+    ru_stime:    00:04:28 (268.3 ms)
+    ru_maxrss:   78336
+    ru_minflt:   6431
+    ru_majflt:   19
+    ru_inblock:  111509664
+    ru_oublock:  247157712
+    ru_nvcsw:    43759
+    ru_nivcsw:   6
+  GNU time:     
+    real:        01:01:15 (3675.1 ms)
+    user:        00:49:46 (2986.5 ms)
+    sys:         00:04:28 (268.3 ms)
+  Size (MB):     120,682.47 (126544741656 bytes)
+  Free space:     
+                      2.8T  754G  2.0T  27% /local-scratch
+
+######################################################################## 
+#                               sam_comp                               # 
+########################################################################
+>>> sam_comp (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-01-20 12:44:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -r data/sam/ref/hs37d5.fa.sc 
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sam_comp/NA12878.pacbio.bwa-sw.20140202.bam.sam.zam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam_comp.1.cmp.log
+  Process PID:   2403
+  Exit code:     0
+  Wall time:     03:06:50 (11210.7 ms)
+  Memory (MB):   700.6
+  Resources:    
+    ru_utime:    02:57:15 (10635.6 ms)
+    ru_stime:    00:04:11 (251.5 ms)
+    ru_maxrss:   717424
+    ru_minflt:   11142
+    ru_majflt:   6
+    ru_inblock:  253330840
+    ru_oublock:  63808144
+    ru_nvcsw:    4962
+    ru_nivcsw:   8
+  GNU time:     
+    real:        03:06:49 (11209.8 ms)
+    user:        02:57:15 (10635.6 ms)
+    sys:         00:04:11 (251.4 ms)
+  Size (MB):     31,156.22 (32669666680 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sam_comp/NA12878.pacbio.bwa-sw.20140202.bam.sam.zam)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2016-01-20 15:51:43 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/sam_comp-0.10/sam_comp -d -r data/sam/ref/hs37d5.fa.sc
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sam_comp/NA12878.pacbio.bwa-sw.20140202.bam.sam.zam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/sam_comp/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam_comp.1.dec.log
+  Process PID:   4739
+  Exit code:     0
+  Wall time:     04:57:41 (17861.3 ms)
+  Memory (MB):   699.6
+  Resources:    
+    ru_utime:    04:40:57 (16857.4 ms)
+    ru_stime:    00:05:19 (319.7 ms)
+    ru_maxrss:   716388
+    ru_minflt:   8893
+    ru_majflt:   8
+    ru_inblock:  69981504
+    ru_oublock:  203530552
+    ru_nvcsw:    5839
+    ru_nivcsw:   10
+  GNU time:     
+    real:        04:57:40 (17860.9 ms)
+    user:        04:40:57 (16857.4 ms)
+    sys:         00:05:19 (319.6 ms)
+  Size (MB):     99,380.05 (104207539530 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/sam_comp/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.8T  954G  66% /local-scratch
+
+######################################################################## 
+#                                 tsc                                  # 
+########################################################################
+>>> tsc (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-01-22 11:38:04 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.4/src/tsc -f -s -o NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/tsc/NA12878.pacbio.bwa-sw.20140202.bam.sam.tsc NA12878.pacbio.bwa-sw.20140202.bam.sam 
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.tsc.1.cmp.log
+  Process PID:   9708
+  Exit code:     0
+  Wall time:     07:44:43 (27883.9 ms)
+  Memory (MB):   131.6
+  Resources:    
+    ru_utime:    07:35:11 (27311.9 ms)
+    ru_stime:    00:05:42 (342.0 ms)
+    ru_maxrss:   134788
+    ru_minflt:   26528805
+    ru_majflt:   6
+    ru_inblock:  247160281
+    ru_oublock:  88785872
+    ru_nvcsw:    9779
+    ru_nivcsw:   8
+  GNU time:     
+    real:        07:44:43 (27883.7 ms)
+    user:        07:35:11 (27311.9 ms)
+    sys:         00:05:42 (342.0 ms)
+  Size (MB):     43,346.59 (45452190105 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/tsc/NA12878.pacbio.bwa-sw.20140202.bam.sam.tsc, NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/tsc/NA12878.pacbio.bwa-sw.20140202.bam.sam.tsc.nuc.log)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2016-01-22 19:23:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/tsc-1.4/src/tsc -f -s -d -o NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/tsc/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/tsc/NA12878.pacbio.bwa-sw.20140202.bam.sam.tsc
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.tsc.1.dec.log
+  Process PID:   15168
+  Exit code:     0
+  Wall time:     05:53:03 (21183.7 ms)
+  Memory (MB):   108.6
+  Resources:    
+    ru_utime:    05:37:28 (20248.2 ms)
+    ru_stime:    00:08:10 (490.6 ms)
+    ru_maxrss:   111168
+    ru_minflt:   12259607
+    ru_majflt:   6
+    ru_inblock:  88776120
+    ru_oublock:  247157720
+    ru_nvcsw:    194907
+    ru_nivcsw:   8
+  GNU time:     
+    real:        05:53:03 (21183.3 ms)
+    user:        05:37:28 (20248.2 ms)
+    sys:         00:08:10 (490.6 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/tsc/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.9T  921G  68% /local-scratch
+
+######################################################################## 
+#                                 cbc                                  # 
+########################################################################
+*** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/cbc/simulations/main.run NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.cbc
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/cbc.1.cmp.log
+  Process PID:   6180
+  Exit code:     2816
+  Wall time:     00:00:00 (0.1 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   5816
+    ru_minflt:   835
+    ru_majflt:   6
+    ru_inblock:  10520
+    ru_oublock:  8
+    ru_nvcsw:    72
+    ru_nivcsw:   41
+  GNU time:     
+    real:        00:00:00 (0.1 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     ?
+  Free space:     
+                      2.8T  583G  2.2T  21% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.qp
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/quip.1.cmp.log
+  Process PID:   4405
+  Exit code:     0
+  Wall time:     03:34:02 (12842.4 ms)
+  Memory (MB):   905.6
+  Resources:    
+    ru_utime:    03:27:34 (12454.5 ms)
+    ru_stime:    00:03:08 (188.0 ms)
+    ru_maxrss:   927364
+    ru_minflt:   154198
+    ru_majflt:   16
+    ru_inblock:  247161896
+    ru_oublock:  83290344
+    ru_nvcsw:    24032
+    ru_nivcsw:   7
+  GNU time:     
+    real:        03:34:02 (12842.2 ms)
+    user:        03:27:34 (12454.5 ms)
+    sys:         00:03:07 (187.9 ms)
+  Size (MB):     40,666.50 (42641915012 bytes)
+  Free space:     
+                      2.8T  1.8T  1.1T  64% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -d -o sam NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.qp
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.qp.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/quip.1.dec.log
+  Process PID:   27481
+  Exit code:     0
+  Wall time:     09:01:48 (32508.4 ms)
+  Memory (MB):   792.4
+  Resources:    
+    ru_utime:    08:51:00 (31860.6 ms)
+    ru_stime:    00:06:40 (400.3 ms)
+    ru_maxrss:   811424
+    ru_minflt:   127394
+    ru_majflt:   16
+    ru_inblock:  83289216
+    ru_oublock:  247157712
+    ru_nvcsw:    193017
+    ru_nivcsw:   8
+  GNU time:     
+    real:        09:01:48 (32508.3 ms)
+    user:        08:51:00 (31860.6 ms)
+    sys:         00:06:40 (400.3 ms)
+  Size (MB):     120,682.47 (126544741664 bytes)
+  Free space:     
+                      2.8T  1.9T  912G  68% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+*** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -c -v -r data/sam/ref/hs37d5.fa NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.ref.qp
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/quip-ref.1.cmp.log
+  Process PID:   22943
+  Exit code:     256
+  Wall time:     00:17:31 (1051.9 ms)
+  Memory (MB):   1803.2
+  Resources:    
+    ru_utime:    00:17:00 (1020.2 ms)
+    ru_stime:    00:00:15 (15.6 ms)
+    ru_maxrss:   1846440
+    ru_minflt:   170343
+    ru_majflt:   16
+    ru_inblock:  25757888
+    ru_oublock:  5902392
+    ru_nvcsw:    2122
+    ru_nivcsw:   11
+  GNU time:     
+    real:        00:17:31 (1051.8 ms)
+    user:        00:17:00 (1020.1 ms)
+    sys:         00:00:15 (15.6 ms)
+  Size (MB):     2,881.81 (3021794054 bytes)
+  Free space:     
+                      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -a -v -c NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.asm.qp
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/quip-asm.1.cmp.log
+  Process PID:   24952
+  Exit code:     0
+  Wall time:     07:16:40 (26200.7 ms)
+  Memory (MB):   6971.7
+  Resources:    
+    ru_utime:    07:10:38 (25838.2 ms)
+    ru_stime:    00:03:11 (191.0 ms)
+    ru_maxrss:   7139008
+    ru_minflt:   445512
+    ru_majflt:   16
+    ru_inblock:  247162184
+    ru_oublock:  83296408
+    ru_nvcsw:    21584
+    ru_nivcsw:   8
+  GNU time:     
+    real:        07:16:40 (26200.6 ms)
+    user:        07:10:38 (25838.2 ms)
+    sys:         00:03:11 (191.0 ms)
+  Size (MB):     40,668.09 (42643578314 bytes)
+  Free space:     
+                      2.8T  1.8T  1.1T  64% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/quip/bin/quip -a -v -c -d -o sam NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.asm.qp
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.asm.qp.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/quip-asm.1.dec.log
+  Process PID:   18467
+  Exit code:     0
+  Wall time:     10:26:31 (37591.5 ms)
+  Memory (MB):   5672.6
+  Resources:    
+    ru_utime:    10:15:42 (36942.9 ms)
+    ru_stime:    00:06:43 (403.9 ms)
+    ru_maxrss:   5808736
+    ru_minflt:   135059
+    ru_majflt:   16
+    ru_inblock:  83292480
+    ru_oublock:  247157728
+    ru_nvcsw:    197547
+    ru_nivcsw:   7
+  GNU time:     
+    real:        10:26:31 (37591.4 ms)
+    user:        10:15:42 (36942.9 ms)
+    sys:         00:06:43 (403.9 ms)
+  Size (MB):     120,682.47 (126544741664 bytes)
+  Free space:     
+                      2.8T  1.9T  909G  68% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-01-20 21:11:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz 
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez.1.cmp.log
+  Process PID:   8530
+  Exit code:     0
+  Wall time:     03:24:11 (12251.7 ms)
+  Memory (MB):   3394.1
+  Resources:    
+    ru_utime:    03:11:30 (11490.7 ms)
+    ru_stime:    00:07:01 (421.1 ms)
+    ru_maxrss:   3475576
+    ru_minflt:   5694139
+    ru_majflt:   43
+    ru_inblock:  253338104
+    ru_oublock:  67658432
+    ru_nvcsw:    42330
+    ru_nivcsw:   10
+  GNU time:     
+    real:        03:24:11 (12251.6 ms)
+    user:        03:11:30 (11490.7 ms)
+    sys:         00:07:01 (421.1 ms)
+  Size (MB):     33,034.45 (34639131373 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2016-01-21 00:35:31 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz -o NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez.1.dec.log
+  Process PID:   11932
+  Exit code:     0
+  Wall time:     01:41:55 (6115.7 ms)
+  Memory (MB):   7683.4
+  Resources:    
+    ru_utime:    01:25:48 (5148.4 ms)
+    ru_stime:    00:04:48 (288.4 ms)
+    ru_maxrss:   7867828
+    ru_minflt:   1476019
+    ru_majflt:   42
+    ru_inblock:  73835488
+    ru_oublock:  247159104
+    ru_nvcsw:    147683
+    ru_nivcsw:   11
+  GNU time:     
+    real:        01:41:55 (6115.2 ms)
+    user:        01:25:48 (5148.4 ms)
+    sys:         00:04:48 (288.3 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.9T  931G  67% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-01-21 02:43:28 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz -q1 -b
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez-qual.1.cmp.log
+  Process PID:   13881
+  Exit code:     0
+  Wall time:     06:26:06 (23166.1 ms)
+  Memory (MB):   3871.7
+  Resources:    
+    ru_utime:    06:16:25 (22585.1 ms)
+    ru_stime:    00:07:33 (453.0 ms)
+    ru_maxrss:   3964652
+    ru_minflt:   6655726
+    ru_majflt:   43
+    ru_inblock:  253338592
+    ru_oublock:  66745664
+    ru_nvcsw:    37964
+    ru_nivcsw:   9
+  GNU time:     
+    real:        06:26:05 (23165.9 ms)
+    user:        06:16:25 (22585.1 ms)
+    sys:         00:07:33 (453.0 ms)
+  Size (MB):     32,588.69 (34171720845 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2016-01-21 09:09:52 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 tools/deez/dz/deez -t 1 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz -o NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez-qual.1.dec.log
+  Process PID:   19216
+  Exit code:     0
+  Wall time:     06:06:00 (21960.6 ms)
+  Memory (MB):   8210.0
+  Resources:    
+    ru_utime:    05:58:19 (21499.0 ms)
+    ru_stime:    00:06:05 (365.4 ms)
+    ru_maxrss:   8406996
+    ru_minflt:   1649436
+    ru_majflt:   42
+    ru_inblock:  72922856
+    ru_oublock:  247159824
+    ru_nvcsw:    137173
+    ru_nivcsw:   12
+  GNU time:     
+    real:        06:06:00 (21960.4 ms)
+    user:        05:58:19 (21499.0 ms)
+    sys:         00:06:05 (365.4 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.9T  932G  67% /local-scratch
+
+######################################################################## 
+#                                picard                                # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=NA12878.pacbio.bwa-sw.20140202.bam.sam O=NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.picard.bam VALIDATION_STRINGENCY=SILENT
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/picard.1.cmp.log
+  Process PID:   5821
+  Exit code:     0
+  Wall time:     02:54:55 (10495.1 ms)
+  Memory (MB):   624.4
+  Resources:    
+    ru_utime:    02:47:21 (10041.1 ms)
+    ru_stime:    00:03:17 (197.8 ms)
+    ru_maxrss:   639416
+    ru_minflt:   28905
+    ru_majflt:   130
+    ru_inblock:  247243928
+    ru_oublock:  111963592
+    ru_nvcsw:    359151
+    ru_nivcsw:   1604244
+  GNU time:     
+    real:        02:54:55 (10495.0 ms)
+    user:        02:47:21 (10041.1 ms)
+    sys:         00:03:17 (197.7 ms)
+  Size (MB):     54,660.81 (57316014206 bytes)
+  Free space:     
+                      2.8T  1.3T  1.6T  45% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/picard-tools-1.138/picard.jar SamFormatConverter I=NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.picard.bam O=NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.picard.bam.sam VALIDATION_STRINGENCY=SILENT
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/picard.1.dec.log
+  Process PID:   7701
+  Exit code:     0
+  Wall time:     00:54:50 (3290.9 ms)
+  Memory (MB):   750.3
+  Resources:    
+    ru_utime:    00:43:30 (2610.8 ms)
+    ru_stime:    00:03:29 (209.3 ms)
+    ru_maxrss:   768316
+    ru_minflt:   20604
+    ru_majflt:   130
+    ru_inblock:  112032848
+    ru_oublock:  247162416
+    ru_nvcsw:    139231
+    ru_nivcsw:   489487
+  GNU time:     
+    real:        00:54:50 (3290.8 ms)
+    user:        00:43:30 (2610.8 ms)
+    sys:         00:03:29 (209.2 ms)
+  Size (MB):     120,682.47 (126544741664 bytes)
+  Free space:     
+                      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                              cramtools                               # 
+########################################################################
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar cram --ignore-md5-mismatch --capture-all-tags --input-is-sam -Q -n -R data/sam/ref/hs37d5.fa -I NA12878.pacbio.bwa-sw.20140202.bam.sam -O NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.cram
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/cramtools.1.cmp.log
+  Process PID:   9668
+  Exit code:     0
+  Wall time:     05:19:57 (19197.4 ms)
+  Memory (MB):   10342.8
+  Resources:    
+    ru_utime:    05:13:34 (18814.6 ms)
+    ru_stime:    00:04:12 (252.9 ms)
+    ru_maxrss:   10590992
+    ru_minflt:   8424157
+    ru_majflt:   123
+    ru_inblock:  253441008
+    ru_oublock:  74761400
+    ru_nvcsw:    48863
+    ru_nivcsw:   67212
+  GNU time:     
+    real:        05:19:57 (19197.4 ms)
+    user:        05:13:34 (18814.6 ms)
+    sys:         00:04:12 (252.9 ms)
+  Size (MB):     36,493.35 (38266056087 bytes)
+  Free space:     
+                      2.8T  618G  2.2T  23% /local-scratch
+*** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 chrt -f 99 java -jar tools/cramtools/cramtools-2.1.jar bam --ignore-md5-mismatch --print-sam-header -R data/sam/ref/hs37d5.fa -I NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.cram -O NA12878.pacbio.bwa-sw.20140202.bam/output/NA12878.pacbio.bwa-sw.20140202.bam.cram.sam
+  stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/cramtools.1.dec.log
+  Process PID:   18252
+  Exit code:     0
+  Wall time:     02:11:14 (7874.4 ms)
+  Memory (MB):   11526.0
+  Resources:    
+    ru_utime:    02:01:47 (7307.3 ms)
+    ru_stime:    00:04:20 (260.9 ms)
+    ru_maxrss:   11802636
+    ru_minflt:   8562896
+    ru_majflt:   123
+    ru_inblock:  81029920
+    ru_oublock:  246740408
+    ru_nvcsw:    178504
+    ru_nivcsw:   31099
+  GNU time:     
+    real:        02:11:14 (7874.3 ms)
+    user:        02:01:47 (7307.3 ms)
+    sys:         00:04:20 (260.9 ms)
+  Size (MB):     120,474.80 (126326984966 bytes)
+  Free space:     
+                      2.8T  736G  2.1T  27% /local-scratch
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++          NA12878.pacbio.bwa-sw.20140202.bam with 4 threads           + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 06:47:03 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4 
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.gz
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.pigz.4.cmp.log
+  Process PID:   29134
+  Exit code:     0
+  Wall time:     01:10:39 (4239.3 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    04:07:32 (14852.7 ms)
+    ru_stime:    00:06:30 (390.2 ms)
+    ru_maxrss:   5964
+    ru_minflt:   1403
+    ru_majflt:   3
+    ru_inblock:  247159472
+    ru_oublock:  103348736
+    ru_nvcsw:    1926865
+    ru_nivcsw:   2003318
+  GNU time:     
+    real:        01:10:38 (4238.0 ms)
+    user:        04:07:32 (14852.7 ms)
+    sys:         00:06:30 (390.2 ms)
+  Size (MB):     50,462.74 (52914017618 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.gz)
+  Free space:      2.8T  1.1T  1.8T  38% /local-scratch
+*** 2016-03-06 07:58:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.gz
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.pigz.4.dec.log
+  Process PID:   30893
+  Exit code:     0
+  Wall time:     00:46:00 (2760.4 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:22:42 (1362.8 ms)
+    ru_stime:    00:07:50 (470.1 ms)
+    ru_maxrss:   5992
+    ru_minflt:   662
+    ru_majflt:   7
+    ru_inblock:  103351264
+    ru_oublock:  247157712
+    ru_nvcsw:    9369473
+    ru_nivcsw:   371469
+  GNU time:     
+    real:        00:46:00 (2760.2 ms)
+    user:        00:22:42 (1362.8 ms)
+    sys:         00:07:50 (470.1 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.2T  1.6T  42% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 08:45:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4 
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.bz2
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.pbzip2.4.cmp.log
+  Process PID:   32124
+  Exit code:     0
+  Wall time:     01:18:48 (4728.0 ms)
+  Memory (MB):   41.1
+  Resources:    
+    ru_utime:    04:31:23 (16283.3 ms)
+    ru_stime:    00:11:21 (681.3 ms)
+    ru_maxrss:   42060
+    ru_minflt:   89265910
+    ru_majflt:   8
+    ru_inblock:  247184720
+    ru_oublock:  84234656
+    ru_nvcsw:    745094
+    ru_nivcsw:   2208854
+  GNU time:     
+    real:        01:18:47 (4727.7 ms)
+    user:        04:31:23 (16283.3 ms)
+    sys:         00:11:21 (681.3 ms)
+  Size (MB):     41,129.65 (43127561028 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.bz2)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2016-03-06 10:04:47 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.bz2
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.pbzip2.4.dec.log
+  Process PID:   1795
+  Exit code:     0
+  Wall time:     00:49:06 (2946.7 ms)
+  Memory (MB):   27.1
+  Resources:    
+    ru_utime:    01:47:36 (6456.4 ms)
+    ru_stime:    00:08:30 (510.5 ms)
+    ru_maxrss:   27712
+    ru_minflt:   63663838
+    ru_majflt:   8
+    ru_inblock:  84260464
+    ru_oublock:  247158040
+    ru_nvcsw:    412476
+    ru_nivcsw:   1010266
+  GNU time:     
+    real:        00:49:06 (2946.4 ms)
+    user:        01:47:36 (6456.4 ms)
+    sys:         00:08:30 (510.4 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.3T  1.5T  48% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 10:54:19 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram -r data/sam/ref/hs37d5.fa
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.4.cmp.log
+  Process PID:   3335
+  Exit code:     0
+  Wall time:     01:01:03 (3663.7 ms)
+  Memory (MB):   13517.8
+  Resources:    
+    ru_utime:    01:29:49 (5389.3 ms)
+    ru_stime:    00:05:03 (303.3 ms)
+    ru_maxrss:   13842212
+    ru_minflt:   38053610
+    ru_majflt:   40
+    ru_inblock:  253317872
+    ru_oublock:  67237976
+    ru_nvcsw:    560477
+    ru_nivcsw:   954325
+  GNU time:     
+    real:        01:01:03 (3663.2 ms)
+    user:        01:29:49 (5389.3 ms)
+    sys:         00:05:03 (303.3 ms)
+  Size (MB):     32,830.65 (34425427648 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-06 11:55:41 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.4.dec.log
+  Process PID:   5299
+  Exit code:     0
+  Wall time:     00:40:13 (2413.4 ms)
+  Memory (MB):   1397.9
+  Resources:    
+    ru_utime:    00:21:52 (1312.2 ms)
+    ru_stime:    00:02:35 (155.8 ms)
+    ru_maxrss:   1431452
+    ru_minflt:   8934403
+    ru_majflt:   40
+    ru_inblock:  73397344
+    ru_oublock:  246732392
+    ru_nvcsw:    165594
+    ru_nivcsw:   261329
+  GNU time:     
+    real:        00:40:13 (2413.3 ms)
+    user:        00:21:52 (1312.2 ms)
+    sys:         00:02:35 (155.8 ms)
+  Size (MB):     120,474.80 (126326980458 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.5T  1.3T  53% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 12:37:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram -j -7 -r data/sam/ref/hs37d5.fa
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble-bzip2.4.cmp.log
+  Process PID:   6331
+  Exit code:     0
+  Wall time:     01:03:01 (3781.5 ms)
+  Memory (MB):   17614.5
+  Resources:    
+    ru_utime:    02:21:46 (8506.7 ms)
+    ru_stime:    00:04:39 (279.4 ms)
+    ru_maxrss:   18037212
+    ru_minflt:   31843837
+    ru_majflt:   40
+    ru_inblock:  253317680
+    ru_oublock:  66253392
+    ru_nvcsw:    523590
+    ru_nivcsw:   1234111
+  GNU time:     
+    real:        01:03:01 (3781.1 ms)
+    user:        02:21:46 (8506.7 ms)
+    sys:         00:04:39 (279.4 ms)
+  Size (MB):     32,349.90 (33921325582 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram)
+  Free space:      2.8T  1.5T  1.3T  54% /local-scratch
+*** 2016-03-06 13:40:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble-bzip2.4.dec.log
+  Process PID:   7915
+  Exit code:     0
+  Wall time:     00:29:25 (1765.6 ms)
+  Memory (MB):   1226.0
+  Resources:    
+    ru_utime:    00:36:09 (2169.5 ms)
+    ru_stime:    00:02:30 (150.0 ms)
+    ru_maxrss:   1255472
+    ru_minflt:   4751014
+    ru_majflt:   25
+    ru_inblock:  72410968
+    ru_oublock:  246732400
+    ru_nvcsw:    156357
+    ru_nivcsw:   348381
+  GNU time:     
+    real:        00:29:25 (1765.4 ms)
+    user:        00:36:09 (2169.5 ms)
+    sys:         00:02:30 (150.0 ms)
+  Size (MB):     120,474.80 (126326980506 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.6T  1.2T  58% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 14:11:34 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 4 NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram -x
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble-noref.4.cmp.log
+  Process PID:   8684
+  Exit code:     0
+  Wall time:     01:08:43 (4123.4 ms)
+  Memory (MB):   7692.9
+  Resources:    
+    ru_utime:    02:20:36 (8436.4 ms)
+    ru_stime:    00:06:03 (363.3 ms)
+    ru_maxrss:   7877540
+    ru_minflt:   38470977
+    ru_majflt:   40
+    ru_inblock:  247170480
+    ru_oublock:  87586192
+    ru_nvcsw:    498913
+    ru_nivcsw:   1291690
+  GNU time:     
+    real:        01:08:42 (4122.8 ms)
+    user:        02:20:36 (8436.4 ms)
+    sys:         00:06:03 (363.2 ms)
+  Size (MB):     42,766.27 (44843683117 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+*** 2016-03-06 15:20:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 4 NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble-noref.4.dec.log
+  Process PID:   10382
+  Exit code:     0
+  Wall time:     00:33:19 (1999.3 ms)
+  Memory (MB):   1268.4
+  Resources:    
+    ru_utime:    00:31:13 (1873.7 ms)
+    ru_stime:    00:02:50 (170.8 ms)
+    ru_maxrss:   1298856
+    ru_minflt:   5521822
+    ru_majflt:   40
+    ru_inblock:  87598176
+    ru_oublock:  247157712
+    ru_nvcsw:    200792
+    ru_nivcsw:   339059
+  GNU time:     
+    real:        00:33:18 (1998.8 ms)
+    user:        00:31:13 (1873.7 ms)
+    sys:         00:02:50 (170.7 ms)
+  Size (MB):     120,682.47 (126544742981 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.8T 1018G  64% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 15:54:38 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 4 NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.bam 
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.4.cmp.log
+  Process PID:   11265
+  Exit code:     0
+  Wall time:     00:44:51 (2691.8 ms)
+  Memory (MB):   19.0
+  Resources:    
+    ru_utime:    02:31:20 (9080.5 ms)
+    ru_stime:    00:06:31 (391.5 ms)
+    ru_maxrss:   19484
+    ru_minflt:   64070148
+    ru_majflt:   21
+    ru_inblock:  247164744
+    ru_oublock:  111533736
+    ru_nvcsw:    866015
+    ru_nivcsw:   1563853
+  GNU time:     
+    real:        00:44:51 (2691.5 ms)
+    user:        02:31:20 (9080.5 ms)
+    sys:         00:06:31 (391.4 ms)
+  Size (MB):     54,459.44 (57104866577 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.bam, NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.bam.bai)
+  Free space:      2.8T  1.8T  965G  66% /local-scratch
+*** 2016-03-06 16:39:56 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -h -t 4 NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.bam -o NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.4.dec.log
+  Process PID:   12406
+  Exit code:     0
+  Wall time:     00:28:24 (1704.0 ms)
+  Memory (MB):   115.4
+  Resources:    
+    ru_utime:    00:29:16 (1756.5 ms)
+    ru_stime:    00:03:48 (228.0 ms)
+    ru_maxrss:   118196
+    ru_minflt:   6668
+    ru_majflt:   23
+    ru_inblock:  111510496
+    ru_oublock:  247157712
+    ru_nvcsw:    650578
+    ru_nivcsw:   517227
+  GNU time:     
+    real:        00:28:23 (1703.9 ms)
+    user:        00:29:16 (1756.5 ms)
+    sys:         00:03:48 (228.0 ms)
+  Size (MB):     120,682.47 (126544741656 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.9T  847G  70% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 17:09:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v NA12878.pacbio.bwa-sw.20140202.bam.sam 
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/quip/NA12878.pacbio.bwa-sw.20140202.bam.sam.qp
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.quip.4.cmp.log
+  Process PID:   13199
+  Exit code:     0
+  Wall time:     01:49:06 (6546.7 ms)
+  Memory (MB):   905.4
+  Resources:    
+    ru_utime:    02:54:30 (10470.9 ms)
+    ru_stime:    00:02:16 (136.7 ms)
+    ru_maxrss:   927128
+    ru_minflt:   153703
+    ru_majflt:   15
+    ru_inblock:  247161992
+    ru_oublock:  83288960
+    ru_nvcsw:    38100
+    ru_nivcsw:   2042964
+  GNU time:     
+    real:        01:49:06 (6546.3 ms)
+    user:        02:54:30 (10470.9 ms)
+    sys:         00:02:16 (136.7 ms)
+  Size (MB):     40,666.50 (42641915012 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/quip/NA12878.pacbio.bwa-sw.20140202.bam.sam.qp)
+  Free space:      2.8T  2.0T  807G  72% /local-scratch
+*** 2016-03-06 18:58:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o sam NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/quip/NA12878.pacbio.bwa-sw.20140202.bam.sam.qp
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/quip/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.quip.4.dec.log
+  Process PID:   4803
+  Exit code:     0
+  Wall time:     02:36:55 (9415.3 ms)
+  Memory (MB):   793.7
+  Resources:    
+    ru_utime:    04:03:07 (14587.5 ms)
+    ru_stime:    00:02:50 (170.1 ms)
+    ru_maxrss:   812756
+    ru_minflt:   121863
+    ru_majflt:   17
+    ru_inblock:  83289680
+    ru_oublock:  247157712
+    ru_nvcsw:    226263
+    ru_nivcsw:   1615340
+  GNU time:     
+    real:        02:36:54 (9414.6 ms)
+    user:        04:03:07 (14587.5 ms)
+    sys:         00:02:50 (170.1 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/quip/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  2.1T  689G  76% /local-scratch
+
+######################################################################## 
+#                               quip-ref                               # 
+########################################################################
+>>> quip-ref (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 21:36:12 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v NA12878.pacbio.bwa-sw.20140202.bam.sam -r data/sam/ref/hs37d5.fa
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/quip-ref/NA12878.pacbio.bwa-sw.20140202.bam.sam.qp
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.quip-ref.4.cmp.log
+  Process PID:   29466
+  Exit code:     256
+  Wall time:     00:08:21 (501.0 ms)
+  Memory (MB):   1804.1
+  Resources:    
+    ru_utime:    00:11:51 (711.9 ms)
+    ru_stime:    00:00:12 (12.7 ms)
+    ru_maxrss:   1847376
+    ru_minflt:   170916
+    ru_majflt:   17
+    ru_inblock:  25758144
+    ru_oublock:  5902264
+    ru_nvcsw:    3071
+    ru_nivcsw:   174568
+  GNU time:     
+    real:        00:08:20 (500.5 ms)
+    user:        00:11:51 (711.9 ms)
+    sys:         00:00:12 (12.6 ms)
+  Size (MB):     2,881.81 (3021794082 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/quip-ref/NA12878.pacbio.bwa-sw.20140202.bam.sam.qp)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-01-21 15:40:38 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz 
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez.4.cmp.log
+  Process PID:   24350
+  Exit code:     0
+  Wall time:     01:04:21 (3861.6 ms)
+  Memory (MB):   3706.0
+  Resources:    
+    ru_utime:    01:51:42 (6702.8 ms)
+    ru_stime:    00:05:21 (321.2 ms)
+    ru_maxrss:   3794916
+    ru_minflt:   7470623
+    ru_majflt:   43
+    ru_inblock:  253338600
+    ru_oublock:  67656448
+    ru_nvcsw:    6356653
+    ru_nivcsw:   1319041
+  GNU time:     
+    real:        01:04:21 (3861.4 ms)
+    user:        01:51:42 (6702.8 ms)
+    sys:         00:05:21 (321.2 ms)
+  Size (MB):     33,034.45 (34639131371 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2016-01-21 16:45:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz -o NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez.4.dec.log
+  Process PID:   28812
+  Exit code:     0
+  Wall time:     00:38:54 (2334.7 ms)
+  Memory (MB):   8604.3
+  Resources:    
+    ru_utime:    00:45:51 (2751.2 ms)
+    ru_stime:    00:03:21 (201.0 ms)
+    ru_maxrss:   8810824
+    ru_minflt:   2874769
+    ru_majflt:   42
+    ru_inblock:  73835336
+    ru_oublock:  247158496
+    ru_nvcsw:    409760
+    ru_nivcsw:   410197
+  GNU time:     
+    real:        00:38:54 (2334.5 ms)
+    user:        00:45:51 (2751.2 ms)
+    sys:         00:03:21 (201.0 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.9T  931G  67% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-01-21 17:49:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz -q1 -b
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez-qual.4.cmp.log
+  Process PID:   31714
+  Exit code:     0
+  Wall time:     01:30:20 (5420.7 ms)
+  Memory (MB):   4082.7
+  Resources:    
+    ru_utime:    02:59:00 (10740.0 ms)
+    ru_stime:    00:05:28 (328.1 ms)
+    ru_maxrss:   4180644
+    ru_minflt:   7209490
+    ru_majflt:   43
+    ru_inblock:  253338536
+    ru_oublock:  66743864
+    ru_nvcsw:    6690160
+    ru_nivcsw:   1726406
+  GNU time:     
+    real:        01:30:20 (5420.6 ms)
+    user:        02:59:00 (10740.0 ms)
+    sys:         00:05:28 (328.1 ms)
+  Size (MB):     32,588.69 (34171720845 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2016-01-21 19:19:41 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 4 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz -o NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez-qual.4.dec.log
+  Process PID:   4609
+  Exit code:     0
+  Wall time:     01:37:06 (5826.1 ms)
+  Memory (MB):   9017.0
+  Resources:    
+    ru_utime:    02:15:36 (8136.7 ms)
+    ru_stime:    00:03:17 (197.5 ms)
+    ru_maxrss:   9233400
+    ru_minflt:   3034078
+    ru_majflt:   42
+    ru_inblock:  72922520
+    ru_oublock:  247158920
+    ru_nvcsw:    277584
+    ru_nivcsw:   979458
+  GNU time:     
+    real:        01:37:05 (5825.9 ms)
+    user:        02:15:36 (8136.7 ms)
+    sys:         00:03:17 (197.4 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.9T  932G  67% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++          NA12878.pacbio.bwa-sw.20140202.bam with 8 threads           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 21:44:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8 
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.gz
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.pigz.8.cmp.log
+  Process PID:   31308
+  Exit code:     0
+  Wall time:     00:40:13 (2413.9 ms)
+  Memory (MB):   8.9
+  Resources:    
+    ru_utime:    04:07:39 (14859.4 ms)
+    ru_stime:    00:06:21 (381.8 ms)
+    ru_maxrss:   9160
+    ru_minflt:   2082
+    ru_majflt:   8
+    ru_inblock:  247161376
+    ru_oublock:  103348208
+    ru_nvcsw:    1886676
+    ru_nivcsw:   1938058
+  GNU time:     
+    real:        00:40:13 (2413.7 ms)
+    user:        04:07:39 (14859.4 ms)
+    sys:         00:06:21 (381.8 ms)
+  Size (MB):     50,462.74 (52914017618 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.gz)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+*** 2016-03-06 22:25:15 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.gz
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.pigz.8.dec.log
+  Process PID:   32383
+  Exit code:     0
+  Wall time:     00:47:15 (2835.0 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:22:41 (1361.8 ms)
+    ru_stime:    00:07:57 (477.5 ms)
+    ru_maxrss:   6016
+    ru_minflt:   659
+    ru_majflt:   7
+    ru_inblock:  103350976
+    ru_oublock:  247157712
+    ru_nvcsw:    9369391
+    ru_nivcsw:   368101
+  GNU time:     
+    real:        00:47:14 (2834.5 ms)
+    user:        00:22:41 (1361.8 ms)
+    sys:         00:07:57 (477.5 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/pigz/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-06 23:13:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8 
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam.sam
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.bz2
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.pbzip2.8.cmp.log
+  Process PID:   1531
+  Exit code:     0
+  Wall time:     00:45:32 (2732.5 ms)
+  Memory (MB):   78.0
+  Resources:    
+    ru_utime:    04:39:48 (16788.8 ms)
+    ru_stime:    00:12:56 (776.1 ms)
+    ru_maxrss:   79892
+    ru_minflt:   94957552
+    ru_majflt:   8
+    ru_inblock:  247184952
+    ru_oublock:  84234088
+    ru_nvcsw:    730339
+    ru_nivcsw:   2257565
+  GNU time:     
+    real:        00:45:32 (2732.4 ms)
+    user:        04:39:48 (16788.8 ms)
+    sys:         00:12:56 (776.1 ms)
+  Size (MB):     41,129.65 (43127561028 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.bz2)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+*** 2016-03-06 23:59:50 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.bz2
+    stdout:      NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.pbzip2.8.dec.log
+  Process PID:   2879
+  Exit code:     0
+  Wall time:     00:36:04 (2164.2 ms)
+  Memory (MB):   51.4
+  Resources:    
+    ru_utime:    01:56:05 (6965.5 ms)
+    ru_stime:    00:09:24 (564.9 ms)
+    ru_maxrss:   52596
+    ru_minflt:   67516203
+    ru_majflt:   8
+    ru_inblock:  84260488
+    ru_oublock:  247157880
+    ru_nvcsw:    366802
+    ru_nivcsw:   1007757
+  GNU time:     
+    real:        00:36:03 (2163.9 ms)
+    user:        01:56:05 (6965.4 ms)
+    sys:         00:09:24 (564.8 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/pbzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+
+######################################################################## 
+#                               scramble                               # 
+########################################################################
+>>> scramble (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-07 00:36:51 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram -r data/sam/ref/hs37d5.fa
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.8.cmp.log
+  Process PID:   4031
+  Exit code:     0
+  Wall time:     01:00:30 (3630.3 ms)
+  Memory (MB):   12469.7
+  Resources:    
+    ru_utime:    01:30:05 (5405.1 ms)
+    ru_stime:    00:04:57 (297.7 ms)
+    ru_maxrss:   12768988
+    ru_minflt:   37856271
+    ru_majflt:   24
+    ru_inblock:  253314088
+    ru_oublock:  67237904
+    ru_nvcsw:    563475
+    ru_nivcsw:   963179
+  GNU time:     
+    real:        01:00:30 (3630.1 ms)
+    user:        01:30:05 (5405.1 ms)
+    sys:         00:04:57 (297.7 ms)
+  Size (MB):     32,830.62 (34425403702 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+*** 2016-03-07 01:37:40 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.8.dec.log
+  Process PID:   5658
+  Exit code:     0
+  Wall time:     00:34:55 (2095.7 ms)
+  Memory (MB):   2504.1
+  Resources:    
+    ru_utime:    00:22:42 (1362.6 ms)
+    ru_stime:    00:02:54 (174.0 ms)
+    ru_maxrss:   2564168
+    ru_minflt:   7745273
+    ru_majflt:   39
+    ru_inblock:  73397720
+    ru_oublock:  246732392
+    ru_nvcsw:    162586
+    ru_nivcsw:   276841
+  GNU time:     
+    real:        00:34:55 (2095.2 ms)
+    user:        00:22:42 (1362.5 ms)
+    sys:         00:02:54 (174.0 ms)
+  Size (MB):     120,474.80 (126326980458 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+
+######################################################################## 
+#                            scramble-bzip2                            # 
+########################################################################
+>>> scramble-bzip2 (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-07 02:14:01 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram -j -7 -r data/sam/ref/hs37d5.fa
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble-bzip2.8.cmp.log
+  Process PID:   6590
+  Exit code:     0
+  Wall time:     01:00:07 (3607.0 ms)
+  Memory (MB):   16426.8
+  Resources:    
+    ru_utime:    02:20:42 (8442.9 ms)
+    ru_stime:    00:04:40 (280.0 ms)
+    ru_maxrss:   16821008
+    ru_minflt:   30734305
+    ru_majflt:   40
+    ru_inblock:  253318032
+    ru_oublock:  66253456
+    ru_nvcsw:    525227
+    ru_nivcsw:   1247645
+  GNU time:     
+    real:        01:00:06 (3606.8 ms)
+    user:        02:20:42 (8442.9 ms)
+    sys:         00:04:40 (280.0 ms)
+  Size (MB):     32,349.94 (33921374271 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+*** 2016-03-07 03:14:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble-bzip2.8.dec.log
+  Process PID:   8111
+  Exit code:     0
+  Wall time:     00:29:47 (1787.0 ms)
+  Memory (MB):   2716.4
+  Resources:    
+    ru_utime:    00:37:03 (2223.6 ms)
+    ru_stime:    00:02:46 (166.3 ms)
+    ru_maxrss:   2781640
+    ru_minflt:   9812355
+    ru_majflt:   40
+    ru_inblock:  72413040
+    ru_oublock:  246732392
+    ru_nvcsw:    162518
+    ru_nivcsw:   354088
+  GNU time:     
+    real:        00:29:46 (1786.7 ms)
+    user:        00:37:03 (2223.6 ms)
+    sys:         00:02:46 (166.3 ms)
+  Size (MB):     120,474.80 (126326980506 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble-bzip2/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+
+######################################################################## 
+#                            scramble-noref                            # 
+########################################################################
+>>> scramble-noref (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-07 03:44:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I sam -O cram -t 8 NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram -x
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble-noref.8.cmp.log
+  Process PID:   8875
+  Exit code:     0
+  Wall time:     01:04:22 (3862.2 ms)
+  Memory (MB):   9007.0
+  Resources:    
+    ru_utime:    02:19:02 (8342.0 ms)
+    ru_stime:    00:05:31 (331.9 ms)
+    ru_maxrss:   9223148
+    ru_minflt:   38713267
+    ru_majflt:   40
+    ru_inblock:  247170176
+    ru_oublock:  87586200
+    ru_nvcsw:    497541
+    ru_nivcsw:   1244020
+  GNU time:     
+    real:        01:04:21 (3861.9 ms)
+    user:        02:19:02 (8342.0 ms)
+    sys:         00:05:31 (331.9 ms)
+  Size (MB):     42,766.29 (44843704421 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+*** 2016-03-07 04:49:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/io_lib-1.14.6/progs/scramble -I cram -O sam -t 8 NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble.cram NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.scramble-noref.8.dec.log
+  Process PID:   17512
+  Exit code:     0
+  Wall time:     00:31:56 (1916.7 ms)
+  Memory (MB):   2065.7
+  Resources:    
+    ru_utime:    00:31:06 (1866.3 ms)
+    ru_stime:    00:02:52 (172.4 ms)
+    ru_maxrss:   2115288
+    ru_minflt:   5468278
+    ru_majflt:   39
+    ru_inblock:  87598176
+    ru_oublock:  247157712
+    ru_nvcsw:    192291
+    ru_nivcsw:   353401
+  GNU time:     
+    real:        00:31:56 (1916.0 ms)
+    user:        00:31:06 (1866.3 ms)
+    sys:         00:02:52 (172.4 ms)
+  Size (MB):     120,682.47 (126544742981 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/scramble-noref/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+
+######################################################################## 
+#                               sambamba                               # 
+########################################################################
+>>> sambamba (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-03-07 05:22:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -S -f bam -t 8 NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.bam 
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.8.cmp.log
+  Process PID:   19952
+  Exit code:     0
+  Wall time:     00:27:23 (1643.3 ms)
+  Memory (MB):   30.5
+  Resources:    
+    ru_utime:    02:23:28 (8608.1 ms)
+    ru_stime:    00:04:56 (296.1 ms)
+    ru_maxrss:   31240
+    ru_minflt:   64070808
+    ru_majflt:   19
+    ru_inblock:  247163624
+    ru_oublock:  111533432
+    ru_nvcsw:    469167
+    ru_nivcsw:   1608670
+  GNU time:     
+    real:        00:27:23 (1643.1 ms)
+    user:        02:23:28 (8608.1 ms)
+    sys:         00:04:56 (296.1 ms)
+  Size (MB):     54,459.44 (57104866577 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.bam, NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.bam.bai)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+*** 2016-03-07 05:50:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/sambamba/sambamba_v0.5.8 view -h -t 8 NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.bam -o NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.sambamba.8.dec.log
+  Process PID:   21189
+  Exit code:     0
+  Wall time:     00:28:27 (1707.6 ms)
+  Memory (MB):   189.1
+  Resources:    
+    ru_utime:    00:44:43 (2683.5 ms)
+    ru_stime:    00:04:12 (252.0 ms)
+    ru_maxrss:   193616
+    ru_minflt:   9876
+    ru_majflt:   23
+    ru_inblock:  111510752
+    ru_oublock:  247157712
+    ru_nvcsw:    2641698
+    ru_nivcsw:   834386
+  GNU time:     
+    real:        00:28:27 (1707.3 ms)
+    user:        00:44:43 (2683.5 ms)
+    sys:         00:04:11 (251.9 ms)
+  Size (MB):     120,682.47 (126544741656 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/sambamba/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  2.1T  686G  76% /local-scratch
+
+######################################################################## 
+#                                 deez                                 # 
+########################################################################
+>>> deez (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-01-21 21:22:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz 
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez.8.cmp.log
+  Process PID:   8136
+  Exit code:     0
+  Wall time:     01:02:18 (3738.0 ms)
+  Memory (MB):   3683.2
+  Resources:    
+    ru_utime:    02:05:16 (7516.3 ms)
+    ru_stime:    00:05:49 (349.8 ms)
+    ru_maxrss:   3771644
+    ru_minflt:   6168559
+    ru_majflt:   43
+    ru_inblock:  253338576
+    ru_oublock:  67656408
+    ru_nvcsw:    7667252
+    ru_nivcsw:   1414776
+  GNU time:     
+    real:        01:02:17 (3737.8 ms)
+    user:        02:05:16 (7516.3 ms)
+    sys:         00:05:49 (349.8 ms)
+  Size (MB):     33,034.45 (34639131390 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2016-01-21 22:24:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz -o NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez.8.dec.log
+  Process PID:   16339
+  Exit code:     0
+  Wall time:     00:38:12 (2292.4 ms)
+  Memory (MB):   9711.4
+  Resources:    
+    ru_utime:    00:46:20 (2780.7 ms)
+    ru_stime:    00:03:30 (210.9 ms)
+    ru_maxrss:   9944460
+    ru_minflt:   3079024
+    ru_majflt:   42
+    ru_inblock:  73835464
+    ru_oublock:  247158496
+    ru_nvcsw:    428439
+    ru_nivcsw:   396680
+  GNU time:     
+    real:        00:38:12 (2292.2 ms)
+    user:        00:46:20 (2780.7 ms)
+    sys:         00:03:30 (210.9 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.9T  931G  67% /local-scratch
+
+######################################################################## 
+#                              deez-qual                               # 
+########################################################################
+>>> deez-qual (File 1: NA12878.pacbio.bwa-sw.20140202.bam.sam)
+*** 2016-01-21 23:49:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam.sam -o NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz -q1 -b
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez-qual.8.cmp.log
+  Process PID:   21064
+  Exit code:     0
+  Wall time:     01:28:38 (5318.1 ms)
+  Memory (MB):   4167.5
+  Resources:    
+    ru_utime:    03:13:39 (11619.5 ms)
+    ru_stime:    00:05:44 (344.7 ms)
+    ru_maxrss:   4267528
+    ru_minflt:   7473893
+    ru_majflt:   43
+    ru_inblock:  253338560
+    ru_oublock:  66743824
+    ru_nvcsw:    7510863
+    ru_nivcsw:   1816027
+  GNU time:     
+    real:        01:28:37 (5317.9 ms)
+    user:        03:13:39 (11619.5 ms)
+    sys:         00:05:44 (344.7 ms)
+  Size (MB):     32,588.69 (34171720974 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+*** 2016-01-22 01:18:04 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/deez/dz/deez -t 8 -v1 -r data/sam/ref/hs37d5.fa -! NA12878.pacbio.bwa-sw.20140202.bam/output/compressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.dz -o NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam
+    stderr:      NA12878.pacbio.bwa-sw.20140202.bam/log/NA12878.pacbio.bwa-sw.20140202.bam.sam.deez-qual.8.dec.log
+  Process PID:   29619
+  Exit code:     0
+  Wall time:     01:34:18 (5658.3 ms)
+  Memory (MB):   10183.0
+  Resources:    
+    ru_utime:    02:16:26 (8186.6 ms)
+    ru_stime:    00:03:24 (204.9 ms)
+    ru_maxrss:   10427344
+    ru_minflt:   3474299
+    ru_majflt:   42
+    ru_inblock:  72922424
+    ru_oublock:  247158904
+    ru_nvcsw:    351627
+    ru_nivcsw:   988305
+  GNU time:     
+    real:        01:34:18 (5658.1 ms)
+    user:        02:16:26 (8186.6 ms)
+    sys:         00:03:24 (204.9 ms)
+  Size (MB):     120,682.47 (126544741664 bytes) (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/deez-qual/NA12878.pacbio.bwa-sw.20140202.bam.sam.sam)
+  Free space:      2.8T  1.9T  932G  67% /local-scratch
+
+
+Done!

@@ -1,0 +1,7 @@
+
+################################################################################
+
+e,ERR174310_2.fastq,ERR174310/output/compressed/kic/ERR174310_2.fastq.kic,8,tools/kic-0.2,ERR174310/output/compressed/kic
+
+java -Xmx2000m -jar tools/kic-0.2/kic.jar ERR174310_2.fastq -n 8
+

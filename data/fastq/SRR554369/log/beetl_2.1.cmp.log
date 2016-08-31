@@ -1,0 +1,43 @@
+
+real	0m11.270s
+user	0m10.722s
+sys	0m0.261s
+
+################################################################################
+
+e,SRR554369_2.fastq,SRR554369/output/compressed/beetl/SRR554369_2.fastq.beetl,tools/BEETL,SRR554369/output/compressed/beetl
+
+tools/BEETL/bin/beetl-bwt -i SRR554369_2.fastq -o xbeetl --output-format ASCII --sap-ordering --algorithm ext
+
+xbeetl-B00
+
+xbeetl-B01
+
+xbeetl-B02
+
+xbeetl-B03
+
+xbeetl-B04
+
+xbeetl-B05
+
+xbeetl-P01
+
+xbeetl-P02
+
+xbeetl-P03
+
+xbeetl-P04
+
+xbeetl-P05
+
+xbeetl-S01
+
+xbeetl-S02
+
+xbeetl-S03
+
+xbeetl-S04
+
+xbeetl-S05
+

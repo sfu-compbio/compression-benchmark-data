@@ -1,0 +1,43 @@
+SCALCE 1 [pthreads; available cores=5]
+Buffer size: 131072K, bucket storage size: 4194304K
+Allocating pool... OK!
+Preprocessing FASTQ files ...
+	Paired end #1, quality offset: 64
+	               read length: 108
+	Paired end #2, quality offset: 64
+	               read length: 74
+OK
+Using 1 threads...
+	Created temp file 0
+	Created temp file 1
+	Created temp file 2
+	Created temp file 3
+	Done with file SRR870667_1.fastq, 69100987 reads found
+	          file SRR870667_2.fastq, 69100987 reads found
+	Created temp file 4
+Merging results ... 5
+Generating 1 scalce file(s) from temp #5 using paired files, compression: gzip
+shrink factor for 0: 2
+	Read bit size:    paired end 0 = 1.08
+	Quality bit size: paired end 0 = 2.53
+shrink factor for 1: 2
+	Read bit size:    paired end 1 = 1.32
+	Quality bit size: paired end 1 = 2.80
+Cleaning ...
+Statistics:
+	Total number of reads: 69100987
+	Read length: first end 108
+	             second end 74
+	Unbucketed reads count: 3484, bucketed percentage 99.99
+	Lossy percentage: 0
+	Time elapsed:     00:44:44
+	Compression time: 00:23:51
+	Original size: 39133.27M, new size: 6373.51M, compression factor: 6.14
+Done!
+
+################################################################################
+
+Written 2816114 cores
+
+Written 2816114 cores
+

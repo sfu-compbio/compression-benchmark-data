@@ -1,0 +1,14 @@
+Reading NA12878.pacbio.bwa-sw.20140202.bam.sam, NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/NA12878.pacbio.bwa-sw.20140202.bam.zam.sam; maxline=5000000
+NA12878.pacbio.bwa-sw.20140202.bam.sam NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/NA12878.pacbio.bwa-sw.20140202.bam.zam.sam differ: byte 1, line 1
+> ORIG      25968256 (NA12878.pacbio.bwa-sw.20140202.bam.sam)
+< COPY      25968256 (NA12878.pacbio.bwa-sw.20140202.bam/output/decompressed/NA12878.pacbio.bwa-sw.20140202.bam.zam.sam)
+Comments   not equal
+
+CIGAR       11038325 lines unequal
+Read 5000000 (5000000) / 5000000 (5000000) lines, 5000000
+Read 5000000 (10000000) / 5000000 (10000000) lines, 5000000
+Read 5000000 (15000000) / 5000000 (15000000) lines, 5000000
+Read 5000000 (20000000) / 5000000 (20000000) lines, 5000000
+Read 5000000 (25000000) / 5000000 (25000000) lines, 5000000
+Read 968256 (25968256) / 968256 (25968256) lines, 968256
+Done NA12878.pacbio.bwa-sw.20140202.bam.sam

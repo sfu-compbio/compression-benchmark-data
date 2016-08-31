@@ -1,0 +1,3742 @@
+Namespace(force=False, input='SRR870667_1.fastq', log='benchmark.log', ref='data/sam/ref/cacao11allasm_repmask_nomito.fa')
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                      SRR870667_1 with 1 threads                      + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz_1
+*** 2015-11-16 10:19:06 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -p 1  
+    stdin:       SRR870667_1.fastq
+    stdout:      SRR870667_1/output/SRR870667_1.gz
+  stderr:      SRR870667_1/log/pigz_1.1.cmp.log
+  Process PID:   4465
+  Exit code:     0
+  Wall time:     00:46:02 (2762.7 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:45:10 (2710.3 ms)
+    ru_stime:    00:00:20 (20.2 ms)
+    ru_maxrss:   5908
+    ru_minflt:   853
+    ru_majflt:   4
+    ru_inblock:  44813936
+    ru_oublock:  13561648
+    ru_nvcsw:    830
+    ru_nivcsw:   450450
+  GNU time:     
+    real:        00:46:02 (2762.6 ms)
+    user:        00:45:10 (2710.3 ms)
+    sys:         00:00:20 (20.2 ms)
+  Size (MB):     6,621.54 (6943192256 bytes) (SRR870667_1/output/SRR870667_1.gz)
+  Free space:      2.8T  771G  2.0T  28% /local-scratch
+*** 2015-11-16 11:05:13 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       SRR870667_1/output/SRR870667_1.gz
+    stdout:      SRR870667_1/output/SRR870667_1.gz.fq
+  stderr:      SRR870667_1/log/pigz_1.1.dec.log
+  Process PID:   4993
+  Exit code:     0
+  Wall time:     00:05:18 (318.2 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:02:07 (127.8 ms)
+    ru_stime:    00:00:19 (19.0 ms)
+    ru_maxrss:   5932
+    ru_minflt:   716
+    ru_majflt:   7
+    ru_inblock:  13562848
+    ru_oublock:  44811840
+    ru_nvcsw:    1607
+    ru_nivcsw:   69454
+  GNU time:     
+    real:        00:05:18 (318.0 ms)
+    user:        00:02:07 (127.8 ms)
+    sys:         00:00:19 (19.0 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/SRR870667_1.gz.fq)
+  Free space:      2.8T  793G  2.0T  29% /local-scratch
+
+>>> pigz_2
+*** 2015-11-16 11:10:44 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -p 1  
+    stdin:       SRR870667_2.fastq
+    stdout:      SRR870667_1/output/SRR870667_2.gz
+  stderr:      SRR870667_1/log/pigz_2.1.cmp.log
+  Process PID:   5058
+  Exit code:     0
+  Wall time:     00:32:01 (1921.1 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:31:20 (1880.3 ms)
+    ru_stime:    00:00:15 (15.7 ms)
+    ru_maxrss:   5932
+    ru_minflt:   840
+    ru_majflt:   7
+    ru_inblock:  35366368
+    ru_oublock:  10478392
+    ru_nvcsw:    650
+    ru_nivcsw:   329193
+  GNU time:     
+    real:        00:32:01 (1921.0 ms)
+    user:        00:31:20 (1880.3 ms)
+    sys:         00:00:15 (15.7 ms)
+  Size (MB):     5,116.14 (5364663700 bytes) (SRR870667_1/output/SRR870667_2.gz)
+  Free space:      2.8T  798G  2.0T  29% /local-scratch
+*** 2015-11-16 11:42:48 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       SRR870667_1/output/SRR870667_2.gz
+    stdout:      SRR870667_1/output/SRR870667_2.gz.fq
+  stderr:      SRR870667_1/log/pigz_2.1.dec.log
+  Process PID:   5556
+  Exit code:     0
+  Wall time:     00:03:42 (222.9 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:01:38 (98.9 ms)
+    ru_stime:    00:00:15 (15.1 ms)
+    ru_maxrss:   5932
+    ru_minflt:   712
+    ru_majflt:   7
+    ru_inblock:  10479800
+    ru_oublock:  35364440
+    ru_nvcsw:    1126
+    ru_nivcsw:   51920
+  GNU time:     
+    real:        00:03:42 (222.9 ms)
+    user:        00:01:38 (98.9 ms)
+    sys:         00:00:15 (15.1 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/SRR870667_2.gz.fq)
+  Free space:      2.8T  815G  2.0T  30% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2_1
+*** 2015-11-16 11:46:48 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -p1  
+    stdin:       SRR870667_1.fastq
+    stdout:      SRR870667_1/output/SRR870667_1.bz2
+  stderr:      SRR870667_1/log/pbzip2_1.1.cmp.log
+  Process PID:   5596
+  Exit code:     0
+  Wall time:     00:45:47 (2747.3 ms)
+  Memory (MB):   12.0
+  Resources:    
+    ru_utime:    00:43:59 (2639.7 ms)
+    ru_stime:    00:01:40 (100.9 ms)
+    ru_maxrss:   12316
+    ru_minflt:   12855214
+    ru_majflt:   8
+    ru_inblock:  44836984
+    ru_oublock:  10893648
+    ru_nvcsw:    183742
+    ru_nivcsw:   480412
+  GNU time:     
+    real:        00:45:47 (2747.2 ms)
+    user:        00:43:59 (2639.7 ms)
+    sys:         00:01:40 (100.9 ms)
+  Size (MB):     5,318.86 (5577223793 bytes) (SRR870667_1/output/SRR870667_1.bz2)
+  Free space:      2.8T  820G  2.0T  30% /local-scratch
+*** 2015-11-16 12:32:40 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       SRR870667_1/output/SRR870667_1.bz2
+    stdout:      SRR870667_1/output/SRR870667_1.bz2.fq
+  stderr:      SRR870667_1/log/pbzip2_1.1.dec.log
+  Process PID:   6126
+  Exit code:     0
+  Wall time:     00:19:08 (1148.8 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:17:38 (1058.3 ms)
+    ru_stime:    00:00:28 (28.1 ms)
+    ru_maxrss:   5932
+    ru_minflt:   2149
+    ru_majflt:   8
+    ru_inblock:  10918912
+    ru_oublock:  44811840
+    ru_nvcsw:    1345
+    ru_nivcsw:   157110
+  GNU time:     
+    real:        00:19:08 (1148.7 ms)
+    user:        00:17:38 (1058.3 ms)
+    sys:         00:00:28 (28.1 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/SRR870667_1.bz2.fq)
+  Free space:      2.8T  841G  2.0T  31% /local-scratch
+
+>>> pbzip2_2
+*** 2015-11-16 12:51:58 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -p1  
+    stdin:       SRR870667_2.fastq
+    stdout:      SRR870667_1/output/SRR870667_2.bz2
+  stderr:      SRR870667_1/log/pbzip2_2.1.cmp.log
+  Process PID:   6367
+  Exit code:     0
+  Wall time:     00:37:22 (2242.9 ms)
+  Memory (MB):   11.6
+  Resources:    
+    ru_utime:    00:36:02 (2162.5 ms)
+    ru_stime:    00:01:16 (76.6 ms)
+    ru_maxrss:   11888
+    ru_minflt:   9053692
+    ru_majflt:   8
+    ru_inblock:  35390088
+    ru_oublock:  8362336
+    ru_nvcsw:    148625
+    ru_nivcsw:   390496
+  GNU time:     
+    real:        00:37:22 (2242.9 ms)
+    user:        00:36:02 (2162.5 ms)
+    sys:         00:01:16 (76.6 ms)
+  Size (MB):     4,082.90 (4281226239 bytes) (SRR870667_1/output/SRR870667_2.bz2)
+  Free space:      2.8T  845G  2.0T  31% /local-scratch
+*** 2015-11-16 13:29:25 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       SRR870667_1/output/SRR870667_2.bz2
+    stdout:      SRR870667_1/output/SRR870667_2.bz2.fq
+  stderr:      SRR870667_1/log/pbzip2_2.1.dec.log
+  Process PID:   6778
+  Exit code:     0
+  Wall time:     00:13:14 (794.6 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:12:05 (725.0 ms)
+    ru_stime:    00:00:21 (21.5 ms)
+    ru_maxrss:   5932
+    ru_minflt:   2146
+    ru_majflt:   8
+    ru_inblock:  8387432
+    ru_oublock:  35364440
+    ru_nvcsw:    1109
+    ru_nivcsw:   107367
+  GNU time:     
+    real:        00:13:14 (794.5 ms)
+    user:        00:12:05 (725.0 ms)
+    sys:         00:00:21 (21.5 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/SRR870667_2.bz2.fq)
+  Free space:      2.8T  862G  1.9T  31% /local-scratch
+
+######################################################################## 
+#                                scalce                                # 
+########################################################################
+>>> scalce_1
+*** 2015-11-16 13:42:45 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -T 1 SRR870667_1.fastq -o SRR870667_1/output/SRR870667_1.scalce  -r
+  stderr:      SRR870667_1/log/scalce_1.1.cmp.log
+  Process PID:   6969
+  Exit code:     0
+  Wall time:     00:44:45 (2685.1 ms)
+  Memory (MB):   5340.8
+  Resources:    
+    ru_utime:    00:38:03 (2283.9 ms)
+    ru_stime:    00:01:33 (93.9 ms)
+    ru_maxrss:   5468980
+    ru_minflt:   252853
+    ru_majflt:   10
+    ru_inblock:  80238072
+    ru_oublock:  80228136
+    ru_nvcsw:    29886
+    ru_nivcsw:   471145
+  GNU time:     
+    real:        00:44:45 (2685.1 ms)
+    user:        00:38:03 (2283.9 ms)
+    sys:         00:01:33 (93.9 ms)
+  Size (MB):     6,373.51 (6683111889 bytes) (SRR870667_1/output/SRR870667_1.scalce_1.scalcen, SRR870667_1/output/SRR870667_1.scalce_1.scalceq, SRR870667_1/output/SRR870667_1.scalce_1.scalcer, SRR870667_1/output/SRR870667_1.scalce_2.scalcen, SRR870667_1/output/SRR870667_1.scalce_2.scalceq, SRR870667_1/output/SRR870667_1.scalce_2.scalcer)
+  Free space:      2.8T  868G  1.9T  32% /local-scratch
+*** 2015-11-16 14:27:37 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -d -r -T 1 SRR870667_1/output/SRR870667_1.scalce_1.scalcer -o SRR870667_1/output/SRR870667_1.scalce.fq
+  stderr:      SRR870667_1/log/scalce_1.1.dec.log
+  Process PID:   8646
+  Exit code:     0
+  Wall time:     00:43:49 (2629.3 ms)
+  Memory (MB):   1011.1
+  Resources:    
+    ru_utime:    00:42:02 (2522.2 ms)
+    ru_stime:    00:00:30 (30.1 ms)
+    ru_maxrss:   1035324
+    ru_minflt:   243108
+    ru_majflt:   10
+    ru_inblock:  13114728
+    ru_oublock:  55561424
+    ru_nvcsw:    26438
+    ru_nivcsw:   282775
+  GNU time:     
+    real:        00:43:49 (2629.2 ms)
+    user:        00:42:02 (2522.2 ms)
+    sys:         00:00:30 (30.1 ms)
+  Size (MB):     27,129.58 (28447426280 bytes) (SRR870667_1/output/SRR870667_1.scalce.fq_1.fastq, SRR870667_1/output/SRR870667_1.scalce.fq_2.fastq)
+  Free space:      2.8T  895G  1.9T  33% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single_1
+*** 2015-12-05 16:10:22 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -T 1 SRR870667_1.fastq -o SRR870667_1/output/SRR870667_1.scalce-single  
+  stderr:      SRR870667_1/log/scalce-single_1.1.cmp.log
+  Process PID:   6386
+  Exit code:     0
+  Wall time:     00:27:24 (1644.9 ms)
+  Memory (MB):   5295.5
+  Resources:    
+    ru_utime:    00:26:04 (1564.2 ms)
+    ru_stime:    00:00:54 (54.1 ms)
+    ru_maxrss:   5422596
+    ru_minflt:   253004
+    ru_majflt:   10
+    ru_inblock:  44874392
+    ru_oublock:  48782296
+    ru_nvcsw:    1922
+    ru_nivcsw:   338712
+  GNU time:     
+    real:        00:27:24 (1644.6 ms)
+    user:        00:26:04 (1564.2 ms)
+    sys:         00:00:54 (54.1 ms)
+  Size (MB):     3,527.40 (3698749926 bytes) (SRR870667_1/output/SRR870667_1.scalce-single_1.scalcen, SRR870667_1/output/SRR870667_1.scalce-single_1.scalceq, SRR870667_1/output/SRR870667_1.scalce-single_1.scalcer)
+  Free space:      2.8T  1.9T  910G  68% /local-scratch
+*** 2015-12-05 16:37:51 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce -d -T 1 SRR870667_1/output/SRR870667_1.scalce-single_1.scalcer -o SRR870667_1/output/decompressed/SRR870667_1.scalce-single.fq
+  stderr:      SRR870667_1/log/scalce-single_1.1.dec.log
+  Process PID:   7414
+  Exit code:     0
+  Wall time:     00:25:56 (1556.1 ms)
+  Memory (MB):   1007.6
+  Resources:    
+    ru_utime:    00:24:55 (1495.6 ms)
+    ru_stime:    00:00:17 (17.4 ms)
+    ru_maxrss:   1031784
+    ru_minflt:   242752
+    ru_majflt:   10
+    ru_inblock:  7286128
+    ru_oublock:  32369456
+    ru_nvcsw:    13246
+    ru_nivcsw:   166955
+  GNU time:     
+    real:        00:25:56 (1556.0 ms)
+    user:        00:24:55 (1495.6 ms)
+    sys:         00:00:17 (17.3 ms)
+  Size (MB):     15,805.38 (16573146698 bytes) (SRR870667_1/output/decompressed/SRR870667_1.scalce-single.fq_1.fastq)
+  Free space:      2.8T  1.9T  895G  68% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc_1
+*** 2015-12-05 17:04:27 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1   SRR870667_1.fastq SRR870667_1/output/SRR870667_1.dsrc
+  stderr:      SRR870667_1/log/dsrc_1.1.cmp.log
+  Process PID:   8459
+  Exit code:     0
+  Wall time:     00:09:49 (589.4 ms)
+  Memory (MB):   17.4
+  Resources:    
+    ru_utime:    00:07:58 (478.0 ms)
+    ru_stime:    00:00:26 (26.6 ms)
+    ru_maxrss:   17836
+    ru_minflt:   4388
+    ru_majflt:   10
+    ru_inblock:  44838160
+    ru_oublock:  9298296
+    ru_nvcsw:    102841
+    ru_nivcsw:   95277
+  GNU time:     
+    real:        00:09:49 (589.3 ms)
+    user:        00:07:57 (477.9 ms)
+    sys:         00:00:26 (26.6 ms)
+  Size (MB):     4,540.11 (4760648624 bytes) (SRR870667_1/output/SRR870667_1.dsrc)
+  Free space:      2.8T  1.9T  894G  69% /local-scratch
+*** 2015-12-05 17:14:20 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 SRR870667_1/output/SRR870667_1.dsrc SRR870667_1/output/decompressed/SRR870667_1.dsrc.fq
+  stderr:      SRR870667_1/log/dsrc_1.1.dec.log
+  Process PID:   8603
+  Exit code:     0
+  Wall time:     00:07:21 (441.9 ms)
+  Memory (MB):   20.7
+  Resources:    
+    ru_utime:    00:05:11 (311.9 ms)
+    ru_stime:    00:00:26 (26.3 ms)
+    ru_maxrss:   21228
+    ru_minflt:   6506
+    ru_majflt:   10
+    ru_inblock:  9324168
+    ru_oublock:  44811848
+    ru_nvcsw:    22610
+    ru_nivcsw:   44619
+  GNU time:     
+    real:        00:07:21 (441.8 ms)
+    user:        00:05:11 (311.9 ms)
+    sys:         00:00:26 (26.3 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/decompressed/SRR870667_1.dsrc.fq)
+  Free space:      2.8T  1.9T  872G  69% /local-scratch
+
+>>> dsrc_2
+*** 2015-12-05 17:22:34 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1   SRR870667_2.fastq SRR870667_1/output/SRR870667_2.dsrc
+  stderr:      SRR870667_1/log/dsrc_2.1.cmp.log
+  Process PID:   8697
+  Exit code:     0
+  Wall time:     00:07:56 (476.5 ms)
+  Memory (MB):   18.4
+  Resources:    
+    ru_utime:    00:06:28 (388.7 ms)
+    ru_stime:    00:00:19 (19.8 ms)
+    ru_maxrss:   18884
+    ru_minflt:   4759
+    ru_majflt:   10
+    ru_inblock:  35390432
+    ru_oublock:  6898856
+    ru_nvcsw:    87004
+    ru_nivcsw:   72165
+  GNU time:     
+    real:        00:07:56 (476.4 ms)
+    user:        00:06:28 (388.7 ms)
+    sys:         00:00:19 (19.8 ms)
+  Size (MB):     3,368.52 (3532146678 bytes) (SRR870667_1/output/SRR870667_2.dsrc)
+  Free space:      2.8T  1.9T  873G  69% /local-scratch
+*** 2015-12-05 17:30:34 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 SRR870667_1/output/SRR870667_2.dsrc SRR870667_1/output/decompressed/SRR870667_2.dsrc.fq
+  stderr:      SRR870667_1/log/dsrc_2.1.dec.log
+  Process PID:   8790
+  Exit code:     0
+  Wall time:     00:05:41 (341.2 ms)
+  Memory (MB):   16.1
+  Resources:    
+    ru_utime:    00:03:54 (234.4 ms)
+    ru_stime:    00:00:20 (20.7 ms)
+    ru_maxrss:   16512
+    ru_minflt:   2695
+    ru_majflt:   10
+    ru_inblock:  6924696
+    ru_oublock:  35364448
+    ru_nvcsw:    16449
+    ru_nivcsw:   34041
+  GNU time:     
+    real:        00:05:41 (341.1 ms)
+    user:        00:03:54 (234.4 ms)
+    sys:         00:00:20 (20.7 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/decompressed/SRR870667_2.dsrc.fq)
+  Free space:      2.8T  1.9T  857G  70% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2_1
+*** 2015-12-05 17:36:54 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1 -m2  SRR870667_1.fastq SRR870667_1/output/SRR870667_1.dsrc-m2
+  stderr:      SRR870667_1/log/dsrc-m2_1.1.cmp.log
+  Process PID:   8867
+  Exit code:     0
+  Wall time:     00:32:05 (1925.1 ms)
+  Memory (MB):   437.4
+  Resources:    
+    ru_utime:    00:30:21 (1821.2 ms)
+    ru_stime:    00:00:36 (36.9 ms)
+    ru_maxrss:   447880
+    ru_minflt:   12214
+    ru_majflt:   10
+    ru_inblock:  44837056
+    ru_oublock:  8293376
+    ru_nvcsw:    95725
+    ru_nivcsw:   221250
+  GNU time:     
+    real:        00:32:05 (1925.0 ms)
+    user:        00:30:21 (1821.2 ms)
+    sys:         00:00:36 (36.9 ms)
+  Size (MB):     4,049.32 (4246017231 bytes) (SRR870667_1/output/SRR870667_1.dsrc-m2)
+  Free space:      2.8T  1.9T  856G  70% /local-scratch
+*** 2015-12-05 18:09:02 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 SRR870667_1/output/SRR870667_1.dsrc-m2 SRR870667_1/output/decompressed/SRR870667_1.dsrc-m2.fq
+  stderr:      SRR870667_1/log/dsrc-m2_1.1.dec.log
+  Process PID:   9266
+  Exit code:     0
+  Wall time:     00:33:09 (1989.1 ms)
+  Memory (MB):   374.3
+  Resources:    
+    ru_utime:    00:32:31 (1951.8 ms)
+    ru_stime:    00:00:27 (27.5 ms)
+    ru_maxrss:   383296
+    ru_minflt:   5496
+    ru_majflt:   10
+    ru_inblock:  8319264
+    ru_oublock:  44811848
+    ru_nvcsw:    16795
+    ru_nivcsw:   215269
+  GNU time:     
+    real:        00:33:09 (1989.0 ms)
+    user:        00:32:31 (1951.8 ms)
+    sys:         00:00:27 (27.5 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/decompressed/SRR870667_1.dsrc-m2.fq)
+  Free space:      2.8T  2.0T  835G  71% /local-scratch
+
+>>> dsrc-m2_2
+*** 2015-12-05 18:42:58 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1 -m2  SRR870667_2.fastq SRR870667_1/output/SRR870667_2.dsrc-m2
+  stderr:      SRR870667_1/log/dsrc-m2_2.1.cmp.log
+  Process PID:   9649
+  Exit code:     0
+  Wall time:     00:23:00 (1380.5 ms)
+  Memory (MB):   467.4
+  Resources:    
+    ru_utime:    00:21:37 (1297.8 ms)
+    ru_stime:    00:00:29 (29.1 ms)
+    ru_maxrss:   478604
+    ru_minflt:   13653
+    ru_majflt:   10
+    ru_inblock:  35390472
+    ru_oublock:  6181832
+    ru_nvcsw:    105275
+    ru_nivcsw:   154174
+  GNU time:     
+    real:        00:23:00 (1380.4 ms)
+    user:        00:21:37 (1297.8 ms)
+    sys:         00:00:29 (29.1 ms)
+  Size (MB):     3,018.33 (3164944162 bytes) (SRR870667_1/output/SRR870667_2.dsrc-m2)
+  Free space:      2.8T  2.0T  836G  71% /local-scratch
+*** 2015-12-05 19:06:02 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc d -v -t1 SRR870667_1/output/SRR870667_2.dsrc-m2 SRR870667_1/output/decompressed/SRR870667_2.dsrc-m2.fq
+  stderr:      SRR870667_1/log/dsrc-m2_2.1.dec.log
+  Process PID:   9933
+  Exit code:     0
+  Wall time:     00:23:02 (1382.6 ms)
+  Memory (MB):   379.9
+  Resources:    
+    ru_utime:    00:22:33 (1353.7 ms)
+    ru_stime:    00:00:21 (21.5 ms)
+    ru_maxrss:   389008
+    ru_minflt:   4074
+    ru_majflt:   10
+    ru_inblock:  6207560
+    ru_oublock:  35364448
+    ru_nvcsw:    12880
+    ru_nivcsw:   149913
+  GNU time:     
+    real:        00:23:02 (1382.5 ms)
+    user:        00:22:33 (1353.7 ms)
+    sys:         00:00:21 (21.5 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/decompressed/SRR870667_2.dsrc-m2.fq)
+  Free space:      2.8T  2.0T  819G  71% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1: SRR870667_1.fastq)
+*** 2015-12-29 01:54:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/orcom/bin/orcom e 1 'SRR870667_1.fastq' SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom 
+    stderr:      SRR870667/log/SRR870667_1.fastq.orcom.1.cmp.log
+  Process PID:   6585
+  Exit code:     0
+  Wall time:     00:38:04 (2284.7 ms)
+  Memory (MB):   453.0
+  Resources:    
+    ru_utime:    00:35:46 (2146.7 ms)
+    ru_stime:    00:00:39 (39.5 ms)
+    ru_maxrss:   463840
+    ru_minflt:   32234
+    ru_majflt:   14
+    ru_inblock:  44838560
+    ru_oublock:  5223736
+    ru_nvcsw:    148085
+    ru_nivcsw:   228667
+  GNU time:     
+    real:        00:38:04 (2284.6 ms)
+    user:        00:35:46 (2146.7 ms)
+    sys:         00:00:39 (39.5 ms)
+  Size (MB):     786.41 (824611989 bytes) (SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom.cmeta, SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom.cdna)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+*** 2015-12-29 02:32:15 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/orcom/bin/orcom d 1 SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom SRR870667/output/decompressed/orcom/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.orcom.1.dec.log
+  Process PID:   7022
+  Exit code:     0
+  Wall time:     00:06:27 (387.9 ms)
+  Memory (MB):   701.3
+  Resources:    
+    ru_utime:    00:05:49 (349.7 ms)
+    ru_stime:    00:00:08 (8.0 ms)
+    ru_maxrss:   718100
+    ru_minflt:   18223
+    ru_majflt:   12
+    ru_inblock:  1636736
+    ru_oublock:  14710976
+    ru_nvcsw:    3436
+    ru_nivcsw:   39899
+  GNU time:     
+    real:        00:06:27 (387.8 ms)
+    user:        00:05:49 (349.7 ms)
+    sys:         00:00:08 (8.0 ms)
+  Size (MB):     7,183.08 (7532007583 bytes) (SRR870667/output/decompressed/orcom/SRR870667_1.fastq.fq)
+  Free space:      2.8T  1.2T  1.6T  44% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip_1
+*** 2015-12-06 20:40:51 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v SRR870667_1.fastq  
+    stdout:      SRR870667_1/output/SRR870667_1.qp
+  stderr:      SRR870667_1/log/quip_1.1.cmp.log
+  Process PID:   25082
+  Exit code:     0
+  Wall time:     00:22:00 (1320.6 ms)
+  Memory (MB):   396.6
+  Resources:    
+    ru_utime:    00:20:32 (1232.9 ms)
+    ru_stime:    00:00:23 (23.3 ms)
+    ru_maxrss:   406124
+    ru_minflt:   38798
+    ru_majflt:   16
+    ru_inblock:  44816240
+    ru_oublock:  7645096
+    ru_nvcsw:    127722
+    ru_nivcsw:   212350
+  GNU time:     
+    real:        00:22:00 (1320.5 ms)
+    user:        00:20:32 (1232.9 ms)
+    sys:         00:00:23 (23.3 ms)
+  Size (MB):     3,732.51 (3913817212 bytes) (SRR870667_1/output/SRR870667_1.qp)
+  Free space:      2.8T  1.9T  918G  68% /local-scratch
+*** 2015-12-06 21:02:54 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq SRR870667_1/output/SRR870667_1.qp
+    stdout:      SRR870667_1/output/decompressed/SRR870667_1.qp.fq
+  stderr:      SRR870667_1/log/quip_1.1.dec.log
+  Process PID:   16898
+  Exit code:     0
+  Wall time:     00:29:33 (1773.0 ms)
+  Memory (MB):   388.4
+  Resources:    
+    ru_utime:    00:27:26 (1646.6 ms)
+    ru_stime:    00:00:24 (24.9 ms)
+    ru_maxrss:   397756
+    ru_minflt:   38737
+    ru_majflt:   16
+    ru_inblock:  7648368
+    ru_oublock:  37386800
+    ru_nvcsw:    47630
+    ru_nivcsw:   246073
+  GNU time:     
+    real:        00:29:32 (1772.9 ms)
+    user:        00:27:26 (1646.6 ms)
+    sys:         00:00:24 (24.9 ms)
+  Size (MB):     18,255.27 (19142037206 bytes) (SRR870667_1/output/decompressed/SRR870667_1.qp.fq)
+  Free space:      2.8T  1.9T  900G  68% /local-scratch
+
+>>> quip_2
+*** 2015-12-06 21:33:11 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v SRR870667_2.fastq  
+    stdout:      SRR870667_1/output/SRR870667_2.qp
+  stderr:      SRR870667_1/log/quip_2.1.cmp.log
+  Process PID:   8798
+  Exit code:     0
+  Wall time:     00:16:43 (1003.0 ms)
+  Memory (MB):   395.5
+  Resources:    
+    ru_utime:    00:15:37 (937.5 ms)
+    ru_stime:    00:00:19 (19.4 ms)
+    ru_maxrss:   405020
+    ru_minflt:   38771
+    ru_majflt:   16
+    ru_inblock:  35368336
+    ru_oublock:  5709488
+    ru_nvcsw:    108215
+    ru_nivcsw:   171669
+  GNU time:     
+    real:        00:16:42 (1002.9 ms)
+    user:        00:15:37 (937.5 ms)
+    sys:         00:00:19 (19.4 ms)
+  Size (MB):     2,787.51 (2922911907 bytes) (SRR870667_1/output/SRR870667_2.qp)
+  Free space:      2.8T  1.9T  901G  68% /local-scratch
+*** 2015-12-06 21:49:57 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq SRR870667_1/output/SRR870667_2.qp
+    stdout:      SRR870667_1/output/decompressed/SRR870667_2.qp.fq
+  stderr:      SRR870667_1/log/quip_2.1.dec.log
+  Process PID:   32437
+  Exit code:     0
+  Wall time:     00:22:12 (1332.1 ms)
+  Memory (MB):   389.4
+  Resources:    
+    ru_utime:    00:20:41 (1241.1 ms)
+    ru_stime:    00:00:18 (18.8 ms)
+    ru_maxrss:   398708
+    ru_minflt:   39577
+    ru_majflt:   16
+    ru_inblock:  5712456
+    ru_oublock:  28074368
+    ru_nvcsw:    47630
+    ru_nivcsw:   203817
+  GNU time:     
+    real:        00:22:12 (1332.0 ms)
+    user:        00:20:41 (1241.1 ms)
+    sys:         00:00:18 (18.8 ms)
+  Size (MB):     13,708.18 (14374069103 bytes) (SRR870667_1/output/decompressed/SRR870667_2.qp.fq)
+  Free space:      2.8T  1.9T  888G  69% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+>>> quip-asm_1
+*** 2015-12-06 22:12:41 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v SRR870667_1.fastq -a 
+    stdout:      SRR870667_1/output/SRR870667_1.qp-asm
+  stderr:      SRR870667_1/log/quip-asm_1.1.cmp.log
+  Process PID:   24273
+  Exit code:     0
+  Wall time:     00:25:38 (1538.4 ms)
+  Memory (MB):   773.2
+  Resources:    
+    ru_utime:    00:24:14 (1454.1 ms)
+    ru_stime:    00:00:23 (23.2 ms)
+    ru_maxrss:   791780
+    ru_minflt:   43759
+    ru_majflt:   16
+    ru_inblock:  44816000
+    ru_oublock:  7645144
+    ru_nvcsw:    118533
+    ru_nivcsw:   230480
+  GNU time:     
+    real:        00:25:38 (1538.3 ms)
+    user:        00:24:14 (1454.1 ms)
+    sys:         00:00:23 (23.2 ms)
+  Size (MB):     3,732.51 (3913817220 bytes) (SRR870667_1/output/SRR870667_1.qp-asm)
+  Free space:      2.8T  1.9T  887G  69% /local-scratch
+*** 2015-12-06 22:38:23 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq SRR870667_1/output/SRR870667_1.qp-asm
+    stdout:      SRR870667_1/output/decompressed/SRR870667_1.qp-asm.fq
+  stderr:      SRR870667_1/log/quip-asm_1.1.dec.log
+  Process PID:   16114
+  Exit code:     0
+  Wall time:     00:30:41 (1841.3 ms)
+  Memory (MB):   772.1
+  Resources:    
+    ru_utime:    00:28:22 (1702.8 ms)
+    ru_stime:    00:00:24 (24.7 ms)
+    ru_maxrss:   790648
+    ru_minflt:   44044
+    ru_majflt:   16
+    ru_inblock:  7648080
+    ru_oublock:  37386808
+    ru_nvcsw:    48380
+    ru_nivcsw:   249415
+  GNU time:     
+    real:        00:30:41 (1841.2 ms)
+    user:        00:28:22 (1702.8 ms)
+    sys:         00:00:24 (24.7 ms)
+  Size (MB):     18,255.27 (19142037206 bytes) (SRR870667_1/output/decompressed/SRR870667_1.qp-asm.fq)
+  Free space:      2.8T  1.9T  869G  69% /local-scratch
+
+>>> quip-asm_2
+*** 2015-12-06 23:09:47 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v SRR870667_2.fastq -a 
+    stdout:      SRR870667_1/output/SRR870667_2.qp-asm
+  stderr:      SRR870667_1/log/quip-asm_2.1.cmp.log
+  Process PID:   8027
+  Exit code:     0
+  Wall time:     00:19:05 (1145.8 ms)
+  Memory (MB):   769.9
+  Resources:    
+    ru_utime:    00:18:00 (1080.4 ms)
+    ru_stime:    00:00:19 (19.2 ms)
+    ru_maxrss:   788408
+    ru_minflt:   42407
+    ru_majflt:   16
+    ru_inblock:  35368616
+    ru_oublock:  5709520
+    ru_nvcsw:    102744
+    ru_nivcsw:   179261
+  GNU time:     
+    real:        00:19:05 (1145.7 ms)
+    user:        00:18:00 (1080.4 ms)
+    sys:         00:00:19 (19.2 ms)
+  Size (MB):     2,787.51 (2922911915 bytes) (SRR870667_1/output/SRR870667_2.qp-asm)
+  Free space:      2.8T  1.9T  870G  69% /local-scratch
+*** 2015-12-06 23:28:56 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq SRR870667_1/output/SRR870667_2.qp-asm
+    stdout:      SRR870667_1/output/decompressed/SRR870667_2.qp-asm.fq
+  stderr:      SRR870667_1/log/quip-asm_2.1.dec.log
+  Process PID:   31691
+  Exit code:     0
+  Wall time:     00:22:43 (1363.9 ms)
+  Memory (MB):   767.5
+  Resources:    
+    ru_utime:    00:21:03 (1263.8 ms)
+    ru_stime:    00:00:18 (18.9 ms)
+    ru_maxrss:   785880
+    ru_minflt:   43544
+    ru_majflt:   16
+    ru_inblock:  5712736
+    ru_oublock:  28074376
+    ru_nvcsw:    48824
+    ru_nivcsw:   208305
+  GNU time:     
+    real:        00:22:43 (1363.8 ms)
+    user:        00:21:03 (1263.8 ms)
+    sys:         00:00:18 (18.9 ms)
+  Size (MB):     13,708.18 (14374069103 bytes) (SRR870667_1/output/decompressed/SRR870667_2.qp-asm.fq)
+  Free space:      2.8T  1.9T  857G  70% /local-scratch
+
+######################################################################## 
+#                               fqzcomp                                # 
+########################################################################
+>>> fqzcomp_1
+*** 2015-11-16 17:50:59 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp   -P SRR870667_1.fastq SRR870667_1/output/SRR870667_1.fqz
+  stderr:      SRR870667_1/log/fqzcomp_1.1.cmp.log
+  Process PID:   12231
+  Exit code:     0
+  Wall time:     00:15:10 (910.7 ms)
+  Memory (MB):   75.5
+  Resources:    
+    ru_utime:    00:13:01 (781.5 ms)
+    ru_stime:    00:00:33 (33.1 ms)
+    ru_maxrss:   77360
+    ru_minflt:   2505
+    ru_majflt:   8
+    ru_inblock:  44837992
+    ru_oublock:  7867240
+    ru_nvcsw:    121393
+    ru_nivcsw:   122812
+  GNU time:     
+    real:        00:15:10 (910.6 ms)
+    user:        00:13:01 (781.5 ms)
+    sys:         00:00:33 (33.0 ms)
+  Size (MB):     3,841.32 (4027916128 bytes) (SRR870667_1/output/SRR870667_1.fqz)
+  Free space:      2.8T 1004G  1.8T  36% /local-scratch
+*** 2015-11-16 18:06:14 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P SRR870667_1/output/SRR870667_1.fqz SRR870667_1/output/SRR870667_1.fqz.fq
+  stderr:      SRR870667_1/log/fqzcomp_1.1.dec.log
+  Process PID:   12408
+  Exit code:     256
+  Wall time:     00:00:01 (1.2 ms)
+  Memory (MB):   67.4
+  Resources:    
+    ru_utime:    00:00:00 (0.4 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   69048
+    ru_minflt:   2469
+    ru_majflt:   8
+    ru_inblock:  29696
+    ru_oublock:  16
+    ru_nvcsw:    111
+    ru_nivcsw:   79
+  GNU time:     
+    real:        00:00:01 (1.1 ms)
+    user:        00:00:00 (0.4 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     ? (SRR870667_1/output/SRR870667_1.fqz.fq)
+  Free space:      2.8T 1004G  1.8T  36% /local-scratch
+
+>>> fqzcomp_2
+*** 2015-11-16 18:06:15 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp   -P SRR870667_2.fastq SRR870667_1/output/SRR870667_2.fqz
+  stderr:      SRR870667_1/log/fqzcomp_2.1.cmp.log
+  Process PID:   12415
+  Exit code:     0
+  Wall time:     00:11:23 (683.6 ms)
+  Memory (MB):   79.5
+  Resources:    
+    ru_utime:    00:09:43 (583.9 ms)
+    ru_stime:    00:00:26 (26.6 ms)
+    ru_maxrss:   81456
+    ru_minflt:   2506
+    ru_majflt:   8
+    ru_inblock:  35389512
+    ru_oublock:  5819168
+    ru_nvcsw:    81385
+    ru_nivcsw:   107164
+  GNU time:     
+    real:        00:11:23 (683.5 ms)
+    user:        00:09:43 (583.9 ms)
+    sys:         00:00:26 (26.6 ms)
+  Size (MB):     2,841.31 (2979324749 bytes) (SRR870667_1/output/SRR870667_2.fqz)
+  Free space:      2.8T 1007G  1.8T  37% /local-scratch
+*** 2015-11-16 18:17:41 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P SRR870667_1/output/SRR870667_2.fqz SRR870667_1/output/SRR870667_2.fqz.fq
+  stderr:      SRR870667_1/log/fqzcomp_2.1.dec.log
+  Process PID:   12579
+  Exit code:     256
+  Wall time:     00:00:00 (0.8 ms)
+  Memory (MB):   65.4
+  Resources:    
+    ru_utime:    00:00:00 (0.5 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   67000
+    ru_minflt:   2468
+    ru_majflt:   8
+    ru_inblock:  30216
+    ru_oublock:  16
+    ru_nvcsw:    123
+    ru_nivcsw:   86
+  GNU time:     
+    real:        00:00:00 (0.8 ms)
+    user:        00:00:00 (0.5 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     ? (SRR870667_1/output/SRR870667_2.fqz.fq)
+  Free space:      2.8T 1007G  1.8T  37% /local-scratch
+
+######################################################################## 
+#                            fqzcomp-extra                             # 
+########################################################################
+>>> fqzcomp-extra_1
+*** 2015-11-16 18:17:42 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -s9+ -q3 -n2 -e  -P SRR870667_1.fastq SRR870667_1/output/SRR870667_1.fqz-extra
+  stderr:      SRR870667_1/log/fqzcomp-extra_1.1.cmp.log
+  Process PID:   12586
+  Exit code:     0
+  Wall time:     00:16:19 (979.3 ms)
+  Memory (MB):   326.5
+  Resources:    
+    ru_utime:    00:14:25 (865.6 ms)
+    ru_stime:    00:00:30 (30.3 ms)
+    ru_maxrss:   334384
+    ru_minflt:   1865
+    ru_majflt:   8
+    ru_inblock:  44836896
+    ru_oublock:  8257848
+    ru_nvcsw:    116077
+    ru_nivcsw:   137180
+  GNU time:     
+    real:        00:16:19 (979.2 ms)
+    user:        00:14:25 (865.6 ms)
+    sys:         00:00:30 (30.3 ms)
+  Size (MB):     4,032.04 (4227895981 bytes) (SRR870667_1/output/SRR870667_1.fqz-extra)
+  Free space:      2.8T 1011G  1.8T  37% /local-scratch
+*** 2015-11-16 18:34:05 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P SRR870667_1/output/SRR870667_1.fqz-extra SRR870667_1/output/SRR870667_1.fqz-extra.fq
+  stderr:      SRR870667_1/log/fqzcomp-extra_1.1.dec.log
+  Process PID:   12767
+  Exit code:     256
+  Wall time:     00:00:01 (1.1 ms)
+  Memory (MB):   316.4
+  Resources:    
+    ru_utime:    00:00:00 (0.6 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   324016
+    ru_minflt:   1821
+    ru_majflt:   8
+    ru_inblock:  30184
+    ru_oublock:  16
+    ru_nvcsw:    115
+    ru_nivcsw:   107
+  GNU time:     
+    real:        00:00:01 (1.0 ms)
+    user:        00:00:00 (0.6 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     ? (SRR870667_1/output/SRR870667_1.fqz-extra.fq)
+  Free space:      2.8T 1011G  1.8T  37% /local-scratch
+
+>>> fqzcomp-extra_2
+*** 2015-11-16 18:34:06 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -s9+ -q3 -n2 -e  -P SRR870667_2.fastq SRR870667_1/output/SRR870667_2.fqz-extra
+  stderr:      SRR870667_1/log/fqzcomp-extra_2.1.cmp.log
+  Process PID:   12774
+  Exit code:     0
+  Wall time:     00:12:06 (726.5 ms)
+  Memory (MB):   328.5
+  Resources:    
+    ru_utime:    00:10:31 (631.6 ms)
+    ru_stime:    00:00:25 (25.7 ms)
+    ru_maxrss:   336432
+    ru_minflt:   1864
+    ru_majflt:   8
+    ru_inblock:  35389496
+    ru_oublock:  6150696
+    ru_nvcsw:    81173
+    ru_nivcsw:   112133
+  GNU time:     
+    real:        00:12:06 (726.5 ms)
+    user:        00:10:31 (631.6 ms)
+    sys:         00:00:25 (25.7 ms)
+  Size (MB):     3,003.18 (3149061264 bytes) (SRR870667_1/output/SRR870667_2.fqz-extra)
+  Free space:      2.8T 1014G  1.8T  37% /local-scratch
+*** 2015-11-16 18:46:16 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -d -P SRR870667_1/output/SRR870667_2.fqz-extra SRR870667_1/output/SRR870667_2.fqz-extra.fq
+  stderr:      SRR870667_1/log/fqzcomp-extra_2.1.dec.log
+  Process PID:   12947
+  Exit code:     256
+  Wall time:     00:00:01 (1.1 ms)
+  Memory (MB):   316.4
+  Resources:    
+    ru_utime:    00:00:00 (0.6 ms)
+    ru_stime:    00:00:00 (0.2 ms)
+    ru_maxrss:   324016
+    ru_minflt:   2334
+    ru_majflt:   8
+    ru_inblock:  30192
+    ru_oublock:  16
+    ru_nvcsw:    122
+    ru_nivcsw:   105
+  GNU time:     
+    real:        00:00:01 (1.0 ms)
+    user:        00:00:00 (0.6 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     ? (SRR870667_1/output/SRR870667_2.fqz-extra.fq)
+  Free space:      2.8T 1014G  1.8T  37% /local-scratch
+
+######################################################################## 
+#                                fastqz                                # 
+########################################################################
+>>> fastqz_1
+*** 2015-11-16 18:46:17 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fastqz/fastqz c SRR870667_1.fastq SRR870667_1/output/SRR870667_1.fastqz  
+  stderr:      SRR870667_1/log/fastqz_1.1.cmp.log
+  Process PID:   12954
+  Exit code:     256
+  Wall time:     00:00:00 (0.2 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   5972
+    ru_minflt:   887
+    ru_majflt:   8
+    ru_inblock:  24824
+    ru_oublock:  40
+    ru_nvcsw:    26
+    ru_nivcsw:   28
+  GNU time:     
+    real:        00:00:00 (0.2 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     0.00 (80 bytes) (SRR870667_1/output/SRR870667_1.fastqz.fxh, SRR870667_1/output/SRR870667_1.fastqz.fxb, SRR870667_1/output/SRR870667_1.fastqz.fxq)
+  Free space:      2.8T 1014G  1.8T  37% /local-scratch
+
+>>> fastqz_2
+*** 2015-11-16 18:46:18 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fastqz/fastqz c SRR870667_2.fastq SRR870667_1/output/SRR870667_2.fastqz  
+  stderr:      SRR870667_1/log/fastqz_2.1.cmp.log
+  Process PID:   12961
+  Exit code:     256
+  Wall time:     00:00:00 (0.2 ms)
+  Memory (MB):   5.8
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   5976
+    ru_minflt:   882
+    ru_majflt:   8
+    ru_inblock:  24808
+    ru_oublock:  40
+    ru_nvcsw:    88
+    ru_nivcsw:   27
+  GNU time:     
+    real:        00:00:00 (0.2 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     0.00 (70 bytes) (SRR870667_1/output/SRR870667_2.fastqz.fxh, SRR870667_1/output/SRR870667_2.fastqz.fxb, SRR870667_1/output/SRR870667_2.fastqz.fxq)
+  Free space:      2.8T 1014G  1.8T  37% /local-scratch
+
+######################################################################## 
+#                              slimfastq                               # 
+########################################################################
+>>> slimfastq_1
+*** 2015-11-16 18:46:19 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -u SRR870667_1.fastq -f SRR870667_1/output/SRR870667_1.slimfastq -O  
+  stderr:      SRR870667_1/log/slimfastq_1.1.cmp.log
+  Process PID:   12982
+  Exit code:     0
+  Wall time:     00:23:39 (1419.1 ms)
+  Memory (MB):   79.0
+  Resources:    
+    ru_utime:    00:22:38 (1358.9 ms)
+    ru_stime:    00:00:29 (29.4 ms)
+    ru_maxrss:   80872
+    ru_minflt:   1851
+    ru_majflt:   7
+    ru_inblock:  44836728
+    ru_oublock:  8361072
+    ru_nvcsw:    976
+    ru_nivcsw:   314329
+  GNU time:     
+    real:        00:23:39 (1419.1 ms)
+    user:        00:22:38 (1358.9 ms)
+    sys:         00:00:29 (29.4 ms)
+  Size (MB):     4,081.29 (4279541760 bytes) (SRR870667_1/output/SRR870667_1.slimfastq)
+  Free space:      2.8T 1018G  1.8T  37% /local-scratch
+*** 2015-11-16 19:10:02 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -d SRR870667_1/output/SRR870667_1.slimfastq  SRR870667_1/output/SRR870667_1.slimfastq.fq -O
+  stderr:      SRR870667_1/log/slimfastq_1.1.dec.log
+  Process PID:   13272
+  Exit code:     0
+  Wall time:     00:30:45 (1845.6 ms)
+  Memory (MB):   78.9
+  Resources:    
+    ru_utime:    00:29:30 (1770.8 ms)
+    ru_stime:    00:00:32 (32.0 ms)
+    ru_maxrss:   80776
+    ru_minflt:   2336
+    ru_majflt:   5
+    ru_inblock:  8383960
+    ru_oublock:  44811840
+    ru_nvcsw:    696
+    ru_nivcsw:   219783
+  GNU time:     
+    real:        00:30:45 (1845.5 ms)
+    user:        00:29:30 (1770.8 ms)
+    sys:         00:00:32 (32.0 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/SRR870667_1.slimfastq.fq)
+  Free space:      2.8T  1.1T  1.8T  38% /local-scratch
+
+>>> slimfastq_2
+*** 2015-11-16 19:40:53 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -u SRR870667_2.fastq -f SRR870667_1/output/SRR870667_2.slimfastq -O  
+  stderr:      SRR870667_1/log/slimfastq_2.1.cmp.log
+  Process PID:   13614
+  Exit code:     0
+  Wall time:     00:16:35 (995.7 ms)
+  Memory (MB):   79.0
+  Resources:    
+    ru_utime:    00:15:52 (952.2 ms)
+    ru_stime:    00:00:22 (22.4 ms)
+    ru_maxrss:   80872
+    ru_minflt:   2361
+    ru_majflt:   7
+    ru_inblock:  35389848
+    ru_oublock:  5902320
+    ru_nvcsw:    939
+    ru_nivcsw:   235546
+  GNU time:     
+    real:        00:16:35 (995.6 ms)
+    user:        00:15:52 (952.1 ms)
+    sys:         00:00:22 (22.4 ms)
+  Size (MB):     2,880.96 (3020906496 bytes) (SRR870667_1/output/SRR870667_2.slimfastq)
+  Free space:      2.8T  1.1T  1.8T  38% /local-scratch
+*** 2015-11-16 19:57:31 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -d SRR870667_1/output/SRR870667_2.slimfastq  SRR870667_1/output/SRR870667_2.slimfastq.fq -O
+  stderr:      SRR870667_1/log/slimfastq_2.1.dec.log
+  Process PID:   13789
+  Exit code:     0
+  Wall time:     00:21:43 (1303.3 ms)
+  Memory (MB):   78.9
+  Resources:    
+    ru_utime:    00:20:45 (1245.0 ms)
+    ru_stime:    00:00:24 (24.4 ms)
+    ru_maxrss:   80768
+    ru_minflt:   2330
+    ru_majflt:   7
+    ru_inblock:  5925592
+    ru_oublock:  35364440
+    ru_nvcsw:    565
+    ru_nivcsw:   150906
+  GNU time:     
+    real:        00:21:43 (1303.2 ms)
+    user:        00:20:45 (1245.0 ms)
+    sys:         00:00:24 (24.4 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/SRR870667_2.slimfastq.fq)
+  Free space:      2.8T  1.1T  1.7T  38% /local-scratch
+
+######################################################################## 
+#                                 sra                                  # 
+########################################################################
+>>> sra_1
+*** 2015-11-16 20:19:19 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/sratoolkit.2.5.2-centos_linux64/bin/latf-load -p ILLUMINA -q PHRED_33 -o SRR870667_1/output/SRR870667_1.sra SRR870667_1.fastq  SRR870667_2.fastq
+  stderr:      SRR870667_1/log/sra_1.1.cmp.log
+  Process PID:   14060
+  Exit code:     768
+  Wall time:     00:00:00 (0.6 ms)
+  Memory (MB):   8.1
+  Resources:    
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   8284
+    ru_minflt:   3199
+    ru_majflt:   43
+    ru_inblock:  16832
+    ru_oublock:  608
+    ru_nvcsw:    191
+    ru_nivcsw:   67
+  GNU time:     
+    real:        00:00:00 (0.6 ms)
+    user:        00:00:00 (0.1 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     0.05 (54024 bytes) (SRR870667_1/output/SRR870667_1.sra/md5, SRR870667_1/output/SRR870667_1.sra/md/cur)
+  Free space:      2.8T  1.1T  1.7T  38% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath_1
+*** 2015-11-16 20:19:20 *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=1 -ref=data/sam/ref/cacao11allasm_repmask_nomito.fa.gz -reads=SRR870667_1.fastq -out=SRR870667_1/output/SRR870667_1.kpath  
+  stderr:      SRR870667_1/log/kpath_1.1.cmp.log
+  Process PID:   14068
+  Exit code:     512
+  Wall time:     00:23:59 (1439.3 ms)
+  Memory (MB):   24911.9
+  Resources:    
+    ru_utime:    00:17:58 (1078.7 ms)
+    ru_stime:    00:05:57 (357.7 ms)
+    ru_maxrss:   25509756
+    ru_minflt:   5395195
+    ru_majflt:   25
+    ru_inblock:  45022848
+    ru_oublock:  48
+    ru_nvcsw:    152059538
+    ru_nivcsw:   83646033
+  GNU time:     
+    real:        00:23:59 (1439.3 ms)
+    user:        00:17:58 (1078.7 ms)
+    sys:         00:05:57 (357.7 ms)
+  Size (MB):     0.00 (8 bytes) (SRR870667_1/output/SRR870667_1.kpath.enc)
+  Free space:      2.8T  1.1T  1.7T  38% /local-scratch
+
+######################################################################## 
+#                                 lfqc                                 # 
+########################################################################
+>>> lfqc (File 1: SRR870667_1.fastq)
+*** 2016-02-20 14:58:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/lfqc/lfqc/lfqc.rb -solexa SRR870667_1.fastq 
+    stderr:      SRR870667/log/SRR870667_1.fastq.lfqc.1.cmp.log
+  Process PID:   28633
+  Exit code:     0
+  Wall time:     11:05:57 (39957.3 ms)
+  Memory (MB):   3762.5
+  Resources:    
+    ru_utime:    11:00:02 (39602.5 ms)
+    ru_stime:    00:01:53 (113.8 ms)
+    ru_maxrss:   3852808
+    ru_minflt:   1529646
+    ru_majflt:   89
+    ru_inblock:  44878736
+    ru_oublock:  56187560
+    ru_nvcsw:    3730
+    ru_nivcsw:   8315542
+  GNU time:     
+    real:        11:05:57 (39957.1 ms)
+    user:        11:00:02 (39602.5 ms)
+    sys:         00:01:53 (113.7 ms)
+  Size (MB):     2,300.15 (2411878400 bytes) (SRR870667/output/compressed/lfqc/SRR870667_1.fastq.lfqc)
+  Free space:      2.8T  1.6T  1.3T  56% /local-scratch
+*** 2016-02-21 02:04:50 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/lfqc/lfqc/lfqcd.rb SRR870667/output/compressed/lfqc/SRR870667_1.fastq.lfqc SRR870667/output/decompressed/lfqc/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.lfqc.1.dec.log
+  Process PID:   14184
+  Exit code:     256
+  Wall time:     00:00:14 (14.5 ms)
+  Memory (MB):   11.3
+  Resources:    
+    ru_utime:    00:00:00 (0.3 ms)
+    ru_stime:    00:00:05 (5.7 ms)
+    ru_maxrss:   11596
+    ru_minflt:   5406
+    ru_majflt:   75
+    ru_inblock:  4733256
+    ru_oublock:  4710712
+    ru_nvcsw:    9850
+    ru_nivcsw:   9259
+  GNU time:     
+    real:        00:00:14 (14.3 ms)
+    user:        00:00:00 (0.3 ms)
+    sys:         00:00:05 (5.6 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.6T  1.3T  56% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: SRR870667_1.fastq)
+*** 2016-01-24 08:18:00 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh e SRR870667_1.fastq SRR870667/output/compressed/leon/SRR870667_1.fastq.leon 1 
+    stderr:      SRR870667/log/SRR870667_1.fastq.leon.1.cmp.log
+  Process PID:   20025
+  Exit code:     0
+  Wall time:     03:10:55 (11455.0 ms)
+  Memory (MB):   629.7
+  Resources:    
+    ru_utime:    03:07:26 (11246.9 ms)
+    ru_stime:    00:00:54 (54.3 ms)
+    ru_maxrss:   644836
+    ru_minflt:   46675
+    ru_majflt:   77
+    ru_inblock:  44849410
+    ru_oublock:  32475480
+    ru_nvcsw:    96657
+    ru_nivcsw:   1225232
+  GNU time:     
+    real:        03:10:54 (11454.8 ms)
+    user:        03:07:26 (11246.9 ms)
+    sys:         00:00:54 (54.3 ms)
+  Size (MB):     4,308.37 (4517651423 bytes) (SRR870667/output/compressed/leon/SRR870667_1.fastq.leon, SRR870667/output/compressed/leon/SRR870667_1.fastq.leon.qual)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2016-01-24 11:29:03 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh d SRR870667/output/compressed/leon/SRR870667_1.fastq.leon SRR870667/output/decompressed/leon/SRR870667_1.fastq.fq 1
+    stderr:      SRR870667/log/SRR870667_1.fastq.leon.1.dec.log
+  Process PID:   22664
+  Exit code:     0
+  Wall time:     00:57:51 (3471.3 ms)
+  Memory (MB):   505.1
+  Resources:    
+    ru_utime:    00:56:15 (3375.1 ms)
+    ru_stime:    00:00:23 (23.5 ms)
+    ru_maxrss:   517208
+    ru_minflt:   19873
+    ru_majflt:   40
+    ru_inblock:  8855160
+    ru_oublock:  37387544
+    ru_nvcsw:    19192
+    ru_nivcsw:   361336
+  GNU time:     
+    real:        00:57:51 (3471.2 ms)
+    user:        00:56:15 (3375.1 ms)
+    sys:         00:00:23 (23.5 ms)
+  Size (MB):     18,255.27 (19142037206 bytes) (SRR870667/output/decompressed/leon/SRR870667_1.fastq.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+>>> leon (File 2: SRR870667_2.fastq)
+*** 2016-03-02 13:27:38 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh e SRR870667_2.fastq SRR870667/output/compressed/leon/SRR870667_2.fastq.leon 1 
+    stderr:      SRR870667/log/SRR870667_2.fastq.leon.1.cmp.log
+  Process PID:   14522
+  Exit code:     0
+  Wall time:     01:55:38 (6938.0 ms)
+  Memory (MB):   601.5
+  Resources:    
+    ru_utime:    01:53:00 (6780.5 ms)
+    ru_stime:    00:00:42 (42.6 ms)
+    ru_maxrss:   615980
+    ru_minflt:   31602
+    ru_majflt:   88
+    ru_inblock:  35407184
+    ru_oublock:  23761608
+    ru_nvcsw:    78763
+    ru_nivcsw:   758349
+  GNU time:     
+    real:        01:55:37 (6937.8 ms)
+    user:        01:53:00 (6780.5 ms)
+    sys:         00:00:42 (42.6 ms)
+  Size (MB):     3,151.55 (3304638620 bytes) (SRR870667/output/compressed/leon/SRR870667_2.fastq.leon, SRR870667/output/compressed/leon/SRR870667_2.fastq.leon.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-02 15:23:23 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh d SRR870667/output/compressed/leon/SRR870667_2.fastq.leon SRR870667/output/decompressed/leon/SRR870667_2.fastq.fq 1
+    stderr:      SRR870667/log/SRR870667_2.fastq.leon.1.dec.log
+  Process PID:   17720
+  Exit code:     0
+  Wall time:     00:36:42 (2202.9 ms)
+  Memory (MB):   468.0
+  Resources:    
+    ru_utime:    00:35:03 (2103.8 ms)
+    ru_stime:    00:00:17 (17.0 ms)
+    ru_maxrss:   479256
+    ru_minflt:   18980
+    ru_majflt:   43
+    ru_inblock:  6488360
+    ru_oublock:  28074800
+    ru_nvcsw:    13559
+    ru_nivcsw:   227922
+  GNU time:     
+    real:        00:36:42 (2202.8 ms)
+    user:        00:35:03 (2103.8 ms)
+    sys:         00:00:17 (17.0 ms)
+  Size (MB):     13,708.18 (14374069103 bytes) (SRR870667/output/decompressed/leon/SRR870667_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                                 fqc                                  # 
+########################################################################
+>>> fqc (File 1: SRR870667_1.fastq)
+*** 2015-12-29 16:49:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -c -i SRR870667_1.fastq -o SRR870667/output/compressed/fqc/SRR870667_1.fastq.fqc 
+    stderr:      SRR870667/log/SRR870667_1.fastq.fqc.1.cmp.log
+  Process PID:   30408
+  Exit code:     0
+  Wall time:     00:53:37 (3217.9 ms)
+  Memory (MB):   683.8
+  Resources:    
+    ru_utime:    00:52:00 (3120.7 ms)
+    ru_stime:    00:00:55 (55.4 ms)
+    ru_maxrss:   700252
+    ru_minflt:   27651
+    ru_majflt:   30
+    ru_inblock:  44842688
+    ru_oublock:  20646128
+    ru_nvcsw:    2755386
+    ru_nivcsw:   2955122
+  GNU time:     
+    real:        00:53:37 (3217.8 ms)
+    user:        00:52:00 (3120.7 ms)
+    sys:         00:00:55 (55.4 ms)
+  Size (MB):     3,730.88 (3912108218 bytes) (SRR870667/output/compressed/fqc/SRR870667_1.fastq.fqc)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-29 17:43:01 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -d -i SRR870667/output/compressed/fqc/SRR870667_1.fastq.fqc -o SRR870667/output/decompressed/fqc/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.fqc.1.dec.log
+  Process PID:   31184
+  Exit code:     0
+  Wall time:     00:31:27 (1887.7 ms)
+  Memory (MB):   274.8
+  Resources:    
+    ru_utime:    00:29:59 (1799.4 ms)
+    ru_stime:    00:00:51 (51.4 ms)
+    ru_maxrss:   281428
+    ru_minflt:   17888
+    ru_majflt:   32
+    ru_inblock:  7671656
+    ru_oublock:  65192192
+    ru_nvcsw:    1451665
+    ru_nivcsw:   1646851
+  GNU time:     
+    real:        00:31:27 (1887.6 ms)
+    user:        00:29:59 (1799.4 ms)
+    sys:         00:00:51 (51.4 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667/output/decompressed/fqc/SRR870667_1.fastq.fq.fastq)
+  Free space:      2.8T  1.1T  1.7T  40% /local-scratch
+
+>>> fqc (File 2: SRR870667_2.fastq)
+*** 2016-01-03 15:37:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -c -i SRR870667_2.fastq -o SRR870667/output/compressed/fqc/SRR870667_2.fastq.fqc
+    stderr:      SRR870667/log/SRR870667_2.fastq.fqc.1.cmp.log
+  Process PID:   18118
+  Exit code:     0
+  Wall time:     00:39:39 (2379.3 ms)
+  Memory (MB):   683.7
+  Resources:
+    ru_utime:    00:38:46 (2326.0 ms)
+    ru_stime:    00:00:38 (38.9 ms)
+    ru_maxrss:   700088
+    ru_minflt:   27471
+    ru_majflt:   29
+    ru_inblock:  35395296
+    ru_oublock:  15484960
+    ru_nvcsw:    2008623
+    ru_nivcsw:   2128581
+  GNU time:
+    real:        00:39:39 (2379.2 ms)
+    user:        00:38:46 (2326.0 ms)
+    sys:         00:00:38 (38.9 ms)
+  Size (MB):     2,751.03 (2884664522 bytes) (SRR870667/output/compressed/fqc/SRR870667_2.fastq.fqc)
+  Free space:      2.8T  1.1T  1.7T  40% /local-scratch
+*** 2016-01-03 16:17:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -d -i SRR870667/output/compressed/fqc/SRR870667_2.fastq.fqc -o SRR870667/output/decompressed/fqc/SRR870667_2.fastq.fq
+    stderr:      SRR870667/log/SRR870667_2.fastq.fqc.1.dec.log
+  Process PID:   18674
+  Exit code:     0
+  Wall time:     00:25:41 (1541.8 ms)
+  Memory (MB):   229.8
+  Resources:
+    ru_utime:    00:24:32 (1472.1 ms)
+    ru_stime:    00:00:40 (40.6 ms)
+    ru_maxrss:   235292
+    ru_minflt:   17636
+    ru_majflt:   30
+    ru_inblock:  5665265
+    ru_oublock:  52320704
+    ru_nvcsw:    1074656
+    ru_nivcsw:   1234210
+  GNU time:
+    real:        00:25:41 (1541.7 ms)
+    user:        00:24:32 (1472.1 ms)
+    sys:         00:00:40 (40.6 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667/output/decompressed/fqc/SRR870667_2.fastq.fq.fastq)
+  Free space:      2.8T  1.2T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                mince                                 # 
+########################################################################
+>>> mince (File 1: SRR870667_1.fastq)
+*** 2015-12-29 05:52:57 *** Process terminated with [Errno 4] Interrupted system call
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: SRR870667_1.fastq)
+*** 2015-12-29 18:19:30 *** Process terminated with [Errno 4] Interrupted system call
+
+######################################################################## 
+#                               lw-fqzip                               # 
+########################################################################
+>>> lw-fqzip (File 1: SRR870667_1.fastq)
+*** 2016-01-24 12:32:30 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/LWFQZip-v1.02/lwfqzip.sh e SRR870667_1.fastq SRR870667/output/compressed/lw-fqzip/SRR870667_1.fastq.lz data/sam/ref/cacao11allasm_repmask_nomito.fa 
+    stderr:      SRR870667/log/SRR870667_1.fastq.lw-fqzip.1.cmp.log
+  Process PID:   24798
+  Exit code:     0
+  Wall time:     01:44:38 (6278.8 ms)
+  Memory (MB):   687.2
+  Resources:    
+    ru_utime:    01:41:25 (6085.8 ms)
+    ru_stime:    00:01:49 (109.3 ms)
+    ru_maxrss:   703740
+    ru_minflt:   29218
+    ru_majflt:   21
+    ru_inblock:  45529952
+    ru_oublock:  60287560
+    ru_nvcsw:    2797
+    ru_nivcsw:   802368
+  GNU time:     
+    real:        01:44:38 (6278.6 ms)
+    user:        01:41:25 (6085.8 ms)
+    sys:         00:01:49 (109.3 ms)
+  Size (MB):     4,804.24 (5037608960 bytes) (SRR870667/output/compressed/lw-fqzip/SRR870667_1.fastq.lz)
+  Free space:      2.8T  1.7T  1.1T  63% /local-scratch
+*** 2016-01-24 14:18:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/LWFQZip-v1.02/lwfqzip.sh d SRR870667/output/compressed/lw-fqzip/SRR870667_1.fastq.lz SRR870667/output/decompressed/lw-fqzip/SRR870667_1.fastq.fq data/sam/ref/cacao11allasm_repmask_nomito.fa
+    stderr:      SRR870667/log/SRR870667_1.fastq.lw-fqzip.1.dec.log
+  Process PID:   25988
+  Exit code:     0
+  Wall time:     00:13:15 (795.4 ms)
+  Memory (MB):   674.2
+  Resources:    
+    ru_utime:    00:11:27 (687.8 ms)
+    ru_stime:    00:01:18 (78.9 ms)
+    ru_maxrss:   690344
+    ru_minflt:   11694
+    ru_majflt:   23
+    ru_inblock:  10558888
+    ru_oublock:  114694304
+    ru_nvcsw:    21503
+    ru_nivcsw:   96988
+  GNU time:     
+    real:        00:13:15 (795.0 ms)
+    user:        00:11:27 (687.8 ms)
+    sys:         00:01:18 (78.9 ms)
+  Size (MB):     22,144.33 (23220017400 bytes) (SRR870667/output/decompressed/lw-fqzip/SRR870667_1.fastq.d)
+  Free space:      2.8T  1.8T  1.1T  64% /local-scratch
+
+>>> lw-fqzip (File 2: SRR870667_2.fastq)
+*** 2016-03-02 16:03:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/LWFQZip-v1.02/lwfqzip.sh e SRR870667_2.fastq SRR870667/output/compressed/lw-fqzip/SRR870667_2.fastq.lz data/sam/ref/cacao11allasm_repmask_nomito.fa 
+    stderr:      SRR870667/log/SRR870667_2.fastq.lw-fqzip.1.cmp.log
+  Process PID:   20194
+  Exit code:     0
+  Wall time:     01:04:03 (3843.0 ms)
+  Memory (MB):   687.3
+  Resources:    
+    ru_utime:    01:01:43 (3703.4 ms)
+    ru_stime:    00:01:19 (79.7 ms)
+    ru_maxrss:   703824
+    ru_minflt:   27108
+    ru_majflt:   22
+    ru_inblock:  36084712
+    ru_oublock:  44317760
+    ru_nvcsw:    2730
+    ru_nivcsw:   521355
+  GNU time:     
+    real:        01:04:02 (3842.9 ms)
+    user:        01:01:43 (3703.4 ms)
+    sys:         00:01:19 (79.7 ms)
+  Size (MB):     3,562.75 (3735818240 bytes) (SRR870667/output/compressed/lw-fqzip/SRR870667_2.fastq.lz)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-02 17:08:19 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/LWFQZip-v1.02/lwfqzip.sh d SRR870667/output/compressed/lw-fqzip/SRR870667_2.fastq.lz SRR870667/output/decompressed/lw-fqzip/SRR870667_2.fastq.fq data/sam/ref/cacao11allasm_repmask_nomito.fa
+    stderr:      SRR870667/log/SRR870667_2.fastq.lw-fqzip.1.dec.log
+  Process PID:   21844
+  Exit code:     0
+  Wall time:     00:09:49 (589.0 ms)
+  Memory (MB):   674.2
+  Resources:    
+    ru_utime:    00:08:36 (516.6 ms)
+    ru_stime:    00:01:01 (61.0 ms)
+    ru_maxrss:   690344
+    ru_minflt:   11299
+    ru_majflt:   24
+    ru_inblock:  8018048
+    ru_oublock:  87699488
+    ru_nvcsw:    16131
+    ru_nivcsw:   72253
+  GNU time:     
+    real:        00:09:48 (588.9 ms)
+    user:        00:08:36 (516.6 ms)
+    sys:         00:01:01 (61.0 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: SRR870667_1.fastq)
+*** 2016-02-21 02:05:25 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kic-0.2/kic.sh e SRR870667_1.fastq SRR870667/output/compressed/kic/SRR870667_1.fastq.kic 1 
+    stderr:      SRR870667/log/SRR870667_1.fastq.kic.1.cmp.log
+  Process PID:   14200
+  Exit code:     256
+  Wall time:     00:00:25 (25.4 ms)
+  Memory (MB):   1110.6
+  Resources:    
+    ru_utime:    00:00:22 (22.9 ms)
+    ru_stime:    00:00:00 (0.5 ms)
+    ru_maxrss:   1137216
+    ru_minflt:   15675
+    ru_majflt:   148
+    ru_inblock:  47616
+    ru_oublock:  96
+    ru_nvcsw:    6477
+    ru_nivcsw:   102904
+  GNU time:     
+    real:        00:00:25 (25.3 ms)
+    user:        00:00:22 (22.9 ms)
+    sys:         00:00:00 (0.5 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.6T  1.3T  56% /local-scratch
+
+>>> kic (File 2: SRR870667_2.fastq)
+*** 2016-03-02 17:33:12 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kic-0.2/kic.sh e SRR870667_2.fastq SRR870667/output/compressed/kic/SRR870667_2.fastq.kic 1 
+    stderr:      SRR870667/log/SRR870667_2.fastq.kic.1.cmp.log
+  Process PID:   22535
+  Exit code:     256
+  Wall time:     00:00:23 (23.7 ms)
+  Memory (MB):   1015.6
+  Resources:    
+    ru_utime:    00:00:21 (21.3 ms)
+    ru_stime:    00:00:00 (0.4 ms)
+    ru_maxrss:   1039964
+    ru_minflt:   16112
+    ru_majflt:   143
+    ru_inblock:  47864
+    ru_oublock:  96
+    ru_nvcsw:    6435
+    ru_nivcsw:   78902
+  GNU time:     
+    real:        00:00:23 (23.6 ms)
+    user:        00:00:21 (21.3 ms)
+    sys:         00:00:00 (0.4 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+######################################################################## 
+#                                beetl                                 # 
+########################################################################
+>>> beetl (File 1: SRR870667_1.fastq)
+*** 2016-02-29 16:36:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh e SRR870667_1.fastq SRR870667/output/compressed/beetl/SRR870667_1.fastq.beetl 1 
+    stderr:      SRR870667/log/SRR870667_1.fastq.beetl.1.cmp.log
+  Process PID:   3848
+  Exit code:     0
+  Wall time:     03:24:34 (12274.3 ms)
+  Memory (MB):   7.7
+  Resources:    
+    ru_utime:    02:58:09 (10689.3 ms)
+    ru_stime:    00:22:21 (1341.9 ms)
+    ru_maxrss:   7892
+    ru_minflt:   8769
+    ru_majflt:   29
+    ru_inblock:  44845368
+    ru_oublock:  1314325136
+    ru_nvcsw:    2054646
+    ru_nivcsw:   3320746
+  GNU time:     
+    real:        03:24:34 (12274.2 ms)
+    user:        02:58:09 (10689.3 ms)
+    sys:         00:22:21 (1341.8 ms)
+  Size (MB):     1,144.78 (1200389828 bytes) (SRR870667/output/compressed/beetl/SRR870667_1.fastq.beetl)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-02-29 20:01:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh d SRR870667/output/compressed/beetl/SRR870667_1.fastq.beetl SRR870667/output/decompressed/beetl/SRR870667_1.fastq.fq 1
+    stderr:      SRR870667/log/SRR870667_1.fastq.beetl.1.dec.log
+  Process PID:   9147
+  Exit code:     0
+  Wall time:     01:57:16 (7036.3 ms)
+  Memory (MB):   1093.1
+  Resources:    
+    ru_utime:    01:49:03 (6543.0 ms)
+    ru_stime:    00:06:36 (396.7 ms)
+    ru_maxrss:   1119324
+    ru_minflt:   19917
+    ru_majflt:   23
+    ru_inblock:  2375968
+    ru_oublock:  47351544
+    ru_nvcsw:    1993871
+    ru_nivcsw:   2700971
+  GNU time:     
+    real:        01:57:15 (7035.9 ms)
+    user:        01:49:03 (6543.0 ms)
+    sys:         00:06:36 (396.7 ms)
+  Size (MB):     8,226.88 (8626512265 bytes) (SRR870667/output/decompressed/beetl/SRR870667_1.fastq.fq)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+>>> beetl (File 2: SRR870667_2.fastq)
+*** 2016-03-01 23:31:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh e SRR870667_2.fastq SRR870667/output/compressed/beetl/SRR870667_2.fastq.beetl 1 
+    stderr:      SRR870667/log/SRR870667_2.fastq.beetl.1.cmp.log
+  Process PID:   2784
+  Exit code:     0
+  Wall time:     01:45:23 (6323.3 ms)
+  Memory (MB):   7.7
+  Resources:    
+    ru_utime:    01:30:36 (5436.3 ms)
+    ru_stime:    00:11:03 (663.9 ms)
+    ru_maxrss:   7888
+    ru_minflt:   7419
+    ru_majflt:   29
+    ru_inblock:  35397856
+    ru_oublock:  645855648
+    ru_nvcsw:    1470952
+    ru_nivcsw:   2119390
+  GNU time:     
+    real:        01:45:23 (6323.0 ms)
+    user:        01:30:36 (5436.3 ms)
+    sys:         00:11:03 (663.9 ms)
+  Size (MB):     751.09 (787570212 bytes) (SRR870667/output/compressed/beetl/SRR870667_2.fastq.beetl)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-02 01:17:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh d SRR870667/output/compressed/beetl/SRR870667_2.fastq.beetl SRR870667/output/decompressed/beetl/SRR870667_2.fastq.fq 1
+    stderr:      SRR870667/log/SRR870667_2.fastq.beetl.1.dec.log
+  Process PID:   5737
+  Exit code:     0
+  Wall time:     01:09:12 (4152.1 ms)
+  Memory (MB):   1040.6
+  Resources:    
+    ru_utime:    01:04:15 (3855.3 ms)
+    ru_stime:    00:04:03 (243.5 ms)
+    ru_maxrss:   1065580
+    ru_minflt:   20044
+    ru_majflt:   27
+    ru_inblock:  1572320
+    ru_oublock:  33585040
+    ru_nvcsw:    1419472
+    ru_nivcsw:   1842364
+  GNU time:     
+    real:        01:09:11 (4151.9 ms)
+    user:        01:04:15 (3855.3 ms)
+    sys:         00:04:03 (243.5 ms)
+  Size (MB):     5,986.29 (6277078707 bytes) (SRR870667/output/decompressed/beetl/SRR870667_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                      SRR870667_1 with 4 threads                      + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz_1
+*** 2015-11-17 16:26:16 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4  
+    stdin:       SRR870667_1.fastq
+    stdout:      SRR870667_1/output/SRR870667_1.gz
+  stderr:      SRR870667_1/log/pigz_1.4.cmp.log
+  Process PID:   27450
+  Exit code:     0
+  Wall time:     00:11:58 (718.7 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:46:10 (2770.6 ms)
+    ru_stime:    00:01:04 (64.5 ms)
+    ru_maxrss:   6008
+    ru_minflt:   1290
+    ru_majflt:   7
+    ru_inblock:  44813712
+    ru_oublock:  13561112
+    ru_nvcsw:    358821
+    ru_nivcsw:   358267
+  GNU time:     
+    real:        00:11:58 (718.6 ms)
+    user:        00:46:10 (2770.6 ms)
+    sys:         00:01:04 (64.5 ms)
+  Size (MB):     6,621.54 (6943192256 bytes) (SRR870667_1/output/SRR870667_1.gz)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-17 16:38:19 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       SRR870667_1/output/SRR870667_1.gz
+    stdout:      SRR870667_1/output/SRR870667_1.gz.fq
+  stderr:      SRR870667_1/log/pigz_1.4.dec.log
+  Process PID:   27599
+  Exit code:     0
+  Wall time:     00:04:08 (248.0 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:03:38 (218.7 ms)
+    ru_stime:    00:01:19 (79.7 ms)
+    ru_maxrss:   6008
+    ru_minflt:   604
+    ru_majflt:   7
+    ru_inblock:  13562656
+    ru_oublock:  44811840
+    ru_nvcsw:    1616818
+    ru_nivcsw:   55901
+  GNU time:     
+    real:        00:04:07 (247.9 ms)
+    user:        00:03:38 (218.7 ms)
+    sys:         00:01:19 (79.6 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/SRR870667_1.gz.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+>>> pigz_2
+*** 2015-11-17 16:42:34 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4  
+    stdin:       SRR870667_2.fastq
+    stdout:      SRR870667_1/output/SRR870667_2.gz
+  stderr:      SRR870667_1/log/pigz_2.4.cmp.log
+  Process PID:   27682
+  Exit code:     0
+  Wall time:     00:08:23 (503.5 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:32:12 (1932.2 ms)
+    ru_stime:    00:00:50 (50.7 ms)
+    ru_maxrss:   6008
+    ru_minflt:   1284
+    ru_majflt:   7
+    ru_inblock:  35366048
+    ru_oublock:  10477984
+    ru_nvcsw:    281997
+    ru_nivcsw:   263807
+  GNU time:     
+    real:        00:08:23 (503.5 ms)
+    user:        00:32:12 (1932.2 ms)
+    sys:         00:00:50 (50.7 ms)
+  Size (MB):     5,116.14 (5364663700 bytes) (SRR870667_1/output/SRR870667_2.gz)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-17 16:51:03 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       SRR870667_1/output/SRR870667_2.gz
+    stdout:      SRR870667_1/output/SRR870667_2.gz.fq
+  stderr:      SRR870667_1/log/pigz_2.4.dec.log
+  Process PID:   27781
+  Exit code:     0
+  Wall time:     00:03:23 (203.5 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:02:49 (169.2 ms)
+    ru_stime:    00:01:03 (63.1 ms)
+    ru_maxrss:   6008
+    ru_minflt:   606
+    ru_majflt:   7
+    ru_inblock:  10479808
+    ru_oublock:  35364440
+    ru_nvcsw:    1273302
+    ru_nivcsw:   44821
+  GNU time:     
+    real:        00:03:23 (203.4 ms)
+    user:        00:02:49 (169.2 ms)
+    sys:         00:01:03 (63.1 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/SRR870667_2.gz.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2_1
+*** 2015-11-17 16:54:37 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4  
+    stdin:       SRR870667_1.fastq
+    stdout:      SRR870667_1/output/SRR870667_1.bz2
+  stderr:      SRR870667_1/log/pbzip2_1.4.cmp.log
+  Process PID:   27821
+  Exit code:     0
+  Wall time:     00:11:52 (712.4 ms)
+  Memory (MB):   40.3
+  Resources:    
+    ru_utime:    00:44:49 (2689.2 ms)
+    ru_stime:    00:01:57 (117.7 ms)
+    ru_maxrss:   41304
+    ru_minflt:   15894873
+    ru_majflt:   8
+    ru_inblock:  44836968
+    ru_oublock:  10893192
+    ru_nvcsw:    130801
+    ru_nivcsw:   378000
+  GNU time:     
+    real:        00:11:52 (712.3 ms)
+    user:        00:44:49 (2689.2 ms)
+    sys:         00:01:57 (117.7 ms)
+  Size (MB):     5,318.86 (5577223793 bytes) (SRR870667_1/output/SRR870667_1.bz2)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-17 17:06:34 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       SRR870667_1/output/SRR870667_1.bz2
+    stdout:      SRR870667_1/output/SRR870667_1.bz2.fq
+  stderr:      SRR870667_1/log/pbzip2_1.4.dec.log
+  Process PID:   27976
+  Exit code:     0
+  Wall time:     00:05:38 (338.2 ms)
+  Memory (MB):   25.7
+  Resources:    
+    ru_utime:    00:16:03 (963.5 ms)
+    ru_stime:    00:01:27 (87.2 ms)
+    ru_maxrss:   26344
+    ru_minflt:   11081512
+    ru_majflt:   8
+    ru_inblock:  10918576
+    ru_oublock:  44811880
+    ru_nvcsw:    65180
+    ru_nivcsw:   149229
+  GNU time:     
+    real:        00:05:38 (338.1 ms)
+    user:        00:16:03 (963.5 ms)
+    sys:         00:01:27 (87.2 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/SRR870667_1.bz2.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+>>> pbzip2_2
+*** 2015-11-17 17:12:37 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4  
+    stdin:       SRR870667_2.fastq
+    stdout:      SRR870667_1/output/SRR870667_2.bz2
+  stderr:      SRR870667_1/log/pbzip2_2.4.cmp.log
+  Process PID:   28085
+  Exit code:     0
+  Wall time:     00:09:43 (583.0 ms)
+  Memory (MB):   41.6
+  Resources:    
+    ru_utime:    00:36:52 (2212.3 ms)
+    ru_stime:    00:01:33 (93.4 ms)
+    ru_maxrss:   42588
+    ru_minflt:   12191680
+    ru_majflt:   8
+    ru_inblock:  35389776
+    ru_oublock:  8361944
+    ru_nvcsw:    108796
+    ru_nivcsw:   299308
+  GNU time:     
+    real:        00:09:42 (582.9 ms)
+    user:        00:36:52 (2212.3 ms)
+    sys:         00:01:33 (93.3 ms)
+  Size (MB):     4,082.90 (4281226239 bytes) (SRR870667_1/output/SRR870667_2.bz2)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-17 17:22:24 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       SRR870667_1/output/SRR870667_2.bz2
+    stdout:      SRR870667_1/output/SRR870667_2.bz2.fq
+  stderr:      SRR870667_1/log/pbzip2_2.4.dec.log
+  Process PID:   28204
+  Exit code:     0
+  Wall time:     00:04:49 (289.1 ms)
+  Memory (MB):   25.4
+  Resources:    
+    ru_utime:    00:12:24 (744.9 ms)
+    ru_stime:    00:01:10 (70.0 ms)
+    ru_maxrss:   26060
+    ru_minflt:   8970945
+    ru_majflt:   8
+    ru_inblock:  8387272
+    ru_oublock:  35364480
+    ru_nvcsw:    51165
+    ru_nivcsw:   117310
+  GNU time:     
+    real:        00:04:49 (289.0 ms)
+    user:        00:12:24 (744.9 ms)
+    sys:         00:01:10 (70.0 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/SRR870667_2.bz2.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                scalce                                # 
+########################################################################
+>>> scalce (File 1: SRR870667_1.fastq)
+*** 2016-01-06 10:28:59 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 4 SRR870667_1.fastq -o SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce  -r
+    stderr:      SRR870667/log/SRR870667_1.fastq.scalce.4.cmp.log
+  Process PID:   4651
+  Exit code:     0
+  Wall time:     00:27:50 (1670.9 ms)
+  Memory (MB):   5340.9
+  Resources:    
+    ru_utime:    01:33:32 (5612.0 ms)
+    ru_stime:    00:02:46 (166.1 ms)
+    ru_maxrss:   5469060
+    ru_minflt:   256747
+    ru_majflt:   10
+    ru_inblock:  80238888
+    ru_oublock:  75293680
+    ru_nvcsw:    41460
+    ru_nivcsw:   817902
+  GNU time:     
+    real:        00:27:50 (1670.7 ms)
+    user:        01:33:31 (5611.9 ms)
+    sys:         00:02:46 (166.1 ms)
+  Size (MB):     6,374.96 (6684628499 bytes) (SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_1.scalceq, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_1.scalcen, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_1.scalcer, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_2.scalceq, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_2.scalcen, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_2.scalcer)
+  Free space:      2.8T  1.4T  1.4T  50% /local-scratch
+*** 2016-01-06 10:56:56 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -r -T 4 SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_1.scalcer -o SRR870667/output/decompressed/scalce/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.scalce.4.dec.log
+  Process PID:   6231
+  Exit code:     0
+  Wall time:     00:14:49 (889.5 ms)
+  Memory (MB):   1058.1
+  Resources:    
+    ru_utime:    00:42:14 (2534.5 ms)
+    ru_stime:    00:00:32 (32.1 ms)
+    ru_maxrss:   1083516
+    ru_minflt:   243821
+    ru_majflt:   10
+    ru_inblock:  13117904
+    ru_oublock:  55561424
+    ru_nvcsw:    20090
+    ru_nivcsw:   290078
+  GNU time:     
+    real:        00:14:49 (889.4 ms)
+    user:        00:42:14 (2534.4 ms)
+    sys:         00:00:32 (32.1 ms)
+  Size (MB):     27,129.58 (28447426280 bytes) (SRR870667/output/decompressed/scalce/SRR870667_1.fastq.fq_1.fastq, SRR870667/output/decompressed/scalce/SRR870667_1.fastq.fq_2.fastq)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single (File 1: SRR870667_1.fastq)
+*** 2016-01-05 18:02:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 4 SRR870667_1.fastq -o SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single 
+    stderr:      SRR870667/log/SRR870667_1.fastq.scalce-single.4.cmp.log
+  Process PID:   28065
+  Exit code:     0
+  Wall time:     00:13:50 (830.3 ms)
+  Memory (MB):   5296.4
+  Resources:    
+    ru_utime:    00:49:31 (2971.1 ms)
+    ru_stime:    00:01:30 (90.1 ms)
+    ru_maxrss:   5423528
+    ru_minflt:   490718
+    ru_majflt:   10
+    ru_inblock:  44873032
+    ru_oublock:  46205256
+    ru_nvcsw:    2598
+    ru_nivcsw:   472558
+  GNU time:     
+    real:        00:13:50 (830.2 ms)
+    user:        00:49:31 (2971.1 ms)
+    sys:         00:01:30 (90.1 ms)
+  Size (MB):     3,529.25 (3700687051 bytes) (SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single_1.scalceq, SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single_1.scalcen, SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single_1.scalcer)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2016-01-05 20:15:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -T 4 SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single_1.scalcer -o SRR870667/output/decompressed/scalce-single/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.scalce-single.4.dec.log
+  Process PID:   3851
+  Exit code:     0
+  Wall time:     00:08:42 (522.1 ms)
+  Memory (MB):   1054.5
+  Resources:    
+    ru_utime:    00:25:04 (1504.0 ms)
+    ru_stime:    00:00:18 (18.9 ms)
+    ru_maxrss:   1079800
+    ru_minflt:   243137
+    ru_majflt:   10
+    ru_inblock:  7289128
+    ru_oublock:  32369456
+    ru_nvcsw:    12309
+    ru_nivcsw:   168197
+  GNU time:     
+    real:        00:08:42 (522.0 ms)
+    user:        00:25:04 (1504.0 ms)
+    sys:         00:00:18 (18.8 ms)
+  Size (MB):     15,805.38 (16573146698 bytes) (SRR870667/output/decompressed/scalce-single/SRR870667_1.fastq.fq_1.fastq)
+  Free space:      2.8T  1.3T  1.6T  45% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc_1
+*** 2015-12-05 20:41:03 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4   SRR870667_1.fastq SRR870667_1/output/SRR870667_1.dsrc
+  stderr:      SRR870667_1/log/dsrc_1.4.cmp.log
+  Process PID:   12489
+  Exit code:     0
+  Wall time:     00:02:40 (160.3 ms)
+  Memory (MB):   165.2
+  Resources:    
+    ru_utime:    00:08:17 (497.1 ms)
+    ru_stime:    00:00:47 (47.7 ms)
+    ru_maxrss:   169152
+    ru_minflt:   19055
+    ru_majflt:   8
+    ru_inblock:  44837528
+    ru_oublock:  9298192
+    ru_nvcsw:    100094
+    ru_nivcsw:   111437
+  GNU time:     
+    real:        00:02:40 (160.2 ms)
+    user:        00:08:17 (497.1 ms)
+    sys:         00:00:47 (47.7 ms)
+  Size (MB):     4,540.11 (4760648624 bytes) (SRR870667_1/output/SRR870667_1.dsrc)
+  Free space:      2.8T  2.0T  802G  72% /local-scratch
+*** 2015-12-05 20:43:54 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 SRR870667_1/output/SRR870667_1.dsrc SRR870667_1/output/decompressed/SRR870667_1.dsrc.fq
+  stderr:      SRR870667_1/log/dsrc_1.4.dec.log
+  Process PID:   12528
+  Exit code:     0
+  Wall time:     00:04:11 (251.5 ms)
+  Memory (MB):   140.3
+  Resources:    
+    ru_utime:    00:05:52 (352.2 ms)
+    ru_stime:    00:00:38 (38.1 ms)
+    ru_maxrss:   143696
+    ru_minflt:   13022
+    ru_majflt:   10
+    ru_inblock:  9323336
+    ru_oublock:  44811848
+    ru_nvcsw:    23192
+    ru_nivcsw:   57508
+  GNU time:     
+    real:        00:04:11 (251.4 ms)
+    user:        00:05:52 (352.2 ms)
+    sys:         00:00:38 (38.1 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/decompressed/SRR870667_1.dsrc.fq)
+  Free space:      2.8T  2.0T  802G  72% /local-scratch
+
+>>> dsrc_2
+*** 2015-12-05 20:48:58 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4   SRR870667_2.fastq SRR870667_1/output/SRR870667_2.dsrc
+  stderr:      SRR870667_1/log/dsrc_2.4.cmp.log
+  Process PID:   12626
+  Exit code:     0
+  Wall time:     00:02:07 (127.1 ms)
+  Memory (MB):   167.4
+  Resources:    
+    ru_utime:    00:06:54 (414.3 ms)
+    ru_stime:    00:00:37 (37.6 ms)
+    ru_maxrss:   171444
+    ru_minflt:   25868
+    ru_majflt:   8
+    ru_inblock:  35390680
+    ru_oublock:  6898768
+    ru_nvcsw:    100397
+    ru_nivcsw:   80703
+  GNU time:     
+    real:        00:02:07 (127.0 ms)
+    user:        00:06:54 (414.3 ms)
+    sys:         00:00:37 (37.6 ms)
+  Size (MB):     3,368.52 (3532146678 bytes) (SRR870667_1/output/SRR870667_2.dsrc)
+  Free space:      2.8T  2.0T  803G  72% /local-scratch
+*** 2015-12-05 20:51:17 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 SRR870667_1/output/SRR870667_2.dsrc SRR870667_1/output/decompressed/SRR870667_2.dsrc.fq
+  stderr:      SRR870667_1/log/dsrc_2.4.dec.log
+  Process PID:   12662
+  Exit code:     0
+  Wall time:     00:03:42 (222.2 ms)
+  Memory (MB):   131.3
+  Resources:    
+    ru_utime:    00:04:25 (265.5 ms)
+    ru_stime:    00:00:28 (28.8 ms)
+    ru_maxrss:   134432
+    ru_minflt:   11427
+    ru_majflt:   10
+    ru_inblock:  6925000
+    ru_oublock:  35364448
+    ru_nvcsw:    17815
+    ru_nivcsw:   42875
+  GNU time:     
+    real:        00:03:42 (222.1 ms)
+    user:        00:04:25 (265.5 ms)
+    sys:         00:00:28 (28.8 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/decompressed/SRR870667_2.dsrc.fq)
+  Free space:      2.8T  2.0T  803G  72% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2_1
+*** 2015-12-05 20:55:40 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4 -m2  SRR870667_1.fastq SRR870667_1/output/SRR870667_1.dsrc-m2
+  stderr:      SRR870667_1/log/dsrc-m2_1.4.cmp.log
+  Process PID:   12732
+  Exit code:     0
+  Wall time:     00:07:58 (478.6 ms)
+  Memory (MB):   2622.9
+  Resources:    
+    ru_utime:    00:31:30 (1890.2 ms)
+    ru_stime:    00:00:42 (42.2 ms)
+    ru_maxrss:   2685868
+    ru_minflt:   123266
+    ru_majflt:   8
+    ru_inblock:  44836936
+    ru_oublock:  8293128
+    ru_nvcsw:    91785
+    ru_nivcsw:   232348
+  GNU time:     
+    real:        00:07:58 (478.6 ms)
+    user:        00:31:30 (1890.2 ms)
+    sys:         00:00:42 (42.2 ms)
+  Size (MB):     4,049.32 (4246017231 bytes) (SRR870667_1/output/SRR870667_1.dsrc-m2)
+  Free space:      2.8T  2.0T  802G  72% /local-scratch
+*** 2015-12-05 21:03:42 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 SRR870667_1/output/SRR870667_1.dsrc-m2 SRR870667_1/output/decompressed/SRR870667_1.dsrc-m2.fq
+  stderr:      SRR870667_1/log/dsrc-m2_1.4.dec.log
+  Process PID:   12833
+  Exit code:     0
+  Wall time:     00:08:30 (510.2 ms)
+  Memory (MB):   3103.3
+  Resources:    
+    ru_utime:    00:32:59 (1979.1 ms)
+    ru_stime:    00:00:32 (32.0 ms)
+    ru_maxrss:   3177760
+    ru_minflt:   34711
+    ru_majflt:   10
+    ru_inblock:  8319224
+    ru_oublock:  44811848
+    ru_nvcsw:    17552
+    ru_nivcsw:   227551
+  GNU time:     
+    real:        00:08:30 (510.1 ms)
+    user:        00:32:59 (1979.1 ms)
+    sys:         00:00:32 (32.0 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/decompressed/SRR870667_1.dsrc-m2.fq)
+  Free space:      2.8T  2.0T  802G  72% /local-scratch
+
+>>> dsrc-m2_2
+*** 2015-12-05 21:12:59 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4 -m2  SRR870667_2.fastq SRR870667_1/output/SRR870667_2.dsrc-m2
+  stderr:      SRR870667_1/log/dsrc-m2_2.4.cmp.log
+  Process PID:   12984
+  Exit code:     0
+  Wall time:     00:05:45 (345.1 ms)
+  Memory (MB):   2632.6
+  Resources:    
+    ru_utime:    00:22:24 (1344.2 ms)
+    ru_stime:    00:00:34 (34.5 ms)
+    ru_maxrss:   2695732
+    ru_minflt:   107305
+    ru_majflt:   8
+    ru_inblock:  35390408
+    ru_oublock:  6181632
+    ru_nvcsw:    108002
+    ru_nivcsw:   163480
+  GNU time:     
+    real:        00:05:45 (345.0 ms)
+    user:        00:22:24 (1344.2 ms)
+    sys:         00:00:34 (34.5 ms)
+  Size (MB):     3,018.33 (3164944162 bytes) (SRR870667_1/output/SRR870667_2.dsrc-m2)
+  Free space:      2.8T  2.0T  803G  72% /local-scratch
+*** 2015-12-05 21:18:47 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t4 SRR870667_1/output/SRR870667_2.dsrc-m2 SRR870667_1/output/decompressed/SRR870667_2.dsrc-m2.fq
+  stderr:      SRR870667_1/log/dsrc-m2_2.4.dec.log
+  Process PID:   13051
+  Exit code:     0
+  Wall time:     00:05:57 (357.9 ms)
+  Memory (MB):   2570.8
+  Resources:    
+    ru_utime:    00:23:24 (1404.5 ms)
+    ru_stime:    00:00:25 (25.7 ms)
+    ru_maxrss:   2632484
+    ru_minflt:   30993
+    ru_majflt:   10
+    ru_inblock:  6206736
+    ru_oublock:  35364448
+    ru_nvcsw:    13057
+    ru_nivcsw:   166248
+  GNU time:     
+    real:        00:05:57 (357.8 ms)
+    user:        00:23:24 (1404.5 ms)
+    sys:         00:00:25 (25.7 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/decompressed/SRR870667_2.dsrc-m2.fq)
+  Free space:      2.8T  2.0T  803G  72% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1: SRR870667_1.fastq)
+*** 2015-12-29 23:42:28 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom e 4 'SRR870667_1.fastq' SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom 
+    stderr:      SRR870667/log/SRR870667_1.fastq.orcom.4.cmp.log
+  Process PID:   3715
+  Exit code:     0
+  Wall time:     00:09:40 (580.0 ms)
+  Memory (MB):   1230.2
+  Resources:    
+    ru_utime:    00:36:03 (2163.7 ms)
+    ru_stime:    00:00:43 (43.9 ms)
+    ru_maxrss:   1259704
+    ru_minflt:   90442
+    ru_majflt:   14
+    ru_inblock:  44837800
+    ru_oublock:  5223648
+    ru_nvcsw:    162325
+    ru_nivcsw:   232992
+  GNU time:     
+    real:        00:09:40 (580.0 ms)
+    user:        00:36:03 (2163.7 ms)
+    sys:         00:00:43 (43.9 ms)
+  Size (MB):     786.41 (824614309 bytes) (SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom.cmeta, SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom.cdna)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-29 23:52:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom d 4 SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom SRR870667/output/decompressed/orcom/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.orcom.4.dec.log
+  Process PID:   3856
+  Exit code:     0
+  Wall time:     00:01:42 (102.0 ms)
+  Memory (MB):   1892.7
+  Resources:    
+    ru_utime:    00:05:56 (356.7 ms)
+    ru_stime:    00:00:13 (13.0 ms)
+    ru_maxrss:   1938124
+    ru_minflt:   64028
+    ru_majflt:   12
+    ru_inblock:  1636888
+    ru_oublock:  14710976
+    ru_nvcsw:    7120
+    ru_nivcsw:   41887
+  GNU time:     
+    real:        00:01:41 (101.9 ms)
+    user:        00:05:56 (356.7 ms)
+    sys:         00:00:13 (13.0 ms)
+  Size (MB):     7,183.08 (7532007583 bytes) (SRR870667/output/decompressed/orcom/SRR870667_1.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1: SRR870667_1.fastq)
+*** 2015-12-29 23:56:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v SRR870667_1.fastq 
+    stdout:      SRR870667/output/compressed/quip/SRR870667_1.fastq.qp
+    stderr:      SRR870667/log/SRR870667_1.fastq.quip.4.cmp.log
+  Process PID:   3976
+  Exit code:     0
+  Wall time:     00:18:58 (1138.7 ms)
+  Memory (MB):   397.8
+  Resources:    
+    ru_utime:    00:31:47 (1907.6 ms)
+    ru_stime:    00:00:41 (41.2 ms)
+    ru_maxrss:   407380
+    ru_minflt:   39137
+    ru_majflt:   16
+    ru_inblock:  44815768
+    ru_oublock:  7645056
+    ru_nvcsw:    133330
+    ru_nivcsw:   327319
+  GNU time:     
+    real:        00:18:58 (1138.6 ms)
+    user:        00:31:47 (1907.6 ms)
+    sys:         00:00:41 (41.1 ms)
+  Size (MB):     3,732.51 (3913817212 bytes) (SRR870667/output/compressed/quip/SRR870667_1.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-30 00:15:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq SRR870667/output/compressed/quip/SRR870667_1.fastq.qp
+    stdout:      SRR870667/output/decompressed/quip/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.quip.4.dec.log
+  Process PID:   27762
+  Exit code:     0
+  Wall time:     00:21:36 (1296.6 ms)
+  Memory (MB):   387.5
+  Resources:    
+    ru_utime:    00:39:05 (2345.2 ms)
+    ru_stime:    00:00:38 (38.0 ms)
+    ru_maxrss:   396772
+    ru_minflt:   39673
+    ru_majflt:   16
+    ru_inblock:  7647520
+    ru_oublock:  37386800
+    ru_nvcsw:    50447
+    ru_nivcsw:   295992
+  GNU time:     
+    real:        00:21:36 (1296.5 ms)
+    user:        00:39:05 (2345.2 ms)
+    sys:         00:00:38 (38.0 ms)
+  Size (MB):     18,255.27 (19142037206 bytes) (SRR870667/output/decompressed/quip/SRR870667_1.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+>>> quip (File 2: SRR870667_2.fastq)
+*** 2015-12-30 00:41:34 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v SRR870667_2.fastq 
+    stdout:      SRR870667/output/compressed/quip/SRR870667_2.fastq.qp
+    stderr:      SRR870667/log/SRR870667_2.fastq.quip.4.cmp.log
+  Process PID:   19633
+  Exit code:     0
+  Wall time:     00:14:55 (895.3 ms)
+  Memory (MB):   397.5
+  Resources:    
+    ru_utime:    00:24:59 (1499.2 ms)
+    ru_stime:    00:00:33 (33.3 ms)
+    ru_maxrss:   407072
+    ru_minflt:   39024
+    ru_majflt:   16
+    ru_inblock:  35368064
+    ru_oublock:  5709472
+    ru_nvcsw:    114649
+    ru_nivcsw:   274448
+  GNU time:     
+    real:        00:14:55 (895.2 ms)
+    user:        00:24:59 (1499.2 ms)
+    sys:         00:00:33 (33.3 ms)
+  Size (MB):     2,787.51 (2922911907 bytes) (SRR870667/output/compressed/quip/SRR870667_2.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-30 00:56:32 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq SRR870667/output/compressed/quip/SRR870667_2.fastq.qp
+    stdout:      SRR870667/output/decompressed/quip/SRR870667_2.fastq.fq
+    stderr:      SRR870667/log/SRR870667_2.fastq.quip.4.dec.log
+  Process PID:   11373
+  Exit code:     0
+  Wall time:     00:16:05 (965.5 ms)
+  Memory (MB):   388.7
+  Resources:    
+    ru_utime:    00:29:30 (1770.6 ms)
+    ru_stime:    00:00:29 (29.7 ms)
+    ru_maxrss:   398028
+    ru_minflt:   39502
+    ru_majflt:   16
+    ru_inblock:  5712432
+    ru_oublock:  28074368
+    ru_nvcsw:    46316
+    ru_nivcsw:   229861
+  GNU time:     
+    real:        00:16:05 (965.4 ms)
+    user:        00:29:30 (1770.6 ms)
+    sys:         00:00:29 (29.7 ms)
+  Size (MB):     13,708.18 (14374069103 bytes) (SRR870667/output/decompressed/quip/SRR870667_2.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+>>> quip-asm (File 1: SRR870667_1.fastq)
+*** 2015-12-30 01:16:04 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v SRR870667_1.fastq -a
+    stdout:      SRR870667/output/compressed/quip-asm/SRR870667_1.fastq.qp
+    stderr:      SRR870667/log/SRR870667_1.fastq.quip-asm.4.cmp.log
+  Process PID:   2909
+  Exit code:     0
+  Wall time:     00:22:36 (1356.8 ms)
+  Memory (MB):   771.7
+  Resources:    
+    ru_utime:    00:36:45 (2205.8 ms)
+    ru_stime:    00:00:41 (41.2 ms)
+    ru_maxrss:   790224
+    ru_minflt:   43306
+    ru_majflt:   16
+    ru_inblock:  44815432
+    ru_oublock:  7645104
+    ru_nvcsw:    125481
+    ru_nivcsw:   359511
+  GNU time:     
+    real:        00:22:36 (1356.7 ms)
+    user:        00:36:45 (2205.8 ms)
+    sys:         00:00:41 (41.1 ms)
+  Size (MB):     3,732.51 (3913817220 bytes) (SRR870667/output/compressed/quip-asm/SRR870667_1.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-30 01:38:44 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq SRR870667/output/compressed/quip-asm/SRR870667_1.fastq.qp
+    stdout:      SRR870667/output/decompressed/quip-asm/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.quip-asm.4.dec.log
+  Process PID:   26903
+  Exit code:     0
+  Wall time:     00:23:14 (1394.9 ms)
+  Memory (MB):   770.4
+  Resources:    
+    ru_utime:    00:40:13 (2413.1 ms)
+    ru_stime:    00:00:36 (36.3 ms)
+    ru_maxrss:   788920
+    ru_minflt:   43194
+    ru_majflt:   16
+    ru_inblock:  7647768
+    ru_oublock:  37386808
+    ru_nvcsw:    50424
+    ru_nivcsw:   300456
+  GNU time:     
+    real:        00:23:14 (1394.8 ms)
+    user:        00:40:13 (2413.1 ms)
+    sys:         00:00:36 (36.3 ms)
+  Size (MB):     18,255.27 (19142037206 bytes) (SRR870667/output/decompressed/quip-asm/SRR870667_1.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+>>> quip-asm (File 2: SRR870667_2.fastq)
+*** 2015-12-30 02:06:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v SRR870667_2.fastq -a
+    stdout:      SRR870667/output/compressed/quip-asm/SRR870667_2.fastq.qp
+    stderr:      SRR870667/log/SRR870667_2.fastq.quip-asm.4.cmp.log
+  Process PID:   18797
+  Exit code:     0
+  Wall time:     00:16:59 (1019.3 ms)
+  Memory (MB):   769.7
+  Resources:    
+    ru_utime:    00:28:32 (1712.2 ms)
+    ru_stime:    00:00:34 (34.1 ms)
+    ru_maxrss:   788212
+    ru_minflt:   42280
+    ru_majflt:   16
+    ru_inblock:  35368048
+    ru_oublock:  5709496
+    ru_nvcsw:    103091
+    ru_nivcsw:   296205
+  GNU time:     
+    real:        00:16:59 (1019.2 ms)
+    user:        00:28:32 (1712.2 ms)
+    sys:         00:00:34 (34.0 ms)
+  Size (MB):     2,787.51 (2922911915 bytes) (SRR870667/output/compressed/quip-asm/SRR870667_2.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-30 02:23:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq SRR870667/output/compressed/quip-asm/SRR870667_2.fastq.qp
+    stdout:      SRR870667/output/decompressed/quip-asm/SRR870667_2.fastq.fq
+    stderr:      SRR870667/log/SRR870667_2.fastq.quip-asm.4.dec.log
+  Process PID:   10561
+  Exit code:     0
+  Wall time:     00:17:35 (1055.8 ms)
+  Memory (MB):   767.5
+  Resources:    
+    ru_utime:    00:32:27 (1947.2 ms)
+    ru_stime:    00:00:31 (31.7 ms)
+    ru_maxrss:   785876
+    ru_minflt:   42942
+    ru_majflt:   16
+    ru_inblock:  5712424
+    ru_oublock:  28074376
+    ru_nvcsw:    44278
+    ru_nivcsw:   248848
+  GNU time:     
+    real:        00:17:35 (1055.7 ms)
+    user:        00:32:27 (1947.2 ms)
+    sys:         00:00:31 (31.7 ms)
+  Size (MB):     13,708.18 (14374069103 bytes) (SRR870667/output/decompressed/quip-asm/SRR870667_2.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath_1
+*** 2015-11-17 18:59:07 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=4 -ref=data/sam/ref/cacao11allasm_repmask_nomito.fa.gz -reads=SRR870667_1.fastq -out=SRR870667_1/output/SRR870667_1.kpath  
+  stderr:      SRR870667_1/log/kpath_1.4.cmp.log
+  Process PID:   31897
+  Exit code:     0
+  Wall time:     01:45:15 (6315.6 ms)
+  Memory (MB):   33195.4
+  Resources:    
+    ru_utime:    02:55:59 (10559.1 ms)
+    ru_stime:    00:23:03 (1383.7 ms)
+    ru_maxrss:   33992096
+    ru_minflt:   6619837
+    ru_majflt:   25
+    ru_inblock:  45023145
+    ru_oublock:  16000016
+    ru_nvcsw:    98165838
+    ru_nivcsw:   1737106
+  GNU time:     
+    real:        01:45:15 (6315.6 ms)
+    user:        02:55:59 (10559.0 ms)
+    sys:         00:23:03 (1383.7 ms)
+  Size (MB):     629.25 (659819397 bytes) (SRR870667_1/output/SRR870667_1.kpath.enc, SRR870667_1/output/SRR870667_1.kpath.flipped, SRR870667_1/output/SRR870667_1.kpath.ns, SRR870667_1/output/SRR870667_1.kpath.bittree, SRR870667_1/output/SRR870667_1.kpath.counts)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-17 20:44:28 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux decode -p=4 -ref=data/sam/ref/cacao11allasm_repmask_nomito.fa.gz -reads=SRR870667_1/output/SRR870667_1.kpath -out=SRR870667_1/output/SRR870667_1.kpath.fq
+  stderr:      SRR870667_1/log/kpath_1.4.dec.log
+  Process PID:   703
+  Exit code:     0
+  Wall time:     01:21:38 (4898.3 ms)
+  Memory (MB):   25558.0
+  Resources:    
+    ru_utime:    01:39:09 (5949.5 ms)
+    ru_stime:    00:07:04 (424.7 ms)
+    ru_maxrss:   26171344
+    ru_minflt:   866237
+    ru_majflt:   25
+    ru_inblock:  1500040
+    ru_oublock:  16173920
+    ru_nvcsw:    38286521
+    ru_nivcsw:   877649
+  GNU time:     
+    real:        01:21:38 (4898.2 ms)
+    user:        01:39:09 (5949.5 ms)
+    sys:         00:07:04 (424.7 ms)
+  Size (MB):     7,897.38 (8281007330 bytes) (SRR870667_1/output/SRR870667_1.kpath.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: SRR870667_1.fastq)
+*** 2016-01-24 14:43:46 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e SRR870667_1.fastq SRR870667/output/compressed/leon/SRR870667_1.fastq.leon 4 
+    stderr:      SRR870667/log/SRR870667_1.fastq.leon.4.cmp.log
+  Process PID:   26335
+  Exit code:     0
+  Wall time:     00:54:18 (3258.2 ms)
+  Memory (MB):   1131.2
+  Resources:    
+    ru_utime:    03:22:04 (12124.1 ms)
+    ru_stime:    00:01:17 (77.2 ms)
+    ru_maxrss:   1158352
+    ru_minflt:   301880
+    ru_majflt:   79
+    ru_inblock:  44849704
+    ru_oublock:  32477800
+    ru_nvcsw:    371229
+    ru_nivcsw:   1326455
+  GNU time:     
+    real:        00:54:18 (3258.0 ms)
+    user:        03:22:04 (12124.1 ms)
+    sys:         00:01:17 (77.2 ms)
+  Size (MB):     4,308.92 (4518232511 bytes) (SRR870667/output/compressed/leon/SRR870667_1.fastq.leon, SRR870667/output/compressed/leon/SRR870667_1.fastq.leon.qual)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2016-01-24 15:38:12 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d SRR870667/output/compressed/leon/SRR870667_1.fastq.leon SRR870667/output/decompressed/leon/SRR870667_1.fastq.fq 4
+    stderr:      SRR870667/log/SRR870667_1.fastq.leon.4.dec.log
+  Process PID:   27502
+  Exit code:     0
+  Wall time:     00:22:56 (1376.4 ms)
+  Memory (MB):   602.6
+  Resources:    
+    ru_utime:    01:11:50 (4310.6 ms)
+    ru_stime:    00:00:29 (29.3 ms)
+    ru_maxrss:   617056
+    ru_minflt:   33050
+    ru_majflt:   39
+    ru_inblock:  8856008
+    ru_oublock:  37387096
+    ru_nvcsw:    21925
+    ru_nivcsw:   462684
+  GNU time:     
+    real:        00:22:55 (1375.8 ms)
+    user:        01:11:50 (4310.6 ms)
+    sys:         00:00:29 (29.3 ms)
+  Size (MB):     18,255.27 (19142037206 bytes) (SRR870667/output/decompressed/leon/SRR870667_1.fastq.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+>>> leon (File 2: SRR870667_2.fastq)
+*** 2016-03-02 17:33:36 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e SRR870667_2.fastq SRR870667/output/compressed/leon/SRR870667_2.fastq.leon 4 
+    stderr:      SRR870667/log/SRR870667_2.fastq.leon.4.cmp.log
+  Process PID:   22627
+  Exit code:     0
+  Wall time:     00:34:28 (2068.3 ms)
+  Memory (MB):   838.3
+  Resources:    
+    ru_utime:    02:04:28 (7468.4 ms)
+    ru_stime:    00:01:07 (67.5 ms)
+    ru_maxrss:   858440
+    ru_minflt:   538650
+    ru_majflt:   89
+    ru_inblock:  35407464
+    ru_oublock:  23762896
+    ru_nvcsw:    575762
+    ru_nivcsw:   838213
+  GNU time:     
+    real:        00:34:28 (2068.2 ms)
+    user:        02:04:28 (7468.4 ms)
+    sys:         00:01:07 (67.5 ms)
+  Size (MB):     3,152.40 (3305531883 bytes) (SRR870667/output/compressed/leon/SRR870667_2.fastq.leon, SRR870667/output/compressed/leon/SRR870667_2.fastq.leon.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-02 18:08:10 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d SRR870667/output/compressed/leon/SRR870667_2.fastq.leon SRR870667/output/decompressed/leon/SRR870667_2.fastq.fq 4
+    stderr:      SRR870667/log/SRR870667_2.fastq.leon.4.dec.log
+  Process PID:   23991
+  Exit code:     0
+  Wall time:     00:14:55 (895.9 ms)
+  Memory (MB):   519.6
+  Resources:    
+    ru_utime:    00:43:41 (2621.1 ms)
+    ru_stime:    00:00:21 (21.4 ms)
+    ru_maxrss:   532040
+    ru_minflt:   31684
+    ru_majflt:   42
+    ru_inblock:  6489792
+    ru_oublock:  28074584
+    ru_nvcsw:    17439
+    ru_nivcsw:   289727
+  GNU time:     
+    real:        00:14:55 (895.8 ms)
+    user:        00:43:41 (2621.1 ms)
+    sys:         00:00:21 (21.4 ms)
+  Size (MB):     13,708.18 (14374069103 bytes) (SRR870667/output/decompressed/leon/SRR870667_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                                mince                                 # 
+########################################################################
+>>> mince (File 1: SRR870667_1.fastq)
+*** 2016-08-21 18:01:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e SRR870667_1.fastq SRR870667/output/compressed/mince/SRR870667_1.fastq.mince 4  SRR870667_2.fastq
+    stderr:      SRR870667/log/SRR870667_1.fastq.mince.4.cmp.log
+  Process PID:   7647
+  Exit code:     0
+  Wall time:     03:13:15 (11595.7 ms)
+  Memory (MB):   30561.1
+  Resources:    
+    ru_utime:    11:41:10 (42070.3 ms)
+    ru_stime:    00:21:38 (1298.3 ms)
+    ru_maxrss:   31294516
+    ru_minflt:   14367808
+    ru_majflt:   30
+    ru_inblock:  80208000
+    ru_oublock:  2746472
+    ru_nvcsw:    68918706
+    ru_nivcsw:   4817628
+  GNU time:     
+    real:        03:13:15 (11595.4 ms)
+    user:        11:41:10 (42070.3 ms)
+    sys:         00:21:38 (1298.3 ms)
+  Size (MB):     1,240.10 (1300336614 bytes) (SRR870667/output/compressed/mince/SRR870667_1.fastq.mince.seqs.lz, SRR870667/output/compressed/mince/SRR870667_1.fastq.mince.offs.lz, SRR870667/output/compressed/mince/SRR870667_1.fastq.mince.nlocs.lz, SRR870667/output/compressed/mince/SRR870667_1.fastq.mince.flips.lz)
+  Free space:      2.8T  1.8T  982G  65% /local-scratch
+*** 2016-08-21 21:14:49 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d SRR870667/output/compressed/mince/SRR870667_1.fastq.mince SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq 4 
+    stderr:      SRR870667/log/SRR870667_1.fastq.mince.4.dec.log
+  Process PID:   9768
+  Exit code:     0
+  Wall time:     00:06:28 (388.9 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:07:30 (450.6 ms)
+    ru_stime:    00:00:53 (53.0 ms)
+    ru_maxrss:   248416
+    ru_minflt:   96949
+    ru_majflt:   32
+    ru_inblock:  2571600
+    ru_oublock:  28046000
+    ru_nvcsw:    741243
+    ru_nivcsw:   65397
+  GNU time:     
+    real:        00:06:28 (388.8 ms)
+    user:        00:07:30 (450.6 ms)
+    sys:         00:00:53 (53.0 ms)
+  Size (MB):     21,517.46 (22562691861 bytes) (SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq.log, SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq.fa, SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq1.fa, SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq2.fa)
+  Free space:      2.8T  1.8T  969G  66% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: SRR870667_1.fastq)
+*** 2016-08-09 14:02:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e SRR870667_1.fastq SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince 4 
+    stderr:      SRR870667/log/SRR870667_1.fastq.mince-single.4.cmp.log
+  Process PID:   17429
+  Exit code:     0
+  Wall time:     01:51:30 (6690.9 ms)
+  Memory (MB):   23654.7
+  Resources:    
+    ru_utime:    06:40:37 (24037.3 ms)
+    ru_stime:    00:13:27 (807.9 ms)
+    ru_maxrss:   24222420
+    ru_minflt:   12916545
+    ru_majflt:   30
+    ru_inblock:  44843296
+    ru_oublock:  1629352
+    ru_nvcsw:    35995070
+    ru_nivcsw:   2726120
+  GNU time:     
+    real:        01:51:30 (6690.8 ms)
+    user:        06:40:37 (24037.3 ms)
+    sys:         00:13:27 (807.9 ms)
+  Size (MB):     653.70 (685457780 bytes) (SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.seqs.lz, SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.offs.lz, SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.nlocs.lz, SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.flips.lz)
+  Free space:      2.8T  1.7T  1.2T  59% /local-scratch
+*** 2016-08-09 15:53:59 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince SRR870667/output/decompressed/mince-single/SRR870667_1.fastq.fq 4 
+    stderr:      SRR870667/log/SRR870667_1.fastq.mince-single.4.dec.log
+  Process PID:   18642
+  Exit code:     0
+  Wall time:     00:04:33 (273.9 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:04:20 (260.8 ms)
+    ru_stime:    00:01:38 (98.1 ms)
+    ru_maxrss:   248404
+    ru_minflt:   46009
+    ru_majflt:   32
+    ru_inblock:  1370528
+    ru_oublock:  16055928
+    ru_nvcsw:    437891
+    ru_nivcsw:   42891
+  GNU time:     
+    real:        00:04:33 (273.8 ms)
+    user:        00:04:20 (260.8 ms)
+    sys:         00:01:38 (98.1 ms)
+  Size (MB):     7,831.48 (8211907157 bytes) (SRR870667/output/decompressed/mince-single/SRR870667_1.fastq.fq.log, SRR870667/output/decompressed/mince-single/SRR870667_1.fastq.fq.fa)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: SRR870667_1.fastq)
+*** 2016-02-21 02:05:50 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e SRR870667_1.fastq SRR870667/output/compressed/kic/SRR870667_1.fastq.kic 4 
+    stderr:      SRR870667/log/SRR870667_1.fastq.kic.4.cmp.log
+  Process PID:   14258
+  Exit code:     0
+  Wall time:     04:59:27 (17967.5 ms)
+  Memory (MB):   2094.6
+  Resources:    
+    ru_utime:    10:45:25 (38725.4 ms)
+    ru_stime:    00:10:08 (608.8 ms)
+    ru_maxrss:   2144916
+    ru_minflt:   155866
+    ru_majflt:   147
+    ru_inblock:  44865306
+    ru_oublock:  8815968
+    ru_nvcsw:    54549535
+    ru_nivcsw:   6679614
+  GNU time:     
+    real:        04:59:27 (17967.4 ms)
+    user:        10:45:25 (38725.4 ms)
+    sys:         00:10:08 (608.8 ms)
+  Size (MB):     4,289.43 (4497793174 bytes) (SRR870667/output/compressed/kic/SRR870667_1.fastq.kic, SRR870667/output/compressed/kic/SRR870667_1.fastq.kic.qual, SRR870667/output/compressed/kic/SRR870667_1.fastq.kic.name, SRR870667/output/compressed/kic/SRR870667_1.fastq.kic.seq)
+  Free space:      2.8T  1.6T  1.3T  56% /local-scratch
+*** 2016-02-21 07:05:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d SRR870667/output/compressed/kic/SRR870667_1.fastq.kic SRR870667/output/decompressed/kic/SRR870667_1.fastq.fq 4
+    stderr:      SRR870667/log/SRR870667_1.fastq.kic.4.dec.log
+  Process PID:   31906
+  Exit code:     0
+  Wall time:     00:18:13 (1093.8 ms)
+  Memory (MB):   877.4
+  Resources:    
+    ru_utime:    00:51:45 (3105.5 ms)
+    ru_stime:    00:06:15 (375.5 ms)
+    ru_maxrss:   898472
+    ru_minflt:   85397
+    ru_majflt:   138
+    ru_inblock:  8837361
+    ru_oublock:  44813472
+    ru_nvcsw:    29186706
+    ru_nivcsw:   448342
+  GNU time:     
+    real:        00:18:13 (1093.6 ms)
+    user:        00:51:45 (3105.5 ms)
+    sys:         00:06:15 (375.4 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.6T  1.2T  57% /local-scratch
+
+>>> kic (File 2: SRR870667_2.fastq)
+*** 2016-03-02 18:26:38 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e SRR870667_2.fastq SRR870667/output/compressed/kic/SRR870667_2.fastq.kic 4 
+    stderr:      SRR870667/log/SRR870667_2.fastq.kic.4.cmp.log
+  Process PID:   25883
+  Exit code:     0
+  Wall time:     03:46:52 (13612.9 ms)
+  Memory (MB):   2025.4
+  Resources:    
+    ru_utime:    08:07:26 (29246.4 ms)
+    ru_stime:    00:13:47 (827.3 ms)
+    ru_maxrss:   2073984
+    ru_minflt:   155730
+    ru_majflt:   143
+    ru_inblock:  35418016
+    ru_oublock:  6593384
+    ru_nvcsw:    93657166
+    ru_nivcsw:   5330806
+  GNU time:     
+    real:        03:46:52 (13612.8 ms)
+    user:        08:07:26 (29246.4 ms)
+    sys:         00:13:47 (827.3 ms)
+  Size (MB):     3,208.43 (3364281541 bytes) (SRR870667/output/compressed/kic/SRR870667_2.fastq.kic, SRR870667/output/compressed/kic/SRR870667_2.fastq.kic.seq, SRR870667/output/compressed/kic/SRR870667_2.fastq.kic.qual, SRR870667/output/compressed/kic/SRR870667_2.fastq.kic.name)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-02 22:13:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d SRR870667/output/compressed/kic/SRR870667_2.fastq.kic SRR870667/output/decompressed/kic/SRR870667_2.fastq.fq 4
+    stderr:      SRR870667/log/SRR870667_2.fastq.kic.4.dec.log
+  Process PID:   32087
+  Exit code:     0
+  Wall time:     00:14:15 (855.4 ms)
+  Memory (MB):   893.3
+  Resources:    
+    ru_utime:    00:38:13 (2293.1 ms)
+    ru_stime:    00:06:30 (390.1 ms)
+    ru_maxrss:   914704
+    ru_minflt:   94200
+    ru_majflt:   148
+    ru_inblock:  6624104
+    ru_oublock:  35365696
+    ru_nvcsw:    48269675
+    ru_nivcsw:   353140
+  GNU time:     
+    real:        00:14:15 (855.2 ms)
+    user:        00:38:13 (2293.1 ms)
+    sys:         00:06:30 (390.1 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                      SRR870667_1 with 8 threads                      + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz_1
+*** 2015-11-18 00:10:52 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8  
+    stdin:       SRR870667_1.fastq
+    stdout:      SRR870667_1/output/SRR870667_1.gz
+  stderr:      SRR870667_1/log/pigz_1.8.cmp.log
+  Process PID:   3358
+  Exit code:     0
+  Wall time:     00:06:45 (405.2 ms)
+  Memory (MB):   10.6
+  Resources:    
+    ru_utime:    00:46:09 (2769.7 ms)
+    ru_stime:    00:01:03 (63.3 ms)
+    ru_maxrss:   10892
+    ru_minflt:   1918
+    ru_majflt:   7
+    ru_inblock:  44813768
+    ru_oublock:  13561016
+    ru_nvcsw:    355893
+    ru_nivcsw:   368599
+  GNU time:     
+    real:        00:06:45 (405.2 ms)
+    user:        00:46:09 (2769.7 ms)
+    sys:         00:01:03 (63.3 ms)
+  Size (MB):     6,621.54 (6943192256 bytes) (SRR870667_1/output/SRR870667_1.gz)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-18 00:17:41 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       SRR870667_1/output/SRR870667_1.gz
+    stdout:      SRR870667_1/output/SRR870667_1.gz.fq
+  stderr:      SRR870667_1/log/pigz_1.8.dec.log
+  Process PID:   3437
+  Exit code:     0
+  Wall time:     00:04:30 (270.3 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:03:37 (217.1 ms)
+    ru_stime:    00:01:20 (80.3 ms)
+    ru_maxrss:   6012
+    ru_minflt:   607
+    ru_majflt:   7
+    ru_inblock:  13561872
+    ru_oublock:  44811840
+    ru_nvcsw:    1616684
+    ru_nivcsw:   59243
+  GNU time:     
+    real:        00:04:30 (270.2 ms)
+    user:        00:03:37 (217.1 ms)
+    sys:         00:01:20 (80.3 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/SRR870667_1.gz.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+>>> pigz_2
+*** 2015-11-18 00:22:18 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8  
+    stdin:       SRR870667_2.fastq
+    stdout:      SRR870667_1/output/SRR870667_2.gz
+  stderr:      SRR870667_1/log/pigz_2.8.cmp.log
+  Process PID:   3508
+  Exit code:     0
+  Wall time:     00:04:32 (272.4 ms)
+  Memory (MB):   7.9
+  Resources:    
+    ru_utime:    00:32:11 (1931.2 ms)
+    ru_stime:    00:00:49 (49.5 ms)
+    ru_maxrss:   8128
+    ru_minflt:   1911
+    ru_majflt:   7
+    ru_inblock:  35366576
+    ru_oublock:  10477952
+    ru_nvcsw:    276572
+    ru_nivcsw:   252179
+  GNU time:     
+    real:        00:04:32 (272.3 ms)
+    user:        00:32:11 (1931.2 ms)
+    sys:         00:00:49 (49.5 ms)
+  Size (MB):     5,116.14 (5364663700 bytes) (SRR870667_1/output/SRR870667_2.gz)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-18 00:26:57 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       SRR870667_1/output/SRR870667_2.gz
+    stdout:      SRR870667_1/output/SRR870667_2.gz.fq
+  stderr:      SRR870667_1/log/pigz_2.8.dec.log
+  Process PID:   3569
+  Exit code:     0
+  Wall time:     00:03:02 (182.9 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:02:49 (169.5 ms)
+    ru_stime:    00:01:02 (62.9 ms)
+    ru_maxrss:   6012
+    ru_minflt:   604
+    ru_majflt:   7
+    ru_inblock:  10478760
+    ru_oublock:  35364440
+    ru_nvcsw:    1272744
+    ru_nivcsw:   42167
+  GNU time:     
+    real:        00:03:02 (182.8 ms)
+    user:        00:02:49 (169.5 ms)
+    sys:         00:01:02 (62.9 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/SRR870667_2.gz.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2_1
+*** 2015-11-18 00:30:30 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8  
+    stdin:       SRR870667_1.fastq
+    stdout:      SRR870667_1/output/SRR870667_1.bz2
+  stderr:      SRR870667_1/log/pbzip2_1.8.cmp.log
+  Process PID:   3652
+  Exit code:     0
+  Wall time:     00:06:41 (401.7 ms)
+  Memory (MB):   74.2
+  Resources:    
+    ru_utime:    00:46:46 (2806.4 ms)
+    ru_stime:    00:02:17 (137.7 ms)
+    ru_maxrss:   75984
+    ru_minflt:   17319281
+    ru_majflt:   8
+    ru_inblock:  44837768
+    ru_oublock:  10893104
+    ru_nvcsw:    130655
+    ru_nivcsw:   389343
+  GNU time:     
+    real:        00:06:41 (401.6 ms)
+    user:        00:46:46 (2806.4 ms)
+    sys:         00:02:17 (137.7 ms)
+  Size (MB):     5,318.86 (5577223793 bytes) (SRR870667_1/output/SRR870667_1.bz2)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-18 00:37:18 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       SRR870667_1/output/SRR870667_1.bz2
+    stdout:      SRR870667_1/output/SRR870667_1.bz2.fq
+  stderr:      SRR870667_1/log/pbzip2_1.8.dec.log
+  Process PID:   3737
+  Exit code:     0
+  Wall time:     00:04:23 (263.0 ms)
+  Memory (MB):   48.1
+  Resources:    
+    ru_utime:    00:17:16 (1036.7 ms)
+    ru_stime:    00:01:39 (99.2 ms)
+    ru_maxrss:   49208
+    ru_minflt:   11138246
+    ru_majflt:   8
+    ru_inblock:  10918632
+    ru_oublock:  44811840
+    ru_nvcsw:    58588
+    ru_nivcsw:   148602
+  GNU time:     
+    real:        00:04:22 (262.9 ms)
+    user:        00:17:16 (1036.7 ms)
+    sys:         00:01:39 (99.2 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/SRR870667_1.bz2.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+>>> pbzip2_2
+*** 2015-11-18 00:41:45 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8  
+    stdin:       SRR870667_2.fastq
+    stdout:      SRR870667_1/output/SRR870667_2.bz2
+  stderr:      SRR870667_1/log/pbzip2_2.8.cmp.log
+  Process PID:   3809
+  Exit code:     0
+  Wall time:     00:05:16 (316.4 ms)
+  Memory (MB):   75.8
+  Resources:    
+    ru_utime:    00:38:28 (2308.8 ms)
+    ru_stime:    00:01:45 (105.9 ms)
+    ru_maxrss:   77608
+    ru_minflt:   12372052
+    ru_majflt:   8
+    ru_inblock:  35389992
+    ru_oublock:  8361848
+    ru_nvcsw:    107413
+    ru_nivcsw:   311637
+  GNU time:     
+    real:        00:05:16 (316.3 ms)
+    user:        00:38:28 (2308.8 ms)
+    sys:         00:01:45 (105.9 ms)
+  Size (MB):     4,082.90 (4281226239 bytes) (SRR870667_1/output/SRR870667_2.bz2)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-18 00:47:05 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       SRR870667_1/output/SRR870667_2.bz2
+    stdout:      SRR870667_1/output/SRR870667_2.bz2.fq
+  stderr:      SRR870667_1/log/pbzip2_2.8.dec.log
+  Process PID:   3878
+  Exit code:     0
+  Wall time:     00:03:01 (181.4 ms)
+  Memory (MB):   48.1
+  Resources:    
+    ru_utime:    00:13:23 (803.2 ms)
+    ru_stime:    00:01:20 (80.0 ms)
+    ru_maxrss:   49204
+    ru_minflt:   9016943
+    ru_majflt:   8
+    ru_inblock:  8386856
+    ru_oublock:  35364440
+    ru_nvcsw:    46109
+    ru_nivcsw:   115074
+  GNU time:     
+    real:        00:03:01 (181.3 ms)
+    user:        00:13:23 (803.2 ms)
+    sys:         00:01:20 (80.0 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/SRR870667_2.bz2.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                scalce                                # 
+########################################################################
+>>> scalce (File 1: SRR870667_1.fastq)
+*** 2016-01-06 11:11:58 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 8 SRR870667_1.fastq -o SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce  -r
+    stderr:      SRR870667/log/SRR870667_1.fastq.scalce.8.cmp.log
+  Process PID:   7653
+  Exit code:     0
+  Wall time:     00:25:46 (1546.7 ms)
+  Memory (MB):   5356.1
+  Resources:    
+    ru_utime:    02:58:37 (10717.7 ms)
+    ru_stime:    00:02:41 (161.4 ms)
+    ru_maxrss:   5484640
+    ru_minflt:   352857
+    ru_majflt:   10
+    ru_inblock:  80238272
+    ru_oublock:  75293680
+    ru_nvcsw:    40637
+    ru_nivcsw:   1341607
+  GNU time:     
+    real:        00:25:46 (1546.6 ms)
+    user:        02:58:37 (10717.7 ms)
+    sys:         00:02:41 (161.4 ms)
+  Size (MB):     6,374.96 (6684628176 bytes) (SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_1.scalceq, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_1.scalcen, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_1.scalcer, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_2.scalceq, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_2.scalcen, SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_2.scalcer)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+*** 2016-01-06 11:37:52 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -r -T 8 SRR870667/output/compressed/scalce/SRR870667_1.fastq.scalce_1.scalcer -o SRR870667/output/decompressed/scalce/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.scalce.8.dec.log
+  Process PID:   9194
+  Exit code:     0
+  Wall time:     00:10:02 (602.3 ms)
+  Memory (MB):   1106.8
+  Resources:    
+    ru_utime:    00:42:15 (2535.4 ms)
+    ru_stime:    00:00:32 (32.4 ms)
+    ru_maxrss:   1133388
+    ru_minflt:   244919
+    ru_majflt:   10
+    ru_inblock:  13117976
+    ru_oublock:  55561424
+    ru_nvcsw:    19724
+    ru_nivcsw:   290785
+  GNU time:     
+    real:        00:10:02 (602.1 ms)
+    user:        00:42:15 (2535.3 ms)
+    sys:         00:00:32 (32.4 ms)
+  Size (MB):     27,129.58 (28447426280 bytes) (SRR870667/output/decompressed/scalce/SRR870667_1.fastq.fq_1.fastq, SRR870667/output/decompressed/scalce/SRR870667_1.fastq.fq_2.fastq)
+  Free space:      2.8T  1.4T  1.4T  51% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single (File 1: SRR870667_1.fastq)
+*** 2016-01-05 18:16:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -T 8 SRR870667_1.fastq -o SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single 
+    stderr:      SRR870667/log/SRR870667_1.fastq.scalce-single.8.cmp.log
+  Process PID:   28958
+  Exit code:     0
+  Wall time:     00:12:17 (737.0 ms)
+  Memory (MB):   5313.0
+  Resources:    
+    ru_utime:    01:26:53 (5213.0 ms)
+    ru_stime:    00:01:31 (91.8 ms)
+    ru_maxrss:   5440528
+    ru_minflt:   491513
+    ru_majflt:   10
+    ru_inblock:  44873016
+    ru_oublock:  46205264
+    ru_nvcsw:    1911
+    ru_nivcsw:   714563
+  GNU time:     
+    real:        00:12:16 (736.8 ms)
+    user:        01:26:53 (5213.0 ms)
+    sys:         00:01:31 (91.8 ms)
+  Size (MB):     3,529.25 (3700686927 bytes) (SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single_1.scalceq, SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single_1.scalcen, SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single_1.scalcer)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2016-01-05 20:24:54 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce -d -T 8 SRR870667/output/compressed/scalce-single/SRR870667_1.fastq.scalce-single_1.scalcer -o SRR870667/output/decompressed/scalce-single/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.scalce-single.8.dec.log
+  Process PID:   4801
+  Exit code:     0
+  Wall time:     00:06:08 (368.5 ms)
+  Memory (MB):   1104.4
+  Resources:    
+    ru_utime:    00:25:03 (1503.6 ms)
+    ru_stime:    00:00:18 (18.8 ms)
+    ru_maxrss:   1130880
+    ru_minflt:   244169
+    ru_majflt:   10
+    ru_inblock:  7288992
+    ru_oublock:  32369456
+    ru_nvcsw:    11758
+    ru_nivcsw:   167864
+  GNU time:     
+    real:        00:06:08 (368.4 ms)
+    user:        00:25:03 (1503.6 ms)
+    sys:         00:00:18 (18.8 ms)
+  Size (MB):     15,805.38 (16573146698 bytes) (SRR870667/output/decompressed/scalce-single/SRR870667_1.fastq.fq_1.fastq)
+  Free space:      2.8T  1.3T  1.6T  45% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc_1
+*** 2015-12-05 22:00:11 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8   SRR870667_1.fastq SRR870667_1/output/SRR870667_1.dsrc
+  stderr:      SRR870667_1/log/dsrc_1.8.cmp.log
+  Process PID:   15037
+  Exit code:     0
+  Wall time:     00:02:14 (134.3 ms)
+  Memory (MB):   158.0
+  Resources:    
+    ru_utime:    00:08:39 (519.6 ms)
+    ru_stime:    00:00:47 (47.0 ms)
+    ru_maxrss:   161836
+    ru_minflt:   34490
+    ru_majflt:   8
+    ru_inblock:  44837800
+    ru_oublock:  9298184
+    ru_nvcsw:    100303
+    ru_nivcsw:   99153
+  GNU time:     
+    real:        00:02:14 (134.2 ms)
+    user:        00:08:39 (519.6 ms)
+    sys:         00:00:47 (47.0 ms)
+  Size (MB):     4,540.11 (4760648624 bytes) (SRR870667_1/output/SRR870667_1.dsrc)
+  Free space:      2.8T  2.0T  802G  72% /local-scratch
+*** 2015-12-05 22:02:39 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 SRR870667_1/output/SRR870667_1.dsrc SRR870667_1/output/decompressed/SRR870667_1.dsrc.fq
+  stderr:      SRR870667_1/log/dsrc_1.8.dec.log
+  Process PID:   15086
+  Exit code:     0
+  Wall time:     00:04:08 (248.5 ms)
+  Memory (MB):   285.8
+  Resources:    
+    ru_utime:    00:05:59 (359.6 ms)
+    ru_stime:    00:00:37 (37.3 ms)
+    ru_maxrss:   292684
+    ru_minflt:   30461
+    ru_majflt:   10
+    ru_inblock:  9324048
+    ru_oublock:  44811848
+    ru_nvcsw:    23374
+    ru_nivcsw:   56971
+  GNU time:     
+    real:        00:04:08 (248.4 ms)
+    user:        00:05:59 (359.6 ms)
+    sys:         00:00:37 (37.3 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/decompressed/SRR870667_1.dsrc.fq)
+  Free space:      2.8T  2.0T  802G  72% /local-scratch
+
+>>> dsrc_2
+*** 2015-12-05 22:07:41 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8   SRR870667_2.fastq SRR870667_1/output/SRR870667_2.dsrc
+  stderr:      SRR870667_1/log/dsrc_2.8.cmp.log
+  Process PID:   15190
+  Exit code:     0
+  Wall time:     00:01:49 (109.8 ms)
+  Memory (MB):   183.0
+  Resources:    
+    ru_utime:    00:07:16 (436.1 ms)
+    ru_stime:    00:00:37 (37.5 ms)
+    ru_maxrss:   187440
+    ru_minflt:   35840
+    ru_majflt:   8
+    ru_inblock:  35390192
+    ru_oublock:  6898768
+    ru_nvcsw:    109112
+    ru_nivcsw:   74201
+  GNU time:     
+    real:        00:01:49 (109.8 ms)
+    user:        00:07:16 (436.1 ms)
+    sys:         00:00:37 (37.5 ms)
+  Size (MB):     3,368.52 (3532146678 bytes) (SRR870667_1/output/SRR870667_2.dsrc)
+  Free space:      2.8T  2.0T  803G  72% /local-scratch
+*** 2015-12-05 22:09:35 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 SRR870667_1/output/SRR870667_2.dsrc SRR870667_1/output/decompressed/SRR870667_2.dsrc.fq
+  stderr:      SRR870667_1/log/dsrc_2.8.dec.log
+  Process PID:   15222
+  Exit code:     0
+  Wall time:     00:02:30 (150.0 ms)
+  Memory (MB):   240.1
+  Resources:    
+    ru_utime:    00:04:33 (273.8 ms)
+    ru_stime:    00:00:29 (29.5 ms)
+    ru_maxrss:   245812
+    ru_minflt:   25807
+    ru_majflt:   10
+    ru_inblock:  6923936
+    ru_oublock:  35364448
+    ru_nvcsw:    17060
+    ru_nivcsw:   43235
+  GNU time:     
+    real:        00:02:29 (149.9 ms)
+    user:        00:04:33 (273.8 ms)
+    sys:         00:00:29 (29.5 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/decompressed/SRR870667_2.dsrc.fq)
+  Free space:      2.8T  2.0T  803G  72% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2_1
+*** 2015-12-05 22:12:45 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8 -m2  SRR870667_1.fastq SRR870667_1/output/SRR870667_1.dsrc-m2
+  stderr:      SRR870667_1/log/dsrc-m2_1.8.cmp.log
+  Process PID:   15286
+  Exit code:     0
+  Wall time:     00:04:19 (259.4 ms)
+  Memory (MB):   5235.9
+  Resources:    
+    ru_utime:    00:33:02 (1982.4 ms)
+    ru_stime:    00:00:47 (47.7 ms)
+    ru_maxrss:   5361528
+    ru_minflt:   138961
+    ru_majflt:   8
+    ru_inblock:  44837536
+    ru_oublock:  8293080
+    ru_nvcsw:    94244
+    ru_nivcsw:   290129
+  GNU time:     
+    real:        00:04:19 (259.3 ms)
+    user:        00:33:02 (1982.4 ms)
+    sys:         00:00:47 (47.7 ms)
+  Size (MB):     4,049.32 (4246017231 bytes) (SRR870667_1/output/SRR870667_1.dsrc-m2)
+  Free space:      2.8T  2.0T  802G  72% /local-scratch
+*** 2015-12-05 22:17:09 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 SRR870667_1/output/SRR870667_1.dsrc-m2 SRR870667_1/output/decompressed/SRR870667_1.dsrc-m2.fq
+  stderr:      SRR870667_1/log/dsrc-m2_1.8.dec.log
+  Process PID:   15343
+  Exit code:     0
+  Wall time:     00:04:26 (266.1 ms)
+  Memory (MB):   5923.1
+  Resources:    
+    ru_utime:    00:34:16 (2056.4 ms)
+    ru_stime:    00:00:34 (34.4 ms)
+    ru_maxrss:   6065228
+    ru_minflt:   51191
+    ru_majflt:   10
+    ru_inblock:  8318184
+    ru_oublock:  44811848
+    ru_nvcsw:    17750
+    ru_nivcsw:   225911
+  GNU time:     
+    real:        00:04:26 (266.0 ms)
+    user:        00:34:16 (2056.3 ms)
+    sys:         00:00:34 (34.4 ms)
+  Size (MB):     21,880.77 (22943655298 bytes) (SRR870667_1/output/decompressed/SRR870667_1.dsrc-m2.fq)
+  Free space:      2.8T  2.0T  802G  72% /local-scratch
+
+>>> dsrc-m2_2
+*** 2015-12-05 22:22:22 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8 -m2  SRR870667_2.fastq SRR870667_1/output/SRR870667_2.dsrc-m2
+  stderr:      SRR870667_1/log/dsrc-m2_2.8.cmp.log
+  Process PID:   15422
+  Exit code:     0
+  Wall time:     00:03:10 (190.9 ms)
+  Memory (MB):   5356.3
+  Resources:    
+    ru_utime:    00:23:42 (1422.5 ms)
+    ru_stime:    00:00:38 (38.6 ms)
+    ru_maxrss:   5484876
+    ru_minflt:   125987
+    ru_majflt:   8
+    ru_inblock:  35390296
+    ru_oublock:  6181600
+    ru_nvcsw:    106470
+    ru_nivcsw:   180444
+  GNU time:     
+    real:        00:03:10 (190.8 ms)
+    user:        00:23:42 (1422.5 ms)
+    sys:         00:00:38 (38.6 ms)
+  Size (MB):     3,018.33 (3164944162 bytes) (SRR870667_1/output/SRR870667_2.dsrc-m2)
+  Free space:      2.8T  2.0T  803G  72% /local-scratch
+*** 2015-12-05 22:25:37 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc d -v -t8 SRR870667_1/output/SRR870667_2.dsrc-m2 SRR870667_1/output/decompressed/SRR870667_2.dsrc-m2.fq
+  stderr:      SRR870667_1/log/dsrc-m2_2.8.dec.log
+  Process PID:   15466
+  Exit code:     0
+  Wall time:     00:03:14 (194.5 ms)
+  Memory (MB):   5124.5
+  Resources:    
+    ru_utime:    00:24:11 (1451.2 ms)
+    ru_stime:    00:00:26 (26.9 ms)
+    ru_maxrss:   5247492
+    ru_minflt:   45366
+    ru_majflt:   10
+    ru_inblock:  6206744
+    ru_oublock:  35364448
+    ru_nvcsw:    13276
+    ru_nivcsw:   169375
+  GNU time:     
+    real:        00:03:14 (194.4 ms)
+    user:        00:24:11 (1451.2 ms)
+    sys:         00:00:26 (26.9 ms)
+  Size (MB):     17,267.79 (18106586208 bytes) (SRR870667_1/output/decompressed/SRR870667_2.dsrc-m2.fq)
+  Free space:      2.8T  2.0T  803G  72% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1: SRR870667_1.fastq)
+*** 2015-12-30 08:31:15 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom e 8 'SRR870667_1.fastq' SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom 
+    stderr:      SRR870667/log/SRR870667_1.fastq.orcom.8.cmp.log
+  Process PID:   7047
+  Exit code:     0
+  Wall time:     00:06:07 (367.7 ms)
+  Memory (MB):   1884.3
+  Resources:    
+    ru_utime:    00:36:07 (2167.0 ms)
+    ru_stime:    00:00:44 (44.0 ms)
+    ru_maxrss:   1929560
+    ru_minflt:   158474
+    ru_majflt:   14
+    ru_inblock:  44838344
+    ru_oublock:  5223648
+    ru_nvcsw:    167348
+    ru_nivcsw:   234043
+  GNU time:     
+    real:        00:06:07 (367.6 ms)
+    user:        00:36:06 (2166.9 ms)
+    sys:         00:00:44 (44.0 ms)
+  Size (MB):     786.41 (824614309 bytes) (SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom.cmeta, SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom.cdna)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-12-30 08:37:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom d 8 SRR870667/output/compressed/orcom/SRR870667_1.fastq.orcom SRR870667/output/decompressed/orcom/SRR870667_1.fastq.fq
+    stderr:      SRR870667/log/SRR870667_1.fastq.orcom.8.dec.log
+  Process PID:   7165
+  Exit code:     0
+  Wall time:     00:01:15 (75.0 ms)
+  Memory (MB):   2954.0
+  Resources:    
+    ru_utime:    00:05:58 (358.4 ms)
+    ru_stime:    00:00:13 (13.2 ms)
+    ru_maxrss:   3024932
+    ru_minflt:   116727
+    ru_majflt:   12
+    ru_inblock:  1636593
+    ru_oublock:  14710976
+    ru_nvcsw:    7206
+    ru_nivcsw:   41214
+  GNU time:     
+    real:        00:01:14 (74.9 ms)
+    user:        00:05:58 (358.4 ms)
+    sys:         00:00:13 (13.2 ms)
+  Size (MB):     7,183.08 (7532007583 bytes) (SRR870667/output/decompressed/orcom/SRR870667_1.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath_1
+*** 2015-11-18 01:58:38 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=8 -ref=data/sam/ref/cacao11allasm_repmask_nomito.fa.gz -reads=SRR870667_1.fastq -out=SRR870667_1/output/SRR870667_1.kpath  
+  stderr:      SRR870667_1/log/kpath_1.8.cmp.log
+  Process PID:   7446
+  Exit code:     0
+  Wall time:     01:41:26 (6086.3 ms)
+  Memory (MB):   36339.5
+  Resources:    
+    ru_utime:    02:58:30 (10710.8 ms)
+    ru_stime:    00:22:17 (1337.7 ms)
+    ru_maxrss:   37211676
+    ru_minflt:   7882047
+    ru_majflt:   25
+    ru_inblock:  45022992
+    ru_oublock:  16000056
+    ru_nvcsw:    93280028
+    ru_nivcsw:   1819659
+  GNU time:     
+    real:        01:41:26 (6086.2 ms)
+    user:        02:58:30 (10710.8 ms)
+    sys:         00:22:17 (1337.7 ms)
+  Size (MB):     629.25 (659819397 bytes) (SRR870667_1/output/SRR870667_1.kpath.enc, SRR870667_1/output/SRR870667_1.kpath.flipped, SRR870667_1/output/SRR870667_1.kpath.ns, SRR870667_1/output/SRR870667_1.kpath.bittree, SRR870667_1/output/SRR870667_1.kpath.counts)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+*** 2015-11-18 03:40:08 *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux decode -p=8 -ref=data/sam/ref/cacao11allasm_repmask_nomito.fa.gz -reads=SRR870667_1/output/SRR870667_1.kpath -out=SRR870667_1/output/SRR870667_1.kpath.fq
+  stderr:      SRR870667_1/log/kpath_1.8.dec.log
+  Process PID:   8844
+  Exit code:     0
+  Wall time:     01:20:17 (4817.8 ms)
+  Memory (MB):   25834.1
+  Resources:    
+    ru_utime:    01:37:58 (5878.0 ms)
+    ru_stime:    00:07:26 (446.9 ms)
+    ru_maxrss:   26454128
+    ru_minflt:   597992
+    ru_majflt:   25
+    ru_inblock:  1500304
+    ru_oublock:  16173920
+    ru_nvcsw:    37676432
+    ru_nivcsw:   886944
+  GNU time:     
+    real:        01:20:17 (4817.7 ms)
+    user:        01:37:58 (5878.0 ms)
+    sys:         00:07:26 (446.9 ms)
+  Size (MB):     7,897.38 (8281007330 bytes) (SRR870667_1/output/SRR870667_1.kpath.fq)
+  Free space:      2.8T  1.1T  1.7T  39% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: SRR870667_1.fastq)
+*** 2016-01-24 16:06:46 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e SRR870667_1.fastq SRR870667/output/compressed/leon/SRR870667_1.fastq.leon 8 
+    stderr:      SRR870667/log/SRR870667_1.fastq.leon.8.cmp.log
+  Process PID:   29250
+  Exit code:     0
+  Wall time:     00:33:34 (2014.7 ms)
+  Memory (MB):   1762.3
+  Resources:    
+    ru_utime:    03:38:04 (13084.8 ms)
+    ru_stime:    00:01:47 (107.9 ms)
+    ru_maxrss:   1804644
+    ru_minflt:   328824
+    ru_majflt:   79
+    ru_inblock:  44849464
+    ru_oublock:  32478272
+    ru_nvcsw:    662114
+    ru_nivcsw:   1491894
+  GNU time:     
+    real:        00:33:34 (2014.5 ms)
+    user:        03:38:04 (13084.8 ms)
+    sys:         00:01:47 (107.8 ms)
+  Size (MB):     4,309.62 (4518960635 bytes) (SRR870667/output/compressed/leon/SRR870667_1.fastq.leon, SRR870667/output/compressed/leon/SRR870667_1.fastq.leon.qual)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2016-01-24 16:40:27 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d SRR870667/output/compressed/leon/SRR870667_1.fastq.leon SRR870667/output/decompressed/leon/SRR870667_1.fastq.fq 8
+    stderr:      SRR870667/log/SRR870667_1.fastq.leon.8.dec.log
+  Process PID:   30364
+  Exit code:     0
+  Wall time:     00:13:58 (838.6 ms)
+  Memory (MB):   730.7
+  Resources:    
+    ru_utime:    01:17:37 (4657.3 ms)
+    ru_stime:    00:00:31 (31.1 ms)
+    ru_maxrss:   748272
+    ru_minflt:   53471
+    ru_majflt:   40
+    ru_inblock:  8857536
+    ru_oublock:  37387008
+    ru_nvcsw:    22383
+    ru_nivcsw:   503488
+  GNU time:     
+    real:        00:13:58 (838.4 ms)
+    user:        01:17:37 (4657.3 ms)
+    sys:         00:00:31 (31.1 ms)
+  Size (MB):     18,255.27 (19142037206 bytes) (SRR870667/output/decompressed/leon/SRR870667_1.fastq.fq)
+  Free space:      2.8T  1.8T  1.1T  63% /local-scratch
+
+>>> leon (File 2: SRR870667_2.fastq)
+*** 2016-03-02 22:31:52 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e SRR870667_2.fastq SRR870667/output/compressed/leon/SRR870667_2.fastq.leon 8 
+    stderr:      SRR870667/log/SRR870667_2.fastq.leon.8.cmp.log
+  Process PID:   32635
+  Exit code:     0
+  Wall time:     00:21:37 (1297.9 ms)
+  Memory (MB):   1682.7
+  Resources:    
+    ru_utime:    02:13:06 (7986.6 ms)
+    ru_stime:    00:01:35 (95.2 ms)
+    ru_maxrss:   1723080
+    ru_minflt:   285875
+    ru_majflt:   89
+    ru_inblock:  35407480
+    ru_oublock:  23749640
+    ru_nvcsw:    1239231
+    ru_nivcsw:   960449
+  GNU time:     
+    real:        00:21:37 (1297.8 ms)
+    user:        02:13:06 (7986.6 ms)
+    sys:         00:01:35 (95.2 ms)
+  Size (MB):     3,153.08 (3306246653 bytes) (SRR870667/output/compressed/leon/SRR870667_2.fastq.leon, SRR870667/output/compressed/leon/SRR870667_2.fastq.leon.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-02 22:53:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d SRR870667/output/compressed/leon/SRR870667_2.fastq.leon SRR870667/output/decompressed/leon/SRR870667_2.fastq.fq 8
+    stderr:      SRR870667/log/SRR870667_2.fastq.leon.8.dec.log
+  Process PID:   1328
+  Exit code:     0
+  Wall time:     00:09:42 (582.0 ms)
+  Memory (MB):   607.9
+  Resources:    
+    ru_utime:    00:46:26 (2786.0 ms)
+    ru_stime:    00:00:22 (22.4 ms)
+    ru_maxrss:   622484
+    ru_minflt:   46592
+    ru_majflt:   43
+    ru_inblock:  6491448
+    ru_oublock:  28074520
+    ru_nvcsw:    18854
+    ru_nivcsw:   308091
+  GNU time:     
+    real:        00:09:41 (581.9 ms)
+    user:        00:46:26 (2786.0 ms)
+    sys:         00:00:22 (22.4 ms)
+  Size (MB):     13,708.18 (14374069103 bytes) (SRR870667/output/decompressed/leon/SRR870667_2.fastq.fq)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                                mince                                 # 
+########################################################################
+>>> mince (File 1: SRR870667_1.fastq)
+*** 2016-08-22 00:00:45 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e SRR870667_1.fastq SRR870667/output/compressed/mince/SRR870667_1.fastq.mince 8  SRR870667_2.fastq
+    stderr:      SRR870667/log/SRR870667_1.fastq.mince.8.cmp.log
+  Process PID:   12300
+  Exit code:     0
+  Wall time:     01:43:15 (6195.0 ms)
+  Memory (MB):   30777.6
+  Resources:    
+    ru_utime:    11:46:41 (42401.0 ms)
+    ru_stime:    00:22:19 (1339.8 ms)
+    ru_maxrss:   31516276
+    ru_minflt:   18012931
+    ru_majflt:   30
+    ru_inblock:  80207600
+    ru_oublock:  2746200
+    ru_nvcsw:    68732180
+    ru_nivcsw:   4915652
+  GNU time:     
+    real:        01:43:14 (6194.6 ms)
+    user:        11:46:41 (42401.0 ms)
+    sys:         00:22:19 (1339.7 ms)
+  Size (MB):     1,240.10 (1300336614 bytes) (SRR870667/output/compressed/mince/SRR870667_1.fastq.mince.seqs.lz, SRR870667/output/compressed/mince/SRR870667_1.fastq.mince.offs.lz, SRR870667/output/compressed/mince/SRR870667_1.fastq.mince.nlocs.lz, SRR870667/output/compressed/mince/SRR870667_1.fastq.mince.flips.lz)
+  Free space:      2.8T  1.8T  956G  66% /local-scratch
+*** 2016-08-22 01:44:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d SRR870667/output/compressed/mince/SRR870667_1.fastq.mince SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq 8 
+    stderr:      SRR870667/log/SRR870667_1.fastq.mince.8.dec.log
+  Process PID:   14108
+  Exit code:     0
+  Wall time:     00:05:56 (356.8 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:07:35 (455.2 ms)
+    ru_stime:    00:00:53 (53.1 ms)
+    ru_maxrss:   248420
+    ru_minflt:   95931
+    ru_majflt:   31
+    ru_inblock:  2571944
+    ru_oublock:  28046024
+    ru_nvcsw:    742508
+    ru_nivcsw:   62943
+  GNU time:     
+    real:        00:05:56 (356.6 ms)
+    user:        00:07:35 (455.2 ms)
+    sys:         00:00:53 (53.1 ms)
+  Size (MB):     21,517.46 (22562692675 bytes) (SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq.log, SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq.fa, SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq1.fa, SRR870667/output/decompressed/mince/SRR870667_1.fastq.fq2.fa)
+  Free space:      2.8T  1.8T  956G  66% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: SRR870667_1.fastq)
+*** 2016-08-09 17:06:04 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh e SRR870667_1.fastq SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince 8 
+    stderr:      SRR870667/log/SRR870667_1.fastq.mince-single.8.cmp.log
+  Process PID:   19522
+  Exit code:     0
+  Wall time:     01:02:18 (3738.5 ms)
+  Memory (MB):   24139.0
+  Resources:    
+    ru_utime:    06:46:49 (24409.8 ms)
+    ru_stime:    00:14:15 (855.0 ms)
+    ru_maxrss:   24718336
+    ru_minflt:   14650708
+    ru_majflt:   30
+    ru_inblock:  44841752
+    ru_oublock:  1629232
+    ru_nvcsw:    36104876
+    ru_nivcsw:   2803527
+  GNU time:     
+    real:        01:02:18 (3738.4 ms)
+    user:        06:46:49 (24409.8 ms)
+    sys:         00:14:15 (855.0 ms)
+  Size (MB):     653.70 (685457780 bytes) (SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.seqs.lz, SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.offs.lz, SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.nlocs.lz, SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince.flips.lz)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+*** 2016-08-09 18:08:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/mince.sh d SRR870667/output/compressed/mince-single/SRR870667_1.fastq.mince SRR870667/output/decompressed/mince-single/SRR870667_1.fastq.fq 8 
+    stderr:      SRR870667/log/SRR870667_1.fastq.mince-single.8.dec.log
+  Process PID:   20259
+  Exit code:     0
+  Wall time:     00:04:37 (277.8 ms)
+  Memory (MB):   242.6
+  Resources:    
+    ru_utime:    00:04:25 (265.5 ms)
+    ru_stime:    00:01:38 (98.1 ms)
+    ru_maxrss:   248404
+    ru_minflt:   91766
+    ru_majflt:   32
+    ru_inblock:  1370504
+    ru_oublock:  16055920
+    ru_nvcsw:    438090
+    ru_nivcsw:   44495
+  GNU time:     
+    real:        00:04:37 (277.7 ms)
+    user:        00:04:25 (265.5 ms)
+    sys:         00:01:38 (98.1 ms)
+  Size (MB):     7,831.49 (8211907971 bytes) (SRR870667/output/decompressed/mince-single/SRR870667_1.fastq.fq.log, SRR870667/output/decompressed/mince-single/SRR870667_1.fastq.fq.fa)
+  Free space:      2.8T  1.7T  1.2T  60% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: SRR870667_1.fastq)
+*** 2016-02-21 07:28:45 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e SRR870667_1.fastq SRR870667/output/compressed/kic/SRR870667_1.fastq.kic 8 
+    stderr:      SRR870667/log/SRR870667_1.fastq.kic.8.cmp.log
+  Process PID:   1301
+  Exit code:     0
+  Wall time:     04:44:51 (17091.4 ms)
+  Memory (MB):   2124.8
+  Resources:    
+    ru_utime:    11:27:10 (41230.9 ms)
+    ru_stime:    00:19:24 (1164.8 ms)
+    ru_maxrss:   2175756
+    ru_minflt:   133936
+    ru_majflt:   146
+    ru_inblock:  44865592
+    ru_oublock:  8817040
+    ru_nvcsw:    106308571
+    ru_nivcsw:   7079311
+  GNU time:     
+    real:        04:44:51 (17091.3 ms)
+    user:        11:27:10 (41230.9 ms)
+    sys:         00:19:24 (1164.8 ms)
+  Size (MB):     4,289.51 (4497879418 bytes) (SRR870667/output/compressed/kic/SRR870667_1.fastq.kic, SRR870667/output/compressed/kic/SRR870667_1.fastq.kic.seq, SRR870667/output/compressed/kic/SRR870667_1.fastq.kic.name, SRR870667/output/compressed/kic/SRR870667_1.fastq.kic.qual)
+  Free space:      2.8T  1.6T  1.3T  56% /local-scratch
+*** 2016-02-21 12:13:40 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d SRR870667/output/compressed/kic/SRR870667_1.fastq.kic SRR870667/output/decompressed/kic/SRR870667_1.fastq.fq 8
+    stderr:      SRR870667/log/SRR870667_1.fastq.kic.8.dec.log
+  Process PID:   20459
+  Exit code:     0
+  Wall time:     00:18:25 (1105.3 ms)
+  Memory (MB):   912.9
+  Resources:    
+    ru_utime:    00:51:31 (3091.7 ms)
+    ru_stime:    00:06:07 (367.6 ms)
+    ru_maxrss:   934856
+    ru_minflt:   88175
+    ru_majflt:   153
+    ru_inblock:  8839496
+    ru_oublock:  44813400
+    ru_nvcsw:    28349798
+    ru_nivcsw:   448364
+  GNU time:     
+    real:        00:18:25 (1105.2 ms)
+    user:        00:51:31 (3091.7 ms)
+    sys:         00:06:07 (367.6 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.6T  1.2T  57% /local-scratch
+
+>>> kic (File 2: SRR870667_2.fastq)
+*** 2016-03-02 23:06:50 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e SRR870667_2.fastq SRR870667/output/compressed/kic/SRR870667_2.fastq.kic 8 
+    stderr:      SRR870667/log/SRR870667_2.fastq.kic.8.cmp.log
+  Process PID:   3413
+  Exit code:     0
+  Wall time:     03:59:30 (14370.6 ms)
+  Memory (MB):   2075.9
+  Resources:    
+    ru_utime:    08:58:52 (32332.4 ms)
+    ru_stime:    00:19:29 (1169.0 ms)
+    ru_maxrss:   2125732
+    ru_minflt:   128953
+    ru_majflt:   143
+    ru_inblock:  35417856
+    ru_oublock:  6593456
+    ru_nvcsw:    105577418
+    ru_nivcsw:   5945247
+  GNU time:     
+    real:        03:59:30 (14370.5 ms)
+    user:        08:58:52 (32332.3 ms)
+    sys:         00:19:29 (1169.0 ms)
+  Size (MB):     3,208.42 (3364275533 bytes) (SRR870667/output/compressed/kic/SRR870667_2.fastq.kic, SRR870667/output/compressed/kic/SRR870667_2.fastq.kic.seq, SRR870667/output/compressed/kic/SRR870667_2.fastq.kic.name, SRR870667/output/compressed/kic/SRR870667_2.fastq.kic.qual)
+  Free space:      2.8T  1.4T  1.5T  49% /local-scratch
+*** 2016-03-03 03:06:23 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d SRR870667/output/compressed/kic/SRR870667_2.fastq.kic SRR870667/output/decompressed/kic/SRR870667_2.fastq.fq 8
+    stderr:      SRR870667/log/SRR870667_2.fastq.kic.8.dec.log
+  Process PID:   9792
+  Exit code:     0
+  Wall time:     00:13:57 (837.9 ms)
+  Memory (MB):   871.9
+  Resources:    
+    ru_utime:    00:37:54 (2274.5 ms)
+    ru_stime:    00:06:20 (380.2 ms)
+    ru_maxrss:   892848
+    ru_minflt:   77270
+    ru_majflt:   147
+    ru_inblock:  6623952
+    ru_oublock:  35365712
+    ru_nvcsw:    48549788
+    ru_nivcsw:   355358
+  GNU time:     
+    real:        00:13:57 (837.8 ms)
+    user:        00:37:54 (2274.5 ms)
+    sys:         00:06:20 (380.2 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+Done!

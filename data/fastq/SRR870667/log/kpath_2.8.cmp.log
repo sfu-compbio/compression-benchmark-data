@@ -1,0 +1,59 @@
+2015/11/18 05:00:28 Starting kpath version 0.6.3 (1-6-15)
+2015/11/18 05:00:28 Maximum threads = 10
+kpath (encode): 2015/11/18 05:00:28 Using kmer size = 16
+kpath (encode): 2015/11/18 05:00:28 Option: psudeoCount = 1
+kpath (encode): 2015/11/18 05:00:28 Option: observationWeight = 10
+kpath (encode): 2015/11/18 05:00:28 Option: seenThreshold = 2
+kpath (encode): 2015/11/18 05:00:28 Option: flipReadsOption = true
+kpath (encode): 2015/11/18 05:00:28 Option: dupsOption = true
+kpath (encode): 2015/11/18 05:00:28 Option: updateReference = true
+kpath (encode): 2015/11/18 05:00:28 Reading from SRR870667_2.fastq
+kpath (encode): 2015/11/18 05:00:28 Writing to SRR870667_1/output/SRR870667_2.kpath.enc, SRR870667_1/output/SRR870667_2.kpath.bittree, SRR870667_1/output/SRR870667_2.kpath.counts
+kpath (encode): 2015/11/18 05:00:28 Reading Reference File...
+kpath (encode): 2015/11/18 05:01:31 Reading reads...
+kpath (encode): 2015/11/18 05:13:42 Time: read 69100987 reads; spent 731.143014765 seconds.
+kpath (encode): 2015/11/18 05:13:42 Have 7 read flippers, each working on 9871570 reads
+kpath (encode): 2015/11/18 05:13:42 Worker 0 flipping [0, 9871570)...
+kpath (encode): 2015/11/18 05:13:42 Worker 2 flipping [19743140, 29614710)...
+kpath (encode): 2015/11/18 05:13:42 Worker 1 flipping [9871570, 19743140)...
+kpath (encode): 2015/11/18 05:13:42 Worker 4 flipping [39486280, 49357850)...
+kpath (encode): 2015/11/18 05:13:42 Worker 6 flipping [59229420, 69100987)...
+kpath (encode): 2015/11/18 05:13:42 Worker 3 flipping [29614710, 39486280)...
+kpath (encode): 2015/11/18 05:13:42 Worker 5 flipping [49357850, 59229420)...
+kpath (encode): 2015/11/18 05:17:44 Time: flipping: 242.066657517 seconds.
+kpath (encode): 2015/11/18 05:30:47 Time: sorting reads: 782.503690526 seconds.
+kpath (encode): 2015/11/18 05:30:47 Read 69100987 reads; flipped 34580836 of them.
+kpath (encode): 2015/11/18 05:30:47 Estimated 2-bit encoding size: 1278368260
+kpath (encode): 2015/11/18 05:30:47 Writing location of Ns...
+kpath (encode): 2015/11/18 05:31:37 Encoding 39737824 kmers to bittree file...
+kpath (encode): 2015/11/18 05:31:37 Writing counts...
+kpath (encode): 2015/11/18 05:31:48 Done; wrote 1776289 Ns.
+kpath (encode): 2015/11/18 05:36:36 Done; wrote 39737824 counts.
+kpath (encode): 2015/11/18 05:37:16 Wrote 39737824 kmers
+kpath (encode): 2015/11/18 05:37:16 done. Wrote 412784617 bits
+kpath (encode): 2015/11/18 05:38:31 MD5 hash of reads = bbfb4f551913a5a798605f7b6a21c518
+kpath (encode): 2015/11/18 05:38:31 Done processing; reads are of length 74 ...
+kpath (encode): 2015/11/18 05:40:11 Creating small kmer count model.
+kpath (encode): 2015/11/18 05:40:11 Counting 16-mer transitions in reference file...
+kpath (encode): 2015/11/18 05:43:03 Currently have 4 Go routines...
+kpath (encode): 2015/11/18 05:43:16 Encoding reads...
+kpath (encode): 2015/11/18 06:14:06 done. Took 1850.871077975 seconds to encode the tails.
+kpath (encode): 2015/11/18 06:14:07 Reads Flipped: 34580836
+kpath (encode): 2015/11/18 06:14:07 Encoded 66144992 reads (may be < # of input reads due to duplicates).
+kpath (encode): 2015/11/18 06:14:07 Default interval used 149110077 times and context used 3687299467 times
+kpath (encode): 2015/11/18 06:14:07 kpath took 4419.638846073 to run.
+
+################################################################################
+
+kpath  Copyright (C) 2014  Carl Kingsford & Rob Patro
+
+
+
+This program comes with ABSOLUTELY NO WARRANTY; This is free software, and
+
+you are welcome to redistribute it under certain conditions; see
+
+accompanying LICENSE.txt file.
+
+
+

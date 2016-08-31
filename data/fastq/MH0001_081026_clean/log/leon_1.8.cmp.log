@@ -1,0 +1,15 @@
+
+################################################################################
+
+e,MH0001_081026_clean_1.fastq,MH0001_081026_clean/output/compressed/leon/MH0001_081026_clean_1.fastq.leon,8,tools/leon-1.0.0-Source,MH0001_081026_clean/output/compressed/leon
+
+total 1836364
+
+drwxr-xr-x 2 root     root                 48 Feb 20 04:17 .
+
+drwxr-xr-x 5 root     root                 59 Feb 20 04:12 ..
+
+-rw-r--r-- 4  1880433138 Apr  7  2011 MH0001_081026_clean_1.fastq
+
+tools/leon-1.0.0-Source/build/leon -c -file MH0001_081026_clean_1.fastq -nb-cores 8 -lossless
+

@@ -1,0 +1,1660 @@
+Namespace(clear_cache=True, force=False, input='SRR1284073.fastq', output_dir='', ref='data/sam/ref/polished_assembly.fasta', rt=False)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                      SRR1284073 with 1 threads                       + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1)
+*** 2015-12-16 11:49:21 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -p 1 
+    stdin:       SRR1284073.fastq
+    stdout:      SRR1284073/output/compressed/pigz/SRR1284073.fastq.gz
+    stderr:      SRR1284073/log/SRR1284073.fastq.pigz.1.cmp.log
+  Process PID:   3400
+  Exit code:     0
+  Wall time:     00:03:35 (215.6 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:03:31 (211.5 ms)
+    ru_stime:    00:00:01 (1.3 ms)
+    ru_maxrss:   5820
+    ru_minflt:   848
+    ru_majflt:   7
+    ru_inblock:  2559168
+    ru_oublock:  1067456
+    ru_nvcsw:    172
+    ru_nivcsw:   31463
+  GNU time:     
+    real:        00:03:35 (215.5 ms)
+    user:        00:03:31 (211.4 ms)
+    sys:         00:00:01 (1.3 ms)
+  Size (MB):     521.19 (546506025 bytes) (SRR1284073/output/compressed/pigz/SRR1284073.fastq.gz)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+*** 2015-12-16 11:52:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pigz-2.3.3/pigz -c -d -p 1
+    stdin:       SRR1284073/output/compressed/pigz/SRR1284073.fastq.gz
+    stdout:      SRR1284073/output/decompressed/pigz/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.pigz.1.dec.log
+  Process PID:   3446
+  Exit code:     0
+  Wall time:     00:00:10 (10.1 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:08 (8.5 ms)
+    ru_stime:    00:00:01 (1.2 ms)
+    ru_maxrss:   5852
+    ru_minflt:   718
+    ru_majflt:   7
+    ru_inblock:  1069592
+    ru_oublock:  2556568
+    ru_nvcsw:    126
+    ru_nivcsw:   5143
+  GNU time:     
+    real:        00:00:10 (10.0 ms)
+    user:        00:00:08 (8.5 ms)
+    sys:         00:00:01 (1.2 ms)
+  Size (MB):     1,248.32 (1308957142 bytes) (SRR1284073/output/decompressed/pigz/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1)
+*** 2015-12-16 11:53:26 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -p1 
+    stdin:       SRR1284073.fastq
+    stdout:      SRR1284073/output/compressed/pbzip2/SRR1284073.fastq.bz2
+    stderr:      SRR1284073/log/SRR1284073.fastq.pbzip2.1.cmp.log
+  Process PID:   3475
+  Exit code:     0
+  Wall time:     00:02:39 (159.0 ms)
+  Memory (MB):   10.6
+  Resources:    
+    ru_utime:    00:02:32 (152.2 ms)
+    ru_stime:    00:00:06 (6.1 ms)
+    ru_maxrss:   10880
+    ru_minflt:   1670836
+    ru_majflt:   8
+    ru_inblock:  2581704
+    ru_oublock:  903432
+    ru_nvcsw:    10612
+    ru_nivcsw:   27681
+  GNU time:     
+    real:        00:02:38 (158.9 ms)
+    user:        00:02:32 (152.2 ms)
+    sys:         00:00:06 (6.1 ms)
+  Size (MB):     441.11 (462533911 bytes) (SRR1284073/output/compressed/pbzip2/SRR1284073.fastq.bz2)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+*** 2015-12-16 11:56:06 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/pbzip2-1.1.12/pbzip2 -c -d -p1
+    stdin:       SRR1284073/output/compressed/pbzip2/SRR1284073.fastq.bz2
+    stdout:      SRR1284073/output/decompressed/pbzip2/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.pbzip2.1.dec.log
+  Process PID:   3514
+  Exit code:     0
+  Wall time:     00:01:10 (70.6 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:01:06 (66.6 ms)
+    ru_stime:    00:00:01 (1.7 ms)
+    ru_maxrss:   5856
+    ru_minflt:   2118
+    ru_majflt:   8
+    ru_inblock:  929264
+    ru_oublock:  2556568
+    ru_nvcsw:    167
+    ru_nivcsw:   10429
+  GNU time:     
+    real:        00:01:10 (70.5 ms)
+    user:        00:01:06 (66.6 ms)
+    sys:         00:00:01 (1.7 ms)
+  Size (MB):     1,248.32 (1308957142 bytes) (SRR1284073/output/decompressed/pbzip2/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single (File 1: SRR1284073.fastq)
+*** 2016-01-06 10:11:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce-pacbio -T 1 SRR1284073.fastq -o SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single 
+    stderr:      SRR1284073/log/SRR1284073.fastq.scalce-single.1.cmp.log
+  Process PID:   3667
+  Exit code:     0
+  Wall time:     00:02:24 (144.4 ms)
+  Memory (MB):   1897.9
+  Resources:    
+    ru_utime:    00:02:18 (138.3 ms)
+    ru_stime:    00:00:03 (3.5 ms)
+    ru_maxrss:   1943440
+    ru_minflt:   248212
+    ru_majflt:   11
+    ru_inblock:  2618658
+    ru_oublock:  2420200
+    ru_nvcsw:    3544
+    ru_nivcsw:   21138
+  GNU time:     
+    real:        00:02:24 (144.1 ms)
+    user:        00:02:18 (138.3 ms)
+    sys:         00:00:03 (3.5 ms)
+  Size (MB):     401.66 (421167456 bytes) (SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcen, SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalceq, SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcer, SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcel)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-01-06 10:13:58 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/scalce/scalce-pacbio -d -T 1 SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcer -o SRR1284073/output/decompressed/scalce-single/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.scalce-single.1.dec.log
+  Process PID:   3806
+  Exit code:     0
+  Wall time:     00:01:38 (98.8 ms)
+  Memory (MB):   1009.3
+  Resources:    
+    ru_utime:    00:01:29 (89.2 ms)
+    ru_stime:    00:00:02 (2.0 ms)
+    ru_maxrss:   1033536
+    ru_minflt:   243136
+    ru_majflt:   11
+    ru_inblock:  884736
+    ru_oublock:  2544632
+    ru_nvcsw:    1586
+    ru_nivcsw:   11138
+  GNU time:     
+    real:        00:01:38 (98.7 ms)
+    user:        00:01:29 (89.2 ms)
+    sys:         00:00:02 (2.0 ms)
+  Size (MB):     1,242.48 (1302835279 bytes) (SRR1284073/output/decompressed/scalce-single/SRR1284073.fastq.fq_1.fastq)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc (File 1)
+*** 2015-12-16 11:57:49 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1  SRR1284073.fastq SRR1284073/output/compressed/dsrc/SRR1284073.fastq.dsrc
+    stderr:      SRR1284073/log/SRR1284073.fastq.dsrc.1.cmp.log
+  Process PID:   3595
+  Exit code:     2816
+  Wall time:     00:00:00 (0.9 ms)
+  Memory (MB):   21.7
+  Resources:    
+    ru_utime:    00:00:00 (0.4 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   22220
+    ru_minflt:   5108
+    ru_majflt:   10
+    ru_inblock:  74712
+    ru_oublock:  11248
+    ru_nvcsw:    199
+    ru_nivcsw:   147
+  GNU time:     
+    real:        00:00:00 (0.8 ms)
+    user:        00:00:00 (0.4 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     5.48 (5750824 bytes) (SRR1284073/output/compressed/dsrc/SRR1284073.fastq.dsrc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2 (File 1)
+*** 2015-12-16 11:57:50 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/dsrc/bin/dsrc c -v -t1 -m2 SRR1284073.fastq SRR1284073/output/compressed/dsrc-m2/SRR1284073.fastq.dsrc
+    stderr:      SRR1284073/log/SRR1284073.fastq.dsrc-m2.1.cmp.log
+  Process PID:   3603
+  Exit code:     2816
+  Wall time:     00:00:01 (1.1 ms)
+  Memory (MB):   257.5
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.6 ms)
+    ru_maxrss:   263668
+    ru_minflt:   1813
+    ru_majflt:   9
+    ru_inblock:  549680
+    ru_oublock:  8
+    ru_nvcsw:    1058
+    ru_nivcsw:   1101
+  GNU time:     
+    real:        00:00:01 (1.1 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.5 ms)
+  Size (MB):     ? (SRR1284073/output/compressed/dsrc-m2/SRR1284073.fastq.dsrc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1)
+*** 2015-12-16 11:57:52 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/orcom/bin/orcom e 1 SRR1284073.fastq SRR1284073/output/compressed/orcom/SRR1284073.fastq.orcom 
+    stderr:      SRR1284073/log/SRR1284073.fastq.orcom.1.cmp.log
+  Process PID:   3610
+  Exit code:     35584
+  Wall time:     00:00:01 (1.3 ms)
+  Memory (MB):   262.5
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.6 ms)
+    ru_maxrss:   268848
+    ru_minflt:   3841
+    ru_majflt:   13
+    ru_inblock:  550264
+    ru_oublock:  24
+    ru_nvcsw:    1184
+    ru_nivcsw:   1085
+  GNU time:     
+    real:        00:00:01 (1.2 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.6 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                 quip                                 # 
+########################################################################
+>>> quip (File 1)
+*** 2015-12-16 11:57:53 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v SRR1284073.fastq 
+    stdout:      SRR1284073/output/compressed/quip/SRR1284073.fastq.qp
+    stderr:      SRR1284073/log/SRR1284073.fastq.quip.1.cmp.log
+  Process PID:   3623
+  Exit code:     0
+  Wall time:     00:01:17 (77.7 ms)
+  Memory (MB):   632.5
+  Resources:    
+    ru_utime:    00:01:12 (72.6 ms)
+    ru_stime:    00:00:02 (2.5 ms)
+    ru_maxrss:   647696
+    ru_minflt:   71528
+    ru_majflt:   16
+    ru_inblock:  2559704
+    ru_oublock:  819528
+    ru_nvcsw:    5134
+    ru_nivcsw:   12700
+  GNU time:     
+    real:        00:01:17 (77.7 ms)
+    user:        00:01:12 (72.5 ms)
+    sys:         00:00:02 (2.5 ms)
+  Size (MB):     400.14 (419574566 bytes) (SRR1284073/output/compressed/quip/SRR1284073.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+*** 2015-12-16 11:59:11 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq SRR1284073/output/compressed/quip/SRR1284073.fastq.qp
+    stdout:      SRR1284073/output/decompressed/quip/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.quip.1.dec.log
+  Process PID:   3779
+  Exit code:     0
+  Wall time:     00:01:47 (107.0 ms)
+  Memory (MB):   636.7
+  Resources:    
+    ru_utime:    00:01:43 (103.1 ms)
+    ru_stime:    00:00:02 (2.0 ms)
+    ru_maxrss:   651956
+    ru_minflt:   76805
+    ru_majflt:   16
+    ru_inblock:  823648
+    ru_oublock:  2547664
+    ru_nvcsw:    2090
+    ru_nivcsw:   11965
+  GNU time:     
+    real:        00:01:46 (106.9 ms)
+    user:        00:01:43 (103.1 ms)
+    sys:         00:00:02 (2.0 ms)
+  Size (MB):     1,243.97 (1304398850 bytes) (SRR1284073/output/decompressed/quip/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                               quip-asm                               # 
+########################################################################
+>>> quip-asm (File 1)
+*** 2015-12-16 12:01:16 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v SRR1284073.fastq -a
+    stdout:      SRR1284073/output/compressed/quip-asm/SRR1284073.fastq.qp
+    stderr:      SRR1284073/log/SRR1284073.fastq.quip-asm.1.cmp.log
+  Process PID:   3977
+  Exit code:     0
+  Wall time:     00:05:48 (348.1 ms)
+  Memory (MB):   1001.8
+  Resources:    
+    ru_utime:    00:05:42 (342.0 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   1025808
+    ru_minflt:   72029
+    ru_majflt:   16
+    ru_inblock:  2560416
+    ru_oublock:  819584
+    ru_nvcsw:    5207
+    ru_nivcsw:   39789
+  GNU time:     
+    real:        00:05:48 (348.0 ms)
+    user:        00:05:42 (342.0 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     400.14 (419574574 bytes) (SRR1284073/output/compressed/quip-asm/SRR1284073.fastq.qp)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+*** 2015-12-16 12:07:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/quip/bin/quip -c -v -d -o fastq SRR1284073/output/compressed/quip-asm/SRR1284073.fastq.qp
+    stdout:      SRR1284073/output/decompressed/quip-asm/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.quip-asm.1.dec.log
+  Process PID:   4206
+  Exit code:     0
+  Wall time:     00:06:08 (368.7 ms)
+  Memory (MB):   1004.4
+  Resources:    
+    ru_utime:    00:06:04 (364.6 ms)
+    ru_stime:    00:00:02 (2.0 ms)
+    ru_maxrss:   1028524
+    ru_minflt:   78462
+    ru_majflt:   16
+    ru_inblock:  822608
+    ru_oublock:  2547664
+    ru_nvcsw:    1984
+    ru_nivcsw:   38520
+  GNU time:     
+    real:        00:06:08 (368.6 ms)
+    user:        00:06:04 (364.6 ms)
+    sys:         00:00:02 (2.0 ms)
+  Size (MB):     1,243.97 (1304398850 bytes) (SRR1284073/output/decompressed/quip-asm/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                               fqzcomp                                # 
+########################################################################
+>>> fqzcomp (File 1)
+*** 2015-12-16 12:13:33 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp  -P SRR1284073.fastq SRR1284073/output/compressed/fqzcomp/SRR1284073.fastq.fqz
+    stderr:      SRR1284073/log/SRR1284073.fastq.fqzcomp.1.cmp.log
+  Process PID:   4519
+  Exit code:     256
+  Wall time:     00:00:05 (5.5 ms)
+  Memory (MB):   75.5
+  Resources:    
+    ru_utime:    00:00:04 (4.3 ms)
+    ru_stime:    00:00:00 (0.2 ms)
+    ru_maxrss:   77360
+    ru_minflt:   2497
+    ru_majflt:   8
+    ru_inblock:  240944
+    ru_oublock:  60568
+    ru_nvcsw:    565
+    ru_nivcsw:   819
+  GNU time:     
+    real:        00:00:05 (5.4 ms)
+    user:        00:00:04 (4.3 ms)
+    sys:         00:00:00 (0.2 ms)
+  Size (MB):     29.57 (31002443 bytes) (SRR1284073/output/compressed/fqzcomp/SRR1284073.fastq.fqz)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                            fqzcomp-extra                             # 
+########################################################################
+>>> fqzcomp-extra (File 1)
+*** 2015-12-16 12:13:38 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fqzcomp-4.6/fqz_comp -s9+ -q3 -n2 -e -P SRR1284073.fastq SRR1284073/output/compressed/fqzcomp-extra/SRR1284073.fastq.fqz
+    stderr:      SRR1284073/log/SRR1284073.fastq.fqzcomp-extra.1.cmp.log
+  Process PID:   4528
+  Exit code:     256
+  Wall time:     00:00:05 (5.2 ms)
+  Memory (MB):   326.6
+  Resources:    
+    ru_utime:    00:00:04 (4.3 ms)
+    ru_stime:    00:00:00 (0.3 ms)
+    ru_maxrss:   334392
+    ru_minflt:   1862
+    ru_majflt:   8
+    ru_inblock:  239896
+    ru_oublock:  60856
+    ru_nvcsw:    567
+    ru_nivcsw:   822
+  GNU time:     
+    real:        00:00:05 (5.1 ms)
+    user:        00:00:04 (4.3 ms)
+    sys:         00:00:00 (0.3 ms)
+  Size (MB):     29.71 (31149808 bytes) (SRR1284073/output/compressed/fqzcomp-extra/SRR1284073.fastq.fqz)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                fastqz                                # 
+########################################################################
+>>> fastqz (File 1)
+*** 2015-12-16 12:13:44 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/fastqz/fastqz c SRR1284073.fastq SRR1284073/output/compressed/fastqz/SRR1284073.fastq.fastqz 
+    stderr:      SRR1284073/log/SRR1284073.fastq.fastqz.1.cmp.log
+  Process PID:   4535
+  Exit code:     256
+  Wall time:     00:00:00 (0.3 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   5868
+    ru_minflt:   878
+    ru_majflt:   8
+    ru_inblock:  24824
+    ru_oublock:  40
+    ru_nvcsw:    26
+    ru_nivcsw:   27
+  GNU time:     
+    real:        00:00:00 (0.2 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     0.00 (82 bytes) (SRR1284073/output/compressed/fastqz/SRR1284073.fastq.fastqz.fxh, SRR1284073/output/compressed/fastqz/SRR1284073.fastq.fastqz.fxb, SRR1284073/output/compressed/fastqz/SRR1284073.fastq.fastqz.fxq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                              slimfastq                               # 
+########################################################################
+>>> slimfastq (File 1)
+*** 2015-12-16 12:13:44 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/slimfastq/slimfastq -u SRR1284073.fastq -f SRR1284073/output/compressed/slimfastq/SRR1284073.fastq.slimfastq -O 
+    stderr:      SRR1284073/log/SRR1284073.fastq.slimfastq.1.cmp.log
+  Process PID:   4542
+  Exit code:     2816
+  Wall time:     00:00:00 (0.4 ms)
+  Memory (MB):   79.0
+  Resources:    
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   80892
+    ru_minflt:   2358
+    ru_majflt:   7
+    ru_inblock:  28016
+    ru_oublock:  888
+    ru_nvcsw:    89
+    ru_nivcsw:   46
+  GNU time:     
+    real:        00:00:00 (0.4 ms)
+    user:        00:00:00 (0.1 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     0.47 (491520 bytes) (SRR1284073/output/compressed/slimfastq/SRR1284073.fastq.slimfastq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                 sra                                  # 
+########################################################################
+>>> sra (File 1)
+*** 2015-12-16 12:13:45 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/sratoolkit.2.5.2-centos_linux64/bin/latf-load -p ILLUMINA -q PHRED_33 -o SRR1284073/output/compressed/sra/SRR1284073.fastq.sra SRR1284073.fastq 
+    stderr:      SRR1284073/log/SRR1284073.fastq.sra.1.cmp.log
+  Process PID:   4549
+  Exit code:     768
+  Wall time:     00:00:00 (0.7 ms)
+  Memory (MB):   8.3
+  Resources:    
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   8472
+    ru_minflt:   3663
+    ru_majflt:   43
+    ru_inblock:  19632
+    ru_oublock:  600
+    ru_nvcsw:    126
+    ru_nivcsw:   83
+  GNU time:     
+    real:        00:00:00 (0.6 ms)
+    user:        00:00:00 (0.1 ms)
+    sys:         00:00:00 (0.0 ms)
+  Size (MB):     0.05 (54024 bytes) (SRR1284073/output/compressed/sra/SRR1284073.fastq.sra/md5, SRR1284073/output/compressed/sra/SRR1284073.fastq.sra/md/cur)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath (File 1)
+*** 2015-12-16 12:13:46 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=1 -ref=data/sam/ref/polished_assembly.fasta.gz -reads=SRR1284073.fastq -out=SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath 
+    stderr:      SRR1284073/log/SRR1284073.fastq.kpath.1.cmp.log
+  Process PID:   4557
+  Exit code:     512
+  Wall time:     00:00:46 (46.1 ms)
+  Memory (MB):   2731.6
+  Resources:    
+    ru_utime:    00:00:42 (42.3 ms)
+    ru_stime:    00:00:03 (3.4 ms)
+    ru_maxrss:   2797200
+    ru_minflt:   469635
+    ru_majflt:   25
+    ru_inblock:  2636408
+    ru_oublock:  40
+    ru_nvcsw:    492567
+    ru_nivcsw:   343230
+  GNU time:     
+    real:        00:00:46 (46.0 ms)
+    user:        00:00:42 (42.3 ms)
+    sys:         00:00:03 (3.4 ms)
+  Size (MB):     0.00 (8 bytes) (SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath.enc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                 lfqc                                 # 
+########################################################################
+>>> lfqc (File 1: SRR1284073.fastq)
+*** 2016-01-24 17:00:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/lfqc/lfqc/lfqc.rb -solexa SRR1284073.fastq 
+    stderr:      SRR1284073/log/SRR1284073.fastq.lfqc.1.cmp.log
+  Process PID:   32051
+  Exit code:     0
+  Wall time:     01:04:47 (3887.4 ms)
+  Memory (MB):   3258.9
+  Resources:    
+    ru_utime:    01:04:31 (3871.0 ms)
+    ru_stime:    00:00:10 (10.5 ms)
+    ru_maxrss:   3337092
+    ru_minflt:   160814
+    ru_majflt:   80
+    ru_inblock:  2619184
+    ru_oublock:  4147656
+    ru_nvcsw:    4898
+    ru_nivcsw:   830316
+  GNU time:     
+    real:        01:04:47 (3887.1 ms)
+    user:        01:04:31 (3871.0 ms)
+    sys:         00:00:10 (10.5 ms)
+  Size (MB):     387.68 (406507520 bytes) (SRR1284073/output/compressed/lfqc/SRR1284073.fastq.lfqc)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2016-01-24 18:04:59 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/lfqc/lfqc/lfqcd.rb SRR1284073/output/compressed/lfqc/SRR1284073.fastq.lfqc SRR1284073/output/decompressed/lfqc/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.lfqc.1.dec.log
+  Process PID:   361
+  Exit code:     0
+  Wall time:     01:05:01 (3901.1 ms)
+  Memory (MB):   2824.6
+  Resources:    
+    ru_utime:    01:04:42 (3882.7 ms)
+    ru_stime:    00:00:11 (11.4 ms)
+    ru_maxrss:   2892420
+    ru_minflt:   144173
+    ru_majflt:   81
+    ru_inblock:  858232
+    ru_oublock:  3484984
+    ru_nvcsw:    2293
+    ru_nivcsw:   807090
+  GNU time:     
+    real:        01:05:00 (3900.9 ms)
+    user:        01:04:42 (3882.7 ms)
+    sys:         00:00:11 (11.3 ms)
+  Size (MB):     64.83 (67982324 bytes) (SRR1284073/output/decompressed/lfqc/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: SRR1284073.fastq)
+*** 2016-01-24 19:10:08 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh e SRR1284073.fastq SRR1284073/output/compressed/leon/SRR1284073.fastq.leon 1 
+    stderr:      SRR1284073/log/SRR1284073.fastq.leon.1.cmp.log
+  Process PID:   1225
+  Exit code:     0
+  Wall time:     00:10:05 (605.7 ms)
+  Memory (MB):   1642.2
+  Resources:    
+    ru_utime:    00:09:53 (593.8 ms)
+    ru_stime:    00:00:05 (5.6 ms)
+    ru_maxrss:   1681576
+    ru_minflt:   251203
+    ru_majflt:   79
+    ru_inblock:  2594690
+    ru_oublock:  2515016
+    ru_nvcsw:    5642
+    ru_nivcsw:   64880
+  GNU time:     
+    real:        00:10:05 (605.5 ms)
+    user:        00:09:53 (593.8 ms)
+    sys:         00:00:05 (5.6 ms)
+  Size (MB):     456.75 (478936711 bytes) (SRR1284073/output/compressed/leon/SRR1284073.fastq.leon, SRR1284073/output/compressed/leon/SRR1284073.fastq.leon.qual)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2016-01-24 19:20:14 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/leon-1.0.0-Source/leon.sh d SRR1284073/output/compressed/leon/SRR1284073.fastq.leon SRR1284073/output/decompressed/leon/SRR1284073.fastq.fq 1
+    stderr:      SRR1284073/log/SRR1284073.fastq.leon.1.dec.log
+  Process PID:   1576
+  Exit code:     0
+  Wall time:     00:05:46 (346.5 ms)
+  Memory (MB):   1691.9
+  Resources:    
+    ru_utime:    00:05:40 (340.1 ms)
+    ru_stime:    00:00:03 (3.4 ms)
+    ru_maxrss:   1732524
+    ru_minflt:   26060
+    ru_majflt:   41
+    ru_inblock:  967568
+    ru_oublock:  2547672
+    ru_nvcsw:    1617
+    ru_nivcsw:   37127
+  GNU time:     
+    real:        00:05:46 (346.3 ms)
+    user:        00:05:40 (340.1 ms)
+    sys:         00:00:03 (3.4 ms)
+  Size (MB):     1,243.95 (1304374797 bytes) (SRR1284073/output/decompressed/leon/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                                 fqc                                  # 
+########################################################################
+>>> fqc (File 1: SRR1284073.fastq)
+*** 2016-01-05 16:29:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -c -i SRR1284073.fastq -o SRR1284073/output/compressed/fqc/SRR1284073.fastq.fqc 
+    stderr:      SRR1284073/log/SRR1284073.fastq.fqc.1.cmp.log
+  Process PID:   25383
+  Exit code:     0
+  Wall time:     00:03:30 (210.3 ms)
+  Memory (MB):   681.4
+  Resources:    
+    ru_utime:    00:03:23 (203.2 ms)
+    ru_stime:    00:00:03 (3.8 ms)
+    ru_maxrss:   697788
+    ru_minflt:   42942
+    ru_majflt:   30
+    ru_inblock:  2585936
+    ru_oublock:  1938416
+    ru_nvcsw:    98365
+    ru_nivcsw:   95878
+  GNU time:     
+    real:        00:03:30 (210.2 ms)
+    user:        00:03:23 (203.2 ms)
+    sys:         00:00:03 (3.8 ms)
+  Size (MB):     393.75 (412878170 bytes) (SRR1284073/output/compressed/fqc/SRR1284073.fastq.fqc)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+*** 2016-01-05 16:32:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/FQC_LINUX_64bit/fqc -d -i SRR1284073/output/compressed/fqc/SRR1284073.fastq.fqc -o SRR1284073/output/decompressed/fqc/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.fqc.1.dec.log
+  Process PID:   25469
+  Exit code:     0
+  Wall time:     00:02:02 (122.4 ms)
+  Memory (MB):   67.6
+  Resources:    
+    ru_utime:    00:01:56 (116.3 ms)
+    ru_stime:    00:00:03 (3.3 ms)
+    ru_maxrss:   69188
+    ru_minflt:   17452
+    ru_majflt:   30
+    ru_inblock:  837240
+    ru_oublock:  3695800
+    ru_nvcsw:    137746
+    ru_nivcsw:   148547
+  GNU time:     
+    real:        00:02:02 (122.2 ms)
+    user:        00:01:56 (116.3 ms)
+    sys:         00:00:03 (3.3 ms)
+  Size (MB):     1,248.32 (1308957142 bytes) (SRR1284073/output/decompressed/fqc/SRR1284073.fastq.fq.fastq)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: SRR1284073.fastq)
+*** 2016-01-05 16:35:01 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/mince/bin/mince -p 1 -e -r SRR1284073.fastq -o SRR1284073/output/compressed/mince-single/SRR1284073.fastq.mince 
+    stderr:      SRR1284073/log/SRR1284073.fastq.mince-single.1.cmp.log
+  Process PID:   25548
+  Exit code:     1536
+  Wall time:     00:00:01 (1.8 ms)
+  Memory (MB):   246.1
+  Resources:    
+    ru_utime:    00:00:00 (0.2 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   252048
+    ru_minflt:   3296
+    ru_majflt:   24
+    ru_inblock:  32704
+    ru_oublock:  24
+    ru_nvcsw:    192
+    ru_nivcsw:   76
+  GNU time:     
+    real:        00:00:01 (1.7 ms)
+    user:        00:00:00 (0.1 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     0.00 (263 bytes) (SRR1284073/output/compressed/mince-single/SRR1284073.fastq.mince.log)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+
+######################################################################## 
+#                               lw-fqzip                               # 
+########################################################################
+>>> lw-fqzip (File 1: SRR1284073.fastq)
+*** 2016-02-20 14:41:25 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/LWFQZip-v1.02/lwfqzip.sh e SRR1284073.fastq SRR1284073/output/compressed/lw-fqzip/SRR1284073.fastq.lz data/sam/ref/polished_assembly.fasta
+    stderr:      SRR1284073/log/SRR1284073.fastq.lw-fqzip.1.cmp.log
+  Process PID:   27929
+  Exit code:     34304
+  Wall time:     00:01:39 (99.2 ms)
+  Memory (MB):   264.7
+  Resources:
+    ru_utime:    00:01:32 (92.8 ms)
+    ru_stime:    00:00:02 (2.9 ms)
+    ru_maxrss:   271080
+    ru_minflt:   15600
+    ru_majflt:   17
+    ru_inblock:  2823440
+    ru_oublock:  1197344
+    ru_nvcsw:    7585
+    ru_nivcsw:   12918
+  GNU time:
+    real:        00:01:39 (99.0 ms)
+    user:        00:01:32 (92.8 ms)
+    sys:         00:00:02 (2.9 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.5T  1.3T  55% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: SRR1284073.fastq)
+*** 2016-03-07 11:20:27 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/kic-0.2/kic.sh e SRR1284073.fastq SRR1284073/output/compressed/kic/SRR1284073.fastq.kic 1 
+    stderr:      SRR1284073/log/SRR1284073.fastq.kic.1.cmp.log
+  Process PID:   9987
+  Exit code:     256
+  Wall time:     00:00:24 (24.7 ms)
+  Memory (MB):   1078.0
+  Resources:    
+    ru_utime:    00:00:21 (21.8 ms)
+    ru_stime:    00:00:00 (0.4 ms)
+    ru_maxrss:   1103908
+    ru_minflt:   15507
+    ru_majflt:   142
+    ru_inblock:  47408
+    ru_oublock:  96
+    ru_nvcsw:    6366
+    ru_nivcsw:   87294
+  GNU time:     
+    real:        00:00:24 (24.3 ms)
+    user:        00:00:21 (21.8 ms)
+    sys:         00:00:00 (0.4 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  991G  1.8T  36% /local-scratch
+
+######################################################################## 
+#                                beetl                                 # 
+########################################################################
+>>> beetl (File 1: SRR1284073.fastq)
+*** 2016-03-07 11:20:54 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ taskset -c 3 tools/BEETL/beetl.sh e SRR1284073.fastq SRR1284073/output/compressed/beetl/SRR1284073.fastq.beetl 1 
+    stderr:      SRR1284073/log/SRR1284073.fastq.beetl.1.cmp.log
+  Process PID:   10065
+  Exit code:     256
+  Wall time:     00:00:06 (6.3 ms)
+  Memory (MB):   5.9
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   5996
+    ru_minflt:   5086
+    ru_majflt:   21
+    ru_inblock:  31216
+    ru_oublock:  48
+    ru_nvcsw:    353
+    ru_nivcsw:   101
+  GNU time:     
+    real:        00:00:06 (6.1 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  991G  1.8T  36% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                      SRR1284073 with 4 threads                       + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1)
+*** 2015-12-16 23:48:24 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 4 
+    stdin:       SRR1284073.fastq
+    stdout:      SRR1284073/output/compressed/pigz/SRR1284073.fastq.gz
+    stderr:      SRR1284073/log/SRR1284073.fastq.pigz.4.cmp.log
+  Process PID:   12677
+  Exit code:     0
+  Wall time:     00:00:56 (56.6 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:03:35 (215.4 ms)
+    ru_stime:    00:00:04 (4.3 ms)
+    ru_maxrss:   5820
+    ru_minflt:   1314
+    ru_majflt:   7
+    ru_inblock:  2558800
+    ru_oublock:  1067416
+    ru_nvcsw:    20042
+    ru_nivcsw:   26726
+  GNU time:     
+    real:        00:00:56 (56.5 ms)
+    user:        00:03:35 (215.4 ms)
+    sys:         00:00:04 (4.3 ms)
+  Size (MB):     521.19 (546506025 bytes) (SRR1284073/output/compressed/pigz/SRR1284073.fastq.gz)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+*** 2015-12-16 23:49:22 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 4
+    stdin:       SRR1284073/output/compressed/pigz/SRR1284073.fastq.gz
+    stdout:      SRR1284073/output/decompressed/pigz/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.pigz.4.dec.log
+  Process PID:   12698
+  Exit code:     0
+  Wall time:     00:00:10 (10.1 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:13 (13.3 ms)
+    ru_stime:    00:00:05 (5.0 ms)
+    ru_maxrss:   5852
+    ru_minflt:   607
+    ru_majflt:   7
+    ru_inblock:  1068512
+    ru_oublock:  2556568
+    ru_nvcsw:    96722
+    ru_nivcsw:   3473
+  GNU time:     
+    real:        00:00:10 (10.1 ms)
+    user:        00:00:13 (13.3 ms)
+    sys:         00:00:05 (5.0 ms)
+  Size (MB):     1,248.32 (1308957142 bytes) (SRR1284073/output/decompressed/pigz/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1)
+*** 2015-12-16 23:49:37 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p4 
+    stdin:       SRR1284073.fastq
+    stdout:      SRR1284073/output/compressed/pbzip2/SRR1284073.fastq.bz2
+    stderr:      SRR1284073/log/SRR1284073.fastq.pbzip2.4.cmp.log
+  Process PID:   12708
+  Exit code:     0
+  Wall time:     00:00:41 (41.0 ms)
+  Memory (MB):   38.4
+  Resources:    
+    ru_utime:    00:02:32 (152.4 ms)
+    ru_stime:    00:00:07 (7.5 ms)
+    ru_maxrss:   39344
+    ru_minflt:   959315
+    ru_majflt:   8
+    ru_inblock:  2581552
+    ru_oublock:  903408
+    ru_nvcsw:    7568
+    ru_nivcsw:   21961
+  GNU time:     
+    real:        00:00:41 (41.0 ms)
+    user:        00:02:32 (152.4 ms)
+    sys:         00:00:07 (7.5 ms)
+  Size (MB):     441.11 (462533911 bytes) (SRR1284073/output/compressed/pbzip2/SRR1284073.fastq.bz2)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+*** 2015-12-16 23:50:19 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p4
+    stdin:       SRR1284073/output/compressed/pbzip2/SRR1284073.fastq.bz2
+    stdout:      SRR1284073/output/decompressed/pbzip2/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.pbzip2.4.dec.log
+  Process PID:   12734
+  Exit code:     0
+  Wall time:     00:00:17 (17.7 ms)
+  Memory (MB):   27.4
+  Resources:    
+    ru_utime:    00:01:08 (68.1 ms)
+    ru_stime:    00:00:05 (5.6 ms)
+    ru_maxrss:   28092
+    ru_minflt:   651312
+    ru_majflt:   8
+    ru_inblock:  929240
+    ru_oublock:  2556568
+    ru_nvcsw:    3841
+    ru_nivcsw:   11242
+  GNU time:     
+    real:        00:00:17 (17.6 ms)
+    user:        00:01:08 (68.1 ms)
+    sys:         00:00:05 (5.6 ms)
+  Size (MB):     1,248.32 (1308957142 bytes) (SRR1284073/output/decompressed/pbzip2/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single (File 1: SRR1284073.fastq)
+*** 2016-01-06 10:15:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce-pacbio -T 4 SRR1284073.fastq -o SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single 
+    stderr:      SRR1284073/log/SRR1284073.fastq.scalce-single.4.cmp.log
+  Process PID:   3890
+  Exit code:     0
+  Wall time:     00:01:01 (61.8 ms)
+  Memory (MB):   1899.6
+  Resources:    
+    ru_utime:    00:02:47 (167.7 ms)
+    ru_stime:    00:00:05 (5.8 ms)
+    ru_maxrss:   1945240
+    ru_minflt:   483850
+    ru_majflt:   11
+    ru_inblock:  2618488
+    ru_oublock:  2104624
+    ru_nvcsw:    4655
+    ru_nivcsw:   24354
+  GNU time:     
+    real:        00:01:01 (61.5 ms)
+    user:        00:02:47 (167.7 ms)
+    sys:         00:00:05 (5.8 ms)
+  Size (MB):     401.66 (421174828 bytes) (SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcen, SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalceq, SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcer, SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcel)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-01-06 10:16:41 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce-pacbio -d -T 4 SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcer -o SRR1284073/output/decompressed/scalce-single/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.scalce-single.4.dec.log
+  Process PID:   4021
+  Exit code:     0
+  Wall time:     00:00:43 (43.0 ms)
+  Memory (MB):   1057.5
+  Resources:    
+    ru_utime:    00:01:29 (89.0 ms)
+    ru_stime:    00:00:02 (2.6 ms)
+    ru_maxrss:   1082860
+    ru_minflt:   243083
+    ru_majflt:   11
+    ru_inblock:  884040
+    ru_oublock:  2544632
+    ru_nvcsw:    1502
+    ru_nivcsw:   11477
+  GNU time:     
+    real:        00:00:42 (42.9 ms)
+    user:        00:01:29 (89.0 ms)
+    sys:         00:00:02 (2.6 ms)
+  Size (MB):     1,242.48 (1302835279 bytes) (SRR1284073/output/decompressed/scalce-single/SRR1284073.fastq.fq_1.fastq)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc (File 1)
+*** 2015-12-16 23:50:53 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4  SRR1284073.fastq SRR1284073/output/compressed/dsrc/SRR1284073.fastq.dsrc
+    stderr:      SRR1284073/log/SRR1284073.fastq.dsrc.4.cmp.log
+  Process PID:   12775
+  Exit code:     2816
+  Wall time:     00:00:00 (0.5 ms)
+  Memory (MB):   26.8
+  Resources:    
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   27404
+    ru_minflt:   2171
+    ru_majflt:   8
+    ru_inblock:  74664
+    ru_oublock:  8
+    ru_nvcsw:    220
+    ru_nivcsw:   141
+  GNU time:     
+    real:        00:00:00 (0.4 ms)
+    user:        00:00:00 (0.1 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     ? (SRR1284073/output/compressed/dsrc/SRR1284073.fastq.dsrc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2 (File 1)
+*** 2015-12-16 23:50:54 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t4 -m2 SRR1284073.fastq SRR1284073/output/compressed/dsrc-m2/SRR1284073.fastq.dsrc
+    stderr:      SRR1284073/log/SRR1284073.fastq.dsrc-m2.4.cmp.log
+  Process PID:   12787
+  Exit code:     2816
+  Wall time:     00:00:01 (1.0 ms)
+  Memory (MB):   257.6
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.6 ms)
+    ru_maxrss:   263744
+    ru_minflt:   1436
+    ru_majflt:   8
+    ru_inblock:  549720
+    ru_oublock:  8
+    ru_nvcsw:    1068
+    ru_nivcsw:   1051
+  GNU time:     
+    real:        00:00:01 (1.0 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.6 ms)
+  Size (MB):     ? (SRR1284073/output/compressed/dsrc-m2/SRR1284073.fastq.dsrc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1)
+*** 2015-12-16 23:50:55 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom e 4 SRR1284073.fastq SRR1284073/output/compressed/orcom/SRR1284073.fastq.orcom 
+    stderr:      SRR1284073/log/SRR1284073.fastq.orcom.4.cmp.log
+  Process PID:   12794
+  Exit code:     35584
+  Wall time:     00:00:01 (1.3 ms)
+  Memory (MB):   277.8
+  Resources:    
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.8 ms)
+    ru_maxrss:   284424
+    ru_minflt:   7079
+    ru_majflt:   13
+    ru_inblock:  550280
+    ru_oublock:  24
+    ru_nvcsw:    9104
+    ru_nivcsw:   1146
+  GNU time:     
+    real:        00:00:01 (1.3 ms)
+    user:        00:00:00 (0.1 ms)
+    sys:         00:00:00 (0.8 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+########################################################################
+#                                 quip                                 #
+########################################################################
+>>> quip (File 1: SRR1284073.fastq)
+*** 2016-08-29 16:47:28 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v SRR1284073.fastq
+    stdout:      SRR1284073/output/compressed/quip/SRR1284073.fastq.qp
+    stderr:      SRR1284073/log/SRR1284073.fastq.quip.4.cmp.log
+  Process PID:   11500
+  Exit code:     0
+  Wall time:     00:01:09 (69.8 ms)
+  Memory (MB):   632.3
+  Resources:
+    ru_utime:    00:01:23 (83.2 ms)
+    ru_stime:    00:00:02 (2.3 ms)
+    ru_maxrss:   647492
+    ru_minflt:   71394
+    ru_majflt:   16
+    ru_inblock:  2560472
+    ru_oublock:  819528
+    ru_nvcsw:    5347
+    ru_nivcsw:   12967
+  GNU time:
+    real:        00:01:09 (69.7 ms)
+    user:        00:01:23 (83.2 ms)
+    sys:         00:00:02 (2.3 ms)
+  Size (MB):     400.14 (419574566 bytes) (SRR1284073/output/compressed/quip/SRR1284073.fastq.qp)
+  Free space:      2.8T  1.9T  924G  67% /local-scratch
+*** 2016-08-29 16:48:39 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/quip/bin/quip -c -v -d -o fastq SRR1284073/output/compressed/quip/SRR1284073.fastq.qp
+    stdout:      SRR1284073/output/decompressed/quip/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.quip.4.dec.log
+  Process PID:   11753
+  Exit code:     0
+  Wall time:     00:01:41 (101.8 ms)
+  Memory (MB):   636.7
+  Resources:
+    ru_utime:    00:02:04 (124.4 ms)
+    ru_stime:    00:00:02 (2.1 ms)
+    ru_maxrss:   651952
+    ru_minflt:   77238
+    ru_majflt:   16
+    ru_inblock:  823048
+    ru_oublock:  2547664
+    ru_nvcsw:    2232
+    ru_nivcsw:   13324
+  GNU time:
+    real:        00:01:41 (101.8 ms)
+    user:        00:02:04 (124.4 ms)
+    sys:         00:00:02 (2.0 ms)
+  Size (MB):     1,243.97 (1304398850 bytes) (SRR1284073/output/decompressed/quip/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.9T  923G  67% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath (File 1)
+*** 2015-12-16 23:50:57 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=4 -ref=data/sam/ref/polished_assembly.fasta.gz -reads=SRR1284073.fastq -out=SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath 
+    stderr:      SRR1284073/log/SRR1284073.fastq.kpath.4.cmp.log
+  Process PID:   12812
+  Exit code:     512
+  Wall time:     00:00:49 (49.9 ms)
+  Memory (MB):   2730.3
+  Resources:    
+    ru_utime:    00:01:00 (60.7 ms)
+    ru_stime:    00:00:06 (6.1 ms)
+    ru_maxrss:   2795784
+    ru_minflt:   468650
+    ru_majflt:   25
+    ru_inblock:  2636368
+    ru_oublock:  32
+    ru_nvcsw:    300754
+    ru_nivcsw:   15357
+  GNU time:     
+    real:        00:00:49 (49.8 ms)
+    user:        00:01:00 (60.7 ms)
+    sys:         00:00:06 (6.1 ms)
+  Size (MB):     ? (SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath.enc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: SRR1284073.fastq)
+*** 2016-01-24 19:28:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e SRR1284073.fastq SRR1284073/output/compressed/leon/SRR1284073.fastq.leon 4 
+    stderr:      SRR1284073/log/SRR1284073.fastq.leon.4.cmp.log
+  Process PID:   1718
+  Exit code:     0
+  Wall time:     00:03:14 (194.8 ms)
+  Memory (MB):   2747.6
+  Resources:    
+    ru_utime:    00:10:06 (606.5 ms)
+    ru_stime:    00:00:07 (7.4 ms)
+    ru_maxrss:   2813492
+    ru_minflt:   487444
+    ru_majflt:   79
+    ru_inblock:  2593192
+    ru_oublock:  2515912
+    ru_nvcsw:    11765
+    ru_nivcsw:   67170
+  GNU time:     
+    real:        00:03:14 (194.7 ms)
+    user:        00:10:06 (606.5 ms)
+    sys:         00:00:07 (7.4 ms)
+  Size (MB):     456.77 (478956101 bytes) (SRR1284073/output/compressed/leon/SRR1284073.fastq.leon, SRR1284073/output/compressed/leon/SRR1284073.fastq.leon.qual)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2016-01-24 19:31:35 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d SRR1284073/output/compressed/leon/SRR1284073.fastq.leon SRR1284073/output/decompressed/leon/SRR1284073.fastq.fq 4
+    stderr:      SRR1284073/log/SRR1284073.fastq.leon.4.dec.log
+  Process PID:   2212
+  Exit code:     0
+  Wall time:     00:01:55 (115.6 ms)
+  Memory (MB):   2752.5
+  Resources:    
+    ru_utime:    00:05:45 (345.3 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   2818552
+    ru_minflt:   41944
+    ru_majflt:   40
+    ru_inblock:  966960
+    ru_oublock:  2547656
+    ru_nvcsw:    1984
+    ru_nivcsw:   36825
+  GNU time:     
+    real:        00:01:55 (115.4 ms)
+    user:        00:05:45 (345.3 ms)
+    sys:         00:00:04 (4.1 ms)
+  Size (MB):     1,243.95 (1304374797 bytes) (SRR1284073/output/decompressed/leon/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: SRR1284073.fastq)
+*** 2016-01-05 16:07:52 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/bin/mince -p 4 -e -r SRR1284073.fastq -o SRR1284073/output/compressed/mince-single/SRR1284073.fastq.mince 
+    stderr:      SRR1284073/log/SRR1284073.fastq.mince-single.4.cmp.log
+  Process PID:   24662
+  Exit code:     1536
+  Wall time:     00:00:01 (1.4 ms)
+  Memory (MB):   243.3
+  Resources:    
+    ru_utime:    00:00:00 (0.2 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   249164
+    ru_minflt:   2952
+    ru_majflt:   24
+    ru_inblock:  30112
+    ru_oublock:  24
+    ru_nvcsw:    168
+    ru_nivcsw:   62
+  GNU time:     
+    real:        00:00:01 (1.3 ms)
+    user:        00:00:00 (0.1 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     0.00 (74 bytes) (SRR1284073/output/compressed/mince-single/SRR1284073.fastq.mince.log)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: SRR1284073.fastq)
+*** 2016-03-07 11:21:01 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e SRR1284073.fastq SRR1284073/output/compressed/kic/SRR1284073.fastq.kic 4 
+    stderr:      SRR1284073/log/SRR1284073.fastq.kic.4.cmp.log
+  Process PID:   10101
+  Exit code:     0
+  Wall time:     00:33:46 (2026.8 ms)
+  Memory (MB):   2108.1
+  Resources:    
+    ru_utime:    00:56:29 (3389.7 ms)
+    ru_stime:    00:00:19 (19.5 ms)
+    ru_maxrss:   2158664
+    ru_minflt:   158483
+    ru_majflt:   143
+    ru_inblock:  2609424
+    ru_oublock:  884976
+    ru_nvcsw:    411676
+    ru_nivcsw:   454891
+  GNU time:     
+    real:        00:33:46 (2026.7 ms)
+    user:        00:56:29 (3389.7 ms)
+    sys:         00:00:19 (19.5 ms)
+  Size (MB):     430.33 (451233053 bytes) (SRR1284073/output/compressed/kic/SRR1284073.fastq.kic, SRR1284073/output/compressed/kic/SRR1284073.fastq.kic.name, SRR1284073/output/compressed/kic/SRR1284073.fastq.kic.qual, SRR1284073/output/compressed/kic/SRR1284073.fastq.kic.seq)
+  Free space:      2.8T  991G  1.8T  36% /local-scratch
+*** 2016-03-07 11:54:48 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d SRR1284073/output/compressed/kic/SRR1284073.fastq.kic SRR1284073/output/decompressed/kic/SRR1284073.fastq.fq 4
+    stderr:      SRR1284073/log/SRR1284073.fastq.kic.4.dec.log
+  Process PID:   11182
+  Exit code:     0
+  Wall time:     00:01:34 (94.6 ms)
+  Memory (MB):   922.2
+  Resources:    
+    ru_utime:    00:02:59 (179.7 ms)
+    ru_stime:    00:00:12 (12.5 ms)
+    ru_maxrss:   944320
+    ru_minflt:   56144
+    ru_majflt:   147
+    ru_inblock:  935104
+    ru_oublock:  2556800
+    ru_nvcsw:    202368
+    ru_nivcsw:   40408
+  GNU time:     
+    real:        00:01:34 (94.0 ms)
+    user:        00:02:59 (179.7 ms)
+    sys:         00:00:12 (12.5 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  993G  1.8T  36% /local-scratch
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
++                      SRR1284073 with 8 threads                       + 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+######################################################################## 
+#                                 pigz                                 # 
+########################################################################
+>>> pigz (File 1)
+*** 2015-12-16 23:51:47 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -p 8 
+    stdin:       SRR1284073.fastq
+    stdout:      SRR1284073/output/compressed/pigz/SRR1284073.fastq.gz
+    stderr:      SRR1284073/log/SRR1284073.fastq.pigz.8.cmp.log
+  Process PID:   12833
+  Exit code:     0
+  Wall time:     00:00:27 (27.0 ms)
+  Memory (MB):   10.1
+  Resources:    
+    ru_utime:    00:03:35 (215.5 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   10292
+    ru_minflt:   1943
+    ru_majflt:   7
+    ru_inblock:  2558408
+    ru_oublock:  1067408
+    ru_nvcsw:    19520
+    ru_nivcsw:   26162
+  GNU time:     
+    real:        00:00:26 (26.9 ms)
+    user:        00:03:35 (215.5 ms)
+    sys:         00:00:04 (4.1 ms)
+  Size (MB):     521.19 (546506025 bytes) (SRR1284073/output/compressed/pigz/SRR1284073.fastq.gz)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+*** 2015-12-16 23:52:18 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pigz-2.3.3/pigz -c -d -p 8
+    stdin:       SRR1284073/output/compressed/pigz/SRR1284073.fastq.gz
+    stdout:      SRR1284073/output/decompressed/pigz/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.pigz.8.dec.log
+  Process PID:   12852
+  Exit code:     0
+  Wall time:     00:00:09 (9.4 ms)
+  Memory (MB):   5.7
+  Resources:    
+    ru_utime:    00:00:13 (13.3 ms)
+    ru_stime:    00:00:05 (5.1 ms)
+    ru_maxrss:   5868
+    ru_minflt:   605
+    ru_majflt:   7
+    ru_inblock:  1068408
+    ru_oublock:  2556568
+    ru_nvcsw:    97692
+    ru_nivcsw:   5135
+  GNU time:     
+    real:        00:00:09 (9.3 ms)
+    user:        00:00:13 (13.3 ms)
+    sys:         00:00:05 (5.1 ms)
+  Size (MB):     1,248.32 (1308957142 bytes) (SRR1284073/output/decompressed/pigz/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                pbzip2                                # 
+########################################################################
+>>> pbzip2 (File 1)
+*** 2015-12-16 23:52:33 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -p8 
+    stdin:       SRR1284073.fastq
+    stdout:      SRR1284073/output/compressed/pbzip2/SRR1284073.fastq.bz2
+    stderr:      SRR1284073/log/SRR1284073.fastq.pbzip2.8.cmp.log
+  Process PID:   12866
+  Exit code:     0
+  Wall time:     00:00:22 (22.0 ms)
+  Memory (MB):   74.3
+  Resources:    
+    ru_utime:    00:02:36 (156.6 ms)
+    ru_stime:    00:00:08 (8.4 ms)
+    ru_maxrss:   76084
+    ru_minflt:   966045
+    ru_majflt:   8
+    ru_inblock:  2581584
+    ru_oublock:  903400
+    ru_nvcsw:    7555
+    ru_nivcsw:   22459
+  GNU time:     
+    real:        00:00:22 (22.0 ms)
+    user:        00:02:36 (156.6 ms)
+    sys:         00:00:08 (8.4 ms)
+  Size (MB):     441.11 (462533911 bytes) (SRR1284073/output/compressed/pbzip2/SRR1284073.fastq.bz2)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+*** 2015-12-16 23:52:57 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/pbzip2-1.1.12/pbzip2 -c -d -p8
+    stdin:       SRR1284073/output/compressed/pbzip2/SRR1284073.fastq.bz2
+    stdout:      SRR1284073/output/decompressed/pbzip2/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.pbzip2.8.dec.log
+  Process PID:   12887
+  Exit code:     0
+  Wall time:     00:00:09 (9.8 ms)
+  Memory (MB):   49.9
+  Resources:    
+    ru_utime:    00:01:12 (72.5 ms)
+    ru_stime:    00:00:06 (6.1 ms)
+    ru_maxrss:   51084
+    ru_minflt:   655768
+    ru_majflt:   8
+    ru_inblock:  928472
+    ru_oublock:  2556568
+    ru_nvcsw:    3902
+    ru_nivcsw:   10781
+  GNU time:     
+    real:        00:00:09 (9.7 ms)
+    user:        00:01:12 (72.5 ms)
+    sys:         00:00:06 (6.0 ms)
+  Size (MB):     1,248.32 (1308957142 bytes) (SRR1284073/output/decompressed/pbzip2/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                            scalce-single                             # 
+########################################################################
+>>> scalce-single (File 1: SRR1284073.fastq)
+*** 2016-01-06 10:17:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce-pacbio -T 8 SRR1284073.fastq -o SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single 
+    stderr:      SRR1284073/log/SRR1284073.fastq.scalce-single.8.cmp.log
+  Process PID:   4104
+  Exit code:     0
+  Wall time:     00:00:41 (41.6 ms)
+  Memory (MB):   1932.0
+  Resources:    
+    ru_utime:    00:03:06 (186.3 ms)
+    ru_stime:    00:00:05 (5.8 ms)
+    ru_maxrss:   1978332
+    ru_minflt:   485592
+    ru_majflt:   11
+    ru_inblock:  2617872
+    ru_oublock:  2104624
+    ru_nvcsw:    4583
+    ru_nivcsw:   25868
+  GNU time:     
+    real:        00:00:41 (41.5 ms)
+    user:        00:03:06 (186.2 ms)
+    sys:         00:00:05 (5.8 ms)
+  Size (MB):     401.66 (421175401 bytes) (SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcen, SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalceq, SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcer, SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcel)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+*** 2016-01-06 10:18:07 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/scalce/scalce-pacbio -d -T 8 SRR1284073/output/compressed/scalce-single/SRR1284073.fastq.scalce-single_1.scalcer -o SRR1284073/output/decompressed/scalce-single/SRR1284073.fastq.fq
+    stderr:      SRR1284073/log/SRR1284073.fastq.scalce-single.8.dec.log
+  Process PID:   4283
+  Exit code:     0
+  Wall time:     00:00:24 (24.0 ms)
+  Memory (MB):   1121.4
+  Resources:    
+    ru_utime:    00:01:29 (89.1 ms)
+    ru_stime:    00:00:02 (2.4 ms)
+    ru_maxrss:   1148316
+    ru_minflt:   243135
+    ru_majflt:   11
+    ru_inblock:  883920
+    ru_oublock:  2544624
+    ru_nvcsw:    1537
+    ru_nivcsw:   11398
+  GNU time:     
+    real:        00:00:23 (23.8 ms)
+    user:        00:01:29 (89.1 ms)
+    sys:         00:00:02 (2.4 ms)
+  Size (MB):     1,242.48 (1302835279 bytes) (SRR1284073/output/decompressed/scalce-single/SRR1284073.fastq.fq_1.fastq)
+  Free space:      2.8T  1.4T  1.4T  49% /local-scratch
+
+######################################################################## 
+#                                 dsrc                                 # 
+########################################################################
+>>> dsrc (File 1)
+*** 2015-12-16 23:53:24 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8  SRR1284073.fastq SRR1284073/output/compressed/dsrc/SRR1284073.fastq.dsrc
+    stderr:      SRR1284073/log/SRR1284073.fastq.dsrc.8.cmp.log
+  Process PID:   12957
+  Exit code:     2816
+  Wall time:     00:00:00 (0.5 ms)
+  Memory (MB):   39.8
+  Resources:    
+    ru_utime:    00:00:00 (0.2 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   40796
+    ru_minflt:   3443
+    ru_majflt:   8
+    ru_inblock:  74672
+    ru_oublock:  8
+    ru_nvcsw:    327
+    ru_nivcsw:   156
+  GNU time:     
+    real:        00:00:00 (0.4 ms)
+    user:        00:00:00 (0.2 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     ? (SRR1284073/output/compressed/dsrc/SRR1284073.fastq.dsrc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                               dsrc-m2                                # 
+########################################################################
+>>> dsrc-m2 (File 1)
+*** 2015-12-16 23:53:25 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/dsrc/bin/dsrc c -v -t8 -m2 SRR1284073.fastq SRR1284073/output/compressed/dsrc-m2/SRR1284073.fastq.dsrc
+    stderr:      SRR1284073/log/SRR1284073.fastq.dsrc-m2.8.cmp.log
+  Process PID:   12973
+  Exit code:     2816
+  Wall time:     00:00:01 (1.1 ms)
+  Memory (MB):   257.6
+  Resources:    
+    ru_utime:    00:00:00 (0.0 ms)
+    ru_stime:    00:00:00 (0.6 ms)
+    ru_maxrss:   263744
+    ru_minflt:   1432
+    ru_majflt:   8
+    ru_inblock:  549720
+    ru_oublock:  8
+    ru_nvcsw:    1046
+    ru_nivcsw:   1112
+  GNU time:     
+    real:        00:00:01 (1.0 ms)
+    user:        00:00:00 (0.0 ms)
+    sys:         00:00:00 (0.6 ms)
+  Size (MB):     ? (SRR1284073/output/compressed/dsrc-m2/SRR1284073.fastq.dsrc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                orcom                                 # 
+########################################################################
+>>> orcom (File 1)
+*** 2015-12-16 23:53:26 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/orcom/bin/orcom e 8 SRR1284073.fastq SRR1284073/output/compressed/orcom/SRR1284073.fastq.orcom 
+    stderr:      SRR1284073/log/SRR1284073.fastq.orcom.8.cmp.log
+  Process PID:   12980
+  Exit code:     35584
+  Wall time:     00:00:01 (1.3 ms)
+  Memory (MB):   299.9
+  Resources:    
+    ru_utime:    00:00:00 (0.2 ms)
+    ru_stime:    00:00:01 (1.0 ms)
+    ru_maxrss:   307076
+    ru_minflt:   12234
+    ru_majflt:   13
+    ru_inblock:  550264
+    ru_oublock:  24
+    ru_nvcsw:    17401
+    ru_nivcsw:   1271
+  GNU time:     
+    real:        00:00:01 (1.2 ms)
+    user:        00:00:00 (0.2 ms)
+    sys:         00:00:01 (1.0 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                kpath                                 # 
+########################################################################
+>>> kpath (File 1)
+*** 2015-12-16 23:53:28 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/kpath-0.6.3/kpath-0.6.3-linux encode -p=8 -ref=data/sam/ref/polished_assembly.fasta.gz -reads=SRR1284073.fastq -out=SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath 
+    stderr:      SRR1284073/log/SRR1284073.fastq.kpath.8.cmp.log
+  Process PID:   13002
+  Exit code:     512
+  Wall time:     00:00:48 (48.0 ms)
+  Memory (MB):   2739.6
+  Resources:    
+    ru_utime:    00:00:57 (57.3 ms)
+    ru_stime:    00:00:06 (6.1 ms)
+    ru_maxrss:   2805300
+    ru_minflt:   468554
+    ru_majflt:   25
+    ru_inblock:  2636352
+    ru_oublock:  40
+    ru_nvcsw:    294640
+    ru_nivcsw:   14470
+  GNU time:     
+    real:        00:00:47 (47.9 ms)
+    user:        00:00:57 (57.3 ms)
+    sys:         00:00:06 (6.1 ms)
+  Size (MB):     ? (SRR1284073/output/compressed/kpath/SRR1284073.fastq.kpath.enc)
+  Free space:      2.8T  1.1T  1.7T  41% /local-scratch
+
+######################################################################## 
+#                                 leon                                 # 
+########################################################################
+>>> leon (File 1: SRR1284073.fastq)
+*** 2016-01-24 19:34:05 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh e SRR1284073.fastq SRR1284073/output/compressed/leon/SRR1284073.fastq.leon 8 
+    stderr:      SRR1284073/log/SRR1284073.fastq.leon.8.cmp.log
+  Process PID:   2275
+  Exit code:     0
+  Wall time:     00:02:53 (173.7 ms)
+  Memory (MB):   3101.3
+  Resources:    
+    ru_utime:    00:10:16 (616.4 ms)
+    ru_stime:    00:00:08 (8.7 ms)
+    ru_maxrss:   3175716
+    ru_minflt:   629191
+    ru_majflt:   80
+    ru_inblock:  2594552
+    ru_oublock:  2515936
+    ru_nvcsw:    12885
+    ru_nivcsw:   68578
+  GNU time:     
+    real:        00:02:53 (173.6 ms)
+    user:        00:10:16 (616.4 ms)
+    sys:         00:00:08 (8.6 ms)
+  Size (MB):     456.77 (478956114 bytes) (SRR1284073/output/compressed/leon/SRR1284073.fastq.leon, SRR1284073/output/compressed/leon/SRR1284073.fastq.leon.qual)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+*** 2016-01-24 19:37:02 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/leon-1.0.0-Source/leon.sh d SRR1284073/output/compressed/leon/SRR1284073.fastq.leon SRR1284073/output/decompressed/leon/SRR1284073.fastq.fq 8
+    stderr:      SRR1284073/log/SRR1284073.fastq.leon.8.dec.log
+  Process PID:   2706
+  Exit code:     0
+  Wall time:     00:01:55 (115.0 ms)
+  Memory (MB):   2755.2
+  Resources:    
+    ru_utime:    00:05:42 (342.8 ms)
+    ru_stime:    00:00:04 (4.1 ms)
+    ru_maxrss:   2821316
+    ru_minflt:   40476
+    ru_majflt:   41
+    ru_inblock:  965344
+    ru_oublock:  2547656
+    ru_nvcsw:    1770
+    ru_nivcsw:   36574
+  GNU time:     
+    real:        00:01:54 (114.9 ms)
+    user:        00:05:42 (342.8 ms)
+    sys:         00:00:04 (4.1 ms)
+  Size (MB):     1,243.95 (1304374797 bytes) (SRR1284073/output/decompressed/leon/SRR1284073.fastq.fq)
+  Free space:      2.8T  1.7T  1.1T  62% /local-scratch
+
+######################################################################## 
+#                             mince-single                             # 
+########################################################################
+>>> mince-single (File 1: SRR1284073.fastq)
+*** 2016-01-05 16:42:23 *** *** FAIL ***
+  Command:       /usr/bin/time -p -o _time_ tools/mince/bin/mince -p 8 -e -r SRR1284073.fastq -o SRR1284073/output/compressed/mince-single/SRR1284073.fastq.mince 
+    stderr:      SRR1284073/log/SRR1284073.fastq.mince-single.8.cmp.log
+  Process PID:   26183
+  Exit code:     1536
+  Wall time:     00:00:01 (1.6 ms)
+  Memory (MB):   247.1
+  Resources:    
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   253044
+    ru_minflt:   2897
+    ru_majflt:   24
+    ru_inblock:  29864
+    ru_oublock:  24
+    ru_nvcsw:    192
+    ru_nivcsw:   67
+  GNU time:     
+    real:        00:00:01 (1.5 ms)
+    user:        00:00:00 (0.1 ms)
+    sys:         00:00:00 (0.1 ms)
+  Size (MB):     0.00 (411 bytes) (SRR1284073/output/compressed/mince-single/SRR1284073.fastq.mince.log)
+  Free space:      2.8T  1.2T  1.6T  43% /local-scratch
+
+######################################################################## 
+#                                 kic                                  # 
+########################################################################
+>>> kic (File 1: SRR1284073.fastq)
+*** 2016-03-07 11:56:51 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh e SRR1284073.fastq SRR1284073/output/compressed/kic/SRR1284073.fastq.kic 8 
+    stderr:      SRR1284073/log/SRR1284073.fastq.kic.8.cmp.log
+  Process PID:   11316
+  Exit code:     0
+  Wall time:     00:33:33 (2013.8 ms)
+  Memory (MB):   2108.6
+  Resources:    
+    ru_utime:    00:58:50 (3530.8 ms)
+    ru_stime:    00:00:20 (20.7 ms)
+    ru_maxrss:   2159240
+    ru_minflt:   126595
+    ru_majflt:   143
+    ru_inblock:  2609496
+    ru_oublock:  885264
+    ru_nvcsw:    576425
+    ru_nivcsw:   484954
+  GNU time:     
+    real:        00:33:33 (2013.6 ms)
+    user:        00:58:50 (3530.8 ms)
+    sys:         00:00:20 (20.7 ms)
+  Size (MB):     430.33 (451237585 bytes) (SRR1284073/output/compressed/kic/SRR1284073.fastq.kic, SRR1284073/output/compressed/kic/SRR1284073.fastq.kic.seq, SRR1284073/output/compressed/kic/SRR1284073.fastq.kic.qual, SRR1284073/output/compressed/kic/SRR1284073.fastq.kic.name)
+  Free space:      2.8T  991G  1.8T  36% /local-scratch
+*** 2016-03-07 12:30:25 *** *** OK ***
+  Command:       /usr/bin/time -p -o _time_ tools/kic-0.2/kic.sh d SRR1284073/output/compressed/kic/SRR1284073.fastq.kic SRR1284073/output/decompressed/kic/SRR1284073.fastq.fq 8
+    stderr:      SRR1284073/log/SRR1284073.fastq.kic.8.dec.log
+  Process PID:   12244
+  Exit code:     0
+  Wall time:     00:01:37 (97.5 ms)
+  Memory (MB):   916.3
+  Resources:    
+    ru_utime:    00:03:02 (182.9 ms)
+    ru_stime:    00:00:12 (12.8 ms)
+    ru_maxrss:   938312
+    ru_minflt:   57075
+    ru_majflt:   147
+    ru_inblock:  934920
+    ru_oublock:  2556800
+    ru_nvcsw:    202066
+    ru_nivcsw:   37659
+  GNU time:     
+    real:        00:01:37 (97.2 ms)
+    user:        00:03:02 (182.9 ms)
+    sys:         00:00:12 (12.8 ms)
+  Size (MB):     ? ()
+  Free space:      2.8T  993G  1.8T  36% /local-scratch
+
+
+Done!

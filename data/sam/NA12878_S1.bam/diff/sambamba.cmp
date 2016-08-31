@@ -1,0 +1,6 @@
+Reading NA12878_S1.bam.sam, NA12878_S1.bam/output/decompressed/sambamba/NA12878_S1.bam.sam.sam; maxline=3000000
+> ORIG    1582771014 (NA12878_S1.bam.sam)
+< COPY    1582771014 (NA12878_S1.bam/output/decompressed/sambamba/NA12878_S1.bam.sam.sam)
+Comments   not equal
+
+Done NA12878_S1.bam.sam

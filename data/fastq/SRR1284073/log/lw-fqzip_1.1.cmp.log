@@ -1,0 +1,7 @@
+
+################################################################################
+
+e,SRR1284073.fastq,SRR1284073/output/compressed/lw-fqzip/SRR1284073.fastq.lz,data/sam/ref/polished_assembly.fasta,tools/LWFQZip-v1.02,SRR1284073/output/compressed/lw-fqzip
+
+./LWFQZip -c -t 1 -i SRR1284073.fastq -r polished_assembly.fasta
+

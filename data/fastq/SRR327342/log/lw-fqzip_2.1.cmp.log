@@ -1,0 +1,7 @@
+
+################################################################################
+
+e,SRR327342_2.fastq,SRR327342/output/compressed/lw-fqzip/SRR327342_2.fastq.lz,data/sam/ref/ACFL01000033.1.fasta,tools/LWFQZip-v1.02,SRR327342/output/compressed/lw-fqzip
+
+./LWFQZip -c -t 1 -i SRR327342_2.fastq -r ACFL01000033.1.fasta
+

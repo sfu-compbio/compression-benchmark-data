@@ -1,0 +1,97 @@
+Reading ../../../SRR327342_2.fastq, fqzcomp-extra/SRR327342_2.fastq.fq; maxline=1000000
+../../../SRR327342_2.fastq fqzcomp-extra/SRR327342_2.fastq.fq differ: byte 133, line 3
+Read 1000000 (1000000) / 1000000 (1000000) lines, 1000000
+Read 1000000 (2000000) / 1000000 (2000000) lines, 1000000
+Read 1000000 (3000000) / 1000000 (3000000) lines, 1000000
+Read 1000000 (4000000) / 1000000 (4000000) lines, 1000000
+Read 1000000 (5000000) / 1000000 (5000000) lines, 1000000
+Read 1000000 (6000000) / 1000000 (6000000) lines, 1000000
+Read 1000000 (7000000) / 1000000 (7000000) lines, 1000000
+Read 1000000 (8000000) / 1000000 (8000000) lines, 1000000
+Read 1000000 (9000000) / 1000000 (9000000) lines, 1000000
+Read 1000000 (10000000) / 1000000 (10000000) lines, 1000000
+Read 1000000 (11000000) / 1000000 (11000000) lines, 1000000
+Read 1000000 (12000000) / 1000000 (12000000) lines, 1000000
+Read 1000000 (13000000) / 1000000 (13000000) lines, 1000000
+Read 1000000 (14000000) / 1000000 (14000000) lines, 1000000
+Read 1000000 (15000000) / 1000000 (15000000) lines, 1000000
+Read 34893 (15034893) / 34893 (15034893) lines, 34893
+> ORIG      15034893 (../../../SRR327342_2.fastq)
+< COPY      15034893 (fqzcomp-extra/SRR327342_2.fastq.fq)
+
+COMMENT     15034893 lines unequal
+QUAL          751301 lines unequal
+                     1 mismatches: 700646 lines
+                     2 mismatches: 24045 lines
+                     3 mismatches: 3458 lines
+                     4 mismatches: 2521 lines
+                     5 mismatches: 2312 lines
+                     6 mismatches: 1607 lines
+                     7 mismatches: 1372 lines
+                     8 mismatches: 1290 lines
+                     9 mismatches: 1093 lines
+                     10 mismatches: 818 lines
+                     11 mismatches: 709 lines
+                     12 mismatches: 713 lines
+                     13 mismatches: 673 lines
+                     14 mismatches: 627 lines
+                     15 mismatches: 593 lines
+                     16 mismatches: 526 lines
+                     17 mismatches: 529 lines
+                     18 mismatches: 581 lines
+                     19 mismatches: 425 lines
+                     20 mismatches: 451 lines
+                     21 mismatches: 529 lines
+                     22 mismatches: 474 lines
+                     23 mismatches: 343 lines
+                     24 mismatches: 378 lines
+                     25 mismatches: 286 lines
+                     26 mismatches: 278 lines
+                     27 mismatches: 233 lines
+                     28 mismatches: 297 lines
+                     29 mismatches: 291 lines
+                     30 mismatches: 293 lines
+                     31 mismatches: 209 lines
+                     32 mismatches: 171 lines
+                     33 mismatches: 132 lines
+                     34 mismatches: 201 lines
+                     35 mismatches: 266 lines
+                     36 mismatches: 105 lines
+                     37 mismatches: 210 lines
+                     38 mismatches: 164 lines
+                     39 mismatches: 151 lines
+                     40 mismatches: 142 lines
+                     41 mismatches: 150 lines
+                     42 mismatches: 86 lines
+                     43 mismatches: 95 lines
+                     44 mismatches: 79 lines
+                     45 mismatches: 48 lines
+                     46 mismatches: 82 lines
+                     47 mismatches: 60 lines
+                     48 mismatches: 53 lines
+                     49 mismatches: 42 lines
+                     50 mismatches: 76 lines
+                     51 mismatches: 47 lines
+                     52 mismatches: 41 lines
+                     53 mismatches: 32 lines
+                     54 mismatches: 30 lines
+                     55 mismatches: 19 lines
+                     56 mismatches: 29 lines
+                     57 mismatches: 8 lines
+                     58 mismatches: 10 lines
+                     59 mismatches: 13 lines
+                     60 mismatches: 9 lines
+                     61 mismatches: 18 lines
+                     62 mismatches: 19 lines
+                     63 mismatches: 17 lines
+                     64 mismatches: 12 lines
+                     65 mismatches: 4 lines
+                     67 mismatches: 5 lines
+                     68 mismatches: 45 lines
+                     69 mismatches: 2 lines
+                     70 mismatches: 3 lines
+                     71 mismatches: 24 lines
+                     72 mismatches: 1 lines
+
+Wrong N quality: 1119818 of 1119818
+Done ../../../SRR327342_2.fastq

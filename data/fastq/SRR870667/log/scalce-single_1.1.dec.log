@@ -1,0 +1,10 @@
+SCALCE 1 [pthreads; available cores=5]
+using 1 threads...
+Paired-end 0, file format detected: gzip
+File magic: 22
+Created part 1/1 as SRR870667_1/output/decompressed/SRR870667_1.scalce-single.fq_1.fastq with 69100987 reads
+	Time elapsed:     00:25:55
+Done!
+
+################################################################################
+

@@ -1,0 +1,173 @@
+
+################################################################################
+
+Compressing: dm3PacBio.bam.sam
+
+Block size: 10000
+
+Compressed 1446514 record(s)
+
+Wrote 145 block(s)
+
+Took 17291860124 us ~= 17291.86 s
+
+Nuccodec CR: 13.72%
+
+
+
+samcodec stats:
+
+---------------
+
+Number of records   :      1446514
+
+Number of blocks    :          145
+
+
+
+SAM file size       :  30081132500 (100.00%)
+
+  QNAME             :    110054547 (  0.37%)
+
+  FLAG              :      2170287 (  0.01%)
+
+  RNAME             :      7486227 (  0.02%)
+
+  POS               :     10669456 (  0.04%)
+
+  MAPQ              :      4180874 (  0.01%)
+
+  CIGAR             :   5171861593 ( 17.19%)
+
+  RNEXT             :      1446514 (  0.00%)
+
+  PNEXT             :      1446514 (  0.00%)
+
+  TLEN              :      6150557 (  0.02%)
+
+  SEQ               :  12307462465 ( 40.91%)
+
+  QUAL              :  12307462465 ( 40.91%)
+
+  OPT               :    133381361 (  0.44%)
+
+  CTRL (\t, \n)     :     17358168 (  0.06%)
+
+  HEAD (SAM header) :         1472 (  0.00%)
+
+
+
+Tsc file size       :   8397432655 (100.00%)
+
+  File header       :           35 (  0.00%)
+
+  SAM header        :         1480 (  0.00%)
+
+  Block header(s)   :         9280 (  0.00%)
+
+  Aux               :     34384366 (  0.41%)
+
+  Id                :     14864471 (  0.18%)
+
+  Nuc               :   2400022011 ( 28.58%)
+
+  Pair              :      3706751 (  0.04%)
+
+  Qual              :   5944444261 ( 70.79%)
+
+
+
+Compression ratios             SAM /          tsc
+
+  Total             :  30081132500 /   8397432655 ( 27.92%)
+
+  Aux               :    139732522 /     34384366 ( 24.61%)
+
+  Id                :    110054547 /     14864471 ( 13.51%)
+
+  Nuc               :  17497479741 /   2400022011 ( 13.72%)
+
+  Pair              :      9043585 /      3706751 ( 40.99%)
+
+  Qual              :  12307462465 /   5944444261 ( 48.30%)
+
+
+
+Timing
+
+  Total time elapsed:  17291860124 us ~=     17291.86 s (100.00%)
+
+  Aux               :     29342324 us ~=        29.34 s (  0.17%)
+
+  Id                :     16269166 us ~=        16.27 s (  0.09%)
+
+  Nuc               :  13039605660 us ~=     13039.61 s ( 75.41%)
+
+  Pair              :      1694848 us ~=         1.69 s (  0.01%)
+
+  Qual              :   4017452442 us ~=      4017.45 s ( 23.23%)
+
+  Remaining         :    187495684 us ~=       187.50 s (  1.08%)
+
+
+
+Speed (with respect to SAM sizes)
+
+  Total             :         1.74 MB/s
+
+  Aux               :         4.76 MB/s
+
+  Id                :         6.76 MB/s
+
+  Nuc               :         1.34 MB/s
+
+  Pair              :         5.34 MB/s
+
+  Qual              :         3.06 MB/s
+
+
+
+
+
+nuccodec stats:
+
+---------------
+
+mrecords:              10 (  0.00%)
+
+irecords:            9858 (  0.68%)
+
+precords:         1436656 ( 99.32%)
+
+--
+
+ctrl_sz:            13533 (  0.00%)
+
+rname_sz:            5919 (  0.00%)
+
+pos_sz:             42034 (  0.00%)
+
+seq_sz:              7937 (  0.00%)
+
+seqlen_sz:          17772 (  0.00%)
+
+exs_sz:           3185541 (  0.13%)
+
+posoff_sz:        1960607 (  0.08%)
+
+stogy_sz:      1351582250 ( 56.32%)
+
+inserts_sz:     269347442 ( 11.22%)
+
+modcnt_sz:        3299471 (  0.14%)
+
+modpos_sz:      450078719 ( 18.75%)
+
+modbases_sz:    171710349 (  7.15%)
+
+trail_sz:       148768117 (  6.20%)
+
+
+
+Finished: dm3PacBio.bam/output/compressed/tsc/dm3PacBio.bam.sam.tsc
+

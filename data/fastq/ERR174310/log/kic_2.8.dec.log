@@ -1,0 +1,15 @@
+
+################################################################################
+
+d,ERR174310/output/compressed/kic/ERR174310_2.fastq.kic,ERR174310/output/decompressed/kic/ERR174310_2.fastq.fq,8,tools/kic-0.2,ERR174310/output/decompressed/kic
+
+ERR174310_2.fastq.kic
+
+ERR174310_2.fastq.kic.name
+
+ERR174310_2.fastq.kic.qual
+
+ERR174310_2.fastq.kic.seq
+
+java -Xmx2000m -jar tools/kic-0.2/kid.jar ERR174310_2.fastq.kic
+

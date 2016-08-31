@@ -1,0 +1,13 @@
+Reading MiSeq_Ecoli_DH10B_110721_PF.bam.sam, MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/MiSeq_Ecoli_DH10B_110721_PF.bam.zam.sam; maxline=5000000
+MiSeq_Ecoli_DH10B_110721_PF.bam.sam MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/MiSeq_Ecoli_DH10B_110721_PF.bam.zam.sam differ: byte 1, line 1
+> ORIG      13175679 (MiSeq_Ecoli_DH10B_110721_PF.bam.sam)
+< COPY      13175679 (MiSeq_Ecoli_DH10B_110721_PF.bam/output/decompressed/MiSeq_Ecoli_DH10B_110721_PF.bam.zam.sam)
+Comments   not equal
+
+REFNEXT     13051484 lines unequal
+POSNEXT     13051484 lines unequal
+TLEN        13051484 lines unequal
+Read 5000000 (5000000) / 5000000 (5000000) lines, 5000000
+Read 5000000 (10000000) / 5000000 (10000000) lines, 5000000
+Read 3175679 (13175679) / 3175679 (13175679) lines, 3175679
+Done MiSeq_Ecoli_DH10B_110721_PF.bam.sam

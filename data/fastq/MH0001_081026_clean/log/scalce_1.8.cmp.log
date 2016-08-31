@@ -1,0 +1,39 @@
+SCALCE 1 [pthreads; available cores=5]
+Buffer size: 131072K, bucket storage size: 4194304K
+Allocating pool... OK!
+Preprocessing FASTQ files ...
+	Paired end #1, quality offset: 33
+	               read length: 44
+	Paired end #2, quality offset: 33
+	               read length: 44
+OK
+Using 8 threads...
+	Done with file MH0001_081026_clean.1.fq, 11640674 reads found
+	          file MH0001_081026_clean.2.fq, 11640674 reads found
+	Created temp file 0
+Merging results ... 1
+Generating 1 scalce file(s) from temp #0 using paired files, compression: pigz
+shrink factor for 0: 1
+	Read bit size:    paired end 0 = 1.10
+	Quality bit size: paired end 0 = 2.35
+shrink factor for 1: 1
+	Read bit size:    paired end 1 = 1.99
+	Quality bit size: paired end 1 = 3.35
+Cleaning ...
+Statistics:
+	Total number of reads: 11640674
+	Read length: first end 44
+	             second end 44
+	Unbucketed reads count: 134733, bucketed percentage 98.84
+	Lossy percentage: 0
+	Time elapsed:     00:02:16
+	Compression time: 00:00:38
+	Original size: 3585.19M, new size: 682.34M, compression factor: 5.26
+Done!
+
+################################################################################
+
+Written 1895266 cores
+
+Written 1895266 cores
+

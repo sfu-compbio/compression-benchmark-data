@@ -1,0 +1,15 @@
+
+################################################################################
+
+e,ERR174310_1.fastq,ERR174310/output/compressed/leon/ERR174310_1.fastq.leon,1,tools/leon-1.0.0-Source,ERR174310/output/compressed/leon
+
+total 52606336
+
+drwxr-xr-x 2 root     root                  38 Feb 19 10:40 .
+
+drwxr-xr-x 5 root     root                  59 Feb 19 01:29 ..
+
+-rw-r--r-- 3  53868884409 Jul 20  2015 ERR174310_1.fastq
+
+tools/leon-1.0.0-Source/build/leon -c -file ERR174310_1.fastq -nb-cores 1 -lossless
+

@@ -1,0 +1,7 @@
+tools/lfqc/lfqc/lfqcd.rb:77: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+tools/lfqc/lfqc/lfqcd.rb:49:in `value': Interrupt
+	from tools/lfqc/lfqc/lfqcd.rb:49:in `decompress'
+	from tools/lfqc/lfqc/lfqcd.rb:208:in `block in maind'
+	from .rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+	from tools/lfqc/lfqc/lfqcd.rb:207:in `maind'
+	from tools/lfqc/lfqc/lfqcd.rb:215:in `<main>'

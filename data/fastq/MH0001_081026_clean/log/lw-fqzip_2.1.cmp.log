@@ -1,0 +1,8 @@
+Please input correct FASTQ file
+
+################################################################################
+
+e,MH0001_081026_clean.2.fq,MH0001_081026_clean.1/output/compressed/lw-fqzip/MH0001_081026_clean.2.fq.lz,data/sam/ref/hg19.fa,tools/LWFQZip-v1.02,MH0001_081026_clean.1/output/compressed/lw-fqzip
+
+./LWFQZip -c -t 1 -i MH0001_081026_clean.2.fq -r hg19.fa
+

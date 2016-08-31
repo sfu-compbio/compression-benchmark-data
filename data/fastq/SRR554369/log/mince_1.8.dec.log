@@ -1,0 +1,19 @@
+[ decode] => { }
+[ input] => { SRR554369_1.fastq.mince }
+[ threads] => { 8 }
+[ output] => { SRR554369_1.fastq.fq }
+[2016-08-21 15:55:31.825] [jointLog] [info] reading seq buffer with command plzip -d -c -n 5 SRR554369_1.fastq.mince.seqs.lz
+[2016-08-21 15:55:31.826] [jointLog] [info] reading offset buffer with command plzip -d -c -n 1 SRR554369_1.fastq.mince.offs.lz
+[2016-08-21 15:55:31.826] [jointLog] [info] reading Ns buffer with command plzip -d -c -n 1 SRR554369_1.fastq.mince.nlocs.lz
+[2016-08-21 15:55:31.928] [jointLog] [info] opened flip file "SRR554369_1.fastq.mince.flips.lz"
+[2016-08-21 15:55:32.006] [jointLog] [info] bucket string length = 15
+[2016-08-21 15:55:32.006] [jointLog] [info] effective read length = 200
+[2016-08-21 15:55:32.006] [jointLog] [info] num onsies = 
+[2016-08-21 15:55:32.330] [jointLog] [info] done with onsies.
+[2016-08-21 15:55:32.330] [jointLog] [info] reset effective read length to 47
+wrote read 100000wrote read 200000wrote read 300000wrote read 400000wrote read 500000wrote read 600000wrote read 700000wrote read 800000wrote read 900000wrote read 1000000wrote read 1100000wrote read 1200000wrote read 1300000wrote read 1400000wrote read 1500000[2016-08-21 15:55:41.245] [jointLog] [info] reached EOF in seq
+
+################################################################################
+
+Parameters: ,d,SRR554369/output/compressed/mince/SRR554369_1.fastq.mince,SRR554369/output/decompressed/mince/SRR554369_1.fastq.fq,8,tools/mince,SRR554369/output/decompressed/mince
+

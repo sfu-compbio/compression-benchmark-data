@@ -1,0 +1,19 @@
+Reading ../../../SRR554369_1.fastq, scalce-single/SRR554369_1.fastq.fq_1.fastq.sort; maxline=1000000
+../../../SRR554369_1.fastq scalce-single/SRR554369_1.fastq.fq_1.fastq.sort differ: byte 14, line 1
+Read 1000000 (1000000) / 1000000 (1000000) lines, 1000000
+Read 651564 (1651564) / 651564 (1651564) lines, 651564
+> ORIG       1651564 (../../../SRR554369_1.fastq)
+< COPY       1651564 (scalce-single/SRR554369_1.fastq.fq_1.fastq.sort)
+
+COMMENT      1651564 lines unequal
+QUAL           20888 lines unequal
+                     1 mismatches: 20061 lines
+                     2 mismatches: 716 lines
+                     3 mismatches: 79 lines
+                     4 mismatches: 25 lines
+                     5 mismatches: 6 lines
+                     7 mismatches: 1 lines
+
+COMMENTX     1651564 lines unequal
+Wrong N quality: 21867 of 21867
+Done ../../../SRR554369_1.fastq

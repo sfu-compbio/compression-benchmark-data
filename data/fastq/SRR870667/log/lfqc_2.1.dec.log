@@ -1,0 +1,14 @@
+tools/lfqc/lfqc/lfqcd.rb:77: warning: Insecure world writable dir /local-scratch in PATH, mode 040777
+tools/lfqc/lfqc/lfqcd.rb:29:in `join': no implicit conversion of nil into String (TypeError)
+	from tools/lfqc/lfqc/lfqcd.rb:29:in `decompress'
+	from tools/lfqc/lfqc/lfqcd.rb:208:in `block in maind'
+	from .rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/benchmark.rb:288:in `measure'
+	from tools/lfqc/lfqc/lfqcd.rb:207:in `maind'
+	from tools/lfqc/lfqc/lfqcd.rb:215:in `<main>'
+
+################################################################################
+
+Work dir SRR870667_1/output/tmp_91385fc0e4114a7da19ce9ed53b7aff6_SRR870667_2.lfqc
+
+Running tar xf SRR870667_1/output/SRR870667_2.lfqc -C SRR870667_1/output/tmp_91385fc0e4114a7da19ce9ed53b7aff6_SRR870667_2.lfqc
+

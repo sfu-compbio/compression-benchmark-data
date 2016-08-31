@@ -1,0 +1,4 @@
+Reading ../../../sample-2-10_sorted.bam.sam, ./pbzip2/sample-2-10_sorted.bam.sam.sam; maxline=1000000
+Equal cmp
+Done ../../../sample-2-10_sorted.bam.sam
+

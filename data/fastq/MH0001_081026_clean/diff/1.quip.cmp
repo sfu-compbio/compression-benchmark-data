@@ -1,0 +1,10 @@
+Reading MH0001_081026_clean.1.fq, MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.qp.fq; maxline=5000000
+MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.qp.fq differ: byte 79, line 3
+> ORIG      11640674 (MH0001_081026_clean.1.fq)
+< COPY      11640674 (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.qp.fq)
+
+COMMENT     11640674 lines unequal
+Read 5000000 (5000000) / 5000000 (5000000) lines, 5000000
+Read 5000000 (10000000) / 5000000 (10000000) lines, 5000000
+Read 1640674 (11640674) / 1640674 (11640674) lines, 1640674
+Done MH0001_081026_clean.1.fq

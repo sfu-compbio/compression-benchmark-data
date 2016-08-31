@@ -1,0 +1,8 @@
+tools/orcom/bin/orcom: line 15: 12799 Segmentation fault      ${DIR}/orcom_bin e -v -t$2 -f"$3" -o"$b"
+
+################################################################################
+
+e,4,SRR1284073.fastq,SRR1284073/output/compressed/orcom/SRR1284073.fastq.orcom
+
+SRR1284073/output/compressed/orcom/SRR1284073.fastq.obin
+

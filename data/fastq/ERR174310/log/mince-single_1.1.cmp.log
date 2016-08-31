@@ -1,0 +1,8 @@
+[ threads] => { 1 }
+[ encode] => { }
+[ unmated_reads] => { ERR174310_1.fastq }
+[ output] => { ERR174310/output/compressed/mince-single/ERR174310_1.fastq.mince }
+there is 1 lib
+[2015-12-31 08:01:18.240] [jointLog] [info] You requested 1 threads, but the minimum is 4. Setting # threads to 4.
+[2015-12-31 08:01:18.240] [jointLog] [info] Starting 4 processing threads
+processed 1 reads
