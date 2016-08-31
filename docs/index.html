@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Compression Benchmark</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.css" rel="stylesheet">
+	<style type="text/css">
+	body {
+		padding-top: 50px;
+	}
+	#toolbar {
+		font-weight: bold;
+		font-size: large;
+	}
+	dl {
+		width: 100%;
+		overflow: hidden;
+	}
+	dt {
+		float: left;
+		width: 20%;
+	}
+	dd {
+		float: left;
+		width: 80%;
+	}
+
+	dl.dl-small {
+		width: 250px;
+	}
+	dl.dl-small dd {
+		width: 100px;
+		text-align: right;
+	}
+	dl.dl-small dt {
+		width: 150px;
+	}
+	.low {
+		margin-top: 20px;
+	}
+
+	pre {
+		height: auto;
+		max-height: 200px;
+		overflow: auto;
+		width: 85vw;
+/*		background-color: #eeeeee;
+		word-break: normal !important;
+		word-wrap: normal !important;
+		white-space: pre !important;
+*/	}
+  	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Compression Benchmark</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Results</a></li>
+			<li><a href="#">About</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+	<div class="container low">
+		<h3>Notes</h3>
+		<h4>Searching</h4>
+		Numerical columns can be queried with simple range queries. Range query is any query string starting with &lt; or &gt;.
+		<b>Examples:</b>
+		<dl style="margin-left: 30px">
+			<dt>&gt;300</dt><dd>selects all rows with column's numerical value greater than 300</dd>
+			<dt>&lt;=5.3</dt><dd>selects all rows with column's numerical value less or equal than 5.7</dd>
+		</dl>
+	</div>
+
+	<div class="container low">
+		<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#sam">SAM/BAM</a></li>
+		<li><a data-toggle="tab" href="#fastq">FASTQ</a></li>
+		</ul>
+
+		<div id="toolbar">SAM/BAM</div>
+		<table id="table" data-url="data_sam.json"></table>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sprintf/1.0.3/sprintf.min.js"></script>
+	<script src="js/bootstrap-table.min.js"></script>
+	<script src="js/bootstrap-table-filter-control.min.js"></script>
+	<script src="js/compression-review.min.js"></script>
+	<script>
+	
+</script>
+
+</body>
+</html>
