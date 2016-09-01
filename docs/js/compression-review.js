@@ -75,7 +75,7 @@ $('#table').bootstrapTable({
 			},
 			filterControl: 'input',
 			customSearch: function(r,v) {
-				y=parseInt(v)/1024./1024.;
+				y=parseInt(v)/1000./1000.;
 				return isNaN(y)?true:rangeSearch(r,y)
 			}
 		}, {
@@ -88,7 +88,7 @@ $('#table').bootstrapTable({
 			formatter: formatSize,
 			filterControl: 'input',
 			customSearch: function(r,v) {
-				y=parseInt(v)/1024./1024.;
+				y=parseInt(v)/1000./1000.;
 				return isNaN(y)?true:rangeSearch(r,y)
 			},
 			visible: false,
@@ -102,7 +102,7 @@ $('#table').bootstrapTable({
 			formatter: formatSize,
 			filterControl: 'input',
 			customSearch: function(r,v) {
-				y=parseInt(v)/1024./1024.;
+				y=parseInt(v)/1000./1000.;
 				return isNaN(y)?true:rangeSearch(r,y)
 			},
 			visible: false,
@@ -116,7 +116,7 @@ $('#table').bootstrapTable({
 			formatter: formatSize,
 			filterControl: 'input',
 			customSearch: function(r,v) {
-				y=parseInt(v)/1024./1024.;
+				y=parseInt(v)/1000./1000.;
 				return isNaN(y)?true:rangeSearch(r,y)
 			},
 			visible: false,
@@ -441,7 +441,7 @@ function loader_init(a) {
 
 function formatSize(n) {
 	if (!n || n == "?") return "N/A";
-	return '<a class="sizedetails" href="javascript:void(0)">' + formatNumber(n / 1024.0 / 1024.0) + '</a>';
+	return '<a class="sizedetails" href="javascript:void(0)">' + formatNumber(n / 1000.0 / 1000.0) + '</a>';
 }
 
 function formatTimeRatio(n) {
@@ -470,7 +470,7 @@ function sizeDetails(e, value, row, index) {
 	html = []
 	f = [ 'seq', 'pe', 'aux', 'qual', 'rname', ]
 	$.each(f, function(k, v) {
-		if (row[v]) html.push('<dt>' + indict(v,window.fields) + '</dt><dd>' + formatNumber(row[v] / 1024 / 1024) + ' MB</dd>');
+		if (row[v]) html.push('<dt>' + indict(v,window.fields) + '</dt><dd>' + formatNumber(row[v] / 1000 / 1000) + ' MB</dd>');
 	});
 	$(this).attr('data-content',  '<dl class="dl-small">' + html.join('') + '</dl>')
 }
