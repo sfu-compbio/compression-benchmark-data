@@ -4,8 +4,4 @@ SRR327342_2.fastq SRR327342/output/decompressed/quip/SRR327342_2.fastq.fq differ
 < COPY      15034893 (SRR327342/output/decompressed/quip/SRR327342_2.fastq.fq)
 
 COMMENT     15034893 lines unequal
-Read 5000000 (5000000) / 5000000 (5000000) lines, 5000000
-Read 5000000 (10000000) / 5000000 (10000000) lines, 5000000
-Read 5000000 (15000000) / 5000000 (15000000) lines, 5000000
-Read 34893 (15034893) / 34893 (15034893) lines, 34893
 Done SRR327342_2.fastq

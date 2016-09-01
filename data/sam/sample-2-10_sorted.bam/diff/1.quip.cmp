@@ -1,0 +1,7 @@
+Reading ../../../sample-2-10_sorted.bam.sam, ./quip/sample-2-10_sorted.bam.sam.sam; maxline=1000000
+../../../sample-2-10_sorted.bam.sam ./quip/sample-2-10_sorted.bam.sam.sam differ: byte 1274, line 29
+> ORIG      17480371 (../../../sample-2-10_sorted.bam.sam)
+< COPY      17480371 (./quip/sample-2-10_sorted.bam.sam.sam)
+
+Equal
+Done ../../../sample-2-10_sorted.bam.sam

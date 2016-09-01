@@ -5,5 +5,4 @@ dm3PacBio.bam.sam dm3PacBio.bam/output/decompressed/dm3PacBio.bam.zam.sam differ
 Comments   not equal
 
 TLEN         1446514 lines unequal
-Read 1446514 (1446514) / 1446514 (1446514) lines, 1446514
 Done dm3PacBio.bam.sam

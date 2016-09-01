@@ -1,0 +1,10 @@
+Reading K562_cytosol_LID8465_TopHat_v2.bam.sam, K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/K562_cytosol_LID8465_TopHat_v2.bam.zam.sam; maxline=5000000
+K562_cytosol_LID8465_TopHat_v2.bam.sam K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/K562_cytosol_LID8465_TopHat_v2.bam.zam.sam differ: byte 1, line 1
+> ORIG     246476391 (K562_cytosol_LID8465_TopHat_v2.bam.sam)
+< COPY     246476391 (K562_cytosol_LID8465_TopHat_v2.bam/output/decompressed/K562_cytosol_LID8465_TopHat_v2.bam.zam.sam)
+Comments   not equal
+
+REFNEXT    229953882 lines unequal
+POSNEXT    229953882 lines unequal
+TLEN       229953882 lines unequal
+Done K562_cytosol_LID8465_TopHat_v2.bam.sam

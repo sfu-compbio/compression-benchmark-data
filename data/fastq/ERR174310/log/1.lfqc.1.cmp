@@ -240,3 +240,5 @@ File matching [0-9]*: 7
 Transformed name for 7 = 7_dif
 File matching [0-9]*: 8
 Transformed name for 8 = 8_rev
+tools/lfqc/lfqc/lfqc.rb:6:in `require_relative': Interrupt
+	from tools/lfqc/lfqc/lfqc.rb:6:in `<main>'

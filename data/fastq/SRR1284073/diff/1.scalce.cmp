@@ -1,6 +1,5 @@
 Reading ../../../SRR1284073.fastq, scalce-single/SRR1284073.fastq.fq_1.fastq.sort; maxline=1000000
 ../../../SRR1284073.fastq scalce-single/SRR1284073.fastq.fq_1.fastq.sort differ: byte 14, line 1
-Read 163464 (163464) / 163464 (163464) lines, 163464
 > ORIG        163464 (../../../SRR1284073.fastq)
 < COPY        163464 (scalce-single/SRR1284073.fastq.fq_1.fastq.sort)
 

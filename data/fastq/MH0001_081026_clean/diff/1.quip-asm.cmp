@@ -4,7 +4,4 @@ MH0001_081026_clean.1.fq MH0001_081026_clean.1/output/decompressed/MH0001_081026
 < COPY      11640674 (MH0001_081026_clean.1/output/decompressed/MH0001_081026_clean.1.qp-asm.fq)
 
 COMMENT     11640674 lines unequal
-Read 5000000 (5000000) / 5000000 (5000000) lines, 5000000
-Read 5000000 (10000000) / 5000000 (10000000) lines, 5000000
-Read 1640674 (11640674) / 1640674 (11640674) lines, 1640674
 Done MH0001_081026_clean.1.fq

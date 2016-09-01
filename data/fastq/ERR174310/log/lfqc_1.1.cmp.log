@@ -1,2 +1,0 @@
-tools/lfqc/lfqc/lfqc.rb:6:in `require_relative': Interrupt
-	from tools/lfqc/lfqc/lfqc.rb:6:in `<main>'

@@ -1,6 +1,5 @@
 Reading ../../../SRR1284073.fastq, quip-asm/SRR1284073.fastq.fq; maxline=1000000
 ../../../SRR1284073.fastq quip-asm/SRR1284073.fastq.fq differ: byte 219, line 3
-Read 163464 (163464) / 163464 (163464) lines, 163464
 > ORIG        163464 (../../../SRR1284073.fastq)
 < COPY        163464 (quip-asm/SRR1284073.fastq.fq)
 

@@ -10,3 +10,9 @@ kpath (encode): 2015/11/15 19:24:10 Option: updateReference = true
 kpath (encode): 2015/11/15 19:24:10 Reading from MH0001_081026_clean.1.fq
 kpath (encode): 2015/11/15 19:24:10 Writing to MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.enc, MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.bittree, MH0001_081026_clean.1/output/MH0001_081026_clean.1.kpath.counts
 kpath (encode): 2015/11/15 19:24:10 Reading Reference File...
+kpath  Copyright (C) 2014  Carl Kingsford & Rob Patro
+
+This program comes with ABSOLUTELY NO WARRANTY; This is free software, and
+you are welcome to redistribute it under certain conditions; see
+accompanying LICENSE.txt file.
+

@@ -1,8 +1,0 @@
-Work dir MH0001_081026_clean.1/output/tmp_7487e8c89aa3c4ab8d7fc3cc1f2c4db0_MH0001_081026_clean.2.lfqc
-Running tar xf MH0001_081026_clean.1/output/MH0001_081026_clean.2.lfqc -C MH0001_081026_clean.1/output/tmp_7487e8c89aa3c4ab8d7fc3cc1f2c4db0_MH0001_081026_clean.2.lfqc
-Unzipping qual file MH0001_081026_clean.1/output/tmp_7487e8c89aa3c4ab8d7fc3cc1f2c4db0_MH0001_081026_clean.2.lfqc/MH0001_081026_clean.2.fq_qual_noEOL.zpaq
-Running tools/lfqc/lfqc/../zpaq702/zpaq e MH0001_081026_clean.1/output/tmp_7487e8c89aa3c4ab8d7fc3cc1f2c4db0_MH0001_081026_clean.2.lfqc/MH0001_081026_clean.2.fq_qual_noEOL.zpaq -threads 4
-Unzipping data file MH0001_081026_clean.1/output/tmp_7487e8c89aa3c4ab8d7fc3cc1f2c4db0_MH0001_081026_clean.2.lfqc/MH0001_081026_clean.2.fq_data_noEOL.lpaq
-Running tools/lfqc/lfqc/../lpaq8/lpaq8 d MH0001_081026_clean.1/output/tmp_7487e8c89aa3c4ab8d7fc3cc1f2c4db0_MH0001_081026_clean.2.lfqc/MH0001_081026_clean.2.fq_data_noEOL.lpaq MH0001_081026_clean.1/output/tmp_7487e8c89aa3c4ab8d7fc3cc1f2c4db0_MH0001_081026_clean.2.lfqc/MH0001_081026_clean.2.fq_data_noEOL
-zpaq v7.02 journaling archiver, compiled Aug 19 2015
-MH0001_081026_clean.1/output/tmp_7487e8c89aa3c4ab8d7fc3cc1f2c4db0_MH0001_081026_clean.2.lfqc/MH0001_081026_clean.2.fq_qual_noEOL.zpaq: 

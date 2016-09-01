@@ -1,0 +1,20 @@
+Reading HCC1954.mix1.n80t20.bam.sam, HCC1954.mix1.n80t20.bam/output/decompressed/HCC1954.mix1.n80t20.bam.zam.sam; maxline=5000000
+HCC1954.mix1.n80t20.bam.sam HCC1954.mix1.n80t20.bam/output/decompressed/HCC1954.mix1.n80t20.bam.zam.sam differ: byte 1, line 1
+> ORIG     942395158 (HCC1954.mix1.n80t20.bam.sam)
+< COPY     942395158 (HCC1954.mix1.n80t20.bam/output/decompressed/HCC1954.mix1.n80t20.bam.zam.sam)
+Comments   not equal
+Miss        19078305 lines
+Extra       25371391 lines
+
+QUERYNAME   42647691 lines unequal
+FLAG        37157186 lines unequal
+REFNAME            7 lines unequal
+POS         12205248 lines unequal
+MAPQUAL     24996801 lines unequal
+CIGAR       26351909 lines unequal
+REFNEXT    874628609 lines unequal
+POSNEXT    874628609 lines unequal
+TLEN       830379219 lines unequal
+SEQ         37467575 lines unequal
+QUAL        42568294 lines unequal
+Done HCC1954.mix1.n80t20.bam.sam

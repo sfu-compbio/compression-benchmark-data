@@ -1,0 +1,9 @@
+Reading ../../../sample-2-10_sorted.bam.sam, ./scramble/sample-2-10_sorted.bam.sam.sam; maxline=1000000
+../../../sample-2-10_sorted.bam.sam ./scramble/sample-2-10_sorted.bam.sam.sam differ: byte 25, line 2
+> ORIG      17480371 (../../../sample-2-10_sorted.bam.sam)
+< COPY      17480371 (./scramble/sample-2-10_sorted.bam.sam.sam)
+Comments   not equal
+
+MD          17141109 missing,          0 extra,          0 unequal
+NM          17141109 missing,          0 extra,          0 unequal
+Done ../../../sample-2-10_sorted.bam.sam

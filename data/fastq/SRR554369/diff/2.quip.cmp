@@ -4,5 +4,4 @@ SRR554369_2.fastq SRR554369/output/decompressed/quip/SRR554369_2.fastq.fq differ
 < COPY       1651564 (SRR554369/output/decompressed/quip/SRR554369_2.fastq.fq)
 
 COMMENT      1651564 lines unequal
-Read 1651564 (1651564) / 1651564 (1651564) lines, 1651564
 Done SRR554369_2.fastq

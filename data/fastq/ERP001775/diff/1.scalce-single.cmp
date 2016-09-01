@@ -1,0 +1,60 @@
+Reading ERR1743FULL.fq, ../temp/decompressed/scalce-single/ERR174324_1.fastq.fq_1.fastq.sort; maxline=10000000
+ERR1743FULL.fq ../temp/decompressed/scalce-single/ERR174324_1.fastq.fq_1.fastq.sort differ: byte 13, line 1
+> ORIG    3645373569 (ERR1743FULL.fq)
+< COPY    3645373569 (../temp/decompressed/scalce-single/ERR174324_1.fastq.fq_1.fastq.sort)
+
+QUAL         7511695 lines unequal
+                     1 mismatches: 5103132 lines
+                     2 mismatches: 743675 lines
+                     3 mismatches: 454365 lines
+                     4 mismatches: 284599 lines
+                     5 mismatches: 172442 lines
+                     6 mismatches: 105442 lines
+                     7 mismatches: 85344 lines
+                     8 mismatches: 70880 lines
+                     9 mismatches: 58402 lines
+                     10 mismatches: 48924 lines
+                     11 mismatches: 41104 lines
+                     12 mismatches: 31903 lines
+                     13 mismatches: 26343 lines
+                     14 mismatches: 28976 lines
+                     15 mismatches: 23632 lines
+                     16 mismatches: 24057 lines
+                     17 mismatches: 17750 lines
+                     18 mismatches: 19429 lines
+                     19 mismatches: 19674 lines
+                     20 mismatches: 15534 lines
+                     21 mismatches: 14620 lines
+                     22 mismatches: 19563 lines
+                     23 mismatches: 17166 lines
+                     24 mismatches: 13900 lines
+                     25 mismatches: 11437 lines
+                     26 mismatches: 12557 lines
+                     27 mismatches: 4973 lines
+                     28 mismatches: 4782 lines
+                     29 mismatches: 6525 lines
+                     30 mismatches: 4609 lines
+                     31 mismatches: 4698 lines
+                     32 mismatches: 5262 lines
+                     33 mismatches: 4981 lines
+                     34 mismatches: 2386 lines
+                     35 mismatches: 1884 lines
+                     36 mismatches: 1343 lines
+                     37 mismatches: 1120 lines
+                     38 mismatches: 486 lines
+                     39 mismatches: 522 lines
+                     40 mismatches: 508 lines
+                     41 mismatches: 347 lines
+                     42 mismatches: 281 lines
+                     43 mismatches: 481 lines
+                     44 mismatches: 264 lines
+                     45 mismatches: 485 lines
+                     46 mismatches: 244 lines
+                     47 mismatches: 238 lines
+                     48 mismatches: 292 lines
+                     49 mismatches: 117 lines
+                     50 mismatches: 17 lines
+
+COMMENTX  3645373569 lines unequal
+Wrong N quality: 19996042 of 19996042
+Done ERR1743FULL.fq

@@ -1,8 +1,6 @@
 Reading ../../../SRR554369_2.fastq, ./lw-fqzip/SRR554369_2.fastq.d; maxline=1000000
 Comparing by SEQ
 ../../../SRR554369_2.fastq ./lw-fqzip/SRR554369_2.fastq.d differ: byte 331, line 5
-Read 1000000 (1000000) / 1000000 (1000000) lines, 1000000
-Read 651564 (1651564) / 651563 (1651563) lines, 651564
 > ORIG       1651564 (../../../SRR554369_2.fastq)
 < COPY       1651563 (./lw-fqzip/SRR554369_2.fastq.d)
 Miss              45 lines
