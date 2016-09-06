@@ -1,0 +1,214 @@
+../tools/io_lib-1.14.6/progs/scramble NA12878_S1.bam.sam.scramble.cram -t 4 -R chrY:10000-20000
+*** OK ***
+  Command:       ../tools/io_lib-1.14.6/progs/scramble NA12878_S1.bam.sam.scramble.cram -t 4 -R chrY:10000-20000
+  Process PID:   4258
+  Exit code:     0
+  Wall time:     00:00:01 (1.3 ms)
+  Memory (MB):   22.9
+  Resources:
+    ru_utime:    00:00:00 (0.5 ms)
+    ru_stime:    00:00:00 (0.1 ms)
+    ru_maxrss:   23456
+    ru_minflt:   6997
+    ru_majflt:   43
+    ru_inblock:  18200
+    ru_oublock:  1312
+    ru_nvcsw:    347
+    ru_nivcsw:   108
+
+../tools/samtools/samtools view NA12878.bam -@ 4 chrY:10000-20000
+*** OK ***
+  Command:       ../tools/samtools/samtools view NA12878.bam -@ 4 chrY:10000-20000
+  Process PID:   4265
+  Exit code:     0
+  Wall time:     00:00:00 (0.3 ms)
+  Memory (MB):   16.7
+  Resources:
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   17100
+    ru_minflt:   4637
+    ru_majflt:   9
+    ru_inblock:  19944
+    ru_oublock:  1312
+    ru_nvcsw:    73
+    ru_nivcsw:   79
+
+../tools/sambamba/sambamba_v0.6.0 view NA12878.bam -t 4 chrY:10000-20000
+*** OK ***
+  Command:       ../tools/sambamba/sambamba_v0.6.0 view NA12878.bam -t 4 chrY:10000-20000
+  Process PID:   4268
+  Exit code:     0
+  Wall time:     00:00:00 (0.2 ms)
+  Memory (MB):   20.1
+  Resources:
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   20632
+    ru_minflt:   2397
+    ru_majflt:   23
+    ru_inblock:  24664
+    ru_oublock:  1312
+    ru_nvcsw:    131
+    ru_nivcsw:   106
+
+deez/deez -r ../data/sam/ref/hg19.fa NA12878_S1.bam.sam.dz -c -t 4 chrY:10000-20000
+*** OK ***
+  Command:       deez/deez -r ../data/sam/ref/hg19.fa NA12878_S1.bam.sam.dz -c -t 4 chrY:10000-20000
+  Process PID:   4275
+  Exit code:     0
+  Wall time:     00:00:05 (5.6 ms)
+  Memory (MB):   2290.4
+  Resources:
+    ru_utime:    00:00:07 (7.5 ms)
+    ru_stime:    00:00:02 (2.7 ms)
+    ru_maxrss:   2345388
+    ru_minflt:   433068
+    ru_majflt:   46
+    ru_inblock:  169232
+    ru_oublock:  1608
+    ru_nvcsw:    88182
+    ru_nivcsw:   1468
+
+../tools/io_lib-1.14.6/progs/scramble NA12878_S1.bam.sam.scramble.cram -t 4 -R chr14:107349000-107349540
+Failed to decode sequence
+*** FAIL ***
+  Command:       ../tools/io_lib-1.14.6/progs/scramble NA12878_S1.bam.sam.scramble.cram -t 4 -R chr14:107349000-107349540
+  Process PID:   4287
+  Exit code:     256
+  Wall time:     00:01:04 (64.6 ms)
+  Memory (MB):   14.4
+  Resources:
+    ru_utime:    00:00:00 (0.8 ms)
+    ru_stime:    00:00:02 (2.0 ms)
+    ru_maxrss:   14736
+    ru_minflt:   3998
+    ru_majflt:   42
+    ru_inblock:  532064
+    ru_oublock:  8
+    ru_nvcsw:    32600
+    ru_nivcsw:   1831
+
+../tools/samtools/samtools view NA12878.bam -@ 4 chr14:107349000-107349540
+*** OK ***
+  Command:       ../tools/samtools/samtools view NA12878.bam -@ 4 chr14:107349000-107349540
+  Process PID:   4302
+  Exit code:     0
+  Wall time:     00:00:00 (0.2 ms)
+  Memory (MB):   16.7
+  Resources:
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   17080
+    ru_minflt:   4632
+    ru_majflt:   9
+    ru_inblock:  19384
+    ru_nvcsw:    71
+    ru_nivcsw:   80
+
+../tools/sambamba/sambamba_v0.6.0 view NA12878.bam -t 4 chr14:107349000-107349540
+*** OK ***
+  Command:       ../tools/sambamba/sambamba_v0.6.0 view NA12878.bam -t 4 chr14:107349000-107349540
+  Process PID:   4305
+  Exit code:     0
+  Wall time:     00:00:00 (0.2 ms)
+  Memory (MB):   18.6
+  Resources:
+    ru_utime:    00:00:00 (0.1 ms)
+    ru_stime:    00:00:00 (0.0 ms)
+    ru_maxrss:   19068
+    ru_minflt:   1494
+    ru_majflt:   23
+    ru_inblock:  23760
+    ru_nvcsw:    102
+    ru_nivcsw:   91
+
+deez/deez -r ../data/sam/ref/hg19.fa NA12878_S1.bam.sam.dz -c -t 4 chr14:107349000-107349540
+*** OK ***
+  Command:       deez/deez -r ../data/sam/ref/hg19.fa NA12878_S1.bam.sam.dz -c -t 4 chr14:107349000-107349540
+  Process PID:   4312
+  Exit code:     0
+  Wall time:     00:00:01 (1.5 ms)
+  Memory (MB):   730.5
+  Resources:
+    ru_utime:    00:00:00 (0.3 ms)
+    ru_stime:    00:00:00 (0.4 ms)
+    ru_maxrss:   748068
+    ru_minflt:   107792
+    ru_majflt:   46
+    ru_inblock:  31824
+    ru_oublock:  296
+    ru_nvcsw:    284
+    ru_nivcsw:   117
+
+../tools/io_lib-1.14.6/progs/scramble NA12878_S1.bam.sam.scramble.cram -t 4 -R chr22
+*** OK ***
+  Command:       ../tools/io_lib-1.14.6/progs/scramble NA12878_S1.bam.sam.scramble.cram -t 4 -R chr22
+  Process PID:   4315
+  Exit code:     0
+  Wall time:     00:00:27 (27.3 ms)
+  Memory (MB):   236.1
+  Resources:
+    ru_utime:    00:01:09 (69.8 ms)
+    ru_stime:    00:00:06 (6.1 ms)
+    ru_maxrss:   241732
+    ru_minflt:   194810
+    ru_majflt:   43
+    ru_inblock:  1678592
+    ru_oublock:  13092016
+    ru_nvcsw:    4177
+    ru_nivcsw:   11926
+
+../tools/samtools/samtools view NA12878.bam -@ 4 chr22
+*** OK ***
+  Command:       ../tools/samtools/samtools view NA12878.bam -@ 4 chr22
+  Process PID:   4335
+  Exit code:     0
+  Wall time:     00:01:53 (113.6 ms)
+  Memory (MB):   16.8
+  Resources:
+    ru_utime:    00:00:51 (51.9 ms)
+    ru_stime:    00:00:07 (7.8 ms)
+    ru_maxrss:   17248
+    ru_minflt:   4674
+    ru_majflt:   9
+    ru_inblock:  2820408
+    ru_oublock:  13092440
+    ru_nvcsw:    55847
+    ru_nivcsw:   16851
+
+../tools/sambamba/sambamba_v0.6.0 view NA12878.bam -t 4 chr22
+*** OK ***
+  Command:       ../tools/sambamba/sambamba_v0.6.0 view NA12878.bam -t 4 chr22
+  Process PID:   4354
+  Exit code:     0
+  Wall time:     00:00:25 (25.4 ms)
+  Memory (MB):   35.2
+  Resources:
+    ru_utime:    00:01:43 (103.1 ms)
+    ru_stime:    00:00:10 (10.7 ms)
+    ru_maxrss:   36060
+    ru_minflt:   3751
+    ru_majflt:   23
+    ru_inblock:  2824888
+    ru_oublock:  13092440
+    ru_nvcsw:    51963
+    ru_nivcsw:   17924
+
+deez/deez -r ../data/sam/ref/hg19.fa NA12878_S1.bam.sam.dz -c -t 4 chr22
+*** OK ***
+  Command:       deez/deez -r ../data/sam/ref/hg19.fa NA12878_S1.bam.sam.dz -c -t 4 chr22
+  Process PID:   4380
+  Exit code:     0
+  Wall time:     00:01:55 (115.7 ms)
+  Memory (MB):   4464.4
+  Resources:
+    ru_utime:    00:03:17 (197.2 ms)
+    ru_stime:    00:00:21 (21.4 ms)
+    ru_maxrss:   4571556
+    ru_minflt:   1155221
+    ru_majflt:   46
+    ru_inblock:  1578520
+    ru_oublock:  13092736
+    ru_nvcsw:    964879
+    ru_nivcsw:   25233
