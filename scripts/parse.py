@@ -422,6 +422,9 @@ if __name__ == '__main__':
 	if mode == 'paired':
 		samples = samples[~samples.str.contains('_') & ~samples.str.contains('ERP') & ~samples.str.contains('SRR1')]
 		
+		# tools = ['raw','pigz', 'pbzip2', 'dsrc', 'dsrc-m2', 'fqzcomp', 'fqzcomp-extra', 'fastqz','slimfastq', 'fqc', 'scalce', 'lw-fqzip', 'quip', 'leon', 'kic', 'mince']
+		# samples = ['SRR554369', 'SRR327342', 'MH0001_081026_clean', 'SRR870667', 'ERR174310']
+
 		columns_top = ['size', 'seq']
 		columns = ['walltime_ratio', 'd_walltime_ratio']
 
@@ -451,6 +454,13 @@ if __name__ == '__main__':
 		
 	if filetype == 'fastq':
 		samples = samples[(samples.str.contains('_1') & ~samples.str.contains('ERP')) | (samples == ('ERP001775'))]
+
+	# if filetype == 'fastq':
+	# 	tools = ['raw','pigz', 'pbzip2', 'dsrc', 'dsrc-m2', 'fqzcomp', 'fqzcomp-extra', 'fastqz','slimfastq', 'fqc', 'lfqc', 'scalce-single', 'lw-fqzip', 'quip', 'leon', 'kic', 'orcom', 'beetl', 'mince-single', 'kpath']
+	# 	samples = ['SRR554369_1', 'SRR327342_1', 'MH0001_081026_clean_1', 'SRR1284073_1', 'SRR870667_1', 'ERR174310_1', 'ERP001775']
+	# else:
+	# 	tools = ['raw', 'pigz', 'pbzip2', 'samtools', 'picard', 'sambamba', 'cramtools', 'scramble', 'scramble-noref', 'scramble-bzip2', 'deez', 'deez-qual', 'tsc', 'quip', 'quip-ref', 'sam_comp']
+	# 	samples = ['MiSeq_Ecoli_DH10B_110721_PF',  '9827_2#49',  'sample-2-10_sorted',  'K562_cytosol_LID8465_TopHat_v2', 'dm3PacBio',  'NA12878.pacbio.bwa-sw.20140202',  'HCC1954.mix1.n80t20',  'NA12878_S1']
 
 	if mode in ['final', 'main']:
 		columns_top = ['size', 'seq']
@@ -485,6 +495,10 @@ if __name__ == '__main__':
 		for sample in samples:
 			print sample[:15], '\t', '\t',
 		print
+
+		if filetype == 'sam' and mode == 'aux':
+			data['aux'] = data['aux'].fillna(0) + data['pe'].fillna(0)
+		
 		for tool in tools:
 			print tool, '\t',
 			dy = data[(data.tool == tool)]
@@ -492,15 +506,7 @@ if __name__ == '__main__':
 			for sample in samples:
 				dz = dy[(dy['sample'] == sample) & (dy[mode].notnull())]
 				f, fr = np.nan, np.nan
-				if filetype == 'sam' and mode == 'aux':
-					dz = dy[(dy['sample'] == sample) & (dy[mode].notnull() | dy['pe'].notnull())].fillna(0)
-					if len(dz) > 0:
-						f = dz.ix[dz['threads'].argmin()]
-						f = f[mode] + f['pe']
-						fr = raw[raw['sample'] == sample]
-						fr = fr[mode].fillna(0) + fr['pe'].fillna(0)
-						fr = f / fr.iloc[0]
-				elif len(dz) > 0:
+				if len(dz) > 0:
 					f = dz.ix[dz['threads'].argmin()][mode]
 					fr = f / raw[raw['sample'] == sample][mode].iloc[0]
 				f /= 1e6
@@ -523,6 +529,7 @@ if __name__ == '__main__':
 		for sample in samples:
 			print '\t'.join(map(str, THREADS)), '\t',
 		print
+
 		for tool in tools:
 			print tool, 
 			for i in xrange(2):
